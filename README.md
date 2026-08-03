@@ -1,4 +1,16 @@
-# 锁妖塔 Skill —— 炼化 99 个加密交易员
+
+
+项目大部分代码来源：https://github.com/0xquqi/crypto-kol-quant
+
+我主要是重新设计了报告展示，可以看到具体99个对多空的看法人数，还有打包成exe的程序文件，傻瓜一键就可以使用了。
+<img width="1120" height="786" alt="image" src="https://github.com/user-attachments/assets/24bf1fc0-a07c-4931-b3cb-9808ad6e991d" />
+<img width="1461" height="1208" alt="image" src="https://github.com/user-attachments/assets/16fd6183-5313-4f49-a85c-4b914c52d8a2" />
+
+
+
+以下介绍来源于原项目,个人用于开单非常使用。
+
+#炼化 99 个加密交易员
 
 把 99 个顶级加密交易员的推特"关进锁妖塔"，用 LLM 炼出他们的交易直觉，变成 87 个可回测的量化因子。
 
@@ -86,6 +98,10 @@
 ```bash
 python3 quant_factors/run_consensus.py --refresh-ohlc
 # 输出 consensus_snapshot.html + consensus_snapshot.json
+```
+**方式 3：直接跑 EXE**
+```
+下载币圈交易员归纳.exe直接使用
 ```
 
 ## 可扩展
