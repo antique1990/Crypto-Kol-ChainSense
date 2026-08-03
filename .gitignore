@@ -1,0 +1,26 @@
+# Large data files (downloadable separately)
+full_tweets/
+full_images/
+profiles_v2_raw/
+profiles_v2_inputs/
+
+# Generated artifacts (reproducible)
+quant_factors/features.parquet
+quant_factors/factors.parquet
+quant_factors/trader_signals_btc.parquet
+quant_factors/btc_5m_7d.json
+quant_factors/scalp_trades.csv
+
+# Old data from earlier pipeline iterations
+*.jsonl
+images/
+calls/
+verified/
+profiles/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
