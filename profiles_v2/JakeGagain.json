@@ -1,0 +1,175 @@
+{
+  "handle": "JakeGagain",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "cycle",
+    "macro",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "PEPE",
+    "BRETT",
+    "SPX",
+    "ASTER",
+    "DOGE",
+    "SHIB",
+    "PONKE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.88,
+      "evidence": "反复用“this cycle / bull run / recovery”框架表达仓位与预期，例如“June Will Be Bullish For Crypto.”、“The Bull Run Is Just Getting Started.”、“Top Memecoins Will Recover In 2026.”，明显按周期阶段而不是单次交易来叙事。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.73,
+      "evidence": "长期周期叙事非常强：“You Have To HODL Until 2030”、“Expecting a BIG recovery for crypto in 2026.”、“Forever Bullish On Crypto.”，体现典型多周期持有框架。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.84,
+      "evidence": "他核心押注不是大盘 beta，而是 meme 轮动与山寨季思路：“Top Memecoins Will Outperform Top Altcoins This Cycle.”、“Memecoins Are The Future.”、“Memecoins Ready To Giga Send.”，说明其框架是资金从主流币向 meme/cult 币扩散。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.44,
+      "evidence": "会把 ETF 上线/资金流作为行情催化：“Hong Kong Spot #Bitcoin & #Ethereum ETF Trading Is Now Live.”，并配合“Hong Kong About To Pump Our Bags.”做方向判断。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.31,
+      "evidence": "会跟踪美联储和利率语境：“FED OBSERVES MILDLY HIGH BUT EASING INFLATION... Policy May Adjust Based On Incoming Data”，虽然不是深度宏观，但会拿宏观事件做情绪与仓位背景。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.79,
+      "evidence": "默认把市场读成强多头 regime：“Stop Panicking: The #BullRun Is Here.”、“Welcome To The Most Glorious Bull Run Of Our Generation.”、“$BTC Looks Primed To Send.”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.47,
+      "evidence": "他会把盘整视为下一段上涨前奏：“Consolidation Here. Pump Incoming.”；图 5 也是典型低位横盘后突然垂直拉升的示意，更像箱体整理后延续。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.36,
+      "evidence": "图 5 用非常简化的方式画出“横盘整理后继续喷发”的结构，推文“Consolidation Here. Pump Incoming.”与多头旗形/延续思路一致，尽管他表达更 meme 化而非严格教科书 TA。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.34,
+      "evidence": "虽然总体极度看多，但在 2026 回撤环境里写过“My Strategy In 2026: Practice patience - Wait for markets to crash - DCA into top alts + memes”，说明他至少口头上承认要等崩完再分批，而不是直接接飞刀。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.22,
+      "evidence": "他多次把市场描述为“wild ride”并强调“all you need to do is survive”，说明知道高波动阶段核心任务是活下来，但没有形成严格的波动率规则。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_memecoin_cult_strength",
+      "name": "Memecoin Cult Strength Filter",
+      "name_zh": "Meme 币社群信仰强度筛选",
+      "type": "sentiment_signal",
+      "description": "Ranks tokens by cult-like community cohesion, slogan density, identity signaling, and holder willingness to hold through volatility rather than by fundamentals.",
+      "description_zh": "按社群凝聚力、口号传播、身份认同和持币者穿越波动的意愿来筛选标的，而不是按基本面筛选。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "“$SPX Is The Only Cult Worth Joining.”、“Believe In Something.”、“Diamond Hands Will Win Big This Cycle”、“$ASTER CODED.”"
+    },
+    {
+      "proposed_id": "cap_new_calendar_monthality_pump",
+      "name": "Calendar Month Pump Seasonality",
+      "name_zh": "月份季节性看涨框架",
+      "type": "cycle_time",
+      "description": "Uses specific months or calendar windows as directional bullish catalysts for crypto or memecoins without requiring deep chart confirmation.",
+      "description_zh": "把特定月份或日历窗口直接当作行情催化，先给出方向性看涨判断，图表确认反而是次要的。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "“June Will Be Bullish For Crypto.”、“Crypto Will Pump In September.”、“PUMPTOBER.”、“Which Memecoin Will Pump In June?!”"
+    },
+    {
+      "proposed_id": "cap_new_hold_through_bull_peak",
+      "name": "Bull Run Diamond-Hands Hold",
+      "name_zh": "牛市主升段死拿到顶",
+      "type": "risk_rule",
+      "description": "Instead of actively trading around volatility, concentrate into a few high-conviction meme names and hold through the main bull phase until extreme market cap expansion.",
+      "description_zh": "不围绕波动频繁交易，而是集中押注少数高信念 meme 币，穿越主升浪，直到市值极端扩张才考虑兑现。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "“I saw a man turn 50k into 40m+ in 2021... held till the peak... didn't sell a dollar until the project reached a 5 billion+ market cap.” 以及“LEARN TO HODL = LEARN TO WIN.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Stop Trading & Start Believing.",
+      "rule_paraphrased": "少做频繁交易，多做叙事与信仰驱动的持有。",
+      "category": "framework"
+    },
+    {
+      "quote": "LEARN TO HODL = LEARN TO WIN.",
+      "rule_paraphrased": "胜率核心不是择时，而是拿得住高弹性标的。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Diamond Hands Will Win Big This Cycle",
+      "rule_paraphrased": "在牛市阶段，兑现过早比扛波动更伤收益。",
+      "category": "mantra"
+    },
+    {
+      "quote": "My Strategy In 2026: - Practice patience - Wait for markets to crash - DCA into top alts + memes - Go in HEAVY on $BTC, $ASTER, $PEPE & $SUI",
+      "rule_paraphrased": "大跌后分批吸筹，但一旦看对方向就会重仓进攻。",
+      "category": "framework"
+    },
+    {
+      "quote": "Rule #1: Always Take Profits.",
+      "rule_paraphrased": "他的公开人格以 HODL 为主，但也承认获利了结的重要性，说明其内部其实存在“信仰持有”和“兑现纪律”的张力。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和典型 TA 交易员最大的区别，是把“meme 社群强度 + 牛市周期叙事 + 极高持有信念”放在图表细节之前。图片里大量是 PEPE、BRETT、ASTER 这类符号化品牌，而不是标准指标截图，说明他更像用内容、符号和叙事做交易框架。真正的技术分析在他这里更接近“盘整后继续喷”“牛市阶段别下车”的简化模板，而非精细化执行系统。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Higher.",
+      "Inevitable.",
+      "Bull Run Is Here.",
+      "Just Getting Started.",
+      "Diamond Hands.",
+      "HODL.",
+      "Coded.",
+      "Millionaires will be printed.",
+      "Pump Incoming.",
+      "All Time Highs Incoming."
+    ],
+    "low_conviction_phrases": [
+      "Looking Great Here.",
+      "Bullish On.",
+      "About To.",
+      "Primed To Send.",
+      "Recovery Is Inevitable."
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "handle": "scottmelker",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "contrarian",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "SOL",
+    "ADA"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.94,
+      "evidence": "2024-04-30 直接写道: \"$BTC DAILY ... we now have a perfect theoretical bull flag on the daily\"；附图也是标准旗杆后下倾通道。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.88,
+      "evidence": "同一条 2024-04-30 推文继续强调 \"with a bounce right off of the 100 MA\"；2026-01-31 又说 \"$SOL Sitting on the WEEKLY 200 MA... I'm buying this\"，明显把均线回踩当顺势买点。"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.78,
+      "evidence": "2025-07-31: \"How often have Bitcoin Bollinger Bands been this tight on the daily?\"；配图就是日线布林带极窄收口，典型等待波动扩张。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.76,
+      "evidence": "2024-01-31: \"$BTC 4-HOUR Bitcoin has bearish divergence with overbought RSI on the 4-hour chart\"，这是非常明确的 RSI 顶背离用法。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.82,
+      "evidence": "2024-09-30: \"Bitcoin officially made a higher high by closing above $65,000... Now we look for dips to buy as it potentially establishes another higher low\"，典型 HH/HL 趋势框架。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.64,
+      "evidence": "他反复围绕关键均线做结构判断：2024-04-30 强调 100MA 反弹；2026-01-31 强调 SOL 在 WEEKLY 200MA；图表里也常把均线当趋势切换或支撑确认。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.63,
+      "evidence": "2024-04-30: \"this is what you can expect from Bitcoin if the 'normal' halving ... cycle repeats\"，明确用减半后阶段路径做预期框架。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.61,
+      "evidence": "同一条 2024-04-30 推文直接写 \"and 4-year cycle repeats\"，说明他把四年周期当中高层叙事模板。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.74,
+      "evidence": "2026-02-27: \"U.S. SPOT $BTC ETFS SEE $1.1B INFLOWS IN 3 DAYS\"；同日还写到 \"ETF flows hit $258 million\"，把 ETF 流入当需求强弱代理变量。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.69,
+      "evidence": "虽然他偏多，但不是盲目抄底。2025-02-28 在大跌后说 \"Feels like some of us may have invested money we could not afford to lose\"；更常见的是先等结构或关键位确认，而不是接瀑布刀。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.77,
+      "evidence": "2026-01-31 谈 XRP: \"Easy to cut loose with ...\"，明显强调失效位清晰的交易；这和他一贯偏好高赔率、好止损定义的 setup 一致。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.36,
+      "evidence": "2026-04-09 直接写 \"Markets rally into the close Friday... $SPY gaps down Monday morning\"，会用股市风险偏好环境辅助判断加密周末/隔夜风险。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_sentiment_index_dislocation",
+      "name": "Sentiment Gauge Dislocation",
+      "name_zh": "情绪指标错位识别",
+      "type": "contrarian",
+      "description": "Use popular sentiment gauges like Fear & Greed as a contrary overlay; when the readout stays elevated or depressed despite visibly different price action, treat it as evidence the crowd metric is stale or misleading.",
+      "description_zh": "把大众情绪指标当作反向过滤器；当恐惧贪婪等读数与价格体感明显错位时，视为市场情绪度量滞后或失真，从而提高对反向交易/均值回归的关注。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.58
+      },
+      "example_evidence": "2024-04-30: \"There is NO way we are still at 'greed' lol.\" 配图是 Fear & Greed 仍显示 67 Greed，但他认为市场体感已不匹配。"
+    },
+    {
+      "proposed_id": "cap_new_htf_reversal_candle",
+      "name": "High-Timeframe Reversal Candle",
+      "name_zh": "高周期反转K线",
+      "type": "pattern_setup",
+      "description": "Focus on monthly or weekly candles that threaten to print a major reversal body/wick after an extended move; used as a narrative turning-point signal rather than a precise trigger.",
+      "description_zh": "关注周线或月线在长趋势后即将形成的大级别反转实体或长影线，把它作为趋势拐点叙事信号，而不是精确入场信号。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "2025-04-30: \"$ETH MONTHLY Ethereum is about to print an epic reversal candle on the monthly chart.\""
+    },
+    {
+      "proposed_id": "cap_new_asymmetric_support_trade",
+      "name": "Asymmetric Support-defined Trade",
+      "name_zh": "支撑定义清晰的不对称交易",
+      "type": "risk_rule",
+      "description": "Enter near the last major support or a major moving average only when invalidation is obvious, because the setup offers unusually favorable reward relative to clearly limited downside.",
+      "description_zh": "只在最后关键支撑或重要均线附近出手，前提是失效位非常清晰，这样才能获得显著偏斜的盈亏比。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "2026-01-31: \"$XRP ... at the last meaningful support ... best risk/reward ... Easy to cut loose\"；同日对 SOL 也因 WEEKLY 200MA 支撑而买入。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "It’s turn your brain off and do nothing season",
+      "rule_paraphrased": "当趋势和持仓状态都对自己有利时，最优动作往往是不乱操作。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Sell your dollars.",
+      "rule_paraphrased": "他的底层世界观长期偏向法币贬值、加密资产升值，因此默认持有风险资产而不是现金。",
+      "category": "framework"
+    },
+    {
+      "quote": "The only thing that has changed for Bitcoin is the price.",
+      "rule_paraphrased": "大跌未必改变基本 thesis，价格下跌本身不自动等于逻辑破坏。",
+      "category": "framework"
+    },
+    {
+      "quote": "Pro tip - stop getting liquidated.",
+      "rule_paraphrased": "反对高杠杆和情绪化追单，把不被清算视为生存第一原则。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "99% of BREAKING NEWS is neither breaking or news.",
+      "rule_paraphrased": "他做内容分发，但对新闻噪音保持高度怀疑，更偏向用结构和价格验证新闻。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，也不是纯宏观派，而是把高周期技术结构、均线关键位、周期叙事和新闻流/ETF 流量揉在一起做 swing bias。与很多 TA 交易员不同，他公开表达强烈长期看多和逢跌偏买的世界观，同时又强调必须有清晰失效位，宁愿在关键支撑做高赔率试错，而不是在半空中接刀。另一个显著特点是内容创作者属性很强，常把图表、新闻和情绪指标转化成易传播的口号式判断。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "perfect theoretical bull flag",
+      "I'm buying this",
+      "best risk/reward you get on an asset",
+      "Huge",
+      "Nothing but tailwinds",
+      "The only thing that has changed for Bitcoin is the price"
+    ],
+    "low_conviction_phrases": [
+      "for illustrative purposes",
+      "if the \"normal\" halving and 4-year cycle repeats",
+      "May not repeat",
+      "If this last wick down was somehow the bottom",
+      "about to",
+      "potentially"
+    ]
+  }
+}

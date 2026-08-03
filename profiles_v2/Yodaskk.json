@@ -1,0 +1,240 @@
+{
+  "handle": "Yodaskk",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "cycle",
+    "structural",
+    "pure_TA",
+    "contrarian",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "SPX",
+    "NASDAQ",
+    "ETH",
+    "SOL",
+    "DOGE",
+    "SILVER"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.94,
+      "evidence": "多次直接用周期框架解释 BTC：2025-10-24 说 \"the selling we had since the summer on btc is due to the whales who still partially believe in the 4year cycle\"；2026-04-08 又说 \"What happened mid-October 2025?... 3.9 years cycle top.\""
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.62,
+      "evidence": "虽然不总是明说“减半”，但他反复按年度/季度阶段划分 BTC 大周期顶部与熊市路径，例如 2026-03-26 认为会有 6 个月大区间，2026-04-08 继续维持到 early Q4 的区间+shakeout 预期，属于典型周期分段思维。"
+    },
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.83,
+      "evidence": "明显使用 Elliott Wave：2025-06-25 \"The move to 98k ... was probably the end of wave 2\"；2025-05-28 \"all of this is part of the wave 2 consolidation... because of Elliot wave rule of alternation\"；2025-09-30 还讨论 \"1-2  1-2  1-2\" 的超级牛场景。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.88,
+      "evidence": "SFP 是他最常用的具体 trigger 之一：2025-11-21 \"Best scenario locally would be a 4hr SFP of today's...\"；2025-04-29 \"The fact we didn't get a quick Sfp and retrace is probably showing the resilience of $btc\"；2025-04-25 \"half the exchanges got Sfp'd\"。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.9,
+      "evidence": "他频繁先看流动性是否被扫：2025-04-25 \"Taking liquidity... Taking those 83k lows\"；2025-04-30 \"No lows taken? Higher chances this is a bullish chop\"；2024-09-30 也说 \"If you're lucky and the lows at 62.3k are taken\"。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.79,
+      "evidence": "反复给出 61.8 回撤作为关键位：2025-04-25 明确写出 \"61.8% fib retracement of this upmove\"；2026-02-16 分析白银时说 \"61.8/70.5 fibonnacci retracement zone\"。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.74,
+      "evidence": "他经常把回踩均线视作趋势延续/反抽阻力：2025-07-25 直接总结强弱资产分别看 4hr200/100/50；2026-02-25 说 \"Any rally into 72.3k ... descending 4hr 200 ema+sma is probably a good area to TP the longs and search for some shorts\"。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.86,
+      "evidence": "周线/日线关键均线收复或跌破是他的核心确认条件：2026-01-30 \"If we close below the 100W ema+sma at 86k...\"；2025-11-21 \"Weekly close above 100-week ema at 85.4k\"；2024-08-31 对 DOGI 说要 \"consolidate above 100d sma, while the 21d ema is catching up\"。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.73,
+      "evidence": "他对下行 regime 的识别偏明确，并据此给出更低目标：2026-01-30 \"Break and close below 84k on the daily... Close below 86k on the weekly would confirm the breakdown... Target is probably low 70s\"。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.91,
+      "evidence": "他大量使用箱体/区间思维：2026-04-08 \"Main scenario for me is still a $76k - $50k range until early Q4\"；2026-03-26 \"a 6 months range between 78-80k... and around 48-53k\"；2026-02-25 明确提 \"72.3k top of the range\"。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.57,
+      "evidence": "他会把高波动与周期末端联系起来：2025-10-29 \"Increase in volatility is characteristic of the last innings of a cycle\"，本质上是把加速与末段衰竭相连。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.28,
+      "evidence": "样本里没有直接高频提 DXY，但其宏观叙事常把 BTC 放进流动性和风险偏好框架中，属于次要辅助，不是主轴。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.67,
+      "evidence": "他经常把 BTC 与 SPX/Nasdaq 对照：2024-01-30 \"SP500 fractal\"；2026-01-31 预计 \"a 10% correction on spx and nasdaq end of q1\"；2025-06-26 因结构失效而转 bullish on trad, $nvda, nasdaq。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.54,
+      "evidence": "2025-09-30 直接说 \"BTC is Gold's alt imo... once gold find a local top or range, btc plays the catchup game\"，说明他把 BTC 与黄金轮动关系当成可操作框架。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.48,
+      "evidence": "他会用资金费做辅助过滤：2024-09-30 回复里就一句 \"Funding tho\"；虽然没有系统展开，但表明他会用衍生品情绪校验方向。"
+    },
+    {
+      "id": "cap_067_nvt_valuation_extreme",
+      "weight": 0.22,
+      "evidence": "样本里未见直接用 NVT，但相比之下他更偏 CVDD/MVRV 这种周期估值工具，因此此能力不算主用。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.76,
+      "evidence": "2026-02-23 明确发文：\"Bitcoin: MVRV Z-Score is close but still has not touched the buy zone where all the previous bear market lows were formed\"，说明他把链上周期估值作为熊底确认工具。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_range_extremes",
+      "name": "Multi-Month Box Range Extremes",
+      "name_zh": "多月箱体上下沿交易",
+      "type": "pattern_setup",
+      "description": "Define a broad multi-week or multi-month box, fade the boundaries, and wait for sweep/failure behavior at the edges before positioning for mean reversion or final breakout.",
+      "description_zh": "先定义一个持续数周到数月的大箱体，重点交易上下沿附近的扫流动性、假突破和均值回归，而不是中间位置追单。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral_to_contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "2026-04-08 \"Main scenario for me is still a $76k - $50k range until early Q4\"；2026-03-26 \"6 months range between 78-80k ... and around 48-53k\"。"
+    },
+    {
+      "proposed_id": "cap_new_weekly_close_level_validation",
+      "name": "Weekly Close Threshold Validation",
+      "name_zh": "周线收盘阈值确认",
+      "type": "indicator_rule",
+      "description": "Instead of reacting to intraperiod moves, require the daily or weekly close relative to a key moving average or horizontal level to validate breakout/breakdown scenarios.",
+      "description_zh": "不因盘中刺破立刻改变方向，而是要求日线或周线收盘站上/跌破关键均线或水平位后，才确认趋势切换或区间失效。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_following",
+        "horizon": "swing",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "2026-01-30 \"If we close below the 100W ema+sma at 86k...\"；同日又说 \"Close below 86k on the weekly would confirm the breakdown\"；2025-11-21 \"Weekly close above 100-week ema...\"。"
+    },
+    {
+      "proposed_id": "cap_new_cross_exchange_sfp_disagreement",
+      "name": "Cross-Exchange SFP Disagreement",
+      "name_zh": "跨交易所 SFP 分歧校验",
+      "type": "derivatives_signal",
+      "description": "Compare whether swing highs/lows were swept across different exchanges before accepting an SFP as valid; partial sweeps imply unfinished liquidity business.",
+      "description_zh": "比较不同交易所是否都扫掉同一摆动高低点；如果只有部分交易所完成 SFP，说明流动性清扫可能未结束，单一交易所信号不够可靠。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-04-25 \"Obviously, half the exchanges got Sfp'd, the other half not yet\"。"
+    },
+    {
+      "proposed_id": "cap_new_planetary_cycle_overlay",
+      "name": "Astro Cycle Overlay",
+      "name_zh": "天体周期叠加",
+      "type": "cycle_time",
+      "description": "Use non-traditional planetary or calendar cycle overlays as a supplemental timing model for possible tops and bottoms.",
+      "description_zh": "把非常规的天体/历法周期当作辅助择时工具，用来给潜在顶部和底部窗口加时间权重。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "timing_overlay",
+        "horizon": "position",
+        "confidence_base": 0.4
+      },
+      "example_evidence": "2025-05-26 \"Mars-Vesta cycles  Oct 6th $btc top is coded by the crypto gods\"；2024-10-31 也提到 \"3.9 years mars Vesta cycle\"。"
+    },
+    {
+      "proposed_id": "cap_new_session_flow_attribution",
+      "name": "Session-Based Flow Attribution",
+      "name_zh": "按交易时段归因卖压",
+      "type": "macro_correlation",
+      "description": "Attribute directional pressure to specific market sessions, especially U.S. hours, to infer ETF or institutional flow dominance.",
+      "description_zh": "把价格主导权按亚盘、欧盘、美盘拆开，若卖压主要集中在美盘，则推断 ETF 或传统机构资金在主导行情。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contextual",
+        "horizon": "intraday",
+        "confidence_base": 0.61
+      },
+      "example_evidence": "2025-11-21 \"SELLING is happening mainly during U.S. Session\"，并进一步归因给 ETF massive outflows 的可能性。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Highest weekly and monthly close ever tonight for $btc  Explain to me the bear case",
+      "rule_paraphrased": "历史级别收盘创新高时，默认拒绝空头叙事，要求空头先给出更强证据。",
+      "category": "framework"
+    },
+    {
+      "quote": "The fact we didn't get a quick Sfp and retrace is probably showing the resilience of $btc",
+      "rule_paraphrased": "预期中的流动性假突破如果没有发生，反而是趋势强度信号。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "No lows taken?  Higher chances this is a bullish chop 🍿",
+      "rule_paraphrased": "在整理区里，如果低点还没被扫，倾向把横盘视为偏强整理而非立即转空。",
+      "category": "framework"
+    },
+    {
+      "quote": "If we close below the 100W ema+sma at 86k this week, I expect the 200w SMA  at 69k next, and probably fast",
+      "rule_paraphrased": "关键周线均线的收盘失守才算有效破位，随后按更高一级均线做目标投射。",
+      "category": "framework"
+    },
+    {
+      "quote": "Obviously, half the exchanges got Sfp'd, the other half not yet  So who the fck knows which exchange we should believe innit",
+      "rule_paraphrased": "单一交易所的摆动失败不够，跨交易所一致性很重要，否则信号可信度下降。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，也不是纯宏观派，而是把 Elliott wave、SFP/流动性、关键均线收盘确认和大周期叙事混在一起用。和一般 CT TA 交易员相比，他对“多月箱体边缘 + 关键周线收盘 + 周期顶部/底部窗口”的组合依赖更强。附图并非 K 线图而是二次元/漫画图片，因此图像层面的框架提炼基本不可用，本画像主要依据推文文本完成。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "I expect",
+      "Main scenario for me is still",
+      "probably fast",
+      "Best scenario",
+      "Higher chances",
+      "is probably a good area",
+      "worked until it found a bigger opponent"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "my guess",
+      "I could see",
+      "probably",
+      "would probably",
+      "personally",
+      "who knows"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "handle": "HsakaTrades",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "contrarian",
+    "risk_first",
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "ALT-PERPS",
+    "MEMECOINS"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.9,
+      "evidence": "他反复用 OI 读拥挤与即将释放的波动。例：2025-01-30 \"Saylor on forbes cover >Global crypto OI -$700m in 15 minutes\"；2025-02-03 \"total OI down $20b, can assume at least 50% was liqs\"；2025-02-03 还说 \"you can see the carnage in the OI anyway\"。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.87,
+      "evidence": "明显盯清算位和被迫平仓链条。2024-02-29: \"Whoever is throwing up these sell walls on binance futs $BTC, see you on the liq feed soon\"；2024-08-27: \"where is hl apes liq at? 55k?\"。这不是传统图形派，而是清算/止损池视角。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.76,
+      "evidence": "他显然会把极端 funding 当成 crowding 信号。2024-01-20: \"Today you're asking for the one ticker that is paying 2% in funding every 4h\"；2025-01-30 用 Forbes 封面 + OI 急坠调侃长仓过热后的长爆。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.84,
+      "evidence": "他经常先做市场环境分类。2024-08-19: \"markets so muted we're back to yapping about the futility/utility of tokens\"；2024-08-20: \"when majors start chopping around and vol dies, all the dopamine starved degens flock to the flavour of the week coin\"。说明他会先识别 major 进入震荡/低波动，再切换到轮动玩法。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.82,
+      "evidence": "他对事件波动 regime 很敏感。2025-01-23: \"thanks for participating in the daily headline induced volatility event\"；2025-01-29: \"time to lock in for the weekly volatility event\"；2025-11-08: \"speedrun weeks worth of rotations within a few hrs\"。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.7,
+      "evidence": "风险处理并不恋战。2025-10-30: \"closed everything at breakeven yesterday btw\"；2024-02-28: \"perfectly hedged let the rotatooors fight among each other\"。更像事件盘/流动性盘的快速撤退风格。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.67,
+      "evidence": "他非常重视 BTC/ETH/alt 之间的轮动，但不是机械预测拐点。2024-02-29: \"no interest in trying to time the btc<>eth<>alt rotations  positioned in all. more important is coin selection for alts\"；2024-08-21: \"the L1 rotation trade\"。这是典型的轮动框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.63,
+      "evidence": "他的多头默认打法是抓强者延续而非抄底。2024-01-20: \"Market chopping around? We simply continue longing the outperformers before they're the outperformers\"；2024-03-30: \"gm  I love the smell of ATHs in the morning\"。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.34,
+      "evidence": "虽然不总是点名 FOMC，但明显按日历/headline 事件管理仓位与预期。多次使用 \"headline induced volatility event\"、\"weekly volatility event\" 的表达，说明其框架包含事件前后的风险切换。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_pre_outperformer_relative_strength",
+      "name": "Pre-Outperformer Relative Strength Positioning",
+      "name_zh": "提前卡位相对强势币",
+      "type": "structural_bias",
+      "description": "Instead of chasing coins after they visibly outperform, identify the symbols already absorbing flow, holding up after wipes, or benefiting from upcoming attention rotation, then enter before broad consensus labels them leaders.",
+      "description_zh": "不是等币已经明显领涨才追，而是先找在回撤后抗跌、先吸收资金、即将接过注意力的标的，提前埋伏“未来的 outperformer”。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2024-01-20: \"continue longing the outperformers before they're the outperformers\"；2024-03-29: \"put on the hat a month ago ... about to hit a 10x with 0 mins spent underwater\"；2024-03-28: \"choose pre outperformers\"。"
+    },
+    {
+      "proposed_id": "cap_new_perp_listing_rotation",
+      "name": "Perp Listing Rotation Trade",
+      "name_zh": "合约上新轮动交易",
+      "type": "event_reaction",
+      "description": "Track exchange perpetual listing cadence and the short-lived flow migration it creates across newly listed or adjacent sectors; trade the liquidity transfer rather than assuming net-new market demand.",
+      "description_zh": "跟踪交易所永续合约上新节奏，以及它对新币和相关板块造成的短时资金迁移；交易的是流动性转移，不是假设市场出现了净新增需求。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_or_short_rotation",
+        "horizon": "24h_to_72h",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-01-18: \"short term probably going to be more fruitful to play the flavour of the 24-72hr cartel coins perps\"；2025-01-24: \"a new listing doesn't mean there's a net increase in total volume, most often it's just volume being transferred from other pairs\"；2025-11-03: \"nance on track to list more perps this year than the past 3 years combined\"。"
+    },
+    {
+      "proposed_id": "cap_new_headline_volatility_event",
+      "name": "Headline Volatility Event Cycle",
+      "name_zh": "新闻标题波动事件周期",
+      "type": "event_reaction",
+      "description": "Treat scheduled or emergent headline bursts as recurring volatility events that temporarily override slower narratives; reduce certainty, expect leveraged flushes, and trade the reaction rather than the headline itself.",
+      "description_zh": "把新闻/政策/舆情爆点视为周期性波动事件，短时压过慢变量叙事；降低方向执念，预期杠杆被清洗，交易的是反应与仓位结构，而不是新闻标题本身。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral_to_contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "2025-01-23: \"thanks for participating in the daily headline induced volatility event\"；2025-01-29: \"time to lock in for the weekly volatility event\"。"
+    },
+    {
+      "proposed_id": "cap_new_round_number_reflexivity",
+      "name": "Round-Number Reflexivity",
+      "name_zh": "整数关口反身性",
+      "type": "structural_bias",
+      "description": "Treat large round numbers as sentiment and positioning magnets where attention spikes, meme volume expands, and traders overreact despite little underlying structural change before versus after the level.",
+      "description_zh": "把大整数关口视为情绪与仓位的磁铁；临近、触及、站上后都会放大注意力和过度反应，但关口前后底层结构往往变化不大。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_or_take_profit",
+        "horizon": "intraday_to_short_swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "附图 #1 的梗图把 \"PRE $100k / $100k / POST $100k\" 对比成只有触及整数位时全场亢奋，过位后又恢复平静，说明他很在意 round-number 的行为金融学意义。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Market chopping around?  We simply continue longing the outperformers before they're the outperformers",
+      "rule_paraphrased": "震荡市不强行预测大盘方向，转而提前埋伏相对强势标的。",
+      "category": "framework"
+    },
+    {
+      "quote": "no interest in trying to time the btc<>eth<>alt rotations  positioned in all. more important is coin selection for alts.",
+      "rule_paraphrased": "不要执着于精确抓大类切换点，分散站位后把精力放在 alt 的筛选质量上。",
+      "category": "framework"
+    },
+    {
+      "quote": "never burden your memes with an event driven catalyst.",
+      "rule_paraphrased": "meme 交易尽量避免把仓位绑定在单一事件催化上，避免 thesis 过度脆弱。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "closed everything at breakeven yesterday btw",
+      "rule_paraphrased": "事件盘没走出来就撤，不让短线想法演变成被动持仓。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "thanks for participating in the daily headline induced volatility event   you can now go back to discussing whether the top is in or not until the next headline hits",
+      "rule_paraphrased": "新闻驱动的剧烈波动通常是可重复的短周期事件，不要把每次 headline 都误判成结构性拐点。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他区别于典型 TA 交易员的地方，在于核心 edge 更偏永续合约微观结构：OI、funding、清算位、上新节奏、注意力轮动，而不是密集画经典形态。公开表达极度 meme 化，但底层方法很一致：先分 regime，再找拥挤与流动性错位，最后做相对强弱和被迫平仓链。当前附图里真正的 K 线标注并不多，反而强化了这一点：他更像用梗图传播 position/risk 框架，而不是靠公开贴图教科书式讲解 TA。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "see you on the liq feed soon",
+      "time to lock in",
+      "there is no second best market",
+      "choose pre outperformers",
+      "slurped a little"
+    ],
+    "low_conviction_phrases": [
+      "probably",
+      "hopefully",
+      "I think",
+      "can assume",
+      "real number is probably 5x this"
+    ]
+  }
+}

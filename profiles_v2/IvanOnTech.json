@@ -1,0 +1,195 @@
+{
+  "handle": "IvanOnTech",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "macro",
+    "cycle",
+    "pure_TA",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "HEX",
+    "PLS"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.95,
+      "evidence": "核心表达长期是顺着强上升趋势做多。例：2024-12-19 “BITCOIN BELOW $100,000 IS TOO CHEAP”; 2025-03-31 “BITCOIN WILL GO TO $150,000 VERY SOON!!!! AND THEN 200k”。图3也明显用台阶式更高高点/更高低点来推演继续上行。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.88,
+      "evidence": "他多次把加密方向直接锚定美股风险偏好。2025-06-29 明说：“look at the stock market It’s so insanely bullish We are in pump season and crypto follows stonks”。图6也是股票指数大涨截图，作为加密看多证据。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.83,
+      "evidence": "他频繁把 Fed 降息/流动性改善作为主驱动。2025-06-27：“FED WILL CUT RATES IN JULY!!!!!”; 2025-06-28：“Bitcoin dominance will start dropping once FED starts easing They will cut rates in July”。这是典型“宽松=风险资产牛市”框架。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.79,
+      "evidence": "他大量使用牛市年度/阶段性叙事而非短线信号。2024-12-31：“2025 is gonna be the biggest year for crypto”; 2025-09-27：“OCTOBER IS THE BEST MONTH FOR BITCOIN WE CALL IT PUMPTOBER”。属于减半后牛市阶段推演。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.75,
+      "evidence": "他常用“这一轮/这个季度/这赛季”的大周期模板来预测顶部和轮动。2025-11-26：“2014 - MtGox 2018 - Bitconneeeeect 2022 - FTX, Celsius 2026 - ???????” 体现明显的四年周期思维与周期顶/熊市记忆。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.76,
+      "evidence": "对山寨季的判断几乎都基于 BTC.D 下降。2024-10-31：“gaming will come back big time as bitcoin dominance drops”; 2025-06-28：“Bitcoin dominance will start dropping...”; 2025-06-30：“The grand rotation will take place later this year”。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.68,
+      "evidence": "他会用前关键位翻转为阻力/支撑的思路。2025-04-23：“PLS is using the previous ATL (ALL TIME LOW) as RESISTANCE!!!!!!!!!!”。这本质就是前结构位失守后变成阻力的 breaker / S-R flip 框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.66,
+      "evidence": "图8出现明显长下影刺破后迅速收回，典型扫流动性后反弹的观察角度。Ivan 的图表偏爱这种‘先吓人洗掉再拉回’的解读，符合 sweep / stop-hunt 框架。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.61,
+      "evidence": "图8不仅像 liquidity sweep，也是一根关键位长针拒绝。其图表表达不是复杂指标，而是用极端 wick 来证明下方买盘吸收。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.58,
+      "evidence": "他并不倾向把回调当趋势反转，更多是‘bull trend中的可买回踩’。2024-12-19 与 2024-12-20 连续喊 “BUY THE F***ING DIP!!!!! / BUYBUYBUY...”; 2025-07-31：“BITCOIN DIP IS VERY NICE BUY IT NOW BEFORE ITS TOO LATE!!!!”。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.53,
+      "evidence": "虽然公开样本里均线细节不多，但他有明确机械均线锚点。2026-01-30：“I WILL BUY BITCOIN AT 200W MA AT $60,000!!!!!! ... i will follow the mechanical rules and the plan we have set out”。说明他把关键长周期均线当制度化买点。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.41,
+      "evidence": "他常把机构买盘/大资金参与当上涨背书。2025-05-21 至 2025-05-28 多次引用 Saylor、BlackRock、Coinbase 资产负债表买币叙事，虽然不是严格 ETF 流量表，但属于“机构资金支撑 BTC”的事件反应框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_cme_gap_fill",
+      "name": "CME Gap Fill Magnet",
+      "name_zh": "CME 缺口回补磁吸",
+      "type": "event_reaction",
+      "description": "Use CME Bitcoin futures gaps as unfinished business. Gap fills are treated as key milestones; once filled, trader expects continuation or a fresh directional expansion.",
+      "description_zh": "把 BTC CME 期货缺口视为未完成目标位。价格回补缺口后，认为市场‘清障完成’，随后应启动新的趋势推进。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_continuation_after_gap_fill",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-10-29：“BITCOIN CME GAP FILLED!!!!!!!! NO EXCUSE FOR THE BULLS TO NOT GO TO ATH RIGHT NOW AND START THE Q4 RALLY!!!!!”"
+    },
+    {
+      "proposed_id": "cap_new_uptober_pumptober_seasonality",
+      "name": "Crypto Calendar Seasonality",
+      "name_zh": "加密季节性月份交易",
+      "type": "cycle_time",
+      "description": "Trade around repeated month-based seasonal narratives such as Uptober, Q4 rally, and New Year momentum, using calendar effects as a conviction amplifier.",
+      "description_zh": "围绕 Uptober、Q4 rally、新年行情等高频月份叙事建立方向偏见，把日历季节性当作加仓和提高信念的放大器。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_seasonal",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2024-10-29：“UPTOBER HAS DELIVERED LIKE HEELLL”; 2025-09-27：“OCTOBER IS THE BEST MONTH FOR BITCOIN WE CALL IT ‘PUMPTOBER’”; 2024-12-31：“2025 is gonna be the biggest year for crypto”。"
+    },
+    {
+      "proposed_id": "cap_new_200wma_mechanical_bid",
+      "name": "200W MA Mechanical Bid",
+      "name_zh": "200 周均线机械接多",
+      "type": "indicator_rule",
+      "description": "Set predefined bids around the 200-week moving average as a non-discretionary long-term accumulation rule.",
+      "description_zh": "把 200 周均线当作预先设定的机械化接多区域，不依赖主观盘中判断，属于周期级别的规则化吸筹。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2026-01-30：“I WILL BUY BITCOIN AT 200W MA AT $60,000!!!!!! ... i will follow the mechanical rules and the plan we have set out”"
+    },
+    {
+      "proposed_id": "cap_new_stair_step_breakout",
+      "name": "Stair-Step Resistance Ladder",
+      "name_zh": "阶梯式阻力突破",
+      "type": "structural_bias",
+      "description": "Map bull markets as a sequence of flat resistance shelves broken one after another, projecting continuation to the next ladder rung.",
+      "description_zh": "把牛市理解为一层层水平阻力被依次突破的阶梯结构，每突破一层，就朝下一层目标推进。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "图3中连续用粉色水平线标出多个平台阻力，价格逐级突破后直接箭头指向更高目标位，是他非常典型的视觉表达。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "BITCOIN BELOW $100,000 IS TOO CHEAP",
+      "rule_paraphrased": "大级别牛市中不把高价当贵，而是把回调视为仍然低估。",
+      "category": "mantra"
+    },
+    {
+      "quote": "BUY THE F***ING DIP!!!!!",
+      "rule_paraphrased": "默认策略是在牛市回撤中加仓，而不是等待完美抄底确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "look at the stock market It’s so insanely bullish We are in pump season and crypto follows stonks",
+      "rule_paraphrased": "先看美股风险偏好，再判断加密的方向与节奏。",
+      "category": "framework"
+    },
+    {
+      "quote": "BITCOIN CME GAP FILLED!!!!!!!! NO EXCUSE FOR THE BULLS TO NOT GO TO ATH RIGHT NOW",
+      "rule_paraphrased": "关键技术障碍完成后，立即上调趋势延续概率，不接受中性解释。",
+      "category": "framework"
+    },
+    {
+      "quote": "I WILL BUY BITCOIN AT 200W MA AT $60,000!!!!!! ... i will follow the mechanical rules and the plan we have set out",
+      "rule_paraphrased": "在高波动资产上用少数机械化规则固定长期买点，避免情绪化。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和典型严谨 TA 交易员不同，核心不是指标细算，而是把宏观流动性、牛熊周期、社群情绪和超简化结构图叠加成高亮信念叙事。图表上偏爱最容易传播的水平位、台阶突破、长针洗盘，而不是复杂指标体系。实操风格极端偏多、重 BTC 主线，再用 BTC.D 和 Fed/美股框架去外推 ETH、SOL 与山寨季。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "VERY VERY BULLISH",
+      "EXAAAAAACTLY AS PREDICTED",
+      "BITCOIN WILL GO TO $150,000 VERY SOON",
+      "BITCOIN $100,000 INEVITABLE",
+      "NO EXCUSE FOR THE BULLS",
+      "WE WILL GO HIGH VERY HIGH",
+      "BUY THE F***ING DIP",
+      "TOO CHEAP"
+    ],
+    "low_conviction_phrases": [
+      "likely",
+      "what do you think",
+      "is this bad? or bullish",
+      "either poop the bed OR ROCKET BOOST TO THE UPSIDE NOW",
+      "almost"
+    ]
+  }
+}

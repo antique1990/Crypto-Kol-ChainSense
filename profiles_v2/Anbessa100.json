@@ -1,0 +1,236 @@
+{
+  "handle": "Anbessa100",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "TAO",
+    "DOGE",
+    "ZIG",
+    "XRP",
+    "large-cap alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.9,
+      "evidence": "他反复把均线收复当成趋势切换确认。2024-04-30 写到“Descending trendline resistance meets Daily 99MA”，2025-03-26 写到“as long as price doesn't push above $90k descending resistance 50MA Daily...”，2025-03-26 还写“$DOGE bouncing up 20%... Perfect bounce off the mid-channel trendline and the 200MA on the 3D timeframe”。图 5 也明确叠加 50/200/300 均线做判断。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.88,
+      "evidence": "他频繁用 Fib 回撤/扩展做目标位和确认。2025-09-13 写“Breakout above fib 0,618 next bullish catalyst”；图 6 在 SOL 图上标出 0.5、0.618、0.786、1.0、1.272、1.414；图 7 在 ETH 图上明确标 0.382、0.5、0.618、0.786、1.0，并以 0.786 附近作为关键阻力。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.86,
+      "evidence": "其核心风格不是抄底，而是在趋势延续中的回踩后继续上车。2025-07-24 写“Textbook continuation”，2025-07-24 还写“PA outlook playing out with perfection. All bullish signals triggered. Textbook continuation breakout”，图 8 对 TAO 画出通道内震荡后向上延续至上轨/供给区。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.82,
+      "evidence": "他高频使用“s/r flip”语言，本质是前阻力转支撑/前支撑转阻力。2024-04-30 写“Retrace back below $63,905 and s/r flip and continuation to $61,344”，2025-08-11 写“textbook throwback to $112K and how BTC was primed for liftoff after a successful S/R flip”，2025-10-31 写“$TAO projection aging like wine at $485 after s/r flip”。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.76,
+      "evidence": "他明确使用 wedge 结构。2024-08-30 写“speculating on a s/r flip after falling wedge breakout”，2025-08-09 写“Just one descending broadening wedge breakout away from continuation”。虽然他常用的是 broadening wedge，但下降楔形作为近邻框架明显在用。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.75,
+      "evidence": "他经常先做大级别多头趋势假设，再在局部等待 continuation。2025-08-09 写“$ETH/USD ATH in the making”，2025-08-27 写“$ETH/USD up 2x, ATH close”，图 7 的 ETH 图在 2022 低点后用上升趋势线、回撤位和突破区构建中期牛市框架。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.71,
+      "evidence": "他也会在下行阶段明确等待更低价或确认，不盲目接刀。2025-02-28 写“How many bottoms has your guru called on the way down yet? Smh $80k BTC atm, almost there.”，2025-03-26 写“as long as price doesn't push above $90k... downside remains likely”，2025-12-15 直接写“Still a falling knife, but we’re getting close to the turn”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.7,
+      "evidence": "这是他公开表达得很强的一条风险原则。2025-12-15 原话“Still a falling knife, but we’re getting close to the turn”，2025-02-28 用“Patience is a virtue”配合等待 $80k BTC，说明他宁愿等更深回撤和确认。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.64,
+      "evidence": "虽然他不常系统讲风控，但明显强调 invalidation 和保护本金。2025-11-28 写“This dip is the first one that invalidated more than 20 update threads”，表明他承认失效并重估；2025-06-27 对 $EVA 写“Told you to take out your initials, now it's a free ride”，体现分批止盈和降低风险。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.58,
+      "evidence": "他没有直接讲“单笔风险 1-2%”，但从表达上有明显仓位管理意识。2025-06-27 写“Added more SOL at $126 Also TPing into stable coin at $2232 Buying spot.”，说明会边加仓边兑现，并偏向现货 swing 而非单纯高杠杆。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.55,
+      "evidence": "他对横盘箱体边界很敏感。图 6 的 SOL 图用大收敛结构与横向黑线区间，等待区间下沿买盘支撑；图 8 的 TAO 图是明显长期通道/箱体上沿目标；多条推文使用“mid range”“range”“retesting key horizontal”。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.54,
+      "evidence": "他大量使用 dominance 框架扩展到山寨轮动。2024-11-30 写“BTC Stables Dominance… Why did I nail every bigcap to the cent”，2025-07-24 写“Bitcoin Stables Dominance”，并把该图作为 ETH、山寨启动的背景确认。严格说不是标准 BTC.D，而是他自创的 stables dominance 轮动框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.51,
+      "evidence": "图 5 在 ETH 图中央明确标注“HTF SL if s/r flip sub POC”，说明他会预判先扫掉高时间框架止损再走真实方向；多张图都用 wick/假跌破后的回收位置作为入场依据。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.48,
+      "evidence": "图 5 右侧直接叠加体积分布/成交密集区，用“sub POC”与价格路径推演说明他会把筹码/止损聚集区当作价格磁铁，虽然不是标准热力图，但逻辑相近。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.47,
+      "evidence": "他经常讨论突破后能否站稳，而不是见突破就追。2025-11-28 写“Three rejections... steep rally is postponed”，2024-10-30 写“possible HTF breakout retest”，2024-08-30 写“Safe entry not triggered yet”，都体现他在过滤假突破。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_sr_flip_throwback",
+      "name": "S/R Flip Throwback Continuation",
+      "name_zh": "支撑阻力翻转回踩延续",
+      "type": "structural_bias",
+      "description": "After a breakout, wait for the old resistance to flip into support, then enter on the throwback if price holds the level.",
+      "description_zh": "突破后不追价，等待原阻力翻为支撑并完成回踩确认，再做趋势延续单。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "trend_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "他推文中几乎把“s/r flip”当成口头禅：2025-08-11“textbook throwback to $112K… after a successful S/R flip”；2025-10-31“$TAO projection aging like wine at $485 after s/r flip”。"
+    },
+    {
+      "proposed_id": "cap_new_descending_broadening_wedge",
+      "name": "Descending Broadening Wedge Continuation",
+      "name_zh": "下降扩张楔延续",
+      "type": "pattern_setup",
+      "description": "A widening, downward-sloping structure that resolves upward as continuation when higher-timeframe trend remains bullish.",
+      "description_zh": "在更高周期偏多背景下，价格形成向下倾斜且振幅扩大的楔形/喇叭口，向上突破后作为延续形态使用。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2025-06-27 原文“Here comes the next very simple pattern -> Descending broadening wedge continuation pattern”；2025-08-09 也写“Just one descending broadening wedge breakout away from continuation”。"
+    },
+    {
+      "proposed_id": "cap_new_parallel_channel_targeting",
+      "name": "Parallel Channel Rotation",
+      "name_zh": "平行通道轮动框架",
+      "type": "structural_bias",
+      "description": "Use long-lived rising or falling channels to buy/support near the lower bound and target the upper bound or midline.",
+      "description_zh": "用长期平行通道判断震荡趋势，在下沿或中线回踩承接，目标看向中线或上沿。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "mean_revert_or_trend_follow",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "图 8 是典型 2 年通道上沿目标；2025-03-26 写“Perfect bounce off the mid-channel trendline and the 200MA on the 3D timeframe”。"
+    },
+    {
+      "proposed_id": "cap_new_poc_volume_profile_confluence",
+      "name": "POC / Volume Profile Confluence",
+      "name_zh": "POC/成交密集区共振",
+      "type": "indicator_rule",
+      "description": "Use point of control and visible-range volume shelves as magnets, rejection zones, and confirmation levels for flips.",
+      "description_zh": "把 POC 与可见区间成交密集带当成价格磁吸位、拒绝位和翻转确认位，与结构位共振使用。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "level_reaction",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "图 5 右侧明确画出体积分布，并标注“HTF SL if s/r flip sub POC”；这不是 seed 中已有能力，但在他的图表框架里很核心。"
+    },
+    {
+      "proposed_id": "cap_new_stables_dominance_rotation",
+      "name": "Bitcoin Stables Dominance Rotation",
+      "name_zh": "BTC 稳定币主导率轮动",
+      "type": "macro_correlation",
+      "description": "Track BTC relative to stablecoin dominance as a cross-market risk appetite and alt rotation proxy.",
+      "description_zh": "用 BTC 相对稳定币主导率作为风险偏好与山寨轮动代理指标，辅助判断何时从 BTC 转向 ETH/山寨。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_on_rotation",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "他在 2024-11-30、2025-03-31、2025-07-24、2025-08-09 多次单独发布“Bitcoin Stables Dominance”并据此解释大盘与山寨走势。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Patience is a virtue.",
+      "rule_paraphrased": "在关键位没有确认前不急着出手，等待价格走到预设区域或完成翻转。",
+      "category": "mantra"
+    },
+    {
+      "quote": "How many bottoms has your guru called on the way down yet?",
+      "rule_paraphrased": "不要在下跌途中连续猜底，底部必须等结构或关键位确认。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Safe entry not triggered yet",
+      "rule_paraphrased": "把激进入场和安全入场分开，未触发确认条件时宁可错过也不提前追。",
+      "category": "framework"
+    },
+    {
+      "quote": "Told you to take out your initials, now it's a free ride.",
+      "rule_paraphrased": "达到首个目标后先回收本金，剩余仓位让利润奔跑。",
+      "category": "framework"
+    },
+    {
+      "quote": "This dip is the first one that invalidated more than 20 update threads, meaning the steep rally is postponed.",
+      "rule_paraphrased": "当核心路径失效时要承认失效，更新脚本而不是死扛原观点。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和常见 CT TA 交易员的区别，在于极度强调“单一路径长期跟踪 + s/r flip 回踩确认”，而不是日内频繁翻多翻空。另一个明显特征是把叙事、基本面和自我品牌包装进纯图表框架里，但真正驱动交易决策的仍然是趋势线、Fib、均线、通道和关键水平位的共振。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "textbook entry",
+      "textbook continuation",
+      "textbook bounce",
+      "playing out perfectly",
+      "ATH in the making",
+      "nailed the swings with precision",
+      "safe entry",
+      "s/r flip",
+      "reclaim",
+      "continuation"
+    ],
+    "low_conviction_phrases": [
+      "best case scenario",
+      "decision time is close",
+      "if this pops up",
+      "not a question of if ... but when",
+      "almost there",
+      "getting ready",
+      "close to",
+      "likely outcome",
+      "for continuation",
+      "safe entry not triggered yet"
+    ]
+  }
+}

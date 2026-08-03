@@ -1,0 +1,206 @@
+{
+  "handle": "CoinHuSays",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "macro",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "LUNC",
+    "DOGE",
+    "PEPE",
+    "SPX",
+    "Gold"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.9,
+      "evidence": "图1明确画出前高水平阻力区，价格突破后回踩该区并尝试把阻力翻成支撑；他自己的文字也写了“BTC bulls trying to flip resistance to support ... nothing conclusive yet”。"
+    },
+    {
+      "id": "cap_026_smc_order_block",
+      "weight": 0.82,
+      "evidence": "图1和图5都用矩形框出关键供需区/回踩区，属于典型的水平订单块/供需带交易，而不是复杂指标体系。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.76,
+      "evidence": "他直接把 BTC 与 SPX 对比：\"If this is 2025 again, why is BTC still here? BTC was already making new ATHs at this level of retracement (786 fib) on SPX in 2025\"；图4也是单独拿 SPX 周线和均线结构做风险偏好判断。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.74,
+      "evidence": "推文写道：\"nasdaq just closed back above its 20WMA for the first time in 10 weeks\"；图4也重点展示价格重新站回周线均线带上方。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.68,
+      "evidence": "图4中 SPX 从均线区域强势反弹，属于典型趋势内回踩均线后延续；他对 BTC 的口径也是“early stages of a recovery, similar to what we saw in February 2023”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.67,
+      "evidence": "他说：\"probably chops around all weekend, will assess on Monday how the weekly closed\"，说明他会先识别周末震荡/无结论环境，再等周线收盘确认。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.65,
+      "evidence": "“$BTC likely already bottomed and is now attempting to break key high-timeframe resistance. We're in the early stages of a recovery” 这是明确的趋势由弱转强/进入上升阶段的框架表达。"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.55,
+      "evidence": "他在 2026-04-11 明说：\"支撑在2h布林下轨71500附近，压力在蝙蝠形态75000附近\"，说明布林带至少是他短线支撑/波动边界判断的工具之一。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.54,
+      "evidence": "他会把链上/交易所流向当作价格驱动解释：\"US GOVERNMENT JUST MOVED SEIZED BITCOIN ... sent to Coinbase Prime ... Moves like this usu...\"；同时图3用 Arkham 钱包流向截图配 BTC K 线，说明他在看大额转账与交易所流向。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.53,
+      "evidence": "他多次做 BTC 与山寨相对强弱判断：\"Other than $BTC, every other coin looks like it's dying. Crypto still needs one more low.\"；随后又说“现在就等狗狗币大暴发了吧 山寨行情很快到来”，明显在做主导权切换/山寨季触发判断。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.51,
+      "evidence": "他反复强调等企稳和确认：\"目前出现止跌迹象，我的空单已平，目前空仓等信号\"、\"企稳就在这一两天了，大家要注意好\"，而不是一路下跌中盲目抄底。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.79,
+      "evidence": "风控表达非常直接：\"如果跌破70,000我就止损，拜拜\"、\"想做多 不论是现货还是合约请都带好止损。就是赌，赌对了就吃一波大的，赌错了就立马认错止损。不要恋战\"。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.42,
+      "evidence": "图1 在关键阻力翻支撑位置用圆圈标记长下影/拒绝动作，再配合箭头说明确认，是典型的关键位 rejection 读法。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.36,
+      "evidence": "他在 PEPE 推文里说“With the latest ETF news, the best is yet to come imo”，说明虽然不是核心框架，但会把 ETF 相关资金/叙事当成风险偏好顺风。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_coinbase_premium_thrust",
+      "name": "Coinbase Premium Thrust",
+      "name_zh": "Coinbase 溢价脉冲",
+      "type": "onchain_signal",
+      "description": "Use spikes in Coinbase Premium / Coinbase spot-led buying as a real-time proxy for US institutional demand and short-term trend confirmation.",
+      "description_zh": "把 Coinbase 溢价或 Coinbase 现货主导买盘的突然抬升，当作美国机构需求与短线趋势确认信号。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "他写过“$BTC $ETH Mencetak titik tertinggi di coinbase premium index sejak Desember 2025”以及“Coinbase 一口气买了12000枚”。"
+    },
+    {
+      "proposed_id": "cap_new_weekly_close_gatekeeper",
+      "name": "Weekly Close Gatekeeper",
+      "name_zh": "周线收盘确认闸门",
+      "type": "risk_rule",
+      "description": "Delay directional commitment until the weekly candle closes above or below the contested HTF level; treat weekend price action as provisional.",
+      "description_zh": "在高时间框架关键位附近，先不急于下结论，等周线收盘后再决定方向，把周末波动视为暂时性噪音。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "“probably chops around all weekend, will assess on Monday how the weekly closed”。"
+    },
+    {
+      "proposed_id": "cap_new_rotation_simple_exam",
+      "name": "Simple Market Rotation Filter",
+      "name_zh": "最简单卷子轮动筛选",
+      "type": "framework",
+      "description": "Choose the cleanest market and cleanest instrument rather than forcing trades in a messy tape; rotate from crypto to stocks or gold when those offer clearer setups.",
+      "description_zh": "优先交易最清晰的市场和最简单的品种，不在难做的环境里硬做；必要时在加密、股票、黄金之间轮动寻找最容易的一张卷子。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "“交易就是找最简单的卷子来做 同一个市场找最简单的品种，不同的市场找最简单的市场道理是一样的 这几天在加密上亏的，在黄金上都赚回来了”。"
+    },
+    {
+      "proposed_id": "cap_new_whale_tape_storytelling",
+      "name": "Whale Flow Narrative Fusion",
+      "name_zh": "巨鲸流向叙事融合",
+      "type": "onchain_signal",
+      "description": "Fuse wallet transfer screenshots, exchange flow data, and price candles into a directional narrative about hidden accumulation, distribution, or manipulation.",
+      "description_zh": "把钱包转账截图、交易所流向和价格 K 线结合起来，构造关于吸筹、派发或操纵的方向性叙事。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "event_driven",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.6
+      },
+      "example_evidence": "图3把 BTC 图表与 Arkham 流向并列；推文写“BITCOIN IS BEING MANIPULATED AND I HAVE 100% PROOF!! ... I connected th...”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "BTC bulls trying to flip resistance to support  good effort thus far but nothing conclusive yet  probably chops around all weekend, will assess on Monday how the weekly closed",
+      "rule_paraphrased": "高时间框架关键位先看翻转是否成立，周末不轻易下结论，等周线收盘确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "交易就是找最简单的卷子来做  同一个市场找最简单的品种，不同的市场找最简单的市场道理是一样的",
+      "rule_paraphrased": "只做最清晰、最容易的 setup，不在噪音市场里硬交易。",
+      "category": "mantra"
+    },
+    {
+      "quote": "交易有三个方向：做多，做空，不做。第3个才是被大多数人忽略的。",
+      "rule_paraphrased": "空仓也是主动决策，没优势时不交易。",
+      "category": "framework"
+    },
+    {
+      "quote": "如果跌破70,000我就止损，拜拜",
+      "rule_paraphrased": "预设失效位，触发即离场，不做拖延解释。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "做交易中，学习技术的唯一的好处就是最终发现不用学习技术  也不需要学习技术  但是你不学技术你真的不知道无需学习技术",
+      "rule_paraphrased": "技术分析对他更像是训练直觉和筛选框架，最终目标不是堆更多指标，而是更少更直接地决策。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯粹的指标派，更像“水平位结构 + 宏观风险偏好 + 资金流叙事”的混合型交易员。图表上偏爱简单矩形区间、阻力翻支撑、周线均线与收盘确认，表达上又经常把链上大额流向、Coinbase 溢价和叙事热度揉成一个强传播性的交易故事。和常规 TA 号不同，他明显有内容创作者属性，愿意做高 Beta 的 meme/社区叙事，但真正下交易判断时仍保留‘等确认、设止损、可以不做’的底层风控。 ",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "likely already bottomed",
+      "will shock the world",
+      "ISN’T A DREAM, IT’S DESTINY",
+      "God candle is loading",
+      "企稳就在这一两天了",
+      "只做多不做空了"
+    ],
+    "low_conviction_phrases": [
+      "nothing conclusive yet",
+      "probably chops around all weekend",
+      "could reach",
+      "预计",
+      "大概率",
+      "真不好说。只能边走边看了"
+    ]
+  }
+}

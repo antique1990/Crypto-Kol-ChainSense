@@ -1,0 +1,189 @@
+{
+  "handle": "Engineercryptoo",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "content_creator",
+    "contrarian",
+    "structural"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "TAO",
+    "SOL",
+    "MYRO",
+    "ZEC",
+    "memecoins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.82,
+      "evidence": "他大量用“趋势中回踩后继续”的框架。例子包括 [2026-04-09] “$TAO Summer is loading” 配图里 TAO 日线仍站在 MA5/10/30 之上；[2024-08-27] “$btc is all good till the time it holds 60k support”；[2026-04-11] “BTC added over $7,000 in just 2 weeks.”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.8,
+      "evidence": "他默认先判断是否处于强趋势，然后顺势表达高目标。例子有 [2026-04-11] “The run to $200,000 $BTC has started”；[2026-04-11] “$ZEC at #18 now I would say top 10 coming soon.” 图 1、图 7 也都在强调高低点抬升后的延续。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.74,
+      "evidence": "他反复讲“range bound play / hold the range / scalp both directions”。如 [2024-08-31] “$BTC... doing range bound play... retailers will be chased in both long and short”；[2025-02-23] “still a range bound play”；[2026-01-27] “currently its in range bound market from $84k to $94k You can scalp the range”。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.69,
+      "evidence": "[2026-04-11] 明确写 “$BTC/weekly A simple W-Bottom on the weekly chart could send #Bitcoin back to $80k.” 图 7 也是标准 W 底/双底后的上攻示意。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.67,
+      "evidence": "他常把走势解释为主力扫流动性后再走真实方向。例子有 [2024-12-08] “whales... wanted to take the market up, but first, they...” 暗示先清洗弱手；[2024-08-31] “retailers will be chased in both long and short”；[2025-02-17] 做空 LIBRA 时说 “Never repeat same market mistake again which crypto retail does every time”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.64,
+      "evidence": "他对瀑布行情的直觉很强。图 4 是 TAO 短时间 -17% 暴跌截图；[2026-04-10] “TAO is nuking. Any news?!”；同日又发 “guys will see stocks collapsing, crypto nuking... and decide to fullport neet”，明显是在警惕无确认抄底。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.62,
+      "evidence": "他频繁用 BTC.D 解释山寨轮动。例子有 [2025-01-29] “Dominance is near 60% Bitcoin dominance is rising, putting pressure on altcoins”；[2024-11-21] “Why are your alts not moving even though Bitcoin is making new ATH...”；[2024-11-27] “This is the range in which your Alts will start flying”。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.57,
+      "evidence": "[2025-03-25] 明确写 “After over two months of consolidation within a falling wedge pattern, #Bitcoin is now attempting a breakout!” 这是他直接点名使用的经典形态。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.55,
+      "evidence": "他经常强调破位失败和假动作。例子有 [2024-07-23] “$BTC tried to break $71k but failed”；[2025-03-07] “support level... has been broken. Now we need to see the new range support”；[2024-05-30] 说价格若不能突破关键位就保持谨慎。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.53,
+      "evidence": "虽然整体风格激进，但他会反复提示减小仓位。例子有 [2024-11-24] “Buy with proper risk management, small size bag only”；[2025-01-31] “This is simply a hype play, so invest less in this”；[2025-02-13] “play safe... invest small”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.51,
+      "evidence": "他的执行话术经常是快进快出、分批止盈、保护本金。例子有 [2024-12-10] “Small quantity only, laverage high Manage risk accordingly”；大量推文反复写 “Do book profit” 和 “hold rest”。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.33,
+      "evidence": "他会跟踪宏观事件，但不是主要框架。例子有 [2026-03-18] “FED LEAVES RATES UNCHANGED AT 3.5-3.75%.”；也会把新闻驱动与 BTC/加密方向联动。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.29,
+      "evidence": "宏观流动性并非主轴，但他明显有“政策/流动性影响加密”的意识，例如对 FED、风险资产和 world events 的反应性发言，属于辅助确认层。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_exchange_listing_liquidity_catalyst",
+      "name": "Exchange Listing And Liquidity Catalyst",
+      "name_zh": "交易所上币/流动性催化",
+      "type": "event_reaction",
+      "description": "Trade around exchange listings, launchpool announcements, liquidity-boost programs, or added market-maker support as near-term catalysts for altcoin momentum and repricing.",
+      "description_zh": "围绕交易所上币、Launchpool、公示流动性增强计划、做市支持等事件做催化交易，预期短期成交量和估值重定价。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_on_listed_asset",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "[2026-04-11] “Binance Updates the Spot Altcoin Liquidity Boost Program!”；大量历史推文围绕 “KuCoin listing might be coming”, “Launchpool”, “Binance Futures Will Launch...” 展开交易。"
+    },
+    {
+      "proposed_id": "cap_new_meme_rotation_ecosystem_beta",
+      "name": "Ecosystem Meme Rotation Beta",
+      "name_zh": "生态 Meme 轮动 Beta",
+      "type": "structural_bias",
+      "description": "When a base ecosystem coin trends strongly or approaches major highs, rotate into smaller ecosystem memes expected to lag and then catch up.",
+      "description_zh": "当某条公链主币强势或接近新高时，切换到该生态内更小市值 meme/次级资产，博弈补涨轮动。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_on_ecosystem_alts",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2024-03-30] “$MYRO... $sol memes exploding”；[2024-11-18] “$HUND... $sol close to its ATH so its meme will print higher”；这类“主链强 -> 生态 meme 补涨”在他内容里反复出现。"
+    },
+    {
+      "proposed_id": "cap_new_headline_screenshot_momentum",
+      "name": "Headline Screenshot Momentum Trading",
+      "name_zh": "新闻截图动量交易",
+      "type": "event_reaction",
+      "description": "Use fast-moving screenshots of headlines, papers, announcements, or viral news as immediate narrative fuel to reassess positioning before the broader market digests the information.",
+      "description_zh": "用新闻标题截图、论文截图、公告截图等高传播素材，快速捕捉市场尚未完全消化的叙事驱动并重估仓位。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "news_dependent",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.61
+      },
+      "example_evidence": "图 2 是量子安全 Bitcoin 论文截图，图 8 是 Binance Announcement 封面，图 3 是 Binance Research 成交量图；他的高互动内容常直接由截图驱动。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "what is swing trading? not chasing every move, just holding long enough to catch the ones that matter",
+      "rule_paraphrased": "不要追每一根 K，抓大段有效波动才是核心。",
+      "category": "framework"
+    },
+    {
+      "quote": "Trade without a strategy= Gambling.   Trade + Strategy= Preparation.  Trade + Strategy + Risk management= Intention.  Trade + Strategy + Risk management + Consistent discipline= Big Success.",
+      "rule_paraphrased": "交易必须是“策略 + 风控 + 纪律”的组合，不是单点预测。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The most important rule in trading;  Never force a trade.  If you're insure, wait.  Trading is;  - 90% patience - 10% execution",
+      "rule_paraphrased": "不确定就不做，耐心比执行更重要。",
+      "category": "mantra"
+    },
+    {
+      "quote": "guys will see stocks collapsing, crypto nuking & world war 3 pending and decide to fullport neet",
+      "rule_paraphrased": "极端风险环境里最忌讳满仓冲动交易。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "I been holding $tao for 3+ years, my biggest bag by far. Staking & chilling since, probably up a house in staking rewards.   I don’t even pay attention to the daily swings like most tourists.",
+      "rule_paraphrased": "对高 conviction 仓位愿意长期持有，不被短期波动洗掉。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯图表派，而是把零售传播型内容、新闻截图、上币/公告催化和经典 TA 混合在一起用。高时间框架上会对 BTC、TAO 这类标的持有很强方向性信念，但执行层又大量输出短线 scalp、range 交易和 meme 轮动。相比常规 TA 交易员，他对“交易所事件催化”和“叙事传播速度”依赖更高，内容分发本身也是其交易框架的一部分。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "The run to $200,000 $BTC has started",
+      "Summer is loading",
+      "trend is downside only",
+      "top 10 coming soon",
+      "this is only a warm up",
+      "nuking",
+      "will print higher",
+      "massive profit",
+      "still has a lot of juice"
+    ],
+    "low_conviction_phrases": [
+      "Interesting",
+      "could send",
+      "I would say",
+      "probably",
+      "if able to",
+      "currently not excited unless",
+      "i expect",
+      "might be coming"
+    ]
+  }
+}

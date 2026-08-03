@@ -1,0 +1,187 @@
+{
+  "handle": "algerstmehn",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "structural",
+    "cycle",
+    "contrarian",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "ALGO",
+    "HBAR",
+    "ADA",
+    "XRP",
+    "BTC",
+    "USDC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.62,
+      "evidence": "他反复把 ETF/机构入口当成价格催化剂来讲：如 [2025-10-28] “Big day for $HBAR with the launch of their first ETF” 和图6“HBAR ETF ✅”、图7“ALGO ETF ⏳”。这不是盘口/形态交易，而是典型的机构资金入口叙事。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.78,
+      "evidence": "他持续跟踪稳定币与支付基础设施扩张：[2024-08-30] “100M $USDC from @circle will soon be in circulation (natively) on #Algorand”，[2025-09-30] 提到 Allbridge + Circle Alliance Program，图5 也是 Pera Mastercard + 稳定币支付的采用场景。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.71,
+      "evidence": "他非常爱用强趋势/强动量语言：[2024-11-29] “This is just the beginning!”, [2026-04-01] “$ALGO momentum is REAL! 🔥”, [2025-08-24] “$ALGO is now the #1 daily performer in the entire CMC top 100!”；图4直接用 90 天涨幅榜做相对强弱展示。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.57,
+      "evidence": "他会用历史周期类比做中期仓位论证：[2024-12-27] “Today is December 27, 2024... Less than two months later, $ALGO hit $1.80. I think history will repeat itself” ，明显是拿上一轮周期映射当前阶段。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.34,
+      "evidence": "虽然不系统讲减半模型，但他多次以“bull run might be about to start”“upcoming bull run”“before EOY”来定位阶段性牛市窗口，如 [2024-09-27] “The bull run might be about to start” 与 [2024-10-28] “potential upcoming bull run”。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.53,
+      "evidence": "[2024-11-29] “Never fade Dino coins. Never! 🦖  $ADA $ALGO $HBAR $XRP $BTC” 配图4把 ADA/ALGO/HBAR/XRP 的 90 天表现与 BTC 对比，本质上是在做老牌 L1/支付叙事篮子相对 BTC 的轮动判断。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.48,
+      "evidence": "除 ETF 外，他还把交易所上线、钱包接入、银行卡、桥接、RWA 分类纳入同一类“资金入口催化”框架：[2025-03-28] “$ALGO is now supported on @wallet_tg!”, [2025-01-31] “$ALGO is listed in the RWA category on @coingecko and @CoinMarketCap.”"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.29,
+      "evidence": "他经常用流通供给与锁仓/staking 约束来构建长期看多基础：[2025-01-29] “84% of Algorand's max supply... Only 16% remains to be released by 2030” 和 [2025-06-25] “23% of the circulating supply staked”。虽然不是严格链上持币龄指标，但属于供给面长期持有叙事。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.12,
+      "evidence": "没有看到他系统性发 MA 图，但其用语经常把“收复/启动/趋势确认”当作节点，例如 [2024-11-29] “Next target: $0.50 before EOY” 与 [2025-08-24] “just broke its 2021 ATH”，说明他会把关键价位突破当成确认，而不是单纯抄底。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.1,
+      "evidence": "宏观框架在样本里极弱，但他会偶尔把监管、美国 HQ、机构入口、传统支付替代叙事拼成 risk-on 环境判断，如 [2025-11-30] “moving HQ to the US in 2026” 与多条美国支付/ETF/银行合作主题。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_ecosystem_adoption_scorecard",
+      "name": "Ecosystem Adoption Scorecard",
+      "name_zh": "生态采用记分卡",
+      "type": "structural_bias",
+      "description": "Builds a directional thesis by tallying integrations, real-world users, transaction counts, payment rails, exchange support, and enterprise partnerships rather than relying on chart structure.",
+      "description_zh": "通过整合接入数、真实用户数、链上交易量、支付通道、交易所支持和企业合作来建立方向性看多框架，而不是依赖 K 线形态。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "[2026-03-31] “3.5B transactions... 100% uptime... Zero failed transactions”；[2025-03-24] “over $965M in assets on-chain”；图5展示 Pera Card 的支付落地。"
+    },
+    {
+      "proposed_id": "cap_new_infra_quality_benchmark",
+      "name": "Infrastructure Quality Benchmarking",
+      "name_zh": "基础设施质量对标",
+      "type": "structural_bias",
+      "description": "Ranks chains by uptime, finality, validator distribution, fees, scalability, and post-quantum readiness, then uses that benchmark as a valuation gap thesis.",
+      "description_zh": "按 uptime、终局性、验证者分布、费用、扩展性、抗量子能力对公链做横向质量评分，并把“质量高但估值低”当成交易逻辑。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-08-25] “100% uptime... 15,000 TPS with instant finality... Decentralized”; [2026-04-06] “Whatever you look at tech, UX, decentralization... Algorand is SO underrated.”"
+    },
+    {
+      "proposed_id": "cap_new_narrative_catalyst_calendar",
+      "name": "Narrative Catalyst Calendar",
+      "name_zh": "叙事催化日历",
+      "type": "event_reaction",
+      "description": "Trades around a rolling calendar of upcoming launches, partnerships, listings, roadmap reveals, and product releases, expecting repricing before and after the event.",
+      "description_zh": "围绕即将到来的发布、合作、上所、路线图和产品上线做前置布局，预期事件前后产生重新定价。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "[2024-10-29] “still planned before EOY!”；[2025-06-27] “Just 4 days to go before the announcement of a major new interoperability partnership”；[2025-07-29] “D-2 before the Algorand roadmap!”"
+    },
+    {
+      "proposed_id": "cap_new_relative_strength_theme_basket",
+      "name": "Theme Basket Relative Strength",
+      "name_zh": "主题篮子相对强弱",
+      "type": "structural_bias",
+      "description": "Creates a thematic basket such as legacy L1s, ISO 20022 tokens, or 'dino coins' and compares its relative momentum against BTC or the wider market.",
+      "description_zh": "把老牌 L1、ISO 20022 或“dino coins”组成主题篮子，观察其相对 BTC 或全市场的强弱变化来做轮动判断。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2024-11-29] “Never fade Dino coins. Never! 🦖” 配图4展示 ADA/ALGO/HBAR/XRP 90 日涨幅大幅跑赢 BTC。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Never fade Dino coins. Never! 🦖",
+      "rule_paraphrased": "不要低估老牌主流公链/支付叙事币的补涨和再定价能力。",
+      "category": "mantra"
+    },
+    {
+      "quote": "$ALGO is a no-brainer",
+      "rule_paraphrased": "把自己覆盖的核心标的视作高胜率、无需复杂解释的长期持有选择。",
+      "category": "framework"
+    },
+    {
+      "quote": "This is just the beginning!",
+      "rule_paraphrased": "强势启动后默认趋势尚未走完，倾向顺势放大利润而不是过早兑现。",
+      "category": "mantra"
+    },
+    {
+      "quote": "You're still early.",
+      "rule_paraphrased": "即便价格已上涨，只要基本面/叙事扩散尚未完成，仍视为中早期阶段。",
+      "category": "framework"
+    },
+    {
+      "quote": "Don't pay too much attention to short-term price action. There's no logic to be found, the market does what it wants.",
+      "rule_paraphrased": "短线噪音不可解释时，回到中长期叙事与采用数据，不为短期波动改变核心 thesis。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和典型 TA 交易员最大的不同，是几乎不用公开的 K 线结构证明观点，而是用“采用数据 + 基础设施质量 + 催化日历 + 社区情绪图像”来驱动仓位叙事。图像样本里也几乎没有标准 K 线，更多是相对表现图、ETF/支付入口视觉、社区 meme，这说明他更像 narrative allocator / ecosystem promoter，而不是纯图表派。其 alpha 来源主要是对 Algorand 及相关老牌支付叙事资产的长期、高信念再定价下注。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "no-brainer",
+      "This is just the beginning",
+      "You're still early",
+      "Probably nothing",
+      "SO underrated",
+      "absolutely massive",
+      "momentum is REAL"
+    ],
+    "low_conviction_phrases": [
+      "IMO",
+      "I think",
+      "looks like",
+      "could",
+      "probably",
+      "NGL",
+      "I genuinely wonder"
+    ]
+  }
+}

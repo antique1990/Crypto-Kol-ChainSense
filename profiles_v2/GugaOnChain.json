@@ -1,0 +1,212 @@
+{
+  "handle": "GugaOnChain",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "macro",
+    "derivatives",
+    "risk_first",
+    "structural"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.93,
+      "evidence": "反复把交易所净流入/鲸鱼入所当成抛压核心信号，例如 [2026-02-23] “Whales Dominate Exchange Deposits, Triggering Bitcoin Alert”；[2026-04-06] “capital flow”；[2026-03-30] “Smart Money moveu $3 bi para exchanges”。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.8,
+      "evidence": "多次强调强手/矿工不卖形成托底，例如 [2026-04-01] “Mineradores seguem segurando seus estoques”；[2025-12-17] “miners hold the line with a long-term view”；[2026-04-05] 标题直接写 “the Silence of 'Strong Hands'”。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.83,
+      "evidence": "ETF 资金流是他分析 BTC 方向的高频变量，例如 [2025-11-22] “Record Bitcoin ETF Outflows Expose Retail Investor Exodus”；[2026-01-25] “Bitcoin ETFs Register Record Outflow”；[2026-01-19] “Spot ETF AUM Maintains $124B Level”。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.74,
+      "evidence": "高度关注 OI/价格背离和仓位堆积，例如 [2026-03-30] “Binance OI drops -2.13% ($6.23B), but Funding ... shows pressure on longs”；[2025-11-20] “The 11.32% drop in open interest ...”；[2026-04-09] “Low-volume rally is attracting sellers”。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.76,
+      "evidence": "经常把高资金费视为多头拥挤和挤压风险，例如 [2026-03-30] “High Funding Rates Signal Pressure”；[2026-04-08] “Long Squeeze Risk”；[2026-03-30] “Funding ... shows pressure on longs”。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.46,
+      "evidence": "虽然更多写多头拥挤，但他也使用 squeeze 视角理解反向逼仓，例如 [2026-04-10] “BTC: Binance Squeeze Risk Oscillator signals momentum for higher levels in the short term”。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.68,
+      "evidence": "语言里经常出现被动扫流动性/flash crash/long squeeze 的路径推演，例如 [2026-03-31] “$65k support a Flash Crash target”；[2026-04-08] “Long Squeeze Risk”；这和清算磁吸框架一致。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.58,
+      "evidence": "重大宏观事件周显著降风险，例如 [2025-12-10] “Pre-FOMC: Bitcoin Reactions to Fed Rate Cuts”；[2026-01-26] “Super Wednesday”；[2026-03-27] “O momento agora é de Proteção de Capital”。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.55,
+      "evidence": "明确跟踪资金从 BTC 偏离到黄金的避险切换，例如 [2026-01-16] “Where is Institutional Capital? The Deviation to Gold”；[2026-01-18] “The Missing Link: How the Yen's Collapse Sustains the 'Deviation to Gold'”；[2026-01-25] “Silver Hits Record ... Gold Approaches US$5K”。"
+    },
+    {
+      "id": "cap_064_credit_spreads_widening",
+      "weight": 0.36,
+      "evidence": "虽然不直接频繁点名信用利差，但其宏观风险框架明显围绕风险关闭/流动性收缩，例如多次使用 “Risk On / Risk Off”“macro fragility”“capital protection” 来判断 BTC 脆弱性。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.63,
+      "evidence": "稳定币流向是其交易所流动性框架的重要组成，例如 [2026-03-31] “-$177M de USDT saíram das exchanges! ... 'vitrine esvaziada'”；[2026-01-31] “Billion-Dollar Adoption of Stablecoins in Asia”。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.22,
+      "evidence": "极少数提到板块轮动和 AI/DePIN，但不是核心框架，例如 [2025-12-05] “AI sector grows 32% in 30 days”；[2026-04-10] “$RENDER vs $HNT”。更多是旁支，不是主线。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.79,
+      "evidence": "他非常重视高波动环境中的防守与脆弱性，例如 [2026-03-27] “Proteção de Capital”；[2026-03-31] “Low exchange liquidity makes $65k support a Flash Crash target”；[2026-04-08] “Phantom Leverage ... Long Squeeze Risk”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.57,
+      "evidence": "经常用结构支撑/阻力箱体来描述当前市场，例如 [2026-02-27] “Support at $60K, Resistance at $70K: The Duel That Defines Bitcoin”；[2026-03-25] “$70K ... $60K ... $54K” 的层级支撑。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.71,
+      "evidence": "他不是激进抄底型，遇到宏观灰犀牛/流动性恶化时倾向先保护资本，例如 [2026-03-27] “O momento agora é de Proteção de Capital”；[2026-04-09] 低量反弹吸引卖盘；[2026-04-08] 提醒 long squeeze 风险。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.49,
+      "evidence": "虽少见具体止损参数，但整体叙事明显偏风险控制优先，频繁使用 tactical vulnerability、capital protection、fragility 等术语，说明其执行上强调防守和快速承认脆弱结构。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_otc_absorption_dominance",
+      "name": "OTC absorption dominance",
+      "name_zh": "OTC 吸筹主导度",
+      "type": "onchain_signal",
+      "description": "When OTC share of traded or absorbed supply rises sharply while exchange float shrinks, interpret it as institutional absorption supporting price but also reducing visible liquidity and increasing air-pocket risk.",
+      "description_zh": "当 OTC 份额显著上升、交易所可见流通量下降时，视为机构在场外吸筹；这既能形成价格底座，也会让盘面流动性变薄、增加快速插针风险。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_structural_but_fragile_tactically",
+        "horizon": "swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "[2026-03-29] “With 90.23% OTC dominance and record capitulation ... Smart Money locks supply”；[2026-03-30] “On exchanges, only $761M (6.17%) remain”。"
+    },
+    {
+      "proposed_id": "cap_new_structural_floor_ladder",
+      "name": "Structural floor ladder",
+      "name_zh": "结构底价阶梯",
+      "type": "structural_bias",
+      "description": "Build a multi-level downside map using institutional cost basis and proprietary on-chain valuation bands, distinguishing structural support, cyclical bottom, and absolute capitulation floor.",
+      "description_zh": "用机构成本区和链上估值带构建多层下行地图，区分结构支撑、周期底和极端投降底，而不是只给单一目标位。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral_to_bullish_above_floor",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2026-03-25] “$70K: New institutional re-pricing support. $60K: Current cyclical Bottom ... $54K: Absolute ...”；[2026-03-23] “Liquidity ladder: $65k, $60k ...”。"
+    },
+    {
+      "proposed_id": "cap_new_empty_storefront_liquidity",
+      "name": "Empty storefront liquidity warning",
+      "name_zh": "空橱窗流动性预警",
+      "type": "derivatives_signal",
+      "description": "If price holds up or rallies while exchange liquidity and stablecoin inventory drain, treat the move as tactically vulnerable because shallow books can amplify squeezes and flash moves.",
+      "description_zh": "如果价格维持或上涨，但交易所流动性和稳定币库存同步流失，则把行情视为战术上脆弱；浅盘口会放大挤压与闪崩。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish_tactical",
+        "horizon": "intraday",
+        "confidence_base": 0.75
+      },
+      "example_evidence": "[2026-03-31] “-$177M de USDT saíram das exchanges ... 'vitrine esvaziada'”；[2026-03-31] “Low exchange liquidity makes $65k support a Flash Crash target”。"
+    },
+    {
+      "proposed_id": "cap_new_geopolitical_stress_test",
+      "name": "Geopolitical stress test",
+      "name_zh": "地缘冲击压力测试",
+      "type": "macro_correlation",
+      "description": "Assess Bitcoin by asking whether on-chain absorption and institutional support can withstand exogenous shocks such as oil spikes, war headlines, or cross-asset flight-to-safety.",
+      "description_zh": "用“地缘冲击压力测试”来评估 BTC：当油价飙升、战争升级、跨资产避险发生时，链上吸收和机构支撑能否承受外生冲击。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_off_unless_absorption_confirms",
+        "horizon": "macro",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2026-03-29] “The Ghost of 1973: Oil at $100 is BTC's 'Trial by Fire'”；[2026-04-06] “Bitcoin Tests $70K Amid Geopolitical Tension”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Nominal price is noise; structural value is the compass.",
+      "rule_paraphrased": "不要被现价噪音带着走，先找结构价值锚点，再做方向判断。",
+      "category": "framework"
+    },
+    {
+      "quote": "O momento agora é de Proteção de Capital.",
+      "rule_paraphrased": "宏观灰天鹅或流动性恶化时，优先保护本金而不是强行交易。",
+      "category": "mantra"
+    },
+    {
+      "quote": "BTC at $67.9k and '0' signal (Risk On) suggest appetite, but -$177M Netflow reveals an \"empty storefront.\"",
+      "rule_paraphrased": "即便表面是 risk-on，也要检查交易所流动性是否空心化；价强不代表结构健康。",
+      "category": "framework"
+    },
+    {
+      "quote": "The Myth of a Weak Dollar Boosting Bitcoin: Understanding What Really Matters",
+      "rule_paraphrased": "反对单因子宏观叙事，不接受“美元弱所以 BTC 必涨”这种粗糙相关性。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Phantom Leverage: Bitcoin's Rally to $71K Masks Liquidity Exhaustion and 'Long Squeeze' Risk",
+      "rule_paraphrased": "上涨本身不是看多理由；若杠杆堆积而流动性枯竭，反而要优先防 squeeze。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不像传统 TA 交易员那样以 K 线形态为中心，而是把 BTC 看成一个由链上流向、OTC 吸收、交易所库存、稳定币流动性和宏观冲击共同决定的“流动性系统”。他的特色是把机构吸筹与脆弱盘口并置分析：同一组数据既能说明中期底部稳固，也能说明短线极易发生 squeeze 或 flash crash。语言上经常构建“结构底座 + 战术脆弱性”的双层框架。",
+  "risk_style": "conservative",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "confirms",
+      "cements",
+      "structural floor",
+      "defines Bitcoin",
+      "reveals",
+      "signals momentum",
+      "proves Smart Money is absorbing panic"
+    ],
+    "low_conviction_phrases": [
+      "suggest",
+      "could",
+      "risk",
+      "vulnerable",
+      "masks",
+      "fragility",
+      "trial by fire"
+    ]
+  }
+}

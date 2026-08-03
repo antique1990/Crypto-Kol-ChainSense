@@ -1,0 +1,193 @@
+{
+  "handle": "TraderMercury",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "structural",
+    "risk_first",
+    "contrarian",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "ETHBTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.98,
+      "evidence": "他直接说过“Master buying reclaims.”；附图 5-8 的核心框架就是“1. Market Structure Shift 2. Reclaim of Key Level 3. Reclaim of Key Trend”，且图中明确画出均线被重新收回后再转强。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.9,
+      "evidence": "多次强调趋势回踩后继续：2024-05-31 提到“as long as 4H 200MAs hold we still threaten new ATHs”；2024-07-30 说“retesting the same trend that started this rally... hold this region as a Higher Low”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.92,
+      "evidence": "他长期默认牛市延续，常用词是“higher”“chop, then higher”“slow-grind upwards thing... before the next leg higher”；2024-03-31 明说“no structures are broken. no trends have been lost. we still threaten price discovery”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.82,
+      "evidence": "他非常重视震荡整理作为后续燃料：2024-10-30 “gonna dress up as an 8-month range for Halloween”；2025-04-30 “same playbook on repeat chop, then higher”；2025-07-31 “large consolidations have more frequently served as fuel for the next rally higher”。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.76,
+      "evidence": "虽然长期偏多，但他会明确承认下行 regime：2025-03-31 “stocks losing a 2-year trend not great.”；2026-03-30 “pretty significant trend breakdown for stocks bounces moving forward will be 'bearish retests' by default”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.88,
+      "evidence": "图 6-8 的完整教育逻辑就是：不要在下跌中脑补底部、不要在下跌里 DCA，等市场结构扭转和 reclaim；2026-04-06 也说“it's no longer an incentivizing reward to be speculating on bottoms”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.86,
+      "evidence": "2025-03-29 直接说“your number one priority should be capital preservation at all times”；2025-03-28 “took a few scratches on trades back to doing nothing.”，体现小亏离场、等更好机会。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.63,
+      "evidence": "他反复提醒低波动之后会切换到大波动：2025-12-30 “low volatility is followed by extreme volatility... below $86k, or above $90k, I wouldn’t fade that move”；更偏向先识别波动 regime 再决定参与方式。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.45,
+      "evidence": "2024-07-31 直接说“maybe don’t trade FOMC”，说明事件周会主动规避不必要波动。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.67,
+      "evidence": "他经常用股市趋势做风险偏好过滤器：2025-03-31 “stocks losing a 2-year trend”；2025-10-27 “as long as stocks continue trending higher, there remains a window of opportunity for crypto”；2026-04-08 还发了 $SPY 的 bearish retest 图。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.42,
+      "evidence": "2025-05-29 直接把“global liquidity moving higher”列为看多拼图之一；说明虽自称纯 TA，但会把流动性背景当作顺风确认。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.34,
+      "evidence": "2025-05-29 写过“FTX creditors reimbursed $5B in stablecoins tomorrow... new ATHs on Bitcoin”；2025-07-29 也提 SEC 批准 in-kind redemptions for Crypto ETFs，说明会把 ETF/资金流事件当作催化剂而非核心框架。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.58,
+      "evidence": "他持续观察 ETH/BTC 与 alt 轮动：2024-12-30 “still watching for significant $ETH strength”；2025-08-31 “Ethereum is bouncing but Bitcoin isn’t?”；2025-10-26 说“$ETHBTC - the best proxy for general altcoin market strength”。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.31,
+      "evidence": "虽然不是他最核心的表达，但图 5-7 中多次用带长影线的反转示意来表示下跌末期的拒绝与失败延续，和他偏爱的‘reclaim after rejection’逻辑一致。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.37,
+      "evidence": "图 7 明确标注真正‘ideal buy zone’往往在更深处，暗示先扫流动性再收回；2026-02-25 也提到“deviating back inside the Range Lows allows for a push into Range Highs”，属于假跌破回区间的交易语言。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_reclaim_sequence_framework",
+      "name": "Multi-Layer Reclaim Sequence",
+      "name_zh": "多层收回序列",
+      "type": "structural_bias",
+      "description": "A bullish transition framework requiring a sequence of conditions: market structure shift first, then reclaim of a key horizontal level, then reclaim of a major trendline or moving average. Entries are favored only after these layers align.",
+      "description_zh": "一种偏多转换框架：先出现市场结构转变，再收回关键水平位，随后再收回主要趋势线或均线。只有这些条件按顺序共振时，才视为高质量做多触发。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation_or_reversal",
+        "horizon": "swing",
+        "confidence_base": 0.84
+      },
+      "example_evidence": "图 5 明确写出“1. Market Structure Shift 2. Reclaim of Key Level 3. Reclaim of Key Trend”；2024-12-30 直接说“Master buying reclaims.”"
+    },
+    {
+      "proposed_id": "cap_new_chop_then_higher",
+      "name": "Consolidation As Fuel",
+      "name_zh": "盘整即燃料",
+      "type": "regime_classifier",
+      "description": "In a broader bullish environment, prolonged chop or range action is interpreted less as distribution and more as energy build-up for the next leg higher, unless major structure is lost.",
+      "description_zh": "在更大级别牛市背景下，长时间横盘或震荡更可能被视为下一段上涨前的蓄力，而不是派发；除非关键结构被破坏。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-04-30 “same playbook on repeat chop, then higher.”；2025-07-31 “large consolidations have more frequently served as fuel for the next rally higher.”"
+    },
+    {
+      "proposed_id": "cap_new_relative_strength_in_weak_tape",
+      "name": "Relative Strength During Weak Tape",
+      "name_zh": "弱市中的相对强度筛选",
+      "type": "structural_bias",
+      "description": "When the market backdrop is choppy or bearish, identify assets that refuse to break structure, bounce first, or hold trend better than leaders; those become preferred longs when the tape improves.",
+      "description_zh": "当市场整体偏弱、震荡或下行时，优先筛选那些不破结构、率先反弹、或比龙头更抗跌的资产；一旦大盘环境改善，这些标的会成为优先做多对象。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "selective_bullish",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2024-09-30 讨论某些 alt 在 -3% pullback 中更抗跌；2025-08-31 “Ethereum is bouncing but Bitcoin isn’t?”；2025-10-26 把 ETHBTC 视为整个山寨强弱的最佳代理。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Master buying reclaims.",
+      "rule_paraphrased": "与其猜底，不如等关键位/趋势/均线被市场重新收回后再上车。",
+      "category": "framework"
+    },
+    {
+      "quote": "your number one priority should be capital preservation at all times, but especially during large downtrends",
+      "rule_paraphrased": "大回撤阶段首要目标不是赚快钱，而是先活下来、保住本金与心理状态。",
+      "category": "mantra"
+    },
+    {
+      "quote": "took a few scratches on trades  back to doing nothing.",
+      "rule_paraphrased": "连续小亏后立刻降频，回到观望，不强行交易。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "you likely have no 'edge',  but you may have extraordinary discipline.  suddenly you have an edge.",
+      "rule_paraphrased": "纪律本身就是核心 edge，尤其在大多数人情绪化交易的市场里。",
+      "category": "mantra"
+    },
+    {
+      "quote": "overtrading will be most people’s downfall",
+      "rule_paraphrased": "过度交易会扭曲持仓质量与卖点判断，是他明确反对的行为模式。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他虽然自称“purely a TA guy”，但并不是传统只画形态的 TA，而是把“结构切换 + reclaim + 情绪/心理纪律”绑定成一个完整框架。与很多纯图形派不同，他大量讨论参与者心理创伤、错失恐惧、熊市后遗症，并把这些当成交易边际的一部分。整体上他长期偏多，但不是无脑看多，而是强调先保护资本、等待趋势重新站回关键位后再放大进攻。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "higher",
+      "nothing changed",
+      "market looks solid",
+      "hope persists",
+      "locked in",
+      "there is no true weakness",
+      "bears are f*cked"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "I think",
+      "probably, maybe, I think",
+      "I would prefer to see",
+      "if we get there",
+      "seems likely"
+    ]
+  }
+}

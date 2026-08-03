@@ -1,0 +1,222 @@
+{
+  "handle": "TechDev_52",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "contrarian",
+    "pure_TA"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ALTCOINS",
+    "BTC.D",
+    "TOTAL2",
+    "TOTAL3"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.98,
+      "evidence": "他反复把“global liquidity”作为 BTC 的先行变量。2025-04-11: “As the business cycle bottoms (red zones), global liquidity leads Bitcoin. Whatever it does, Bitcoin does a few months later.” 2024-07-13: “Global Liquidity ←→ #Bitcoin 3.75 Years.”"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.96,
+      "evidence": "虽然他不一定直接用 PMI，但核心框架就是“business cycle inflection”。2025-10-10: “Always been the business cycle…”；2025-07-25: “Bitcoin tops when it tops. Bitcoin goes parabolic when it inflects.”"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.86,
+      "evidence": "他大量使用“compression -> expansion”叙事。2025-05-23: “We quite literally have never seen altcoin compression like this.” 图4、图6都在画多年压缩后的三角/带状收敛，等待扩张。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.9,
+      "evidence": "他明确把 BTC dominance 作为 altseason 触发器。2024-11-27: “#Bitcoin reaching the green line means it has expanded to the extent where its market cap begins to rotate substantially into #altcoins.” 2026-01-30: “Watch BTC dominance. About to leg down as BTC resets.”"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.84,
+      "evidence": "他不是只看上涨，而是明确区分 ramp phase 与 parabolic phase，并用冲顶条件定义顶部。2025-11-12: “The record long pre-parabolic phase may finally be nearing its end.” 图5/图8中把“Parabolic”单独标成阶段，并以红色峰值定义顶部。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.71,
+      "evidence": "他常用“global risk index turned positive”这类跨资产风险偏好指标来确认加密大行情。2025-09-17: “Bitcoin has never had its hockey stick inflection until this global risk index crossed positive.”"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.66,
+      "evidence": "图6明显是多年上升三角形/压缩末端：上方水平阻力、下方抬高低点，并标注“4 years of compression”。这与他对 altcoin market breakout 的表述一致。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.41,
+      "evidence": "2025-05-20 他直接写: “When cup-and-handles hit with precision. Bitcoin’s turn…” 说明会使用经典延续形态辅助确认。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.74,
+      "evidence": "他持续把市场划分为 bear / pre-parabolic / parabolic / ramp 等阶段，本质上是在做高时间框架 regime classification。图5、图8直接分区标注各阶段。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.34,
+      "evidence": "他频繁讨论传统“4 year cycle”，但主要是拿来修正和反驳。2025-10-10: “Never been a 4 year Bitcoin cycle… Always been the business cycle…” 说明他熟悉这个框架，但不把它当主驱动。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.22,
+      "evidence": "同样地，他经常把减半周期作为市场常识的对照项，但核心观点是减半不是因而是巧合共振。2025-10-10 明确否定“Never been the halving.”"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.28,
+      "evidence": "他大量使用 RSI 极值/通道来标顶部和阶段，但并非标准背离用法。2024-06-24: “A single RSI channel has called every macro $BTC top and bottom.” 更准确地说，这是 RSI 结构通道，不只是背离。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.24,
+      "evidence": "同上，他也用 RSI 的底部极值区来标宏观底，但主要还是通道/状态框架。图5 下方 business cycle signal 与上方价格/阶段联动，偏向多周期状态识别。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.31,
+      "evidence": "图8图例里直接写了“x USD top then red bars top”，说明他把美元周期顶部与 BTC/加密顶部联系起来；这是其宏观框架的一部分，但不如 liquidity/business cycle 核心。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_business_cycle_inflection_engine",
+      "name": "Business Cycle Inflection Engine",
+      "name_zh": "商业周期拐点引擎",
+      "type": "cycle_time",
+      "description": "Model Bitcoin and altcoin major phases from the global business cycle rather than the halving calendar. When the business cycle bottoms and turns up, crypto enters ramp/expansion; when it tops, crypto tops.",
+      "description_zh": "用全球商业周期而不是减半日历来定义 BTC/山寨的大级别阶段。商业周期见底回升时进入爬坡/扩张，商业周期见顶时加密周期见顶。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "macro",
+        "confidence_base": 0.9
+      },
+      "example_evidence": "2025-10-10: “Always been the business cycle…”；2025-07-25: “Bitcoin tops when it tops. Bitcoin goes parabolic when it inflects.”"
+    },
+    {
+      "proposed_id": "cap_new_global_liquidity_breakout_retest",
+      "name": "Global Liquidity Breakout-Retest Lead",
+      "name_zh": "全球流动性突破回踩领先信号",
+      "type": "macro_correlation",
+      "description": "A specific macro trigger where global liquidity breaks out, retests the breakout, then surges higher; Bitcoin and altcoins typically follow with a lag and enter their strongest expansion phase.",
+      "description_zh": "一种特定宏观触发器：全球流动性先突破、再回踩确认、随后继续上冲；BTC 与山寨通常滞后跟随，并进入最强扩张段。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.88
+      },
+      "example_evidence": "2025-03-22: “liquidity retested its breakout and is surging higher… Right as the business cycle bottomed and reversed.” 2025-04-08/04-11 也连续强调 liquidity breakout after retest。"
+    },
+    {
+      "proposed_id": "cap_new_rsi_channel_macro_extremes",
+      "name": "RSI Channel Macro Extremes",
+      "name_zh": "RSI 通道宏观顶底",
+      "type": "indicator_rule",
+      "description": "Use a persistent RSI channel or band structure on higher timeframes to mark macro tops, bottoms, and mid-cycle inflections instead of simple overbought/oversold thresholds.",
+      "description_zh": "在高时间框架上用 RSI 的长期通道/带状结构来标记宏观顶部、底部和中段拐点，而不是简单依赖超买超卖阈值。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "macro",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2024-06-24: “A single RSI channel has called every macro $BTC top and bottom.” 图1也展示了一个沿历史周期重复工作的上方白线/下方震荡结构。"
+    },
+    {
+      "proposed_id": "cap_new_altcoin_compression_release",
+      "name": "Multi-Year Altcoin Compression Release",
+      "name_zh": "多年山寨压缩释放",
+      "type": "pattern_setup",
+      "description": "Detect extreme multi-year compression in the total altcoin market, followed by structural breakout or expansion signal. Used as a precursor to a broad altseason rather than a single-token setup.",
+      "description_zh": "识别山寨整体市值在多年压缩后的结构性突破/扩张信号，作为广义 altseason 的前驱，而不是单个币的形态交易。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "2025-05-23: “never seen altcoin compression like this”; 2025-07-20: “Four years of altcoin compression is releasing.” 图6直接标注“4 years of compression”。"
+    },
+    {
+      "proposed_id": "cap_new_histogram_phase_state_machine",
+      "name": "Cycle Histogram Phase State Machine",
+      "name_zh": "周期柱状图状态机",
+      "type": "indicator_rule",
+      "description": "Interpret custom histogram color and slope changes as discrete market states: bear decline, bottoming, ramp, pre-parabolic, and top. Tops are marked by red-bar peaks; bottoms by green-turn transitions.",
+      "description_zh": "将自定义柱状图的颜色与斜率变化解释为离散市场状态：熊市下跌、筑底、爬坡、准抛物线、顶部。红柱峰值标顶，转绿标底/起涨。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "macro",
+        "confidence_base": 0.87
+      },
+      "example_evidence": "图3、图5、图8都在用同一类红绿柱状 business cycle / impulse 信号；2025-08-21: “Every Bitcoin top was marked exactly by a red bar top. We're not even out of green.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Cycles over news.  Data over emotion.  History over “this time is different”.",
+      "rule_paraphrased": "优先信历史周期与数据，不被当下叙事和情绪带偏。",
+      "category": "mantra"
+    },
+    {
+      "quote": "There is a Bitcoin cycle - just not what many think.  It mirrors the business cycle.",
+      "rule_paraphrased": "BTC 周期存在，但真正的锚不是减半，而是商业周期。",
+      "category": "framework"
+    },
+    {
+      "quote": "No talk of tops until the red line.",
+      "rule_paraphrased": "在其自定义顶部触发线未到之前，不讨论见顶，避免过早做空。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "The highly-levered do not get to ride the bucking bull. It's that simple.",
+      "rule_paraphrased": "大级别牛市可以看对，但高杠杆容易被中途波动甩下车。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Don’t overcomplicate. $BTC",
+      "rule_paraphrased": "尽量把复杂市场压缩成少数高时间框架核心变量来判断。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他和常见 TA 交易员最大的不同，是把 Bitcoin/altcoins 主要视为“商业周期 + 全球流动性”驱动的宏观周期资产，而不是单纯图形或减半叙事资产。其次，他喜欢把复杂市场压缩成少数高时间框架状态机信号，比如红绿柱、RSI 通道、dominance 切换、compression-release。风格上非常逆主流，持续对抗“这次不一样”“已经见顶”的市场共识。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Every single time",
+      "Only the 3rd signal in 12 years",
+      "5 signals, 5 runs",
+      "Hasn't. Even. Started.",
+      "No talk of tops until the red line",
+      "We're not even out of green",
+      "This has always been the setup"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "I suspect",
+      "Potentially significant",
+      "Just an observation",
+      "high probability",
+      "may finally be nearing its end"
+    ]
+  }
+}

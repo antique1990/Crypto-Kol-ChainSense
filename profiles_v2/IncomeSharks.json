@@ -1,0 +1,207 @@
+{
+  "handle": "IncomeSharks",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "macro",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ETHBTC",
+    "SOL",
+    "SPX",
+    "DXY"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.9,
+      "evidence": "整体表达长期偏多且偏好顺大趋势做回踩/续涨。例：2025-07-31 说“Buyers still aggressively in control”；图 7 把 ETH 从底部买点、支撑守住、支撑收回、阻力突破一路串成上升趋势交易框架。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.78,
+      "evidence": "他反复把行情理解成区间/箱体折磨。2025-12-31 直接命名“Box of despair / Box of Hell”；图 5 把 BTC 描述为“Tight and compressed channel”，先识别整理区再等待方向选择。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.74,
+      "evidence": "图 1 红框圈出 ETH 在强势上涨后的短暂横向回落整理，随后继续拉升；图 5 也是强突破后进入紧凑通道，配合上升趋势线，典型延续思维而不是猜顶。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.84,
+      "evidence": "图 3、图 7 多次明确写“Fakeout, support reclaimed”，本质是跌破关键位后迅速收回，先扫流动性再恢复趋势；这类‘先骗线、再收回’是他非常常见的结构语言。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.76,
+      "evidence": "图 8 中 BTC 价格冲到趋势线附近新高，但下方 OBV 走低，强调冲高并不健康；2026-03-31 也写到“Get the dip buyers excited with a bounce... Then continue the drop even further”，明显是在交易假动作/诱多诱空。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.66,
+      "evidence": "图 3 与图 8 都体现了前高/前低附近刺破后回落或收回的 swing failure 视角；2025-10-31 还直说“obvious bear div is pretty bearish”，说明他会在前高附近寻找失败信号而非盲追突破。"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.58,
+      "evidence": "虽然图中未直接放布林带，但他大量交易‘压缩-扩张’。图 5 明确写“Tight and compressed channel”，随后预期向上释放；其语言和 setup 非常接近波动压缩后的突破框架。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.52,
+      "evidence": "2025-10-31 直接说“the obvious bear div is pretty bearish”；2025-07-31 又提醒“RSI can stay overbought a lot longer than people think”，说明他会用 RSI 背离，但不会机械地把超买当顶部。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.63,
+      "evidence": "2025-08-31 连续看多 ETH 与 ETHBTC：一边说“$ETH - OBV still giving me no reason to sell”，一边说“$ETHBTC - Still in a nice uptrend”；这反映他会用 ETH/BTC 强弱来判断资金是否从 BTC 轮动到山寨龙头。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.43,
+      "evidence": "2024-07-31 写“$DXY - ... people are watching the US dollar losing strength”，明确把美元走弱视为股票/比特币风险偏好的支撑，说明他会把 DXY 当宏观确认层。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.38,
+      "evidence": "2024-07-31 连续写“Here's the PPD - Post Powell Dump”与“Wonder if we'll get the post Powell speech dump now.”，说明他会围绕美联储事件做预期管理，至少会识别事件前后的波动与风险偏好切换。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.31,
+      "evidence": "2026-01-31 说“Bitcoin ETFs. The real liquidity and buying power is only tied to the markets being open. It's a market maker chop fest over the weekends”，这是把 ETF 开盘/休市带来的流动性差异纳入 BTC 价格行为解释。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.56,
+      "evidence": "2025-09-30 说“Last day of September, end of month volatility”；2024-10-31 说“End of month volatility at the end of earnings week.”，说明他明显重视月底/事件周的波动环境变化。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.47,
+      "evidence": "他经常谈 euphoria、timeline 过度看多与局部顶部。2025-10-31 说“people forget how euphoric and bullish the timeline was at this local top”；2024-02-29 也警告“buying on euphoric moves is not ideal.”"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_obv_leading_indicator",
+      "name": "OBV Lead-Lag Confirmation",
+      "name_zh": "OBV 领先确认",
+      "type": "indicator_rule",
+      "description": "Use On-Balance Volume as a leading signal: OBV breakout or trendline break is treated as confirmation that price will likely follow; OBV weakness/divergence is a reason to avoid fresh longs or trim.",
+      "description_zh": "把 OBV 当作领先指标使用：OBV 先突破或先走强，则预期价格随后跟进；若 OBV 走弱或背离，则不追多或分批减仓。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_if_obv_leads_up / cautious_if_obv_diverges_down",
+        "horizon": "swing",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "2025-07-31：“Ethereum OBV has broken local resistance already. As a leading indicator this often means that price will follow”；2025-08-31：“$ETH - OBV still giving me no reason to sell.”；图 4 是 OBV 水平阻力突破，图 8 是价格新高但 OBV 走低。"
+    },
+    {
+      "proposed_id": "cap_new_scale_out_strength",
+      "name": "Incremental Strength Selling",
+      "name_zh": "上涨分批止盈",
+      "type": "risk_rule",
+      "description": "Rather than all-in/all-out, sell fixed portions into strength near target zones, especially after breakouts, euphoric pushes, or when local upside objectives are reached.",
+      "description_zh": "不是一次性清仓，而是在目标位、突破后拉升段、情绪过热区按固定比例分批止盈。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "reduce_not_reverse",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "2025-09-30：“$ETH - Selling another 10% to make sure we see $5k in Pumptober.”；图 3、图 7 都在关键目标/突破后标注“Selling 10%”。"
+    },
+    {
+      "proposed_id": "cap_new_support_reclaimed",
+      "name": "Breakdown Reclaim Continuation",
+      "name_zh": "跌破后收回支撑延续",
+      "type": "structural_bias",
+      "description": "A breakdown that quickly reclaims prior support is treated as a bullish reset, often better than a clean breakout because weak hands are flushed first.",
+      "description_zh": "关键支撑被跌破后快速收回，视为更强的多头重置，因为先清洗了弱手再恢复原趋势。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "图 3、图 7 多次直接标注“Fakeout, support reclaimed”“Support reclaimed”；2025-07-31 对股票也说“Looks like nothing more than re-testing a breakout.”"
+    },
+    {
+      "proposed_id": "cap_new_calendar_volatility",
+      "name": "Month-End / Event Window Volatility",
+      "name_zh": "月底与事件窗口波动",
+      "type": "event_reaction",
+      "description": "Expect unusual volatility and fake moves around month-end, earnings clusters, weekends, and major macro windows; reduce certainty and look for flushes/retests rather than clean trend continuation.",
+      "description_zh": "在月底、财报密集期、周末和重大宏观事件窗口，预期更高波动与假动作；此时降低确定性，更关注冲洗、回测和反抽而非线性趋势延续。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral_to_reactive",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-09-30：“Last day of September, end of month volatility to finish out the month.”；2024-10-31：“End of month volatility at the end of earnings week.”；2026-01-31 提到周末 ETF 休市导致 BTC 更容易被搅动。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Where you exit a coin is more impressive than where your entry was.",
+      "rule_paraphrased": "交易能力不只看抄底，更看能否在情绪高点和目标区有效兑现利润。",
+      "category": "framework"
+    },
+    {
+      "quote": "You will be wrong many times with trading but there's a difference between being wrong with a good setup and being wrong taking a terrible trade that you emotionally went too big on...",
+      "rule_paraphrased": "允许 setup 失效，但不允许情绪化重仓的烂交易；先保证过程质量，再谈结果。",
+      "category": "mantra"
+    },
+    {
+      "quote": "If you wanted to buy stocks yesterday but not today you are doing it backwards. Looks like nothing more than re-testing a breakout.",
+      "rule_paraphrased": "不追涨杀跌；更偏好突破后的回测确认，而不是情绪驱动地在拉升时才想买。",
+      "category": "framework"
+    },
+    {
+      "quote": "RSI can stay overbought a lot longer than people think.",
+      "rule_paraphrased": "强趋势里不要机械地把超买当顶部，要结合结构与动量环境。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Get the dip buyers excited with a bounce, get the bears nervous and have them close their shorts. Then continue the drop even further...",
+      "rule_paraphrased": "市场常通过反弹和回落反复折磨两边仓位，先识别诱导路径，再决定是否跟随。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，也不是纯宏观派，而是把结构、趋势、情绪和日历窗口揉成一个非常实战化的 swing 框架。与很多 TA 交易员不同，他极度重视 OBV 这类成交量先行信号，并且习惯用“假跌破后收回支撑”来定义更优质的多头重置。另一个鲜明特点是分批卖出而不是死拿到单一终点，这让他的 profile 更像一个会管理仓位的趋势投机者，而不是只画目标位的内容型分析师。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "still giving me no reason to sell",
+      "buyers still aggressively in control",
+      "textbook TA setup",
+      "nothing alarming, pretty expected",
+      "support reclaimed",
+      "strong breakout"
+    ],
+    "low_conviction_phrases": [
+      "probably",
+      "looks like",
+      "will be interesting",
+      "possibly",
+      "worst case",
+      "best case",
+      "I think"
+    ]
+  }
+}

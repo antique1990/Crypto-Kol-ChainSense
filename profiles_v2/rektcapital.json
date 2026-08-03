@@ -1,0 +1,231 @@
+{
+  "handle": "rektcapital",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "DOGE",
+    "ALT market cap",
+    "BTC Dominance",
+    "ETH Dominance"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.99,
+      "evidence": "他反复用减半后时间窗口来推演行情：2024-08-31 写到“History suggests that Bitcoin tends to breakout 150-160 days after the Halving”；2025-06-29 写到“If historical Halving cycles repeat Bitcoin could peak in September or October 2025”；图3直接把 2024 标成“Post-Halving Re-Accumulation / Post-Halving Parabolic Upside”。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.95,
+      "evidence": "他持续以历次周期类比当前周期：2024-02-29 写“For the first time ever, Bitcoin has convincingly broken beyond the Four Year Cycle resistance”；2024-05-30 比较“2015-2017 cycle… 2019-2021 cycle… next Bull Market peak”；图4/图5把 2016、2020、2024/2025 放在同一月线框架中做跨周期映射。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.9,
+      "evidence": "2024-10-29 明确说“That's a phenomenal Bull Flag breakout”；2025-01-30 说“Bitcoin is breaking out from its Monthly Bull Flag”；图2就是典型旗形/通道上沿突破并等待确认的画法。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.88,
+      "evidence": "他非常强调失守支撑变阻力、突破阻力变支撑：2024-12-26 写“These previously lost supports appear to be acting as resistance”；2024-06-30 写“successfully retested the old major resistance as new support”；2025-04-28 写“Bitcoin broke them all last week”。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.84,
+      "evidence": "他经常要求周线/月线收盘确认，避免被上影线假突破骗到：2024-10-29 写“Weekly Close above ~$71500 is essential”；2024-10-30 写“Bitcoin is potentially producing an upside wick beyond the Range High”；图2在多个顶部位置用红圈标出上破失败。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.87,
+      "evidence": "2025-03-30、2025-03-31、2025-04-30 连续围绕“Bitcoin Dominance rejects from 71%”来定义真正 Altseason 触发；图6直接画出 BTC Dominance 接近 71.04% 红线后的关键反应区。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.82,
+      "evidence": "他经常把市场划分为 Re-Accumulation、Price Discovery Uptrend、Parabolic Phase：2025-05-23 写“Bitcoin has only just begun its Price Discovery Uptrend 2”；2025-07-28 写“It's technically Week 4 of Price Discovery Uptrend 2”；图4/图5都在强调牛市推进阶段而不是单笔交易。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.8,
+      "evidence": "他不仅识别抛物线阶段，也警惕尾声：2024-12-23 写“Progress will speed up in the Parabolic Phase”；2025-05-22 再次更新“Bull Market Progress”；2025-06-30 明确提醒“manage the risk of that eventuality occurring”；图4/图5绿色框都是抛物线推进区。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.74,
+      "evidence": "2025-04-28 他说“Bitcoin faced a Triple Resistance… 21-Week EMA Resistance… Bitcoin broke them all”；2025-04-28 又说“breakout from its range formed by the two Bull Market EMAs”；说明他用牛市 EMA 作为趋势延续与回踩确认工具。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.72,
+      "evidence": "他频繁用 wick 来判断拒绝和确认：2024-07-31 写“Bitcoin upside wicked into the low $70,000s and rejected”；2025-04-30 写“even if downside wicking below $93300 continues”；图2/图6都圈出关键位置的 wick 反应。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.63,
+      "evidence": "他常把突破前高后的快速回落解读为流动性扫荡/假破：图2在多个前高上方画红圈后回落；2024-10-29 写“Bitcoin has produced upside wicks beyond this Range High resistance… so a Weekly Close above ~$71500 is essential”。"
+    },
+    {
+      "id": "cap_054_engulfing_reversal",
+      "weight": 0.56,
+      "evidence": "2024-09-29 明确写“This month's #BTC price action is engulfing the past two month's-worth of downside”；这说明他会读取月线吞没来判断结构反转与强势确认。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.69,
+      "evidence": "虽然他偏多，但下跌阶段明显先等确认：2024-12-23 写“#BTC is offering more confirmation for additional downside than reasons to be bullish”；2025-02-28 写“Become a buyer when people get tired of selling”；不是机械抄底，而是等卖方衰竭。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.58,
+      "evidence": "他多次强调 risk-off 和失守关键位后的防守：2024-12-30 写“it was the correct approach to be ‘Concerned and Risk-Off’ during Weeks 6-8”；2024-11-30 提前提醒“(Partial) profit-taking”；其风险控制更多体现在仓位/暴露管理而非激进加仓。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.71,
+      "evidence": "他反复围绕 Re-Accumulation Range 的上下沿讨论：2024-07-29 写“Bitcoin continues to occupy the $65000-$71500 region”；2024-06-30 写“cluster of price action at this Range Low at $60600”；图2、图3都把区间顶底作为核心结构。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_reaccumulation_range_breakout",
+      "name": "Re-Accumulation Range Breakout And Retest",
+      "name_zh": "再积累区间突破与回踩确认",
+      "type": "structural_bias",
+      "description": "Identify a macro sideways range inside an ongoing bull market, wait for decisive higher-timeframe close above range high, then treat the first retest as confirmation for transition into the next expansion leg.",
+      "description_zh": "识别牛市中的宏观横盘再积累区间，等待高周期有效收盘突破区间上沿，再把首次回踩视为进入下一段主升浪的确认。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2024-10-29 “Bitcoin is on the cusp of fully transitioning out from its ReAccumulation phase”; 2024-11-30 “successfully Daily Closed above the trendline resistance… That's a breakout”; 图2展示了区间突破后回踩上沿。"
+    },
+    {
+      "proposed_id": "cap_new_cme_gap_magnet",
+      "name": "CME Gap Magnet And Fill",
+      "name_zh": "CME 缺口磁吸与回补",
+      "type": "structural_bias",
+      "description": "Track unfilled Bitcoin CME futures gaps as likely short-to-medium-term magnets; once price enters the gap zone, monitor whether the full fill completes and whether the zone flips into support or resistance.",
+      "description_zh": "跟踪比特币 CME 期货未回补缺口，把其视为短中期价格磁吸区；价格进入缺口后，观察是否完全回补，以及缺口区域随后转化为支撑或阻力。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "mean_reversion_then_reaction",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2025-02-28 连发多条：“Bitcoin has finally filled its CME Gap between $78,000 and ~$80,700”；“Bitcoin is currently filling the CME Gap between $78,000 and ~$80,700”；图1直接标注 78,030 到 80,730 的缺口区。"
+    },
+    {
+      "proposed_id": "cap_new_price_discovery_week_model",
+      "name": "Price Discovery Week Sequencing",
+      "name_zh": "价格发现阶段周序列模型",
+      "type": "cycle_time",
+      "description": "Once Bitcoin breaks into price discovery, map the advance by week count and expect historically corrective windows, then plan profit-taking, de-risking, and re-entry around those windows.",
+      "description_zh": "当比特币进入价格发现阶段后，按周数跟踪上升过程，并预判历史上常见的修正窗口，用于安排止盈、降风险和重新介入。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "trend_up_with_timed_corrections",
+        "horizon": "multi_week",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2024-12-23 “Historically, Week 8 in BTC Price Discovery tends to be a corrective week”；2025-05-23 “It is Week 1 of Price Discovery Uptrend 2”；2025-07-28 “It's technically Week 4 of Price Discovery Uptrend 2”。"
+    },
+    {
+      "proposed_id": "cap_new_bull_market_progress_bar",
+      "name": "Bull Market Progress Meter",
+      "name_zh": "牛市进度条",
+      "type": "cycle_time",
+      "description": "Convert cycle age and historical analogs into a simple bull-market completion percentage to communicate where the market sits between re-accumulation, price discovery, and parabolic maturity.",
+      "description_zh": "把周期所处时间和历史类比转化为一个简化的牛市完成度百分比，用于表达市场位于再积累、价格发现还是抛物线成熟阶段。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contextual",
+        "horizon": "months",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "2024-02-29 “Bull Market Progress: 33.0%”；2024-12-23 “62.0%”；2025-01-31 “77.2%”；2025-05-22 “86.0%”；图4与图5本质上就是把当前周期放进同一进度条叙事。"
+    },
+    {
+      "proposed_id": "cap_new_btcdom_71_altseason_trigger",
+      "name": "BTC Dominance 71 Percent Rejection Trigger",
+      "name_zh": "BTC 市占率 71% 拒绝触发山寨季",
+      "type": "structural_bias",
+      "description": "Treat the 71% Bitcoin dominance region as a macro pivot; rejection from or near that level increases probability of capital rotating into ETH and altcoins.",
+      "description_zh": "把 BTC 市占率 71% 区域视为宏观枢轴位；若在该区域附近遭拒，资金轮动到 ETH 和山寨的概率明显上升。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "alt_bullish_relative",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2025-03-30 “the real Altseason everybody is waiting for would begin once Bitcoin Dominance rejects from 71%”; 2025-03-31 “The strongest Altseasons have occurred every time Bitcoin Dominance rejected from 71%”; 图6红线即 71.04%。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "History doesn't always repeat but it often rhymes",
+      "rule_paraphrased": "优先用历史周期做条件概率推演，不把历史当机械复制，而是当作高权重模板。",
+      "category": "framework"
+    },
+    {
+      "quote": "So far, so good",
+      "rule_paraphrased": "在关键支撑/回踩阶段先做过程验证，只要结构没坏就继续维持原判断，不急于过度解读短线噪音。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Become a buyer when people get tired of selling",
+      "rule_paraphrased": "只在卖方衰竭或恐慌释放后寻找反身性做多机会，而不是情绪化接刀。",
+      "category": "contrarian"
+    },
+    {
+      "quote": "Don't let a -5% dip distract you from the fact that Bitcoin has experienced its best September of all-time by producing a +7% monthly return",
+      "rule_paraphrased": "他会刻意压低短期波动的重要性，把交易者注意力拉回更高周期结构和月度统计优势。",
+      "category": "mantra"
+    },
+    {
+      "quote": "It was the correct approach to be \"Concerned and Risk-Off\" during Weeks 6-8 in Bitcoin Price Discovery",
+      "rule_paraphrased": "当历史统计进入高风险窗口时，先降风险再谈观点，允许错过一小段，也不在高波动周硬扛仓位。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他与一般 TA 交易员的最大区别，是把高周期图形、减半时间窗、四年周期和价格发现周数整合成一套“时间+结构”联合框架，而不是只盯单一形态。其次，他极度强调周线/月线收盘与回踩确认，尤其偏爱把“再积累区间突破”叙事化成可传播的进度条、路线图和阶段模型。最后，他虽长期偏多，但并非无脑牛市派，而是在历史修正窗口里明确提出 risk-off、部分止盈和等待确认。 ",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "History suggests",
+      "has officially",
+      "has successfully",
+      "that's a breakout",
+      "breakout confirmed",
+      "without a shadow of a doubt",
+      "is on the cusp",
+      "needs a Weekly Close above",
+      "would kickstart the breakout"
+    ],
+    "low_conviction_phrases": [
+      "If history repeats",
+      "probably",
+      "may very well",
+      "looks like",
+      "could",
+      "it's possible",
+      "still early on in the week, so lots can still change",
+      "so far, so good"
+    ]
+  }
+}

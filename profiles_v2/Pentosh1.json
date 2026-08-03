@@ -1,0 +1,138 @@
+{
+  "handle": "Pentosh1",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "contrarian",
+    "risk_first",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "PLTR"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.32,
+      "evidence": "2026-04-11 的单句推文“uninstall”体现出一种极端简化的失效处理语言风格，更像 thesis invalidation 后立刻退出，而不是继续解释。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.24,
+      "evidence": "其表达风格偏向先否定、先回避错误方向，而不是积极抄底；例如“Claude Code自動化... 自動化する中身がなかったら意味ないですよ。”反映的是先排除伪优势、再谈执行。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.18,
+      "evidence": "少数接近投资框架的内容来自风险偏好/竞争格局判断，而非纯图形，例如“Anthropic is great... How exactly does it plan to eat $PLTR lunch?” 是典型的相对强弱/叙事反证式思路。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.12,
+      "evidence": "从推文风格看，他更擅长在高噪音环境中快速给出压缩判断，但给定样本中没有明确波动率指标或 K 线证据，因此仅低权重保留。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_narrative_hype_filter",
+      "name": "Narrative Hype Filter",
+      "name_zh": "叙事过热过滤器",
+      "type": "framework",
+      "description": "Challenge popular narratives by asking whether the underlying edge, distribution, or customer reality actually supports the story.",
+      "description_zh": "对热门叙事先做反证，先问底层优势、分发能力、真实客户关系是否支持故事，再决定是否跟随市场共识。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "“Anthropic is great, but it is also currently blacklisted by the pentagon... How exactly does it plan to eat $PLTR lunch?”"
+    },
+    {
+      "proposed_id": "cap_new_one_word_invalidation_exit",
+      "name": "One-word Invalidation Exit",
+      "name_zh": "单词式失效退出",
+      "type": "risk_rule",
+      "description": "Use extremely compressed language to mark a thesis as broken and move on without averaging or over-explaining.",
+      "description_zh": "当 thesis 失效时，用极简标签直接判定退出，不补仓、不长篇解释、不试图体面化错误。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "2026-04-11: “uninstall”"
+    },
+    {
+      "proposed_id": "cap_new_visual_theme_regime_mapping",
+      "name": "Visual Theme Regime Mapping",
+      "name_zh": "视觉主题-情绪映射",
+      "type": "regime_classifier",
+      "description": "Classify environments by aesthetic/narrative mood rather than formal indicators, using cultural references as compressed state labels.",
+      "description_zh": "不用传统指标，而是用审美/文化标签给环境做状态分类，把复杂情绪压缩成可识别的世界观类别。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.58
+      },
+      "example_evidence": "附件 2-5 不是 K 线，而是“シンセウェイヴ / サイケデリック / サイバーパンク / ヴェイパーウェイヴ / ダーク・アカデミア / コテージコア”等世界观分类板，说明其更常用审美叙事框架而非标准 TA 标注。"
+    },
+    {
+      "proposed_id": "cap_new_edge_before_automation",
+      "name": "Edge Before Automation",
+      "name_zh": "先有优势再谈自动化",
+      "type": "framework",
+      "description": "Reject tooling enthusiasm unless the underlying process has a real edge worth scaling.",
+      "description_zh": "如果底层策略/内容本身没有优势，就不因自动化工具而高估产出；先验证 edge，再做放大。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral_to_contrarian",
+        "horizon": "position",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "“Claude Code自動化ふぉぉぉ！！！って騒いでる人に冷や水かけます。自動化する中身がなかったら意味ないですよ。”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "uninstall",
+      "rule_paraphrased": "失效了就直接删，不恋战，不补充解释。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Claude Code自動化ふぉぉぉ！！！って騒いでる人に冷や水かけます。自動化する中身がなかったら意味ないですよ。",
+      "rule_paraphrased": "先验证策略或内容本身是否有 edge，再谈自动化放大。",
+      "category": "framework"
+    },
+    {
+      "quote": "Anthropic is great, but it is also currently blacklisted by the pentagon (U.S. Govt is largest customer of Palantir). How exactly does it plan to eat $PLTR lunch?",
+      "rule_paraphrased": "对主流叙事先做反证，优先看真实客户与分发壁垒。",
+      "category": "framework"
+    },
+    {
+      "quote": "Wait write that down",
+      "rule_paraphrased": "出现有价值信号时先记录，先抓想法再做展开。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "这份样本里，他更像一个高密度文化/叙事型内容创作者，而不是标准意义上高频贴 K 线的 TA 交易员。附件中所谓“典型图表”实际大多是审美世界观板和二次元内容，而不是价格结构示意，因此可见的核心优势更像是反叙事、压缩表达和情绪/主题分类，而非可复核的纯技术框架。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "uninstall",
+      "How exactly does it plan to eat $PLTR lunch?",
+      "Visual AGI is here btw"
+    ],
+    "low_conviction_phrases": [
+      "seems to be",
+      "slightly better",
+      "おそらく"
+    ]
+  }
+}

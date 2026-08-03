@@ -1,0 +1,203 @@
+{
+  "handle": "matthughes13",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "cycle",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "TSLA",
+    "COIN",
+    "SPY",
+    "IWM",
+    "PLTR",
+    "OTHERS",
+    "SOL"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.95,
+      "evidence": "多张附图直接用月线斐波回撤/扩展网格做判断：TSLA、IWM、COIN、OTHERS 都标出 0.236/0.382/0.5/0.618/0.786/0.886；2026-04-06 还写道“$OTHERS / $SPX ratio chart... Altcoins have been repeatedly bottoming right at the 0.618 Fib level”。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.93,
+      "evidence": "2026-01-31 明确说“Historically, market cycles don't end at 60% Bitcoin dominance — that's often where #altcoin outperformance really starts to accelerate.”；附图 #5 直接把 BTC.D 约 60% 标为“Start of Altcoin Outperformance”。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.86,
+      "evidence": "2025-11-28 说“$SPY, $QQQ, and $IWM are key indices to watch and none of them are bearish”；2026-04-10 说“S&P 500 trend line from 1929 sure looks like previous resistance flipping to support”；附图 #4 是 SPY 的多年斜率通道，用大盘位置定义风险偏好。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.88,
+      "evidence": "他频繁用“highest monthly candle close ever”“highest weekly close EVER”“why continue fighting the trend?”来定义强趋势环境；2025-10-31 TSLA、2025-10-31 IWM 都是用历史最高月收盘来做持续看多。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.79,
+      "evidence": "2026-02-27 说“Waiting for an Ichimoku Cloud retest on the weekly chart is usually one of the strongest strategies for buying or accumulating”；2025-08-31 说“cool down towards the 20month MA”后再走强；他常等回踩而不是追高。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.72,
+      "evidence": "2026-03-31 说“Buying charts at elevated levels... are exactly why people get trapped”；附图 #6 黄金和白银都标注“Big rejection”，本质上是在大阻力位识别假突破/失败突破。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.67,
+      "evidence": "他对长影线极敏感。2026-01-31 还说“@wangbnbwhale That screenshot is still circulating?”及“@blondebroker1 You like big wicks 😉”；附图 #6 明确把上方长针定义为“Big rejection”。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.58,
+      "evidence": "附图 #6 中黄金、白银呈接近垂直加速后在上沿被拒；2025-12-31 直接说“#GOLD & #SILVER are going to have monthly candles close under BIG resistance levels This has the makings of a potential top”。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.56,
+      "evidence": "他经常强调关键高点/前高附近的刺破与回收，图中箭头多指向前高上方或关键 Fib 上沿的测试后反应；比如 TSLA、IWM、COIN 图都是在历史高位/扩展位附近观察是否先扫流动性再确认。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.61,
+      "evidence": "虽然他更常说 Ichimoku 和月均线，但本质仍是关键均线收回逻辑：2025-11-28 说“All of these levels are in process of getting reclaimed as support”；2025-08-31 提到“20month MA”；2024-02-29/05-28 多次提 8EMA、21EMA、50MA、100MA。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.54,
+      "evidence": "2026-01-31 讨论“Historically, market cycles don't end...”明显是在做加密大周期位置判断；附图 #5 用 2017、2021、2025-2026 的 BTC.D 轮动结构类比周期顶/山寨季。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.35,
+      "evidence": "他会跟踪黄金白银作为宏观/情绪参照，虽然更多是技术图而不是宏观叙事；2025-12-31 明确发 GOLD/SILVER 顶部警报，附图 #6 用其大级别阻力位拒绝来辅助风险判断。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_gann_angle_support_resistance",
+      "name": "Gann Angle / Gann Level Reaction",
+      "name_zh": "江恩角度/江恩价位反应",
+      "type": "structural_bias",
+      "description": "Uses Gann angles, square-style geometric levels, and angle-to-angle rotations to identify major bottoms, support, resistance, and timing pivots on high time frames.",
+      "description_zh": "使用江恩角度、几何价位与角度轮换来识别大级别底部、支撑阻力与时间拐点，主要用于周线/月线。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "reversal_or_support_hold",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2025-09-30 写道“Using Gann's methods, I have successfully identified numerous market bottoms”；2026-04-06 说“$IREN has a great chance of holding this Gann level around 34”。"
+    },
+    {
+      "proposed_id": "cap_new_ichimoku_baseline_cloud_reclaim",
+      "name": "High-Timeframe Ichimoku Reclaim",
+      "name_zh": "高周期一目均衡表基准线/云层收复",
+      "type": "indicator_rule",
+      "description": "Treats a monthly or weekly close above the Ichimoku baseline or cloud, especially for the first time ever, as a major bullish trend reversal and support flip.",
+      "description_zh": "把周线/月线首次站上一目均衡表基准线或云层，视为重大趋势反转和支撑翻转信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "position",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2025-11-29 说“两张图首次收在 monthly Ichimoku Baseline 上方”；2026-02-27 说“Waiting for an Ichimoku Cloud retest on the weekly chart is usually one of the strongest strategies”。"
+    },
+    {
+      "proposed_id": "cap_new_fib_extension_milestone_close",
+      "name": "Monthly Close Above Fib Extension",
+      "name_zh": "月线收盘站上斐波扩展位",
+      "type": "indicator_rule",
+      "description": "Interprets a monthly close above major extension or retracement thresholds such as 0.786, 0.886, 1.272, or 1.414 as a structural breakout that unlocks the next extension targets.",
+      "description_zh": "将月线收盘站上 0.786、0.886、1.272、1.414 等关键斐波位，视为结构性突破，并指向更高扩展目标。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_continuation",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2025-10-31 说 IWM 若月收高于 2021 high，“Fib extensions above are coming”；2025-07-31 说 COIN “surpassing the linear scale 0.786 Fibonacci level at $344.37... incredibly bullish”。"
+    },
+    {
+      "proposed_id": "cap_new_multi_year_arc_channel_framework",
+      "name": "Arc / Channel Confluence Framework",
+      "name_zh": "弧线/通道共振框架",
+      "type": "structural_bias",
+      "description": "Uses long-duration arcs and parallel channels as dynamic support/resistance to frame where secular breakouts, pullbacks, or rejection tops should occur.",
+      "description_zh": "使用多年弧线和等距通道作为动态支撑阻力，判断长期突破、回踩和顶部拒绝区。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contextual",
+        "horizon": "macro",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-08-31 说“$SOL is starting to flip my top arc to a support again”；附图 #4 为 SPY 多年斜率通道，附图 #6 为黄金白银多年上升通道共振。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "I add to my positions in times of fear, so I can be bored on green days",
+      "rule_paraphrased": "在恐慌和回撤时分批加仓，而不是在上涨确认后情绪化追价。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The lower price goes the more I will be accumulating $COIN",
+      "rule_paraphrased": "只要高周期结构没坏，价格越跌越提升中长线赔率，偏向逆向吸纳。",
+      "category": "framework"
+    },
+    {
+      "quote": "Accumulate before breakouts, not after",
+      "rule_paraphrased": "在突破前的整理/回踩阶段布局，而不是等市场共识形成后追涨。",
+      "category": "mantra"
+    },
+    {
+      "quote": "If you're long-term bearish, why continue fighting the trend?",
+      "rule_paraphrased": "大级别趋势一旦确认，不要长期逆势建立核心看空框架。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Stop focusing on the fundamentals as the charts tell the true story. As always, charts first and the fundamentals play catch up",
+      "rule_paraphrased": "技术结构优先于基本面叙事，叙事通常滞后于价格行为。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是传统只看单一指标的 TA 交易员，而是把月线/周线 Fib、Ichimoku、江恩角度、弧线和长期通道混合成一个高时间框架框架。风格上极强逆向，核心优势不是追突破，而是在“没人想碰”的多年月度需求区提前吸筹。与很多加密交易员不同，他大量借股票指数、TSLA、COIN、SPY、IWM 来定义风险开关，再映射到加密和山寨轮动。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "highest monthly candle close ever",
+      "incredibly bullish",
+      "very bullish",
+      "never done before",
+      "long-awaited bullish trend reversal",
+      "the charts tell the true story",
+      "all support held",
+      "bullish trend reversal",
+      "about to do something it has never done before"
+    ],
+    "low_conviction_phrases": [
+      "could be",
+      "looks likely",
+      "great chance of holding",
+      "for now",
+      "if this chart is going to reverse",
+      "should hold",
+      "sets it up for",
+      "has the makings of a potential top"
+    ]
+  }
+}

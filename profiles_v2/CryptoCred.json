@@ -1,0 +1,218 @@
+{
+  "handle": "CryptoCred",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "risk_first",
+    "structural",
+    "derivatives",
+    "macro",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.95,
+      "evidence": "高频口头禅级规则。2025-02-27: \"Market goes down - Don’t knife catch, wait for reclaim\"；2025-07-18 再次重复：\"Wait for confirmation, buy strength not weakness\"。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.93,
+      "evidence": "他反复强调震荡市不要在中间乱做。2025-02-27: \"Market goes sideways - Don’t diddle in the middle, wait for range to resolve\"；2025-07-18 同样表述。图 2 和图 4 都是典型周线区间/盒体框架，只在区间边界和失效点做决策。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.89,
+      "evidence": "图 2 明确画出周线 range high、range low、weekly support，并写 \"buy strength above here\"、\"risk is buying the range high top\"；图 8 也是 ETH 在水平区间上沿突破后的回踩观察。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.88,
+      "evidence": "图 2 提到 \"wick refill\"；图 8 是 ETH 一根大阳线刺穿前高后回落到水平位附近，明显在观察扫流动性后的承接。其推文也常用 failed breakout/failed breakdown 语言。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.87,
+      "evidence": "2024-06-25: \"Whenever a market forms a failed breakdown at a level and then later comes back and closes below it again I usually assume the second breakdown will fail\"，这是对失败跌破/假突破的直接规则化描述。图 2、图 4 都是在周线关键位附近等待假跌破或收复。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.82,
+      "evidence": "他经常围绕前高/前低扫一下再反向的结构思考。图 8 的 ETH 上冲前高后快速回到黑线附近；图 2 文字里直接讨论 wick、reclaim、lower high，本质就是 swing failure/failure test 交易。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.62,
+      "evidence": "虽然他不以指标为核心，但语言上强依赖 reclaim。2025-02-27 直接说 \"wait for reclaim\"；其图表更常画水平收复而不是均线，不过“收复确认再买”是核心执行逻辑。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.8,
+      "evidence": "2025-07-11: \"carefully buy enough spot Bitcoin in the last few months to allow me to relax and ride this trend without FOMO\"，说明一旦进入趋势环境，他更偏持有并顺势，而不是过度交易。图 1 也是上升后的高位盘整延续观察。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.84,
+      "evidence": "2025-02-27: \"Market goes up - Don’t chase, wait for a pullback\"；2025-08-13: \"Then I didn’t buy ETH because it went up too much without a pullback\"。这说明他的趋势参与方式不是追单，而是等回踩。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.78,
+      "evidence": "2024-08-19: \"Low volatility takes your money... High volatility takes your money by making you chase and use too much leverage\"；2026-04-03 也强调 crypto trader 的高波动耐受是 edge。说明他非常重视波动状态切换。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.66,
+      "evidence": "2024-10-29: \"Damn open interest is really high\"；2024-08-20 还专门说视频前 22 分钟讲 premiums, funding rates, open interest。说明他会把 OI 作为拥挤度/突破前压力累积的辅助框架。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.68,
+      "evidence": "2024-04-22: \"I wrote a detailed article about funding, open interest, liquidations, and CVD\"；2024-08-20 再次强调 funding rates。其衍生品框架主要用于识别拥挤和反身性风险，而不是单独给方向。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.71,
+      "evidence": "他长期把 liquidations 与 funding/OI 一起讲。2024-04-22 明确提到 liquidations；图 2、图 8 的 wick/sweep 叙事也符合“先扫止损和清算再走真实方向”的框架。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.64,
+      "evidence": "2025-04-11: \"Watching this treasury auction to get a read on risk sentiment\"；2025-04-04: \"Equities nuked, BTC didn’t. What is it?\"。说明他会把 BTC 放在更大的风险资产框架中看。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.6,
+      "evidence": "2025-04-11 直接围绕 treasury auction、basis trade blowup、risk sentiment 发言；2026-04-08 更把交易分析升级到 oil futures/backwardation/地缘冲突，说明收益率与流动性环境是其重要外部变量。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.42,
+      "evidence": "2024-05-24 虽然带有讽刺意味，但明确拿 spot ETH ETF 上市和机构资金配置做语境；他会关注这类流量事件，但不是主导框架。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.74,
+      "evidence": "虽然常自嘲被止损/爆仓，但整个教育内容始终围绕风险先行。2025-07-18: \"risk management first\"；2025-09-22 还专门反思过度迷恋表面 R:R 而忽视真实执行质量。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_reclaim_after_damage",
+      "name": "Level Reclaim After Damage",
+      "name_zh": "关键位受损后收复",
+      "type": "structural_bias",
+      "description": "After a violent breakdown or trend damage, avoid bottom-fishing and wait for price to reclaim a clearly defined horizontal level before getting long.",
+      "description_zh": "在急跌或结构受损后，不直接抄底，而是等待价格重新收复明确的水平位/区间边界后再偏多。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_after_reclaim",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2025-02-27: \"Don’t knife catch, wait for reclaim\"；图 4 在大阴线跌破区间后，核心问题就是是否重新站回蓝线/区间。"
+    },
+    {
+      "proposed_id": "cap_new_diddle_in_middle_filter",
+      "name": "Mid-Range No-Trade Filter",
+      "name_zh": "区间中部禁做过滤器",
+      "type": "risk_rule",
+      "description": "If price is in the middle of a well-defined range with no edge at either boundary, stand aside until range high/low or a clean resolution is reached.",
+      "description_zh": "当价格位于清晰区间中部、上下边界都不占优时，主动空仓，等待到区间边缘或等待突破解决方向。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "2025-02-27 和 2025-07-18 都使用原话：\"Don’t diddle in the middle\"。这几乎是他的签名规则，但 seed 里没有把“区间中部禁止交易”单独抽象出来。"
+    },
+    {
+      "proposed_id": "cap_new_comfy_in_spot_inventory",
+      "name": "Core Spot Inventory For Trend Participation",
+      "name_zh": "核心现货底仓抗 FOMO",
+      "type": "risk_rule",
+      "description": "Maintain a core spot position during constructive higher-timeframe conditions so that short-term execution imperfections do not force emotional chasing.",
+      "description_zh": "在高时间框架结构健康时持有核心现货底仓，这样即使短线没有完美做到，也能顺势参与而不陷入 FOMO 追涨。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-07-11: \"buy enough spot Bitcoin... to allow me to relax and ride this trend without FOMO\"；2025-09-28: \"Comfy in spot contains meaningful wisdom\"。"
+    },
+    {
+      "proposed_id": "cap_new_btc_benchmarking_selectivity",
+      "name": "BTC Benchmarking Selectivity",
+      "name_zh": "以 BTC 为基准的机会筛选",
+      "type": "structural_bias",
+      "description": "Use BTC as the default benchmark for opportunity cost; only rotate into alts when they can credibly outperform BTC under concentrated flow conditions.",
+      "description_zh": "把 BTC 作为默认收益基准，只有当山寨币在当前资金高度集中的市场里有真实超越 BTC 的把握时才参与。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "btc_preferred",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2025-05-22: \"outperforming BTC is extra hard because dispersion is that wide\"；其长期内容也反复强调 buy/hold BTC 往往优于多数主动交易。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Market goes sideways - Don’t diddle in the middle, wait for range to resolve",
+      "rule_paraphrased": "区间中部没有优势，不交易也是交易；只在边界或突破后做决定。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Market goes down - Don’t knife catch, wait for reclaim",
+      "rule_paraphrased": "急跌时先等结构收复确认，再考虑做多；弱势里不接飞刀。",
+      "category": "framework"
+    },
+    {
+      "quote": "Did I carefully buy enough spot Bitcoin in the last few months to allow me to relax and ride this trend without FOMO?",
+      "rule_paraphrased": "用现货底仓管理情绪和参与权，避免因为没抓到完美位置而追涨。",
+      "category": "framework"
+    },
+    {
+      "quote": "You probably don’t have a tariff/macro edge. Simplify your trading. Trade when people do stupid shit at obvious levels. Keep it short to medium-term. Trade less",
+      "rule_paraphrased": "除非真有宏观优势，否则回到最朴素的价格行为与明显位置，减少交易频率。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I fixated on R:R when I started trading... But it doesn’t actually work",
+      "rule_paraphrased": "不要把漂亮的理论盈亏比当成 edge，本质是执行质量、环境和真实胜率。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，也不是纯宏观派，而是把高时间框架水平位、区间结构、reclaim/failed move 与 funding、OI、risk sentiment 结合起来，用很少但很有效的变量做决策。和很多 TA 交易员不同，他极少宣称精确抄底摸顶，更强调“别追、别抄刀、别在区间中间乱做”，以及用现货底仓解决 FOMO。其内容风格强烈自嘲，但底层框架其实非常纪律化、概率化，并且明显偏向教育型表达。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "wait for reclaim",
+      "buy strength not weakness",
+      "trade when people do stupid shit at obvious levels",
+      "comfy in spot",
+      "ride this trend without FOMO",
+      "risk management first"
+    ],
+    "low_conviction_phrases": [
+      "I suck at trading",
+      "What the fuck am I meant to do with this",
+      "markets look a bit meh",
+      "I missed the entire rally",
+      "Damn open interest is really high",
+      "What is it?"
+    ]
+  }
+}

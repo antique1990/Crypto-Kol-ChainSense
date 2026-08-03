@@ -1,0 +1,180 @@
+{
+  "handle": "MMCrypto",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "content_creator",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "DOGE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.93,
+      "evidence": "图表里最明确的一张就是标准杯柄形态：白色U形杯体+右侧小柄，目标位直接上投到 120,000；对应推文 [2024-06-16] “#BTC: TARGET IS $120‘000!”。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.74,
+      "evidence": "图 #7 显示一串抬高低点持续挤压 1.70 一线水平阻力，红圈标注顶部突破位；他在推文中高频使用同类语言：“ETHEREUM BREAKOUT ATTEMPT!!”“ETHEREUM DAILY BREAK!”“BITCOIN HOURLY W-BREAK!”。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.72,
+      "evidence": "[2025-09-22] “ETHEREUM DUMPED BELOW EMA ON 1D! Last time this happens $ETH pumped 132% in 2 months!” 说明他把关键 EMA 的跌破/收复当成趋势切换和加仓依据。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.84,
+      "evidence": "[2024-04-19] “#BITCOIN HALVING: URGENT MESSAGE!!!!!!!!!” [2024-01-28] “#Bitcoin halving in less then 3 months!” [2024-12-30] “BTC Bullrun Q1 2025!”；他明显把减半后的时间窗口当作主框架。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.79,
+      "evidence": "[2024-07-27] “2011: UP ... 2024: UP 2025: ?? ... DOWN ... UP!!!” 是典型 4 年周期/年度方向类比；[2024-08-20] “Bitcoin: 2020 vs 2024.” 也是历史周期映射。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.67,
+      "evidence": "[2024-04-30] “#Bitcoin Bull market is over when funding fees reach 1% a day. We reached 0.33% at the high. Now we at 0.03%. We are far from the bull market top!” 他明确用资金费极值判断顶部远近。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.54,
+      "evidence": "[2024-06-16] “#BTC: PROOF THAT BLACKROCK ENTERED!” 显示他会把机构/ETF 资金进入作为上涨确认叙事。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.59,
+      "evidence": "[2026-04-07] “LAST SHAKE OUT BEFORE BULL!” [2025-07-29] “HAVE YOU BEEN SHAKEN OUT YET?” 这类表述反复出现，说明他常把下杀洗盘视作扫流动性后继续上行。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.57,
+      "evidence": "[2024-08-30] “Crypto became boring! I am SO BORED right now!!!! But it’s a good thing. Calm before the storm” 说明他会识别低波动盘整阶段，并把盘整理解为大波动前奏。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.82,
+      "evidence": "整体发言高度偏向趋势延续和牛市主升段，例如 [2024-10-29] “Bitcoin Bears: GAME OVER!” [2024-08-28] “The moment Bitcoin breaks $70‘000 it’s GAME OVER for Bears!” [2025-05-28] “Bitcoin is above $100’000 since 20 days! This has NEVER happened before!”。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.61,
+      "evidence": "[2024-07-29] “A monthly close above $70‘000 will kick off the last phase of the parabolic Bull Market!” 说明他不只是看涨，也会把抛物线末段当成特定阶段来定义。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.63,
+      "evidence": "他常在强趋势里等待回踩再继续，例如 [2025-09-22] 用 1D EMA 跌破后的修复类比后续拉升；[2025-01-31] “We need to hold above $3’270 to stay golden. A break below would invalidate the break.” 体现回踩确认后延续的思路。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_compression_breakout",
+      "name": "Compression Breakout",
+      "name_zh": "压缩盘整突破",
+      "type": "pattern_setup",
+      "description": "Repeatedly identifies tight coiling, boring ranges, or multi-candle compression below resistance and trades the expansion once price breaks the box/ceiling.",
+      "description_zh": "反复识别“盘整收缩/挤压/无聊行情”后接方向性放量突破的 setup，核心不是标准三角或旗形，而是泛化的 box/coil 压缩突破。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "[2025-01-31] “ETHEREUM IS COILING UP!!!! BIG TIMES!!!!!” [2024-10-29] “Bitcoin is coiling up like it has never been coiling up before!” [2024-08-30] “Calm before the storm” [2024-08-23] “Bitcoin will break within 7 days!”"
+    },
+    {
+      "proposed_id": "cap_new_weekday_pump_seasonality",
+      "name": "Weekday Pump Seasonality",
+      "name_zh": "星期级别上涨季节性",
+      "type": "cycle_time",
+      "description": "Uses recurring weekday effects, especially Monday strength, as a lightweight timing overlay for bullish continuation calls.",
+      "description_zh": "把工作日季节性，尤其“周一上涨效应”，当作轻量择时因子叠加到趋势看多框架上。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "intraday_to_1w",
+        "confidence_base": 0.56
+      },
+      "example_evidence": "[2024-05-27] “Monday is Pump Day!” [2025-05-26] “Monday Bitcoin Pumps are the FREAKING BEST IN THE WORLD!!!!”"
+    },
+    {
+      "proposed_id": "cap_new_public_pnl_conviction_signal",
+      "name": "Public PnL Conviction Signaling",
+      "name_zh": "公开盈亏截图强化信念",
+      "type": "framework",
+      "description": "Publishes account screenshots, unrealized/realized PnL, and size disclosures to reinforce trade conviction, social proof, and audience adherence to his directional call.",
+      "description_zh": "通过公开账户截图、未实现/已实现利润和仓位规模，强化自己的方向判断与受众跟随度；这是他的内容化交易框架的一部分。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "narrative_reinforcement",
+        "horizon": "campaign_length",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "图 #1 为 SOL 11x 多单巨额浮盈截图；图 #8 为 ETH 现货大额持仓；[2024-11-30] “People were LAUGHING at my months/year long position trades...” [2025-04-22] “$8.6 MILLION UNREALIZED $8.9 MILLION REALIZED”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Monday is Pump Day!",
+      "rule_paraphrased": "把周一当作偏多的情绪/季节性触发器。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Crypto became boring! I am SO BORED right now!!!! But it’s a good thing. Calm before the storm ⛈️ 🚀",
+      "rule_paraphrased": "低波动、无聊盘整不是坏事，往往预示后续大行情。",
+      "category": "framework"
+    },
+    {
+      "quote": "People were LAUGHING at my months/year long position trades. I have proven to the world it is the least risky & most profitable way of trading.",
+      "rule_paraphrased": "偏好长期持仓式方向交易，而不是频繁短打；把长持仓定义为更低风险高收益。",
+      "category": "framework"
+    },
+    {
+      "quote": "The moment Bitcoin breaks $70‘000 it’s GAME OVER for Bears!",
+      "rule_paraphrased": "关键水平一旦突破，就迅速切换到高确信度趋势延续叙事。",
+      "category": "mantra"
+    },
+    {
+      "quote": "LAST SHAKE OUT BEFORE BULL!",
+      "rule_paraphrased": "把剧烈回撤优先解释成洗盘/扫流动性，而非趋势终结。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不是纯粹的冷静量化型 TA，而是把经典形态、周期叙事和高情绪动员式内容包装合在一起。图表上最常见的是杯柄、压缩后突破、关键均线与关键价位确认；表达上则大量使用“GAME OVER”“IMMINENT”“COILING UP”这种高确信度口号。另一个明显特征是公开展示大额仓位和盈利截图，把交易分析和个人品牌/群体信念绑定在一起。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "TARGET IS $120‘000",
+      "GAME OVER for Bears",
+      "IMMINENT",
+      "ABOUT TO GO",
+      "COILING UP",
+      "BREAKOUT ATTEMPT",
+      "NOW!!!! COME ON!!!",
+      "LAST SHAKE OUT BEFORE BULL"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "Hopefully",
+      "I feel",
+      "I don’t like this…",
+      "This really doesn’t look beautiful",
+      "don’t ask me why"
+    ]
+  }
+}

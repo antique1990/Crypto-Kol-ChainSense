@@ -1,0 +1,184 @@
+{
+  "handle": "NickTimiraos",
+  "school_primary": "macro",
+  "school_secondary": [
+    "content_creator",
+    "risk_first",
+    "structural"
+  ],
+  "time_preference": "macro",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "DXY",
+    "US2Y",
+    "US10Y",
+    "SPX",
+    "BTC",
+    "Oil"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.97,
+      "evidence": "这是他最核心的框架。2024-01-31 连发：\"Rates unchanged  FOMC statement gets a big rewrite\"、\"Powell gives a hard shove *against* a March cut\"；2024-07-31 又用 statement redline 解读：\"No explicit signal of a September rate cut, but some very meaningful changes in the top of the statement\"。配图 3、4 直接是 FOMC 声明逐字 redline。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.84,
+      "evidence": "他持续把利率路径、收益率和流动性环境当作风险资产上层约束。2024-09-30：\"Interest rates can move ‘over time’ to a ‘more neutral stance’\"；2024-09-23/09-30 多次围绕降息路径、neutral rate、mortgage rates、financial conditions 展开。不是看单根K线，而是看收益率和政策约束如何改变估值与风险偏好。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.49,
+      "evidence": "虽然不直接画 SPX setup，但他反复用增长、股市、金融条件来定义 risk-on/off。2025-01-31：\"Given recent economic strength and buoyant stock markets...\"；2024-03-29/09-30 多次围绕 soft landing、economy in solid shape、tools to keep labor market and economy strong 讨论风险偏好。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.38,
+      "evidence": "2026-04-11 直接转述 NYT：\"The futures and spot prices are rarely exactly the same, but the gap between them has grown unusually big\"。配图 5 也是现货油价与期货油价严重背离。这不是加密 perp basis，但方法论上就是利用现货/期货错位来识别定价失真与风险传导。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.29,
+      "evidence": "他不常直接做 BTC 图，但会从美元体系和储备货币地位切入 BTC 叙事。2024-11-30：\"How does this pair with the idea of creating a ‘federal’ bitcoin ‘reserve.’\"；配图 1 是 Trump 对 BRICS 去美元化和替代货币的强硬表态。对加密交易而言，这类美元主导权变化会先影响 DXY/宏观流动性框架，再传导到 BTC。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.34,
+      "evidence": "他会明确标记高波动宏观 regime，而不是把所有数据都当趋势延续。2025-03-31：\"Trump officials still aren’t sure what they’re doing with tariffs this week\"；2026-04-10：\"The oil shock is far worse than the commonly quoted statistics show.\" 他的叙述里，关税、能源冲击、FOMC 都是需要先降低确定性、再评估传导的波动 regime。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.26,
+      "evidence": "他的方法带有明显的‘等确认’倾向。2025-01-31：\"If you are concluding that inflation progress has stalled based on the YoY measures, then give it a couple months.\"；2024-01-31：Powell quote 被他重点放大，强调没有足够 confidence 就不该抢跑降息。迁移到交易上，就是不靠单一数据点逆势抄底/摸顶。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_fomc_statement_redline",
+      "name": "FOMC Statement Redline Reaction Function",
+      "name_zh": "FOMC 声明红线差分反应函数",
+      "type": "event_reaction",
+      "description": "Compare consecutive FOMC statements word-by-word, rank added/removed phrases by policy significance, and infer whether the reaction function shifted toward easing, tightening, or data dependence.",
+      "description_zh": "逐字比对连续两次 FOMC 声明，按政策含义给删改语句排序，推断联储反应函数是偏宽松、偏紧还是更数据依赖。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on_or_risk_off",
+        "horizon": "macro",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "配图 3、4 都是声明 redline；2024-01-31：\"FOMC statement gets a big rewrite\"；2024-07-31：\"very meaningful changes in the top of the statement\"。"
+    },
+    {
+      "proposed_id": "cap_new_pce_bridge_nowcast",
+      "name": "CPI/PPI-to-PCE Bridge Nowcast",
+      "name_zh": "CPI/PPI 映射 PCE 预估",
+      "type": "indicator_rule",
+      "description": "Translate CPI, PPI, import prices, and category details into a high-probability core PCE estimate before the official release, then judge whether annualized 3m/6m trends are improving or stalling.",
+      "description_zh": "用 CPI、PPI、进口价格和分项细节预估核心 PCE，在正式公布前判断 3 个月和 6 个月年化趋势是改善还是停滞。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "dovish_or_hawkish_macro",
+        "horizon": "macro",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2024-06-28：\"Based on the CPI + PPI + import prices, inflation forecasters anticipate a very mild core PCE reading\"；2024-08-29、2024-10-30、2025-02-28 反复使用同一桥接框架。"
+    },
+    {
+      "proposed_id": "cap_new_labor_cooling_composite",
+      "name": "Labor Market Cooling Composite",
+      "name_zh": "劳动力市场降温综合框架",
+      "type": "macro_correlation",
+      "description": "Use job openings, hiring rate, quits, claims, ECI, wage trackers, and benchmark revisions as a combined labor-state model instead of relying on payroll headlines alone.",
+      "description_zh": "综合职位空缺、招聘率、离职率、失业金申请、ECI、工资追踪和基准修正来判断劳动力市场状态，而不是只看非农标题。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on_if_cooling_without_breaking",
+        "horizon": "macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-07-30：\"Job openings and hiring data point to a labor market that keeps loosening\"；2024-08-27 关于 benchmark revision；配图 7、8 也是围绕就业修正与移民结构。"
+    },
+    {
+      "proposed_id": "cap_new_tariff_pass_through_scenario",
+      "name": "Tariff Pass-Through Scenario Matrix",
+      "name_zh": "关税传导情景矩阵",
+      "type": "macro_correlation",
+      "description": "Map tariff proposals into inflation, growth, and Fed-path scenarios by separating one-off goods-price effects, confidence shocks, and longer-run labor-market slowdown.",
+      "description_zh": "把关税方案拆成通胀、增长和联储路径的情景矩阵，区分一次性商品涨价、信心冲击和更长期的就业拖累。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "two_way_volatility_then_policy_repricing",
+        "horizon": "macro",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-03-30：Goldman 预计更激进关税将把 core PCE 推到 3.5%；2024-12-27：2018 年关税没造成持续通胀，但压制 sentiment 和 investment。"
+    },
+    {
+      "proposed_id": "cap_new_revision_audit_framework",
+      "name": "Data Revision Audit",
+      "name_zh": "宏观数据修正审计",
+      "type": "framework",
+      "description": "Track benchmark revisions, GDI/GDP gaps, savings-rate revisions, and methodology quirks to avoid trading off first prints that will later be materially revised.",
+      "description_zh": "跟踪基准修正、GDI/GDP 缺口、储蓄率修正和统计口径问题，避免围绕首发数据做出之后会被大幅修正的交易判断。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "lower_confidence_on_initial_headline",
+        "horizon": "macro",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2024-09-26：\"A puzzle solved? Gross domestic income was revised up\"；2024-09-27：储蓄率被上修 2 个百分点；他非常重视 revisions。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Ask me in six months. Just kidding. Two ways to think about this.",
+      "rule_paraphrased": "不要被单月数据绑架，先给出至少两套解释框架，再等更多样本确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "This is admittedly a bit (OK, very!) in the weeds, but yesterday, the Fed released minutes from the board's discount rate meetings in July.",
+      "rule_paraphrased": "他愿意深挖制度和操作层细节，认为真正的信息优势常藏在多数人嫌麻烦的角落。",
+      "category": "framework"
+    },
+    {
+      "quote": "Jobless claims aren't telling much new about the state of the labor market.",
+      "rule_paraphrased": "反对用单一高频指标下结论，必须用多指标交叉验证就业状态。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "The bar to cut in September seems quite low based on everything Powell said at the presser",
+      "rule_paraphrased": "重点不是 headline，而是从措辞、门槛和条件句里反推政策阈值。",
+      "category": "framework"
+    },
+    {
+      "quote": "The oil shock is far worse than the commonly quoted statistics show.",
+      "rule_paraphrased": "对市场共识数字做二次审计，主动寻找被低估的传导链和统计误差。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是典型依赖 K 线形态的交易员画像，而是把联储声明 redline、通胀桥接测算、就业修正和政策政治化风险当作主交易信号。对加密市场来说，他的 edge 在于更早识别美元、利率、通胀和联储独立性这些上层变量的变化，再把它们映射成 BTC 的宏观约束。相比多数 TA 交易员，他更像“政策文本分析 + 宏观 nowcast + 数据修正审计”的复合型框架。",
+  "risk_style": "conservative",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "BREAKING:",
+      "gets a big rewrite",
+      "The bar to cut in September seems quite low",
+      "This is a notable miss.",
+      "The oil shock is far worse than the commonly quoted statistics show."
+    ],
+    "low_conviction_phrases": [
+      "seems",
+      "likely",
+      "suggests",
+      "could",
+      "Ask me in six months.",
+      "A puzzle solved?"
+    ]
+  }
+}

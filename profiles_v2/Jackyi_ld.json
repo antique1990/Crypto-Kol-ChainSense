@@ -1,0 +1,235 @@
+{
+  "handle": "Jackyi_ld",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "cycle",
+    "contrarian",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "ETH",
+    "BTC",
+    "UNI",
+    "LTC",
+    "WLFI",
+    "USD1"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.88,
+      "evidence": "[2025-12-30]“美联储会逐步放水，而且力度越来越大…第一次是312疫情大放水，后面出现了大牛市。这轮也同样是放水”——典型把流动性宽松作为加密牛市主驱动。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.42,
+      "evidence": "[2025-08-21]“重点关注…鲍威尔讲话…距离9月降息25个点时间越来越近”；[2025-09-08]“尤其是可能降息50个点情况下”——明显围绕联储事件做仓位与方向判断。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.83,
+      "evidence": "[2026-01-26]“大家都很疑惑…原因…一个是四年周期和1011暴跌影响”；[2026-01-29]“空头最大的卖点就是4年周期”；[2026-03-10]“按照周期理论，今年也是大底机会”——周期框架反复出现。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.8,
+      "evidence": "[2026-01-29]明确讨论“四年周期”；[2025-07-27]“可能也没有传统4年周期规律了”——即使在质疑，也是在用四年周期作为默认参照系。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.76,
+      "evidence": "[2025-12-29]“ETH合约持仓持续新高，已经成为价格主导因素”；[2025-12-31]“同意文章分析的逼空逻辑”；[2026-01-26]“空头进入最疯狂的砸盘阶段”——核心在于拥挤空头与逼空逻辑。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.74,
+      "evidence": "[2025-12-29]“ETH合约持仓持续新高，已经成为价格主导因素”；[2026-01-26]“币价一直疲软和震荡…空头疯狂利用这个时机砸盘”——典型用持仓结构解释横盘后的方向选择。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.55,
+      "evidence": "[2025-06-11]“做空ETH/BTC汇率…是过去一年多最拥挤的交易…即将面临平仓”——并非只看价格，而是看拥挤度/持仓与价格背离后的反身性。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.58,
+      "evidence": "[2026-03-27]“唯一的输血就是华尔街的ETF和DAT”；[2025-10-17]“微策略和ETF(受制美股)买盘衰竭”；[2025-08-17]“有美元超级印钞机和华尔街金融创新的大腿后”——把ETF/机构流作为方向代理变量。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.7,
+      "evidence": "[2025-10-11]“美股新高，AI和半导体公司玩起资金盘游戏，无法持续支撑”；[2025-08-21]“未来除非美股出现重大问题，否则都是牛市趋势向上交易机会”；[2025-07-27]“目前唯一的风险就是美股大崩盘”——美股风险偏好是其核心上游变量。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.66,
+      "evidence": "[2025-07-28]“在美元印钞机和华尔街金融创新双重冲击下”；[2025-12-30]“美联储会逐步放水”——虽未直接说M2，但实质是在交易货币扩张。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.72,
+      "evidence": "[2025-07-20]“币圈牛市中一直有个轮涨规律，BTC和ETH先冲顶，然后是主流中型币…最后再是各种有实力的山寨币”；[2025-09-14]“轮涨定律已经开始，在ETH领涨后主流币SOL，BNB等开始”——明显使用BTC→ETH→主流→山寨的轮动框架。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.61,
+      "evidence": "[2026-03-27]“首先币圈处于熊市…像样的反弹都没有”；[2026-03-23]“幸好只看反弹而不是反转，触发止损后静心等待局势明朗”——不是机械抄底，而是确认环境与反弹级别。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.57,
+      "evidence": "[2026-03-23]“触发止损后静心等待局势明朗”；[2026-03-28]“设置了止盈线，仓位小好操作，反弹不如预期…等待新的抄底机会”——有明确止损/止盈执行。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.46,
+      "evidence": "[2026-03-28]“仓位小好操作”；但同时其公开表述里也常有“大量买入”“准备10亿美金继续增持ETH”，说明其组合层面激进，交易层面会按仓位区分。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.9,
+      "evidence": "[2025-07-27]“市场彻底进入长长牛市了”；[2025-08-14]“牛市趋势中每次回调就是加仓机会”；[2026-01-14]“2026年开启加密大牛市”——最强的就是趋势/牛熊阶段识别。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.64,
+      "evidence": "[2025-10-29]“目前行情处于深度调整趋势”；[2026-03-27]“首先币圈处于熊市”——会明确切换到熊市/调整 regime，而不是永远单边看多。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.62,
+      "evidence": "[2026-01-26]“这几天市场波动有点大”；[2025-12-19]“这几天的波动也是合约主导”；[2025-12-29]“不担心几百刀波动”——他会先定义高波动环境，再决定是否继续持有。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.52,
+      "evidence": "[2026-01-24]“ETH快速3倍以上涨幅…随着ETH暴涨到4500➕，几次突破5000失败后，我们认为到了阶段性顶而清仓”——明显在识别加速上涨后的阶段性衰竭。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.22,
+      "evidence": "附图6是聊天截图，内容有“这个以太太强势了，别卖了”；[2025-12-15]“建议买入现货后提出交易所…减少更多做空的机会”——虽非标准入所监控，但有鲜明的交易所流动性/卖压意识。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_eth_supercycle_narrative",
+      "name": "ETH Supercycle Narrative Concentration",
+      "name_zh": "ETH 超级周期叙事集中持仓",
+      "type": "structural_bias",
+      "description": "Uses a high-conviction, narrative-led concentration framework: when policy, Wall Street adoption, stablecoins, and onchain finance align, concentrate heavily in ETH instead of diversifying broadly.",
+      "description_zh": "当“政策转向 + 华尔街入场 + 稳定币扩张 + 金融上链”叙事共振时，不做均匀分散，而是高集中度重仓 ETH 的框架。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "strong_long_ETH",
+        "horizon": "position",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "[2025-08-25]“唯有ETH最硬…鸡蛋放在多个篮子里，有时刻并不是一个好策略”；[2025-12-24]“坚定认为现在是最佳eth买入区…ETH未来目标1万➕”。"
+    },
+    {
+      "proposed_id": "cap_new_rotation_law",
+      "name": "Major-to-Alt Rotation Law",
+      "name_zh": "主流到山寨轮涨定律",
+      "type": "structural_bias",
+      "description": "A sequence model for bull markets: BTC leads, then ETH, then large-cap majors, then quality altcoins. Used for asset selection and timing rather than pure chart entry.",
+      "description_zh": "牛市中的轮动顺序模型：BTC 先涨，随后 ETH，再到主流大市值，最后扩散到优质山寨；主要用于选币与节奏，而非单纯K线入场。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "rotate_into_next_beta_bucket",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-07-20]“BTC和ETH先冲顶，然后是主流中型币…最后再是各种有实力的山寨币”；[2025-09-14]“轮涨定律已经开始”。"
+    },
+    {
+      "proposed_id": "cap_new_policy_compliance_repricing",
+      "name": "Policy/Compliance Repricing",
+      "name_zh": "政策合规重估",
+      "type": "event_reaction",
+      "description": "Reprices crypto assets based on US policy friendliness, stablecoin legislation, and compliant financial-onchain infrastructure rather than legacy crypto-native metrics alone.",
+      "description_zh": "基于美国政策友好度、稳定币立法、合规金融上链基础设施来给加密资产重新定价，而不只依赖传统链上或技术指标。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_compliant_infrastructure",
+        "horizon": "macro",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2026-01-24]“加密结构法案大概率通过…进入良性发展宏观环境的新阶段”；[2026-01-28]“像USD1这种合规稳定币”；[2025-12-12]“SEC主席最新表态‘金融迁移到链上’”。"
+    },
+    {
+      "proposed_id": "cap_new_transparent_wallet_signal",
+      "name": "Transparent Wallet Signaling",
+      "name_zh": "链上透明持仓信号",
+      "type": "risk_rule",
+      "description": "Uses public, onchain-visible portfolio moves as a signaling and accountability device; entries/exits are validated by wallet transparency, not only by posts.",
+      "description_zh": "用链上可验证的钱包动作作为观点背书与风控纪律，强调“言行一致”，让加减仓可被外部追踪验证。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow_confirmed_positioning",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2025-10-11]“我们明牌清仓…链上透明”；[2025-10-11]“当时明牌清仓和做空，是基于多维度的投研数据”；[2025-10-11]“链上清仓15万个ETH”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "“牛市趋势中每次回调就是加仓机会，而且无需担心被套牢，但是千万别高杠杆”",
+      "rule_paraphrased": "确认牛市 regime 后，回调默认视为加仓点，但避免高杠杆把正常波动变成强平。",
+      "category": "framework"
+    },
+    {
+      "quote": "“买在熊市卖在牛市是币圈核心策略”",
+      "rule_paraphrased": "核心不是微观择时，而是抓大级别牛熊切换并尽量持有主趋势。",
+      "category": "mantra"
+    },
+    {
+      "quote": "“守币比守寡还难”",
+      "rule_paraphrased": "真正难点不是找标的，而是在高波动里把仓位拿住。",
+      "category": "mantra"
+    },
+    {
+      "quote": "“没有内幕只有数据”",
+      "rule_paraphrased": "把自己的清仓/抄底归因于多维度研究，而非消息优势。",
+      "category": "framework"
+    },
+    {
+      "quote": "“波了几次亏多挣少”",
+      "rule_paraphrased": "他对短线波段能力并不过度自信，更偏向趋势持有而非频繁交易。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不像典型纯TA交易员，更像“宏观流动性 + 政策叙事 + 周期框架 + 衍生品拥挤度”驱动的高贝塔趋势投资者。与很多均衡配置型KOL不同，他长期公开表现出对 ETH 的高集中度信仰，并把链上透明持仓当成观点背书。附图里几乎没有标准K线标注，反而更多是名人内容、聊天截图与新闻截图，也说明其内容形态偏叙事驱动而非图形交易员。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "坚定认为现在是最佳eth买入区",
+      "强烈建议不要做空",
+      "毫无疑问这将是历史性机会",
+      "我们坚决不断加仓",
+      "ETH未来目标1万➕",
+      "ETH终极价格会超过4.5万美金",
+      "言行一致持续加仓ETH",
+      "市场彻底进入长长牛市了"
+    ],
+    "low_conviction_phrases": [
+      "可能也没有传统4年周期规律了",
+      "同样应该都是最佳买点",
+      "边走边看",
+      "仅供参考",
+      "没有人会百分百正确",
+      "如果是短线波段可以看位置止盈",
+      "目前来看",
+      "大概率通过"
+    ]
+  }
+}

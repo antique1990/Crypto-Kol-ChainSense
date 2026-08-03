@@ -1,0 +1,222 @@
+{
+  "handle": "AltcoinSherpa",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "DOGE",
+    "TAO",
+    "RNDR",
+    "FARTCOIN",
+    "PENGU",
+    "ZEC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.89,
+      "evidence": "2024-04-30: “man 52k for $BTC really has so much confluence.... 200d EMA .382 fib of the entire move Demand area/support”. 图3、图6都直接画出整段上升后的 Fib 回撤位，并把 0.382/0.5 一带当作需求区。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.82,
+      "evidence": "2024-04-30: “Me longing the $BTC dip today at $59k”；2024-05-31: “$SOL: Prob get ready to bid $150s again and be patient”；2026-04-04: “$NEAR... EMAs on the 4h all consolidating and it's at a great level.” 典型是趋势未坏时等回踩再接。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.78,
+      "evidence": "2024-04-30 明确提到 “200d EMA”；2025-07-31: “200 ema on the 4h hasnt been tested in a month”；2025-09-30: “200ema 4h holds and all is well”；2026-03-31: “4h 200 EMA is around $70k”。均线是他判断趋势/支撑的核心工具。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.77,
+      "evidence": "2025-08-31: “lower highs every time”；2025-08-31: “Eventually this will stop being lower highs and quick little spikes up followed by another move down”；图4也是标准下降通道+一连串更低高点的看空框架。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.75,
+      "evidence": "图4把此前支撑位 $107k / $80k / $60k 标成后续被跌破后的阻力与拒绝位，属于很典型的支撑变阻力/破坏块回测逻辑。2026-04-11: “BTC bulls trying to flip resistance to support... nothing conclusive yet” 也直接体现 flip/lose/retest 思维。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.72,
+      "evidence": "2026-02-27: “probably a good idea to just trade at the range low or break of the range high”；2025-11-30: “Trading conditions get hard when there is a clear lack of a trend”；图1右侧与图7都是明确箱体/平台结构。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.71,
+      "evidence": "他频繁把市场定义为 chop：2025-07-31 “we're still in extremely choppy waters”；2025-11-30 “clear lack of a trend”；2026-01-31 “expecting a bit more chop”。先判定是否震荡，再决定轻仓/等位。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.69,
+      "evidence": "2026-04-10: “I'm still probably not going to knife catch though when there are better options”；2026-01-31: “I want to see a wick somewhere before I feel confident”；2024-01-31 对 JUP 也说更偏好 “buy this on the way up”。虽偶尔抄底，但知道要等确认。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.64,
+      "evidence": "2026-01-31: “I want to see a wick somewhere”；2025-03-31: “strong selling/wicks in both direction”；图4直接把 $126k / $97k / $73k 标成 rejection，核心是关键位插针后被拒。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.58,
+      "evidence": "虽然他经常口嗨无止损，但实盘语言里反复强调执行与位置：2025-08-31 “scaling in from this region down to 4000 makes $$ as long as you dont fuck up the execution”；2026-02-28 “For active trades, still would be cautious”。他不是标准风险教科书，但 active trade 上明显在控错。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.58,
+      "evidence": "2025-05-31: “low volatility conditions = probably lower size rn. wick in either direction can prob kill you”；2025-03-31: “These trading conditions are extremely difficult”；2026-02-28 战争新闻时他说 active trades 要谨慎。会根据波动环境缩仓。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.56,
+      "evidence": "2025-04-30: “Zoom out for $BTC. This chart still looks great imo”；2025-06-30: “Stay bullish $BTC”；2025-07-31: “The market is still pretty bullish for $BTC and $ETH”。他默认先问大趋势是否还没坏。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.55,
+      "evidence": "2024-02-29: “Every chain usually has some sort of meme leader”；2024-03-31 专门梳理 meme coin leaders；2024-12-31 “you'll want to buy the next AI dip”；2024-12-31 “hodl the AI coins”；他大量做板块轮动和龙头筛选。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.52,
+      "evidence": "2024-04-30: “this is just a deviation!!! SEND IT!!”；图4写出 “$73k bull trap”；图2顶部结构画出冲高后的失败延续下跌。假突破/诱多是他常用解释框架。"
+    },
+    {
+      "id": "cap_050_three_drives_pattern",
+      "weight": 0.49,
+      "evidence": "图2在 1h 上明确画出三段拱形顶部，第三次推动后预期走弱下跌，和三驱/三次冲顶衰竭思路高度一致。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.46,
+      "evidence": "2025-04-30 对 FARTCOIN 的表达是顺着强趋势追随，但同时经常提“already pumped”后的继续与衰竭判断；图7、图8都在追踪强单边后是否继续扩张，图2则是短线加速后的衰竭。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_stair_step_base",
+      "name": "Stair-Step Box Consolidation",
+      "name_zh": "阶梯式箱体抬升",
+      "type": "pattern_setup",
+      "description": "After an impulse move, price forms a horizontal box, breaks higher, then builds a new higher box above prior support. Repeated base-building is treated as trend health and continuation.",
+      "description_zh": "价格快速上冲后进入横盘箱体，突破后在更高位置再搭建新的横盘平台。连续的“平台抬升”被视为趋势健康、适合顺势持有或等回踩接回。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "图7 的 FARTCOIN 画出两个连续抬高的平台；图8 的 PENGU 也是水平箱体突破后扩张；他常说“bit more chop and next leg up soon”。"
+    },
+    {
+      "proposed_id": "cap_new_post_dump_base_analogy",
+      "name": "Post-Dump Base Duration Analogy",
+      "name_zh": "暴跌后筑底时长类比",
+      "type": "cycle_time",
+      "description": "Compare the current post-dump consolidation in bars/days/volume versus a prior base to estimate whether enough time has passed for a local bottom to form.",
+      "description_zh": "把当前暴跌后的横盘整理与历史底部在持续时间、K线数量、成交量上做类比，用来判断局部底部是否“盘够了”。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bottoming_bias",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "图1 直接比较两段 BTC 底部区间：左侧“18 bars, 54d, Vol 1.74M” 对右侧“14 bars, 42d, Vol 819.65K”，明显是在做历史底部时长/量能 analog。"
+    },
+    {
+      "proposed_id": "cap_new_lower_high_rollover",
+      "name": "Lower-High Rollover Sequence",
+      "name_zh": "连续更低高点滚落",
+      "type": "pattern_setup",
+      "description": "A series of rallies failing at progressively lower highs, often drawn as repeated rounded tops or arches, signaling buyer exhaustion before a sharper breakdown.",
+      "description_zh": "反弹一波比一波低，常表现为连续拱顶/圆弧高点，说明买盘衰竭，随后更容易出现加速下跌。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "图2 在 BTC 1h 上连画三段弧顶并给出下跌路径；2025-08-31 也反复说“lower highs every time”。"
+    },
+    {
+      "proposed_id": "cap_new_confluence_demand_zone",
+      "name": "HTF Confluence Demand Zone",
+      "name_zh": "高周期共振需求区",
+      "type": "structural_bias",
+      "description": "A buy zone defined by overlapping Fibonacci retracement, major moving average, and horizontal support/demand. The confluence matters more than any single tool.",
+      "description_zh": "用斐波回撤、关键均线和水平支撑/需求区重叠来定义买点，共振强于单一指标。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "buy_the_dip",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-04-30: “52k for BTC really has so much confluence.... 200d EMA .382 fib... Demand area/support”；图3 对 RNDR 的绿色区域正是这种多重共振买法。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Coins are for trading, not for marrying",
+      "rule_paraphrased": "币主要是交易工具，不做长期情感绑定，轮动与兑现优先。",
+      "category": "framework"
+    },
+    {
+      "quote": "Being a good trader means changing your mind/bias/outlook.",
+      "rule_paraphrased": "允许快速修正观点，市场结构变化时不死扛原判断。",
+      "category": "framework"
+    },
+    {
+      "quote": "Trade at the range low or break of the range high, buying here for active trades is a bit of a tough spot imo",
+      "rule_paraphrased": "不在区间中部乱开仓，只做边界或确认突破。",
+      "category": "framework"
+    },
+    {
+      "quote": "I'm still probably not going to knife catch though when there are better options",
+      "rule_paraphrased": "瀑布下跌里优先等确认，不做低胜率硬接刀。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "low volatility conditions = probably lower size rn. wick in either direction can prob kill you",
+      "rule_paraphrased": "低波动和不确定环境下降低仓位，避免被双向插针扫掉。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他和一般只会画趋势线的 TA 交易员不同，核心是“高周期结构 + Fib/EMA 共振区 + 板块/龙头轮动”三件套，尤其擅长在 BTC 稳住时去找最强 meme/AI/强势山寨。另一方面，他语言风格极其随性甚至戏谑，但图表框架并不杂乱，反而高度依赖箱体、支撑阻力翻转、底部盘整时长和 rejection。整体上是明显的顺势多头交易员，但在高波动和无趋势阶段会承认不确定、降低激进度。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "still looks great imo",
+      "ATH inevitable",
+      "all time highs loading",
+      "still has immense strength",
+      "stay bullish",
+      "great level",
+      "hard to unsee it"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "probably",
+      "wouldn't be surprised",
+      "I think",
+      "maybe local bottom?",
+      "kind of",
+      "no clue where precisely",
+      "don't personally have much conviction either way",
+      "nothing conclusive yet"
+    ]
+  }
+}

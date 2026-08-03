@@ -1,0 +1,190 @@
+{
+  "handle": "pierre_crypt0",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "risk_first",
+    "contrarian",
+    "cycle",
+    "mixed"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "PI",
+    "VVV",
+    "PUMP",
+    "HYPE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.95,
+      "evidence": "反复围绕趋势线/均线回踩做延续：如 [2026-01-31] “H1 trend as it's been perfectly respected since 89k+”; [2024-02-29] “H4 13 EMA & 60.3-60.4 tapped - let’s see now if it can rapidly reclaim H1 trend”."
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.93,
+      "evidence": "均线收复/失守是他最核心的判定框架之一：多次提到 “H1 200 EMA”, “H4 200 EMA”, “D1 100 MA”, “D1 300 MA retest/deviation below”；[2024-10-31] “Hold H1 200 EMA (69.8k) + reclaim H4 trend = good”."
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.88,
+      "evidence": "频繁先定义市场是否进入区间再决定打法：[2025-01-31] “small over reaction, back to ranging”; [2025-10-31] “better chances to at least chop 108/111 weekend”; [2024-10-31] “looks like repeat last week”."
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.81,
+      "evidence": "他非常关注下降趋势是否被打破：[2024-06-30] “one of the best H4 downtrend break attempt since 70k”; [2025-07-31] “Was first H4 downtrend break, had to give it a shot”."
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.79,
+      "evidence": "[2026-01-31] “Deviation bruv below Nov lows into reclaim is the best cope I can think of short term”; [2024-09-30] “if you have to take 62k don't just sweep it, come to daddy 59/60” 显示他常把前高前低扫流动性/假跌破再收回当作关键结构。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.74,
+      "evidence": "对假突破和失败延续很敏感：[2024-05-31] “sneaky but classic. Now rest of the plan please (greenish saturday, trappy sunday, resolution early next week)”; [2024-06-30] “Obviously hard to trust [Sunday evening-Monday NYO] moves”."
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.72,
+      "evidence": "[2025-07-31] “had to give it a shot, even on reduced sized” 明确根据环境缩小仓位；其整体表述也经常把机会和仓位分开处理。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.7,
+      "evidence": "[2025-07-31] “Got stopped out trying to trade, long, PUMP”; [2024-05-31] “alerts will hit if stopped or targets” 显示止损执行是流程化的，不恋战。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.69,
+      "evidence": "[2025-01-31] “2025 doesn’t come with absurd swings and opportunities”; [2026-01-31] “Who’s bombing who on this Saturday or market decided to sepuku randomly again ?” 他把高波动当成独立 regime 来处理。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.63,
+      "evidence": "[2024-11-29] “btc consolidating in the 90s, alts sending one after the other - even dinos” 明显在观察 BTC 横盘时山寨轮动扩散。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.58,
+      "evidence": "[2026-04-11] “BTC/Gold has bottomed after 400-410 days each cycle. We are now at the 420th day” 说明他会用跨周期计时框架判断大级别位置。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.54,
+      "evidence": "[2026-04-11] “What's coming next will be a massive liquidity flow into BTC from Gold” 说明他在跟踪 BTC/Gold 相对强弱与避险资产轮动。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.51,
+      "evidence": "[2024-05-31] “D1 trend defended, D1 100 MA climbing, D1 stoch reseting (for both BTC & SPX)” 直接把 SPX 当作 BTC 交易环境的确认变量。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.48,
+      "evidence": "虽然不直接说该 seed 名称，但行为上接近：[2026-01-31] “remain patient playing bounces/gap fills”; 多次强调要等 H1/H4 结构防守/收复后再参与，而不是裸接急跌。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_mtf_trend_ladder",
+      "name": "Multi-Timeframe Trend Ladder",
+      "name_zh": "多周期趋势阶梯",
+      "type": "structural_bias",
+      "description": "Use H1/H4/D1 trendlines and key EMAs/MAs as a hierarchy: lower timeframe for trigger, higher timeframe for bias and invalidation.",
+      "description_zh": "用 H1/H4/D1 趋势线与关键 EMA/MA 构成分层框架：低周期负责触发，高周期负责方向与失效。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow_higher_tf_bias_after_lower_tf_reclaim_or_loss",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "多次出现 “H1 trend”, “H4 trend”, “D1 trend”, “H1 200 EMA”, “D1 100 MA climbing”；[2024-10-31] 甚至明确给出 H1/H4 联立条件。"
+    },
+    {
+      "proposed_id": "cap_new_weekend_session_trap",
+      "name": "Weekend Session Trap Playbook",
+      "name_zh": "周末时段陷阱剧本",
+      "type": "event_reaction",
+      "description": "Treat weekend and Sunday evening price action as low-trust microstructure, often expecting traps before a clearer move around early next week or NY open.",
+      "description_zh": "把周末尤其周日晚间价格行为视为低可信微观结构，预期先诱骗/扫单，再在下周初或纽约开盘附近给出更可信方向。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "reduce_conviction_wait_for_confirmation",
+        "horizon": "intraday",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-05-31] “greenish saturday, trappy sunday, resolution early next week”; [2024-06-30] “hard to trust [Sunday evening-Monday NYO] moves”."
+    },
+    {
+      "proposed_id": "cap_new_alert_driven_execution",
+      "name": "Alert-Driven Patience",
+      "name_zh": "警报驱动的耐心执行",
+      "type": "risk_rule",
+      "description": "Stay mostly inactive until alerts at preplanned levels fire; avoid forcing trades between levels.",
+      "description_zh": "大部分时间保持不交易，直到预设价位的 alert 触发；尽量不在区间中段强行出手。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral_until_level_hit",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-07-31] “Meanwhile still no alerts triggered no trades”; [2024-05-31] “alerts will hit if stopped or targets”; [2026-01-31] “receiving alerts of market tanking on its own”."
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "small over reaction, back to ranging, spot isolated trend, focus on it  litteraly business as usual if you’ve been trading this cycle",
+      "rule_paraphrased": "先把噪音归类为正常波动，再回到区间/局部趋势主线，不因情绪改系统。",
+      "category": "framework"
+    },
+    {
+      "quote": "Got stopped out trying to trade, long, PUMP for the first time today. Was first H4 downtrend break, had to give it a shot, even on reduced sized.",
+      "rule_paraphrased": "有结构优势时可以试错，但必须减仓，并接受被止损是交易成本。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "The truth is that most people flexing pico bottom entries are biding the 15+ missed attempts before.",
+      "rule_paraphrased": "不要迷信别人晒出来的神级抄底；真实交易是多次试错后才换来一次抓到拐点。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "the only use case of this industry is to trade it, let’s just all talk trading",
+      "rule_paraphrased": "他的账号核心价值观是纯交易导向，尽量把注意力留在价格、结构和执行上。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Obviously hard to trust [Sunday evening-Monday NYO] moves",
+      "rule_paraphrased": "按时段给行情分级，流动性差的时段默认降低信任度与仓位。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他和一般 TA 交易员的区别，不是靠复杂指标堆叠，而是把 H1/H4/D1 趋势线与 100/200 均线做成一个极其稳定的决策骨架。另一个很强的个人标签是“周末/周日晚/NYO 微观结构剧本”，他会明确给不同时段不同可信度。第三，他愿意公开承认止损、漏空、执行差，这让他的 profile 更像真实执行型交易员，而不是只发复盘截图的内容号。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "until proven otherwise",
+      "important battle here",
+      "one focus it would remain H1 trend",
+      "exact same approach as last week",
+      "had to give it a shot",
+      "best I can think of short term"
+    ],
+    "low_conviction_phrases": [
+      "let’s see",
+      "IMO",
+      "probably",
+      "at least",
+      "hard to trust",
+      "if/when",
+      "best cope I can think of"
+    ]
+  }
+}

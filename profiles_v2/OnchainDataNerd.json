@@ -1,0 +1,194 @@
+{
+  "handle": "OnchainDataNerd",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "structural",
+    "derivatives",
+    "content_creator",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "LINK",
+    "ARB",
+    "NEIRO",
+    "PEPE",
+    "ASTER"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.97,
+      "evidence": "这是他最稳定的框架之一。例子很多：\"In last 3 hours, @wintermute_t just deposited 9M $ARB (~$14.9M) to #Binance. Last time, $ARB's price dumped 20% when they did the same thing.\"；\"#BlackRock deposited 1,134 $BTC (~$77.05M) into #Coinbase.\"；\"Within 24 hours, #Polygon_Foundation deposited totally 25M $MATIC (~$10.43M) to #Binance.\" 他反复把大额入所直接解读为潜在卖压。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.83,
+      "evidence": "他明确追踪稳定币增发作为风险资产燃料：\"Another 1B $USDT was minted 1 hour ago. Since the BTC ETF, a total of 2B $USDT has been minted at #Tether Treasury.\"；\"15 minutes ago, another 2B $USDT were minted\"。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.78,
+      "evidence": "他持续把 ETF/机构钱包流向当作市场需求代理：\"#Grayscale deposited another 9,434 $BTC($376.5M) to #CoinbasePrime.\"；\"#BlackRock withdrew 2,086 $BTC (~$135M) and 8,459 $ETH (~$15.84M) from #Coinbase.\"；\"#BlackRock_IBIT deposited 828 $BTC (~$79.57M) into #Coinbase. This is the 1st outflow since 8th November.\""
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.62,
+      "evidence": "虽然他不是经典链上周期派，但会把持续持有/质押解读为偏多库存信号：\"#Bitmine transferred 140,400 $ETH (~$281.97M) into #CoinbasePrime for staking. Still diamond hand 💎💎💎\"；\"a Multi-sig wallet ... withdrew 10M $ENA ... and staked into #Ethena\"。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.34,
+      "evidence": "他会捕捉资金轮动到山寨/BTC 生态的阶段性叙事，虽然不常直接说 BTC.D：\"The return of $BTC Ecosystem Since last month, the TVL of staked $BTC ecosystem has increased significantly ~77%\"；大量内容从 BTC/ETH 切到 NEIRO、FWOG、MUMU、PEPE、ASTER 等高 beta 标的。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.31,
+      "evidence": "他高度敏感于事件驱动和高波动环境，例如：\"Since the hack, #Bybit has responsed positively... borrowed $ETH\"；\"TON's blockchain has been down for 6 hours\"；\"A Rug-pull to $DOREA on Sol\"。这类帖子不是形态交易，而是把市场置于高波动/高事件风险 regime 中。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.27,
+      "evidence": "当链上大额流向与价格走弱共振时，他会默认偏空解释：\"Dumping so hard, man\"（11,318 BTC 入 Binance）；\"Usually, whenever he bought, the price dropped, and vice versa.\" 这是典型把资金流与下跌趋势联动的框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.26,
+      "evidence": "当连续提款/增持出现时，他会转为趋势延续式的偏多叙述：\"It looks like $LINK was accumulated. Within 12 hours, there were 892.46k $LINK (~$15M) withdrawn from #Binance.\"；\"Within 3 days, he accumulated totally 168.76k $LINK (~$3.08M)\"。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_fresh_wallet_accumulation_cluster",
+      "name": "Fresh Wallet Accumulation Cluster",
+      "name_zh": "新钱包集群吸筹",
+      "type": "onchain_signal",
+      "description": "Detect repeated withdrawals of the same token from exchanges into fresh wallets over hours to days, then aggregate size, average entry, and wallet count as a bullish accumulation signal.",
+      "description_zh": "识别同一代币在数小时到数天内被多个新钱包反复从交易所提出，并聚合总量、均价、钱包数，作为吸筹信号。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "\"Within a week, 2 fresh wallets spent $1.29M for 16.3M $NEIROETH\"；\"In past 8 hours, 3 fresh wallets withdrew totally 4.66M $ASTER\"；图片1里多个 Binance hot wallet 在 2 天内持续向同一 LINK 地址转出。"
+    },
+    {
+      "proposed_id": "cap_new_mm_inventory_interpretation",
+      "name": "Market Maker Inventory Readthrough",
+      "name_zh": "做市商库存读穿",
+      "type": "onchain_signal",
+      "description": "Interpret transfers involving market makers or OTC desks such as Wintermute, GSR, Amber, Cumberland, Jump, and Galaxy as inventory-building, distribution, or off-exchange liquidity operations rather than generic transfers.",
+      "description_zh": "将 Wintermute、GSR、Amber、Cumberland、Jump、Galaxy 等做市商或 OTC 桌相关转账解读为库存建立、派发或场外流动性操作，而不是普通转账。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "\"Beside #Wintermute accumulating for $NEIRO_ETH\"；\"#Wintermute's OTC wallet received 4.655M $SPX (~$4.21M) from a Multi-sig wallet\"；图片4显示 Wintermute 持有 54.784M NEIRO，图片8显示 Gnosis Safe Proxy 向 Wintermute OTC 发送大额 SPX。"
+    },
+    {
+      "proposed_id": "cap_new_wallet_roi_archeology",
+      "name": "Wallet ROI Archeology",
+      "name_zh": "钱包收益考古",
+      "type": "structural_bias",
+      "description": "Trace a wallet from first entry to current holdings, realized and unrealized PnL, and average entry to infer whether it belongs to smart money worth following.",
+      "description_zh": "从首笔建仓一路追踪到当前持仓、已实现/未实现收益和持仓均价，以判断该钱包是否属于值得跟踪的聪明钱。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow_smart_money",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "\"2 months ago, this smart money swapped $281k for 4.4M $FWOG & turns his investment into $1.1M (ROI 392%)\"；\"Yesterday, 'Happytrump.sol' swapped $69.7k for 14.64M $VINE... realized profit ~$2.29M\"；图片6和图片7都是顺着 Jupiter authority 资金流去还原早期仓位来源。"
+    },
+    {
+      "proposed_id": "cap_new_perp_trader_shadowing",
+      "name": "Perp Trader Shadowing",
+      "name_zh": "合约大户影子跟单",
+      "type": "derivatives_signal",
+      "description": "Track large public perpetual traders by leverage, DCA behavior, liquidation price, realized/unrealized PnL, and whether they are opening or closing positions.",
+      "description_zh": "跟踪公开可见的大型合约交易员，关注杠杆、加仓行为、清算价、已实现/未实现盈亏，以及他们是在开仓还是平仓。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "\"this short-er did dca his short position on $LIT\"；\"this Long-er did dca on his $ETH Long position\"；\"A +$10M trader PNL just opened 3x Long position ~$84.19M with $BTC on #Hyperliquid\"；\"#pension_usdt_eth opened another 3X Short on $ETH ~$41M\"。"
+    },
+    {
+      "proposed_id": "cap_new_launch_allocation_funnel",
+      "name": "Launch Allocation Funnel Tracking",
+      "name_zh": "代币启动分发漏斗追踪",
+      "type": "onchain_signal",
+      "description": "Follow transfers from authority, deployer, treasury, multisig, or LP-related addresses into end wallets to identify early recipients, stealth distribution, or launch funnels.",
+      "description_zh": "追踪 authority、deployer、treasury、多签或 LP 相关地址向终端钱包的转账，以识别早期受益地址、隐性分发路径和代币启动漏斗。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "informational",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "图片6和图片7都在追踪 Solana 上 Jupiter Aggregator Authority 到 FWOG/MUMU 接收钱包的转移；这类分析不属于 seed 里的通用入所/出所，更像 launch provenance tracing。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Dumping so hard, man",
+      "rule_paraphrased": "看到超大额 BTC 入所时，他会直接把它解释成即时卖压而不是中性转账。",
+      "category": "framework"
+    },
+    {
+      "quote": "Hey #VitalikButerin,  Stop selling $ETH, dude!!!!",
+      "rule_paraphrased": "名人/核心人物的钱包卖出会被他视作强叙事信号，值得单独拎出来放大。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Still diamond hand 💎💎💎",
+      "rule_paraphrased": "持续持有、质押、不向交易所转移的巨鲸/机构库存，会被他视作偏多底层支撑。",
+      "category": "framework"
+    },
+    {
+      "quote": "DIP BUYING???",
+      "rule_paraphrased": "当鲸鱼在回撤时提款/吸筹，他会用半提问式措辞表达偏多但保留不确定性。",
+      "category": "framework"
+    },
+    {
+      "quote": "Usually, whenever he bought, the price dropped, and vice versa.",
+      "rule_paraphrased": "他会给特定地址打上行为标签，并把历史 wallet behavior 当作可重复利用的反身性信号。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和典型 TA 交易员最大的区别，是几乎不用传统价格形态来讲故事，而是用钱包、做市商、交易所、OTC、authority 地址之间的资金流来重建市场结构。图片里也不是标准 K 线形态，而是 Arkham/Solscan 式的转账路径、持仓页和来源去向表，说明他的核心 edge 是“谁在转、转去哪、平均成本是多少”。同时他又会把这些链上流与机构、ETF、Hyperliquid 大户、meme 早期钱包收益考古拼在一起，形成一种事件驱动的链上 order-flow 研究框架。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "just withdrew",
+      "deposited",
+      "accumulated totally",
+      "still hodls",
+      "the price dumped 20% when they did the same thing",
+      "This is the guy.",
+      "Dumping so hard, man"
+    ],
+    "low_conviction_phrases": [
+      "maybe belongs to",
+      "may belong to",
+      "could be",
+      "It looks like",
+      "Feels like",
+      "Will he",
+      "DIP BUYING???"
+    ]
+  }
+}

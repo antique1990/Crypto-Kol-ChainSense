@@ -1,0 +1,233 @@
+{
+  "handle": "EmperorBTC",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "contrarian",
+    "content_creator",
+    "risk_first",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "DOGE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.92,
+      "evidence": "他反复把市场描述为区间环境并强调在区间内操作；如 [2025-02-23] “The market has ranged... Range and Pump.”，[2025-02-27] “How and where to trade this range.”；图表 #6 也用大矩形框出 2024/2025 open 后的震荡箱体。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.84,
+      "evidence": "他大量给出明确 buy-the-dip 区域和区间两端交易思路；如 [2024-12-30] “If we reach 90K, a good bounce will be expected. Will be a great buy the Dip level.”，[2024-04-24] “First Buy Region - 63.5K To Current Price Second Buy Region - 61. 5K to 62.5K.”"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.83,
+      "evidence": "他常把假跌破/扫流动性作为核心框架；如 [2025-07-28] “It could fake a dump to break the range support, liquidating late greedy longs... then pumps up like a rocket.”，[2024-07-26] “Trap them Below Support. Liquidate them.”"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.8,
+      "evidence": "他明确强调突破陷阱而不是机械追突破；如 [2024-07-26] “Make the Bears excited. Make them Short. Trap them Below Support.”；图 #7 写着支撑阻力应看作区域而非精确线，也符合他识别假突破的习惯。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.78,
+      "evidence": "他频繁用“先扫杠杆/清算再走真实方向”的叙事；如 [2024-01-03] “CRYPTO SEES 1 BILLION IN LIQUIDATIONS...”，[2025-07-28] 提到先“liquidating late greedy longs”，[2024-07-26] 提到“Liquidate them. Take away their Bitcoin.”"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.63,
+      "evidence": "他会把极端负资金费视为反向多头条件；[2026-02-06] “Funding rates ...”整条就是在解释 suspicious market mechanics，说明他会把拥挤空头/资金费极端纳入判断。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.57,
+      "evidence": "虽然推文中更常见的是做多视角，但他同样关注杠杆过热与挤仓；[2024-12-30] “Leverage is slowly getting removed from Bitcoin.” 说明他在观察过热杠杆出清后的方向选择。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.61,
+      "evidence": "他喜欢“价格横盘但内部压力在累积”的叙事；[2025-05-20] “Assets which were consolidating in a range but seeing constant increase in volume.” 虽然这里说的是 volume，但与 OI/拥挤度框架一起出现频率高，属于他对压缩后突破的典型理解。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.9,
+      "evidence": "减半周期是他最核心的中期框架之一；[2024-03-25] “It would be stupid to be Bearish 30 days before the Halving.”，[2024-06-24] “After every halving, the price ranges in a 10-15% range and takes about 5-6 months to initiate the Pump.”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.82,
+      "evidence": "他常以“3 cycles / 4-year cycle”身份和周期经验做判断；如 [2025-05-23] “You can't simply depend on the Bitcoin 3-4 year cycle now...”，[2024-03-23] “I have seen 3 Cycles...”"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.81,
+      "evidence": "ETF 流是他 2024 叙事核心之一；[2024-02-27] “ETF Volume at 4 Billion a Day.”，[2024-01-11] “You have no idea how long term Bullish Bitcoin ETF is.”，[2024-01-19] “ETF was a short term, sell the news event...”"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.58,
+      "evidence": "他会把 FOMC / 降息事件作为短期路径依赖；[2024-09-17] “FED will Cut Rates Tomorrow... 1. Market instant Pumps. 2. Short term holders and event trading retails...”"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.52,
+      "evidence": "他对宏观流动性叙事敏感，尤其是降息=借钱更便宜=风险资产先涨；[2024-09-17] 直接把降息与市场 pump 联系起来。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.68,
+      "evidence": "图表 #6 明显在价格下方画出多条均线，并把箱体与均线位置一起看；他经常谈 bull/bear line、趋势线和收复结构，[2024-04-30] “We lost the Bull/Bear line and rejected from 4H trend.”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.76,
+      "evidence": "他的默认框架是在牛市中优先做多与回撤买入；[2024-02-26] “Just buy 5 Blue Chips and take a vacation for the next 3-6 Months.”，[2024-12-19] “Bought the Dip across the Board...”"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.59,
+      "evidence": "他不是纯粹单边唱多，也会在结构转坏后转为空头/防守；[2024-12-23] “if Bitcoin behaves like 2017 post CBOE listing and Breaks Price structure, I will have zero shame in shorting.”，[2024-04-30] “we remain HTF bearish for now.”"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.88,
+      "evidence": "止损纪律是他反复灌输的交易规则；[2025-07-30] “90% of you will become profitable if you cut your losses whenever you start to pray for a breakeven...”；[2025-03-30] “Your portfolio loss is directly proportional to your arrogance in not exiting a losing trade.”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.79,
+      "evidence": "他明确反对熊市里仅凭超卖去接飞刀；[2025-02-26] “please don't look at RSI and other 'Oversold' indicators to buy. Market will remains oversold for months...”"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.49,
+      "evidence": "虽然他没像 textbook 一样写“1-2%”，但多次强调风险 appetite 差异与资本保护；[2024-03-23] “Don't follow my Trades Please as my risk appetite and willingness to hold Drawdowns are different.”，[2025-02-28] “It is time to protect your capital...”"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.42,
+      "evidence": "他会等待周一股票市场开盘来确认 BTC 对坏消息的反应；[2026-02-28] “Now we wait for Monday stock markets open to confirm.” 说明其风险资产联动意识存在，但不是主框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_consolidation_volume_build",
+      "name": "Box Consolidation With Volume Build",
+      "name_zh": "箱体整理中量能递增",
+      "type": "pattern_setup",
+      "description": "Identify assets trading inside a clear horizontal box while participation/volume steadily rises, implying energy build-up before expansion.",
+      "description_zh": "识别价格在清晰横向箱体内整理、但成交量或参与度持续抬升的资产，视为突破前的蓄力结构。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_breakout_watch",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-05-20] “most of my money was made by finding Assets which were consolidating in a range but seeing constant increase in volume.”"
+    },
+    {
+      "proposed_id": "cap_new_repeated_test_weakens_level",
+      "name": "Repeated Test Weakens Level",
+      "name_zh": "关键位反复测试后弱化",
+      "type": "structural_bias",
+      "description": "A support or resistance level becomes more likely to fail after repeated clean tests, especially when price keeps pressing it without meaningful rejection.",
+      "description_zh": "支撑或阻力在被多次干净测试后更容易失效，尤其是价格持续顶住该位置却缺乏有效反抽时。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "breakout_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "[2025-04-19] “The more times a resistance is tested, the weaker it becomes.”；[2024-12-25] “Bitcoin is Constantly Touching 100K. The more times a price is touched, the weaker a resistance Becomes.”"
+    },
+    {
+      "proposed_id": "cap_new_holiday_liquidity_read",
+      "name": "Holiday Liquidity Strength Read",
+      "name_zh": "节假日流动性强弱解读",
+      "type": "event_reaction",
+      "description": "Judge market underlying strength by how price behaves during holidays or low-participation periods; refusal to dump despite thin liquidity is read as bullish absorption.",
+      "description_zh": "通过节假日或低参与度时段的价格表现判断底层强弱；在流动性偏薄时仍不下跌，被视为强吸收和偏多信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2024-12-25] “The fact that Bitcoin didn't dump on Christmas day... is incredibly Bullish longterm.”；[2024-12-23] “If Bitcoin doesn't Dump much during new year and Christmas, that means the market is Ultra Bullish.”"
+    },
+    {
+      "proposed_id": "cap_new_yearly_open_analog_box",
+      "name": "Yearly Open Analog Box",
+      "name_zh": "年度开盘箱体类比",
+      "type": "cycle_time",
+      "description": "Compare current post-year-open BTC structure with the prior year's post-open box, moving-average relationship, and expansion timing to infer likely path.",
+      "description_zh": "将当年年初开盘后的 BTC 结构，与上一年同期的箱体、均线位置和突破节奏进行类比，以推演后续路径。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "path_projection",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "图表 #6 直接把 “2024 Open” 与 “2025 Open” 两段箱体并列比较，并叠加均线来做路径类比。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Buy the Dip, Sell the Pump 💯",
+      "rule_paraphrased": "核心执行框架是逢过度回撤买入、在情绪亢奋时兑现，而不是追涨杀跌。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Don't follow my Trades Please as my risk appetite and willingness to hold Drawdowns are different.",
+      "rule_paraphrased": "他的公开观点带有个人风险承受能力，别人不能机械复制仓位和回撤容忍度。",
+      "category": "framework"
+    },
+    {
+      "quote": "please don't look at RSI and other 'Oversold' indicators to buy. Market will remains oversold for months",
+      "rule_paraphrased": "熊市中反对单靠超卖指标抄底，必须等结构确认而不是赌技术性反弹。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "90% of you will become profitable if you cut your losses whenever you start to pray for a breakeven",
+      "rule_paraphrased": "一旦交易从计划变成祈祷，就应该退出；止损优先于自尊。",
+      "category": "mantra"
+    },
+    {
+      "quote": "If you can:  - Be patient.  - Be okay with 3-4X. - Bet and Hold.",
+      "rule_paraphrased": "他并不执着于每次抓 10x/100x，更强调在牛市里拿住高质量仓位和现实收益。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯粹的花哨形态派，而是把“周期牛市叙事 + 关键支撑阻力箱体 + 反向情绪/清算机制”揉成一个非常可执行的散户 swing 框架。与很多 TA 交易员不同，他高度公开化自己的主观看多和买跌区域，喜欢用强烈、口语化的语言建立交易信念，同时又不断强调止损、别盲跟、别在真熊市里接飞刀。内容生产和教育属性也明显强于一般分析号。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "I am Personally Adding my last bit of Capital at these Levels.",
+      "Buying the Dip on Bitcoin from 88K to 90K.",
+      "I will buy Heavy at the retest of 85K. Very Heavy.",
+      "Putting my money where my reputation is.",
+      "It would be stupid to be Bearish 30 days before the Halving."
+    ],
+    "low_conviction_phrases": [
+      "I am Bullish and I could be wrong.",
+      "Not saying it will happen, but if it happens...",
+      "I am not calling for a Dump",
+      "if Bitcoin behaves like 2017 post CBOE listing and Breaks Price structure, I will have zero shame in shorting",
+      "The only argument is how much worse can it get? And we can't trade off that logic."
+    ]
+  }
+}

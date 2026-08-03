@@ -1,0 +1,214 @@
+{
+  "handle": "AnalysisElliott",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "structural",
+    "pure_TA",
+    "macro",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "DOGE",
+    "SOL",
+    "SPX",
+    "QQQ",
+    "GOLD",
+    "NBIS"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.99,
+      "evidence": "几乎是其核心框架。例：2025-04-23 推文“bullish scenario is confirmed with the potential formation of a green wave 3, 4 and 5, and a target between 245K and 330K in November 2025”；多张图都直接标注 1-2-3-4-5 浪、WXY、三角形/对角线。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.86,
+      "evidence": "频繁用斐波回撤/扩展做支撑与目标。例：2025-03-17“ZONE : Demand RSI : Double Bottom TARGET : RF 61.8-78.6% UP !”；图 2/4/5/6 反复标出 0.618、0.786、1.272、1.618、2.618、4.236 作为回撤与扩展位。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.78,
+      "evidence": "2025-03-11“#btc #Bitcoin ut daily Bullish Divergence UP?!”；2024-07-04“Daily Bullish divergence of the RSI must be maintained for a bullish reversal!”；2026-02-24 也提到“Si l'on maintient la divergence haussière en Daily”。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.77,
+      "evidence": "明确把减半放进行情阶段判断。2024-04-10“+Halving in a few days ... final wave 5 ... 100K+”；2024-04-19“Will the bullrun continue its run until February-March 2025 as in previous bullruns?”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.74,
+      "evidence": "长期叙事持续围绕 2024-2026 周期节奏展开。2025-11-29“Every bounce at this level triggered a major Bitcoin bull run: 2013, 2017, 2020… and now the next signal lines up for 2026.”"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.68,
+      "evidence": "频繁讨论 altseason 切换。例：2025-01-31“#ETH #ALTSEASON2025 UP ! Target : 10K+”；2025-12-18“TOTAL2ES/BTC is showing clear cycle compression... start of altcoin outperformance.”"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.62,
+      "evidence": "把 DXY 当成 BTC 的重要宏观确认变量。2025-11-28“BTC is consolidating at high levels while the DXY weakens. Historically, this combo has preceded every major Bitcoin expansion phase.”；2026-04-11 周展望也把 DXY 放在首位。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.61,
+      "evidence": "2025-12-21“Global M2 keeps making new highs while Bitcoin consolidates... Most likely: the gap closes.”；2025-12-21 另一条称“Global liquidity (M2) still leads Bitcoin with a consistent 3-month lag.”"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.57,
+      "evidence": "2026-04-09“$QQQ - Closed above the 200 day MA and the 62% ret. at 605 yesterday. Today it closed above the 100 DMA too.”；图 7/8 中也明显使用多条均线判断趋势与回踩。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.55,
+      "evidence": "2026-04-11 对黄金和白银都写“parabolik çıkış bitmiş olabilir”，即抛物线加速可能结束；其图表经常在 log 图上画终段加速与衰竭。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.54,
+      "evidence": "图 7/8 对 NBIS、SMCI 展示价格沿 20/50/200 均线抬升、回踩再上；2026-04-09 对 NBIS 说“would love some tightness here on the right side before attempting the breakout”，体现趋势中等待回踩/整理后的延续。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.53,
+      "evidence": "他经常先做趋势分类再谈目标。图 7/8 都是典型 HH/HL + 站上均线的强势上升趋势；2026-04-09 对 QQQ 和 NBIS 也是先确认趋势强弱再谈阻力与 breakout。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.46,
+      "evidence": "2024-04-10 推文写“Slow consolidation into a triangle (wave 4)”；2024-05-04 直接提到“descending triangle/falling wedge”；图 4 也有明显三角/收敛结构，说明其 EW 里常嵌套三角整理。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.42,
+      "evidence": "2024-05-04 明确写“Wy : ABCDE (descending triangle/falling wedge) + Larger correction ... before Big pump”；图 6 的 KDA 图也接近下跌收敛后等待向上脱离。"
+    },
+    {
+      "id": "cap_058_three_bottom_structure",
+      "weight": 0.34,
+      "evidence": "他多次用复杂底部结构寻找终结位置，虽然不总是标准三重底，但图 6/KDA 与部分 BTC 底部图都有多次测试底部后反转的思路；2025-03-17 也提到“Double Bottom”。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_hash_ribbons_signal",
+      "name": "Hash Ribbons Confirmation",
+      "name_zh": "Hash Ribbons 确认信号",
+      "type": "indicator_rule",
+      "description": "Uses Hash Ribbons buy signals or repeated blue-pellet confirmations as a timing filter for major BTC trend resumptions.",
+      "description_zh": "使用 Hash Ribbons 买入信号或重复出现的“蓝点/蓝丸”作为比特币大级别趋势恢复的确认器。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2025-06-14“+Hash Ribbons : Double blue pellets +UP”；2025-03-24“HASH RIBBONS BLUE PILL NOW UP !!! Direction 300K ?!”；2025-07-30“Three blue affiliate stickers of HASH RIBBON ! Hyper Bullish !”"
+    },
+    {
+      "proposed_id": "cap_new_vwap_magnet_levels",
+      "name": "Quarterly VWAP Magnet",
+      "name_zh": "季度 VWAP 磁吸位",
+      "type": "indicator_rule",
+      "description": "Uses anchored or quarterly VWAPs as defended support and untapped upside magnets, especially for short-term directional context.",
+      "description_zh": "使用锚定/季度 VWAP 作为被防守的支撑与未触及的价格磁吸位，给出短中期方向框架。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "2026-04-11“Quarterly VWAP holding us from below. Defended every single test. Q1 VWAP close sitting untapped above. Unvisited. A magnet.”"
+    },
+    {
+      "proposed_id": "cap_new_log_parabolic_targeting",
+      "name": "Log-Scale Parabolic Projection",
+      "name_zh": "对数坐标抛物线投射",
+      "type": "cycle_time",
+      "description": "Projects late-cycle extensions on logarithmic charts using parabolic arcs, wave counts, and historical symmetry rather than linear targets.",
+      "description_zh": "在对数坐标上结合抛物线轨迹、浪型计数与历史对称性，推演周期后段的扩展目标，而非简单线性测幅。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_or_exhaustion",
+        "horizon": "position",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "图 4/5 以 log 风格的 BTC 大级别上冲到 245k-326k 区域；2026-04-11 对黄金/白银/SPX/Brent 多次标注“log; parabolik çıkış bitmiş olabilir”。"
+    },
+    {
+      "proposed_id": "cap_new_base_breakout_tightness",
+      "name": "Right-Side Tightness Base Breakout",
+      "name_zh": "右侧收紧基底突破",
+      "type": "pattern_setup",
+      "description": "Looks for long basing structures followed by right-side price tightness before initiating breakout attempts, especially in momentum equities.",
+      "description_zh": "寻找长时间打底后右侧价格收紧的结构，再参与突破，尤其用于强势成长股/动量股。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "2026-04-09“$NBIS 6-month base is forming ... I would love some tightness here on the right side before attempting the breakout.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Most traders aim for 3-5R trades and end up with a 35% win rate  Then they can't handle the losing streaks mentally  And they blow their prop firm accounts during drawdown  I aim for 1-2R trades  70%+ win rate",
+      "rule_paraphrased": "偏好较低盈亏比但更高胜率的执行方式，重视心理承受与资金曲线稳定。",
+      "category": "framework"
+    },
+    {
+      "quote": "$NBIS 6-month base is forming and reminds me of the previous two massive trades in $SMCI and $MSTR.  I would love some tightness here on the right side before attempting the breakout.",
+      "rule_paraphrased": "先等右侧收紧和结构成熟，再做基底突破，不盲追第一脚拉升。",
+      "category": "framework"
+    },
+    {
+      "quote": "DOGE may be starting a major impulse: a break above $0.30–$0.35 opens targets at $1.59–$3.94. Alternative view: rejection and extended range. Watching structure closely.",
+      "rule_paraphrased": "高赔率观点会给出触发位和目标，但始终保留备选计数，不把单一路径绝对化。",
+      "category": "framework"
+    },
+    {
+      "quote": "#btc #Bitcoin really nothing to panic about! Under yellow wave 2. Normal.",
+      "rule_paraphrased": "在其 Elliott 框架内，回撤常被视为波段内的正常修正，而不是情绪化恐慌理由。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The best way to avoid seeing your positions liquidated, especially on altcoins, is to stay in spot mode without playing the casino of leverage and futures contracts...",
+      "rule_paraphrased": "对高杠杆和合约持明确警惕态度，尤其在山寨币上更偏向现货表达观点。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和一般只画形态的 TA 交易员不同，核心是用 Elliott Wave 做主叙事，再用斐波、RSI 背离、Hash Ribbons、均线收回和宏观流动性去做确认。长期观点明显偏多，尤其擅长在对数图上给出极高的周期目标，但又常保留 alternative count，属于“高目标、双路径、重结构”的风格。另一个明显特点是跨市场和多语言输出，既讲 BTC/山寨，也讲 QQQ、SPX、黄金、白银、原油与个股。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "UP!",
+      "Hyper Bullish !",
+      "bullish scenario is confirmed",
+      "confirmed",
+      "Nothing prevents it from following the same path",
+      "very bullish",
+      "major impulse"
+    ],
+    "low_conviction_phrases": [
+      "may be",
+      "possible",
+      "if this count holds",
+      "Alternative view",
+      "Watching structure closely",
+      "A confirmer",
+      "could be"
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "handle": "iamjosephyoung",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "onchain",
+    "macro",
+    "cycle",
+    "contrarian",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "ETH",
+    "BTC",
+    "SOL",
+    "GameFi"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.95,
+      "evidence": "他反复把 ETF 资金流当作核心交易锚点，例如：\"ethereum ETF had a full week of positive consecutive net flow... $479.2 million into ETH just 5 days\"、\"Bitcoin ETF netflow is net positive by $1.65 BILLION since it's launch just 20 days ago. It's def getting bullish.\""
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.95,
+      "evidence": "这是他最常见的 ETH 看多框架之一：\"year-to-date, ethereum added $55.9 BILLION in net stablecoin issuance\"、\"$27.1 billion net stablecoin inflow into ethereum in the past 6 months\"、\"stablecoins are at a record high... $191.2 billion are on ethereum.\""
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.88,
+      "evidence": "他经常强调长期资金锁仓/不卖出构成供给收缩：\"Bitmine will likely never sell their ETH\"、\"long-term conviction capital\"、\"ETH waiting to be staked is at record highs... waiting to unstake is at record lows.\""
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.82,
+      "evidence": "他明显把加密放在更广泛 risk-on 资产框架里：\"as long as US equities stay bullish as it is now, more capital inflows into ETH and BTC will continue\"、\"the global equities market are showing too much strength\"、\"war anxiety subsiding turbo up, risk on\"。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.8,
+      "evidence": "BTC 观点大量围绕减半周期展开：\"Pre-halving, and bitcoin hits $50k. This cycle will be something else.\"、\"Remember folks, this is still pre-halving.\"、\"Only ppl who were here in the previous halving know what a post-halving rally can do.\""
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.76,
+      "evidence": "他频繁用上一轮周期经验来解释当前走势：\"This cycle will be something else\"、\"Only ppl who were here in the previous halving know what a post-halving rally can do\"，并给出中长期目标如 \"BTC to 250k usd in this cycle is programmed.\""
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.72,
+      "evidence": "他常把流动性/资本成本作为顺风：\"capital is cheaper and liquidity is higher\"、\"China is signaling even MORE stimulus\"、\"Post-halving, this kind of macro environment is where bitcoin will thrive in.\""
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.7,
+      "evidence": "他多次明确表达顺势而为、不逆趋势：\"I don't fight the trend. BTC the king.\"、\"The momentum is clearly there, I'm not fighting it.\"、\"This momentum is something I'm not willing to short.\""
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.58,
+      "evidence": "虽然他没有系统引用 M2 数据，但明显使用广义流动性扩张逻辑：\"China is signaling even MORE stimulus\"、\"all macro conditions coming together for crypto craze\"、\"capital is cheaper and liquidity is higher.\""
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.52,
+      "evidence": "他在 BTC 强势叙事之外，反复强调 ETH、GameFi、公平发射代币和某些生态轮动机会，如 \"Bullish on fair launch tokens\"、\"Very bullish on gamefi this cycle\"，说明他会做 beta/sector rotation，只是没用 BTC.D 图表语言直接表达。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.46,
+      "evidence": "他不是机械抄底派，更偏向等 panic 结束后再做趋势延续，例如：\"once forced selling from germany and gox are done... prob one more dip but fully confident\"，逻辑上是等待外部抛压出清后再看多。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.22,
+      "evidence": "没有直接提 FOMC 周规避，但他整体会把重大宏观事件和情绪冲击纳入判断，例如战争、刺激、ETF 审批、机构动作；因此事件驱动意识存在，但不是其主要框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_institutional_adoption_momentum",
+      "name": "Institutional Adoption Momentum",
+      "name_zh": "机构采纳动量",
+      "type": "event_reaction",
+      "description": "Track repeated announcements of large institutions, banks, ETFs, or corporates adopting or accumulating a crypto asset; cluster of adoption events is treated as a medium-term bullish demand regime shift.",
+      "description_zh": "跟踪大型机构、银行、ETF 或企业连续宣布采用、配置或增持某加密资产；当这类事件密集出现时，将其视为中期需求结构切换的看多信号。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "\"BlackRock CEO said in Davos we must move fast on tokenization with one common blockchain\"、\"BNY will launch a tokenized fund on ethereum\"、\"JPMorgan planning to accept ETH as collateral\"。"
+    },
+    {
+      "proposed_id": "cap_new_network_fundamentals_momentum",
+      "name": "Network Fundamentals Momentum",
+      "name_zh": "链上基本面动量",
+      "type": "onchain_signal",
+      "description": "Use synchronized all-time highs or multi-quarter growth in transactions, TPS, addresses, contract deployments, and staked supply as a primary signal that fundamentals are outrunning price and will eventually pull price higher.",
+      "description_zh": "把交易数、TPS、活跃地址、合约部署量、质押比例等指标同时创新高或连续多个季度增长，视为基本面领先价格的主信号，判断价格最终将向上追赶。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "\"ethereum just printed a new ALL-TIME HIGH in daily transactions\"、\"ethereum just hit a new all-time high in TPS\"、\"over 30% of eth is now staked\"。"
+    },
+    {
+      "proposed_id": "cap_new_forced_selling_overhang_clear",
+      "name": "Forced Selling Overhang Clearance",
+      "name_zh": "强制卖压出清",
+      "type": "event_reaction",
+      "description": "When a market-wide overhang from bankruptcies, government sales, unlocks, or legacy holders is nearing completion, treat the removal of forced supply as a catalyst for trend resumption.",
+      "description_zh": "当破产抛售、政府卖币、解锁或历史遗留卖盘接近尾声时，把强制供给移除视为趋势恢复的催化剂。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "\"once forced selling from germany and gox are done, btc eth sol momentum will be back in full force. prob one more dip but fully confident\"。"
+    },
+    {
+      "proposed_id": "cap_new_fair_launch_rotation",
+      "name": "Fair Launch Rotation",
+      "name_zh": "公平发射轮动",
+      "type": "structural_bias",
+      "description": "Prefer fair-launch or fully-unlocked tokens over VC-heavy low-float high-FDV tokens, especially when market sentiment rotates toward cleaner supply structures.",
+      "description_zh": "在市场偏好向更健康供给结构切换时，优先选择公平发射或接近全流通的代币，而回避 VC 控盘、低流通高 FDV 代币。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "\"My prediction. In this kind of market, fair launch projects will do MUCH better. Bearish on VC tokens. Bullish on fair launch tokens.\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "I don't fight the trend. BTC the king.",
+      "rule_paraphrased": "核心原则是顺大趋势，不在强势行情里主观逆势做空。",
+      "category": "framework"
+    },
+    {
+      "quote": "The momentum is clearly there, I'm not fighting it.",
+      "rule_paraphrased": "当价格与叙事共振形成强动量时，优先跟随，不做顶底预测。",
+      "category": "mantra"
+    },
+    {
+      "quote": "People are afraid to buy bitcoin at 60ks but euphoric at 70ks",
+      "rule_paraphrased": "反人性地在恐惧回撤中加仓，而不是在一致性 FOMO 时追高。",
+      "category": "framework"
+    },
+    {
+      "quote": "Being brave when others are fearful in crypto pays handsomely.",
+      "rule_paraphrased": "把极端恐惧视为中高周期配置窗口，属于典型逆向思维。",
+      "category": "mantra"
+    },
+    {
+      "quote": "focus on fundamentals. ethereum has never been this healthy, strong & active. nobody can predict (or should) ultra short-term price movements.",
+      "rule_paraphrased": "弱化超短线价格噪音，优先用网络基本面和结构性需求解释持仓。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他并不是典型靠 K 线形态吃饭的 TA 交易员，公开输出更像“长周期加密叙事交易员 + 内容分发者”。他的优势在于把 ETF 流、机构采用、稳定币增长、质押与链上活跃度这些中周期变量，组织成极强的单边看多框架。给定的图片里大多不是 K 线图，几乎没有可提炼的形态学证据，这进一步说明他公开 persona 更偏 narrative/fundamental momentum，而不是图表派。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "programmed",
+      "inevitable",
+      "I remain fully bull",
+      "onwards",
+      "fundamentals always win",
+      "nobody comes close to ethereum",
+      "The momentum is here to stay",
+      "I'm not fighting it",
+      "This cycle will be something else"
+    ],
+    "low_conviction_phrases": [
+      "prob one more dip",
+      "potential bull market",
+      "I think",
+      "I smell",
+      "My prediction",
+      "if that happens",
+      "could",
+      "likely"
+    ]
+  }
+}

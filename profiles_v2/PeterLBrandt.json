@@ -1,0 +1,187 @@
+{
+  "handle": "PeterLBrandt",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "risk_first",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "HYPE",
+    "PLTR",
+    "WTI",
+    "US software equities"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.84,
+      "evidence": "图4、图6都直接标出 0.5 / 0.618 回撤区作为潜在买回或目标区，典型用法是把前一推动段的 0.618 当作主要支撑带。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.72,
+      "evidence": "图6在大趋势上涨后，等待价格回撤到均线与回撤带附近；图1还写到“still holding long-dated put options… since the fall of 2025”，说明他会围绕大趋势做延续而不是纯短线噪音。"
+    },
+    {
+      "id": "cap_019_ma_death_cross",
+      "weight": 0.66,
+      "evidence": "图4、图6都叠加了 50/200 MA；推文“$HIMS Bulls need to help the stock recover its 200 WMA”明确把长期均线当作趋势分界。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.78,
+      "evidence": "推文“$HIMS Bulls need to help the stock recover its 200 WMA... a move above this price will give bulls momentum”就是典型的关键均线收回确认。"
+    },
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.87,
+      "evidence": "图4清楚标注了(1)(2)(3)(4)(5)与后续 ABC 调整，并把未来上行目标写成 3、4、5 三个浪位，这是标准艾略特框架。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.7,
+      "evidence": "图6显示价格跌破中期均线、向下进入 C 浪目标区；图1里他公开维持对 PLTR 的长期看空观点，属于识别并顺应下行 regime。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.62,
+      "evidence": "图4的走势先经历近乎抛物线加速上冲，再进入急跌 ABC 调整；他对高估值 PLTR 的连续唱空也体现对抛物线估值/价格末端的衰竭判断。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.76,
+      "evidence": "推文“Bought some DOCN(SL $75)/NET today”直接公开止损位 SL；另一条还转发“getting better at cutting losers”，说明止损执行是显性规则。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.55,
+      "evidence": "推文里经常用 basket 和分散表达，如“🦞 basket should be safe”，更像组合风险管理而非单点梭哈，符合单笔风险受限思路。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.53,
+      "evidence": "他做的是“short term bounce trade”而不是无条件抄底，同时强调必须在 institutional zone 入场，说明不会在任意瀑布段硬接刀。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.44,
+      "evidence": "推文“US markets open mixed on the release of March CPI data.”、“Vix volatility index is back... Sentiment Indicator...”显示他会用股市风险偏好和波动环境辅助判断仓位。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.48,
+      "evidence": "他专门引用“Vix volatility index is back to its February level below 20”，说明会根据波动率 regime 调整判断；图表里也常配合 TD 和大级别结构避免在高噪音里过度交易。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.31,
+      "evidence": "图2关于“Bessent... Powell summoned Wall Street leaders”与 AI/系统性风险，配合他对 CPI、stagflation、风险资产的讨论，说明会看政策/流动性对市场的二阶影响。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.36,
+      "evidence": "他反复强调“institutional zone”而不是随便画线，隐含对大资金扫流动性后在真实供需区成交的理解；图中回撤进入预设 demand zone 再观察反应，也符合 sweep 后入场逻辑。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_institutional_zone_entry",
+      "name": "Institutional Zone Entry",
+      "name_zh": "机构成交区入场",
+      "type": "structural_bias",
+      "description": "Identify price zones where large players likely accumulated or distributed inventory, then wait for price to return to that zone before initiating a trade. The zone matters more than generic support/resistance lines.",
+      "description_zh": "识别机构资金大概率集中建仓/派发的成交区，等待价格回到该区域后再入场；该区域的重要性高于普通支撑阻力线。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow zone direction",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "推文原话：“The first step to profitable trading is entering at an institutional zone. This is exactly where institutional money placed large buy or sell orders.”"
+    },
+    {
+      "proposed_id": "cap_new_volume_profile_hvn_lvn",
+      "name": "Volume Profile Node Map",
+      "name_zh": "成交量分布节点地图",
+      "type": "indicator_rule",
+      "description": "Use visible-range volume profile to locate high-volume acceptance nodes and low-volume rejection gaps, then frame mean reversion or continuation targets around those nodes.",
+      "description_zh": "使用可见区间成交量分布识别高成交接受区与低成交拒绝区，并围绕这些节点制定回归或延续目标。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "图6右侧明显叠加 VRVP/Volume Profile，用成交密集区和空白区来定义 C 浪回撤区与潜在支撑。"
+    },
+    {
+      "proposed_id": "cap_new_td_sequential_exhaustion",
+      "name": "TD Sequential Exhaustion",
+      "name_zh": "TD Sequential 衰竭计数",
+      "type": "indicator_rule",
+      "description": "Use DeMark/TD setup countdown deterioration or reset behavior to judge when a trend is losing force and when a reversal or pause is becoming more probable.",
+      "description_zh": "利用 DeMark/TD Sequential 的 setup/countdown 递减、重置或衰竭来判断趋势何时失去动能，以及反转/停顿概率何时上升。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "reversal_watch",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "推文“ The TD has decreased significantly in recent weeks which signals ...”；图4、图6底部也都显示 TD 指标栏。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "The first step to profitable trading is entering at an institutional zone.",
+      "rule_paraphrased": "先找大资金真实成交区，再谈方向和盈亏比；没有机构区位，其他线条都不够硬。",
+      "category": "framework"
+    },
+    {
+      "quote": "Bought some DOCN(SL $75)/NET today, and also bought PLTR/APP as a short term bounce trade.",
+      "rule_paraphrased": "交易可以做反弹，但必须预先定义止损，而且把它写出来。",
+      "category": "framework"
+    },
+    {
+      "quote": "Howard Marks just dropped a memo yesterday that every investor should read. Not because you own private credit. But because the pattern he describes is the same pattern that destroys retail portfolios",
+      "rule_paraphrased": "他会把跨市场的信用/流动性模式迁移到交易框架里，用宏观失衡解释技术面风险。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "$HIMS Bulls need to help the stock recover its 200 WMA",
+      "rule_paraphrased": "长期均线不是装饰物，而是多空力量要重新夺回的关键边界。",
+      "category": "framework"
+    },
+    {
+      "quote": "I think this is $PLTR fanboi math",
+      "rule_paraphrased": "对热门叙事和拥挤共识天然保持怀疑，尤其在估值脱离增长现实的时候。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不是只画经典形态的纯图表派，而是把艾略特波浪、斐波回撤、均线、TD Sequential、成交量分布和“institutional zone”拼成一个可执行的结构化框架。与一般 TA 交易员不同，他很明显带有强烈的估值/叙事反身性和逆向色彩，愿意在热门共识里公开找错价。另一点很突出的是，他会把具体止损、长期均线、波动环境和宏观信用线索放进同一决策流程里。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "The first step to profitable trading is",
+      "Bulls need to help the stock recover its 200 WMA",
+      "should be",
+      "breaking bear pennant",
+      "fanboi math"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "at best",
+      "short term bounce trade",
+      "should be safe",
+      "Market expecting negotiations to go well?"
+    ]
+  }
+}

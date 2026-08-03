@@ -1,0 +1,224 @@
+{
+  "handle": "Kingpincrypto12",
+  "school_primary": "structural",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "risk_first",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "TAO",
+    "AVAX",
+    "DOGE",
+    "AAVE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_049_ict_fair_value_gap",
+      "weight": 0.97,
+      "evidence": "反复直接使用 FVG 术语：2025-06-26 写“H1 FVG + H4 SFP+OB confluence”；2025-07-26 写“price fills more of the imbalance (blue box) before heading for new highs”；图 5 直接标注“H1 FVG”“D1 FVG”，图 4/5 也都在用 imbalance box 作为路径锚点。"
+    },
+    {
+      "id": "cap_026_smc_order_block",
+      "weight": 0.91,
+      "evidence": "多次把 OB 当成核心入场区：2025-06-26“H4 SFP+OB confluence”；2024-05-31“$TAO - Price currently is at H12 FVG + D1 OB + Monthly open”；图 5 顶部粉色供给区直接标“H4 OB”。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.9,
+      "evidence": "他极常说“sweep/liquidity swept”：2025-09-18“Liquidity Swept ✅”；2025-11-27“Mid term target for price is these two lows being swept”；2025-11-07“Quick sweep of $98.1k liq to long”；图 4 用 pre week high / low 画出明显流动性池，路径先扫低点再上。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.84,
+      "evidence": "直接点名 SFP：2025-06-26“H4 SFP+OB confluence”；2024-12-29“$ETH ... laying in a D1 SFP at the premium of this macro...”；这说明他把前高/前低假突破后的反转当成常用触发器。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.73,
+      "evidence": "他频繁用 breaker 概念：2024-03-26“perfect bullish retest of the weekly breaker”；2024-11-30“Price has a H12 breaker, H4 iFVG + FVG”；说明其结构框架不止普通支撑阻力，而是带 ICT/SMC breaker 逻辑。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.76,
+      "evidence": "斐波尤其 0.618/0.75 用得很多：2026-02-20“0.75 fib of the entire 2022 - 2025 rally”；2025-11-27“reacting of off 0.618 (GP) of the '25 rally”；图 4 直接写“0.5 (119,500.0)”，图表里经常把 fib 当结构共振。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.71,
+      "evidence": "均线收复/EMA trend 是明确触发条件：2025-09-29“trigger for longs ... a flip of $112k and green EMA trend”；2025-09-29“$105k/$107.2k liq looks like a very clean long with D200EMA as support”；说明他会用 EMA 作为结构确认，而不是单独指标交易。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.82,
+      "evidence": "他很爱定义 no trade zone / chop season：2025-09-22“pretty much a no trade zone”；2024-12-22“Boring choppy PA until EOY Don’t over trade”；2026-03-30“Price continues to chop around in my no trade zone”；图 4 也是典型 level-to-level 区间路线图。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.78,
+      "evidence": "极强调等确认，不接刀：2026-02-15“All major bounces are for shorting... Bottoms take months to form, not days.”；2025-04-22“How many times has fomoing into resistance ever worked for you?”；图 1 TAO 暴跌配文“TAO is nuking. Any news?!”也体现他对瀑布行情先观察而非盲接。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.83,
+      "evidence": "他明确自称 4 年周期信徒：2025-09-29“As a subscriber of the 4 year cycle I believe we are very close.”；2025-11-27/2025-12-28 继续围绕 cycle top、EOY pump、Q4-Q1 进行框架判断。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.58,
+      "evidence": "宏观事件日会主动降频：2025-07-29“In absolutely no rush to enter anything heading into FOMC + Monthly close. A+ setups only.”；2025-10-28“FOMC tomorrow”；2025-01-29“FOMC in 10 mins”；他不是纯新闻交易，但会把 FOMC 当风险过滤器。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.79,
+      "evidence": "他经常把具体 liquidation levels 当作价格磁铁：2025-09-29“$105k/$107.2k liq looks like a very clean long”；2025-08-21“price sweeps $112k liq”；2025-11-07“Quick sweep of $98.1k liq to long”；这是明显的清算流动性路径交易。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.68,
+      "evidence": "他经常做区间两端和 level-to-level：2025-11-27“2024 range levels look pretty clean to trade around imo. Some solid level to level plays can be built here.”；图 4 以 pre week high / pre week low / 0.5 为核心区间边界，典型区间框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.64,
+      "evidence": "在确认趋势后会明显偏向顺势做多：2025-04-30“Monthly close setting up phenomenally... new ATH in May”；2025-06-30“Dips are for buying”；2025-04-23“UP ONLY SEASON”；说明他一旦判断 HTF 趋势恢复，会切到强多 regime。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.62,
+      "evidence": "在 bear/breakdown 环境又会切到反弹空：2026-02-15“We are in a bear market and the trend is shouting LOWER. A few green candles don't change that.”；2025-11-27“All big bounces are for shorting IMO”；并非死多头。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.55,
+      "evidence": "虽然很少教科书式讲止损，但经常讲 clean invalidation：2025-09-29“Invaldation is clean.”；2025-07-26“Idea invalidates if price reclaims and holds above 0.5 first.”；这是明显的先定义失效点再交易。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_htf_level_flip_trigger",
+      "name": "HTF Level Flip Trigger",
+      "name_zh": "高周期关键位翻转触发",
+      "type": "structural_bias",
+      "description": "Wait for a major higher-timeframe level to flip from resistance to support, or support to resistance, before taking the trade. The flip itself is the trigger; without the flip, there is no trade.",
+      "description_zh": "等待高周期关键位完成阻力变支撑或支撑变阻力，再执行交易。翻转本身就是触发器；没有翻转就不交易。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow_flip_direction",
+        "horizon": "swing",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "2025-07-31“I am only looking for two triggers from price  Flip $119.5k -> New ATH”; 2025-09-29“My trigger for longs ... would be a flip of $112k”; 2025-08-26“Gameplan remains the same -> Flip & Long.”"
+    },
+    {
+      "proposed_id": "cap_new_no_trade_zone_filter",
+      "name": "No Trade Zone Filter",
+      "name_zh": "无交易区过滤器",
+      "type": "risk_rule",
+      "description": "Explicitly classify broad mid-range or event-heavy conditions as a no-trade zone and stand aside until price reaches a clean trigger area.",
+      "description_zh": "把中段区间或事件扰动期明确划为无交易区，直到价格到达清晰触发位才出手。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "2025-09-29“pretty much a no trade zone”; 2024-12-29“Price currently is in no trade zone”; 2026-03-30“no trigger -> no trade.”"
+    },
+    {
+      "proposed_id": "cap_new_weekly_reference_levels",
+      "name": "Weekly Reference Level Map",
+      "name_zh": "周度参考位地图",
+      "type": "structural_bias",
+      "description": "Use prior week high/low, previous week low, Monday low/open, and half of prior week range as mechanical reference levels for liquidity sweeps and reaction trades.",
+      "description_zh": "把前周高低点、前周低点、周一低点/开盘以及前周区间中点作为机械参考位，用于流动性扫单与反应交易。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "图 4 标注“Pre week high”“Pre week low”“0.5”；多条推文提 Monday Low、PWL、PYH，如 2025-07-31“Price has reclaimed PWL and is seeking SSL IMO”。"
+    },
+    {
+      "proposed_id": "cap_new_imbalance_fill_then_continue",
+      "name": "Imbalance Fill Then Continue",
+      "name_zh": "先回补失衡再延续",
+      "type": "pattern_setup",
+      "description": "Project that price first fills a nearby imbalance/FVG box and only then resumes the dominant higher-timeframe direction.",
+      "description_zh": "预判价格会先回补附近失衡区/FVG，然后再恢复原有高周期方向。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "trend_continuation_after_fill",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2025-07-26“I think price fills more of the imbalance (blue box) before heading for new highs.”；图 4 路径先下探蓝/灰不平衡区后再向上冲击前周高点。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "I am only looking for two triggers from price  Flip $119.5k -> New ATH  Fill imbalance till around $113k -> Hammer longs  Everything else is noise",
+      "rule_paraphrased": "先把交易简化成极少数高确定性触发器，其余行情全部忽略。",
+      "category": "framework"
+    },
+    {
+      "quote": "In absolutely no rush to enter anything heading into FOMC + Monthly close.  A+ setups only.",
+      "rule_paraphrased": "宏观事件前主动降频，只做 A+ setup，不为交易而交易。",
+      "category": "framework"
+    },
+    {
+      "quote": "All major bounces are for shorting.  We are in a bear market and the trend is shouting LOWER.  A few green candles don't change that.  Bottoms take months to form, not days.",
+      "rule_paraphrased": "在确认熊市阶段时，不把反弹误判成反转，优先顺大趋势。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "How many times has fomoing into resistance ever worked for you?",
+      "rule_paraphrased": "不要在阻力位情绪化追多，等待回踩、翻转或失衡回补后的确认。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Always remember, no trigger -> no trade.",
+      "rule_paraphrased": "没有预设触发条件就空仓，空仓本身是有效仓位。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他和普通裸 K TA 的区别在于，图上不是只画支撑阻力，而是把 ICT/SMC 语言系统化地落到具体交易触发上：FVG、OB、SFP、breaker、liq sweep、周度参考位一起构成路径图。其次，他非常强调“no trade zone”和“flip/trigger”，说明他不是持续给方向的人，而是等待特定结构确认后才出手。最后，他会把 4 年周期、FOMC、Q4 季节性当背景过滤器，但真正执行仍以结构与流动性为核心。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "UP ONLY SEASON",
+      "new ATH",
+      "free money imo",
+      "must hold area for bulls",
+      "clean long",
+      "FULL SEND IMO",
+      "inevitable",
+      "A LOT higher",
+      "hammer longs",
+      "I am bullish here"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "imo",
+      "leaning towards",
+      "not very confident on this one",
+      "probably",
+      "lets see...",
+      "rough idea tbh",
+      "can expect",
+      "I can see",
+      "interested in longs"
+    ]
+  }
+}

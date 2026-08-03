@@ -1,0 +1,218 @@
+{
+  "handle": "Michael_Liu93",
+  "school_primary": "structural",
+  "school_secondary": [
+    "contrarian",
+    "risk_first",
+    "macro",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "short_tilted",
+  "instruments_main": [
+    "BTC",
+    "altcoins",
+    "new listings/TGE tokens",
+    "gold",
+    "silver"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_025_wyckoff_distribution",
+      "weight": 0.95,
+      "evidence": "2025-07-30 高赞帖直接画出“MM标准的操盘走势和背后逻辑”，图中明确写了“第一波庄派发（情绪高点）”“庄重新收回筹码”“第二波庄派发”，核心就是派发-回收-再派发的庄家分发框架。"
+    },
+    {
+      "id": "cap_024_wyckoff_accumulation",
+      "weight": 0.78,
+      "evidence": "同一组手绘图里写有“庄重新吸回筹码或者换了庄（这里你就可以抄底了）”，说明他不仅看派发，也识别二段行情前的重新吸筹。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.88,
+      "evidence": "2026-03-31 对黄金/白银连续发图，配的是超长周期几乎垂直加速上涨的月线，并说“放大看看 这个逢高空策略我要做5年”，明显在用抛物线冲顶衰竭框架。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.9,
+      "evidence": "2025-02-28 说“BTC真正开跌才只有1周时间，管住自己的手啊，更别贷款”；2026-01-31 又说“75000附近看看要不要抄底…线走的实在太难看了…我实在有些不敢抄了，谨慎吧，等见血了再说。”"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.62,
+      "evidence": "虽然少讲固定止损参数，但多次强调不要硬扛和不要在错误位置抄底，尤其在快速下跌时主张观望而不是死拿，体现的是先避错再找机会的止损/回避思路。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.84,
+      "evidence": "2025-09-30 明确说“近期我不会持有任何山寨币，只会找机会做空”；2025-02-28 判断可能进入“三个月到半年的小熊市”，说明他有明显的环境切换与空头 regime 判断。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.69,
+      "evidence": "他反复在事件性大波动或瀑布后强调‘谨慎’‘管住手’‘别贷款’，并把 FUD、打仗、财报后崩盘等视为需要降风险的环境，而不是把所有剧烈波动都当机会。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.28,
+      "evidence": "虽然不是高频主轴，但他会把宏观事件窗口纳入风险判断。2026-02-28 提到英伟达财报后科技股崩和战争日期，说明他对重大宏观/事件驱动前后的避险切换很敏感。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.56,
+      "evidence": "2026-01-30 写到现实生活里很多人“囤黄金和白银”，并说“隐约感到又是一个时代财富转移的开始”；同时长期跟踪贵金属走势，把黄金白银当成重要风险偏好/避险锚。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.42,
+      "evidence": "2025-02-28 说“这波下跌我觉得最理想的结局就是进入一个三个月到半年的小熊市，然后放水期来了之后再来一波”，体现出他会用阶段性周期框架理解 BTC 运行，而非只看局部 K 线。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.18,
+      "evidence": "公开材料里不是高频显式使用，但他整体框架常从‘场内流动性’‘会不会放水’‘资金更聚焦’出发，这与 ETF/机构资金流代理变量属于同一类资金面思维。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.35,
+      "evidence": "他不常直接说基差，但非常关注拥挤度和仓位结构。比如 2025-11-29 对 Sahara 的判断是“先砸盘10%清多头杠杆，接着拉盘诱多，然后五分钟倾泻60%”，明显在用衍生品拥挤与清杠杆视角。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.46,
+      "evidence": "多条内容都围绕‘诱多-清多头杠杆-倾泻’展开，尤其是 2025-11-29 的拆解，本质是在抓正向拥挤和长仓爆破。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.53,
+      "evidence": "2025-11-29 对 Sahara 的描述‘先砸盘10%清多头杠杆，接着拉盘诱多’非常符合先扫一侧流动性、再扫另一侧的清算磁吸逻辑。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.72,
+      "evidence": "他的图示和文案反复强调庄家会先制造情绪高点/高开/快速拉一波再打窝，或者先砸穿再收回筹码，这就是典型的扫流动性后走真实方向。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.81,
+      "evidence": "第二张手绘图写了“开盘高开”“放利好开始慢慢出货”“快速拉一波打窝”，并在两侧圈出做空区，本质是在识别上市/消息驱动下的假强势和突破陷阱。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.31,
+      "evidence": "他会区分 BTC 与山寨的流动性切换，尤其在 2025-09-30 反复强调巨大 TGE 会抽干流动性，偏向不持有山寨、只找空头机会，体现对资金轮动结构的敏感。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_mm_two_stage_distribution",
+      "name": "MM Two-Stage Distribution Template",
+      "name_zh": "做市商二段派发模板",
+      "type": "structural_bias",
+      "description": "Detects a recurring market-maker sequence: initial narrative-driven markup and distribution, mid-range re-accumulation or handoff, then a second exit wave into renewed retail attention.",
+      "description_zh": "识别做市商常见模板：先借叙事拉升并完成第一波派发，中间横盘回收筹码或换庄，随后借二次情绪再拉一波完成第二次出货。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "first long then short, with late-stage short bias",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "手绘图1直接标注“第一波庄派发（情绪高点）…庄重新吸回筹码…第二波庄派发（上二级所了）”。"
+    },
+    {
+      "proposed_id": "cap_new_high_fdv_tge_short",
+      "name": "High-FDV TGE Listing Short",
+      "name_zh": "高 FDV TGE 上市做空",
+      "type": "event_reaction",
+      "description": "Targets newly listed tokens with large prior raises, weak secondary liquidity, and coordinated marketing/market-making behavior; expects high-open, distribution, and fast mean reversion.",
+      "description_zh": "针对高融资额、二级流动性弱、配合营销和做市的 TGE/新币上市，预期其高开、派发并快速回落，优先寻找做空机会。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "short",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2025-09-30 列举 Monad、Opensea、Metamask、Nansen、Polymarket、Farcaster 等并说“近期我不会持有任何山寨币，只会找机会做空”；配图3是“TOP 15 POTENTIAL TGE IN Q4 2025 BY TOTAL RAISED FUNDS”。"
+    },
+    {
+      "proposed_id": "cap_new_narrative_quality_filter",
+      "name": "Narrative Quality Filter for Second Leg",
+      "name_zh": "二段行情叙事质量过滤",
+      "type": "structural_bias",
+      "description": "Separates tokens that can produce a second markup from those that only complete one pump-and-dump, based on narrative strength and whether retail follow-through exists after first distribution.",
+      "description_zh": "用叙事强弱和散户跟随度判断标的在第一波派发后，是否还具备二段行情，还是只会一波流直接归零。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "conditional_long_then_short",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-07-30 他说“第一波没有好叙事没有散户跟，庄就没必要收回来筹码，直接开下一个了。”"
+    },
+    {
+      "proposed_id": "cap_new_precious_metals_as_altcoin_analog",
+      "name": "Cross-Asset Bubble Analog Mapping",
+      "name_zh": "跨资产泡沫类比映射",
+      "type": "macro_correlation",
+      "description": "Maps crypto market structure onto precious metals or other macro assets to identify late-cycle crowd behavior, using long-term charts and relative-value analogies.",
+      "description_zh": "把加密市场的末期拥挤、派发与泡沫结构类比到黄金白银等宏观资产，通过超长周期图和相对价值关系识别顶部区域。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_short",
+        "horizon": "position",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "2026-03-31 他说“Jeff对于白银类比山寨的逻辑也是让我去回测白银/黄金汇率对去判断贵金属到顶了的逻辑来源。”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "万物不离其宗，对庄来说，操盘的思路只有一个：高卖低买（付出最小成本掏最大的流动性）",
+      "rule_paraphrased": "把市场先理解成庄家流动性工程，再谈技术形态；核心不是预测，而是识别谁在以最低成本完成派发或回收筹码。",
+      "category": "framework"
+    },
+    {
+      "quote": "近期我不会持有任何山寨币，只会找机会做空",
+      "rule_paraphrased": "当融资盘、解锁盘、上币供给集中压向二级时，默认不碰现货山寨，优先从供给端做空。",
+      "category": "framework"
+    },
+    {
+      "quote": "你只要还能看到时间线上还有人喊抄底某山寨，那大概率就不是底",
+      "rule_paraphrased": "真正的底部往往不具备大众共识；只要散户还在公开热议抄底，就说明筹码出清不充分。",
+      "category": "contrarian"
+    },
+    {
+      "quote": "二级交易少关注技术指标和刻舟求剑，这世上没有圣杯也没有预言家，理解底层逻辑和不断的实战是唯一路径",
+      "rule_paraphrased": "指标只是辅助，交易优势来自对结构、筹码、做市和叙事传播机制的理解。",
+      "category": "mantra"
+    },
+    {
+      "quote": "BTC真正开跌才只有1周时间，管住自己的手啊，更别贷款",
+      "rule_paraphrased": "急跌初期最重要的是风险控制和不加杠杆，不抢第一刀反弹。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和典型只讲形态/指标的 TA 不同，核心是把市场当作“庄家-做市-筹码-流动性”的博弈系统来拆解，尤其擅长新币上市、高 FDV、项目方/做市商派发路径。另一方面他又会把这种结构思维外推到 BTC 周期和黄金白银等宏观资产，用超长周期图做逆向判断。整体上比纯图表派更偏“结构化操盘行为学”，比纯宏观派又更贴近二级资金流和出货机制。 ",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "只会找机会做空",
+      "大概率就不是底",
+      "万物不离其宗",
+      "这个逢高空策略我要做5年",
+      "所以只会新高"
+    ],
+    "low_conviction_phrases": [
+      "我觉得",
+      "看看",
+      "谨慎吧",
+      "可能",
+      "要不要抄底",
+      "给不给机会"
+    ]
+  }
+}

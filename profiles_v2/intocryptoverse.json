@@ -1,0 +1,213 @@
+{
+  "handle": "intocryptoverse",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "indicator_rule",
+    "content_creator",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ETH/BTC",
+    "BTC.D",
+    "ALT/BTC",
+    "TOTAL3/BTC",
+    "GOLD/BTC",
+    "10Y yields"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.98,
+      "evidence": "[2025-11-21] \"Bitcoin has always topped in Q4 of the post-halving year and then bottomed approximately 1 year later.\" 这是典型减半后阶段划分。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.96,
+      "evidence": "[2025-11-20] \"Bitcoin bear markets usually last 1 year. Potential low in October 2026.\" 以及 [2026-03-27] \"You can't use prior midterm years...\"，持续用历史周期模板推演未来。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.95,
+      "evidence": "高频讨论 BTC.D：[2025-09-30] \"oh look Bitcoin dominance is going higher\"；[2025-04-30] \"New cycle high by #Bitcoin Dominance\"；图片 4/7 直接拿 \"Making another BTC dominance video\" 自嘲，说明这是其核心框架。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.88,
+      "evidence": "[2024-09-30] \"#BTC has already pulled back to its 20W SMA\"；图片 3 显示 BTC 周线沿 bull market support band/均线带运行，典型用趋势回踩均线延续框架。"
+    },
+    {
+      "id": "cap_019_ma_death_cross",
+      "weight": 0.78,
+      "evidence": "[2025-03-28] \"#BTC starts dumping into the upcoming death cross. What typically happens is a dump into the cross, and then a countertrend rally on the other side of the cross\"，明确把死叉作为趋势阶段信号。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.76,
+      "evidence": "[2025-11-19] \"If Bitcoin can back above the 50W SMA within the next week then I’ll take the bear goggles off.\" 他把关键周均线的收复/失守作为 regime 切换确认。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.75,
+      "evidence": "[2024-12-30] \"When the 10Y yield broke out and retested its 21W EMA in 2023, we also saw #BTC pull back and consolidate for a while.\" 明确用收益率走势解释 BTC 流动性环境。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "[2025-01-31] \"Spot the bubbles... SP:SPX/FRED:UNRATE...\"；[2024-08-29] 给出 SPX/失业率/利率复合公式，用股市风险偏好与宏观变量给 BTC 定位。"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.52,
+      "evidence": "虽然没直接发 PMI 数值，但他反复用 labor market / recession / GDP 变化来判断风险周期，如 [2025-04-30] \"Real GDP dropped -0.3% in Q1 2025\"、[2025-01-30] \"no recession until initial claims are >300k\"。本质是宏观周期状态判断。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.46,
+      "evidence": "[2024-11-26] \"If GOLD rallies just 350,000%, then it will only be down 99.99% against #Bitcoin\"；图片 2 是 GOLD/BTC 长期比价图，说明他经常把 BTC 放到跨资产相对价值框架里。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.82,
+      "evidence": "[2025-11-19] \"Ethereum will likely continue bleeding against Bitcoin until December.\"；图片 8 是 ETH/BTC 周线多年下行结构，说明他长期识别 ALT/BTC 和 ETH/BTC 的下降 regime。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.7,
+      "evidence": "图片 3 的 BTC 周线保持在支撑带上方、结构高低点抬升；[2024-10-31] 提到若收盘站稳 70k 上方则周期观点有效，本质是趋势结构确认。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.34,
+      "evidence": "[2024-05-24] \"So since the ETF for #ETH is approved...\" 虽然不是主框架，但会把 ETF 作为制度性流动性变量纳入判断。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.42,
+      "evidence": "他大量跟踪 Powell、利率、就业数据与会议周风险：[2025-10-29] 多条 Powell 逐句转发；[2024-09-30]、[2025-01-31] 反复提 labor market releases 对 BTC 的影响。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.55,
+      "evidence": "[2025-11-19] \"One sign of a cycle being over is when you get to 'Extreme Fear' and no bounces occur.\" 这类表述体现他不主张在未确认前盲目抄底。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_bull_market_support_band",
+      "name": "Bull Market Support Band",
+      "name_zh": "牛市支撑带回踩/失守",
+      "type": "indicator_rule",
+      "description": "Use the weekly bull market support band, typically the 20W SMA/21W EMA zone, as the primary trend support. Holding it supports continuation; losing it implies a deeper corrective or bearish phase.",
+      "description_zh": "使用周线牛市支撑带（通常是 20 周均线与 21 周 EMA 区域）作为主趋势分界。守住偏延续，失守偏更深回调或熊市阶段。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_continuation_above_band_or_bearish_below_band",
+        "horizon": "position",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "[2024-06-25] \"#BTC now at its 21W EMA\"；[2024-06-25] \"#BTC dominance still holding support above its bull market support band\"；图片 3 也直接展示该带。"
+    },
+    {
+      "proposed_id": "cap_new_log_regression_band_extremes",
+      "name": "Logarithmic Regression Band Extremes",
+      "name_zh": "对数回归带极值定位",
+      "type": "structural_bias",
+      "description": "Map BTC, ETH, or ETH/BTC into logarithmic regression bands to identify overextension, fair value, and likely mean-reversion zones across cycles.",
+      "description_zh": "把 BTC、ETH 或 ETH/BTC 放进对数回归带中，识别过热、合理价值和跨周期均值回归区域。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "mean_reversion_or_cycle_location",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2025-02-28] \"#ETH is moving deeper into its lower logarithmic regression band\"；[2025-12-31] \"According to this model, the current 'fair value' of ETH is $1987.\""
+    },
+    {
+      "proposed_id": "cap_new_midterm_year_seasonality",
+      "name": "Midterm Year Seasonal Template",
+      "name_zh": "中期选举年季节性模板",
+      "type": "cycle_time",
+      "description": "Project BTC path using U.S. midterm-year analogs: common pattern is February low, March lower high, and April weakness, with macro relief later in the year.",
+      "description_zh": "使用美国中期选举年类比推演 BTC 路径：常见路径是 2 月低点、3 月更低高点、4 月再探底，随后年内再看宏观缓和窗口。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "seasonal_path_dependency",
+        "horizon": "macro",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-04-02] \"Bitcoin tends to find a low in February, lower high in March, then it drops back down in April in midterm years.\""
+    },
+    {
+      "proposed_id": "cap_new_alt_btc_reckoning",
+      "name": "Alt/BTC Reckoning",
+      "name_zh": "山寨对 BTC 清算期",
+      "type": "structural_bias",
+      "description": "When Alt/BTC pairs are rejected from prior support turned resistance or from the bull market support band, expect another leg of underperformance versus BTC rather than early altseason.",
+      "description_zh": "当 ALT/BTC 在前支撑变阻力或牛市支撑带被拒绝时，预期其相对 BTC 再走一轮弱势，而不是抢跑山寨季。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish_alt_vs_btc",
+        "horizon": "position",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "[2024-09-25] \"If they get rejected by the bull market support band... then it should lead to another move down by ALT/BTC pairs\"；[2025-05-31] \"#ALT / #BTC pairs were rejected from their bull market support band\"。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Didn’t listen to the speech.  Because I don’t need a narrative",
+      "rule_paraphrased": "优先价格结构与周期模板，不依赖新闻叙事解释每一根 K 线。",
+      "category": "framework"
+    },
+    {
+      "quote": "The blueprint was there for Bitcoin.   It drives people crazy though that it was that easy.  No need to overcomplicate things",
+      "rule_paraphrased": "市场往往按历史模板运行，框架越简洁越有用，不要过度复杂化。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Please stop getting upset about my posts about the altcoin recknoning.  I'm clearly not talking about your altcoin.  I'm talking about everyone else's altcoin.",
+      "rule_paraphrased": "默认对山寨相对 BTC 保持怀疑，拒绝个别项目叙事干扰大结构判断。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "One sign of a cycle being over is when you get to \"Extreme Fear\" and no bounces occur.",
+      "rule_paraphrased": "情绪极端本身不是抄底信号；若极恐都没有反弹，通常说明趋势已经坏掉。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Who is still here?",
+      "rule_paraphrased": "他经常把存活者偏差、市场清洗和参与者流失当作周期状态的一部分来观察。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他和普通 TA 交易员最大的区别，是把 BTC/ETH 图表放进更大的周期模板里看：减半周期、四年周期、美国中期年、就业与收益率。第二，他极度强调 BTC.D、ETH/BTC、ALT/BTC 这些相对强弱图，而不是只盯美元计价绝对价格。第三，他的表达像内容创作者，但底层框架其实很系统：周线均线带 + 历史类比 + 宏观流动性。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "has always topped",
+      "the final rotation to BTC is about to start",
+      "Bitcoin dominance is going higher",
+      "No need to overcomplicate things",
+      "The blueprint was there"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "likely",
+      "seems likely",
+      "would argue",
+      "probably",
+      "base case for now though as I see it",
+      "Always possible"
+    ]
+  }
+}

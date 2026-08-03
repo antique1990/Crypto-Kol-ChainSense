@@ -1,0 +1,222 @@
+{
+  "handle": "IamCryptoWolf",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "cycle",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "ETH",
+    "BTC",
+    "ETHBTC",
+    "SOL",
+    "LINK"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.93,
+      "evidence": "2024-11-27 推文明确写道: \"One way to view it is as a 3-year cup and handle, with major resistance at 4k. Once that’s cleared, a measured move places it north of...\"；图 #4 也直接画出长周期 cup-and-handle，并从 4k 上方做 measured move 到 15k+。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.9,
+      "evidence": "2024-10-29: \"The 3-month ascending triangle that formed after the August scare is nearing completion. $ETH is poised for a move to the 4k range.\"；2024-01-15 也提到 \"18-month asc. tri.\"；图 #5、#7 都是水平压制 + 抬升低点的上升三角/压缩结构。"
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.82,
+      "evidence": "2024-12-22: \"currently forming the right shoulder of a potential iHS continuation. This setup will provide the momentum to break 4k and target 10k by May.\"；2024-10-24 也写 \"we could interpret it as forming an iHS or an asc. triangle.\""
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.88,
+      "evidence": "他长期把 ETH 定义为强趋势资产，例如 2025-01-26: \"I’ve never seen a chart as strong as $ETH.\"；2025-01-31: \"the charts say to stay BULLISH af\"。整体框架不是均值回归，而是把大级别结构视为持续上升趋势。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.84,
+      "evidence": "2024-05-28: \"$BTC dominance won't reach 70%, nor will it reach 60%. It has topped and is heading lower, driven by $ETH strength, which will kickstart the long-awaited Alt Season.\"；2024-01-13 也说 BTC.D topped，ETH season 要来。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.74,
+      "evidence": "2025-02-22: \"This is my 4th cycle in the crypto markets, and one rule stands firm: FUD marks the bottoms.\"；多条推文使用 \"this cycle\"、\"bull cycle\"、\"phase two of the bull market\" 等周期叙事来定性 ETH 所处阶段。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.62,
+      "evidence": "他多次把 2025 年 Q1/Q2 设为 ETH 抛物线阶段，例如 2024-12-31: \"$6500 by March $10000 by May ... $18000 end of 2025.\"；这类按季度推进的路径依赖，很像减半后牛市阶段划分。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.78,
+      "evidence": "2025-02-26: \"$ETH is now back at the lower end of its 13-month re-accumulation range... healthy, albeit boring, sideways accumulation.\"；2025-09-21: \"$ETH trapped between 4K and 5K. Range isn’t done yet.\" 他频繁把市场描述为箱体/再积累区间。"
+    },
+    {
+      "id": "cap_024_wyckoff_accumulation",
+      "weight": 0.72,
+      "evidence": "虽然不直接用 Wyckoff 术语，但大量使用 re-accumulation、shakeout、hard retest、smart money style 语言。2024-06-30: \"We're in a re-accumulation phase within a bull market\"；2024-12-20: \"They’re shaking you out of the market before the big move to 10k.\""
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.69,
+      "evidence": "2025-08-18: \"flushing shorts above 4,800 and longs below 4,200\"；2025-09-29: \"Now that we’ve swept the 4K lows\"。他经常把波动解释为先扫流动性、再走主趋势。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.67,
+      "evidence": "2025-03-25: \"The 3D RSI was at its lowest levels... These lows have historically signaled $ETH cycle bottoms.\"；2024-06-21 与 2024-06-26 对 ETHBTC 明确提到 weekly bullish divergence。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.42,
+      "evidence": "他不算均线型交易员，但图里经常把斜率支撑/趋势恢复画成收复关键结构后再起涨。图 #8 显示跌破后重新收回前下降结构并准备上攻 3,186/4,350 阻力，逻辑接近关键均线/关键趋势收回。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.55,
+      "evidence": "他经常强调市场通过下破/上破制造 FUD 或 shakeout。2024-07-29: \"ETF news pullback, as anticipated, is now complete\"；2024-12-20: \"You didn’t believe we could drop from 4k ... this is an opportunity before we head to 10k.\" 典型把破位视为陷阱而非趋势反转。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.38,
+      "evidence": "2024-07-23: \"Spot Ethereum ETF trading volume surpasses $1 billion on the first day.\"；2025-01-30: \"The catalyst that will send it to Valhalla? The staked $ETH ETF.\" 他会把 ETF 叙事作为上涨催化，但不是主框架。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.24,
+      "evidence": "2025-08-24: \"Next FOMC will be a sell-the-news event. Until then, higher.\" 偶尔用宏观事件做节奏微调，但明显次于图表结构。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.44,
+      "evidence": "虽然他常抄大级别支撑，但并不是盲接飞刀，而是等自己定义的支撑/底部结构。2024-06-24: \"Bought the dip\"；2024-09-23: \"dips below $2300 were prime buying zones.\" 他的 dip-buying 建立在结构支撑之上。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_reaccumulation",
+      "name": "Box Re-accumulation Range",
+      "name_zh": "箱体再积累",
+      "type": "structural_bias",
+      "description": "Identify prolonged horizontal or slightly rising consolidation boxes inside a broader bull trend; treat boredom, failed breakdowns, and repeated support holds as accumulation before expansion.",
+      "description_zh": "识别牛市主趋势中的长时间横盘或轻微上倾箱体；将无聊震荡、假跌破与支撑反复守住视为再积累，后续倾向于向上扩张。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2025-02-26: \"13-month re-accumulation range\"；2024-06-30: \"re-accumulation phase within a bull market\"；2025-09-21: \"trapped between 4K and 5K\"。这是他最反复使用但 seed 里没有被单独命名的核心框架。"
+    },
+    {
+      "proposed_id": "cap_new_sell_in_may_seasonality",
+      "name": "Sell in May Crypto Seasonality",
+      "name_zh": "Sell in May 季节性模板",
+      "type": "cycle_time",
+      "description": "Project crypto cycle path with a recurring pattern: bullish Q1/Q2 expansion into May, then profit-taking, correction, and later re-expansion into year-end.",
+      "description_zh": "用季节性模板推演加密周期：Q1/Q2 上涨并在 5 月前后到达阶段高点，然后止盈回调，年内后段再展开下一段行情。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_then_distribution",
+        "horizon": "multi_month",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "图 #1、#2、#3 多次在 5 月垂线附近直接写上 \"SELL IN MAY AND RUN AWAY\"；2024-11-25: \"Bullish on $ETH until May, aiming for 10k. Then, take profits and step back.\""
+    },
+    {
+      "proposed_id": "cap_new_eth_rotation_supremacy",
+      "name": "ETH-Led Rotation Thesis",
+      "name_zh": "ETH 主导轮动假说",
+      "type": "structural_bias",
+      "description": "Track capital rotation from BTC, SOL, XRP, ADA, or memecoins into ETH; treat that relative-strength transfer as the main engine of the next leg of the bull market.",
+      "description_zh": "追踪资金从 BTC、SOL、XRP、ADA 或 meme 板块轮动到 ETH；把这种相对强弱切换视为下一段牛市的核心驱动。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "eth_outperformance",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2025-02-23: \"Full rotation from $SOL, $XRP, and $ADA to $ETH has started.\"；2024-11-27: \"Rotation from $BTC and $SOL to $ETH is going to be brutal.\""
+    },
+    {
+      "proposed_id": "cap_new_fud_equals_bottom",
+      "name": "Sentiment Capitulation Bottom",
+      "name_zh": "FUD 即底部",
+      "type": "contrarian",
+      "description": "Use extreme public disbelief, influencer bearishness, or panic narratives as confirmation that a larger bottom or accumulation zone is forming.",
+      "description_zh": "把市场极度不信、KOL 看空或恐慌叙事，当作更大级别底部或积累区正在形成的确认信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_bullish",
+        "horizon": "days_to_months",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-02-22: \"FUD marks the bottoms.\"；2024-07-25: \"The disbelief in $ETH right now is out of control. This is exactly the sentiment I like to see.\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Bullish on $ETH until May, aiming for 10k. Then, take profits and step back. The real play is for 20k by the end of 2025.",
+      "rule_paraphrased": "先做第一段主升到 5 月，随后主动止盈，不恋战；更长线目标另外再看。",
+      "category": "framework"
+    },
+    {
+      "quote": "This is my 4th cycle in the crypto markets, and one rule stands firm: FUD marks the bottoms.",
+      "rule_paraphrased": "舆论越恐慌，越要警惕这是反向买点，而不是追空点。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The more it drags on, the more people will give up. It’s the calm before the storm that takes us to 10k.",
+      "rule_paraphrased": "长时间无聊整理不是坏事，反而在为更大的趋势行情蓄能。",
+      "category": "framework"
+    },
+    {
+      "quote": "They’re shaking you out of the market before the big move to 10k.",
+      "rule_paraphrased": "关键支撑附近的下杀常被他解释为洗盘，而非趋势终结。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I’m still waiting for $ETH’s god candle.",
+      "rule_paraphrased": "他偏好压缩末端后的爆发式单边扩张，并愿意为此长期持有观点。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是均衡型 TA 交易员，而是高度 ETH 中心化、带强叙事输出能力的结构派多头。与一般只讲形态的分析师不同，他把长周期压缩、轮动逻辑、季节性路径和群体情绪逆向结合成一套“ETH 终将爆发”的单边框架。图表上最有辨识度的是多年级别压缩结构、再积累箱体，以及明确写出时间路径和目标区间。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "You are not bullish enough",
+      "bookmark this post",
+      "The chart doesn't lie",
+      "incredibly bullish",
+      "best asymmetrical bet",
+      "send it to 10ks",
+      "escape velocity",
+      "god candle",
+      "melt faces",
+      "Higher."
+    ],
+    "low_conviction_phrases": [
+      "most likely scenario",
+      "could",
+      "I expect",
+      "decent chance",
+      "base case",
+      "looks like",
+      "one way to view it",
+      "likely",
+      "if my forecast is right"
+    ]
+  }
+}

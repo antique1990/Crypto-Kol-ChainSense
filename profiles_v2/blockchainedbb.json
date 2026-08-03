@@ -1,0 +1,263 @@
+{
+  "handle": "blockchainedbb",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "cycle",
+    "structural",
+    "macro",
+    "risk_first",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "XLM",
+    "DOGE",
+    "SHIB",
+    "LTC",
+    "BTC.D"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.95,
+      "evidence": "多次直接使用“liquidity”语言：2024-05-31 写“Worst possible scenario is a liquidity sweep below daily support before it takes off”；2025-07-31 写“untapped liquidity at 120-122k... this liquidity would be swept”。图表中也反复画出先扫下方/上方流动性再反转的路径。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.9,
+      "evidence": "2024-07-31 明确说“when btc.D hits at the arrow , we should have a solid alt rally”；2025-01-20 说“BTC .D ... at a local resistance... Anticipating a rejection here first”，把 BTC.D 当作山寨轮动开关。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.8,
+      "evidence": "2024-09-18 结合利率决议部署“anticipate a solid bounce from 57.5K area to 60-62k again after interest rate announcement before a dump”；2025-07-31 写“Yall shorted FOMC innit ? ... Gotta be patient to short”。他明显交易 FOMC 前后波动。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.78,
+      "evidence": "附图 #1 是 BTC 斐波那契回撤/扩展框架，标出 0.786、0.886、1、1.272、1.414、1.618、2、2.272、2.414 等价位，并以 0.382/0.5 一带作为“Final buy level”，说明其常用 fib 做回撤买点和上行目标。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.74,
+      "evidence": "附图 #6 将 109k 一带标为“DEC EXIT”，90k 一带标为“JAN ENTRY”，本质是前结构区/供需翻转区；2024-09-17 也写“Previous resistance can flip to support”，明显使用支撑阻力翻转/ breaker 思路。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.74,
+      "evidence": "总体长期偏多，2024-12-09 写“Unless we have a daily close below 88K , There is no break in structure”；2025-02-28 说“we are still on track for 220k $BTC”；多次把下跌视作回调而非熊市。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.72,
+      "evidence": "他的更新里几乎总有失效位：2024-03-24“Below 63k invalidates my plan”；2024-12-09“daily close below 88K”；2025-12-15“Invaldation 93.7K+ Daily close”；2026-04-01 还因“.7% sl”选择离场。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.68,
+      "evidence": "2024-08-30 展示小账户并强调“Trading is a game of probabilities”；2026-04-01 提到“.7% sl”；2025-01-20 反复警告不要在事件点高杠杆，说明其交易体系包含明确仓位与风险约束。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.52,
+      "evidence": "虽未在摘录中高频出现 DXY 原词，但其 2024-10-10、2025-04-29 等内容常把 CPI、GDP、宏观数据与 BTC 节奏绑定，属于宏观风险偏好框架的一部分；其更偏事件化而非纯指标化使用。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.63,
+      "evidence": "2024-02-09 图表文字明确写“Fed mentioned they dont pivot in March... So when Fed cuts , Markets cool down around May , Economy picks up and with halving , bull run begins”；2024-09-18 也围绕 25/50bps 决议交易 BTC。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.82,
+      "evidence": "2024-02-09 图中直接把“with halving , bull run begins”纳入年度剧本；多条推文把 2024-2025 放在更大的牛市阶段中处理，不把中途深回撤视为周期结束。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.76,
+      "evidence": "2025-02-28 说“we are still on track for 220k $BTC ... After 2025 , we may retouch 2021 top at 64-69k”；这是一种典型牛顶后大级别回撤的 4 年周期叙事。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.71,
+      "evidence": "他常提醒不要被短期价格动作骗到：2024-06-27“don’t fooled by price action”；2024-10-10“folks are gonna start shorting here . $BTC is likely gonna punish late shorts”；附图 #7 XLM 为典型压缩末端，隐含假跌破/假突破后真方向。"
+    },
+    {
+      "id": "cap_002_rising_wedge_breakdown",
+      "weight": 0.66,
+      "evidence": "附图 #6 BTC 日线画出收敛上升通道后给出向下插针再向上冲的路径，其中“Short entry”就在楔形末端，说明他会把上升楔形视为先跌再走趋势的结构。"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.64,
+      "evidence": "2025-04-30 明说“A bear flag and a head and shoulders is forming at previous high 94.9k”；说明他不仅看大级别多头，也会在局部用经典延续/反转形态做空。"
+    },
+    {
+      "id": "cap_005_head_shoulders_top",
+      "weight": 0.58,
+      "evidence": "同样在 2025-04-30 明确点名“head and shoulders is forming at previous high 94.9k”，可见会将局部复杂反转形态纳入入场逻辑。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.7,
+      "evidence": "2024-10-11 说“$BTC is still choppy and swing trades in either direction are risky . So we are only trading level to level”；2026-03-30 也写“Until the monthly close ... we are trading in a small range”，说明震荡期偏向做区间而非追单边。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.73,
+      "evidence": "2024-07-31 写“your liquidations were planned by whales”；2024-07-31 另一条说“Look where they placed the limit orders and understand what liquidated you”；其叙事核心就是价格先去扫一侧止损/清算池。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.5,
+      "evidence": "2026-04-11 专门发“ETF FLOWS: Spot ETFs saw broad inflows... BTC: $240M ETH: $64.9M...”，说明近阶段已把 ETF 流量当作辅助确认。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.67,
+      "evidence": "2025-04-30 说“Waiting at lows with a big capital to deploy... Let it dump”；他的做法不是无脑抄底，而是等到预设低位/紫色区域/关键支撑再接。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.57,
+      "evidence": "2025-01-17 预期“two blow off tops one at 150-160k and another at 220k”；2025-02-28 继续坚持 220k super cycle 叙事，明显在用抛物线冲顶/双顶峰剧本。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_historical_fractal_analog",
+      "name": "Historical Fractal Analog",
+      "name_zh": "历史分形类比",
+      "type": "structural_bias",
+      "description": "Maps the current cycle to a prior regime or year and projects a path using structural similarity rather than strict pattern rules.",
+      "description_zh": "把当前周期映射到历史年份/历史牛市结构，基于相似路径做目标位和时间窗口推演，而不是只看单一形态。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "trend_continuation_or_cycle_projection",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-01-17：“I applied a fractal from 2017 and that’s how I predicted the Jan bottom”；同日还说预期两个 blow-off tops。"
+    },
+    {
+      "proposed_id": "cap_new_election_inauguration_cycle",
+      "name": "Election / Inauguration Seasonal Playbook",
+      "name_zh": "大选/就职季节性剧本",
+      "type": "cycle_time",
+      "description": "Uses U.S. election timing, inauguration week, and post-election month counts as repeatable timing windows for crypto positioning.",
+      "description_zh": "把美国大选、总统就职、选后月份窗口当作加密市场的重复性时间锚来部署仓位。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "event_tactical",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2025-02-28：“Markets peaks 6 months post election”；2025-01-20 多条围绕 inauguration day 做 BTC/ETH 部署；2024-01-26 也强调 election year volatility。"
+    },
+    {
+      "proposed_id": "cap_new_monthly_quarterly_close_play",
+      "name": "Monthly / Quarterly Close Magnet",
+      "name_zh": "月线/季线收盘磁吸玩法",
+      "type": "event_reaction",
+      "description": "Treats month-end and quarter-end closes as liquidity events that often pin price, create fake moves, or define the next week's direction.",
+      "description_zh": "把月末和季末收盘视为流动性事件，认为价格常在这些节点被牵引、制造假动作，并决定接下来一周方向。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "volatile_then_directional",
+        "horizon": "intraday",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "2025-06-30：“Monthly , quarterly close in 10 mins ! If it’s bullish , it retraces on first week of July before rally”；2025-07-31：“Monthly close today ! Anticipate volatility”。"
+    },
+    {
+      "proposed_id": "cap_new_fixed_calendar_buy_window",
+      "name": "Fixed Calendar Accumulation Window",
+      "name_zh": "固定日历买点窗口",
+      "type": "cycle_time",
+      "description": "Uses specific recurring calendar dates as statistical accumulation windows, independent of short-term noise.",
+      "description_zh": "使用每年固定日期附近作为统计意义上的建仓窗口，不被短线噪音干扰。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "accumulation_long",
+        "horizon": "position",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "2024-09-17：“Personally , I’m buying next week . Sep 20-23 . I’ve been buying for over a decade on this date”；2024-07-31 还引用 W.D. Gann 的 Sep 23 季节性。"
+    },
+    {
+      "proposed_id": "cap_new_whale_manipulation_orderbook",
+      "name": "Whale Manipulation / Orderbook Intent Read",
+      "name_zh": "鲸鱼操盘与订单簿意图解读",
+      "type": "derivatives_signal",
+      "description": "Reads market moves as deliberate whale-engineered liquidity hunts using orderbook placement, liquidation pockets, and timing traps.",
+      "description_zh": "把市场走势解读为鲸鱼通过订单簿、清算位和时间节点主动设计的流动性猎杀。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_after_sweep",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-06-30：“market is heavily manipulated , run by algorithms... see what they are doing on the orderbook”；2024-07-31：“your liquidations were planned by whales”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Stick to the plan and don’t shake . Keep calm and hodl",
+      "rule_paraphrased": "大级别剧本一旦建立，不因中途波动轻易改计划；现货仓位允许承受回撤。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Trading is a game of probabilities . Nobody can 100% predict it right all the time",
+      "rule_paraphrased": "接受不确定性，以概率和仓位管理替代确定性预言。",
+      "category": "framework"
+    },
+    {
+      "quote": "Please anticipate volatility at 10:00 AM EST",
+      "rule_paraphrased": "他非常在意具体时间点，把某些宏观/事件时刻当成日内波动触发器。",
+      "category": "framework"
+    },
+    {
+      "quote": "you make most money when market dumps",
+      "rule_paraphrased": "把大跌视为高赔率机会，而不是纯粹风险；偏向在恐慌中部署。",
+      "category": "contrarian"
+    },
+    {
+      "quote": "don’t play with leverage during inauguration and get hurt !",
+      "rule_paraphrased": "重大事件窗口降低杠杆或不用杠杆，尤其现货和合约分开处理。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不是单纯画形态的 TA 号，而是把历史分形、美国政治日历、月末季末收盘、BTC.D 轮动和流动性猎杀整合成一套叙事型交易框架。与一般 TA 交易员不同，他极度强调“剧本”和时间窗口，常提前几天甚至几个月给出路径图，再用无效位和事件节点管理执行。整体上长期偏多，但短线能非常战术性地做空，核心是先扫流动性再走主趋势。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "There is no break in structure",
+      "we are still on track for 220k",
+      "This is the plan",
+      "No deviation",
+      "Very likely",
+      "I’m expecting",
+      "Bullish weekly close",
+      "There is no resistance in this area on the fib"
+    ],
+    "low_conviction_phrases": [
+      "If I’m right",
+      "likely",
+      "potentially",
+      "could",
+      "worst possible scenario",
+      "I believe",
+      "NFA , DYOR",
+      "may or may not"
+    ]
+  }
+}

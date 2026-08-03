@@ -1,0 +1,203 @@
+{
+  "handle": "Ninjascalp",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "derivatives",
+    "contrarian",
+    "macro",
+    "structural",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "ARB",
+    "alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.97,
+      "evidence": "这是他最反复使用的框架之一：2024-02-28 直接写“I am once again showing you the funding rates before the inevitable liquidation event”；2025-08-24 写“over $800m of longs on Binance wiped out in under 10 mins”；2024-07-25 写“over $330m in longs liquidated / stopped in the past 5 mins on binance”。他明显把清算区当成价格磁吸目标。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.88,
+      "evidence": "2024-02-28 明确提到“showing you the funding rates before the inevitable liquidation event”，并把极端 funding 与 squeeze/liquidation event 直接挂钩；他经常在市场恐慌时转向反身性看多。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.83,
+      "evidence": "2025-05-22 写“there’s going to be a BLOW OFF top that’s going to liquidated over $1billion longs in a few hours”；2025-08-26 又说“the market is letting you size up on your longs but price just keeps going down”。这是典型把过热多头拥挤作为反向信号。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.82,
+      "evidence": "2025-05-22 说“this has to be the worst all time high break in BTCs history”；2025-08-26 说“i don’t believe this pump one bit, feels like bait”；2025-07-10 说“this is scam trump up only and all new buyers will be donating to bears soon”。他经常把突破失败和诱多当成核心解释框架。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.79,
+      "evidence": "2025-05-22 明确预期“BLOW OFF top”；图 8 是 BTC 走势上方手绘冲顶后急跌路径，明显是在画抛物线末端衰竭/顶部路径。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.74,
+      "evidence": "2025-10-14 写“seems more like a range bound/chop environment is in the works”；2024-04-29 写“you can’t chop someone who was born in the chop”；2026-04-10 又说“株価がヨコヨコで面白くありませんが...普通はこれです”。他对震荡环境有很强的 regime 识别。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.66,
+      "evidence": "2024-01-31 连发两条 FOMC 帖子：“FOMC: her question made the markets pump” 与 “his question made the market dump”。他显然关注宏观事件窗口对 BTC 的即时波动冲击。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.64,
+      "evidence": "图 7 直接把日经、S&P500、全球股市与 USD/JPY 放在同一监控面板；说明他会用权益市场风险偏好来确认加密方向。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.61,
+      "evidence": "图 7 中 USD/JPY 被放在最显眼位置之一，配合股指一起看，说明他有跨资产外汇/美元流动性视角；2024-09-04 还把“interest rates getting lowered”与 BTC dip buy 直接关联。"
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.58,
+      "evidence": "2024-07-25 直接写“classic inverse h&s pattern  $ETH”。这是少数被他明确点名的传统形态。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.76,
+      "evidence": "2025-02-28 写“CAPITULATION WICK INCOMING STAY AWAY FROM LEVERAGE”；2025-08-28 写“i will wait for the inevitable September liquidation event and go all in”；2025-02-28 还说“CZ is ready to catch the knife up until $70k. below there... the exchanges go offline”。明显强调等清算完成，不盲目接刀。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.69,
+      "evidence": "2025-05-12 写“you should always know the worst outcome of each trade you take… and you must be okay with it. calculate everything”；2025-02-28 写“STAY AWAY FROM LEVERAGE”。虽然表达戏谑，但底层是严格的风险预算意识。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.72,
+      "evidence": "他大量围绕“liquidation event”“capitulation wick”“under 10 mins wiped out”来发帖，说明会先判断市场是否处在极端波动 regime，再决定是否出手。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.43,
+      "evidence": "2025-08-26 写“altcoins should not be outperforming BTC by this much”；2024-11-24 简写“alt season”。他会把 BTC 与山寨相对强弱作为真假行情过滤器。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.41,
+      "evidence": "2024-12-30 对“10,000,000,000 #USDT minted at Tether Treasury”高度关注，说明他把稳定币铸造/流动性注入视作市场燃料代理变量。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.37,
+      "evidence": "2024-07-25 在巨额清算帖中反讽“welcome to the ETF inflows”；2024-04-30 也提到 Hong Kong ETF。虽然不是主框架，但他会把 ETF narrative 当作行情解释变量。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_exchange_cartel_manipulation",
+      "name": "Exchange Cartel / Venue Manipulation Read",
+      "name_zh": "交易所操盘/场馆操纵识别",
+      "type": "structural_bias",
+      "description": "Treat exchange behavior, outage timing, suspicious order-book action, and forced-liquidation cascades as an explanatory and tradable market structure input.",
+      "description_zh": "把交易所宕机时点、盘口异常、强平瀑布、疑似场馆对手盘行为，作为可交易的市场结构输入，而不只是噪音。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_or_reduce_risk",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-10-11: “exchange only goes down so they can close their positions & fill at best prices”；2025-10-15: “Binance really refunded their customers then liquidated them again after 24 hrs”；2025-04-22: “CARTEL.EXE”。"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_despair_bottom",
+      "name": "Timeline Despair Bottom Filter",
+      "name_zh": "时间线绝望情绪底部过滤器",
+      "type": "sentiment_signal",
+      "description": "Use extreme community despair, silence, and forced-seller psychology on the timeline as a soft contrarian bottoming signal.",
+      "description_zh": "把时间线沉默、绝望、爆仓后麻木、家人面前强装正常等群体情绪，作为偏底部的反向软信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_long",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "2025-02-28: “the timeline is silent but every crypto participant is watching price”；2025-10-11: “watching your bags plummet by the gazzillions while having to act normal around the family”；2025-11-04: “if you are not a forced seller at these prices, you already won”。"
+    },
+    {
+      "proposed_id": "cap_new_asia_session_liquidity_raid",
+      "name": "Asia Session Liquidity Raid",
+      "name_zh": "亚洲时段流动性突袭",
+      "type": "event_reaction",
+      "description": "Track thin-liquidity Asia-session moves for oversized liquidation raids, then fade or frame the follow-through depending on whether the move reclaims key levels.",
+      "description_zh": "重点盯亚洲时段在薄流动性下的异常扫单/强平动作，再根据关键位是否收回，决定反手还是顺势。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "volatile_contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-10-14: “infinite BTC seller nuked nearly $1B of open interest... during asia session”；2024-09-02: “market selling 7 figs at the lows during asia session”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "hope you understand",
+      "rule_paraphrased": "高置信度结论常用半戏谑口吻落地，等于“我已经有方向判断，不再展开论证”。",
+      "category": "mantra"
+    },
+    {
+      "quote": "CAPITULATION WICK INCOMING  STAY AWAY FROM LEVERAGE  REGARDS",
+      "rule_paraphrased": "预期强平针时，先降低杠杆暴露，等清算完成再考虑出手。",
+      "category": "framework"
+    },
+    {
+      "quote": "you should always know the worst outcome of each trade you take…  and you must be okay with it.  calculate everything… hope you understand",
+      "rule_paraphrased": "每笔交易先定义最大损失，接受不了就不做。",
+      "category": "framework"
+    },
+    {
+      "quote": "you spend years learning & mastering price action concepts...   when all you had to learn was patience  few understand",
+      "rule_paraphrased": "等待比频繁出手更重要，时机优先于复杂技术细节。",
+      "category": "mantra"
+    },
+    {
+      "quote": "there is no better education in trading than being underwater in a position & watching the 1min chart for 2 weeks straight",
+      "rule_paraphrased": "他很重视仓位中的心理压力测试和盘中微观波动观察，带有明显交易员实战主义色彩。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯形态派，而是把清算数据、funding、交易所行为、宏观 headline 和社交情绪揉成一个“反身性操盘剧本”。与常见 TA 交易员不同，他大量使用“liquidation event / cartel / scam pump”这类叙事来描述市场结构，本质上是在交易拥挤仓位和流动性猎杀。传统图形他会用，但更多是辅助确认，核心 edge 来自对杠杆挤压与情绪极值的反向理解。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "hope you understand",
+      "inevitable liquidation event",
+      "CAPITULATION WICK INCOMING",
+      "everything is going according to plan",
+      "few understand",
+      "thanks for playing",
+      "scam pump",
+      "BLOW OFF top",
+      "bottom"
+    ],
+    "low_conviction_phrases": [
+      "seems more like",
+      "might be",
+      "feels like bait",
+      "please advise",
+      "hear me out",
+      "couldn't be me"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "handle": "ai_9684xtpa",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "derivatives",
+    "content_creator",
+    "risk_first",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "WLFI",
+    "HYPE",
+    "ENA",
+    "TRUMP"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.95,
+      "evidence": "这是她最常用的框架之一，反复用“大额充值交易所”推断潜在卖压。例：[2025-11-30]“半小时前他向 #OKX 充值了 1000 ETH”；[2025-11-29]“过去 2 周他已累计向交易所充值 13403.28 枚”；[2026-03-29]“Bitgo 托管地址在过去 2 小时内向 #OKX 充值 548 万枚 TRUMP”。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.92,
+      "evidence": "她持续追踪公开仓位的清算价、保证金空间和是否补仓，明显把清算位当成核心交易信息。例：[2026-01-31]“ETH跌至 $2250，12 分钟前该地址的多头仓位已被精准爆破（最大头寸 ETH 清算价 $2262.7）”；[2025-03-31]“MakerDAO 的系统价格为 $1784.63，目前的清算价格是 $1,787.86，只有 3 刀的空间了”；图 3 直接展示 Hyperliquid 账户净盈亏与持仓轨迹。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.78,
+      "evidence": "她对‘会止损’明显持正面评价，并把果断离场视为能力。例：[2025-02-28]“会买的是徒弟，会卖的才是师傅啊”；同条还写“壮士断腕，重头再来，也是一种能力”；[2026-03-28]“设置了止盈线、小仓位、等待新的抄底机会”。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.72,
+      "evidence": "她经常先给市场定性为‘地狱震荡/闪崩/大反弹/猛烈反弹’再讨论仓位生死，说明会先判断环境再解释交易结果。例：[2025-10-30]“地狱震荡行情”；[2026-01-31]“12 分钟前该地址的多头仓位已被精准爆破”；[2026-02-26]“经过一晚猛烈的反弹”。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.63,
+      "evidence": "她会把资金费当成拥挤度与持仓成本信号来读。例：[2025-08-30]“空单开了这么久资金费还赚了 502 万美元了”；[2025-04-30]复盘 ALPACA 时专门写“资金费率结算频率由 4 小时缩短为 2 小时”，显示她在跟踪合约拥挤与挤仓机制。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.55,
+      "evidence": "她并不只看价格方向，也看空头/多头拥挤的 carry。像 [2025-08-30] 那条把做空者长期持仓还能‘赚资金费’单独拎出来，说明她把负资金费环境视为仓位结构的一部分。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.54,
+      "evidence": "图表里经常标注极端针刺后的真实方向，而不是复杂形态。图 8 在 ETH 1 分钟图上标出“Vida 买入点位($2281)”正对应长下影扫低后的反拉；图 7 用“NO 10 AM DUMP”强调预期中的扫流动性没有发生，本质也是围绕流动性和预期失效来解释走势。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.47,
+      "evidence": "她偶尔用极端 wick/急跌低点来定义短线买卖点。图 8 的插针低点被直接标注为‘买入点位’，是典型的关键位长针拒绝式观察，而不是均线/指标系统。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.36,
+      "evidence": "图 8 明确打开了 MA(7/25/99) 并在暴跌后观察价格重新站回短均线附近，说明她会参考均线位置，但更像辅助框架，不是主框架。"
+    },
+    {
+      "id": "cap_061_options_skew_bullish",
+      "weight": 0.34,
+      "evidence": "她会追踪期权大单与到期盈亏平衡点，虽然不是系统性波动率交易员。例：[2025-12-31]“买入了 3000 个 2026.01.30 到期的看涨 10 万刀的 BTC 期权…如果持有到期的情况下，当天 BTC 没有超过 $100953.67，他就会产生亏损”；图 4 直接是 Deribit 大额 call 单截图。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_whale_wallet_tracking",
+      "name": "Whale Wallet Tracking",
+      "name_zh": "巨鲸地址追踪",
+      "type": "onchain_signal",
+      "description": "Track known whale, fund, insider, treasury, and old-wallet addresses across deposits, withdrawals, transfers, and wallet clustering to infer likely positioning changes before or after price moves.",
+      "description_zh": "持续跟踪巨鲸、机构、项目方、老钱包等地址的提币、充币、转移和地址聚类关系，据此推断其仓位变化与潜在市场影响。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "几乎整组推文都在做这件事，如 [2025-11-30] ETH ICO 巨鲸抛售、[2025-11-29] WBTC 巨鲸转而卖 ETH、[2026-04-02] 2016 年 ETH 远古巨鲸近乎清仓。"
+    },
+    {
+      "proposed_id": "cap_new_public_leaderboard_copytrade",
+      "name": "Public Position Leaderboard Tracking",
+      "name_zh": "公开仓位榜单追踪",
+      "type": "derivatives_signal",
+      "description": "Monitor public perpetual leaderboards or visible addresses on venues like Hyperliquid/Deribit to track PnL, liquidation price, leverage, add/reduce behavior, and crowd copytrading reactions.",
+      "description_zh": "跟踪 Hyperliquid、Deribit 等可见仓位地址的净值、强平价、杠杆、加减仓行为，以及市场跟单与围猎反应。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "[2026-04-06]、[2026-04-10] 连续更新“先定 10 个大目标”老哥仓位；图 3 也是典型的公开账户净值曲线截图。"
+    },
+    {
+      "proposed_id": "cap_new_tge_listing_tokenomics_event",
+      "name": "TGE and Listing Tokenomics Event Playbook",
+      "name_zh": "TGE/上所/代币经济事件手册",
+      "type": "event_reaction",
+      "description": "Analyze token launch, unlock, market maker, cross-chain testing, venue listing, and circulation structure to estimate initial FDV pressure and event-driven flows.",
+      "description_zh": "围绕 TGE、解锁、做市商、跨链测试、交易所上线与流通盘结构，评估初始 FDV、抛压和事件驱动资金流。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2025-08-31] 她为 WLFI 做整套信息蒸馏：TGE 流通量、FDV、多空情况、CA、轮次成本、做市商；图 1 也是 WLFI 主题图。"
+    },
+    {
+      "proposed_id": "cap_new_source_verification_forensics",
+      "name": "Source Verification Forensics",
+      "name_zh": "信息源验真取证",
+      "type": "risk_rule",
+      "description": "Before accepting wallet or exchange rumors, verify timestamps, addresses, provenance, and image integrity to filter fabricated screenshots and misleading attribution.",
+      "description_zh": "在接受钱包、交易所或名人地址传言前，先核验时间、地址、资金来源和图片真伪，过滤 P 图和错误归因。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "immediate",
+        "confidence_base": 0.84
+      },
+      "example_evidence": "[2025-10-31]“一眼假… Don't trust. Verify.”，并逐条指出时间和地址都被 P 过。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Don't trust. Verify.",
+      "rule_paraphrased": "面对链上截图、名人地址或市场传言，先做取证核验，再做结论传播。",
+      "category": "framework"
+    },
+    {
+      "quote": "会买的是徒弟，会卖的才是师傅啊",
+      "rule_paraphrased": "她更推崇退出能力和止盈止损纪律，而不是单纯找到买点。",
+      "category": "mantra"
+    },
+    {
+      "quote": "不是内幕是怨种",
+      "rule_paraphrased": "对‘神秘内幕交易’叙事保持怀疑，很多传奇仓位最终只是高杠杆和运气的错觉。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Anyway, no crying in the casino",
+      "rule_paraphrased": "把高波动高风险市场视为零和博弈场，结果导向强，情绪化复盘价值低。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "不下牌桌",
+      "rule_paraphrased": "她经常用这句话刻画高杠杆玩家的行为惯性：亏损后不退出，反而继续寻找下一次翻本机会。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "她和传统 TA 交易员最大的区别，是核心武器不是形态学，而是“地址-仓位-交易所流向-清算价”四件套的情报拼图。图表更多承担说明某个巨鲸/事件发生在什么位置，而不是独立给出完整技术系统。整体上更像实时市场 OSINT 分析师兼仓位侦察兵，而不是纯 K 线派。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "一眼假",
+      "果然",
+      "全部被清算",
+      "答案揭晓",
+      "坏了，真被他抄到底了"
+    ],
+    "low_conviction_phrases": [
+      "似乎",
+      "可能",
+      "有概率",
+      "不确定",
+      "看起来"
+    ]
+  }
+}

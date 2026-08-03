@@ -1,0 +1,194 @@
+{
+  "handle": "WillyWoo",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "cycle",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "MSTR",
+    "SPX",
+    "XAU"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.84,
+      "evidence": "[2024-02-29] 他把现货 ETF 批准定义为需求释放触发器：\"Full demand for #Bitcoin unleashed... he changed his mind when the spot ETF approved.\"；[2025-04-27] 也明确说 treasury buying / TradFi onramp 在数据里。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.9,
+      "evidence": "[2024-09-30] 直接发图并写：\"#Bitcoin is a proven safeguard against money printing. Global Liquidity has once again broken out\"；附图 #7 也是 BTC 与 GLOBAL LIQUIDITY 的分段领先关系。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.66,
+      "evidence": "[2025-02-27] 明说：\"BTC's correlation to stocks takes out a cluster of liquidations...\"；附图 #2 是 S&P 500 E-mini futures 配 RSI 与趋势线，用股指风险偏好来判断 BTC。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.64,
+      "evidence": "[2025-04-27] \"Our Risk Model has started its trend back down. This means liquidity has returned to the market. Downside pull backs will be muted\"；他反复把流动性变化当成 BTC 的主驱动。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.77,
+      "evidence": "[2025-05-30] \"you have 2 days 16 hours to rally or your gonna print a bearish divergence on weekly charts\"；附图 #5 顶部 RSI 区域画了下降趋势线、价格接近高位，典型周线看空背离框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.79,
+      "evidence": "[2025-04-27] \"All dips are for buying under the present regime.\"；他不是逢点位交易，而是先定 regime，再决定所有回撤是否应被视作买点。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.7,
+      "evidence": "[2024-01-04] \"The basis trade*** on BTC perpetuals is earning 75% right now, a level unseen since the 2021 bull market.\" 这是把高基差/过热杠杆作为反身性过热信号。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.56,
+      "evidence": "[2024-02-22] \"Remember to hold for 4 years. It's never returned below 30% annualised for a 4 year investment\"；[2024-11-30] 还调侃 \"#Bitcoin bubbles of 2011, 2013, 2025 and 2029\"，明显保留 4 年周期视角。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.52,
+      "evidence": "[2026-03-28] \"Warning: BTC can stay oversold for more months that one can stay solvent.\" 这不是单纯超卖看多，而是明确反对在未确认前逆势接刀。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.41,
+      "evidence": "[2024-02-22] 他跟踪 GBTC 内部 BTC 的流出，把其命名为 \"fleeing the land of greed\"；虽然对象是基金载体而非单纯交易所，但本质仍是可交易供给回到市场的抛压框架。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.58,
+      "evidence": "[2025-01-25] \"BTC chops around sideways quietly hiding coins being accumulated\"；他经常把“横盘但筹码被强手吸收”当成中期偏多依据，和长期持币者锁仓思路一致。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.48,
+      "evidence": "[2025-02-27] 他把 liquidation cluster、neutral investor activity、urgency model 放在同一框架下读，强调不是单点预测，而是波动/风险状态切换；[2025-05-30] 说若周线背离成立则会 \"be bored for weeks and weeks\"，即波动压缩与 regime 切换。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_network_capital_flows",
+      "name": "Bitcoin Network Capital Flows",
+      "name_zh": "比特币网络资本流",
+      "type": "onchain_signal",
+      "description": "Track total, speculative, and short/medium-horizon capital entering or leaving the Bitcoin network, usually derived from realized-cap style flow models. Rising flows after a bottom imply accumulation and improving structure; declining flows during price strength imply weakening internals.",
+      "description_zh": "跟踪进入或流出比特币网络的总资本、投机资本及 1d/7d/30d 期限资本流，通常基于 realized cap 类模型。底部后的流入回升代表吸筹与结构改善；价格走强但流量走弱则代表内在动能转差。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_when_flows_bottom_and_rise",
+        "horizon": "position",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "[2025-01-25] \"Capital inflows into the Bitcoin network starting to climb again, while BTC chops around sideways quietly hiding coins being accumulated\"；附图 #1/#6/#8 都是这一套图。"
+    },
+    {
+      "proposed_id": "cap_new_onchain_vwap_zscore_extension",
+      "name": "Onchain VWAP Z-Score Extension",
+      "name_zh": "链上 VWAP 标准差扩张",
+      "type": "indicator_rule",
+      "description": "Measure how far spot price is stretched from onchain VWAP in standard deviations. Extreme positive readings indicate momentum overextension even if fundamentals remain bullish; prefer sideways reset or shallow pullback rather than chase.",
+      "description_zh": "衡量现价相对链上 VWAP 偏离了多少个标准差。正向极值说明即便基本面偏多，价格也处于过度延伸状态，更适合等待横盘消化或浅回撤，而不是追高。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "short_term_caution_long_term_bullish",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2025-04-27] \"onchain VWAP is at +3 standard deviations, meaning it'll be hard to move upwards with decent momentum due to over extension.\""
+    },
+    {
+      "proposed_id": "cap_new_macro_cycle_risk_model",
+      "name": "Macro Cycle Risk Compression",
+      "name_zh": "宏观周期风险压缩模型",
+      "type": "regime_classifier",
+      "description": "Use a composite macro/liquidity risk model to detect when investor risk is peaking, compressing, or rolling over. Falling macro-cycle risk implies liquidity returning to the network and downside becoming muted.",
+      "description_zh": "用宏观与流动性合成风险模型判断投资者风险是见顶、压缩还是回落。宏观周期风险下降，通常意味着流动性重新回到网络中，下行回撤会被削弱。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on_when_risk_model_falls",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2025-08-30] \"Macro Cycle Risk printed a lower high and has started a drop in risk\"；[2025-04-27] \"Our Risk Model has started its trend back down. This means liquidity has returned to the market.\""
+    },
+    {
+      "proposed_id": "cap_new_tradfi_reflexive_treasury_bid",
+      "name": "TradFi Treasury Reflexive Bid",
+      "name_zh": "TradFi 金库买盘反身性",
+      "type": "event_reaction",
+      "description": "Model treasury-style buyers such as ETFs or listed companies as secondary demand engines that translate traditional capital markets access into reflexive BTC demand, amplifying upside beyond native crypto flows.",
+      "description_zh": "把 ETF、上市公司金库买入等视为第二层需求引擎：它们把传统资本市场通道转化为反身性的 BTC 买盘，放大原生链上资金流的上涨效果。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "macro",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2024-11-28] \"The merger of #Bitcoin and TradFi is not going to make sense\"；[2025-04-27] 他明确说数据里包含 treasury buying activities，它们是新的 TradFi onramp。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "All dips are for buying under the present regime.",
+      "rule_paraphrased": "先判定市场 regime；只要大框架未坏，回撤默认是加仓机会，不是做空机会。",
+      "category": "framework"
+    },
+    {
+      "quote": "The Bitcoin chart that matters the most right now looks pretty good to me.",
+      "rule_paraphrased": "他高度依赖少数核心主图，而不是堆砌十几个技术指标；主图好看，其他噪音都降级。",
+      "category": "framework"
+    },
+    {
+      "quote": "Markets are always wrong in the short term and very roughly correct in the long term.",
+      "rule_paraphrased": "短期价格容易被战术性博弈扭曲，长期才回归基本面与资本流。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Warning: BTC can stay oversold for more months that one can stay solvent.",
+      "rule_paraphrased": "不要因为指标超卖就机械抄底；时机错误会先把你洗出局。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Bet macro bullish against technical bearish. Not a good setup.",
+      "rule_paraphrased": "当宏观/基本面与技术面冲突时，不轻易高杠杆下注；等待两者重新对齐。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和纯 TA 交易员最大的不同，是把 BTC 当成可被链上资本流、ETF/公司金库买盘、全球流动性共同驱动的“网络资产”，而不是单一 K 线标的。技术分析在他这里更多是择时和风险压缩工具，真正的方向锚来自链上资金流与宏观流动性。另一个鲜明特点是长期显著偏多，但短期并不盲目追价，常用背离、VWAP 偏离和风险模型来避免在过热阶段犯错。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "All dips are for buying",
+      "The chart that matters the most",
+      "fundamentals have turned bullish",
+      "solid long term setup",
+      "proved safeguard against money printing",
+      "liquidity has returned to the market"
+    ],
+    "low_conviction_phrases": [
+      "not a bad setup",
+      "looks pretty good to me",
+      "my working thesis",
+      "if capital flows follow through",
+      "probably",
+      "IMO",
+      "presents a juicy target"
+    ]
+  }
+}

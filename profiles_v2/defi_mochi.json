@@ -1,0 +1,191 @@
+{
+  "handle": "defi_mochi",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "content_creator",
+    "onchain",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "PENDLE",
+    "HYPE",
+    "ZORA",
+    "SPX",
+    "VIRTUAL"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.84,
+      "evidence": "2024-08-31: \"@Grayscale - Unloaded > $1.3B worth of $ETH since early July\"。配图里也直接用了 Grayscale/Coinbase Prime 地址余额下滑和入所记录，明显把大额入所/抛压当作交易框架。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.61,
+      "evidence": "2024-01-31: \"@Grayscale contributed to almost $8b worth of $BTC etf outflows sending $BTC from $43k to $38k. $BTC flows are getting healthier every single hour\"。他会把 ETF/机构资金流当成价格驱动。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.67,
+      "evidence": "AR/USDT 图上用紫色大箱体明确标出约 23-48 区间，属于典型箱体高低点交易思路；2025-05-29 也说过 \"Observing if $LAUNCHCOIN can hold this range\"。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.63,
+      "evidence": "AR 图不是趋势线或均线系统，而是先做市场状态分类，把币看成中期震荡箱体；这说明他先识别 regime，再决定是等突破还是在区间内部处理。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.59,
+      "evidence": "2025-04-30: \"$FARTCOIN, $VIRTUAL and $AI16Z peaked out locally but all of you are too delusional and bullish to take profits\"。VIRTUAL 图也呈现近乎垂直拉升后的高位震荡，符合抛物线衰竭识别。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.56,
+      "evidence": "2025-03-31: \"Charts look absolutely horrendous right now, supports breaking everywhere\"；2025-06-29: \"Sell every $SOL pump\"。他会明确切到下行/弱势 regime，而不是无条件做多。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.54,
+      "evidence": "2025-07-30: \"Learn to add to your winners\"；2025-05-29: \"Actually can’t stop winning on $SPX\"。SPX 图也是沿趋势持有而非频繁反手，说明他在强趋势里偏顺势加仓。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.48,
+      "evidence": "2024-07-28: \"The rotation from $SOL memes -> $SOL's ecosystem is inevitable\"；2024-06-30 又列 Q4 回归叙事。虽然没直接说 BTC.D，但他持续做链间/板块间资金轮动框架。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.29,
+      "evidence": "2026-01-15: \"weak CPI + Iran war fears pushed down the equities market a lot while $BTC recovered\"。他会把宏观风险偏好和加密相对强弱放在同一判断里。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.24,
+      "evidence": "2025-03-28: \"We actually have 234 different stablecoins now with $234B in total MC\"。他会把稳定币体量、份额和扩张看成赛道机会与流动性背景。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_vc_unlock_overhang",
+      "name": "VC Unlock Overhang Fade",
+      "name_zh": "VC 解锁抛压做空/回避",
+      "type": "tokenomics_signal",
+      "description": "Avoid or fade tokens with high FDV, low float, aggressive cliffs, and large investor unrealized multiples because unlock schedules create persistent sell pressure.",
+      "description_zh": "对高 FDV、低流通、悬崖解锁明显、投资人浮盈倍数极高的代币保持回避或逢高做空，因为后续解锁会形成持续抛压。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish",
+        "horizon": "swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2024-08-26: \"VCs don't actually lose even when they are locked up with vesting cliffs. Many of them short their own investments...\"；2025-04-28 做空 $TRUMP 的核心论据也是大额线性解锁；配图中还有专门的 vesting / investor supply / unrealized profit 表。"
+    },
+    {
+      "proposed_id": "cap_new_mindshare_momentum",
+      "name": "Mindshare Momentum",
+      "name_zh": "Mindshare 动量",
+      "type": "content_signal",
+      "description": "Track social attention, Kaito rankings, and narrative share-of-voice as leading indicators for token rotation and meme/AI beta selection.",
+      "description_zh": "用社交关注度、Kaito 排名和叙事声量作为板块轮动与 meme/AI 标的筛选的领先指标。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-06-29: \"Mira @miranetwork ‘s Kaito leaderboard is absolutely worth climbing\"；2024-11-16 评价 $GOAT 时把 \"Mindshare moat\" 列为第一条；配图也直接用了 Kaito Yaps 排行。"
+    },
+    {
+      "proposed_id": "cap_new_pmf_revenue_repricing",
+      "name": "PMF and Revenue Repricing",
+      "name_zh": "PMF 与收入驱动重估",
+      "type": "fundamental_signal",
+      "description": "Re-rate tokens that show real product-market fit, durable revenue, user growth, or buyback engines even if the broader market narrative is noisy.",
+      "description_zh": "对拥有真实产品市场契合、持续收入、用户增长或回购机制的代币进行重估，即使市场噪音很大。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-09-29: \"This bull cycle we have 3 products so far that have achieved product market fit\"；2025-05-27 论证 $SYRUP 时列 TVL、年化收入、stablecoin mc 增长；2025-09-28 强调 $APEX 的 buyback pressure。"
+    },
+    {
+      "proposed_id": "cap_new_ecosystem_rotation_betas",
+      "name": "Ecosystem Rotation Betas",
+      "name_zh": "生态轮动 Beta 下注",
+      "type": "structural_bias",
+      "description": "When a chain or narrative regains attention, rotate from the obvious leaders into liquid beta names and second-order ecosystem plays.",
+      "description_zh": "当某条链或某个叙事重新获得关注时，从龙头扩散到流动性更好的 beta 标的和二级生态标的。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2024-06-29 看多 \"$SOL alts\"；2024-07-28 明说 \"rotation from $SOL memes -> $SOL's ecosystem is inevitable\"；2025 年又多次把 Base 叙事集中到 $ZORA。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Friendly reminder to instantly dump any L2 airdrop for $ETH",
+      "rule_paraphrased": "把高抛压、低质量代币的空头或回避逻辑，直接转换成更强资产的相对价值多头。",
+      "category": "mantra"
+    },
+    {
+      "quote": "No one wants to hear it but 99% of these overhyped VC projects will die in the next 2 years.",
+      "rule_paraphrased": "默认对高估值 VC 币持怀疑态度，除非有极强产品和需求证明其能活下来。",
+      "category": "framework"
+    },
+    {
+      "quote": "Don’t bother finding any play other than $ZORA. Learn to add to your winners.",
+      "rule_paraphrased": "强趋势里不分散注意力，集中火力加到已验证的赢家上。",
+      "category": "mantra"
+    },
+    {
+      "quote": "$FARTCOIN, $VIRTUAL and $AI16Z peaked out locally but all of you are too delusional and bullish to take profits.",
+      "rule_paraphrased": "情绪过热时主动兑现，不把局部高潮误判成永续趋势。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Crypto is no longer the best industry to turn zero to 1m anymore",
+      "rule_paraphrased": "他对行业 alpha 衰减有明确认知，选币更重结构性优势而不是无脑博弈整体行业 beta。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯 K 线派，真正的 edge 来自把简单结构图和链上/ETF 资金流、VC 解锁、mindshare、PMF/收入数据绑在一起。相比常见 TA 交易员，他更像做“叙事+结构+筹码/供给”混合交易，图表通常只负责给出箱体、趋势或局部见顶位置，而核心判断来自谁在卖、谁有回购、谁有用户、谁在被市场讨论。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "easily goes to",
+      "imminent",
+      "best bet",
+      "the only token that can possibly rival",
+      "sell every pump",
+      "generational entry",
+      "absolutely huge",
+      "don’t bother finding any play other than"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "probably",
+      "my bias is",
+      "I don’t think",
+      "observing if",
+      "I wouldn’t be shorting here",
+      "might actually",
+      "feels like"
+    ]
+  }
+}

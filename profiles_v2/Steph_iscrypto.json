@@ -1,0 +1,195 @@
+{
+  "handle": "Steph_iscrypto",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "macro",
+    "onchain"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "XRP",
+    "JASMY",
+    "QNT",
+    "HBAR",
+    "MYRO",
+    "PEPE"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.93,
+      "evidence": "他反复把布林带极度收口当成主 setup。例: [2025-01-31] “#XRP is coiling up again. The last time Bollinger Bands got this tight, we saw a 500% breakout.”；[2024-10-31] “#XRP's Bollinger Bands at record tightness – breakout is near!”；附图 #4 也是典型的收口后扩张叙事。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.89,
+      "evidence": "[2025-01-31] “#XRP bull flags everywhere. The breakout is inevitable.”；[2024-03-31] “The ongoing $MYRO bull flag breakout on the daily timeframe is progressing as anticipated.” 说明他经常把旗形延续当作上涨中继。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.76,
+      "evidence": "[2025-02-27] “#XRP DOUBLE BOTTOM 🔥 Teleport it back to $4,00 ASAP!”；其语言直接把 W 底视为强反转启动信号。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.82,
+      "evidence": "他默认把强势品种视作趋势延续而非均值回归。例: [2024-11-30] “#XRP in a straight line to $30+” ；[2025-06-30] “#XRP CAN’T STOP PUMPING !!!!” ；[2025-01-31] “This #XRP breakout is FAR from over!”"
+    },
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.66,
+      "evidence": "附图 #6 明确画出 1-2-3-4-5 波浪结构，并把当前整理视为通往第 5 浪的中继；[2025-08-31] “The final wave for #XRP 👇” 也说明他会用 Elliott wave 做趋势投射。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.61,
+      "evidence": "[2025-03-31] “$3.40 IS LOADED WITH SHORTS! #XRP COULD RIP THROUGH IF BULLS STEP IN. THE SQUEEZE ZONE IS ACTIVE.” 这是典型把密集空头止损区/清算区当价格磁铁的衍生品思路。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.58,
+      "evidence": "[2025-02-28] “CONGRATS! YOU SURVIVED ANOTHER #XRP BEAR TRAP! THE FEB 3RD LOW WILL NOT BE BROKEN.”；[2025-02-27] “IF YOU SOLD YOUR #XRP ON THE RETEST...” 体现他常把下杀视为扫流动性/诱空。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.57,
+      "evidence": "[2025-03-31] “Global liquidity has bottomed out. #XRP REVERSAL INCOMING!”；[2025-04-30] “THE MONEY PRINTER WILL GO BRRRRRRRRRRR.. #XRP WILL 10-30X IN 2025” 说明他会用全球流动性与宽松叙事做方向确认。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.52,
+      "evidence": "[2025-11-30] “TRUMP IS NOW URGING THE FED TO CUT RATES BY 3–4 POINTS DOWN TO 1%.” 他明显把降息/宽松预期解释为风险资产利多，虽然表达更偏内容驱动而非系统宏观框架。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.48,
+      "evidence": "[2025-11-30] “$XRP JUST SAW $243.95M IN NET ETF INFLOWS THIS WEEK, THE LARGEST YET.”；[2025-03-31] “ETF PPROVALS?” 说明他会把 ETF 审批/资金流当价格催化剂。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.43,
+      "evidence": "[2026-02-28] “Long-term $XRP holders increased their 30-day accumulation from 47M → 145M XRP.” 他会使用长期持有者增持来强化多头叙事。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.31,
+      "evidence": "虽不如 TA 高频，但他多次强调制度资金/链上资金入口扩张，如 [2026-03-31] “open $10 TRILLION in 401(k) retirement money to crypto” 与稳定币收益规则谈判，核心逻辑都是新增购买力将流入加密。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.39,
+      "evidence": "[2024-02-29] “For the first time ever, $JASMY has surpassed the EMA ribbons on the weekly chart.” 他会用均线带收复/站上均线来确认趋势切换。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.42,
+      "evidence": "他频繁把回踩失败解释为假跌破而非结构损坏。例: [2025-02-28] “bear trap” 与 [2025-02-27] “Bullish market structure still intact for #XRP” 的组合，就是典型 trap 叙事。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_multi_year_compression_breakout",
+      "name": "Multi-Year Compression Breakout",
+      "name_zh": "多年级别压缩区突破",
+      "type": "pattern_setup",
+      "description": "Identify long-duration triangle or compression structures on weekly/monthly charts and project outsized targets once price escapes the range.",
+      "description_zh": "识别周线/月线持续数年收敛压缩结构，一旦脱离压缩区，就按结构高度投射远距离目标。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "附图 #3 画出 2018-2025 的大型收敛结构并把目标直接投射到 33.21925；[2024-11-30] “#Xrp has broken out of its compression zone, signaling the start of a potentially parabolic rally.”"
+    },
+    {
+      "proposed_id": "cap_new_regulatory_catalyst_breakout",
+      "name": "Regulatory Catalyst Breakout",
+      "name_zh": "监管催化突破交易",
+      "type": "event_reaction",
+      "description": "Use pending legal, SEC, banking, ETF, or market-structure decisions as directional catalysts that can unlock repricing in specific tokens.",
+      "description_zh": "把诉讼进展、SEC 动作、银行接入、ETF、市场结构法案等监管/制度事件视为代币重定价触发器。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "[2025-03-31] “SEC’S APRIL 3 CLOSED SESSION COULD DELIVER MAJOR #XRP DECISIONS.”；[2025-03-31] “THE CASE IS OVER. #XRP IS FREE TO SCALE IN THE U.S.”；[2026-04-08] “CLARITY Act is a ‘done deal’...”"
+    },
+    {
+      "proposed_id": "cap_new_elliott_wave_5_extension",
+      "name": "Elliott Wave 5 Extension Targeting",
+      "name_zh": "艾略特第 5 浪延伸投射",
+      "type": "structural_bias",
+      "description": "After a visible 1-2-3-4 sequence, anticipate a terminal or explosive wave-5 expansion and use it for high-upside projections.",
+      "description_zh": "在清晰 1-2-3-4 结构后，预判终段或加速型第 5 浪，并据此做高弹性上方目标投射。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "附图 #6 直接标注 1-2-3-4-5，并把当前横盘解释为通往第 5 浪前的整理；[2025-08-31] “The final wave for #XRP 👇”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Only future #XRP millionaires can like this post.",
+      "rule_paraphrased": "用身份认同和财富预期绑定持仓者，把持有 XRP 叙事化为“未来富人俱乐部”。",
+      "category": "mantra"
+    },
+    {
+      "quote": "IF YOU SELL YOUR #XRP NOW YOU DON'T DESERVE GETTING RICH",
+      "rule_paraphrased": "把卖出定义为意志不坚定或失去资格，强化持币不动的信仰型框架。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "The 2017 #XRP bull run had 3 brutal shakeouts—yet it still did 110,000%. Dips don’t end bull runs, they fuel them.",
+      "rule_paraphrased": "把回撤解读为牛市内部清洗而不是趋势终结，鼓励在强叙事周期中忽略中途波动。",
+      "category": "framework"
+    },
+    {
+      "quote": "Global liquidity has bottomed out. #XRP REVERSAL INCOMING! 🚀",
+      "rule_paraphrased": "用宏观流动性拐点为单一代币提供顺风确认，即便交易核心仍是山寨币多头表达。",
+      "category": "framework"
+    },
+    {
+      "quote": "#XRP bull flags everywhere. The breakout is inevitable.",
+      "rule_paraphrased": "一旦结构与叙事共振，就直接把突破视为高确定性事件，而不是条件概率事件。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是典型纪律型交易员，更像“XRP 超级多头内容交易员”：用极强情绪动员、制度利好 headlines 和简单高辨识度 TA 图形共同驱动观点。其分析框架以周线/月线大级别压缩、布林带收口、旗形和波浪投射为主，几乎所有信号都服务于同一个长期看多叙事。与一般 TA 交易员不同，他很少讨论失效条件和风险回撤，更擅长把监管、银行接入、ETF、供应冲击等新闻包装成价格即将重估的证据链。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "BREAKING",
+      "MASSIVE",
+      "MEGA BULLISH",
+      "about to explode",
+      "straight line to $30+",
+      "teleport to $30+",
+      "the breakout is inevitable",
+      "you’re not bullish enough",
+      "get rich",
+      "squeeze zone is active"
+    ],
+    "low_conviction_phrases": [
+      "could",
+      "possible",
+      "if true",
+      "What if?",
+      "most likely",
+      "Do you trust this chart?",
+      "Pray",
+      "potentially"
+    ]
+  }
+}

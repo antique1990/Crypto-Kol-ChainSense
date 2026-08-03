@@ -1,0 +1,219 @@
+{
+  "handle": "ewforecast",
+  "school_primary": "structural",
+  "school_secondary": [
+    "pure_TA",
+    "macro",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "XAU",
+    "XAG",
+    "DXY",
+    "SPX",
+    "EURUSD",
+    "OIL"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.98,
+      "evidence": "核心语言几乎全是 Elliott Wave：如“$USDJPY Shows Sharp Decline – Wave 3 of Bearish Impulse in Play”“$ALGOrand ... above March 2024 highs for wave 3, so be aware of more gains for wave 5 after current wave 4 pullback”。多张图也都在标注 1-2-3-4-5、A-B-C、wave IV/V。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.86,
+      "evidence": "2026-04-09 QQQ: “Closed above the 200 day MA and the 62% ret. at 605 yesterday.” 图片2直接标出 0.5、0.618、0.786；图片5/7 也大量使用 0.382、0.5、0.618、1.382、1.618 作为支撑/阻力和目标。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.82,
+      "evidence": "2026-04-09 QQQ: “Closed above the 200 day MA... Today it closed above the 100 DMA too.” 2026-04-10 还明确说“Use the EMA 200 for identifying bull or bear markets, and EMA 100 as a slightly faster alternative or complement.” 图片2同样叠加 SMA100/200 判断趋势。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.8,
+      "evidence": "他反复写“wave 4 correction”后接“wave 5 can be now in progress”。例如 2025-01-28 黄金“bouncing from projected support for wave 4, so wave 5 can be now in progress”，2024-03-21 总市值“bounce... from projected support area for wave (4), so wave (5) of III can be now in progress”。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.72,
+      "evidence": "2026-02-25 BTC CME: “bounced after yesterday’s intraday wedge in subwave (c) of wave 'b'. A move back above channel resistance near 67k could confirm...” 2024-03-27 TSLA: “Potential wedge right into that Jan 2023 gap...” 2025-04-25 还提到 OTHERS market cap “breaking the wedge pattern”。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.68,
+      "evidence": "他大量做三角形突破叙事。2024-11-15 “Ripple Is Breaking Bullish Triangle”，2026-04-09 “EUR/JPY: Bullish Trend Extends After Triangle Breakout”，图片4 是金价 running triangle，图片6 是原油大型收敛三角/楔形结构，图片8 也有收敛整理后上冲路径。"
+    },
+    {
+      "id": "cap_002_rising_wedge_breakdown",
+      "weight": 0.55,
+      "evidence": "2025-03-21 黄金 “after forming a wedge in wave iii... potential for a bullish move in wave v” 说明他会把 wedge 当作末端/修正结构；图片7 银价在上升通道末端标出 bearish level 与下行箭头，也是在做楔形/终结结构后的下破。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.62,
+      "evidence": "他经常把股市作为风险偏好开关。2026-01-27: “Risk-on sentiment remains strong, with $stocks still showing upside potential, while the $USD may weaken further.” 2024-10-25: “classic bullish Friday... confirms further risk-on sentiment. $BTC #Bitcoin to follow.”"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.61,
+      "evidence": "跨市场映射很常见。2025-01-30: “#USDollar is still pointing lower after current correction, so $gold is still eyeing 2800 area...” 2024-05-30/31 多次写 DXY 转弱；2026-01-28 直接写“$USD Weakness Fuels Risk-On Ahead of the Fed”。他常把美元弱势作为加密/风险资产顺风。"
+    },
+    {
+      "id": "cap_049_ict_fair_value_gap",
+      "weight": 0.43,
+      "evidence": "图片1 明确标注“4H FVG”，价格在更高周期缺口区内做回补和延续；2026-04-09 还单独发“3 PD Array Rule”，明显吸收 ICT/PD Array 框架。虽然不是他唯一主框架，但会用。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.34,
+      "evidence": "2026-04-09 说“3 PD Array Rule... Learn where to keep yours stops, partial according to ICT”，说明他不只看波浪，也会用 ICT 的 PD Array/失效位/回踩位来安排止损与分批。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.84,
+      "evidence": "2024-03-15 直接写“Never buy the first dip.” 这是非常鲜明的反抄底规则，和其等待 wave 4/ABC 完成后再接 wave 5 的做法一致。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.64,
+      "evidence": "2026-04-09: “this 30-minute interview with Edward Thorp will teach you more about position sizing...” 2026-04-09 另一条还写“Stop trading 0DTEs every week... Stick with further-dated options.” 说明他重视仓位与产品选择，而不是只谈方向。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.66,
+      "evidence": "2026-04-09 “3 PD Array Rule... Learn where to keep yours stops, partial according to ICT” 明确在讲止损位置与分批止盈；图片8 也直接标注 “INVALIDATION”。他的图经常给出 invalidation/confirm level，而不是无条件死扛。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.58,
+      "evidence": "2026-04-10: “Use the EMA 200 for identifying bull or bear markets.” 2024-10-23 DAX “the diagonal line still holds nicely as a support, so be aware of a bullish continuation in current risk-on sentiment”，说明他先做趋势环境分类，再做波浪细分。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.54,
+      "evidence": "2026-03-31 “$DXY US Dollar Index Extends Uptrend as Wave 5 Targets 101”，2026-03-25 “EURAUD: Bearish Momentum Points to Further Weakness in Wave (3)”；图片7 银价直接给出 bearish level 破位后大幅下行目标。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_elliott_abc_correction_taxonomy",
+      "name": "Elliott ABC Correction Mapping",
+      "name_zh": "艾略特 ABC 修正结构映射",
+      "type": "structural_bias",
+      "description": "Identify zigzag/flat/complex ABC corrections and project whether price is finishing wave A, B, or C before trend resumption or continuation.",
+      "description_zh": "识别之字形、平台形、复杂修正等 ABC 结构，判断当前处于 A、B、C 哪一段，以及修正完成后趋势恢复或延续的概率。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "continuation_after_correction",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "推文里高频出现“after an ABC correction”“intraday ABC pullback in wave iv”“corrective rebound suggests more consolidation before bearish continuation”。seed 里只有 wave 3，没有系统覆盖他的 ABC 修正框架。"
+    },
+    {
+      "proposed_id": "cap_new_wave_triangle_breakout",
+      "name": "Wave Triangle Breakout",
+      "name_zh": "波浪三角形突破",
+      "type": "pattern_setup",
+      "description": "Detect contracting/running triangles, especially in wave B or wave IV, and trade the post-triangle thrust into the terminal wave.",
+      "description_zh": "识别收敛/运行三角形，尤其是出现在 wave B 或 wave IV 时，交易其突破后进入终端推动浪的那一段。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "breakout_in_triangle_direction_or_terminal_wave",
+        "horizon": "swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2026-02-20 黄金“final wave (e) of a bullish running triangle in wave 'b'”；2026-04-10 Brent “Wave triangle theory in progress”；2026-01-26 EURUSD “Breaks Out of a Wave IV Triangle Into Wave V”。这比 seed 里的普通三角形更明确地绑定 Elliott 上下文。"
+    },
+    {
+      "proposed_id": "cap_new_leading_ending_diagonal",
+      "name": "Leading/Ending Diagonal Recognition",
+      "name_zh": "引导楔形/终结楔形识别",
+      "type": "pattern_setup",
+      "description": "Recognize leading or ending diagonal structures inside Elliott waves and use the break of the diagonal boundary as a directional confirmation.",
+      "description_zh": "识别艾略特波浪中的引导楔形或终结楔形，并以对角线边界的突破/跌破作为方向确认。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "reversal_or_impulse_confirmation",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2025-01-29 DXY: “After a broken wedge with a leading diagonal pattern...” 2025-10-28 LTC 也提到“leading diagonal into wave A/1”。这不是 seed 里普通 wedge 能完整表达的。"
+    },
+    {
+      "proposed_id": "cap_new_cross_asset_ratio_rotation",
+      "name": "Cross-Asset Ratio Rotation",
+      "name_zh": "跨资产比值轮动分析",
+      "type": "macro_correlation",
+      "description": "Use ratio charts such as BTC/NDQ, BTC/GOLD, or dominance ratios to infer relative strength rotation and capital flow direction.",
+      "description_zh": "通过 BTC/NDQ、BTC/GOLD、主导率等比值图判断相对强弱切换与资金轮动方向。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "relative_strength_rotation",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2024-10-29 “$BTC / $NDQ ratio chart is breaking out... Bitcoin could outperform”; 2024-11-07 “$BTC / $GOLD ratio chart is now progressing 5th wave”; 2024-11-27 与 2025-10-22 频繁用 BTC dominance/ALT dominance 做轮动判断。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Never buy the first dip.",
+      "rule_paraphrased": "第一次急跌后的反弹不急着接，等修正结构与确认位完成后再做多。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "3 PD Array Rule ✔️  “When 3 PD Arrays are violated, your ass is next.” - Michael J Huddleston",
+      "rule_paraphrased": "连续失守多个 PD Array/关键结构位时，不要硬扛，止损和减仓必须跟上。",
+      "category": "framework"
+    },
+    {
+      "quote": "The model that made me profitable?  I learned it in my first year of trading.  But I ignored it for years.  The reason cost me everything",
+      "rule_paraphrased": "盈利来自长期验证过的模型与纪律，不来自临场冲动；背离自己的模型代价极大。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Use the EMA 200 for identifying bull or bear markets, and EMA 100 as a slightly faster alternative or complement.",
+      "rule_paraphrased": "先用慢均线定义市场状态，再在该状态内寻找波浪与回调机会。",
+      "category": "framework"
+    },
+    {
+      "quote": "How to change your life in 12 months:  1) Stop trading 0DTEs every week. 2) Stick with further-dated options. (+1 month out) 3) Use the 15/30minute chart for confirmation on entries/exits.",
+      "rule_paraphrased": "避免高噪音、高 Gamma 的短期期权博弈，用更长久期和更高一层级的确认改善执行质量。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他与一般 TA 交易员的区别在于，核心不是裸形态，而是先用 Elliott Wave 给出大结构，再用 Fib、均线、三角形/楔形、invalidations 去做落地执行。另一个鲜明特征是跨资产映射很强，经常把 DXY、SPX、收益率、BTC dominance、BTC/NDQ ratio 放进同一叙事里。虽然发图很多、带教育属性，但口径通常保留条件句，强调确认位而非绝对预测。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "as expected",
+      "should act as support",
+      "bears back",
+      "risk-on is still here",
+      "price still obeys this rule",
+      "breaks out"
+    ],
+    "low_conviction_phrases": [
+      "can be",
+      "could be",
+      "there's a chance",
+      "ideally",
+      "watch out",
+      "if breaks",
+      "may see"
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "handle": "laojiucai123",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "content_creator",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "short_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BNB",
+    "SOL",
+    "DOGE",
+    "YGG",
+    "PEOPLE",
+    "NOT",
+    "LINK"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.93,
+      "evidence": "他反复用“空头趋势成立/下跌趋势成立”来定义状态，例如 [2025-05-30]“BTC空头趋势是成立了”，[2025-05-29]“BTC现在趋势下跌已经成立”，[2025-07-25]“BTC日线收线已经完全跌破116了…关注117-118区间阻力了”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.64,
+      "evidence": "也会在确认上行阶段后转多，例如 [2025-03-25]“ETH和BTC的底部已经完美构建成功…BTC这波基本上是可以破位92000并企稳的”，[2025-03-26]“BTC必定到90000以上 ETH必定会冲上2120的上方”。"
+    },
+    {
+      "id": "cap_007_double_top",
+      "weight": 0.81,
+      "evidence": "[2024-09-25] 直接点名“双顶”： “今天再次64800双顶位置成立，跌是要跌一会的”。这是少数被他明确命名的经典形态。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.76,
+      "evidence": "他频繁把行情描述为震荡/拉扯后等待方向选择，例如 [2025-05-28]“BTC，ETH开始来回震荡，什么时候才正式下跌？”，[2025-07-31]“反复无常，晚上下跌，白天上涨什么时候才能结束？”。"
+    },
+    {
+      "id": "cap_053_doji_reversal",
+      "weight": 0.52,
+      "evidence": "[2025-07-29] 他用收线形态判断动能衰减：“ETH今天也就收十字心，很难收线大阴了”。说明会看日线/日内 K 线实体与十字星结构。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.7,
+      "evidence": "[2025-03-26]“趋势线没破就是最好的 支撑还是有效的”，以及多次用“回踩某支撑/阻力区间”来判断延续或加速，例如 [2025-07-25]“后面再次回踩3600位置未破”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.86,
+      "evidence": "他经常强调等待、避险、别急着接盘。例如 [2025-06-23]“现货继续等待舒服的，不要太着急”，[2025-07-30]“我不想进去接盘这是最好的规避风险”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.79,
+      "evidence": "他的执行口头禅很像快进快出/不恋战风格：[2024-09-27]“短线无非就是跑的快”，[2025-07-25]“要会跑 不跑不行”，[2025-07-29]“ETH要么空了就得跑，不能硬磕”。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.62,
+      "evidence": "他长期盯着 BTC 强、山寨弱的轮动关系：[2024-11-20]“所有的币都在跌 就是BTC在涨 这是什么原理？”，[2025-07-30]“山寨先行”，[2025-07-30]“山寨又开始砸盘了…大的要来”。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.68,
+      "evidence": "他非常常用“诱多/假强/视觉误导”的叙事框架：[2025-05-29]“ETH…表现的很坚强，为了诱多而已，不然哪来的多军”，[2024-07-19]“BTC，ETH感觉有种跌不动视觉…这是一种视觉上的看法，让大家认为行情跌不动”。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.66,
+      "evidence": "他交易表达高度依赖区间阻力支撑做反手，不太追中间位置。例如 [2025-06-23]“BTC给的102000，最高102500才跌，ETH给的2280看空阻力，最高2310附近才跌”，[2025-07-25]“关注117-118区间阻力了…大胆的在阻力位置空就行了”。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.58,
+      "evidence": "他对“大波动要来”的预警非常频繁：[2025-07-30]“马上月线收线，本周行情会有大波动，请注意”，[2025-07-30]“大的马上就要来了，所以紧急避险要做好”。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_sr_zone_mapping",
+      "name": "Support Resistance Zone Mapping",
+      "name_zh": "固定区间支撑阻力映射",
+      "type": "indicator_rule",
+      "description": "Repeatedly map the market into explicit numeric support and resistance zones, then anchor trade direction and invalidation around those zones rather than around complex indicator confluence.",
+      "description_zh": "反复把行情拆成明确数字区间的支撑/阻力带，再围绕这些区间做方向判断和失效判断，而不是依赖复杂指标共振。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "zone_reaction",
+        "horizon": "intraday",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-09-25]“BTC第一支撑关注60600-61200区间 ETH关注支持位置2480-2520区间”；[2025-07-25]“关注117-118区间阻力”；[2025-06-23]“ETH给的2280看空阻力”。"
+    },
+    {
+      "proposed_id": "cap_new_alt_leads_breakdown",
+      "name": "Altcoin Weakness Leads Majors",
+      "name_zh": "山寨先行走弱预警主流币下跌",
+      "type": "structural_bias",
+      "description": "Treat broad altcoin underperformance as an early warning that BTC/ETH downside is not yet fully expressed and that a larger market breakdown may follow.",
+      "description_zh": "把山寨币的普遍走弱视为 BTC/ETH 尚未完全补跌前的领先信号，预示更大级别下跌可能随后到来。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bearish",
+        "horizon": "intraday",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2025-07-30]“山寨先行，很多人在看牛市，看山寨季”；[2025-07-30]“山寨又开始砸盘了…大的要来”；[2025-07-29]“山寨一片红 就大饼二饼现在还绿色的”。"
+    },
+    {
+      "proposed_id": "cap_new_relative_strength_trap",
+      "name": "Relative Strength Trap Read",
+      "name_zh": "相对强弱诱多识别",
+      "type": "structural_bias",
+      "description": "Interpret abnormal short-term strength in ETH or selected majors during an otherwise bearish regime as a liquidity draw or bull trap rather than genuine leadership.",
+      "description_zh": "在整体偏空背景下，把 ETH 或部分主流币的异常抗跌/走强解读为吸引接盘的诱多，而非真正领涨。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bearish_after_fake_strength",
+        "horizon": "intraday",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "[2025-05-29]“ETH现在还没完全成立空头趋势…表现的很坚强，为了诱多而已”；[2025-07-29]“ETH一点不走寻常路啊…ETH反弹的有点多了”。"
+    },
+    {
+      "proposed_id": "cap_new_text_first_broadcast_trading",
+      "name": "Text First Broadcast Trading",
+      "name_zh": "文字点位播报型交易表达",
+      "type": "framework",
+      "description": "A content-led trading workflow where daily posts and live streams deliver directional scripts, key levels, and execution bias, with less reliance on publicly shared annotated charts.",
+      "description_zh": "以内容播报为核心的交易工作流：通过每日帖文和直播给出剧本、关键点位和执行偏向，公开表达上对复杂图表标注依赖较低。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contextual",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "大量帖子是“X号老韭菜说币：…行情回顾解析/今晚九点直播”；而本次提供的 8 张附件并非标准 K 线标注图，说明其公开 feed 更偏文字/直播驱动，而不是图表模板驱动。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "短线无非就是跑的快",
+      "rule_paraphrased": "短线交易核心不是预测到极致，而是兑现快、撤退快。",
+      "category": "mantra"
+    },
+    {
+      "quote": "要会跑 不跑不行",
+      "rule_paraphrased": "一旦市场不按预期走，优先撤离而不是死扛。",
+      "category": "risk_rule"
+    },
+    {
+      "quote": "看空就是看空，看涨就是看涨 简单明确，客观解析",
+      "rule_paraphrased": "表达上追求单边、清晰、结论先行，不喜欢模棱两可。",
+      "category": "framework"
+    },
+    {
+      "quote": "我只是提供我的看点就行，又不是非得逼着你跟我操作",
+      "rule_paraphrased": "他把自己定位成给观点和剧本的人，不承担替别人决策的责任。",
+      "category": "framework"
+    },
+    {
+      "quote": "我不想进去接盘这是最好的规避风险",
+      "rule_paraphrased": "宁可错过，也不在不舒服的位置硬接飞刀。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和典型图表派 TA 不同，公开输出更像“点位播报 + 直播剧本 + 强观点内容分发”，而不是靠复杂图表标注建立权威。交易上非常依赖支撑阻力带、趋势成立/失效、山寨先行走弱和诱多叙事，整体风格偏短线、偏主观、偏做空警觉。提供的附件多数不是K线图，这反而强化了他是文字驱动型内容交易员的特征。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "空头趋势是成立了",
+      "趋势下跌已经成立",
+      "迟早要完全跌破",
+      "大胆的在阻力位置空就行了",
+      "大的马上就要来了",
+      "必定到90000以上",
+      "万点瀑布",
+      "只要跌破的话后续的行情就会很快"
+    ],
+    "low_conviction_phrases": [
+      "看看",
+      "会不会",
+      "大家觉得怎么样",
+      "我的观点就是",
+      "个人建议仅供参考",
+      "是否会达到预期是未知数",
+      "你们说",
+      "我想问一句"
+    ]
+  }
+}

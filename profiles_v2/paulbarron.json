@@ -1,0 +1,208 @@
+{
+  "handle": "paulbarron",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "macro",
+    "cycle",
+    "structural",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "XRP",
+    "BTC",
+    "ETH",
+    "HBAR",
+    "SOL",
+    "RLUSD",
+    "AVAX"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.86,
+      "evidence": "他反复把 ETF 作为核心催化剂来讲，例如 [2025-10-31] “November 13 could be the most important date for $XRP holders in years... first U.S. spot $XRP ETF”，[2025-08-30] “Getting close to $SOL and $XRP ETFs”，[2025-04-30] “If this were to go through - #XRP flips #ETH next day!”。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.84,
+      "evidence": "他大量使用降息/收益率/流动性框架，[2026-01-30] “RATE CUTS COMING? ... massive for #Crypto”，[2025-07-29] “FED HOLD = BULLISH SIGNAL”，[2025-11-30] “FED SHOULD CUT RATES TO 1%. Risk appetite is coming”。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.7,
+      "evidence": "[2026-01-26] “The US Dollar Index just extended its monthly losses... lowest level since mid-September” 后直接连到 “my picks $GOLD $BTC $XRP $ETH”，说明他把美元走弱当作加密顺风。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.72,
+      "evidence": "[2024-11-24] “#btc dominance starting to shift to #altcoins mega pumps #sol #avax #ai projects” 明确使用 BTC.D 轮动框架判断山寨季。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.58,
+      "evidence": "[2026-01-30] 讨论新 Fed Chair 与降息预期，[2026-01-26] “90 days away from a new Fed Chair and the ‘Debt Trap’ is closing”，他明显把联储窗口当作市场 regime 切换事件。"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.42,
+      "evidence": "[2025-07-29] 他用 “Consumer spending BEATING expectations”“Unemployment claims falling 6 straight weeks” 去论证风险偏好回归；这属于典型宏观景气/风险开关框架，虽然不是直接引用 PMI。"
+    },
+    {
+      "id": "cap_064_credit_spreads_widening",
+      "weight": 0.38,
+      "evidence": "[2026-03-30] “The clash between @brian_armstrong and Jamie Dimon... stablecoin yield is ‘shadow banking’” 以及 [2026-03-30] “This is a recession explosion in the making if oil gets to $200 a barrel. And the Fed won't be able to assist the market” 体现其常从信用/银行体系压力去映射风险资产。"
+    },
+    {
+      "id": "cap_019_ma_death_cross",
+      "weight": 0.56,
+      "evidence": "[2026-01-30] 他直接写到 “Technicals show a ‘Death Cross’ formation. A failure to reclaim $1.80 quickly...” 这是少数明确落在传统 TA 指标规则上的实例。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.54,
+      "evidence": "同一条 [2026-01-30] 中的 “failure to reclaim $1.80 quickly” 说明他会使用关键位/关键均线收复来判断趋势是否扭转，而不是单纯抄底。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.47,
+      "evidence": "他经常用趋势延续语言而非区间语言，如 [2025-11-29] “First step in a crypto market surge! Three more key catalysts could come in December!”，[2025-12-30] “Bullish”，更像在做趋势叙事而不是短线均值回归。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.41,
+      "evidence": "[2026-03-27] “Not looking good.”、[2025-10-29] “Survival time”、[2025-12-30] “Expect crypto weakness during U.S. trading hours...” 说明他也会做宏观风险关闭状态识别。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.52,
+      "evidence": "[2025-12-29] “Crypto is stuck in Extreme Fear... while $GOLD rides near record highs... sentiment gap is often where capital later rotates back” 以及 [2026-01-26] 同时提到 $GOLD 与加密，明显在观察避险资产与加密的轮动。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.62,
+      "evidence": "[2026-03-31] “The S&P 500 surges +2.5%... $BTC $ETH 🚀” 直接把 SPX 风险偏好映射到加密；[2025-07-29] 也用宏观数据解释市场强弱。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.36,
+      "evidence": "虽然他很少精确讲减半月份，但多次使用 “Bullrun2025”“2026 will be our year”“10T crypto market cap in 2026” 这类跨周期叙事，符合周期分段思维。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.33,
+      "evidence": "他的长期框架高度依赖牛熊轮动年份表达，如 [2025-03-18] “next leg on the #Bullrun2025 - Yes, still intact!”、[2025-12-31] “US assets will fly in 2026.”"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_regulatory_clarity_catalyst",
+      "name": "Regulatory Clarity Catalyst",
+      "name_zh": "监管清晰化催化",
+      "type": "event_reaction",
+      "description": "Trades directional crypto exposure based on legislative, SEC, White House, OCC, or court developments that improve or damage regulatory clarity for a token, sector, or market structure.",
+      "description_zh": "基于立法、SEC、白宫、OCC 或法院进展带来的监管清晰度变化，去交易单个代币、板块或整体市场方向。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish if clarity improves, bearish if blocked",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2026-01-29] “CLARITY UPDATE...”; [2026-03-28] “Protect DEFI, developers, and self custody... crypto wins!”；[2026-04-09] “Crypto Now National Security! ... well-defined regulatory perimeter would strengthen...”"
+    },
+    {
+      "proposed_id": "cap_new_american_crypto_theme",
+      "name": "American Crypto Narrative Rotation",
+      "name_zh": "美国本土加密叙事轮动",
+      "type": "structural_bias",
+      "description": "Overweights tokens framed as strategic U.S. winners under policy, national-security, or institutional adoption narratives.",
+      "description_zh": "当某些代币被包装为美国政策、国家安全或机构采用受益者时，给予其结构性超配。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2025-07-31] “White House crypto report shows @hedera $HBAR as an American Crypto asset”; [2025-02-20] “what crypto will be the rails for crypto payments in #America?”"
+    },
+    {
+      "proposed_id": "cap_new_stablecoin_policy_trade",
+      "name": "Stablecoin Policy Arb",
+      "name_zh": "稳定币政策套利框架",
+      "type": "macro_correlation",
+      "description": "Trades stablecoin issuers, payment rails, and related L1/Ledger tokens based on policy toward yield, reserves, and banking access.",
+      "description_zh": "围绕稳定币利息、储备金与银行准入政策变化，交易稳定币发行方、支付网络及相关公链/账本代币。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "event-driven directional",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-02-27] “Why is the administration so determined to kill retail yield?”；[2025-11-27] “And so it begins! #RLUSD”；[2025-05-26] 关于 Ripple/Circle/USDC 并购与稳定币版图。"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_poll_momentum",
+      "name": "Community Sentiment Poll Momentum",
+      "name_zh": "社区投票情绪动量",
+      "type": "onchain_signal",
+      "description": "Uses retail/community polling, engagement spikes, and creator audience reactions as a soft momentum or narrative-strength signal.",
+      "description_zh": "把社区投票、互动飙升与内容受众反馈，当作软性的动量/叙事强度信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish for winning narrative",
+        "horizon": "swing",
+        "confidence_base": 0.58
+      },
+      "example_evidence": "[2025-03-14] “Early lead: the #XRPforce is strong in this one. Market Sentiment never lies.”；[2025-03-18] “round Robin based on popular voting to determine a Portfolio”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Long term is the only trade",
+      "rule_paraphrased": "默认以长期持有和大级别主题配置为核心，而非高频进出。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Not bullish enough #XRP",
+      "rule_paraphrased": "面对自己核心持仓时，倾向继续上修预期，属于强信念加仓型叙事。",
+      "category": "framework"
+    },
+    {
+      "quote": "There’s a difference between taking risks and throwing darts blindfolded. Smart leverage on real businesses beats memecoin roulette every time.",
+      "rule_paraphrased": "愿意承担风险，但反对纯随机博弈；偏好有基本叙事或制度背书的资产。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Market Sentiment never lies.",
+      "rule_paraphrased": "把社区情绪和受众反馈视为可操作的市场信息源。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不像传统纯图表交易员，更像“政策催化 + 宏观流动性 + 社区叙事”三合一的加密内容型交易者。核心优势不是复杂 K 线结构，而是把 ETF、监管、稳定币、Fed、美元与‘American crypto’主题快速打包成方向性观点。附图也基本不是技术图，而是品牌/事件/主题视觉，进一步说明他的框架偏 narrative-driven 而非纯 TA。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Bullish",
+      "It’s happening",
+      "Go Time?",
+      "Pay attention",
+      "And so it begins",
+      "Not bullish enough",
+      "Huge News IYKYK!",
+      "This is just the beginning"
+    ],
+    "low_conviction_phrases": [
+      "Not sure how to take this just yet.",
+      "Probably nothing",
+      "Not looking good.",
+      "I’m trying not to fall for the fear porn",
+      "Could be",
+      "I guess"
+    ]
+  }
+}

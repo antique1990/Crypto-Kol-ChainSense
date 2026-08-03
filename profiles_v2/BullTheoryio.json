@@ -1,0 +1,184 @@
+{
+  "handle": "BullTheoryio",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "pure_TA",
+    "derivatives",
+    "cycle",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "SPX",
+    "TSLA",
+    "IGV",
+    "TAO"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.88,
+      "evidence": "他反复把加密放到美股风险偏好框架里看。2026-04-10 明说“this applies to both BTC and SP500”；2026-04-09 又用“semis and transports hitting ATH’s... Supremely bullish”做风险开关确认。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.84,
+      "evidence": "2026-04-10：“Look at Q1 2018 or Q1 2022... same regime: tight bounces followed by continuation.” 这是典型把市场定义为下行趋势中的反弹延续，而不是反转。另有“The stock market CRASH is coming.”强化空头 regime 判断。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.78,
+      "evidence": "2026-04-11：“BTC added over $7,000 in just 2 weeks. Most of it occurring in the past few days.” 图片3里 BTC 日线也是连续抬高高点、抬高低点的上升趋势表达。2026-04-10 还写“$BULL just printed a MASSIVE green candle and smashed new highs”。"
+    },
+    {
+      "id": "cap_011_descending_triangle",
+      "weight": 0.74,
+      "evidence": "2026-04-09 直接写：“$IGV #IGV On the verge of a larger breakdown through the descending triangle.” 这是明确点名下降三角形下破。"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.67,
+      "evidence": "2026-04-10 的“tight bounces followed by continuation”本质上就是把短反弹当作下跌趋势中的延续结构来看，和空头旗形/弱反弹 continuation 逻辑一致。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.71,
+      "evidence": "2026-04-11：“bull market played out exactly like my squiggle in Feb 2023... with accumulation, a midcycle correction from previous ATHs with a top near 120K in October 2025。” 这是标准的减半后阶段划分与时间窗推演。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.64,
+      "evidence": "他经常做跨周期类比。2026-04-10：“Over the last 3 cycles...” 2026-04-11 又回看 2023 的路径预测，说明他明显用多周期模板来锚定当前位置。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.57,
+      "evidence": "2026-04-10：“Bitcoin peak relative to US money supply is the exact peak as the Copper/Gold ratio.” 这里直接把 BTC 顶部与货币供给/流动性代理变量绑定，不是纯图表派。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.61,
+      "evidence": "2026-04-10：“guys will see stocks collapsing, crypto nuking & world war 3 pending and decide to fullport neet” 明显是在识别地缘+跨市场共振导致的高波动环境，并反对在这种环境里满仓。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.58,
+      "evidence": "同一条“stocks collapsing, crypto nuking... fullport”本质是不要在瀑布环境里鲁莽抄底。虽然他喜欢买大跌日，但不是无条件接刀，而是强调时机和赔率。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_unusual_options_flow_volume_gt_oi",
+      "name": "Unusual Options Flow via Volume/OI Dislocation",
+      "name_zh": "期权成交量远超未平仓量异动",
+      "type": "derivatives_signal",
+      "description": "Detect strikes where same-day or very short-dated option volume is multiple times open interest across several nearby strikes, signaling fresh speculative positioning or informed flow.",
+      "description_zh": "识别同日或超短期期权在多个相邻执行价上出现“成交量显著高于未平仓量”的情况，作为新仓大举进场或情绪/信息流异动信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "event_driven",
+        "horizon": "intraday",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2026-04-09：“$TSLA $TSLL ... Volume was outpacing OI on these strikes anywhere from 3x to over 10x”，且配套图片5-8展示多个 4/10 call strike 的 volume >> OI。"
+    },
+    {
+      "proposed_id": "cap_new_broadening_flag",
+      "name": "Broadening Flag / Megaphone Continuation",
+      "name_zh": "扩张旗形 / 喇叭口延续",
+      "type": "pattern_setup",
+      "description": "Identify widening price swings after an impulse move, interpreted as a broadening consolidation that can resolve with continuation or breakdown depending on context.",
+      "description_zh": "识别冲击走势后的波动逐步扩张整理区，把其视为扩张旗形/喇叭口，结合趋势背景判断后续延续或破位。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "2026-04-10：“$MU #MU Broadening flag?” 说明他会主动用非标准教科书形态命名。"
+    },
+    {
+      "proposed_id": "cap_new_intermarket_leadership_confirmation",
+      "name": "Intermarket Leadership Confirmation",
+      "name_zh": "跨市场领先板块确认",
+      "type": "macro_correlation",
+      "description": "Use leadership from cyclical sectors, transports, semis, or related macro-sensitive assets to confirm whether a broader risk-on trend is genuine.",
+      "description_zh": "用半导体、运输等领先板块，或其他对经济/风险偏好敏感的资产，来确认大盘或加密的风险开启是否真实。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2026-04-09：“Back to back days with the semis and transports hitting ATH’s... Market and economic leaders charging higher together. Supremely bullish.”"
+    },
+    {
+      "proposed_id": "cap_new_commodity_headwind_filter",
+      "name": "Commodity Headwind Valuation Filter",
+      "name_zh": "大宗商品逆风估值过滤器",
+      "type": "macro_correlation",
+      "description": "Use elevated crude or other input-cost commodities as a macro filter to avoid chasing equity beta and instead wait for deep-red pullbacks.",
+      "description_zh": "把高油价等投入成本压力当作宏观过滤器：当商品价格过高时，不追逐股票 beta，只在大跌日分批买入。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "buy_dips_only",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2026-04-11：“India can’t have a proper bull market $100 crude... Only buy on big red days, till the time crude is > 95.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Only buy on big red days , till the time crude is > 95",
+      "rule_paraphrased": "当宏观成本压力没有缓解时，不追高，只在恐慌性下跌中挑赔率更好的买点。",
+      "category": "framework"
+    },
+    {
+      "quote": "guys will see stocks collapsing, crypto nuking & world war 3 pending and decide to fullport neet",
+      "rule_paraphrased": "遇到跨市场共振和事件风险时，反对情绪化满仓或在崩跌里无脑抄底。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Look at Q1 2018 or Q1 2022. Independently from macro or geopolitical events, we are in the same regime: tight bounces followed by continuation.",
+      "rule_paraphrased": "先定义市场所处 regime，再把所有短反弹当作该 regime 内的延续，而不是被单次新闻带偏。",
+      "category": "framework"
+    },
+    {
+      "quote": "OH MY COIN 😂😂😂 No flipping way the bull market played out exactly like my squiggle in Feb 2023",
+      "rule_paraphrased": "他会预先画出周期路径，并持续拿现实走势去和先验剧本做匹配验证。",
+      "category": "framework"
+    },
+    {
+      "quote": "The stock market CRASH is coming.",
+      "rule_paraphrased": "他的表达常用极端高置信措辞，愿意公开给出方向性强的宏观/指数判断。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是只画加密 K 线的 TA 号，而是把 BTC、SPX、行业领先板块、油价、铜金比、钱供应和短期期权异动放在同一个决策框架里。相比常见的指标堆叠型交易员，他更像“regime + intermarket + event flow”的混合派，喜欢先定大环境，再用简单直接的结构词汇给出高置信方向。另一个明显特征是他会盯很短周期的异常期权流和单日情绪挤压，但最终仍然服务于更大的 swing/cycle 叙事。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Supremely bullish",
+      "The stock market CRASH is coming",
+      "MASSIVE green candle",
+      "smashed new highs",
+      "Higher",
+      "larger breakdown"
+    ],
+    "low_conviction_phrases": [
+      "Any news?!",
+      "Interesting.",
+      "Broadening flag?",
+      "I don’t think I’ve ever seen this before",
+      "on the verge"
+    ]
+  }
+}

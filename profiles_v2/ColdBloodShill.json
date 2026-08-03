@@ -1,0 +1,250 @@
+{
+  "handle": "ColdBloodShill",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "pure_TA",
+    "contrarian",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "HYPE",
+    "PENGU",
+    "WIF",
+    "PEPE",
+    "COIN",
+    "RIOT",
+    "MSTR"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.95,
+      "evidence": "他大量用趋势框架看市场，如“Classic trending price action.”、“you just buy an uptrending market.”；图4是 BTC 4h 典型抬高高点/低点上行结构，图7 的 PENGU 也是强趋势加速。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.55,
+      "evidence": "虽少直接贴均线，但他反复谈“reclaim / close above / hold”这类趋势切换确认；图3本质是 ETH 周线收复长期水平位并站上后回踩。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.78,
+      "evidence": "他明确说“HTF bearish divergences present”“Obvious 3D divergence”；图2、图7 都配 RSI 面板，说明背离/动能衰减是他常用确认工具。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.72,
+      "evidence": "图2 在 ETH 4h 上用粉框标出价格低点与 RSI 低点对比，明显是在看多背离/动能修复；推文里多次把 sweep + retest + close 组合成看多论据。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.64,
+      "evidence": "图2 右侧 ETH 4h 的 RSI 已进入低位并被特别框出，价格对应回落到关键区；他常把这种 flush 后的反弹视为机会，如“Nothing like a leverage flush on a quiet orderbook Sunday.”"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.82,
+      "evidence": "他高频使用“sweep”一词，如“bullish sweep so far”“Weekly closes, retests and sweeps”；这基本就是前高/前低流动性刺穿后反转的 SFP 语言。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.9,
+      "evidence": "这是他最鲜明的结构语言之一：推文直接反复写 sweep；图3 是 ETH 站上水平位后回踩，图6 是 BTC 长时间压着前高横盘后准备扫上方流动性。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.74,
+      "evidence": "图3 的 ETH 周线把前高平台画成粉色横带，价格突破后回踩该带，完全符合“前阻力变支撑”的 breaker/retest 逻辑；他文案也常写“retests as support”。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.58,
+      "evidence": "他对区间边界很敏感，常提“range highs”“full lows of the range”；当市场 chop 时，他会强调别被噪音带节奏、等边界处理。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.8,
+      "evidence": "推文里大量讨论 chop：“2 weeks of chop PA did this to people”“Find other ways to entertain yourself while ... chops”“Spent the week getting chopped up”；说明他有明确的震荡市识别与应对框架。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.76,
+      "evidence": "他会在高波动时主动降预期并提醒风险，如“Dont get fucked around in the volatility today.”、“FOMC前后/US open 后一小时抱怨价格行为”；图1 的 Pepe 表情包也强化了高波动压迫感。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.7,
+      "evidence": "他不是无脑抄底派，强调等 climactic price action、等确认；2024-04-30 写“No structure break, continuation in the current downtrend... If this breaks it's going to be ugly”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.61,
+      "evidence": "虽不常教科书式讲止损，但明显重视无效化与及时承认错误，如“if this is a bear flag ... breakdowns ... should be relatively quick, therefore if it's legit ...”；不快速走出来就意味着判断需修正。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.49,
+      "evidence": "他频繁提醒 leverage 风险，如“how many warnings do you need to hear about leverage before you actually listen”；说明仓位/杠杆控制是框架内的重要约束。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.52,
+      "evidence": "他喜欢把 leverage flush 视为做多燃料，如“Nothing like a leverage flush on a quiet orderbook Sunday.”；这是典型拥挤空头/杠杆出清后偏多的衍生品思路。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.45,
+      "evidence": "在上涨后他也会提 divergence、情绪过热和需要回调，如“loss of momentum into the highs”；虽然偏多，但并非忽略过热与长爆风险。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.43,
+      "evidence": "他多次讨论横盘后的决断位与压缩，如“decision time within the next 24 hours”“2 weeks of chop”；虽未明确写 OI，但语义上常把盘整理解为压力累积。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.38,
+      "evidence": "2024-01-31 配图是 Whale Alert 大额 BTC 转向 PayPal/Coinbase Institutional，并写“dumping on us through paypal now”；说明他会关注大额转账/交易所流向作为短线情绪因子。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.67,
+      "evidence": "他长期讨论 ETH rotation、alt szn、SOL ecosystem coins、BTC 横住让 alts spread their wings；说明他有明确的 BTC 主导权切换到山寨的轮动框架。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.34,
+      "evidence": "虽不是主轴，但他会把机构/股票侧作为辅助确认，如持续关注 COIN、RIOT、MSTR、crypto stocks 的机会。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.69,
+      "evidence": "他明显关注 failed breakdown / failed rejection，例如 2024-04-29 说 WIF 的 H&S failed breakdown 类似 NVDA 底部；图3 也是典型突破后不跌回区间的真突破验证。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_htf_level_reclaim_retest",
+      "name": "HTF Horizontal Level Reclaim And Retest",
+      "name_zh": "高周期水平位收复与回踩确认",
+      "type": "structural_bias",
+      "description": "Price reclaims a major weekly or 3D horizontal level, closes above it, then retests it as support before continuation.",
+      "description_zh": "价格收复关键周线/3日水平位，收盘站上后回踩确认支撑，再做趋势延续判断。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2025-09-29: “Weekly closes, retests and sweeps”; 图3 ETH 周线粉色横带就是收复后回踩；图6 BTC 也是长期前高平台即将/正在收复。"
+    },
+    {
+      "proposed_id": "cap_new_trend_momentum_reset",
+      "name": "Momentum Reset Within Uptrend",
+      "name_zh": "上升趋势中的动能重置",
+      "type": "indicator_rule",
+      "description": "In a strong uptrend, RSI or short-term momentum cools off through sideways or shallow pullback without structural damage, preparing the next leg higher.",
+      "description_zh": "强趋势中通过横盘或浅回调让 RSI/短线动能降温，但不破坏结构，从而为下一段上涨蓄势。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2025-08-25: “In strong trends divergences tend to invalidate in the prevailing trend direction.”；2025-04-29: “vertical accumulation with a nice trend reset?”；图7 的 PENGU RSI 高位回落后继续维持强势。"
+    },
+    {
+      "proposed_id": "cap_new_weekend_liquidity_flush",
+      "name": "Weekend Thin Book Flush",
+      "name_zh": "周末薄量订单簿杠杆清洗",
+      "type": "derivatives_signal",
+      "description": "On weekends or low-liquidity sessions, abrupt leverage flushes in a thin orderbook create opportunistic entries in the prevailing higher-timeframe direction.",
+      "description_zh": "周末或低流动性时段，薄量订单簿中的急跌/急拉更像杠杆清洗，若高周期方向未坏，通常提供顺势加仓机会。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "2025-08-24: “Nothing like a leverage flush on a quiet orderbook Sunday.”；他多次把红日、周末下杀定义为 bull market 中的机会。"
+    },
+    {
+      "proposed_id": "cap_new_alt_rotation_under_btc_chop",
+      "name": "Alt Rotation During BTC Chop",
+      "name_zh": "BTC 横盘时山寨轮动扩散",
+      "type": "structural_bias",
+      "description": "When BTC holds a local range/high-timeframe support and compresses, capital rotates into majors or ecosystem alts that begin outperforming.",
+      "description_zh": "当 BTC 稳住局部区间或高周期支撑并进入压缩时，资金倾向轮动至 ETH、SOL 及生态山寨，形成补涨。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_alt",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2025-01-31: “alt szn weekend”; 2024-10-30: “hold on to $71.5k LTF now, chop around and let alts spread their wings a little.”；大量 SOL ecosystem / ETH rotation 推文。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "you just buy an uptrending market.",
+      "rule_paraphrased": "核心不是预测每一根 K，而是在明确上升趋势里顺势持有或逢回调买入。",
+      "category": "framework"
+    },
+    {
+      "quote": "The best days in a bull market are red days and this is just giving us the opportunity many have been waiting for",
+      "rule_paraphrased": "牛市中的下跌日主要被他视为加仓窗口，而不是趋势反转证据。",
+      "category": "mantra"
+    },
+    {
+      "quote": "how many warnings do you need to hear about leverage before you actually listen",
+      "rule_paraphrased": "他对高杠杆极其警惕，认为多数交易者不是方向错，而是杠杆和持仓结构先把自己淘汰。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Spent the week getting chopped up, and more frustratingly the system provided very actionable set ups that just failed to stick.",
+      "rule_paraphrased": "他会明确区分“系统有效但环境差”和“自己执行错误”，把市场 regime 识别放在复盘核心位置。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "There’s always a reason your mind will convince you to trade",
+      "rule_paraphrased": "他把过度交易看作心理偏差问题，强调并非所有波动都需要参与。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和一般只画形态的 TA 交易员不同，强烈依赖高周期水平位、收盘、回踩、sweep 这些结构确认词，而不是复杂指标堆叠。另一方面，他是明显的牛市语境交易员，长期偏多，但又会在 chop、divergence、薄量波动时主动切到更克制的执行模式。内容表达上极具煽动性和情绪感染力，不过底层框架其实相当统一：顺趋势、等确认、把红盘和流动性清洗当机会。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Send.",
+      "higher",
+      "looks chill af",
+      "beast mode",
+      "clean air",
+      "all dips are blessings",
+      "watch",
+      "it's nearly time",
+      "send it all"
+    ],
+    "low_conviction_phrases": [
+      "if",
+      "imo",
+      "I assume",
+      "I'd imagine",
+      "I still think",
+      "interesting area",
+      "probably",
+      "looking to"
+    ]
+  }
+}

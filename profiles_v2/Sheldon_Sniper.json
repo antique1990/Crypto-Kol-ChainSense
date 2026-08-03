@@ -1,0 +1,204 @@
+{
+  "handle": "Sheldon_Sniper",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "contrarian",
+    "structural",
+    "cycle",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "FTM",
+    "INJ",
+    "RUNE",
+    "TOTAL3",
+    "BTC.D"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.91,
+      "evidence": "他直接发过“$ETH falling wedge . a strong pop any moment”(2025-04-14)；图片6是 TOTAL3 4h 标准下降楔形上破；图片1 的 BTC 暴跌后也用收敛下跌结构去推演反弹路径。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.93,
+      "evidence": "“This small pull back is a trap . prepare for pump”(2025-06-12)；“not the real bounce yet”(2025-07-24)；“massive bull trap?”(2024-01-30)；他反复把回撤、假反弹、假突破解释为 trap。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.84,
+      "evidence": "“First they flush then they pump . market has been flushed now we pump”(2025-02-17)；“Maybe one last shake out but won’t last long”(2024-12-23)；“we called this second flush out”(2025-02-28)。这是典型先扫流动性再反转的叙事。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.95,
+      "evidence": "“$BTC Dominance breaking a 2 year trend!! LFG!!”(2024-05-28)；“$BTC dominance weakining . Alts is the play”(2025-02-28)；图片8就是 BTC.D 周线趋势线破位，明显拿它当 altseason 触发器。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.78,
+      "evidence": "“Guys, 4 Hr, 8Hr and 12Hr RSI have reset and the market is expected to bounce pretty strong”(2024-05-30)；图片4 用的是超卖区反弹逻辑，虽然指标更像 Stoch RSI，但本质仍是超卖重置后看反弹。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.8,
+      "evidence": "“$BTC is in a bull trend . its clear . Now we looking for the next bottom”(2025-03-11)；“The $BTC pullback is nearly over”(2025-07-24)；图片7 在上升背景里给出 106.3k-106.9k buy zone，预期回踩后继续上攻。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.87,
+      "evidence": "“i officially have zero stables . all in on crypto baby !!”(2025-02-17)；“I am officially all in on crypto”(2024-04-30)；“$BTC is in a bull trend . its clear”(2025-03-11)。他的默认市场制度判断长期偏牛。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.66,
+      "evidence": "图片7 给出明确的 BTC 绿色支撑区买点与红色上方阻力；图片3 用 SOL 横向阻力箱体突破看 300；他习惯先画区间/箱体，再讲回踩与突破。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.61,
+      "evidence": "他经常把短线 pullback 当作主升中的整理，例如“this small pull back is a trap . prepare for pump”(2025-06-12)；图片7 的路径推演也是先回踩、再续涨到新高。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.34,
+      "evidence": "虽然图上很少直接画均线，但他的表述经常带有‘reclaiming ground’风格，如“$BTC Bulls slowly reclaiming ground . Pump to $100K is loading”(2025-04-14)。这是次级信号，不是核心框架。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.49,
+      "evidence": "他的版本不是机械抄底，而是等 flush/shakeout 结束后再上：“do NOT make the mistake of buying too early and getting trapped again”(2024-12-20)。虽然后续常激进加仓，但会强调别买太早。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.42,
+      "evidence": "“People are not ready for how ugly this can get”(2024-11-26)；“upcoming trap”(2024-12-18)。他知道高波动和洗盘环境，但更多是把它当机会，而非严格风险收缩条件。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_diagonal_trendline_break_retest",
+      "name": "Diagonal Trendline Break and Retest",
+      "name_zh": "对角趋势线突破回踩",
+      "type": "pattern_setup",
+      "description": "Use a simple long-duration descending or ascending trendline, wait for break, then validate with an immediate retest before projecting the next impulsive move.",
+      "description_zh": "使用长周期斜向趋势线，等待价格突破后，再观察是否回踩确认，随后推演下一段趋势性推动。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "breakout_direction",
+        "horizon": "swing",
+        "confidence_base": 0.75
+      },
+      "example_evidence": "图片2 的 XRP 周线、图片5 的 TOTAL3 日线、图片8 的 BTC.D 周线，都是非常典型的斜趋势线破位/回踩框架。"
+    },
+    {
+      "proposed_id": "cap_new_stoch_rsi_reset_bounce",
+      "name": "Stoch RSI Reset Bounce",
+      "name_zh": "Stoch RSI 重置反弹",
+      "type": "indicator_rule",
+      "description": "After strong trend cooling, Stoch RSI resets into the lower band and turns up; trader interprets it as energy reset rather than trend failure.",
+      "description_zh": "强趋势中的调整阶段，Stoch RSI 回到低位后重新拐头向上，被视为动能重置而非趋势结束。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_rebound",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "图片4 明确画出了 Total Market Cap ex BTC/ETH 的 Stoch RSI 低位区域，并把历史几次同类低位与后续上涨对应起来。"
+    },
+    {
+      "proposed_id": "cap_new_altseason_rotation_stack",
+      "name": "Altseason Rotation Stack",
+      "name_zh": "山寨季轮动三件套",
+      "type": "structural_bias",
+      "description": "Combine BTC stabilization, BTC dominance rollover, and TOTAL3 breakout to time altcoin expansion rather than looking at single-coin charts in isolation.",
+      "description_zh": "把 BTC 企稳、BTC.D 走弱、TOTAL3 突破结合起来判断山寨季启动，而不是只看单币图。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "alts_bullish",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "“$BTC dominance weakining . Alts is the play”(2025-02-28)；“Release the alts”(2025-05-22)；图片6 看 TOTAL3 楔形上破，图片8 看 BTC.D 破趋势线。"
+    },
+    {
+      "proposed_id": "cap_new_flush_then_pump",
+      "name": "Flush Then Pump Playbook",
+      "name_zh": "先洗后拉剧本",
+      "type": "structural_bias",
+      "description": "Interpret violent selloffs and emotional shakeouts as engineered clearing events before the real move higher, then buy after the panic zone is tagged.",
+      "description_zh": "把剧烈回撤和情绪性恐慌视为主升前的清洗动作，在恐慌区/买区被触发后转向看多。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_bullish",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "“First they flush then they pump”(2025-02-17)；“Do NOT get shaken out”(2025-02-19)；“The bounce is going to be epic”(2025-02-28)。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Bullish on red days . Bearish on green days   Don’t get this wrong",
+      "rule_paraphrased": "在情绪最差、价格最红的时候偏向寻找买点；在过热绿K时反而提高警惕。",
+      "category": "framework"
+    },
+    {
+      "quote": "DO NOT GET SHAKEN OUT . DO NOT GET SHAKEN OUT . DO NOT GET SHAKEN OUT .",
+      "rule_paraphrased": "他的核心纪律是扛过洗盘，不在情绪极端时被甩下车。",
+      "category": "mantra"
+    },
+    {
+      "quote": "First they flush then they pump . market has been flushed now we pump",
+      "rule_paraphrased": "把暴跌视为主力清洗仓位的前置动作，flush 完成后默认看反弹甚至反转。",
+      "category": "framework"
+    },
+    {
+      "quote": "Today I will officially be out 100% of dollars and in the altcoin market .   I am buying the fear",
+      "rule_paraphrased": "在他判断的周期性机会窗口里，会极高仓位切入高beta山寨，而不是温和配置。",
+      "category": "framework"
+    },
+    {
+      "quote": "do NOT make the mistake of buying too early and getting trapped again",
+      "rule_paraphrased": "虽然总体激进看多，但会强调等确认区、等 flush 结束、别过早接刀。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和一般 TA 交易员的区别，在于把非常简单的图形工具极度叙事化：趋势线、楔形、支撑箱体、BTC.D、TOTAL3，就足以构建一整套“洗盘-陷阱-爆拉-山寨季”的故事。与重宏观、重链上或重量化的人不同，他的 edge 主要来自高情绪感染力的顺周期/逆情绪做多框架。另一个明显特点是长期默认牛市、默认山寨会补涨，因此分析几乎总是服务于寻找下一次低风险做多切入。 ",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "all in on crypto",
+      "zero stables",
+      "epic bounce",
+      "mega breakout",
+      "about to explode",
+      "bags loaded",
+      "release the alts",
+      "Conviction",
+      "LFG",
+      "loading up"
+    ],
+    "low_conviction_phrases": [
+      "very likely",
+      "could",
+      "looks like",
+      "maybe one last shake out",
+      "I smell a trap",
+      "any moment now",
+      "should",
+      "not the real bounce yet"
+    ]
+  }
+}

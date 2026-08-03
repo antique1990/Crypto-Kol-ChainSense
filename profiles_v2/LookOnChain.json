@@ -1,0 +1,199 @@
+{
+  "handle": "LookOnChain",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "derivatives",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "USDT",
+    "USDC",
+    "PEPE",
+    "WIF",
+    "MOODENG",
+    "memecoins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.95,
+      "evidence": "这是他最稳定的框架之一：反复把“转入交易所/Prime”解读为潜在卖压。例子包括 [2024-06-26] “The US government wallets deposited 3,940 $BTC($241.22M) into #Coinbase Prime 5 minutes ago.”、[2024-11-28] “Jeffrey Wilcke... deposited 20,000 $ETH($75.2M) to #Kraken” 、[2025-03-28] “Hackers are dumping $ETH!... dumped for 27.5M $DAI” 。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.9,
+      "evidence": "他大量跟踪 ETF / 机构钱包流向，把其当成需求代理。例子包括 [2024-09-27] “BlackRock bought another 1,434 $BTC...” 、[2024-09-28] “BlackRock bought another 1,684 $BTC...” 、[2024-01-26] “Grayscale deposited 9,995 $BTC... to #CoinbasePrime since the #ETF was passed.”"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.88,
+      "evidence": "附图 2 直接是 Hyperliquid 15m 图，上面密集标注多空清算点和清算价；附图 3/4 是具体爆仓记录与账户净值塌陷。他的推文也反复围绕‘谁会被清算、价格是否去扫清算位’展开，如 [2025-02-28] “When $BTC drops to $74,571, he will be liquidated.”"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.8,
+      "evidence": "他不只是报爆仓，还会把“扫完流动性后迅速反弹”当成市场结构线索。[2026-03-30] “After liquidating Machi, the market quickly rebounded.” 这就是典型‘先扫清算/止损，再反转’叙事。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.78,
+      "evidence": "稳定币增发被他明确当成流动性信号。例子包括 [2025-08-30] “Tether just minted another 1B $USDT!... combined $4B in stablecoins.”、[2025-11-29] “Tether and Circle have minted $18.25B in stablecoins...” 、[2025-02-28] / [2025-03-28] 的 USDT mint 追踪。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.7,
+      "evidence": "虽然他很少直接引用 funding 数值，但对高杠杆拥挤多头和长爆高度敏感。附图 4 显示 50.36x 杠杆、1 周 PnL -$99M；[2025-05-30] James Wynn 949 BTC 爆仓、[2025-07-29] PEPE long cascade liquidations、[2025-10-30] “High leverage is extremely risky!... liquidated three times in 30 minutes.”"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.62,
+      "evidence": "他的内容经常以反例方式强调不止损的代价。[2025-08-29] “Whale 0xa523 is cutting losses as $ETH drops.”、[2025-09-29] “0x0ddf9 who was shorting $BTC has capitulated and flipped long.”、大量 James Wynn/Machi 连环爆仓贴都在强化‘不止损会被市场清算’。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.58,
+      "evidence": "他不是传统教育型账号，但持续用极端案例强调仓位/杠杆失控风险。[2025-05-30] “He lost $99M+ in just one week!”、[2025-05-30] “Another gambler just wiped out all his $27.88M profit on #Hyperliquid in just 4 days.” 这类帖子本质上是在输出仓位管理反面教材。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.18,
+      "evidence": "作为主要框架几乎不用；附图与推文里很少出现均线收复、金叉死叉等传统 TA 语言，因此权重很低，只能算偶发图表辅助。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.52,
+      "evidence": "他经常展示‘抄底高杠杆接飞刀’的灾难性后果。[2025-02-27] “As the market drops, the whale has lost $17.5M...” 、[2025-02-28] “BTC just dropped below $80,000... liquidation price is $69,839.”、[2025-11-30] “His account is now wiped out — balance at zero.”"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.34,
+      "evidence": "他会追踪 OG / dormant wallet 的行为，把长期持有者动向当作供给侧信号。例子包括 [2025-03-30] / [2025-06-29] / [2025-11-29] 多条 ‘Ethereum ICO participant woke up after ~10 years’ 与 2010 miner wallet 唤醒贴。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.22,
+      "evidence": "不是明说 BTC.D，但他频繁追踪 BTC/ETH 之间的大规模轮动，如 [2025-08-29] / [2025-08-30] / [2025-08-31] Bitcoin OG 持续“sold BTC and bought ETH spot”，说明他关注主流币间资金迁移结构。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_wallet_forensics_linkage",
+      "name": "Wallet Linkage Forensics",
+      "name_zh": "钱包关联取证",
+      "type": "onchain_signal",
+      "description": "Link newly created wallets, funding wallets, exchange routes, and intermediary addresses into one ownership or actor cluster to infer insider, team, hacker, or institution behavior.",
+      "description_zh": "把新建钱包、启动资金地址、中转地址、交易所/OTC 路径串成同一行为体集群，用于识别内幕团队、项目方、黑客或机构。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "附图 6 用资金流图把 $LIBRA / $MELANIA / POPE 多个地址连成一条线；附图 7-8 通过 7.5 SOL 启动资金、pump.fun mint、transfer 记录追出 $DAVIDO 的源头。"
+    },
+    {
+      "proposed_id": "cap_new_celeb_token_insider_pattern",
+      "name": "Celebrity Token Insider Pattern",
+      "name_zh": "名人币内幕盘模式",
+      "type": "event_reaction",
+      "description": "Detect celebrity/influencer token launches where deployer-linked wallets, early snipers, or paid promoters accumulate before social promotion and then dump into retail attention.",
+      "description_zh": "识别名人/网红发币时，部署者关联钱包、早期狙击钱包或带货账号先行建仓，随后借社媒热度向散户出货的模式。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "short_tilted",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-10-30] MrBeast pump-and-dump 指控，附图 1 在价格顶部区域叠加大量卖出标记；[2024-05-31] “Be wary of tokens launched by celebrities.🚨”; [2024-05-30] Davido 发币并在 11 小时内获利。"
+    },
+    {
+      "proposed_id": "cap_new_liquidation_victim_tracker",
+      "name": "Public Trader Liquidation Tracker",
+      "name_zh": "公开大户爆仓追踪",
+      "type": "derivatives_signal",
+      "description": "Track high-profile leveraged traders across sessions, estimate liquidation levels, and treat their forced exits or flips as short-term positioning signals and crowd sentiment markers.",
+      "description_zh": "持续追踪高知名度杠杆交易员，估算其清算价与翻仓行为，并把这些强平/反手事件作为短线情绪与仓位信号。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "James Wynn、Machi、0x0ddf9、0x69e4 在推文中被长期追踪；[2025-05-30] “The winning strategy lately? Do the opposite of James Wynn.”"
+    },
+    {
+      "proposed_id": "cap_new_memecoin_smartmoney_discovery",
+      "name": "Early Smart Money Discovery",
+      "name_zh": "早期聪明钱发现",
+      "type": "onchain_signal",
+      "description": "Scan fresh wallets and early token holders for outsized PnL, repeatable hit rates, and unusual timing to surface smart money or probable insiders before broader recognition.",
+      "description_zh": "扫描新钱包和早期持仓者的超额收益、命中率和异常时机，以在市场广泛认知前识别聪明钱或疑似内幕地址。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2024-09-27] / [2024-09-28] / [2024-09-29] 多条 MOODENG 早期地址收益追踪；[2024-03-31] MEW/BOME 智能钱；[2025-04-30] HOUSE 9,228x。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "The winning strategy lately? Do the opposite of James Wynn.",
+      "rule_paraphrased": "把高曝光、高杠杆、反复翻仓的公众交易员当成反向指标。",
+      "category": "framework"
+    },
+    {
+      "quote": "High leverage is extremely risky! ⚠️",
+      "rule_paraphrased": "任何极端杠杆案例都优先从风险教育和爆仓脆弱性角度解读。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Be wary of tokens launched by celebrities.🚨",
+      "rule_paraphrased": "名人发币默认先做利益链和出货路径审查，而不是先相信叙事。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "After liquidating Machi, the market quickly rebounded.",
+      "rule_paraphrased": "市场会先去扫最显眼的清算位，扫完才走真实方向。",
+      "category": "framework"
+    },
+    {
+      "quote": "Fake news! 🚨 The 31.84M $ASTER($34.53M) transfer was between #Binance hot wallets and has nothing to do with CZ(@cz_binance)'s wallet.",
+      "rule_paraphrased": "大额链上转账必须先做归因校验，避免把内部热钱包迁移误判成主观买卖。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "LookOnChain 和传统 TA 交易员最大的区别，是他把“谁在转、谁在爆、谁在洗、谁在建仓”放在价格形态之前，核心框架是链上行为体识别而不是形态预测。即便发 K 线图，他也更常把清算点、交易记录、钱包流向和账户净值叠在图上，把价格当作链上事件的结果变量。内容上也明显偏事件驱动与法证化叙事，像一个实时链上情报台，而不是纯图表派。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "just got liquidated",
+      "Fake news! 🚨",
+      "Whales keep accumulating",
+      "Massive #Bitcoin accumulation!",
+      "is back and opened",
+      "wiped out",
+      "has been liquidated again"
+    ],
+    "low_conviction_phrases": [
+      "It seems that",
+      "likely",
+      "possibly",
+      "appears to be",
+      "seems to",
+      "probably",
+      "has nothing to do with"
+    ]
+  }
+}

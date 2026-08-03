@@ -1,0 +1,218 @@
+{
+  "handle": "StackerSatoshi",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "derivatives",
+    "onchain",
+    "macro",
+    "cycle",
+    "content_creator"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BTC.D",
+    "SPX",
+    "gold",
+    "MSTR"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.97,
+      "evidence": "这是他最稳定的框架之一。推文多次直接给出清算位：\"There are some major short liquidations at $109.5k and then at $114k...\"、\"There are significant shorts to be liquidated if $BTC can rise to $86,000\"、\"Liquidity from potential short liquidations has continued to build up around $96,000\"。附图里也有 Binance BTC/USDT liquidation heatmap。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.92,
+      "evidence": "他频繁把 ETF 净流入当作需求代理。推文：\"Spot $ETH ETFs (+$332.9M) saw larger daily net inflows than spot $BTC ETFs (+$320M) for the first time ever.\" 附图 3 和图 4 直接贴出 BTC/ETH ETF Flow 表格。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.86,
+      "evidence": "他非常关注政府、Mt.Gox、巨鲸向交易所/可卖出地址的转移。推文：\"The US government has moved over $920M in seized #Bitcoin today\"、\"The US government has just moved ~$2B of Bitcoin.\"、\"Mt Gox has sent a test transaction... they still have 80,000 BTC to distribute.\" 附图 8 也是 U.S. Government 地址转出 BTC。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.73,
+      "evidence": "他会把负 funding 视为 squeeze 燃料。推文：\"Funding rates for $BTC and $ETH have flipped negative as the bears try to short this move up. KEEP SQUEEZING THEM!\""
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.58,
+      "evidence": "他虽然更常谈负 funding 轧空，但也频繁讨论拥挤多头与长爆。推文：\"$617M of longs have been liquidated in the past 24 hours.\"、\"Nearly $600M of longs have been liquidated over the past 24 hours.\"、\"$460M of longs have been liquidated in the past 24 hours during this drop.\""
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.7,
+      "evidence": "他经常用 BTC.D 作为风格切换器。推文：\"$BTC dominance has been green for the past 8 weekly candles and for 16 of the past 20 weeks.\"、\"Bitcoin dominance just had its highest weekly close of this cycle.\" 也会在 dominance 强时讨论 altseason 是否还能来。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.63,
+      "evidence": "他会拿美股作为风险偏好确认。推文：\"The S&P 500 has opened up with a >1% dump once again.\"、\"Another all time high weekly close for the S&P 500.\"、\"The S&P 500 has already recovered most of the drop seen after the negative Q1 US GDP data...\""
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.56,
+      "evidence": "他明确跟踪 FOMC/利率节点并提醒仓位风险。推文：\"FOMC minutes: Fed is well positioned to wait for greater clarity...\"、\"The next Fed rate decision is 3 weeks from today...\"、\"Powell: There could be zero rate cuts to several rate cuts this year.\""
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.54,
+      "evidence": "他的宏观叙事经常落在降息/流动性改善。推文：\"Markets are nearly certain that the Fed will pivot back to cuts.\"、\"The Fed is ending balance sheet QT on December 1st and is then expected to cut rates by 25 bps again... Macro liquidity conditions should continue to improve...\""
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.48,
+      "evidence": "他会把黄金作为 BTC 的相对参照。推文：\"New all time high for gold. Digital gold next?\"、\"Last time $BTC broke out against gold, it pumped +65%...\"、\"The biggest gold ETF, $GLD, just saw its highest ever daily, weekly, and monthly candle close.\""
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.61,
+      "evidence": "他明显有减半周期框架。推文：\"Less than three weeks until the halving\"、\"With the halving projected to take place mid-April...\"，并持续把价格放在周期叙事里讨论。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.5,
+      "evidence": "他常用历史月份/历史年份类比来构建预期，例如：\"Later today, $BTC will close its 5th straight red monthly candle for the first time since 2018.\"、\"Bitcoin has not seen more than 3 consecutive red monthly candles since 2018.\" 这是典型周期统计思路。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.57,
+      "evidence": "他会先承认趋势环境再决定是否等确认。比如 2026-02-27 的 NVDA 图配文：\"Nvidia is now down -10% since they reported their strongest quarter ever\"，图中是明显 lower highs/lower lows 的单边下跌；BTC rollercoaster 图也展示出瀑布后继续走弱。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.62,
+      "evidence": "他在上行阶段非常积极地用趋势延续语言。推文：\"Bitcoin back above $98,000... Send $BTC to $100,000 over the weekend?\"、\"The $TOTAL crypto market looks ready for the next leg higher.\"、\"ETH and ETH/BTC both started trending up after the weekly CME open.\""
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.44,
+      "evidence": "虽然他整体偏多，但会提醒不要在崩跌中盲接。附图 1 和图 2 都是典型暴跌走势；他在 2025-02-28 连续发文：\"Absolutely BRUTAL day today. Nothing green besides 2 small dots. How much lower can it go?\"，语境更像等止跌而不是硬抄底。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.38,
+      "evidence": "他不一定明确说 MA 数值，但经常用“收复关键位/关键线”做趋势确认。推文：\"Bitcoin is back above $90,000. Ethereum is back above $3,000. The bulls are doing their best to reclaim key levels this week.\"、\"After trading below the orange line for the entire day the bulls finally managed to rally us above my orange line. This level is very important to hold.\""
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_cme_gap_fill_magnet",
+      "name": "CME Gap Fill Magnet",
+      "name_zh": "CME 缺口回补磁吸",
+      "type": "derivatives_signal",
+      "description": "Track weekly or daily CME Bitcoin futures gaps and treat the open gap as a likely magnet or reference level for short-term mean reversion and directional bias.",
+      "description_zh": "跟踪 CME 比特币期货周初/日内缺口，把未回补缺口当作短线磁吸位、均值回归目标或方向参考。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "mean_reversion_or_gap_fill",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "推文：\"CME $BTC futures gapped up to start the week. For this gap to be fully filled, bitcoin would need to return to $109.9k.\"；附图 6 直接标注周初跳空。"
+    },
+    {
+      "proposed_id": "cap_new_calendar_seasonality_stats",
+      "name": "Calendar Seasonality Stats",
+      "name_zh": "月度/季度季节性统计",
+      "type": "cycle_time",
+      "description": "Use month-end, quarter-end, and historical same-month return tendencies as a probabilistic directional filter.",
+      "description_zh": "使用月末、季末以及历史同月收益统计作为概率型方向过滤器。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "推文：\"Historically, when $BTC is green for September, October, and November, it is also green in December...\"、\"Since 2013, all five times that #Bitcoin was red in June it saw strong positive price performance in July\"、\"In the 8 years that $ETH has been live, it has only had a single red February.\""
+    },
+    {
+      "proposed_id": "cap_new_treasury_adoption_bid",
+      "name": "Corporate Treasury Adoption Bid",
+      "name_zh": "企业金库买盘叙事",
+      "type": "event_reaction",
+      "description": "Treat announcements of corporate or sovereign Bitcoin treasury accumulation as structural demand shocks that tighten supply and support bullish reflexivity.",
+      "description_zh": "把企业或国家层面的比特币储备/金库增持公告视为结构性需求冲击，强化供给收缩与价格反身性。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "推文：\"GameStop has acquired 4,170 $BTC to establish their bitcoin treasury.\"、\"Saylor is still buying.\"、\"Bitcoin supply shock is coming.\"、\"Switzerland is reviewing a proposal to add Bitcoin to their constitution and for the central bank to buy $BTC.\""
+    },
+    {
+      "proposed_id": "cap_new_anchor_line_reclaim",
+      "name": "Anchor Line Reclaim",
+      "name_zh": "锚定线收复/失守",
+      "type": "structural_bias",
+      "description": "Use a hand-drawn, repeatedly referenced horizontal or diagonal chart line as the main tactical decision boundary; reclaim implies continuation, rejection implies weakness.",
+      "description_zh": "使用交易员手动画出的关键水平线/斜线作为核心决策边界；收复偏延续，受阻偏走弱。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "breakout_or_reclaim",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "推文：\"Hold this orange line and we explode upwards.\"、\"This level is very important to hold.\"、\"People have been fading Ethereum for way too long. $ETH is looking to break 3 key levels: 1. My orange resistance line...\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Few are truly prepared …",
+      "rule_paraphrased": "喜欢把供给收缩/机构买盘包装成即将到来的 supply shock，用稀缺叙事提升看多确信度。",
+      "category": "framework"
+    },
+    {
+      "quote": "KEEP SQUEEZING THEM!",
+      "rule_paraphrased": "把对手盘拥挤仓位视为燃料，尤其偏爱讨论空头被挤爆的路径。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Hold this orange line and we explode upwards.",
+      "rule_paraphrased": "习惯把一个主观绘制的关键线当作市场生死线，围绕其得失做方向判断。",
+      "category": "framework"
+    },
+    {
+      "quote": "One good trade can change your life.",
+      "rule_paraphrased": "叙事上接受高赔率机会主义，强调抓住少数大机会的重要性，而不是只讲稳定复利。",
+      "category": "mantra"
+    },
+    {
+      "quote": "People had no problems buying all kinds of altcoins 3 weeks ago. Now when they are -80% people dont want to buy..",
+      "rule_paraphrased": "带有明显反人性、逆向情绪成分，喜欢在恐慌后提醒市场错配。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不像纯图形派那样专注形态，而是把新闻催化、ETF 流、政府/巨鲸链上转账、funding/清算热力图和简单关键位揉成一个高频内容化框架。核心交易语言不是复杂指标，而是“哪里有流动性、谁会被挤、机构资金是否在进场”。整体明显长期偏多 BTC，但短线执行依赖周期开盘、CME 缺口、关键线收复与清算位路径。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Bitcoin supply shock is coming",
+      "Few are truly prepared",
+      "KEEP SQUEEZING THEM!",
+      "This level is very important to hold",
+      "The demand for bitcoin is insane right now",
+      "I stand by my prediction",
+      "The bulls are doing their best to reclaim key levels"
+    ],
+    "low_conviction_phrases": [
+      "Do you think the bulls can do it?",
+      "Maybe time to have a look into my article...",
+      "Coincidence? 🤔",
+      "Are you convinced that the bottom is in?",
+      "Do you still believe in altseason?",
+      "What is your highest conviction trade for the rest of the cycle?",
+      "Looks like"
+    ]
+  }
+}

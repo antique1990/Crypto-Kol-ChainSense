@@ -1,0 +1,188 @@
+{
+  "handle": "CrashiusClay69",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "cycle",
+    "structural",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BRETT",
+    "BTC",
+    "ETH",
+    "OTHERS/BTC",
+    "XMR",
+    "Base ecosystem memes"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.95,
+      "evidence": "2024-12-28 明确说“ The time for alt coins is NOW going into 2025! The chart below is OTHERS/BTCUSDT ”；图4、图6 都是在看 OTHERS/BTC，相当于直接用 BTC.D/山寨相对强弱框架判断 alt season。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.9,
+      "evidence": "图5 的 BTC 周线和 RSI 下方都标了 1/2，价格更低低点而 RSI 抬高低点；图6 的 OTHERS/BTC 周线也同样标了 1/2 的 RSI 看多背离，这说明他反复用背离抓中期底部。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.88,
+      "evidence": "2024-12-26 说“ Literally all crypto based signs point to 2025 Q1 being good for altcoins ”；2025-08-28 说“ alt season. ”；整体叙事高度依赖 2025 牛市阶段和山寨季窗口。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.83,
+      "evidence": "2024-03-31 说“ we aren't even above $150k btc yet ”；2024-04-29 又说“ I will dump my bags... When Bitcoin is above $150,000-$200,000 ”，明显按 BTC 四年周期顶部区间来规划退出。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.8,
+      "evidence": "图3 的 BRETT/WETH 4h 在急跌后画出继续上行路径，典型是回调结束后的趋势延续投射；2025-05-29 说“ Couldn’t have asked for a better consolidation for $brett This next run... ”，也是把盘整看成续涨中继。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.79,
+      "evidence": "他默认把市场放在强牛趋势里：2024-07-31 说“ Time (with skill and patience) ”；2025-04-26 连续发“ last resistance level... has been cleared with ease ”、“ So much higher ”，说明其基准状态是趋势继续而非均值回归。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.63,
+      "evidence": "他对横盘/沉寂有明确行为规则：2025-07-27 说“ The silence in the space... is one of the most bullish patterns ”；2025-07-26 说“ If you don’t accept and EMBRACE quiet times, you will always be exit liquidity ”，把区间沉寂视为筹码整理阶段。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.58,
+      "evidence": "图5 BTC 周线叠加多条均线，价格重新站回并沿均线抬升是核心观察之一；他不是纯裸 K，更愿意用均线位置确认大趋势恢复。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.54,
+      "evidence": "2025-02-28 在大跌后说“ for any fallen soldiers that got setback badly in this dip ”；图5、图6 都是在 RSI 低位背离后寻找反弹/反转，属于超卖后转强的同一思路。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.46,
+      "evidence": "2024-04-30 说“ The market is getting as many ppl out of their positions now before we go higher ”，把下杀理解为清洗弱手/扫流动性，而非新一轮趋势性崩跌。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_ecosystem_leader_relative_strength",
+      "name": "Ecosystem Leader Relative Strength",
+      "name_zh": "生态龙头相对强度比较",
+      "type": "structural_bias",
+      "description": "Rank tokens by market cap, draw pairwise comparisons against sector leaders, and build a thesis that the category leader in one ecosystem will eventually flip peers in other ecosystems.",
+      "description_zh": "通过市值排名和同赛道龙头横向对比，建立“某生态第一龙头最终翻转其他生态龙头”的结构性交易假设。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_relative",
+        "horizon": "position",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "多次用 BRETT 对比 WIF/FLOKI/BONK/DOGE/SHIB；图7 直接贴 WIF 与 BRETT 市值排名；2024-11-30 说“ First we flip Floki, then we snatch the hat ”。"
+    },
+    {
+      "proposed_id": "cap_new_airdrop_liquidity_reflexive_bid",
+      "name": "Airdrop Liquidity Reflexive Bid",
+      "name_zh": "空投流动性反身性抬价",
+      "type": "event_reaction",
+      "description": "Anticipate that a large ecosystem token launch or airdrop injects fresh liquidity that reflexively rotates into the top memecoin of that ecosystem before and after the event.",
+      "description_zh": "预判大型生态代币发行或空投会注入新增流动性，并在事件前后反身性流向该生态头部 meme 币。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-05-31 说“ If BASE drops a token = mega bullish for $BRETT ”；2025-09-30 说“ massive pump once everyone gets their airdrop and 25-40% of that BASE airdrop flows into BRETT ”；图8 用 Base net flows 做辅助。"
+    },
+    {
+      "proposed_id": "cap_new_boredom_accumulation",
+      "name": "Boredom Accumulation Window",
+      "name_zh": "无聊期吸筹窗口",
+      "type": "regime_classifier",
+      "description": "Treat silent, frustrating, low-attention periods after drawdowns or long consolidations as the highest expectancy accumulation window before a large move.",
+      "description_zh": "把下跌后或长时间盘整后的沉寂、无聊、低关注阶段视为大行情前胜率最高的吸筹窗口。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_contrarian",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-07-27 说“ The silence in the space... is one of the most bullish patterns ”；2025-07-26 说“ EMBRACE quiet times ”。"
+    },
+    {
+      "proposed_id": "cap_new_marketcap_ladder_targets",
+      "name": "Market Cap Ladder Targeting",
+      "name_zh": "市值阶梯目标法",
+      "type": "structural_bias",
+      "description": "Project upside by mapping the asset to prior category winners and estimating sequential market cap flips instead of using only chart-measured moves.",
+      "description_zh": "用历史同类龙头的市值区间和逐级超越路径来推导目标，而不是只靠传统量度涨幅。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "反复说“ flip BONK and FLOKI ”、“ 40B-80B market cap this cycle ”、“ $BRETT at 2B today is better than $DOGE at 5B in 2021 ”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Buy when shit looks and feels bad  so u can sell when things look and feel good",
+      "rule_paraphrased": "情绪和价格体验最差时逆向吸筹，情绪最顺时兑现。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I rather be all in and under water 10-20% temporarily   Than to be 50% in, half out, and buying as we “confirm” higher",
+      "rule_paraphrased": "宁可提前重仓承受浅套，也不愿等待确认后被迫追高。",
+      "category": "framework"
+    },
+    {
+      "quote": "If you don’t accept and EMBRACE quiet times, you will always be exit liquidity and buying tops in exciting times",
+      "rule_paraphrased": "无聊横盘期才是建立大仓位的地方；只在兴奋期行动的人会成为接盘者。",
+      "category": "framework"
+    },
+    {
+      "quote": "The coins that u feel little TO ZERO stress holding  These are good coins",
+      "rule_paraphrased": "主观持有舒适度和叙事确定性，是他筛选重仓标的的重要标准。",
+      "category": "framework"
+    },
+    {
+      "quote": "When in doubt, always bull it out",
+      "rule_paraphrased": "默认偏多，除非有非常强的反证；犹豫时倾向保持牛市立场。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像传统 TA 交易员那样强调复杂形态和严格风控，而是把简单 TA 工具（RSI 背离、均线、通道、相对强弱）和极强的叙事/生态龙头信仰结合起来。其核心优势不是精细择时，而是高杠杆化的长期叙事持有、对山寨季与生态轮动的强烈信念，以及用内容传播把“共识形成”本身当成交易边的一部分。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "with ease",
+      "inevitable",
+      "so much higher",
+      "all in",
+      "under 1B",
+      "billions",
+      "generational entry",
+      "study",
+      "mathematically proven",
+      "the signs are so there"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "I expect",
+      "probably",
+      "I believe",
+      "let's say"
+    ]
+  }
+}

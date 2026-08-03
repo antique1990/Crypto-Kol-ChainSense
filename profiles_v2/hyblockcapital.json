@@ -1,0 +1,197 @@
+{
+  "handle": "hyblockcapital",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "structural",
+    "contrarian",
+    "mixed"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BNB",
+    "LINK",
+    "TRX"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.99,
+      "evidence": "这是他最核心的框架。多条高赞推文都在讲价格被流动性簇“吸”过去：如 2025-08-18“Into the liquidity we went 🧲”、2025-03-19“Into the liquidity we go ...”、2024-09-30 明确给出上方 66,700-66,750 与下方 62,050-62,120 的下一批高流动性簇。图1、图5、图6、图8都是直接在清算热力图上定位磁吸区。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.96,
+      "evidence": "他不仅看流动性目标，还反复强调“先扫再反转”。2024-01-23 直接写“Liquidity hunting at its finest”；2025-08-11“the short liquidity sitting at 120k - 122k on the 1mo lookback is currently being swept”；2025-10-22“BTC swept the big short liq cluster and instantly reversed”。图8 还标注“Liquidity grabbed”，图5-7 都是在展示下探扫流动性后反弹。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.82,
+      "evidence": "他频繁用 OI 热力图/Spaghetti Graph 判断参与度和潜在突破。2024-12-26“Open Interest across all tickers has started increasing again... This indicates strong market participation.”；2025-02-20“Regime Change in Open Interest... Open Interest is rising across most assets”；2025-02-22“As we entered the new regime change where Open Interest (OI) began increasing --> we saw BTC price also gradually increase.”"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.78,
+      "evidence": "他经常先定义当前环境是均值回归/震荡，再用流动性图做两端猎杀。2025-10-24“We're in a pretty strong mean-reverting (ranging) market recently. Price is hunting the liq levels and reversing.”；2025-05-29 提到 BTC 处于 consolidation mode，流动性在上下两侧堆积。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.73,
+      "evidence": "他明显把高波动视为独立交易环境。2024-08-27“Stay cautious out there, volatility is back 👀”；2025-07-31 在 FOMC 日特别结合 orderbook 与 liquidation 讨论事件波动；2024-12-25 用“大红 K + high slippage + aggressive longs exiting”描述剧烈波动后的结构。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.61,
+      "evidence": "他会把极端正 funding 当作反向指标扫描异常币种。2024-12-28“$NERIO stands out as an outlier... Historically, a very high positive funding rate has often been followed...” 说明他会用正 funding 极值寻找拥挤多头和潜在反转。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.56,
+      "evidence": "他也会把负 funding 与 squeeze/bottom 框架结合。2024-12-23“$ENA... a high negative ...”被拿来做历史扫描；2025-08-22 提到 bullish bias signals 之一是 true retail longs 偏低，与拥挤空头/负向情绪一致，常用于反向找底。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.68,
+      "evidence": "他经常将清算扫单后的回落/回抽视为假突破陷阱。2025-10-22“swept the big short liq cluster and instantly reversed”就是典型的上扫流动性后失败；2024-02-21 ETH “broke 3000 earlier today and then quickly dropped to 2900... quickly went back up to sweep it to the exact $ amount”体现先诱导、后清算。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.66,
+      "evidence": "他大量交易思路是区间内从一侧流动性打到另一侧，而不是追逐中间段。2024-07-12“$BTC is playing a game of bouncing between liquidity zones”；2025-10-24 直接说在均值回归市场里“Price is hunting the liq levels and reversing”。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.38,
+      "evidence": "他不是宏观派，但事件周会降维到 orderbook/liq 观察。2025-07-31“FOMC announcement today revealed key shifts via Hyblock data...”显示他把 FOMC 作为高波动触发器，并用簿记与清算数据解读前后仓位变化。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.34,
+      "evidence": "他偶尔用 ETF 流作为外部确认。2024-03-19“As we all wait for IBIT inflows...”以及“first ETF outflow day since Mar 1 — leading to a sweep of the liq zones within 24 hours”说明 ETF 流向会被拿来解释流动性扫单。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.49,
+      "evidence": "虽然不是以传统风控语气表达，但他经常强调下跌中要等条件共振而不是盲目抄底。2025-08-19 在看到流动性被扫之后仍补一句“but something to be aware”；2025-04-21 指出即使扫到短端流动性，bid/ask 仍偏空，因此更适合高盈亏比做空而非机械抄底。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.52,
+      "evidence": "他会识别单边下磨环境并据此继续看向下方流动性。2025-06-01“Price has been slowly grinding down and hunting long liquidity... which led to price grinding down”; 这不是简单支撑反弹逻辑，而是顺着下行结构寻找下一批 long liq。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_bid_ask_flip_bottom",
+      "name": "Bid-Ask Ratio Positive Flip Bottom Finder",
+      "name_zh": "买卖盘失衡翻正找底",
+      "type": "derivatives_signal",
+      "description": "Use spot orderbook depth imbalance across fixed depth bands (0-1%, 0-5%, 0-10%) and treat a flip from ask-heavy to bid-heavy as a local-bottom signal, especially after a liquidity sweep.",
+      "description_zh": "跟踪现货订单簿固定深度的买卖盘失衡；当失衡从卖盘主导翻转为买盘主导时，视为局部底部信号，若此前刚完成一次流动性扫单则置信度更高。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2025-08-19“We are finally seeing the bid ask ratio (spot, 10% depth) flip positive. The last 3 occurrences have marked a significant local bottom.”；2024-01-26“The global bid ask ratio recently flipped positive...”"
+    },
+    {
+      "proposed_id": "cap_new_retail_long_oscillator",
+      "name": "Retail Long Percent Mean-Reversion Oscillator",
+      "name_zh": "散户多头占比均值回归振荡器",
+      "type": "derivatives_signal",
+      "description": "Treat true retail long percentage as an inverse oscillator: very low long% can precede bottoms if it starts reverting higher; very high long% can precede squeezes lower or a bottom only after longs flush and shorts enter.",
+      "description_zh": "将散户多头占比视为反向振荡器：极低 long% 若开始回归上升，常对应底部；极高 long% 则常对应拥挤与清洗，需等多头出清、空头进入后再寻找反向机会。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2025-07-29“- Retail Long% is inversely correlated with price. - Retail Long% is an oscillator that is bounded by 0% to 100%. This is the alpha.”；2025-04-14 结合 histograms 观察 true retail long% 仍很低。"
+    },
+    {
+      "proposed_id": "cap_new_slippage_spike_reversal",
+      "name": "Slippage Spike Reversal",
+      "name_zh": "滑点尖峰反转",
+      "type": "indicator_rule",
+      "description": "Large one-bar slippage spikes, especially on sell-side panic candles or at the end of a liquidity sweep, are treated as exhaustion/reversal markers or the start of short-term consolidation.",
+      "description_zh": "单根 K 线出现异常大的滑点峰值，特别是发生在恐慌性卖压或完成流动性扫单之后时，视为衰竭/反转标记，或至少意味着短期进入盘整。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "mean_reversion",
+        "horizon": "scalp_to_intraday",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-08-11“Local top was marked by the largest spike in slippage ... plus a significant orderbook ask imbalance.”；2025-11-24“Slippage once again spiked above 100... often leads to reversals.”"
+    },
+    {
+      "proposed_id": "cap_new_oi_breakeven_level",
+      "name": "Open Interest Breakeven Magnet",
+      "name_zh": "持仓成本回本位磁吸",
+      "type": "derivatives_signal",
+      "description": "When a large OI cluster forms at a specific price, that level becomes a psychological breakeven magnet where trapped participants often exit; price is likely to revisit it and react there.",
+      "description_zh": "当某个价格带形成显著 OI 簇时，该区域会成为持仓者的心理回本位，容易吸引价格回访，并在回到该位时出现平仓/反应。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "magnet_then_reaction",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2025-07-29“Aaaand we're back at the largest open interest cluster. The 'breakeven' psychological level.”；2024-12-29“Significant open interest emerged around the 95250 and 94450 levels. These zones often present great risk-reward opportunities...”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Into the liquidity we went 🧲",
+      "rule_paraphrased": "把价格视为被清算簇/止损簇吸引的运动，而不是先验看传统支撑阻力。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Liquidity hunting at its finest",
+      "rule_paraphrased": "市场的核心行为之一是主动猎杀显眼流动性；交易上应先找哪里容易被扫。",
+      "category": "framework"
+    },
+    {
+      "quote": "Retail Long% is inversely correlated with price. - Retail Long% is an oscillator that is bounded by 0% to 100%.   This is the alpha.",
+      "rule_paraphrased": "散户多头占比是其独特核心信号，且要用反向思维理解。",
+      "category": "framework"
+    },
+    {
+      "quote": "Worth keeping an eye on this 👀",
+      "rule_paraphrased": "即使出现底部条件，也倾向于等待额外确认，而不是单指标梭哈。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Choose your source of liqs carefully because it does matter 😉",
+      "rule_paraphrased": "不同流动性数据源、杠杆分层、过滤条件会显著影响结论，数据选择本身就是 edge。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和常见 TA 交易员的区别在于，核心不是形态或均线，而是把订单簿失衡、清算热力图、OI 变化、散户/鲸鱼仓位这些微观结构数据拼成一套“流动性地图”。他的分析极度事件化和路径化：先判断哪边流动性更密集，再判断是否已经被扫、扫完后 orderbook 有没有翻转。相比纯图表派，他更像是在做加密市场微结构与仓位拥挤度交易。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "The last 3 occurrences have marked a significant local bottom",
+      "solid indicator for catching local bottoms",
+      "Like clockwork",
+      "This is the alpha.",
+      "Historically, this has been"
+    ],
+    "low_conviction_phrases": [
+      "Worth keeping an eye on this",
+      "something to be aware",
+      "potential shift",
+      "could lead to",
+      "may rise"
+    ]
+  }
+}

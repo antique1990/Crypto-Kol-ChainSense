@@ -1,0 +1,199 @@
+{
+  "handle": "devchart",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "content_creator",
+    "contrarian",
+    "pure_TA",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ALTS",
+    "WIF",
+    "CORE",
+    "MOVE",
+    "PUMP"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.86,
+      "evidence": "图表中最明确的是 ETHUSDT 周线用黄色框标出上方约 3.9k-4.0k 阻力、下方约 1.9k 支撑，属于典型高时间框架区间位交易。推文也反复强调 support/support zone：如 [2024-04-30] “$BTC dropped and is once again retesting that support zone.”、[2024-08-24] “$CORE main support has been holding strong”。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.8,
+      "evidence": "ETH 周线图从 2025 高点快速回落至 1.9k 附近，结构是 lower highs + 强下跌腿；他对市场的措辞也常是弱势环境判断，如 [2025-10-30] “This market just looks horrible. Most alts are hitting another all time low...” 和 [2025-12-20] “The PA is still weak but that support level has been holding out so far.”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.78,
+      "evidence": "[2025-03-29] “What will you do if $ETH ends up dropping to the $1k level?” 显示他会预设更深跌幅而不是盲目抄底；[2025-01-29] 询问 WIF 是否可 refill，随后 [2025-01-31] “I guess it was not a great area to refill in 😂😂 $WIF”，体现对过早抄底的复盘。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.71,
+      "evidence": "[2026-04-10] “Trading the invalidation.” 这是很典型的以失效位为止损/反手锚点的表达，说明他不是预测式死扛，而是围绕 invalidation 做交易执行。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.64,
+      "evidence": "ETH 周线图里前期平台/突破位被重新标为黄色支撑区，接近“前阻力变支撑/前支撑变阻力”的 breaker 思路；[2024-08-24] “we need to see a flip of the $1.5 region to fully reverse trend” 也明显是 level flip 框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.56,
+      "evidence": "图表在 2025 下跌到 1.9k 区域前后有明显长针插入关键位后收回，说明他关注关键区域的扫流动性/插针反应，而不只是收盘价本身。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.53,
+      "evidence": "ETH 周线图多个顶部与中继位置都出现长上影/长下影的拒绝 K，尤其 3.8k-4.0k 附近多次长针回落，显示他会把 wick rejection 作为区域有效性的证据。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.52,
+      "evidence": "[2024-10-30] “Now who do we have to sacrifice to finally see an Ethereum pump?”、图 5 “ALT SEASON 2021 / ALT SEASON 2025” meme，说明他持续盯 ETH/山寨季相对强弱切换，虽然表达偏戏谑。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.44,
+      "evidence": "虽然没直接提 FOMC，但他明显把重大政治/宏观 headline 当风险事件处理：[2025-01-31] “Dude woke up and just decided he is going to nuke all our bags..”、[2025-02-28] “Did Trump announce another tariff while I was asleep or what? $BTC”。这是一种事件驱动避险框架。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.41,
+      "evidence": "他常把加密价格波动直接映射为 broader risk-on/risk-off 的结果，尤其在特朗普、关税、战争 headline 下讨论 BTC/ALTS 表现，属于风险偏好切换框架的弱形式。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.39,
+      "evidence": "他的内容经常围绕高波动和不稳定环境：[2025-10-30] “This market just looks horrible”、[2025-08-24] “Could you guys just stop nuking $BTC so late in the night?”，说明他默认市场经常处于情绪化高波动 regime。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.37,
+      "evidence": "[2024-08-24] “we need to see a flip of the $1.5 region to fully reverse trend” 隐含只有真正站稳/翻转才算确认，没站稳的突破不可信；其“Trading the invalidation”也说明会围绕突破失效做交易。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.33,
+      "evidence": "他会在行情强的时候切到趋势延续叙事，如 [2024-03-31] “$ONDO above 1$ and another all-time high! ... #RWA season continues”，说明并非只会抄底，也会承认强势板块延续。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_htf_horizontal_zones",
+      "name": "HTF Horizontal Zone Mapping",
+      "name_zh": "高时间框架水平供需区标定",
+      "type": "structural_bias",
+      "description": "Mark multi-month support and resistance boxes on 1D/1W charts, then wait for reaction or reclaim/rejection before taking directional risk.",
+      "description_zh": "在 1D/1W 图上先标出多月级别水平支撑阻力箱体，再等待价格在箱体附近出现反应、收回或拒绝后才承担方向性风险。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral_to_reactive",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "ETH 周线图把 1.9k 与 3.9k 一带画成宽黄区；[2024-08-24] 直接说 $CORE main support holding，且需要 $1.5 region flip。"
+    },
+    {
+      "proposed_id": "cap_new_invalidation_based_trade",
+      "name": "Invalidation-First Trade Framing",
+      "name_zh": "先定义失效位再交易",
+      "type": "risk_rule",
+      "description": "Frame setups by the exact level that invalidates the thesis, and size/execute around that level rather than around a target-first narrative.",
+      "description_zh": "先定义哪一个价位会让交易逻辑失效，再围绕这个失效位去做仓位和执行，而不是先讲目标位故事。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_defined",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2026-04-10] 直接写 “Trading the invalidation.”，这是他少数明确暴露方法论的原话。"
+    },
+    {
+      "proposed_id": "cap_new_headline_repricing",
+      "name": "Headline Shock Repricing",
+      "name_zh": "政治头条冲击再定价",
+      "type": "event_reaction",
+      "description": "Use sudden geopolitical or policy headlines as the catalyst for crypto repricing, especially when market structure is already weak or sitting on support.",
+      "description_zh": "当市场本就偏弱或压在关键支撑上时，把突发地缘政治或政策头条视作加密资产再定价催化剂。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_off_or_squeeze",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.61
+      },
+      "example_evidence": "[2025-01-31] “Dude woke up and just decided he is going to nuke all our bags..”、[2025-02-28] “Did Trump announce another tariff while I was asleep or what? $BTC”。"
+    },
+    {
+      "proposed_id": "cap_new_ct_sentiment_extremes",
+      "name": "Crypto Twitter Sentiment Extremes",
+      "name_zh": "CT 情绪极端反向参考",
+      "type": "contrarian",
+      "description": "Treat extreme despair/euphoria in the feed as a soft contrarian input, especially around obvious support or after repeated bagholder capitulation memes.",
+      "description_zh": "把时间线上极端绝望或亢奋的情绪当作软性的反向指标，尤其是在明显支撑位或连续 bagholder 绝望段子之后。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.58
+      },
+      "example_evidence": "他大量使用 bagholder/poverty/ramen 叙事，如 [2025-10-29] “Back to Poverty Island $BTC”、[2025-09-23] “those juicy support levels across many altcoins”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Trading the invalidation.",
+      "rule_paraphrased": "交易先看 thesis 何处失效，失效就撤，不为观点死扛。",
+      "category": "framework"
+    },
+    {
+      "quote": "What will you do if $ETH ends up dropping to the $1k level?😱",
+      "rule_paraphrased": "默认预演极端 downside，不把当前支撑当成必守。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I guess it was not a great area to refill in 😂😂 $WIF",
+      "rule_paraphrased": "错误加仓位会公开承认，说明他会事后修正而不是硬拗。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "we need to see a flip of the $1.5 region to fully reverse trend.",
+      "rule_paraphrased": "趋势反转不是猜出来的，要等关键位真正翻转确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "Eh fuck it, I am throwing some of my ramen noodle fund into a $PUMP entry at this level.",
+      "rule_paraphrased": "在高 beta 山寨上会做小仓位投机，但语气上就把它归类为可承受损失的风险资金。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不像纯技术派那样堆大量指标，更像是“高时间框架水平位 + 失效位交易 + 头条/情绪催化”的混合型交易者。内容风格极强，很多推文是 meme、政治或市场情绪表达，但真正有用的方法论浓缩在少数几句：守关键位、等 flip、错了就按 invalidation 认错。相较其他 TA 账号，他更依赖叙事和社媒情绪温度计，而不是系统化指标矩阵。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Trading the invalidation",
+      "need to see a flip",
+      "fully reverse trend",
+      "main support has been holding strong",
+      "support zone hit"
+    ],
+    "low_conviction_phrases": [
+      "I guess",
+      "considering entering",
+      "really not seeing anything interesting",
+      "if we don't bounce from here",
+      "would consider refilling in?"
+    ]
+  }
+}

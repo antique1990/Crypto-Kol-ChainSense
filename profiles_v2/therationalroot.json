@@ -1,0 +1,194 @@
+{
+  "handle": "therationalroot",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "onchain",
+    "macro",
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.98,
+      "evidence": "反复直接使用 4 年周期框架：2024-09-17“The 4-Year Cycle. #Bitcoin”，2024-06-24 同题，2025-08-01 同题；配图中的 Spiral/4-Year Cycle 把 2010/14/18/22/26 与 2009/13/17/21/25 放在固定象限上，明显是在做周期位置映射。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.96,
+      "evidence": "他几乎把“减半进度”做成固定栏目：2024-07-31“Halving progress 7%.”、2024-08-30“9%.”、2024-09-28“11%.”、2024-10-14“12%.”、2024-10-26“13%.”、2024-11-25“15%.”、2024-12-12“16%.”、2024-12-28“17%.”；附图还把每轮 Halving 区间高亮并用百分比标注当前所处阶段。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.93,
+      "evidence": "ETF 流量是他最核心的需求代理之一：2024-01-26“Proud to present the live #Bitcoin ETF Tracker.”；2024-02-27“massive day with +9.5k #BTC added to holdings. That is 10x the issuance”；2024-10-22“Last week's ETF inflows were a record 9x the new supply issuance.”；2025-04-28“Last week’s net ETF inflows were over 11x the new supply issuance, a new record!”。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.88,
+      "evidence": "他明显把全球流动性/M2 作为 BTC 的上游驱动：2025-04-14“Global liquidity at an ATH, rising steeply. #Bitcoin”；附图 8 直接把 Bitcoin 与“Combined M2 Money Supply / Global Liquidity YoY”并列，强调全球流动性同比变化。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.84,
+      "evidence": "他多次用估值带和 MVRV 解释周期位置：2024-05-25“The current situation best mimics the rallies of the 2nd Halving, both in price and MVRV score.”；2024-05-28“On-chain value map: heavy overvalued now at $130k and rising.”；2024-01-31 也发“On-chain value map”，说明他在用链上估值区间判断冷热。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.78,
+      "evidence": "他会把关键均线/成本线收回当成趋势切换确认：2024-10-23“Reclaimed key levels: STH cost basis, 21-week, and 200-day moving averages. #Bitcoin”。这里明确把 200 日均线和 21 周均线收复视作看多确认。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.73,
+      "evidence": "他的语境经常是识别牛市扩张阶段而非做双向交易：2025-05-21“Uncharted territory. 🚀 #Bitcoin”、2025-07-11“Lift-off from the $2 trillion market cap.”、2025-01-25“Short-Term Holder Supply continues its uptrend, signaling a bull market continuation”。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.54,
+      "evidence": "虽然他更常用广义流动性而非单独国债收益率，但框架上明显属于“流动性改善利多 BTC”。附图 8 的叙事核心就是央行资产负债表与货币供给扩张推动风险资产；2025-04-14 直接把 rising liquidity 当作看多证据。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.25,
+      "evidence": "在给出的高赞样本里，他并不高频交易 FOMC 本身，说明事件周并不是主框架；更多是宏观流动性和 ETF 慢变量，因此该能力只是弱相关背景项。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.41,
+      "evidence": "他经常讨论供给被长期吸走而不是短线抛压：2024-10-30“This means buying up all of the new supply issuance for the remainder of this Halving at current prices.”；2024-05-29“BlackRock flipped Grayscale in #BTC Holdings.”。这更偏供给锁定/强手吸收逻辑。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_sth_cost_basis_framework",
+      "name": "STH Cost Basis Framework",
+      "name_zh": "短期持币者成本线框架",
+      "type": "onchain_signal",
+      "description": "Uses the Short-Term Holder cost basis and its deviations as dynamic support/resistance, bull-market reset marker, and trend continuation filter.",
+      "description_zh": "以短期持币者成本线及其偏离度作为动态支撑/阻力、牛市重置与趋势延续判断框架。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2024-06-18“STH cost basis at $63.8k.”；2024-10-23“Reclaimed key levels: STH cost basis, 21-week, and 200-day moving averages.”；2025-09-05“Bouncing off the STH cost basis at ~$109K.”"
+    },
+    {
+      "proposed_id": "cap_new_etf_vs_issuance_supply_squeeze",
+      "name": "ETF Flow vs New Issuance Supply Squeeze",
+      "name_zh": "ETF 净流入对新发行供给挤压",
+      "type": "event_reaction",
+      "description": "Measures whether spot ETF net inflows are absorbing a multiple of newly mined BTC supply; high multiples imply structural demand pressure and bullish squeeze conditions.",
+      "description_zh": "衡量现货 ETF 净流入是否吸收了数倍于新增挖矿发行的 BTC 供给；倍数越高，越说明结构性买盘与供给挤压越强。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "2024-02-27“That is 10x the issuance”；2024-10-22“record 9x the new supply issuance”；2025-04-28“over 11x the new supply issuance, a new record!”"
+    },
+    {
+      "proposed_id": "cap_new_spiral_quadrant_cycle_map",
+      "name": "Spiral Quadrant Cycle Map",
+      "name_zh": "螺旋象限周期定位图",
+      "type": "cycle_time",
+      "description": "Maps Bitcoin price progression across repeated 4-year spirals/quadrants to identify where the market sits relative to prior cycle ATHs, bottoms, and halving points.",
+      "description_zh": "将比特币价格路径映射到重复的 4 年螺旋/象限中，用于识别当前相对历史周期顶部、底部与减半点的位置。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "附图 1、2、5 都是他标志性的 Spiral / 4-Year Cycle 图；2024-12-05“Crossed the 100k ring! 🚀”说明他连整数价位都用同心圆/环带来表达周期推进。"
+    },
+    {
+      "proposed_id": "cap_new_cycle_bottom_comparison",
+      "name": "Cycle Bottom Normalized Comparison",
+      "name_zh": "从周期底部归一化比较",
+      "type": "cycle_time",
+      "description": "Normalizes each BTC cycle by days since bottom and compares the current path against prior cycles to estimate whether the market is lagging, in line, or outperforming.",
+      "description_zh": "按“距离周期底部的天数”归一化每一轮 BTC 周期，并与历史周期对比，判断当前是落后、对齐还是跑赢。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "position",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2024-09-22“Recovery since cycle bottom.”；2024-08-27“Outperforming previous cycles.”；2024-12-21“Right in between the previous two cycles.”；附图 7 标题即“Bitcoin Cycles: comparison from cycle bottom”。"
+    },
+    {
+      "proposed_id": "cap_new_seasonal_quarter_bias",
+      "name": "Quarterly Seasonality Bias",
+      "name_zh": "季度季节性偏置",
+      "type": "cycle_time",
+      "description": "Uses recurring quarter-based seasonality, especially Q3 softness and Q4 optimism, as a contextual bias overlay for BTC trend expectations.",
+      "description_zh": "使用季度季节性，尤其是 Q3 偏弱、Q4 乐观，作为 BTC 趋势预期的上下文偏置层。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "2024-06-30“Q3. #Bitcoin”；2024-10-25“Q4: The Optimism Phase.”；2025-07-23“Seasonality, Q3. 👀 #Bitcoin”；2025-10-21“Q4, 2025.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Hopeful but calm everyone! #Bitcoin",
+      "rule_paraphrased": "即使偏多，也强调情绪节制，不把牛市判断表达成失控追涨。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Right in between the previous two cycles. #Bitcoin",
+      "rule_paraphrased": "所有当前价格行为都先放回历史周期分布里定位，而不是孤立解读单一波动。",
+      "category": "framework"
+    },
+    {
+      "quote": "Q4: The Optimism Phase. #Bitcoin",
+      "rule_paraphrased": "他把市场状态切成季度/阶段标签，用叙事化命名来传达周期位置。",
+      "category": "framework"
+    },
+    {
+      "quote": "It’s over! #Bitcoin crashed.",
+      "rule_paraphrased": "常用反讽处理回撤，默认把中期牛市内的大跌视为周期内常态，而不是结构破坏。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "\"The 4-Year Cycle is dead.\" #Bitcoin",
+      "rule_paraphrased": "他会直接拿市场流行反叙事做对照，强化自己对长期周期框架的坚持。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是传统那种靠形态、趋势线和日内 trigger 的 TA 交易员，而是把 BTC 当成一个由减半、ETF 吸筹、链上成本线和全球流动性共同驱动的“周期资产”来研究。图表表达极强，擅长把复杂框架压缩成 Spiral、Halving Progress、Cycle Bottom Comparison 这类一眼可传播的视觉模型。整体上更像长期仓位管理型的 BTC 周期分析师，而不是高频做多空切换的执行派交易员。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Crossed the 100k ring! 🚀",
+      "Global liquidity at an ATH, rising steeply.",
+      "This means buying up all of the new supply issuance for the remainder of this Halving at current prices.",
+      "Uncharted territory. 🚀",
+      "Lift-off from the $2 trillion market cap."
+    ],
+    "low_conviction_phrases": [
+      "Hopeful but calm everyone!",
+      "Anyone feeling optimistic about crossing the 100k ring yet?",
+      "Will #Bitcoin be below or above $100k in the next couple of months?",
+      "Is the bottom in?",
+      "Right in between the previous two cycles."
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "handle": "TylerSCrypto",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "cycle",
+    "contrarian",
+    "pure_TA",
+    "macro"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ALT",
+    "TAO",
+    "XRP"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.94,
+      "evidence": "2026-02-24: \"4 year cyclers are ignoring the fact that Bitcoin has always bottomed 23 months after its previous ATH. We are now at 23 months\"；配图 2 直接用历史周期做横向对比，标注 \"21 Bars / 23 Bars / 23 Bars?\"。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.89,
+      "evidence": "2024-04-20: \"#Bitcoin has halved. This year will be one thing… BIG\"；2024-03-25: \"Less than one month until the #Bitcoin halving... Statistically the most exciting, wealth-generating part of the cycle is beginning.\""
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.84,
+      "evidence": "2024-09-26: \"Once we get a few daily closes, a weekly above $65k BTC, it’s over. We’re going so much higher.\"；2024-09-26: \"That’s a higher high for Bitcoin\"；他明显用突破+高高点确认上升趋势。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.81,
+      "evidence": "2024-03-27: \"the most successful in history\" 讨论 BlackRock BTC ETF；2024-01-30: \"BLACKROCK ACCUMULATED OVER 50,000 #BITCOIN LAST WEEK\"；2024-12-16: \"Remember last cycle when billions of dollars of Bitcoin were bought every day by ETF’s? Oh shit nevermind this is the first cycle...\""
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.76,
+      "evidence": "2024-08-13: \"Crypto has been basically just ranging sideways for 6 months\"；2024-08-21: \"I can’t watch Bitcoin go sideways for another 6 months\"；说明他会把市场先归类为长时间震荡，再等待方向选择。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.58,
+      "evidence": "2024-08-23: \"Go ahead Powell make me rich\"；2024-08-23: \"Jerome is about to cut rates\"；他把降息/流动性宽松当作风险资产上行催化。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.56,
+      "evidence": "2025-07-21: \"Altszn is coming\"；2025-07-21: \"I buy altcoins to make gains to convert into Bitcoin\"；2025-08-24: \"Ethereum is exploding Soon all altcoins will pump big.\""
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.49,
+      "evidence": "虽然很少明确报均线数值，但他经常用收复关键区间/站上关键水平来判断趋势切换，例如 2024-09-26 的 \"few daily closes, a weekly above $65k BTC\"，本质是关键位收复确认而不是抄底。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.43,
+      "evidence": "2024-03-26: \"$100k #btc is going to come fast once we clear this range\"；他的图文表达反复强调横盘箱体上沿被突破后将加速，虽未严格画三角，但属于典型上沿突破思路。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.41,
+      "evidence": "他表面上爱喊抄底，但真正表达更偏向等确认后加仓：2024-09-26 强调 \"few daily closes, a weekly above $65k\"；不是纯左侧接刀，而是等结构确认后重仓看多。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.35,
+      "evidence": "配图 4 用大红箭头演绎熊派的崩盘预期，配图 3 则在对数长周期图上给出继续抛物上行路径；说明他熟悉抛物线叙事，但通常把它当成牛市延续而非顶部警报。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.28,
+      "evidence": "没有系统展开，但多次把宏观风险偏好与加密方向绑定，如 Powell、利率、ETF 资金流等，属于轻量级风险偏好框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_ath_breakout_weekly_close",
+      "name": "ATH/Range High Weekly Close Confirmation",
+      "name_zh": "前高/区间上沿周线收盘确认",
+      "type": "pattern_setup",
+      "description": "Wait for multiple daily closes and preferably a weekly close above a major range high or prior ATH before treating the breakout as a high-conviction expansion leg.",
+      "description_zh": "等待关键区间上沿或前高被多根日线、最好周线有效收于上方，再将其视为高胜率主升浪启动，而不是仅凭瞬时刺破追单。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "2024-09-26: \"Once we get a few daily closes, a weekly above $65k BTC, it’s over.\""
+    },
+    {
+      "proposed_id": "cap_new_sentiment_despair_bottom",
+      "name": "Sentiment Despair Contrarian Bottom",
+      "name_zh": "情绪绝望反向底部信号",
+      "type": "structural_bias",
+      "description": "Use extreme doom, panic posting, and broad retail despair on the timeline as a contrarian input that the local low or shakeout is near completion.",
+      "description_zh": "把社媒上的恐慌、绝望、看空刷屏作为反向指标，认为洗盘接近尾声、底部正在形成。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_bullish",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2024-12-20: \"The sentiment over the last few days because of this Bitcoin and Crypto dip is honestly pretty telling...\"；2025-02-25 多条推文嘲讽 \"top is in, it’s over\" 言论。"
+    },
+    {
+      "proposed_id": "cap_new_hyperbull_memetic_momentum",
+      "name": "Memetic Momentum Amplification",
+      "name_zh": "梗图式动量强化框架",
+      "type": "framework",
+      "description": "Blend simple breakout or cycle observations with emotionally loaded, repeated bullish slogans to reinforce high-conviction positioning and audience alignment during trend expansion.",
+      "description_zh": "把简单的突破/周期判断与高强度口号、梗图、夸张措辞结合，在趋势上行阶段持续强化看多共识与持仓信心。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "反复出现 \"something BIG is coming\"、\"Higher\"、\"Banana Zone\"、\"However big you think it's gonna be - It will be bigger.\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "However big you think it's gonna be - It will be bigger. Bitcoin",
+      "rule_paraphrased": "默认不要低估 BTC 牛市的幅度，趋势一旦成立就用更高的终局目标看待。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Once we get a few daily closes, a weekly above $65k BTC, it’s over. We’re going so much higher.",
+      "rule_paraphrased": "关键位突破需要收盘确认；确认后不犹豫，按趋势扩张处理。",
+      "category": "framework"
+    },
+    {
+      "quote": "4 year cyclers are ignoring the fact that Bitcoin has always bottomed 23 months after its previous ATH. We are now at 23 months",
+      "rule_paraphrased": "他用自己偏好的周期锚点替代简单的四年周期模板，强调历史节奏复现。",
+      "category": "framework"
+    },
+    {
+      "quote": "The sentiment over the last few days because of this Bitcoin and Crypto dip is honestly pretty telling...",
+      "rule_paraphrased": "时间线上的绝望与放弃，是他判断洗盘接近完成的重要反向线索。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Do not chase gains. Do not swap into something that’s pumping because yours hasn’t yet",
+      "rule_paraphrased": "牛市里也不鼓励情绪化追涨换仓，强调拿住已有仓位等待轮动。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不像传统严谨 TA 交易员那样依赖复杂指标，而是把周期、关键位突破、ETF/宏观催化和社媒情绪反向信号压缩成极少数高传播度结论。图表框架本身并不复杂，真正突出的地方是把“结构上看多”包装成持续输出的高亢叙事。整体更像强牛市阶段的高贝塔趋势布道者，而不是双向中性执行型交易员。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "something BIG is coming",
+      "However bullish you are, it’s not enough",
+      "Higher",
+      "Banana Zone",
+      "We’re gonna be so rich",
+      "It’s over. We’re going so much higher",
+      "Bottom is in",
+      "buy bitcoin",
+      "Bitcoin is about to do something VERY big"
+    ],
+    "low_conviction_phrases": [
+      "Call me crazy but I think we are gonna go up again",
+      "idk why but I have this nagging feeling",
+      "maybe next week",
+      "Potentially really big"
+    ]
+  }
+}

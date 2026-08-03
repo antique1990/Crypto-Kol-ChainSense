@@ -1,0 +1,187 @@
+{
+  "handle": "EWaveMonitor",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "GOLD",
+    "XAUUSD",
+    "BTC",
+    "EURUSD",
+    "ETH",
+    "SILVER",
+    "WTI",
+    "SPX"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.99,
+      "evidence": "几乎所有交易相关推文都围绕 Elliott Wave 展开，如“$Gold on the yearly timeframe continues to follow the classic Elliott Wave structure, After completing a powerful Wave III, a limited corrective move is expected within Wave IV near the 38.2% Fibonacci...”以及多条“Elliott Wave Analysis – $GOLD / $BTCUSD / $EURUSD”。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.87,
+      "evidence": "明确反复用 61.8% 回撤位定位拐点，如“corrective wave (2) seems to have ended precisely at the classic 61.8% Fibonacci retracement level”以及“deep correction toward the 61.8% Fibonacci level”。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.72,
+      "evidence": "直接使用假突破叙事，如“$EURUSD Forecast & Analysis ... made a false breakout above 1.1919, completing wave b”以及其方法里常把 wave b/假突破视为陷阱后继续主趋势。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.58,
+      "evidence": "有专门教育型推文“Pin Bar Candle: The Secret to Strong Reversals! Do You Use It In Your Trading?”，说明他把单根 K 线拒绝信号当作反转确认工具。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.22,
+      "evidence": "提供的推文里均线不是核心，但他会做趋势切换式确认；只是相比波浪/Fib 明显是次要工具，因此权重较低。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.63,
+      "evidence": "多次对 GOLD/BTC 做末升浪衰竭判断，如“Gold has reached the 5th wave (V) after a historical rally. The next expectation: a strong corrective decline”以及“completed five-wave impulsive structure peaking at 124,474, followed by an Irregular Flat correction”。"
+    },
+    {
+      "id": "cap_050_three_drives_pattern",
+      "weight": 0.19,
+      "evidence": "虽未直接频繁点名 three drives，但他高度依赖对称推进、波段分形和终结结构，和三推动/延展目标投射的思路接近；属于弱使用。"
+    },
+    {
+      "id": "cap_053_doji_reversal",
+      "weight": 0.16,
+      "evidence": "推文里有“小实体替代大实体”作为趋势变化线索：“When the Trend Is Up & We See Big Candles, Then The Price Starts Forming Smaller Candles… Two Possibilities: 1. A Trend Reversal Is Coming 2. Low Liquidity”，属于 K 线衰竭观察。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.54,
+      "evidence": "大量分析本质是在识别 impulsive down move / corrective bounce，如“$GOLD Is Expected To Plunge Towards The $3190 Level Within The Next Few Hours”与“bearish wave ... drop toward $95,xxx”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.56,
+      "evidence": "同样也频繁做顺趋势看多波段，如“potential continuation of wave (v) of (iii)”和“expectation of a price increase to reach wave (iii)”，说明他是先判定趋势阶段，再嵌套波浪。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_elliott_corrective_count",
+      "name": "Elliott Corrective Wave Counting",
+      "name_zh": "艾略特修正浪计数",
+      "type": "structural_bias",
+      "description": "Identifies corrective structures such as wave II/IV pullbacks, zigzags, flats, irregular flats, and complex corrections, then projects the next impulsive leg or deeper retracement.",
+      "description_zh": "识别 wave II/IV 回调、zigzag、flat、irregular flat 等修正结构，并据此推演下一段推动浪或更深回撤。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "conditional_reversal_or_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "“currently trading within wave (c) of the corrective wave (IV)”；“wave (iii) has been completed, and a retracement within wave (iv) is expected”；“followed by an Irregular Flat correction (a–b–c)”。"
+    },
+    {
+      "proposed_id": "cap_new_elliott_diagonal_pattern",
+      "name": "Elliott Leading/Ending Diagonal",
+      "name_zh": "艾略特引导/终结楔形",
+      "type": "pattern_setup",
+      "description": "Uses leading and ending diagonals as early-trend initiation or terminal-exhaustion structures inside Elliott Wave counts.",
+      "description_zh": "把引导楔形和终结楔形作为 Elliott Wave 计数中的趋势起始或末端衰竭结构。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "reversal_or_acceleration",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "他单独发过“Leading Diagonal In Elliott Wave Theory”与“Ending diagonal in Elliott Wave Theory”。"
+    },
+    {
+      "proposed_id": "cap_new_ict_pd_array_rule",
+      "name": "ICT PD Array Violation Rule",
+      "name_zh": "ICT PD Array 三层失守规则",
+      "type": "risk_rule",
+      "description": "Tracks stacked ICT PD arrays; when three nearby arrays fail or are violated, the setup is considered structurally compromised and stops/partials must be adjusted.",
+      "description_zh": "跟踪连续排列的 ICT PD Arrays；当相邻三层阵列被跌破/破坏时，认为结构失效，需要调整止损和减仓。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_off",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "“3 PD Array Rule ✔️ ‘When 3 PD Arrays are violated, your ass is next.’ ... Learn where to keep yours stops, partial according to ICT”。"
+    },
+    {
+      "proposed_id": "cap_new_candle_compression_exhaustion",
+      "name": "Candle Compression Exhaustion",
+      "name_zh": "大K转小K的动能衰竭",
+      "type": "indicator_rule",
+      "description": "After a strong directional trend marked by large candles, a sequence of smaller candles is treated as either reversal warning or liquidity compression before a breakout.",
+      "description_zh": "趋势中先出现大实体推进，随后连续缩小 K 线实体，被视为反转预警或流动性压缩后的爆发前兆。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "caution_or_reversal_watch",
+        "horizon": "swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "“When the Trend Is Up & We See Big Candles, Then The Price Starts Forming Smaller Candles… Two Possibilities: 1. A Trend Reversal Is Coming 2. Low Liquidity”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Wave 3 is coming... Don’t miss it!",
+      "rule_paraphrased": "偏好捕捉最有爆发力的主升/主跌段，而不是只做均值回归。",
+      "category": "framework"
+    },
+    {
+      "quote": "We Said $3190, They Said We Were Dreaming…  Now $GOLD Is Walking Down, Step By Step!",
+      "rule_paraphrased": "喜欢提前给明确目标位，并在事后用目标兑现来强化方法可信度。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Pin Bar Candle: The Secret to Strong Reversals!  Do You Use It In Your Trading?",
+      "rule_paraphrased": "虽然主框架是波浪，但会用单根反转 K 线做战术级确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "When the Trend Is Up & We See Big Candles, Then The Price Starts Forming Smaller Candles…  ▪️Two Possibilities: 1. A Trend Reversal Is Coming 2. Low Liquidity",
+      "rule_paraphrased": "他把动能衰减先体现在 K 线实体压缩上，而不是先看宏观或链上。",
+      "category": "mantra"
+    },
+    {
+      "quote": "3 PD Array Rule ✔️  “When 3 PD Arrays are violated, your ass is next.”",
+      "rule_paraphrased": "一旦关键结构连续失守，就认为交易前提无效，应该收缩风险。",
+      "category": "risk_first"
+    }
+  ],
+  "unique_traits": "他本质上是一个以 Elliott Wave 为核心叙事引擎的图表派，几乎所有市场结论都被包装成推动浪/修正浪/终结浪的结构判断。与很多泛 TA 账号不同，他会反复把 61.8% Fibonacci、对称波段和具体浪级编号绑定在一起，形成非常模板化但可复制的分析产出。另一个明显特征是账号内容噪音极大，交易推文只占一部分，因此更像“内容流里夹带高辨识度 Elliott Wave 帖子”的创作者型交易员。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "is expected to plunge",
+      "Wave 3 is coming",
+      "Don’t miss it",
+      "The next expectation",
+      "will hit",
+      "setting the stage for a strong bullish reversal",
+      "played out perfectly"
+    ],
+    "low_conviction_phrases": [
+      "two possible scenarios",
+      "could reach",
+      "might be headed next",
+      "potential continuation",
+      "appears",
+      "likely",
+      "are we about to see"
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "handle": "CryptoNTez",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "macro",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "TAO",
+    "ADA",
+    "SOL",
+    "alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.84,
+      "evidence": "他反复把 ETF 资金流当成 BTC 方向催化剂来讲。例：2024-02-28 写“$BTC It wont stop going up until they stop buying half of the monthly emission every day.”；2024-04-29 又写“ETF flows stagnant since March, halting upward trend.”；2026-04-11 转发“BITCOIN ETFS SEE $786 MILLION INFLOWS”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.82,
+      "evidence": "他会明确讲止损并接受被打掉。2026-04-10 关于 TAO： “Elimdeki poz stop oldu... 243 altı stoplarım”，说明他有清晰失效位，不恋战。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.78,
+      "evidence": "面对瀑布行情偏向等确认而不是硬接。2026-04-10 说“$TAO is nuking. Any news?!”；同日又说“Ill buy $TAO it if the trend shifts but for now it still looks terrible”；图 2 直接把 TAO 的 5 分钟暴跌框成 -17.26% 的测量区，明显是把这种走势视作危险段。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.77,
+      "evidence": "他非常重视下降趋势中的 lower highs / rejection。图 3 把 BTC 画成下降通道，连续标注“$126k rejection / $97k rejection / $73k rejection”，并给出更低支撑。2026-04-10 更直接说“$BTC is now preparing for another dump to $45k next week.”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.73,
+      "evidence": "当趋势翻多时他会顺势持有。2025-10-03 回复“weekly buy since May”；2024-12-06 写“120k soon... $BTC is going much higher and much faster than we think”；多条 1D/2D UCTS Buy 推文都是趋势转多后的跟随。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.69,
+      "evidence": "他经常用区间、reclaim、上下沿来做方向判断。2024-05-01 写“Breaking out of the range... If this bearish trend helds (not reclaiming the range), then aiming toward 52k seems not that crazy”；2024-04-29 也写“now fluctuating within upper and lower ranges”。图 7 同样是标准箱体支撑阻力框架。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.68,
+      "evidence": "他明确使用 bull trap / 假突破叙事。2026-04-10 说“$BTC just followed this chart into a $73K bull trap.”；图 3 也是在下降通道上沿附近标出 rejection，符合假突破失败后回落的处理方式。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.63,
+      "evidence": "他会用 RSI 背离做大级别反转依据。2026-04-11 写“$QNT... A confirmed BULLISH DIVERGENCE ON THE MONTHLY TIMEFRAME!”；2024-08-21 写“$MATIC RSI on the weekly at bottom levels”。图 7 也专门保留了 RSI 面板。"
+    },
+    {
+      "id": "cap_024_wyckoff_accumulation",
+      "weight": 0.58,
+      "evidence": "他直接使用 spring 语言。2026-04-11 说“$XRP vs. $BTC is working on a spring on this almost 500 days long accumulation range. We will likely get a bounce from the 0.618 fib...”，这基本就是威科夫吸筹 + spring。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.47,
+      "evidence": "虽然他不常用 ICT 术语，但图像表达明显偏向‘前支撑失守后变阻力’。图 3 的多个水平位先作为支撑，后续在反弹中变成 rejection；图 7 的 260.22 / 302.35 一带也是标准的支撑阻力翻转观察。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.44,
+      "evidence": "他并不只追突破，也会强调等回踩。2026-04-11 写“Hype obvious play... Ofc some of ts are already up, so bidding pullbacks might be better”；这说明他倾向在方向明确后等回调接续。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.42,
+      "evidence": "他会把 BTC 放到减半周期叙事里看。2024-04-20 发“Happy Halving $BTC”；图 5 是 BTC 月线级别的长期节奏图，和他频繁做 monthly/weekly 框架一致。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.31,
+      "evidence": "他偶尔会做 BTC 到山寨的轮动判断。2026-04-11 说“While $BTC made a lower low... ETH held the line... the next rally could be led by #ETH and quality alts”；2026-04-10 又说“je vois pas pourquoi on aurait pas une altseason”。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_ucts_multitimeframe_alignment",
+      "name": "UCTS Multi-Timeframe Alignment",
+      "name_zh": "UCTS 多周期共振信号",
+      "type": "indicator_rule",
+      "description": "Uses the proprietary UCTS indicator across 1D, 2D, weekly, and monthly charts, and upgrades conviction when multiple timeframes flash buy or sell in the same direction.",
+      "description_zh": "使用 UCTS 专有指标在 1D、2D、周线、月线多周期上寻找同向买卖信号；当多个周期共振时显著提高交易确信度。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "trend_follow",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-07-15 “$BTC Flashing a 1D UCTS Buy signal”；2024-07-17 “1D Buy confirmed, 2D UCTS Buy Flashing”；2024-06-24 “UCTS signalled the sell on the 1D and 2D way before the drop”；图 5 月线也直接显示 UCTS Buy/Sell 标签。"
+    },
+    {
+      "proposed_id": "cap_new_descending_channel_breakout_cluster",
+      "name": "Synchronized Alt Down-Channel Breakout",
+      "name_zh": "山寨同步下降通道突破",
+      "type": "pattern_setup",
+      "description": "Tracks multiple altcoins forming similar descending channels and treats broad simultaneous breakouts as a regime shift signal rather than isolated coin-specific moves.",
+      "description_zh": "跟踪多个山寨币相似的下降通道结构，把大范围同步上破视为市场风格切换，而不是单币偶发走势。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_alts",
+        "horizon": "swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "2024-08-20 写“Many alts, repeating the same pattern, are attempting to break out from their downward channels”；2024-08-22 又说“most setups mirror each other”。"
+    },
+    {
+      "proposed_id": "cap_new_range_reclaim_then_target_opposite_bound",
+      "name": "Range Reclaim Targeting",
+      "name_zh": "区间收复后看对侧边界",
+      "type": "structural_bias",
+      "description": "When price loses a major range and fails to reclaim, target the opposite side; when price reclaims the range, invalidate bearish continuation and rotate targets upward.",
+      "description_zh": "价格跌破关键区间后若不能快速收复，则以区间另一端为目标；若成功收复，则否定空头延续并重新上修目标。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "conditional",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "2024-05-01 “If this bearish trend helds (not reclaiming the range), then aiming toward 52k seems not that crazy”；2024-04-29 也以 BTC 上下区间为核心框架。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Macro and liquidity drive crypto. That's it.",
+      "rule_paraphrased": "上层信念是宏观流动性决定大方向，单一叙事和局部消息不应凌驾于总流动性框架之上。",
+      "category": "framework"
+    },
+    {
+      "quote": "It wont stop going up until they stop buying half of the monthly emission every day.",
+      "rule_paraphrased": "把供需失衡尤其是 ETF 持续吸收现货供给，当作趋势延续的核心理由。",
+      "category": "framework"
+    },
+    {
+      "quote": "Ill buy $TAO it if the trend shifts but for now it still looks terrible",
+      "rule_paraphrased": "不因叙事或信仰逆势接飞刀，先等趋势切换再考虑参与。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Elimdeki poz stop oldu şu an önemli bi bölgede olduğu içim bi tur daha denedim. 243 altı stoplarım",
+      "rule_paraphrased": "止损被触发就认错，若关键位仍有效可以重试，但必须重新定义失效位。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Mm, trusting the system 🤷‍♂️ UCTS signalled the sell on the 1D and 2D way before the drop.",
+      "rule_paraphrased": "高度依赖自己的指标系统，并把多周期先行信号当成交易执行锚点。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像纯价格行为派那样只画线，也不像纯宏观派那样只讲流动性；他的核心是把专有指标 UCTS、多周期趋势框架、区间/通道结构和 ETF 流量叙事拼在一起。与很多 TA 账号不同，他明显会做‘同构结构批量扫描’，经常说很多山寨在重复同一模式。另一方面，他又带有明显的内容创作者属性，喜欢用高确定性的口吻输出大方向和可传播结论。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "confirmed",
+      "obvious play",
+      "just followed this chart into a $73K bull trap",
+      "preparing for another dump to $45k",
+      "trusting the system",
+      "it still looks terrible",
+      "weekly buy",
+      "Mother Of All Signals"
+    ],
+    "low_conviction_phrases": [
+      "possibly",
+      "likely",
+      "idk",
+      "not that crazy",
+      "might be better",
+      "trying to maintain a neutral stance",
+      "let see how it goes from here",
+      "🤞"
+    ]
+  }
+}

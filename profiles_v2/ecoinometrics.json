@@ -1,0 +1,184 @@
+{
+  "handle": "ecoinometrics",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "cycle",
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "MSTR",
+    "BTC_ETF",
+    "NASDAQ100",
+    "GOLD"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.98,
+      "evidence": "这是他最核心的框架之一，反复把 ETF 净流入/流出直接当成 BTC 价格驱动器。例：2024-04-27 “When the demand coming from the ETFs is flat, Bitcoin gets stuck.”；2025-03-13 “Bitcoin ETFs have seen outflows on 20 of the last 30 trading days.”；图 7 直接用 ETF 持币累积变化解释 BTC 卡在 60k。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.9,
+      "evidence": "图 1 直接把第 4 次减半后的路径与前三个周期叠加比较，并用 ‘post-halving range’ 判断当前所处阶段；2025-03-17 推文也明确写 “Bitcoin's growth trajectory for this 4th halving cycle is now much below the historical range set by previous halving cycles.”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.8,
+      "evidence": "他经常把 BTC 放进跨周期、跨减半的长期比较框架，而不是短线 K 线形态。2024-02-14 “The last Bitcoin bull market came in below expectations. But now that we are nearing the end of this halving cycle BTC is catching up fast.”；图 1 同样是典型 4 年周期视角。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.78,
+      "evidence": "他持续把 BTC 当作风险资产去看，与美股尤其科技股同步。2025-03-03 “Given the strong link between Bitcoin and US tech stocks, Bitcoin's long-term recovery depends...”；2025-07-19 “With the NASDAQ 100 pushing to new highs, Bitcoin is shedding one of its key headwinds.”；图 2 直接用 Nasdaq 100 建模 BTC 公允价值。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.74,
+      "evidence": "他的宏观框架高度依赖金融条件、利率和流动性松紧。2025-06-26 “Bitcoin performs best when financial conditions are loose.”；2025-06-24 “The Fed still expects two rate cuts this year. That keeps the door open for more Bitcoin upside.”；2024-06-20 也用未来降息路径解释 BTC。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.73,
+      "evidence": "他反复用货币供应扩张解释 BTC 的长期 beta。2024-11-29 “The US M2 money supply is growing. Historically, this has been positive for Bitcoin.”；2024-12-30 “With M2 year-on-year growth at 3.7% and rising...”；2024-10-25 “Bitcoin tends to rise with global liquidity.”"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.62,
+      "evidence": "他明确跟踪 BTC dominance，并把其视为是否进入 alt season 的开关。2024-08-25 “Bitcoin's dominance continues to rise... We haven't seen anything like that in this cycle so far.”；2025-07-22 “Bitcoin’s dominance has slipped slightly... but that doesn’t change the bigger picture.”"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.5,
+      "evidence": "他常把 BTC 与黄金放在储值/避险/货币贬值框架里比较。2024-03-09 “Meanwhile gold is making a new all-time high but the GLD ETF is bleeding cash.”；2025-01-20 “Bitcoin has delivered higher total returns and better risk-adjusted returns than gold.”；2024-08-21 明确说 BTC 不是 CPI hedge，而是 debasement hedge。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.34,
+      "evidence": "他虽不是传统形态派，但会用基础趋势结构定义 regime。2024-10-23 “Bitcoin has been in a pattern of lower highs and lower lows since its all-time high in March. If BTC can stay above $65,000, this pattern would break...” 这是典型趋势结构判断。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.32,
+      "evidence": "同样会在确认突破和持续动量时切换到 bull regime。2024-10-22 “If this Bitcoin breakout is genuine and we're entering a true bull market phase, the target price looks very attractive.”；2024-03-26 “The Bitcoin bull market is back and so is volatility.”"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_nasdaq_implied_fair_value",
+      "name": "Nasdaq-Implied Fair Value Model",
+      "name_zh": "纳指隐含公允价值模型",
+      "type": "macro_correlation",
+      "description": "Model Bitcoin fair value from its historical log-linear relationship with the Nasdaq 100, then trade deviations as discount/premium regimes.",
+      "description_zh": "基于 BTC 与纳斯达克100长期对数线性关系估算公允价值，把现价相对模型价的折价/溢价当作交易与择时框架。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "mean_reversion_to_model",
+        "horizon": "position",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "图 2 标题直接是 “Bitcoin’s Nasdaq-Implied Fair Value: $156,000”，并标注 “BTC at a 31% discount”；2025-03-26 推文也说 “There is a statistically significant link between Bitcoin's log-price and the NASDAQ 100.”"
+    },
+    {
+      "proposed_id": "cap_new_drawdown_duration_model",
+      "name": "Drawdown Depth-to-Duration Model",
+      "name_zh": "回撤深度-修复时长模型",
+      "type": "cycle_time",
+      "description": "Estimate expected recovery duration from the percentage depth of a Bitcoin drawdown using historical scatter/regression.",
+      "description_zh": "依据历史样本中 BTC 回撤幅度与修复耗时的关系，估计当前回撤大概还要持续多久。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "patience_not_immediate_reversal",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "图 8 直接写 “The deeper Bitcoin’s drawdowns The longer it takes to resolve”；2026-03-26 推文也说 “every additional 10% of drawdown adds about 80 days to the total duration.”"
+    },
+    {
+      "proposed_id": "cap_new_corporate_btc_treasury_acceleration",
+      "name": "Corporate Treasury Accumulation Acceleration",
+      "name_zh": "企业比特币金库加速吸筹",
+      "type": "structural_bias",
+      "description": "Track public companies accumulating BTC, especially acceleration in treasury purchases, as a structural demand and narrative multiplier.",
+      "description_zh": "跟踪上市公司尤其是 MicroStrategy 一类主体的 BTC 金库扩张速度，把其视为结构性需求和叙事放大器。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_structural",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "图 3、图 6 都是 MicroStrategy 持仓垂直上升；2025-03-24 推文 “MicroStrategy just added another 7,000 Bitcoin to their treasury.”；2024-11-25 “Bitcoin's price isn't the only thing going vertical these days. MicroStrategy's Bitcoin holdings are rising at a blazing pace.”"
+    },
+    {
+      "proposed_id": "cap_new_fed_communication_index",
+      "name": "Fed Communication Tone Index",
+      "name_zh": "联储沟通语气指数",
+      "type": "macro_correlation",
+      "description": "Infer market risk regime from the hawkish/dovish tone of FOMC minutes, press conferences, and Fed communication rather than rates alone.",
+      "description_zh": "不只看是否降息，而是量化 FOMC 纪要、发布会和联储表述的鹰鸽语气来判断风险偏好与 BTC 顺风/逆风。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on_or_off_filter",
+        "horizon": "macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-08-23 “The Federal Reserve is the least hawkish they've been...”；2024-11-27 “The Federal Reserve is almost dovish.”；2025-01-09 “The Federal Reserve shifted from a nearly dovish stance in November back to moderately hawkish...”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "There is no such thing as diminishing returns. There are only assets with small total market size.",
+      "rule_paraphrased": "不要机械地因为市值变大就假设 BTC 涨不动；先看总可寻址市场和机构化渗透空间。",
+      "category": "mantra"
+    },
+    {
+      "quote": "When the demand coming from the ETFs is flat, Bitcoin gets stuck.",
+      "rule_paraphrased": "ETF 资金流是 BTC 中期价格的主驱动之一，没有持续净流入就不要期待顺畅趋势行情。",
+      "category": "framework"
+    },
+    {
+      "quote": "The deeper Bitcoin’s drawdowns, the longer they last.",
+      "rule_paraphrased": "回撤不仅看幅度，也看时间；跌得越深，修复周期通常越长，不能线性外推 V 反。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Bitcoin is the most effective hedge against currency debasement.",
+      "rule_paraphrased": "他把 BTC 的长期核心叙事定义为对货币贬值的对冲，而不是简单 CPI 通胀对冲。",
+      "category": "framework"
+    },
+    {
+      "quote": "This is the year of Bitcoin, not Ethereum.",
+      "rule_paraphrased": "在机构资金主导阶段默认优先配置 BTC 而不是 ETH，除非出现明确的轮动证据。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像传统画形态的 TA 交易员，更像把 BTC 当成一个由 ETF 资金流、宏观流动性、纳指 beta 和减半周期共同驱动的“可量化宏观资产”。他的图表几乎都是模型图、回归图、滚动流量图和跨周期对比图，而不是入场点精细化的 K 线 setup。另一个显著特征是强烈的 BTC-first 视角：他更愿意解释机构需求、货币贬值、MSTR/ETF 持仓集中，而不是追逐山寨短线叙事。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Historically, this has been positive for Bitcoin.",
+      "There is a statistically significant link",
+      "That’s a strong macro setup for Bitcoin.",
+      "This is exactly the kind of momentum needed to drive Bitcoin's price upward.",
+      "Bitcoin performs best when financial conditions are loose."
+    ],
+    "low_conviction_phrases": [
+      "If this breakout is genuine",
+      "could push higher",
+      "tends to",
+      "for now",
+      "not very encouraging",
+      "points to"
+    ]
+  }
+}

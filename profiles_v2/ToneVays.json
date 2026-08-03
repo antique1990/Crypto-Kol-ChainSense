@@ -1,0 +1,158 @@
+{
+  "handle": "ToneVays",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "macro",
+    "cycle",
+    "contrarian",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "position",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "SPX",
+    "DXY",
+    "GOLD",
+    "OIL",
+    "XMR"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.91,
+      "evidence": "2024-11-24 明确写到“based on your Twitter profile this is now your 3rd parabolic rise: 2017, 2021 & 2024”；2024-11-22 又在接近 100k 时说“I have Exited All My #Bitcoin Long Positions... sustaining a $100k break this year is unlikely”，典型是在抛物线加速末端主动减仓。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.84,
+      "evidence": "他反复用 2017/2021/2024 这组三个周期高点做类比；2024-04-19 还专门把减半定义为“a once in a 4 year #Bitcoin event #Halving2024”，说明 4 年周期是其核心框架之一。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.72,
+      "evidence": "2024-04-19 围绕 Halving2024 做长时间直播；其 2024 年多条推文都把 BTC 讨论放在 ETF + 减半后的阶段性背景下，明显使用减半作为阶段划分锚点。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.68,
+      "evidence": "2024-01-25 写“will $GBTC Selling continue to overwhelm the Market for weeks on end!”；2024-01-23 与 ARK 团队讨论 $ARKB；2024-04-28 直接判断某事件“0 effect on #Bitcoin price or the $BTC spot ETFs”，说明他把 ETF 流量当成 BTC 的重要交易代理变量。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.63,
+      "evidence": "2024-01-31、2024-06-12、2024-06-14 多次围绕 FOMC 利率决议做直播/Spaces，且总是把 BTC 与美联储事件放在一起评估，属于明显的事件驱动仓位管理。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "大量标题式推文把“$BTCUSD $SPX”并列，例如 2024-02-26、2024-03-09、2024-03-23、2024-06-17，说明他用股市风险偏好作为 BTC 方向确认器。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.57,
+      "evidence": "同样在多条市场回顾中固定同时看“$BTCUSD $DXY”，如 2024-02-26、2024-03-23、2024-05-29、2024-06-12、2024-06-17，属于典型 BTC vs 美元强弱联动框架。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.74,
+      "evidence": "2025-08-12 直接写“#Monero ... is currently down 94% with significant downside to go”；图 8 是 XMRBTC 月线，大框标出“-94.05%”并继续画下行箭头，明显是用长期下降趋势/创新低结构来定义不可碰的弱势资产。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.52,
+      "evidence": "2024-01-30 说“#Bitcoin HODLing Strong Above $43k”，2024-02-18 说“#Bitcoin Holding Above $50k Nicely!!!”，2024-03-27 说“#Bitcoin Charts Still Bullish!”，说明他会把‘站稳关键价位并维持结构’作为趋势延续判据。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.61,
+      "evidence": "2024-11-22 在 97,800 直接公开“Exited All My #Bitcoin Long Positions”；不是死扛预判，而是先退出再等“Buy the Dip sub $90k”，体现出交易仓位与长期信仰分离、先控制回撤。"
+    },
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.46,
+      "evidence": "图 5 的 BTCUSD 图上能看到典型的 1-2-3-4-5 波段标注，说明他至少会用艾略特波浪编号来解释推动段与回调段，而不只是裸 K 和水平位。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.49,
+      "evidence": "他的表达经常不是盲目抄底，而是等条件：2024-01-25 “Is the MRI Buy Finally Going to Show #Bitcoin Signs of Life!”；2024-11-22 则是先退出、等待“Buy the Dip sub $90k”，更像等确认而不是接刀。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_mri_exhaustion_count",
+      "name": "MRI Sequential Exhaustion",
+      "name_zh": "MRI 连续计数衰竭信号",
+      "type": "indicator_rule",
+      "description": "A proprietary-style bar-count exhaustion framework that flags trend fatigue after a sequence of consecutive closes/bars, then waits for confirmation to mark a buy or sell setup.",
+      "description_zh": "一种连续 K 线计数的趋势衰竭框架；先用连续收盘/连续 bar 统计识别趋势耗尽，再等待确认生成买入或卖出信号。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "reversal",
+        "horizon": "swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "2024-01-25：“Is the MRI Buy Finally Going to Show #Bitcoin Signs of Life!”；2024-06-17：“#Bitcoin Rallies OFF the MRI BUY”。MRI 是他反复点名的个人框架，但 seed 里没有。"
+    },
+    {
+      "proposed_id": "cap_new_btc_maxi_relative_filter",
+      "name": "Bitcoin Maxi Relative-Value Filter",
+      "name_zh": "比特币本位相对价值过滤器",
+      "type": "structural_bias",
+      "description": "A structural filter that heavily discounts altcoin rallies unless they outperform on long-term relative charts and pass a credibility test; weak alts are treated as secular shorts or permanent avoids.",
+      "description_zh": "一种强烈的比特币本位过滤器：除非山寨币能在长期相对强弱图上证明自己并通过可信度筛选，否则默认视为长期劣质资产、结构性回避或做空对象。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bearish",
+        "horizon": "position",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2019 年的 XRP 图文在嘲讽“Ripple's Success Plan”；2025-08-12 说 XMR“down 94% with significant downside to go”；他对多数山寨币是先做结构性否定，再谈交易。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "I have Exited All My #Bitcoin Long Positions 10 minutes ago at $97,800. Still think sustaining a $100k break this year is unlikely! * Will be more than happy to be wrong OR Buy the Dip sub $90k!",
+      "rule_paraphrased": "接近情绪亢奋整数关口时，宁可先兑现并接受踏空，也不在抛物线末端硬扛。",
+      "category": "framework"
+    },
+    {
+      "quote": "based on your Twitter profile this is now your 3rd parabolic rise: 2017, 2021 & 2024",
+      "rule_paraphrased": "周期内出现第 3 次类似抛物线加速时，要默认它更接近分配区，而不是无脑追高。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Confidence in #Monero has been on the decline since its 2017 Peak 😂. It is currently down 94% with significant downside to go.",
+      "rule_paraphrased": "对长期相对弱势且叙事衰退的资产，默认继续走弱，不做价值幻觉抄底。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "#Bitcoin better NOT break $100k while I'm in the AIR 🤦🤬.... Landing about 6pm ET, current Price $98,500",
+      "rule_paraphrased": "他对关键整数位和突破时点极其敏感，会把交易执行与事件时间窗绑定起来看。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是典型只画形态的加密 TA，而是把老派比特币周期观、宏观事件窗和个人计数指标 MRI 叠在一起用。与此同时，他带有非常强的比特币本位与反山寨过滤器，愿意在市场最亢奋时公开减仓，而不是维持永远看多的人设。大量内容又以直播/Spaces 形式输出，使他兼具交易员和宏观内容创作者双重属性。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "I have Exited All My #Bitcoin Long Positions",
+      "sustaining a $100k break this year is unlikely",
+      "significant downside to go",
+      "0 effect on #Bitcoin price",
+      "better NOT break $100k"
+    ],
+    "low_conviction_phrases": [
+      "I believe",
+      "Looks like",
+      "Am I missing something",
+      "probably",
+      "let's review some charts"
+    ]
+  }
+}

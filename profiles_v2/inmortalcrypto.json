@@ -1,0 +1,219 @@
+{
+  "handle": "inmortalcrypto",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "structural",
+    "pure_TA",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "TAO",
+    "FLOKI",
+    "DSYNC",
+    "LINK"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.95,
+      "evidence": "[2024-12-25] \"Time from TOP to TOP = 1400 days avg... TOP will be between September - October 2025 $BTC\"；[2025-08-28] \"All past bull markets lasted 1,060 days\"；[2026-01-29] \"4-year cycle is over, but if not Today is day 115 of the bear market\"。他反复用历史周期长度来推演顶部/熊市进度。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.86,
+      "evidence": "[2024-01-29] \"80 days for the halving\"；[2024-06-24] \"+371% up from bottom -17% from ATH... it is a market cycle\"；[2024-05-29] \"Boring June-July... Uptrend resume in August... Parabolic trend all Q4\"。他明显把减半后的阶段切分为盘整、恢复上涨、抛物线加速。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.84,
+      "evidence": "[2025-05-26] \"nobody cares about $BTC price, we just want an altseason\"；[2025-05-22] \"Remember: $BTC cool off = Altcoins pump\"；[2025-01-31] \"we will see multiple altseasons, 1-5 narratives at a time\"。他经常把 BTC 横盘/冷却视为山寨轮动触发器。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.82,
+      "evidence": "图7是 BTC 在蓝色箱体底部附近反复测试的区间图；图3是大级别上涨后进入右侧红色整理箱；[2026-02-24] \"this is just a range Range low is broken, so it's a 'no trade zone' for me. I'll wait for a reclaim to trade a range low to mid range move\"。他非常强调区间低点、箱体边界和中轴交易。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.8,
+      "evidence": "[2025-03-27] \"Meanwhile $ETH ranging between 2-4k for 1500 days\"；[2025-12-25] \"40 days accumulation, compression and HL's... first move after a consolidation tends to be a trap\"；多张图都先画长时间横盘/压缩，再讨论方向。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.79,
+      "evidence": "[2024-12-27] \"Q1 - Slow grind up + starting of parabola Q2 - Parabolic move + TOP\"；[2024-05-29] \"Parabolic trend all Q4\"；图1、图4都直接画出后续抛物线式加速路径。他不仅预期抛物线阶段，还把它当周期尾声特征。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.74,
+      "evidence": "[2025-01-30] \"I have never seen a double bottom as clear as this one in my entire life. $1 is the magnet. $DSYNC\"；[2025-01-30] \"3000 was the bottom. $ETH\"。双底/二次探底是他高频使用的底部确认框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.71,
+      "evidence": "[2024-09-30] \"Everyone is a gangster until it's time to buy the dip.\"；[2025-03-30] \"They will try to shake you out, but this is the bottom\"；[2025-12-25] \"first move after a consolidation tends to be a trap\"。他经常把下破/先手突破解释为扫止损和洗盘，而非趋势确认。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.69,
+      "evidence": "[2025-12-25] \"Most impatient ones will chase the breakout. Be careful, first move after a consolidation tends to be a trap\"；[2024-05-29] \"June-July (chop + some traps for both sides)\"。他反复提醒盘整后的第一脚是假突破概率高。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.66,
+      "evidence": "图7与图4都用蓝色水平带标记前结构位，价格回踩该带后企稳/等待收复；[2026-02-24] \"I'll wait for a reclaim\"。这类“破位后收回/支撑阻力互换”是他常见画图方式。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.65,
+      "evidence": "[2025-05-27] \"Direction = ⬆️ $ETH\"；[2024-10-29] \"Here we go... we will take off shortly. $BTC\"；图1、图4都是在中继整理后直接延续主升的路径推演。他默认在牛市里优先寻找顺势延续。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.62,
+      "evidence": "[2025-02-23] \"Just opened an $ETH long. Risk: $2500 Reward: $12500 Planning to double position size if we find acceptance above 2.9k\"；[2026-02-24] \"Range low is broken, so it's a 'no trade zone' for me\"。说明他会明确失效位，并在未收复前放弃交易。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.57,
+      "evidence": "[2025-02-23] 公开给出 \"$ETH long\" 的固定风险与收益比：\"Risk: $2500 Reward: $12500\"，体现他会先框定亏损额度，再考虑加仓条件。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.49,
+      "evidence": "图1在回调结构上明确标出回撤层级，虽然图上写的是 0.5，但整体框架就是用斐波回撤区来找二次起涨位置；这说明他会用回撤比率辅助判断支撑区。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.34,
+      "evidence": "推文中较少直接提均线，但其“reclaim/acceptance above level”语言与结构收复逻辑高度一致；更偏价格结构而非指标，因此权重较低。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_consolidation_expansion",
+      "name": "Box Consolidation Expansion",
+      "name_zh": "箱体压缩后扩张",
+      "type": "pattern_setup",
+      "description": "Identify long horizontal consolidation or compression boxes and project a directional expansion after enough time has been spent building energy inside the box.",
+      "description_zh": "识别长时间横向箱体或压缩区，认为价格在箱内蓄能，盘整越久，后续离开箱体后的扩张越大。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "continuation_or_breakout",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-07-30] \"The bigger the consolidation, the bigger the expansion. $BTC\"；[2024-04-30] \"This long consolidation will be the last of this bull market\"；图1、图4、图7都先画箱体/压缩区再画扩张路径。"
+    },
+    {
+      "proposed_id": "cap_new_calendar_seasonality_crypto",
+      "name": "Crypto Calendar Seasonality",
+      "name_zh": "加密月度季节性",
+      "type": "cycle_time",
+      "description": "Use repeated monthly return tendencies such as weak September and strong October/Q4 to shape directional bias and timing.",
+      "description_zh": "利用月份收益分布形成方向偏置，例如 9 月偏弱、10 月和 Q4 偏强，用于择时。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "seasonal_long_or_caution",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2025-08-30] \"September is bad October is good $BTC\"；图5、图6都是月度回报热力图，并高亮了 9-10 月和 Q4。"
+    },
+    {
+      "proposed_id": "cap_new_reclaim_acceptance_trigger",
+      "name": "Level Reclaim With Acceptance",
+      "name_zh": "关键位收复并站稳触发",
+      "type": "structural_bias",
+      "description": "Do not trade the first touch after a breakdown; wait for price to reclaim a lost level and show acceptance above it before entering.",
+      "description_zh": "关键位跌破后不急于抄底，等待价格重新收复失守位置并出现站稳/接受，再启动交易。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "reversal_or_range_reentry",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "[2025-02-23] \"Planning to double position size if we find acceptance above 2.9k\"；[2026-02-24] \"Range low is broken... I'll wait for a reclaim\"。"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_disbelief_ath",
+      "name": "ATH Disbelief Divergence",
+      "name_zh": "新高但情绪冷淡背离",
+      "type": "structural_bias",
+      "description": "When price is near or at all-time highs but sentiment remains muted or bearish, treat it as a bullish continuation sign rather than a top.",
+      "description_zh": "当价格接近或创出历史新高，但市场情绪依旧冷淡或悲观时，将其视为看多延续而非见顶信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "position",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2025-05-22] \"New ATH + silence = All sidelined\"；[2025-06-30] \"It's the first time $BTC is at ATH levels but sentiment is like we are in a bear market\"。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "They will try to shake you out, but this is the bottom. Save the tweet. $BTC",
+      "rule_paraphrased": "他把剧烈回撤和恐慌更多解释为洗盘，而不是趋势终结；偏向在恐慌中找底。",
+      "category": "framework"
+    },
+    {
+      "quote": "The bigger the consolidation, the bigger the expansion. $BTC",
+      "rule_paraphrased": "长时间盘整不是坏事，而是趋势下一段大行情的蓄能过程。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Everyone is a gangster until it's time to buy the dip.",
+      "rule_paraphrased": "真正的优势来自在市场最难受的时候执行，而不是事后口嗨。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Emotions aside, this is just a range. Range low is broken, so it's a 'no trade zone' for me. I'll wait for a reclaim to trade a range low to mid range move",
+      "rule_paraphrased": "先做结构分类；区间失守后不交易，等收复确认再回到区间逻辑。",
+      "category": "framework"
+    },
+    {
+      "quote": "Most impatient ones will chase the breakout. Be careful, first move after a consolidation tends to be a trap",
+      "rule_paraphrased": "盘整后的第一脚突破不追，优先提防假动作和诱多/诱空。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和很多只会画形态的 TA 交易员不同，明显把“周期时间框架 + 箱体结构 + 市场情绪反身性”揉在一起用，尤其擅长把漫长盘整解释成牛市中继。另一个鲜明特征是强烈的多头叙事与逆向情绪表达：他经常在市场怀疑、麻木、回撤时给出高置信底部/延续判断，并把 ALT season 轮动视为 BTC 周期的自然外溢。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "this is the bottom",
+      "save the tweet",
+      "direction = ⬆️",
+      "local bottom is in imo",
+      "price discovery soon",
+      "teleport",
+      "send it higher",
+      "this one will run hard",
+      "$1 is the magnet",
+      "we will take off shortly"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "maybe",
+      "what if",
+      "feels like",
+      "on the table",
+      "most likely scenario",
+      "I could be wrong, time will tell",
+      "small reset",
+      "something like this",
+      "I can imagine a scenario"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "handle": "Jiangzhuoer2",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "structural",
+    "pure_TA",
+    "content_creator",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.94,
+      "evidence": "他明确写过“时间预测对了（21年底），价格过于乐观了：）”，这是典型的先看时间窗口、再看价格幅度的周期派表述；附图也更像大级别阶段划分，而不是短线入场图。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.91,
+      "evidence": "“21年底”这一时间锚点本身就对应 BTC 上一轮四年周期顶部预期；三张图里多次是完整牛熊段落/顶部到底部的结构示意，符合四年周期框架。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.82,
+      "evidence": "附图中多处出现黑色‘山峰/双峰/圆弧顶’式示意，后面接明显回落路径，说明他在用抛物线加速后衰竭反转的框架来解释顶部。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.72,
+      "evidence": "图片不是微观择时，而是把一整段上涨阶段单独拿出来讲结构，说明他先做大级别“强势上升趋势”识别，再讨论后面的见顶。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.69,
+      "evidence": "三张图都带有从顶部转入下行阶段的路径示意，重点是趋势切换后的风险，而不是在下跌中频繁抄底。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.64,
+      "evidence": "从附图的表达方式看，他更强调顶部识别和下跌阶段的回避；配合“价格过于乐观了”的复盘语气，明显不是盲目追高或接飞刀型。"
+    },
+    {
+      "id": "cap_005_head_shoulders_top",
+      "weight": 0.58,
+      "evidence": "附图里反复出现类似双峰/头肩顶轮廓的黑色顶部示意，且讲的是大级别见顶结构，不是单根 K 线信号。"
+    },
+    {
+      "id": "cap_007_double_top",
+      "weight": 0.56,
+      "evidence": "部分图形更接近双顶或二次冲顶失败后的下跌路径，说明他会把顶部的二次确认当成重要结构证据。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.41,
+      "evidence": "图里若干位置像是先冲高/刺破前高再回落的顶部演化示意，虽然不是 ICT 原教旨表达，但有明显‘先扫上方流动性再反转’的味道。"
+    },
+    {
+      "id": "cap_053_doji_reversal",
+      "weight": 0.34,
+      "evidence": "部分截图是 K 线级别拐点讲解，且放大了顶部区域的犹豫与转折，说明他会看关键位的K线反转确认，但这不是主框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_time_window_over_price_target",
+      "name": "Time Window Over Price Target",
+      "name_zh": "时间窗口优先于目标价",
+      "type": "cycle_time",
+      "description": "Prioritize identifying the likely top/bottom time window first, and treat price targets as secondary and lower-confidence outputs.",
+      "description_zh": "先判断周期顶部/底部的大致时间窗口，再把价格目标视为次级、低置信度变量；时间对了不代表价格一定打满。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "macro",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "“时间预测对了（21年底），价格过于乐观了：）”直接说明他把时间判断和价格判断拆开评估。"
+    },
+    {
+      "proposed_id": "cap_new_cycle_top_sketch_framework",
+      "name": "Cycle Top Sketch Framework",
+      "name_zh": "周期顶部草图框架",
+      "type": "structural_bias",
+      "description": "Use simplified annotated sketches of blow-off tops, double tops, and post-peak distribution paths to communicate macro market structure rather than relying on dense indicator panels.",
+      "description_zh": "用简化的顶部草图、双顶/圆弧顶、见顶后派发路径去表达宏观结构，而不是依赖大量技术指标面板。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "short_tilted",
+        "horizon": "position",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "三张附图的核心视觉元素都是大级别顶部轮廓、阶段划分和路径箭头，而不是短线指标。"
+    },
+    {
+      "proposed_id": "cap_new_archive_driven_postmortem",
+      "name": "Archive-Driven Postmortem",
+      "name_zh": "存档驱动复盘",
+      "type": "framework",
+      "description": "Build narratives and postmortems around preserved original records to resist hindsight revisionism, then use that archive to strengthen future theses.",
+      "description_zh": "通过保存原始记录来对抗事后改写，再基于这些存档做复盘与观点强化。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "他直接用了“【拒绝岁月史书】……最全解析+存档记录”这种表达，说明他非常重视保留原始证据。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "时间预测对了（21年底），价格过于乐观了：）",
+      "rule_paraphrased": "复盘时把“时间对不对”和“价格打没打到”分开评估，时间窗口优先级更高。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "【拒绝岁月史书】",
+      "rule_paraphrased": "强烈反感事后改写叙事，强调用原始记录做复盘与论证。",
+      "category": "mantra"
+    },
+    {
+      "quote": "你不可能永远欺骗所有人",
+      "rule_paraphrased": "对叙事、人物和市场说法保持怀疑，最终回到证据链与结果验证。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不像典型的高频 TA 号，更像周期派叙事交易员：先抓大级别时间窗，再用简化的结构草图解释顶部/底部演化。与很多指标堆叠型分析师不同，他的表达更重“阶段、转折、复盘证据”，价格目标反而被放在次要位置。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "时间预测对了（21年底）",
+      "拒绝岁月史书",
+      "你不可能永远欺骗所有人"
+    ],
+    "low_conviction_phrases": [
+      "价格过于乐观了：）"
+    ]
+  }
+}

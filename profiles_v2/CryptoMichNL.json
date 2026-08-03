@@ -1,0 +1,238 @@
+{
+  "handle": "CryptoMichNL",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "cycle",
+    "macro",
+    "structural",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BTC.D",
+    "OTHERS",
+    "LINK",
+    "ALT market cap"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.95,
+      "evidence": "反复把 BTC Dominance 当作山寨季开关。推文如 [2025-08-31]“First actual breakdown of the #Bitcoin dominance in three years. This #Altcoin bull has only started.”；图4/图6 也都直接画 BTC.D 周线阻力区、拐点和跌破后的轮动逻辑。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.9,
+      "evidence": "图1就是“Bitcoin: MVRV Z-Score 2YR Rolling”，并用历史低点箭头标出周期底部；[2026-01-30]“The current Z-Score of $BTC is lower than during the bear market bottom in 2015, 2018, COVID crash 2020 and 2022.” 明确用 MVRV/Z-score 做周期估值。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.82,
+      "evidence": "图2直接用“Bitcoin - Global Liquidity”与 BTC 价格拟合，并写出 fair value；[2025-11-30]“The fair value of #Bitcoin, based on liquidity, is $165K. It's currently sitting at $90K.” 说明他持续使用全球流动性/M2 类框架。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.8,
+      "evidence": "多次把收益率/美元回落与加密走强直接挂钩。[2025-01-30]“Yields down, Dollar down, $ETH vs. $BTC up strongly, #Altcoins surging.”；[2024-10-30]“weaker labor markets --> expecting the Yields to drop. Good times for #ETH.”"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.72,
+      "evidence": "他经常把美元走弱视作风险资产与 ETH/BTC 轮动催化。[2025-01-30]“Dollar down, $ETH vs. $BTC up strongly”; [2025-01-30]“a weaker Dollar and a strong bull run in #Bitcoin, #Ethereum, #Altcoins and commodities.”"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.7,
+      "evidence": "ETF 资金流是他判断趋势的重要事件因子。[2024-02-29]“#Bitcoin manages to reach a $670 million net inflow. Mostly, this is coming through Blackrock's ETF”; [2024-11-29]“The #Ethereum ETF is having a positive inflow... fairly underestimating the price rally.”"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.76,
+      "evidence": "他非常常用 bullish divergence 来抓轮动或底部。[2025-01-31]“Massive bullish divergence on $ETH / $BTC.”；[2024-10-30]“Massive bullish divergence on the 1D, 3D popping up.” 图3/图6顶部也都保留 RSI 面板。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.68,
+      "evidence": "他也会用 bearish divergence 判断轮动见顶。[2024-06-29]“#Bitcoin dominance might be peaked... Potential bearish divergence here too.”；[2024-11-30]“A massive bearish divergence and a 15% drop of $SOL vs. $ETH indicate the rotation is taking place.”"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.88,
+      "evidence": "“take liquidity”几乎是他的核心语言。[2024-12-30]“Liquidity taken and bounce back on #Altcoins and #Bitcoin.”；[2024-09-30]“Took the liquidity above the recent highs, and is coming back down.”；图3 直接画出回踩后从流动性区反弹。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.74,
+      "evidence": "图7 在 OTHERS/BTC 周线图上直接写“Same conclusion & reclaim of 200-week MA.”，说明他把关键均线收复当作趋势切换确认。图6/图8 也明显用均线作趋势与回踩判断。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.78,
+      "evidence": "他大量用‘上涨后回踩找 higher low，再续涨’的思路。[2024-12-30]“The uptrend has begun. It's now searching for a higher low”; [2025-05-31]“$ETH is nicely consolidating here... Then a period of consolidation before the next leg upwards.” 图3/图8 都是在趋势中等回踩支撑。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.66,
+      "evidence": "图7 写“Resistance flipping support -> uptrend has started.”，图4 也是此前 bear-market 区域转为关键阻力/分界带。这是典型的支阻互换/ breaker 思维。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.64,
+      "evidence": "他经常提醒先扫流动性再反向。[2025-07-30]“The first move after the FOMC is almost always a fake move”; [2024-01-30]“#Bitcoin took the liquidity above the high and will likely consolidate.” 这本质上是突破陷阱/扫单。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.52,
+      "evidence": "他会把 FOMC 作为高波动窗口来判断短线低点/假动作。[2024-04-29]“All eyes this week... FOMC decision... I expect a lot of volatility”; [2024-04-30]“Monthly close approaching for #Bitcoin and FOMC day tomorrow... potentially cascade towards $55-58K from which we're finding the low.”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.73,
+      "evidence": "他明显使用四年周期框架，但不是机械套用。[2024-03-30]“it's still following the general 4-year cycle path”; 同时 [2025-05-31]“markets and #Altcoins go way higher than the 4-year cycle investors think it will be.” 说明他以此为基准再做偏离判断。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.71,
+      "evidence": "减半前后节奏是他叙事主轴之一。[2024-03-29]“pre-halving...”; [2024-02-28]“Pre-halving new all-time high is a reality”; [2024-05-29]“Bitcoin consolidates and #Altcoins are waiting for their breakout to come.” 明显在做减半后的阶段轮动。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.74,
+      "evidence": "他反复定义‘uptrend has started’并据此持仓。[2025-06-30]“$ETH holds the low, so I suspect we'll start breaking upwards”; [2025-05-31]“It's literally showing an uptrend has started.” 图6/图8 也都是沿均线趋势识别。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.45,
+      "evidence": "虽然偏多，但他通常要求等确认区。[2024-12-30]“The optimal entries for longs on Bitcoin are around $90K”; 图3 标注“Two points of interest”与具体支撑区，而不是随意抄底。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.4,
+      "evidence": "在公开 mantra 里强调纪律。[2025-02-28]“The general lesson is: ... Avoid leverage ... Don't panic during massive volatility.” 虽未高频展开止损技法，但明显有风险纪律意识。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_liquidity_sweep_then_reversal",
+      "name": "Liquidity Sweep Then Reversal",
+      "name_zh": "扫流动性后反转",
+      "type": "structural_bias",
+      "description": "Price first runs obvious highs/lows or local liquidity pools, then sharply reverses back into range/trend. Used as a directional trigger and timing tool around key levels and event windows.",
+      "description_zh": "价格先去扫明显前高/前低或局部流动性池，随后快速反向回到区间或原趋势中。他把这个当作方向确认和时机触发器，尤其常用于关键位与事件窗口前后。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian_reversal_after_sweep",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2024-09-30]“Took the liquidity above the recent highs, and is coming back down.”；[2024-12-30]“Liquidity taken and bounce back on #Altcoins and #Bitcoin.”；图3 直接画出向下扫支撑后反弹路径。"
+    },
+    {
+      "proposed_id": "cap_new_rotation_eth_leads_alts",
+      "name": "ETH-Led Altcoin Rotation",
+      "name_zh": "ETH 领涨驱动山寨轮动",
+      "type": "structural_bias",
+      "description": "When ETH/BTC strengthens or prints bullish divergence, capital rotation into altcoins is expected. Used to time sector/style rotation rather than outright market direction.",
+      "description_zh": "当 ETH/BTC 走强或出现看多背离时，预期资金从 BTC 轮动进入山寨。他用它来判断风格切换，而不是单纯判断大盘涨跌。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "altcoins_outperform_btc",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.75
+      },
+      "example_evidence": "[2025-01-31]“Massive bullish divergence on $ETH / $BTC... rotation taking place.”；[2025-06-29]“#Altcoin summer... it's because of $ETH.”；[2024-11-30]“The rotation from $SOL to $ETH is taking place.”"
+    },
+    {
+      "proposed_id": "cap_new_alt_sentiment_extreme_accumulation",
+      "name": "Altcoin Sentiment Washout Accumulation",
+      "name_zh": "山寨极端冷清期吸筹",
+      "type": "cycle_time",
+      "description": "When altcoins are deeply underperforming, social engagement is absent, and sentiment reaches depression/disbelief, he treats it as a favorable accumulation window before a delayed bull phase.",
+      "description_zh": "当山寨严重跑输、社交热度极低、情绪进入抑郁/怀疑阶段时，他把这视为后续延迟牛市前的优质吸筹窗口。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "accumulate_alts",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2024-12-29]“Most #Altcoins are still at their cycle low in $BTC valuation. The social media platforms are ghost towns.”；[2025-03-30]“We're at depression with #Altcoins. The bull market hasn't even started.”；图5 市场周期心理图被他直接引用。"
+    },
+    {
+      "proposed_id": "cap_new_box_consolidation_breakout",
+      "name": "Horizontal Box Consolidation Breakout",
+      "name_zh": "箱体整理后突破",
+      "type": "pattern_setup",
+      "description": "A clear horizontal range/box forms after impulse; repeated resistance tests or support holds imply accumulation before breakout. Targets are projected to the next HTF resistance zones.",
+      "description_zh": "冲高后进入清晰水平箱体，反复测试阻力或守住支撑，表示蓄势待突破；目标通常看向更高周期的下一个阻力区。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "breakout_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "图7 在 Total Market Cap Excluding BTC 上画出长时间箱体与上方目标位；[2024-05-31]“The #Altcoin market capitalization is technically consolidating before a big breakout is happening.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "The general lesson is:\n- Stay in your positions.\n- Avoid leverage.\n- Do the opposite of your emotions.\n- Don't panic during massive volatility. Up or down.",
+      "rule_paraphrased": "大波动期不被情绪驱动，少用杠杆，以持仓耐心穿越波动。",
+      "category": "mantra"
+    },
+    {
+      "quote": "People want the 1,000% upside, but can't handle the 50% downside. You can't have the first without the latter, part of the game.",
+      "rule_paraphrased": "高收益必然伴随深回撤，承受不了波动就拿不到大周期回报。",
+      "category": "framework"
+    },
+    {
+      "quote": "The first move after the FOMC is almost always a fake move on #Bitcoin and #Altcoins. It traps everyone and then it rotates the other way around.",
+      "rule_paraphrased": "重大事件后的第一脚走势常是诱多/诱空，先等假动作完成再判断真方向。",
+      "category": "framework"
+    },
+    {
+      "quote": "Nobody wants to buy #Altcoins at the lows. Everyone wants to buy #Altcoins at the highs.",
+      "rule_paraphrased": "他的执行风格是逆情绪、逆拥挤度，在无人问津时布局。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "We're at disbelief with #Bitcoin. We're at depression with #Altcoins. Both of them turn out to be great events in the future with great returns.",
+      "rule_paraphrased": "把市场心理阶段当成反向配置工具，尤其偏爱抑郁/怀疑阶段的买点。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，也不是纯宏观派，而是把周期估值、全球流动性、BTC.D 轮动和简单直观的支撑阻力/流动性扫单框架揉在一起。与很多 TA 交易员不同，他长期公开表达强烈的山寨季偏见，尤其强调 ETH 领涨与 BTC.D 见顶后的资金轮动。另一个明显特征是内容创作者属性很强，经常把复杂判断压缩成易传播的宏观结论和几张高时间框架图。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "about to explode",
+      "100% certainty",
+      "the bull market has barely begun",
+      "the end of the bear market is indeed here",
+      "party time",
+      "up only",
+      "likely going to break to the upside",
+      "the uptrend has begun",
+      "optimal time to buy your #Altcoins"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "I expect",
+      "likely",
+      "should",
+      "wouldn't be surprised",
+      "significant chance",
+      "might",
+      "potentially",
+      "to me",
+      "I suspect"
+    ]
+  }
+}

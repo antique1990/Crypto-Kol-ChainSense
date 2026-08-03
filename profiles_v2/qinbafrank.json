@@ -1,0 +1,214 @@
+{
+  "handle": "qinbafrank",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "content_creator",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "ALT",
+    "SPX",
+    "QQQ",
+    "DXY",
+    "US10Y",
+    "GOLD"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.86,
+      "evidence": "多次把美股当作加密的上游风险开关。2025-03-31：\"美股已经跌破3月中的低点创出了新低，按理说大饼这时应该在7万4、5而不是现在的8万2。\" 2024-12-31：\"大饼很大程度上是被美股给带下来了。\""
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.9,
+      "evidence": "反复用美债收益率/流动性解释风险资产。2024-04-26：\"季度pce超预期引发美债收益率上涨，美债小崩。\" 2024-02-28：\"美元指数和美债收益率不断向上反弹给市场的压力。\""
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.72,
+      "evidence": "直接把美元指数作为风险资产的反向锚。2026-01-30：\"每次美元指数一跌，都会看到美元信用走弱...其实美元指数和美元地位是两个概念。\" 2024-11-29：\"美债收益率和美元指数拐头。\""
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.84,
+      "evidence": "高度关注 ETF 资金流作为机构需求代理。2024-05-31：\"现货比特币 ETF 出现积极的资金流入（接近三周净流入），需求在明显回升。\" 2024-02-28：\"比特币etf积累速度远超过20年到21年的灰度。\""
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.7,
+      "evidence": "使用长期持币者行为来确认牛市韧性。2024-05-31：\"长期持有者自 2023 年 12 月以来首次开始重新积累比特币。\""
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.78,
+      "evidence": "把 PMI 当作宏观阶段判定器。2025-11-30：\"12月市场前瞻...1号美国11月ISM制造业PMI。\" 2024-09-30：\"关于美国PMI数据，标普全球PMI和ISM PMI两份数据的异同。\""
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.73,
+      "evidence": "FOMC 事件周管理是其固定框架。2024-07-29：\"更重要的就是周四凌晨的美联储议息会议。\" 附图 7 也是以 FOMC、CPI、非农、PCE 为核心的月度事件日历。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.74,
+      "evidence": "他对山寨季的定义是 BTC 主导权切换后的扩散。2024-02-27：\"在大饼没有ATH之前，小币都只是结构化行情，大饼ATH全面普涨行情就会到来。\" 2024-11-29：\"币市山寨更像是罗素2000指数。\""
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.69,
+      "evidence": "他明显区分主升段和震荡段。2024-11-30：\"趋势主升，拿住大于一切。\" 2024-04-28：\"山寨季会很温和...震荡向上，而不是大家所期望的那样快速抛物线式的上涨。\""
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.77,
+      "evidence": "非常强调高波动环境下的节奏与仓位。2025-11-30：\"12月市场前瞻，中旬应该是市场波动放大的时期。\" 2024-03-27：\"一季度末，需要关注季末再平衡资金的大规模流动引发的市场波动。\""
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.66,
+      "evidence": "直接观察合约持仓与价格背离。2024-01-25：\"cme上合约略微加点仓，感觉是个好信号。再一看以太的合约持仓一直在上升。\" 2024-02-27：\"币本位合约持仓持续上涨，一般都是有利于行情的。\""
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.68,
+      "evidence": "频繁看资金费、多空比来识别拥挤。2024-02-27：\"资金费率有点高，这种情况一般都是向下插针，快速收回去降降火。\" 2024-01-25：\"大饼多空比回到2以下...以太币安多空比干到3.07。\""
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.55,
+      "evidence": "不仅看绝对资金费，也看情绪是否过热或降温。2025-05-30：\"密集的利好下，大饼币价走的一般，能看出来币市情绪是在减弱。\" 这类表达是典型的价格与情绪/杠杆读数背离框架。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.61,
+      "evidence": "多次使用“结构化行情”“震荡向上”“底部震荡”来区分非趋势期。2024-02-27：\"在大饼没有ATH之前，小币都只是结构化行情。\" 2025-03-31：\"就是底部震荡。\""
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.52,
+      "evidence": "虽然不是最高频，但他显然接受全球流动性代理框架。2024-02-28 和多条宏观帖都围绕宽松交易、降息预期、流动性环境变化展开，方法论上与全球 M2/流动性代理一致。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_expectation_pricing_gap",
+      "name": "Expectation-Pricing Gap",
+      "name_zh": "预期差/计价程度框架",
+      "type": "structural_bias",
+      "description": "Evaluate not just the data/event itself, but how much of it is already priced by the market; trade the gap between realized outcome and consensus positioning.",
+      "description_zh": "不只看数据或事件本身，而是判断市场此前已经计价了多少；交易真正结果与一致预期、仓位拥挤之间的差值。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "conditional_reversal_or_follow_through",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-08-31：\"市场对数据或者重大事件的预期程度或者计价程度是一个很有意思也值得深度探讨的话题。\" 2025-04-30：\"数据感觉很炸裂...但是市场只是小幅下挫并没有暴跌。\""
+    },
+    {
+      "proposed_id": "cap_new_liquidity_plumbing_monitor",
+      "name": "Liquidity Plumbing Monitor",
+      "name_zh": "流动性管道监控",
+      "type": "macro_correlation",
+      "description": "Track funding plumbing variables such as SOFR, RRP, BTFP, Treasury issuance/refunding, and quarter-end balance sheet effects to anticipate cross-asset pressure.",
+      "description_zh": "跟踪 SOFR、逆回购、BTFP、财政部再融资、季末再平衡等流动性管道变量，预判跨资产波动与风险偏好变化。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "risk_on_or_risk_off_filter",
+        "horizon": "swing_to_macro",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2024-05-28：\"金融压力指数FSI跟风险市场是标准的负相关走势。\" 2024-12-31：\"sofr短期走高带来市场流动性的小幅度挤压。\" 2024-01-26：\"BTFP到期不续以及逆回购用量消耗完。\""
+    },
+    {
+      "proposed_id": "cap_new_btc_ath_alt_breadth_trigger",
+      "name": "BTC ATH Breadth Trigger",
+      "name_zh": "BTC 新高带动山寨广度扩散",
+      "type": "cycle_time",
+      "description": "Broad alt rotation is not assumed before BTC reclaims or breaks prior cycle highs; BTC ATH acts as a regime trigger for broader beta expansion.",
+      "description_zh": "在 BTC 收复或突破前高之前，不默认山寨全面普涨；BTC 创历史新高是山寨广度扩散的制度切换触发器。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_altcoins",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-02-27：\"在大饼没有ATH之前，小币都只是结构化行情，大饼ATH全面普涨行情就会到来。\""
+    },
+    {
+      "proposed_id": "cap_new_event_calendar_clustering",
+      "name": "Event Cluster Window",
+      "name_zh": "事件簇窗口交易",
+      "type": "event_reaction",
+      "description": "Map weeks or months by clustering macro events, earnings, and policy catalysts; expect volatility expansion in event-dense windows and reduce certainty outside them.",
+      "description_zh": "按宏观数据、财报、政策节点的密集程度给周/月做事件簇标注；事件密集窗口预期波动放大，事件稀疏期降低方向确信度。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "volatility_expansion",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-11-30：\"12月市场前瞻，中旬应该是市场波动放大的时期。\" 附图 7 本质上就是按月做事件簇管理。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "投资是一个信心的游戏，信心来自于对所投标未来空间的高度确定性，而这个确定性来自于对赛道、所处身位、业务进展、团队甚至情绪溢价的深度研判。交易则是一个纪律的游戏，纪律来自对人性的理解，在自己交易系统内信号发出就得进场，到了止盈止损位就得出场。",
+      "rule_paraphrased": "把投资与交易明确拆开：前者靠产业与叙事确定性，后者靠纪律执行。",
+      "category": "framework"
+    },
+    {
+      "quote": "趋势主升，拿住大于一切",
+      "rule_paraphrased": "一旦判定处于主升趋势，核心优势不是频繁交易，而是持有。",
+      "category": "mantra"
+    },
+    {
+      "quote": "在大饼没有ATH之前，小币都只是结构化行情，大饼ATH全面普涨行情就会到来",
+      "rule_paraphrased": "山寨全面扩散以前，先看 BTC 是否完成制度性突破。",
+      "category": "framework"
+    },
+    {
+      "quote": "市场对数据或者重大事件的预期程度或者计价程度是一个很有意思也值得深度探讨的话题",
+      "rule_paraphrased": "交易重点不是事件本身，而是事件与市场预期、计价程度之间的落差。",
+      "category": "framework"
+    },
+    {
+      "quote": "宏观是看方向，但要落实到交易上需要有计划、有节奏，然后足够有耐心。",
+      "rule_paraphrased": "宏观只能给方向，真正下单前还要经过节奏管理和耐心等待。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像纯 K 线交易员，更像把加密放进美国宏观流动性框架里的跨资产叙事交易员。核心边际来自“宏观方向 + 预期差 + 流动性管道 + 市场结构”的组合判断，而不是单一指标或单一形态。相比很多只讲币圈内部叙事的人，他持续把 ETF 资金流、SOFR、收益率、PMI、财报季、政策事件日历一起纳入交易准备。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "核心逻辑",
+      "唯一的问题就是",
+      "意味着",
+      "可以说",
+      "应该会",
+      "这才是"
+    ],
+    "low_conviction_phrases": [
+      "个人以为",
+      "个人感觉",
+      "估计",
+      "看起来",
+      "可能",
+      "大概率"
+    ]
+  }
+}

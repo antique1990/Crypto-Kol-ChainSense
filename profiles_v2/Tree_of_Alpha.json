@@ -1,0 +1,166 @@
+{
+  "handle": "Tree_of_Alpha",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "risk_first",
+    "contrarian",
+    "content_creator",
+    "structural"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "TAO",
+    "AI sector alts",
+    "new listings"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.78,
+      "evidence": "他反复强调仓位与生存优先。2024-08-05: \"the name of the game remains capital preservation\"；2025-08-25: \"vaporware but I fumbled generational entry and couldn't size enough\"，说明他明确把仓位大小当成核心决策变量。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.72,
+      "evidence": "2025-11-14: \"bought some coins if it keeps going down simply assume I exited safely with no losses whatsoever\"。虽然语气带玩笑，但底层逻辑很清楚：错了就走，不恋战。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.62,
+      "evidence": "2024-08-05 在极弱环境下他没有无脑抄底，而是先加一句 \"if you're able to\"，随后强调 \"capital preservation\"，这更像是只允许小试、绝不重仓接刀。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.59,
+      "evidence": "2024-08-05: \"Though today may be grim, And tomorrow hard to foresee\"，先定义当前为高不确定/高波动环境，再推出保守操作；这符合先做 regime 判断再决定风险暴露。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.41,
+      "evidence": "2024-02-14: \"make TREE services an unmissable trading tool for every profitable trader in a post-ETF Crypto world\"。他明确把后 ETF 时代的机构流入/结构变化当成交易框架的一部分。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.36,
+      "evidence": "多条推文都在下跌背景下讨论防守而非激进抄底，例如 2025-11-14: \"if this is the easy road I'm driving myself into a ditch\"，以及 2024-08-05 的 grim/foresee 表述，说明他会先承认下行 regime，再调整行为。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.28,
+      "evidence": "2025-08-25: \"short garbage when it lists at nonsense valuations\"。这不是经典抛物线图形表述，但本质上是在做发行/叙事过热后的反向交易，和过度扩张后的衰竭思维一致。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_narrative_newsflow_arb",
+      "name": "Narrative Newsflow Arbitrage",
+      "name_zh": "叙事新闻流套利",
+      "type": "event_reaction",
+      "description": "Trade around fast-moving headlines, ecosystem updates, founder behavior, and sentiment shifts before they are fully priced by the market.",
+      "description_zh": "围绕头条、生态更新、创始人行为和情绪切换做快速定价偏差交易，在市场完全消化前完成布局或减仓。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "directional_event_driven",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2026-04-10 连续讨论 Bittensor/$TAO 事件：\"Bittensor is a quite a LOT more than Subnet 3\"、\"Templar founder extracted 37,000 $TAO worth of alpha tokens\"、\"Here is how I think the Bittensor $TAO situation will play out from here\"。"
+    },
+    {
+      "proposed_id": "cap_new_insider_listing_short",
+      "name": "Insider Listing Fade",
+      "name_zh": "内幕上所高估值反手做空",
+      "type": "structural_bias",
+      "description": "Fade newly listed tokens or promoted assets when exchange/investor alignment, seed allocations, or insider incentives imply asymmetric sell pressure.",
+      "description_zh": "当交易所、投资人、种子轮分配与内部人激励共同指向抛压时，反手做空新上所代币或被过度营销的资产。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "short",
+        "horizon": "swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2025-08-25: \"it's an insider's game you can't win, so short garbage when it lists at nonsense valuations\"。这是非常明确、可执行的结构性交易规则。"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_gate",
+      "name": "Sentiment Not There Yet",
+      "name_zh": "情绪未到位过滤器",
+      "type": "regime_classifier",
+      "description": "Avoid forcing longs before crowd sentiment or narrative participation has meaningfully turned; use sentiment confirmation as a gate before size-up.",
+      "description_zh": "在群体情绪和叙事参与度尚未明显转强前，不提前重仓做多；把情绪确认当作加仓门槛。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "wait_or_small_size",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2026-04-11: \"Ok doesn’t seem sentiment there yet\"。这句话非常像他的实时过滤条件，而不是事后评论。"
+    },
+    {
+      "proposed_id": "cap_new_founder_dump_overhang",
+      "name": "Founder Sell-Pressure Overhang",
+      "name_zh": "创始人抛压悬顶",
+      "type": "onchain_signal",
+      "description": "Identify protocol or token downside risk when founders, teams, or subnet owners receive extractive token flows likely to be sold into market strength.",
+      "description_zh": "当创始人、团队或生态拥有者获得可提取代币并存在明显套现激励时，识别其对价格形成的持续抛压风险。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "2026-04-10: \"Templar founder extracted 37,000 $TAO worth of alpha tokens... So it is only logical those 37k $TAO will be dumped on the market for max extraction\"。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "the name of the game remains capital preservation",
+      "rule_paraphrased": "先活下来，再谈抄底和收益；风险预算高于观点表达。",
+      "category": "mantra"
+    },
+    {
+      "quote": "bought some coins if it keeps going down simply assume I exited safely with no losses whatsoever",
+      "rule_paraphrased": "试错可以，但不能让试错演变成扛单；错了立刻撤。",
+      "category": "framework"
+    },
+    {
+      "quote": "it's an insider's game you can't win, so short garbage when it lists at nonsense valuations",
+      "rule_paraphrased": "对带有明显内部分配优势和高估值发行的新币，默认采取反向视角。",
+      "category": "framework"
+    },
+    {
+      "quote": "Ok doesn’t seem sentiment there yet",
+      "rule_paraphrased": "没有情绪确认就不强行开大仓，等待 crowd participation 成型。",
+      "category": "framework"
+    },
+    {
+      "quote": "Though today may be grim, And tomorrow hard to foresee",
+      "rule_paraphrased": "先承认环境不确定，再降低进攻性；不和 regime 对赌。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不像传统只发 K 线形态的 TA 号，更像把新闻流、生态结构、创始人激励和市场情绪整合成交易判断。相比纯技术派，他对“谁能卖、为什么会卖、市场是否已经知道”这类结构性问题更敏感。整体风格是信息优势驱动的反身性交易，而不是教科书式图形识别。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "capital preservation",
+      "it's an insider's game you can't win",
+      "short garbage when it lists at nonsense valuations",
+      "only logical those 37k $TAO will be dumped on the market",
+      "will carry on fine without it"
+    ],
+    "low_conviction_phrases": [
+      "if you're able to",
+      "Here is how I think",
+      "doesn’t seem sentiment there yet",
+      "may be grim",
+      "hard to foresee"
+    ]
+  }
+}

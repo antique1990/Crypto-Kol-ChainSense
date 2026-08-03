@@ -1,0 +1,166 @@
+{
+  "handle": "gurgavin",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "macro",
+    "contrarian",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "NVDA",
+    "BABA",
+    "PYPL",
+    "TSLA",
+    "SPX",
+    "USD/CAD",
+    "COIN"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.82,
+      "evidence": "他高频围绕 FOMC 交易节奏发帖：\"GETTING READY FOR FOMC TOMORROW   RATE DECISION IS AT 2 PM ET\"、\"FOMC RATE DECISION WILL BE OUT TOMORROW AT 2 PM ET\"、\"JEROME POWELL SPEECH AT 2:30 IS WHAT’S IMPORT...\"，并在 2024-12-18 强调 \"S&P 500 FALLS 3% IN BIGGEST POST FOMC DROP SINCE MARCH 2020\"。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.78,
+      "evidence": "他把大盘当作风险开关：\"FUTURES JUST OPENED   S&P 500 UP 0.3%\"、\"THE STOCK MARKET IS NOW ON TRACK FOR ITS WORST DAY IN ALMOST 3 YEARS\"、\"THE S&P 500 IS ON TRACK TO CLOSE AT A NEW ALL TIME RECORD HIGH\"。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.72,
+      "evidence": "他持续用利率/央行流动性框架解释风险资产：\"BANK OF AMERICA SAYS THE FED IS DONE CUTTING RATES\"、\"BANK OF CANADA HAS JUST ENDED ITS QUANTITATIVE TIGHTENING PROGRAM AND IT JUST CUT INTEREST RATES BY 25 BPS\"、\"JEROME POWELL SAYS A RATE CUT COULD BE ON TABLE IN SEPTEMBER\"。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.76,
+      "evidence": "他经常把极端上涨/极端叙事当作顶部或过热信号：2024-05-30 发 \"IS THIS A TOP SIGNAL ?  $NVDA\"；2025-05-30 发 \"REGENCELL BIOSCIENCE... UP OVER 20,000% IN 2 MONTHS\"；附图里也有 \"1 USD = 1.43 CAD\" 并配文 \"THIS IS GETTING CRAZY NOW\"。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.66,
+      "evidence": "他会顺着强趋势加大乐观表达：\"ALIBABA IS UP ANOTHER 7% IN 24 HOURS TRADING\"、\"ALIBABA IS NOW UP 30% OVER THE LAST WEEK\"、\"VICTORIA SECRET NOW UP ALMOST 100% IN 3 MONTHS & BOOM IT JUST HIT MY PRICE TARGET\"。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.64,
+      "evidence": "他也会快速接受弱势趋势和基本面恶化：\"INTEL TO LAYOFF ANOTHER 16,500 EMPLOYEES\"、\"NIKE SHARES JUST HAD THEIR WORST DAY IN HISTORY\"、\"RIP  $TSLA\"，以及 \"THE BEARS WERE ALWAYS RIGHT\" 这类顺势看空措辞。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.71,
+      "evidence": "他的内容高度聚焦高波动时段：\"CHINESE STOCK MARKET FUTURES HAVE BEEN HALTED TO THE UPSIDE DUE TO VOLATILITY\"、\"THE JAPANESE STOCK MARKET IS NOW DOWN 5% TODAY\"、PATH 5 天跌近 40%、WMT 单日因拆股视觉上跌 60% 的截图。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.43,
+      "evidence": "虽然不是系统化风控表述，但他反复用暴跌案例提醒不要机械抄底：\"UI PATH IS SINCE DOWN 40% IN 2 DAYS\"、\"NVIDIA SHARES ARE CURRENTLY DOWN 11%... BIGGEST 1 DAY LOSS\"、\"NIKE SHARES JUST HAD THEIR WORST DAY IN HISTORY TODAY\"。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.22,
+      "evidence": "他会把 ETF/机构通道当作行情催化之一，例：\"FIDELITY HAS JUST FILED FOR A SPOT ETHEREUM ETF\"；但这不是他最核心、最重复的框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_headline_impulse_trading",
+      "name": "Headline Impulse Trading",
+      "name_zh": "新闻脉冲交易",
+      "type": "event_reaction",
+      "description": "Trade directional moves off fresh political, legal, macro, earnings, or corporate headlines before the broader market fully reprices them.",
+      "description_zh": "围绕政治、法律、宏观、财报、公司公告等最新头条做方向性交易，在市场完全重定价前抢先表达观点。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "event_driven",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "大量推文以 \"BREAKING\" / \"JUST IN\" 开头，如 \"US JUSTICE DEPARTMENT TO CHARGE BOEING WITH FRAUD\"、\"TRUMP SAYS IF CANADA IMPOSES RETALIATORY TARIFFS...\"、\"NVIDIA JUST REPORTED EARNINGS\"。"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_extreme_anecdote",
+      "name": "Sentiment Anecdote Extremes",
+      "name_zh": "情绪轶事极值信号",
+      "type": "structural_bias",
+      "description": "Use absurd anecdotes, viral screenshots, vanity plates, or retail/social-media behavior as a soft top/bottom signal for crowded trades.",
+      "description_zh": "把离谱轶事、病毒式截图、车牌梗、社媒散户行为当作拥挤交易的软性顶部/底部信号。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "附图中的保时捷车牌 \"THX NVDA\"；推文 \"IS THIS A TOP SIGNAL ?  $NVDA\"；\"EVERYONE ON FINTWIT NOW\"；中国券商 24/7 开户、成交额纪录等散户狂热叙事。"
+    },
+    {
+      "proposed_id": "cap_new_concentrated_rerating_book",
+      "name": "Concentrated Rerating Book",
+      "name_zh": "集中仓位估值重估",
+      "type": "framework",
+      "description": "Build oversized positions in a few disliked names when valuation is low and narrative/sentiment is improving, aiming for multiple expansion plus earnings stabilization.",
+      "description_zh": "在少数被嫌弃但估值低、叙事与情绪改善的标的上重仓，博取估值重估与基本面企稳的双击。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "\"ALIBABA AND PAYPAL COMBINED ARE NOW OVER 50% OF MY PORTFOLIO\"；\"ITS STILL AT JUST 11 TIMES NEXT YEARS EARNINGS   NO REASON IT CANT RERATE TO 15 TIMES\"。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "I ALWAYS TWEET EXACTLY HOW I FEEL BECAUSE I DON’T CARE ABOUT LIKES OR FOLLOWERS. I’D RATHER TWEET MY EXACT THOUGHTS",
+      "rule_paraphrased": "风格上追求即时、主观、强观点表达，不做中性研报式输出。",
+      "category": "framework"
+    },
+    {
+      "quote": "FOR THOSE ASKING WHY I POST SO MUCH ABOUT ALIBABA AND PAYPAL  ALIBABA AND PAYPAL COMBINED ARE NOW OVER 50% OF MY PORTFOLIO",
+      "rule_paraphrased": "愿意做高度集中仓位，并围绕核心持仓持续输出叙事与跟踪。",
+      "category": "framework"
+    },
+    {
+      "quote": "COME ON THIS IS WAY OVERBLOWN NOW LMAO",
+      "rule_paraphrased": "当市场对单一事件反应过度时，他倾向做反身性、逆情绪判断。",
+      "category": "mantra"
+    },
+    {
+      "quote": "IS THIS A TOP SIGNAL ?  $NVDA",
+      "rule_paraphrased": "喜欢用带戏谑意味的情绪极值/拥挤度线索来提示可能见顶。",
+      "category": "framework"
+    },
+    {
+      "quote": "UNPOPULAR OPINION, BUT THE COSTCO HOTDOG SUCKS",
+      "rule_paraphrased": "刻意保持逆共识语气，哪怕在非交易话题上也强化“反主流”人设。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和典型画趋势线、讲形态的 TA 交易员不同，核心优势不是几何图形识别，而是对头条新闻、宏观节奏、政治冲击和社交情绪的快速筛选与放大。附图也说明他常用的是 Google Finance 截图、新闻配图、情绪化梗图，而不是复杂指标面板。真正的 edge 更像“叙事流速 + 逆向判断 + 高传播内容包装”。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "BREAKING",
+      "JUST IN",
+      "THIS IS GETTING CRAZY NOW",
+      "I BELIEVE",
+      "HAS BOTTOMED HERE",
+      "NO REASON IT CANT RERATE",
+      "WE ARE SO BACK",
+      "THE BEARS WERE ALWAYS RIGHT"
+    ],
+    "low_conviction_phrases": [
+      "IMO",
+      "UNPOPULAR OPINION",
+      "MIGHT ACTUALLY",
+      "IF",
+      "IS THIS A TOP SIGNAL ?",
+      "KINDA GETTING INSANE NOW LOL"
+    ]
+  }
+}

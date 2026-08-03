@@ -1,0 +1,243 @@
+{
+  "handle": "MacroCRG",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "derivatives",
+    "macro",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "DOGE",
+    "WIF",
+    "memecoins",
+    "FARTCOIN"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.9,
+      "evidence": "2024-06-30: \"weekly candle is a ginormous pinbar with an 8% wick (high probability reversal candle)   Full send\"，明显把长影线拒绝当作高质量反转信号。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.84,
+      "evidence": "2024-06-30: \"BTC tryna reclaim its 1H200EMA/MA for first time since early June\"；2024-04-30 也单独发 \"BTC 1D100EMA\"。说明他频繁用关键均线收复/失守定义趋势切换。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.82,
+      "evidence": "2024-06-30: \"Funding + perps basis flat\"，但他同时配合 breakout/pinbar 看多，说明他会把价格强、杠杆情绪不热视为更健康的上涨结构。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.74,
+      "evidence": "2025-11-30: \"Super clean ih&s on spx6900  negative funding too  break out above >$0.80 confirms it\"，明确把负 funding 作为 squeeze/顺风条件。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.76,
+      "evidence": "2024-04-30: \"Open interest +12,000BTC in less than 24H\"；2024-07-30: \"$2B BTC OI cleansed yday\"。他持续跟踪 OI 的堆积与清洗来判断下一段波动。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.77,
+      "evidence": "2026-01-31: \"Hopefully we get a nice high volume capitulation spike w/ liquidations to set a bottom\"；2026-02-28: \"i wonder how many shorts get stopped out above $70k\"。典型把清算区当作价格磁吸位。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.72,
+      "evidence": "2025-10-30: \"Bullish divergence on the M30  We’re saved\"；2024-09-30: \"at horizontal support + 4H200MA + another hidden bull div\"。RSI/动能背离是他低位博反弹的重要触发器。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.6,
+      "evidence": "2026-01-31: \"BTC hourly RSI is most oversold since August 2023\"，显示他会把极端超卖当成短线反弹依据，但通常与结构/清算一起看。"
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.58,
+      "evidence": "2025-11-30: \"Super clean ih&s on spx6900 ... break out above >$0.80 confirms it\"，说明经典反转结构在他的工具箱里。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.83,
+      "evidence": "2024-10-31: \"Lovely late long flush after NY open\"；2026-01-31 期待 \"capitulation spike\"；图 7 在周线低点下方画出粉色流动性区域，明显关注扫低点后的反应。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.81,
+      "evidence": "图 1、图 2 反复用 Bart / double Bart 头像标注冲高回落、急跌拉回的假突破路径；2024-12-30: \"They double Barted us  Pain\"。他非常在意破位后无法维持的陷阱行情。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.67,
+      "evidence": "2024-10-31: \"BTC has been in an uptrend for 3 months now  There really isn't any logical reason to have stayed bearish throughout it all\"，说明他先做趋势状态判断，再决定偏多。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.79,
+      "evidence": "2025-03-30: \"Still just chopping/ranging, waiting for resolution\"；2025-11-30: \"either reclaim $92k or ~$87k is area to watch, not much to do in-between\"。明显擅长区间识别与边界交易。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.61,
+      "evidence": "2024-07-31: \"Dovish fed  Equities raging  USD nuking  ...BTC going down\"，直接把 USD 作为 BTC 的宏观解释变量之一。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.63,
+      "evidence": "2025-10-30: \"Insane moves in tech rn  Paging BTC...\"；2024-07-31 同时对比 equities 与 BTC。说明他常用股市风险偏好给加密定调。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.56,
+      "evidence": "2025-11-30: \"Rates are gonna get nuked next year\"；2025-11-30: \"QT ends on Monday too\"。他会把利率/QT 变化映射到风险资产流动性。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.42,
+      "evidence": "虽然 bundle 中未高频展开 ETF 细节，但他多次讨论宏观流动性与机构 bid，例如 2025-02-28: \"1400 BTC bid @ $83.1k on nance spot\"，风格上接近把现货需求/机构流当作确认项。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.7,
+      "evidence": "2024-09-30: \"BTC dominance nuking\"；2024-09-30: \"When risk is on and liquidity is abundant, altcoins can fly far higher...\"；2025-01-31 还总结本周期 BTC 与 alts 的轮动关系。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.64,
+      "evidence": "2026-01-31: \"high probability that low is taken out imo ... looking at the below levels for a reaction if/when it is\"，不是直接抄底，而是等扫低/放量/清算后的确认。图 3 也展示急跌阶段并无提前接刀逻辑。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.46,
+      "evidence": "2025-03-30: \"waiting for resolution of 'liberation day' and tariff noise\"；2025-03-30: \"Big week ahead  Seatbelts on\"。他会在重大宏观事件周主动降低确定性。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.41,
+      "evidence": "2024-09-30: \"The Big Short as a movie caused an irreparable amount of damage... wanting to... short a top\"，虽然反对盲目摸顶，但其框架里清楚区分真正的衰竭与过早猜顶。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_bart_pattern",
+      "name": "Bart Pattern / Double Bart",
+      "name_zh": "Bart 形态 / 双 Bart",
+      "type": "pattern_setup",
+      "description": "Sharp vertical move, flat range, then symmetrical reversal back through the range; often appears as a low-liquidity perp move or fake breakout/flush sequence.",
+      "description_zh": "价格先垂直拉升或下杀，随后横盘，再以近似对称的方式反向走完，常见于低流动性或合约主导的假突破/假跌破行情。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "mean_reversion_trap",
+        "horizon": "intraday",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-12-30: \"They double Barted us  Pain\"；图 1、图 2 直接用辛普森头像把多个 Bart 路径画在 BTC 5m 图上。"
+    },
+    {
+      "proposed_id": "cap_new_weekly_monthly_close_framework",
+      "name": "Higher Timeframe Candle Close Anchoring",
+      "name_zh": "高周期收盘锚定框架",
+      "type": "structural_bias",
+      "description": "Emphasizes weekly/monthly/quarterly closes as decisive signal points; strong closes upgrade trend confidence, weak closes reduce conviction.",
+      "description_zh": "把周线、月线、季度线收盘视为趋势确认核心节点；强收盘提高趋势延续概率，弱收盘则降低信心或等待确认。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_confirmation",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-03-31: \"Bitcoin about to close highest quarterly candle *ever*\"；2024-06-30: \"That's a mf gorgeous weekly candle\"；2025-06-29: \"What a weekly candle this is\"。"
+    },
+    {
+      "proposed_id": "cap_new_weekend_move_skepticism",
+      "name": "Weekend Crypto Move Skepticism",
+      "name_zh": "周末行情低可信度过滤",
+      "type": "risk_rule",
+      "description": "Discounts weekend breakouts/squeezes unless followed by clear spot confirmation after the week opens.",
+      "description_zh": "对周末的突破、逼空或急拉保持怀疑，除非工作日开盘后有明确现货跟随确认。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2026-02-28: \"never trust a weekend short squeeze  never trust any weekend move for that matter\"；2025-11-30: \"Question is, do we trust the Sunday pamp\"。"
+    },
+    {
+      "proposed_id": "cap_new_spot_bid_tape_reading",
+      "name": "Spot Bid / Whale Tape Confirmation",
+      "name_zh": "现货大单与鲸鱼买盘确认",
+      "type": "orderflow_signal",
+      "description": "Tracks visible large spot bids or exchange-specific whale buying as evidence that a level is defended or a breakout has real demand behind it.",
+      "description_zh": "通过可见的大额现货买单或交易所鲸鱼买盘，确认某个价位被防守，或某次突破具有真实需求支撑。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "intraday",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2025-02-28: \"1400 BTC bid @ $83.1k on nance spot\"；2025-01-31: \"Sizeable Coinbase spot bid since NY open\"；2024-09-30: \"A bull on Binance spot said hold my beer\"。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "They double Barted us  Pain",
+      "rule_paraphrased": "把 Bart / double Bart 当成典型的合约陷阱与低流动性反复抽打结构。",
+      "category": "framework"
+    },
+    {
+      "quote": "never trust a weekend short squeeze  never trust any weekend move for that matter...",
+      "rule_paraphrased": "周末价格行为默认降权，必须等工作日和现货确认。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "BTC either reclaim $92k or ~$87k is area to watch, not much to do in-between",
+      "rule_paraphrased": "只做区间边界和关键收复/失守，中间噪音区域不硬做。",
+      "category": "framework"
+    },
+    {
+      "quote": "This cycle has been kinda fucked for buy and hold ppl too lol  For the most part, you can't just buy and hold anymore, the dispersion and rotations create ruthless profit taking",
+      "rule_paraphrased": "本周期更重视轮动和主动管理，不迷信纯持有。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "The Big Short as a movie caused an irreparable amount of damage to market participants over the last decade",
+      "rule_paraphrased": "反对为了做英雄而过早猜顶做空，顺大趋势比自我叙事更重要。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯粹的画线派，而是把高周期收盘、均线收复、资金费/OI、周末流动性和宏观流动性揉成一个很交易员化的执行框架。相比一般 TA 账号，他对 perp 结构扭曲、Bart 行情、清算与 spot bid 的敏感度明显更高。整体上长期偏多，但短线非常接受先扫流动性、先折磨持仓再走主趋势的市场现实。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Full send",
+      "time to pay attention",
+      "phenomenal looking low",
+      "high probability",
+      "That's a beauty of a breakout",
+      "That's a mf gorgeous weekly candle",
+      "looking good here"
+    ],
+    "low_conviction_phrases": [
+      "probably nothing",
+      "Interesting.",
+      "Could it be...",
+      "manifesting",
+      "not much to do in-between",
+      "so far so good",
+      "would be hilarious if"
+    ]
+  }
+}

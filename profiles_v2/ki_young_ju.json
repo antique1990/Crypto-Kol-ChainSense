@@ -1,0 +1,268 @@
+{
+  "handle": "ki_young_ju",
+  "school_primary": "onchain",
+  "school_secondary": [
+    "structural",
+    "cycle",
+    "derivatives",
+    "macro",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "Altcoins",
+    "MSTR",
+    "USDT"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.97,
+      "evidence": "反复把 ETF 资金流当成主驱动。例：2025-05-09 “selling pressure is easing, and massive inflows are coming through ETFs”；2025-01-31 “the buying engine for paper Bitcoins is still running”；2024-10-25 “U.S. spot Bitcoin ETF demand hit a 6-month high”。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.9,
+      "evidence": "长期持币者行为是他的核心框架之一。例：2024-05-21 “holders are increasingly inclined to hold rather than sell”；2025-12-30 “Bitcoin long-term holders stopped selling.”"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.84,
+      "evidence": "经常用卖压/入所/托管钱包流向判断方向。例：2025-04-16 “#Bitcoin supply > demand”；2025-03-13 “Ethereum has faced record active selling over the past 3 months”；2024-06-26 用 US gov't 卖出 4K BTC 对 Coinbase Prime 流动性做影响评估。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.66,
+      "evidence": "虽不总是显式点名“稳定币供应”，但经常把稳定币和外部购买力视为流动性燃料。例：2025-05-11 讨论 stablecoins 的未来；2024-12-27 韩元走弱时“Koreans are converting KRW to $BTC and $USDT”。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.86,
+      "evidence": "明确使用 MVRV/链上周期阈值。例：2024-02-29 “MVRV hit 2.5...” 并类比 2020 牛市前状态；多条推文提及“on-chain cyclical indicators”处于 bull-bear boundary。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.73,
+      "evidence": "经常以减半后阶段推断中周期位置。例：2024-08-21 “In the last Bitcoin halving cycle, the bull rally began in Q4.”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.69,
+      "evidence": "长期大量使用四年/历史类比框架，虽然 2025-07-24 又公开修正。例：2024-03-28 把 2023-24 路径直接映射 2020-21；2025-07-24 “#Bitcoin cycle theory is dead.” 说明他此前确实高度依赖该框架。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.55,
+      "evidence": "对衍生品拥挤和压力累积有明确观察。例：2024-08-08 “futures trading volume hit an ATH”；2025-01-29 “taker sell pressure is increasing. Be cautious if you're leveraged.”"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.51,
+      "evidence": "经常用杠杆拥挤/长爆风险表达风险。例：2025-04-09 “#Bitcoin long squeeze: cascading liquidations are deleveraging the market.”"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.42,
+      "evidence": "不是他最常用，但有明显的 squeeze/反身性思路。例：2025-09-27 “perp whales went long heavily on OKX, Bybit, HTX”；他常把市场过度单边仓位理解为下一阶段推动力。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.48,
+      "evidence": "经常比较价格和杠杆情绪的错位。例：2025-03-14 “#Bitcoin demand seems stuck”；2025-03-04 “Fundamentals remain strong, with more mining rigs coming online” 但价格和情绪没有同步。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.78,
+      "evidence": "对 BTC.D 与山寨季切换有系统性观察。例：2024-07-31 “Whales are preparing for the next altcoin rally”；2024-11-27 “Why is altcoin season delayed?”；2024-11-28 直接讨论 dominance 不易下跌。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.58,
+      "evidence": "虽然不总是直接说 M2，但宏观流动性是重要上层框架。例：2025-11-28 “further upside likely depends on macro liquidity”；2025-03-17 “fresh liquidity drying up”。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.49,
+      "evidence": "他持续比较 BTC 与黄金的避险定价。例：2025-04-09 “Bad news: BTC isn’t digital gold yet. Good news: It’ll eventually get there.”；2026-01-26 “If the market still prices Bitcoin as risk-on, it's undervalued”。"
+    },
+    {
+      "id": "cap_067_nvt_valuation_extreme",
+      "weight": 0.57,
+      "evidence": "他常用网络价值/实现市值/链上活跃度与市值关系做估值。例：2024-05-17 “market cap is growing faster than its realized cap”；2024-05-31 “low price volatility, on-chain activity remains high”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.63,
+      "evidence": "推文经常先做 regime 判断，再谈牛熊。例：2024-09-30 “#Bitcoin is still in the middle of the bull cycle”；2024-08-09 “shifted back to signaling a bull market”。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.67,
+      "evidence": "会明确切换到熊/横盘 regime，而不是永远看多。例：2025-03-17 “bull cycle is over, expecting 6–12 months of bearish or sideways price action”；2025-03-18 “it now looks pretty clear that we're entering a bear market.”"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.61,
+      "evidence": "很重视高波动下的去杠杆与风险。例：2024-08-08 指出现货/期货成交量极端放大；2025-07-30 “Using over 5x leverage means you're exponentially more likely to get liquidated within 24 hours.”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.54,
+      "evidence": "虽然偏长期看多，但在下跌阶段会明确反对无脑抄底。例：2025-03-17 先判定 6–12 个月 bearish/sideways；2025-04-07 “Got so much hate for being bearish.”"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.44,
+      "evidence": "他不太给精确仓位公式，但有明显的杠杆约束倾向。例：2025-01-29 “Be cautious if you're leveraged.”；2025-07-30 明确抨击 5x 以上杠杆。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_realizedcap_growth_regime",
+      "name": "Realized Cap vs Market Cap Regime",
+      "name_zh": "实现市值与总市值增速的周期判断",
+      "type": "onchain_signal",
+      "description": "Compare market cap growth with realized cap growth to infer whether price appreciation is supported by fresh capital absorption or speculative markup. Persistent market-cap outperformance indicates mid-to-late bull markup; realized-cap catch-up indicates healthier accumulation.",
+      "description_zh": "比较总市值与实现市值的增速，判断上涨是由新资本吸收支撑，还是由投机性估值抬升驱动。总市值持续快于实现市值，偏向牛市中后段估值扩张；实现市值跟上，则偏向更健康的吸筹。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_or_late_bull",
+        "horizon": "position",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "2024-05-17: “Its market cap is growing faster than its realized cap, a trend that typically lasts around two years.”"
+    },
+    {
+      "proposed_id": "cap_new_sellside_liquidity_absorption",
+      "name": "Sell-side Liquidity Absorption",
+      "name_zh": "卖方流动性吸收能力",
+      "type": "onchain_signal",
+      "description": "Estimate whether known selling sources such as governments, miners, Mt.Gox distributions, or old whales can be absorbed by current exchange, OTC, and ETF demand without regime damage.",
+      "description_zh": "评估政府、矿工、Mt.Gox、老鲸鱼等已知卖方来源，是否会被当前交易所、OTC、ETF 需求吸收而不破坏市场趋势。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_if_absorbed_bearish_if_not",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2024-06-26: “US gov't sold 4K Bitcoin today, but less likely to impact the market. Coinbase Prime handled 20-49K BTC in sell-side liquidity daily...”"
+    },
+    {
+      "proposed_id": "cap_new_paper_btc_buying_engine",
+      "name": "Paper Bitcoin Buying Engine",
+      "name_zh": "纸比特币买盘引擎",
+      "type": "event_reaction",
+      "description": "Track synthetic or custodial demand channels such as ETFs, trusts, treasury companies, and prime brokerage products as persistent price support separate from visible retail spot flows.",
+      "description_zh": "跟踪 ETF、信托、比特币金库公司、主经纪产品等“纸比特币”需求通道，把它们视为独立于链上散户现货流之外的持续买盘来源。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2025-01-31: “The buying engine for paper Bitcoins is still running.”"
+    },
+    {
+      "proposed_id": "cap_new_whale_rotation_old_to_new",
+      "name": "Old Whales to New Whales Rotation",
+      "name_zh": "老鲸鱼向新鲸鱼换手",
+      "type": "structural_bias",
+      "description": "Use age bands, realized profits, dormancy, and custody clustering to detect whether old holders are distributing to institutions/new whales rather than retail, which changes top formation dynamics.",
+      "description_zh": "用币龄、已实现利润、休眠度和托管聚类判断老持有人是否在向机构/新鲸鱼而非散户换手，这会改变顶部形成方式。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "structurally_bullish_or_late_cycle",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-03-28: “Old whales are selling Bitcoin to new whales(TradFi), not retail investors.”；2024-04-24 提到 Average Dormancy 13 年峰值。"
+    },
+    {
+      "proposed_id": "cap_new_alt_limit_wall_accumulation",
+      "name": "Altcoin Limit-Wall Accumulation",
+      "name_zh": "山寨币限价买墙吸筹",
+      "type": "structural_bias",
+      "description": "Monitor cumulative limit buy quote volume in altcoins to infer stealth accumulation by larger players before broad altcoin rallies.",
+      "description_zh": "监控山寨币累计限价买单报价量，以识别大资金在全面山寨行情前的隐蔽吸筹。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_altcoins",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "图片 7 明确标注“LIMIT BUY”；2024-07-31 推文：“Limit buy order volume for altcoins... is increasing, indicating that strong buy walls are being set up.”"
+    },
+    {
+      "proposed_id": "cap_new_cyclical_signal_composite",
+      "name": "Composite On-chain Cycle Boundary",
+      "name_zh": "链上综合牛熊边界信号",
+      "type": "cycle_time",
+      "description": "Blend PnL index, 365-day moving average oscillator, realized cap growth, demand/supply, and capital inflow measures into a single cycle state machine: bull, boundary, bear, recovery.",
+      "description_zh": "把 PnL 指数、365 日均线振荡器、实现市值增速、供需关系、资本流入等合成为一个周期状态机：牛市、边界、熊市、复苏。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "regime_classification",
+        "horizon": "position",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "图片 2 和图片 3 都是明确的周期 composite 图；2025-02-27 与 2025-03-17 多次使用“bull-bear boundary”“every on-chain metric signals a bear market”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Two months ago, I said the bull cycle was over, but I was wrong.",
+      "rule_paraphrased": "愿意公开认错并快速修正框架，优先服从新数据而不是维护面子。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "If you're panic selling now, you're probably a noob.",
+      "rule_paraphrased": "把恐慌卖出视为非专业行为；在大级别牛市回撤中更倾向反身性看多。",
+      "category": "mantra"
+    },
+    {
+      "quote": "#Bitcoin cycle theory is dead.",
+      "rule_paraphrased": "旧的四年周期/鲸鱼卖给散户叙事失效时，必须重建模型，不能迷信历史模板。",
+      "category": "framework"
+    },
+    {
+      "quote": "The bus only departs when you get off.",
+      "rule_paraphrased": "市场常以最大化折磨参与者的方式运行；情绪化下车往往发生在接近反转处。",
+      "category": "mantra"
+    },
+    {
+      "quote": "On-chain indicators are not always bullish.",
+      "rule_paraphrased": "他不是宗教式多头；链上数据在不同阶段可以给出明确看空结论。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和纯 TA 交易员最大的不同，是把 BTC 看成一个可被链上数据、ETF 流、托管钱包、矿工/鲸鱼行为实时审计的资本网络，而不是单纯 K 线博弈。他会用周期和宏观流动性做上层框架，但真正的入场/观点切换依据更像“供需仪表盘”而非传统形态学。即使附图里出现 MA、PnL 周期信号、市场结构图，他的核心仍是链上供给、需求、持有者结构与机构资金流。 ",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "bull cycle is over",
+      "every on-chain metric signals a bear market",
+      "Bitcoin cycle theory is dead",
+      "still in the middle of the bull cycle",
+      "massive inflows are coming through ETFs",
+      "selling pressure is easing"
+    ],
+    "low_conviction_phrases": [
+      "I could be wrong",
+      "seems",
+      "likely",
+      "less likely to impact the market",
+      "expecting 6–12 months",
+      "not sure why, but I’m feeling it too",
+      "probably"
+    ]
+  }
+}

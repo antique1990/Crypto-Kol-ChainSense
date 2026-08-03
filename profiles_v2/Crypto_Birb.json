@@ -1,0 +1,179 @@
+{
+  "handle": "Crypto_Birb",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "cycle",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "SOL",
+    "FLOKI",
+    "AZERO",
+    "XRP"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.87,
+      "evidence": "[2024-05-29] 直接写“$BTC AT NEAR-TERM SUPPORT (SMA20)”。图 4、图 7 都是在上升结构里盯均线回踩后的延续，而不是追远离均线的扩张。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.82,
+      "evidence": "[2026-04-07] “We're below SMA200 (95.2k) & SMA50 (88.9k), so bearish trend conditions.” 他把价格相对 50/200 均线的位置当作趋势切换条件；图 8 也是典型收复关键位后看上行延续。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.78,
+      "evidence": "图 4 明确画出 FLOKI 的水平箱体上下沿，图 7 也把 BTC 放在矩形整理区里处理；[2025-06-30] “The longer the consolidation, the bigger the breakout” 说明他反复用盘整-突破框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.76,
+      "evidence": "图 7 在箱体下沿假跌破后直接标注“OVERTHROW”，这是非常典型的扫流动性/扫止损后收回再上行。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.71,
+      "evidence": "[2024-05-28] “$BTC RALLY FAILED AT $72K”; [2024-07-29] “$BTC magical $70,000 resistance rejected, again👀”。他经常强调关键位失败突破，而不是默认真突破。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.69,
+      "evidence": "图 4、图 7 都是先定义区间边界，再围绕边界做判断；不是复杂指标堆叠，而是靠箱体上沿/下沿的反应交易。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.74,
+      "evidence": "图 2 的 BTC 周线在上升均线之上，配合 [2024-12-31] “2025 is here! Manifesting $BTC $225,000+” 和多次“Higher for longer”，他对强势上升趋势有明显顺势做多偏好。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.66,
+      "evidence": "[2026-04-07] 明确给出“below SMA200 & SMA50, so bearish trend conditions”，说明他也会用简单客观条件定义空头环境，而不是永远无脑看多。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.58,
+      "evidence": "[2024-04-30] “New ETFs boost demand (+$237B Vol ttl)”; [2025-06-28] “New ATH: Total Spot Bitcoin ETF AUM @ $142.29B”。他把 ETF 资金/规模当作 BTC 上涨的需求代理变量。"
+    },
+    {
+      "id": "cap_018_ma_golden_cross",
+      "weight": 0.5,
+      "evidence": "[2025-06-28] “there was a golden SMA50/200 crossover...” 说明他会把 50/200 均线金叉当作中长期趋势确认。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.47,
+      "evidence": "[2024-11-30] “Altcoin Season Is 68% Ready!”；[2026-04-11] “Altcoins are about to explode.” 他明显在做 BTC 主导到山寨扩散的轮动判断。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.62,
+      "evidence": "[2024-02-29] “Best strategy? Long winners, cut losers.”；[2026-04-04] “Stop losses are the last line of defense.” 虽然整体风格偏激进，但口头框架里反复强调止损纪律。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_consolidation_breakout",
+      "name": "Box Consolidation Breakout",
+      "name_zh": "箱体整理突破",
+      "type": "pattern_setup",
+      "description": "Define a horizontal trading box, wait for prolonged compression, then trade either the reclaim after a false break or the expansion through the box edge. Target is typically the box height or the next major resistance.",
+      "description_zh": "先定义水平箱体，等待足够长的压缩整理，再交易假跌破后的收回，或箱体边缘突破后的扩张。目标通常是箱体高度或下一关键阻力位。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "breakout_continuation_or_reclaim_reversal",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "图 4、图 7 都是标准箱体；[2025-06-30] “The longer the consolidation, the bigger the breakout.”"
+    },
+    {
+      "proposed_id": "cap_new_btc_seasonality_calendar",
+      "name": "BTC Seasonality Calendar",
+      "name_zh": "BTC 月度季节性日历",
+      "type": "cycle_time",
+      "description": "Use month-by-month and quarter-by-quarter historical BTC seasonality as a directional prior, especially when current structure is neutral and the trader wants to lean bullish or cautious.",
+      "description_zh": "用 BTC 历史月度/季度季节性作为方向先验，尤其是在当前结构中性时，用来决定偏多还是偏谨慎。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "seasonal_prior",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "[2024-05-28] “JUNE-JULY BULL SEASON AHEAD”; [2025-06-30] “July: typically bullish”; [2026-03-31] “April up 10/15 times; +18.93% avg. gain.”"
+    },
+    {
+      "proposed_id": "cap_new_altseason_breadth_trigger",
+      "name": "Altseason Breadth Trigger",
+      "name_zh": "山寨季广度触发",
+      "type": "structural_bias",
+      "description": "Track breadth across top alts versus BTC rather than relying only on BTC dominance; when enough large-cap alts outperform together, treat it as altseason ignition.",
+      "description_zh": "不只看 BTC.D，而是跟踪主流山寨相对 BTC 的广度表现；当足够多的大市值山寨同步跑赢 BTC，就视为山寨季启动信号。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "altcoin_risk_on",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2024-11-30] “Altcoin Season Is 68% Ready! Momentum and breadth building up.” 这比单纯 BTC.D 切换更接近广度框架。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Best strategy? Long winners, cut losers.",
+      "rule_paraphrased": "顺着盈利头寸加码或持有，亏损头寸快速处理，不做均摊亏损。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The only way not to make any money in this market is by ignoring facts. Stop ignoring facts.",
+      "rule_paraphrased": "优先服从客观市场证据，不要被情绪、立场或叙事绑架。",
+      "category": "framework"
+    },
+    {
+      "quote": "The greatest amount of cognitive dissonance is experienced during the early stages of a reversal. Bookmark these words",
+      "rule_paraphrased": "真正的反转初期通常最不舒服、最不被相信，不能等到所有人认同才行动。",
+      "category": "framework"
+    },
+    {
+      "quote": "The longer the consolidation, the bigger the breakout",
+      "rule_paraphrased": "盘整时间越长，后续波动释放越大，重点寻找压缩后的方向选择。",
+      "category": "framework"
+    },
+    {
+      "quote": "Stop losses are the last line of defense. The real trading starts before you even open the platform.",
+      "rule_paraphrased": "风险管理先于下单，止损只是最后一道保护，不是全部风控。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他的图表语言非常简化，核心就是箱体、关键水平位、50/200 均线、假突破/收回，没有复杂因子堆叠。与很多纯 TA 交易员不同，他会把季节性统计、ETF 资金流、山寨季叙事和强烈的内容营销混在一起，形成高传播性的“看多模板”。整体上他更像一个强方向性的 swing 型 BTC/山寨牛市布道者，而不是中性、系统化的双向交易员。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "BREAKOUT CONFIRMED",
+      "Monster #BTC rally ahead",
+      "Ultimate market bottom confirmed",
+      "Higher for longer",
+      "Altcoins are about to explode",
+      "This year you can retire your family. Lock in"
+    ],
+    "low_conviction_phrases": [
+      "looks ready to rip",
+      "seems like",
+      "anyone?",
+      "about to",
+      "might",
+      "if"
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "handle": "VentureCoinist",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "contrarian",
+    "cycle",
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "altcoins",
+    "memecoins",
+    "L2s"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.9,
+      "evidence": "他最高赞之一直接讨论“$ETH ETF flows chart is wild... Flows have dwindled down to virtually zero”；图 1 也是 ETH ETF flow 拆分图。到 2026-04-11 仍在发“ETF FLOWS: ... BTC: $240M ETH: $64.9M SOL: $11M XRP: $9M”，说明他持续把 ETF 资金流当成行情需求代理变量。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.86,
+      "evidence": "2024-02-23 明确写过：“people tried to call the bottom during the bear market only for price to keep trending lower & lower & lower for months... until no one wanted to even try”，这是典型‘别在瀑布里硬接刀，等市场真正止跌/绝望后再做’。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.78,
+      "evidence": "他反复使用周期框架而非只看单点价格：2024-06-25“a little more summer chop then bull market continuation”，2024-11-05“Bullish for the next 12 months.”，2026-04-11 又用季度统计强化“Q2 averages +24.49%... 2025 had the same setup”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.74,
+      "evidence": "他频繁把市场定性为区间/震荡：2024-06-25“summer chop”，2026-04-11“Price is still stuck in the same range”，以及“probably chops around all weekend, will assess on Monday how the weekly closed”。这说明他会先判断是否处于盘整 regime，再决定是否追价。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.7,
+      "evidence": "虽然会等确认，但默认偏多：2024-07-29 甚至说“life is too long to be short for even 1 second”；2024-09-17“hold until stalk”；2024-03-31“$SOL making a new USD ATH is the warm up. $SOL making a new BTC ATH is where things get SILLY.”，都是趋势延续而非均值回归语境。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.63,
+      "evidence": "他把当前行情放进跨年度模板里看：2024-09-17“the exact same setup from last year is playing out again: peak apathy = max opportunity”，2024-11-05“summer chop fractal complete. Bullish for the next 12 months.”，是明显的跨周期/分形类比。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.61,
+      "evidence": "他不只看 BTC，还在意何时轮到山寨：2024-03-31 说“$SOL making a new BTC ATH is where things get SILLY”，2024-09-17 强调“altcoins performed in the following 6 months”，2026-04-11 又谈“War for liquidity is heating up next cycle... Base, ETH mainnet, Solana...”。这是典型主流币到山寨轮动视角。"
+    },
+    {
+      "id": "cap_026_smc_order_block",
+      "weight": 0.42,
+      "evidence": "2026-04-11 直接写“BTC is trading below the Bearish Order Block 1 at $76,000–$79,000. If price breaks above this zone...”说明他至少部分吸收了结构派/SMC 的订单块框架。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.38,
+      "evidence": "虽然总体偏多，但他并不否认熊市趋势持续性；2024-02-23 那条关于 bear market “lower & lower & lower for months”的总结，本质上就是承认强下降趋势下任何主观抄底都容易连续失误。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_low_float_high_fdv_reflexivity",
+      "name": "Low-Float High-FDV Reflexivity",
+      "name_zh": "低流通高 FDV 反身性博弈",
+      "type": "structural_bias",
+      "description": "Tracks whether a token launch is structurally fragile or reflexively strong based on float, FDV, unlock profile, and market willingness to ignore valuation during narrative booms.",
+      "description_zh": "根据流通盘、FDV、解锁结构与叙事热度，判断新币是结构性脆弱还是能靠情绪/流动性反身性继续涨。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian_or_momentum",
+        "horizon": "swing",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "2024-05-20 多次讨论“low-float high-FDV launches”，还发了图 3 专门比较 2022-2024 新币 MC/FDV 差距，并写“if everyone is bearish on low-float high-FDV launches...”与“FDV do not matter”式例外判断。"
+    },
+    {
+      "proposed_id": "cap_new_crypto_political_beta",
+      "name": "Crypto Political Beta",
+      "name_zh": "加密政治贝塔交易",
+      "type": "event_reaction",
+      "description": "Uses election odds, candidate rhetoric, and regulatory posture as a directional input for crypto sentiment and sector repricing.",
+      "description_zh": "把选举胜率、候选人对加密的表态和监管立场，当作加密市场情绪和估值重估的事件驱动因子。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2024-06-28 说“The next president... may be decided by how much they support our coins”；图 2 也是特朗普/拜登加密立场对照；2024-11-06 转发“THE UNITED STATES WILL BE THE CRYPTO CAPITAL OF THE PLANET...”。"
+    },
+    {
+      "proposed_id": "cap_new_apathy_extreme_opportunity",
+      "name": "Apathy Extreme Opportunity",
+      "name_zh": "极度冷漠即机会",
+      "type": "structural_bias",
+      "description": "Treats social disengagement, boredom, and narrative exhaustion as a contrarian accumulation signal when broader cycle conditions remain constructive.",
+      "description_zh": "在大周期仍健康的前提下，把社媒冷淡、市场无聊和叙事疲劳视为反向布局信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2024-09-17 明说“peak apathy = max opportunity”；2024-06-26 也问“Is everyone really full blown doomer at this point?”，这不是传统 TA 指标，而是明显的情绪极值框架。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "people tried to call the bottom during the bear market only for price to keep trending lower & lower & lower for months & months until no one wanted to even try",
+      "rule_paraphrased": "不要因为跌很多就主观抄底；趋势没结束前，底部会比你想象得更晚出现。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Steady lads, a little more summer chop then bull market continuation.",
+      "rule_paraphrased": "季节性横盘和磨人行情不改变大级别牛市，只是中继而不是终结。",
+      "category": "framework"
+    },
+    {
+      "quote": "peak apathy = max opportunity.",
+      "rule_paraphrased": "当市场兴趣与参与度降到极低，往往反而接近高赔率布局区。",
+      "category": "mantra"
+    },
+    {
+      "quote": "life is too long to be short for even 1 second",
+      "rule_paraphrased": "默认做多偏置极强，除非证据非常充分，否则不愿长期站在空头一边。",
+      "category": "mantra"
+    },
+    {
+      "quote": "hold until stalk",
+      "rule_paraphrased": "在明确牛市阶段，倾向于延长持仓而不是过早止盈。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不像纯 K 线 TA 那样只盯图形，而是把 ETF 资金流、政治监管叙事、季节性/周期、以及社交情绪冷暖一起拼成一个偏多的 swing 框架。与很多结构派不同，他的 edge 更像“叙事流动性观察 + 反向情绪判断 + 周期模板”，图表更多是辅助确认而不是唯一决策源。另一个显著特征是他对低流通高 FDV、山寨轮动和‘apathy extreme’这类加密原生结构问题非常敏感。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "bull market continuation",
+      "Bullish for the next 12 months",
+      "peak apathy = max opportunity",
+      "hold until stalk",
+      "life is too long to be short for even 1 second",
+      "where things get SILLY"
+    ],
+    "low_conviction_phrases": [
+      "Remain optimistic it could turn around",
+      "probably chops around all weekend",
+      "good effort thus far but nothing conclusive yet",
+      "I think",
+      "should"
+    ]
+  }
+}

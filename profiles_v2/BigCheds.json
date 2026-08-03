@@ -1,0 +1,256 @@
+{
+  "handle": "BigCheds",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "risk_first",
+    "content_creator",
+    "mixed"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "FET",
+    "XRP",
+    "WIF",
+    "TAO"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.9,
+      "evidence": "图1、图3、图4、图5、图8都明显叠加布林带；他在 2024-09-30 明说“$BTC 4H hidden bullish divergence on lower BB dip with volume”，2025-07-31 又说“daily BB pinch to 1H pinbar and reversal”，说明 BB 收口、下轨回踩、带宽扩张是核心框架。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.9,
+      "evidence": "大量推文围绕回踩均线后的延续：2024-06-30“daily strength flirting with first close above EMA 8 since June 7”，2024-06-30“trying 4H SMA 50 again from underside”，2025-05-30“Price has held last few attempts”对 DMA20 的反应；图3、图8都在观察价格对 20/50/200 均线的回踩与再起。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.86,
+      "evidence": "2026-02-28“$BTC 4H reclaim as daily works on a bullish pinbar”，2025-05-30“first 4H MA 200 tag”，2024-09-30“now throwback to DMA 200”，他反复把收复/失守 200MA、20DMA、8EMA 当作趋势切换确认。"
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.8,
+      "evidence": "2024-11-30“$FET clean break of I-HNS neckbase line on daily”，2024-01-31“$BTC 4H can also be viewed as I-HNS continuation testing neck-base”，以及图4 在 4H 上直接画出多段圆弧底后冲击颈线区域，说明他对 I-HNS/neck-base 的运用非常成熟。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.66,
+      "evidence": "2025-09-30 直接发“Double Bottom Reversal For the Trading Encyclopedia”；图4 的中段结构也有双底/圆弧底组合特征，属于他教学体系里常见的底部反转模板。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.62,
+      "evidence": "2026-04-01“$TRX prob forms a handle for cup and handle continuation here on daily”；图4 有明显杯状回升后在颈线下做小幅整理再冲击阻力，符合他常见的 continuation 视角。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.72,
+      "evidence": "2026-02-28“daily works on a bullish pinbar with 3.5 hours left in session”，2025-07-31“1H now starting to test that pinbar's range”；他不只识别 pinbar，还会跟踪其后续对 pinbar 区间的测试。"
+    },
+    {
+      "id": "cap_053_doji_reversal",
+      "weight": 0.63,
+      "evidence": "2024-12-31“$BTC monthly candle (light volume spinning top) explained here - and it’s significance -”，2025-02-28“Medium body > large body > spinning top”，说明他把 spinning top / 小实体犹豫K作为关键拐点阅读的一部分。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.84,
+      "evidence": "2024-04-30“needs to hold here on daily or we likely see 52k range”，2024-07-30“$BTC consolidating like a champ”，2026-02-28“Price still ranging and highly vulnerable”；图1、图6、图7 都是明确的箱体支撑阻力框。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.74,
+      "evidence": "图1 直接框出上沿与下沿区间，强调守住下沿否则下看；2026-04-03“$SOL Solana testing bottom of daily range”；他常在区间边缘给出 hold / fail 的条件判断，而不是中间位置追价。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.77,
+      "evidence": "2026-01-31“Remember, we don’t buy oversold, we buy when RSI leaves oversold territory”；这是标准的先等止跌确认、避免直接接飞刀。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.68,
+      "evidence": "2026-01-31“we don’t buy oversold, we buy when RSI leaves oversold territory”，2026-01-31 又说“price will bottom around the time weekly RSI gets to 24 or 25 area”；他不是机械抄 RSI，而是等 RSI 离开极端区域。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.58,
+      "evidence": "2024-09-30“$BTC 4H hidden bullish divergence on lower BB dip with volume”；虽然 seed 里是普通 bullish divergence，但他显然把 RSI 背离作为次级确认工具。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.56,
+      "evidence": "2025-02-28“$BTC 4H RSI working on hidden bearish divergence re: higher highs vs price”；说明他也用 bearish divergence 辅助识别短线 rollover。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.95,
+      "evidence": "2025-03-31“Refusing to take a small loss will often lead to the opportunity to refuse to take a big loss.”，2024-03-31“If the reason you entered your trade no longer exists then a reason to exit your trade now does.”；这是他最稳定、最高频的人设与交易原则。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.88,
+      "evidence": "2025-08-31“cut your position size by 75%”；他的公开建议明显偏向先活下来、先缩仓，再谈抓大行情。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.65,
+      "evidence": "2024-03-31“on track for highest weekly candle close in history”，2024-01-31“4H now re-pressing range highs”，说明他会明确区分趋势延续环境与区间环境，并在强势结构中偏向 continuation 解读。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.61,
+      "evidence": "图6、图7 是日线下降通道/下降趋势线压制后的向上尝试；2025-02-28“body progression hinting at roll over”，2025-03-31“fresh 4H lows👀”，他对下跌趋势中的弱反弹与 rollover 也有清晰定义。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.34,
+      "evidence": "2025-09-30“$BTC dominance creeping higher”；会看 BTC.D，但明显不是其主交易框架核心。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.28,
+      "evidence": "2024-01-31 发过“$DXY markup”，2026-03-30“$DXY and $WTI same price”；他会观察宏观相关品种，但更多像背景板，不是主要触发器。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_hidden_divergence",
+      "name": "Hidden RSI Divergence",
+      "name_zh": "RSI 隐性背离",
+      "type": "indicator_rule",
+      "description": "Use hidden bullish or bearish RSI divergence as a continuation signal within an existing trend, often in combination with Bollinger Band location and price structure.",
+      "description_zh": "在既有趋势中，用 RSI 隐性看多/看空背离作为延续信号，常与布林带位置和价格结构联合使用。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "trend_continuation",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "2024-09-30“$BTC 4H hidden bullish divergence on lower BB dip with volume”；2025-02-28“$BTC 4H RSI working on hidden bearish divergence”"
+    },
+    {
+      "proposed_id": "cap_new_outside_inside_bar_context",
+      "name": "Outside/Inside Bar Context Read",
+      "name_zh": "内外包K线语境读取",
+      "type": "pattern_setup",
+      "description": "Interpret daily or 4H outside bars, inside bars, and 2x inside sequences in relation to nearby pivots, trend state, and follow-through rather than as isolated candles.",
+      "description_zh": "将日线或4H的 outside bar、inside bar、2x inside 与附近枢轴位、趋势状态和后续跟随结合解读，而不是孤立看单根K线。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "reversal_or_expansion",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2024-04-29“needs above 64.5k for daily outside”；2024-09-29“$BTC closing in on 2x inside daily”；2025-03-31“now working on daily outside bar with 84.5k pivot above”"
+    },
+    {
+      "proposed_id": "cap_new_throwback_retest",
+      "name": "Throwback Retest",
+      "name_zh": "突破后回踩确认",
+      "type": "structural_bias",
+      "description": "After a breakout or reclaim, wait for price to revisit the breakout zone, channel line, or major moving average and judge whether it holds cleanly before positioning for continuation.",
+      "description_zh": "突破或收复后，不追第一脚，而是等价格回踩突破位、通道线或关键均线，确认守住后再做延续。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "continuation",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2024-07-30“another throwback to 66k range”；2024-05-31“another throwback on daily”；2025-04-30“nice response to the throwback”；图4、图5 都是在颈线/箱体上沿附近等待回踩确认。"
+    },
+    {
+      "proposed_id": "cap_new_body_progression_rollover",
+      "name": "Candle Body Progression",
+      "name_zh": "K线实体递进衰竭",
+      "type": "indicator_rule",
+      "description": "Read the progression from strong expansion candles to smaller bodies or spinning tops as evidence of momentum exhaustion or rollover risk near decision levels.",
+      "description_zh": "在关键位附近观察 K 线从扩张实体到缩小实体、再到 spinning top 的递进，作为动能衰竭或转弱信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "reversal_risk",
+        "horizon": "short_swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2025-02-28“Medium body > large body > spinning top”；2025-02-28“Note body progression”"
+    },
+    {
+      "proposed_id": "cap_new_neckbase_logic",
+      "name": "Neck-Base Priority",
+      "name_zh": "颈基线优先原则",
+      "type": "structural_bias",
+      "description": "In head-and-shoulders and inverse head-and-shoulders structures, prioritize the quality and clarity of the neck-base over perfect symmetry of shoulders.",
+      "description_zh": "在头肩/头肩底结构中，更重视颈基线是否清晰、可交易，而不是肩部是否完美对称。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "pattern_validation",
+        "horizon": "swing",
+        "confidence_base": 0.75
+      },
+      "example_evidence": "2024-01-31“Shoulder structure is often flexible, though the most important feature is a well defined neck-base”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "“If the reason you entered your trade no longer exists then a reason to exit your trade now does.”",
+      "rule_paraphrased": "入场逻辑失效就立刻退出，不为仓位找借口。",
+      "category": "framework"
+    },
+    {
+      "quote": "“Refusing to take a small loss will often lead to the opportunity to refuse to take a big loss.”",
+      "rule_paraphrased": "先接受小亏，避免把普通错误养成灾难性亏损。",
+      "category": "mantra"
+    },
+    {
+      "quote": "“Remember, we don’t buy oversold, we buy when RSI leaves oversold territory”",
+      "rule_paraphrased": "不直接抄超卖，要等动能真正拐头离开极端区域再做。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "“Why would they? Good charts are strong, bad charts are weak. Avoid the weak stuff. Don't worry about what \"alts\" are doing, focus on your individual charts. Don't get distracted”",
+      "rule_paraphrased": "先筛强图，弱图直接回避；交易对象靠个体结构，不靠题材叙事。",
+      "category": "framework"
+    },
+    {
+      "quote": "“When you are so excited about your trade that you take a screen shot to send to your buddy, that is probably when you should sell.”",
+      "rule_paraphrased": "情绪最亢奋时通常接近兑现点，而不是加仓点。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和很多泛宏观或链上叙事型交易员不同，核心是极度纯粹的图表派：布林带、均线、K线实体结构、颈线/箱体/throwback，形成一套很稳定的价格行为语言。其次，他不是只讲形态名称，而是特别强调形态所在的位置、均线关系、是否回踩确认、以及 candle body progression 这类细节。最后，他有很强的教育者属性，会把 setup 拆成可复用 playbook，但风险控制语气始终压过预测语气。",
+  "risk_style": "conservative",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "needs to hold here",
+      "clean break",
+      "confirmation",
+      "on track",
+      "highest weekly candle close in history",
+      "price has held",
+      "bullish continuation",
+      "reclaim"
+    ],
+    "low_conviction_phrases": [
+      "if I had to guess",
+      "likely",
+      "prob",
+      "working on",
+      "trying",
+      "flirting with",
+      "approaching key spot",
+      "interesting spot",
+      "highly vulnerable"
+    ]
+  }
+}

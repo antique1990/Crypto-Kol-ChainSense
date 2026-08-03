@@ -1,0 +1,214 @@
+{
+  "handle": "CryptoTony__",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "FET",
+    "INJ",
+    "DOGE",
+    "TAO"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.93,
+      "evidence": "明确直说：[2024-11-30] \"$FET / $USD - Update   Cup and Handle breakout. LFG\"；附图里也有典型杯柄突破后的水平位上破。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.82,
+      "evidence": "他大量强调回踩后继续上行，如 [2025-05-31] \"$ETH / $USD - Update   $2750 reclaim and we are good to go\"、[2025-06-30] \"$FET / $USD - Update   0.80c is the level to reclaim for that next level up here\"，本质是等回踩/收复后顺势做延续。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.78,
+      "evidence": "虽然他更多画的是水平价位而不是均线，但表达逻辑与‘关键收复确认’高度一致：\"0.34c to reclaim for a solid entry\"、\"$1.68 reclaim for an entry\"、\"$28.50 is the level to hold above\"。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.76,
+      "evidence": "整体长期默认牛市/上升趋势框架，反复使用 \"The best part of the bull cycle is yet to come\"、\"The final stage of the bull cycle is yet to come\"、\"UP ONLY\"。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.72,
+      "evidence": "他经常把价格理解为区间等待突破或收复，例如 [2024-08-31] \"$FET / $USD - Update  Range for a bit more then pump higher please\"；图里多次出现水平箱体上沿/中位线作为决策点。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.67,
+      "evidence": "图 6 的 DOGE 周线是明显的长期下降趋势线压制后向上突破；[2024-11-30] \"$CRV / $USD - Update   Break that trend line. I will enter\" 也说明他常用下降趋势线突破做触发。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.58,
+      "evidence": "多张图都是水平阻力+抬高低点/逼近阻力的结构，尤其图 3、图 7、图 8 都是围绕固定横线等待上破；[2026-04-04] \"$FET pump is coming. Grinding closer to resistance.\""
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.49,
+      "evidence": "[2024-05-31] \"$ETH / $BTC - Update   Still sign of an #Altseason yet, i will keep you posted on this as we get closer.\" 说明他会用 BTC/ETH 或市场结构判断山寨季切换。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.61,
+      "evidence": "他高频使用 bull cycle 阶段叙事，如 \"The best part of the bull cycle is yet to come\"、\"The final stage of the bull cycle is yet to come\"、\"2025 will be bullish for #Crypto IMO .. At least the first half\"。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.31,
+      "evidence": "[2024-01-31] \"#FOMC stats before the release in a couple of hours\"、\"Are we thinking that the FED cut rates legends or keep them as they are\"，说明他会关注宏观事件窗口，但不是核心框架。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.74,
+      "evidence": "他多次强调等待更安全位置，不盲目追或抄底，如 [2025-01-31] \"$DOGE / $USD - Update   0.34c to reclaim for a solid entry for me to get back in safely.\""
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.63,
+      "evidence": "风控口径反复出现：\"NEVER INVEST MORE THAN YOU CAN AFFORD TO LOSE\"、\"ALWAYS DCA  Never go all in\"、\"Do not be over exposed ever on any investment\"。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.66,
+      "evidence": "[2024-08-31] \"$INJ / $USD - Update   Looking vulnerable today i have to see. I cut my position and flip short if we lose that low we are on now\"，是非常典型的失效即减仓/反手。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.69,
+      "evidence": "图 4 是他拿来类比的典型抛物线冲顶结构；并且他明确说过 [2024-04-30] \"Going up in a straight line is not healthy and always ends up in a horrific correction\"。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_horizontal_level_reclaim_entry",
+      "name": "Horizontal Level Reclaim Entry",
+      "name_zh": "水平关键位收复入场",
+      "type": "indicator_rule",
+      "description": "Use a previously lost or contested horizontal support/resistance as the main trigger. Enter only after price reclaims the level and preferably holds it on close.",
+      "description_zh": "把前期失守或反复争夺的水平位作为核心触发条件，只有在价格重新收复并最好收盘站稳后才入场。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "\"$2750 reclaim and we are good to go\"、\"0.80c is the level to reclaim\"、\"0.34c to reclaim for a solid entry\"、\"$1.68 reclaim for an entry\"。这是他最稳定、最重复的执行语法，但 seed 里没有专门的水平位收复规则。"
+    },
+    {
+      "proposed_id": "cap_new_q4_crypto_seasonality",
+      "name": "Q4 Crypto Seasonality Bias",
+      "name_zh": "Q4 季节性看多偏置",
+      "type": "cycle_time",
+      "description": "Apply a bullish prior into late Q3/Q4 based on recurring seasonal narratives such as Uptober, Moonvember and year-end momentum.",
+      "description_zh": "基于 Uptober、Moonvember、年末冲刺等季节性叙事，在每年 Q3 末到 Q4 给市场施加一个先验看多偏置。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "[2024-09-30] \"#UPTOBER TOMORROW\"、[2025-09-30] \"Who's ready for Q4 tomorrow? -Uptober -Moonvember -Bullcember\"、[2024-11-30] \"BRING ON #PUMPTEMBER TOMORROW\"。"
+    },
+    {
+      "proposed_id": "cap_new_trendline_break_then_enter",
+      "name": "Trendline Break Confirmation Entry",
+      "name_zh": "趋势线突破确认入场",
+      "type": "pattern_setup",
+      "description": "Wait for a clean break of a major descending trendline before initiating a swing long, often combined with a horizontal hold above nearby support.",
+      "description_zh": "等待主要下降趋势线被有效突破后再开多，通常还结合附近水平位站稳作为二次确认。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "[2024-11-30] \"$CRV / $USD - Update   Break that trend line. I will enter\"；图 6 的 DOGE 周线也是典型的长期下降趋势线突破后再看上方水平目标。"
+    },
+    {
+      "proposed_id": "cap_new_sector_rotation_watchlist",
+      "name": "Sector Rotation Watchlist",
+      "name_zh": "板块轮动观察框架",
+      "type": "structural_bias",
+      "description": "Track which narrative sector is currently leading and rotate focus into the next likely group rather than treating the whole alt market as one block.",
+      "description_zh": "跟踪当前领涨叙事板块，并提前埋伏下一个可能接力的板块，而不是把整个山寨市场当成一个整体来交易。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "rotation_long",
+        "horizon": "swing",
+        "confidence_base": 0.58
+      },
+      "example_evidence": "[2024-02-29] \"Different sectors will pump one at a time. Right now we have #Memecoins pumping .. I am keeping an eye on #Gamefi for clues of an impending move\"；[2024-05-31] 还专门发了 \"$INJ Ecosystem\" 图。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "BUY ON DUMPS SELL ON PUMPS   #Crypto101",
+      "rule_paraphrased": "核心执行哲学是逢回撤买、逢情绪性拉升卖，不追高。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Going up in a straight line is not healthy and always ends up in a horrific correction   A Pump, Consolidation, Pump, Consolidation is the best and healthiest way to proceed up",
+      "rule_paraphrased": "他偏好健康趋势结构，认为上涨需要通过横盘/回踩消化，而不是无脑垂直拉升。",
+      "category": "framework"
+    },
+    {
+      "quote": "Sometimes the best position is no position at all. Weird how so many find that hard to understand",
+      "rule_paraphrased": "没有确认就空仓等待，避免强行交易。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "NEVER INVEST MORE THAN YOU CAN AFFORD TO LOSE",
+      "rule_paraphrased": "仓位上限先于观点，先保证能活下来。",
+      "category": "framework"
+    },
+    {
+      "quote": "Put the greedy aside and take profit as you go",
+      "rule_paraphrased": "分批止盈，反贪婪，是他面向散户受众反复灌输的纪律。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是复杂指标型交易员，而是把极简 TA 语言化、内容化：水平位、趋势线、区间、收复、牛市阶段，这几种元素反复组合。与很多高深派 TA 不同，他的优势在于把 swing 级别的方向判断包装成极强的社区动员和情绪叙事。执行上看似很亢奋，但真正的入场口径往往是“reclaim/hold above this level”这种保守确认式触发。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "FULL SEND",
+      "LFG",
+      "Long and strong",
+      "we are good to go",
+      "The pump is coming",
+      "HOLD HOLD HOLD",
+      "UP ONLY",
+      "easy $1000 this bull run",
+      "to $5,000",
+      "bulls remain in control"
+    ],
+    "low_conviction_phrases": [
+      "IMO",
+      "please",
+      "i think",
+      "i would personally like to see",
+      "hopefully",
+      "if we can hold",
+      "if we remain",
+      "looking vulnerable today i have to see",
+      "i will keep you posted",
+      "for a safer entry"
+    ]
+  }
+}

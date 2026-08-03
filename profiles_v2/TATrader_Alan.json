@@ -1,0 +1,281 @@
+{
+  "handle": "TATrader_Alan",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "content_creator",
+    "macro"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "DOGE",
+    "ETH",
+    "USDT.D",
+    "DXY",
+    "TOTAL2",
+    "OTHERS"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.9,
+      "evidence": "[2024-07-28] \"Bitcoin and USDT.D are inversely correlated. It's so obvious that $BTC is going to break the Bull Flag while $USDT.D is breaking down the Bear Flag\"; 图 5 直接把 BTC 标成 Bull Flag。"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.76,
+      "evidence": "[2024-07-28] 同一条推文把 USDT.D 明确标成 \"Bear Flag\"，作为 BTC 看多的反向确认；图 5 也是 BTC Bull Flag vs USDT.D Bear Flag 的成对框架。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.86,
+      "evidence": "[2025-04-28] \"A third falling wedge breakout has just occurred in $Doge/$BTC\"；[2025-06-29] \"Dogecoin has been forming falling wedges repeatedly on support levels\"；[2024-12-31] \"If $BTC breaks out of the Falling Wedge, a Huge Surge will follow.\""
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.74,
+      "evidence": "[2024-07-29] \"Bitcoin is breaking out this inverse Head and Shoulders Pattern\"；[2024-01-29] \"Bitcoin may be building up an inverse Head & Shoulders pattern\"；[2025-01-31] ETH \"Inverse Head & Shoulders Pattern Brewing\"。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.7,
+      "evidence": "[2024-10-31] \"Bitcoin shows up two identical Cup with handle pattern\"；[2024-11-30] \"Bitcoin has completed its second Cup-with-Handle pattern of the decade\"；[2025-01-30] \"Cup with Handle Pattern on Daily Chart ... target of $121k\"。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.62,
+      "evidence": "[2025-01-29] \"Dogecoin might be forming an Ascending Triangle on the 4-hour chart\"；[2024-03-31] \"Bitcoin has already printed two third of an Ascending Triangle in H4 chart\"。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.78,
+      "evidence": "[2024-08-31] \"Bitcoin EMA crossover and OBV price action may trigger $BTC to pump again\"；图 2 明确使用 20 EMA / 50 EMA 回踩延续逻辑；[2025-04-28] \"reclaiming the 100 EMA after breakdown\"。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.72,
+      "evidence": "[2024-06-24] \"Double Bottom pattern ... associated with RSI Bullish Divergence\"；[2025-03-29] \"RSI signals Bullish Divergence\"；[2024-01-31] \"Hidden Bullish divergence is seen in RSI\"。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.68,
+      "evidence": "[2024-06-25] \"Bitcoin Daily RSI has come below 30, which is the Oversold Zone\"；[2025-01-29] \"RSI indicates momentum gains after hitting the oversold zone\"；[2025-03-28] \"weekly RSI suggests a strong potential rebound\"。"
+    },
+    {
+      "id": "cap_020_macd_histogram_cross",
+      "weight": 0.67,
+      "evidence": "[2024-03-31] \"Bitcoin MACD Bullish Crossover is happening on H4 chart\"；[2025-06-30] \"Dogecoin MACD Bullish Cross confirmed\"；[2025-09-30] \"Golden Cross on MACD is happening, Histogram turns green\"。"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.38,
+      "evidence": "[2025-08-30] \"Dogecoin Bollinger BandWidth (BBW) indicates a potential surge incoming\"，说明他会用波动压缩后扩张的框架。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.35,
+      "evidence": "[2024-01-30] \"Bitcoin forms consolidation at/above Fib 0.618\"，直接把 0.618 当作牛市延续支撑。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.58,
+      "evidence": "[2024-06-30] \"DXY is hitting an Over-Head-Resistance ... it brings Bitcoin a spike\"；[2025-02-28] \"DXY MACD Bearish Crosses ... led to a Drop in DXY and a Pump in BTC\"。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.55,
+      "evidence": "[2024-06-24] \"Bitcoin is ready to go Parabolic after the 4th Halving\"；他多次把 post-halving rally 当作结构模板。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.82,
+      "evidence": "[2024-02-29] \"Bitcoin is following the moves in 2017-2021\"；图 3、图 6、图 7、图 8 都是 DOGE 跨周期类比；[2025-01-29] \"complete the pattern in Cycle 3\"。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.66,
+      "evidence": "[2024-07-28] \"Bitcoin behaves Strong Uptrend Momentum on Macro Chart\"；[2025-06-29] \"$Doge ... forming a higher high after a trendline breakout. Uptrend confirmed\"。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.34,
+      "evidence": "[2024-01-29] \"The long lower wick grabbed the liquidity of recent support too\"，说明他会把长下影+扫流动性作为确认。"
+    },
+    {
+      "id": "cap_054_engulfing_reversal",
+      "weight": 0.33,
+      "evidence": "[2024-07-27] \"Bullish Engulfing Candle Pattern is seen ... just before the Rally\"。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.31,
+      "evidence": "[2025-06-26] \"Dogecoin has just formed a lower wick on the 3-day candle in the long lower wick zone\"；[2024-01-29] 强调 hammer 的长下影。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.48,
+      "evidence": "[2025-04-29] \"Dogecoin has been moving within different Ranges, experiencing both false breakdowns and breakouts\"；[2025-06-27] ETH \"returned to the consolidation zone after a false breakout and a false breakdown\"。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.57,
+      "evidence": "[2024-06-24] \"DOGE has formed Double Bottom pattern\"；[2024-06-28] \"Bitcoin is forming an equal low\"；[2025-08-29] \"Dogecoin double bottom sets the target at $0.50\"。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.63,
+      "evidence": "[2025-03-28] \"The fall in Bitcoin dominance signals the start of Altseason 2025-2027\"；[2025-01-30] \"$Doge.D/$BTC.D ... Dogecoin might outperform $BTC and lead the altseason\"。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.52,
+      "evidence": "[2025-04-28] \"weekly candle closed, reclaiming the 100 EMA after breakdown\"；[2024-03-30] \"Bullish Crossover from 50 & 100 sma ... it is now confirmed\"。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.28,
+      "evidence": "他频繁使用抛物式路径预测，例如 [2024-02-29] \"It is just at the last stage, which goes parabolic\"；不过更多是作为上涨路径类比，而非顶部做空。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_fractal_cycle_analogy",
+      "name": "Fractal Cycle Analogy",
+      "name_zh": "分形周期类比",
+      "type": "cycle_time",
+      "description": "Map the current price structure to a prior cycle's geometry, timing, and swing sequence, then project the next leg based on visual similarity rather than strict indicator rules.",
+      "description_zh": "将当前价格结构与历史周期的几何形态、时间位置和波段顺序做类比，用视觉分形相似性而非严格指标规则去推演下一段走势。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2024-03-27] \"$Doge to the MOON ... this is the trend\"；图 3、图 6、图 7、图 8 都在比较 2014/2017/2021/2024 的重复结构；[2025-01-29] \"Cycle 3\"。"
+    },
+    {
+      "proposed_id": "cap_new_curved_arc_projection",
+      "name": "Curved Arc / Chord Projection",
+      "name_zh": "弧线/弦段投射框架",
+      "type": "structural_bias",
+      "description": "Use curved arcs, chord segments, and geometric intersections as dynamic support/resistance and timing guides for large trend acceleration.",
+      "description_zh": "使用弧线、弦段和几何交点作为动态支撑/阻力与加速时点判断，推演大级别趋势爆发。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "macro",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "[2024-08-30] \"DOGECOIN developed solid bases in Chord Segments. When it retests to the intersection to the curve, $DOGE will surge\"；图 3、图 8 也用大弧线做趋势轨迹。"
+    },
+    {
+      "proposed_id": "cap_new_obv_trendline_breakout",
+      "name": "OBV Trendline Breakout Confirmation",
+      "name_zh": "OBV 趋势线突破确认",
+      "type": "indicator_rule",
+      "description": "Treat OBV breaking its own descending trendline or reclaiming structure before price expansion as confirmation that accumulation is leading price.",
+      "description_zh": "将 OBV 自身跌势线突破或结构收复视为价格上行前的确认，认为量能累积领先价格启动。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2024-07-30] \"Bitcoin (on balance volume) OBV has broken out a descending trendline and retested it\"；图 2 标题就是 \"Bitcoin - <EMA+OBV>\"。"
+    },
+    {
+      "proposed_id": "cap_new_gaussian_channel_regime",
+      "name": "Gaussian Channel Regime Shift",
+      "name_zh": "高斯通道牛熊切换",
+      "type": "regime_classifier",
+      "description": "Use Gaussian Channel color flips, mid-band recapture, and support reactions to define the start of a bull regime and continuation odds.",
+      "description_zh": "用高斯通道颜色翻转、中轨收复和通道支撑反应来定义牛市 regime 的开启与延续概率。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2024-07-30] \"ETH Gaussian Channel has turned GREEN\"；[2024-08-30] \"Bitcoin has been supported by Gaussian Channel\"；[2025-04-29] \"Dogecoin Weekly Chart with the Gaussian Channel\"。"
+    },
+    {
+      "proposed_id": "cap_new_nested_bullish_structures",
+      "name": "Nested Bullish Structure Stack",
+      "name_zh": "多层嵌套看涨结构共振",
+      "type": "pattern_setup",
+      "description": "Identify stacked bullish continuation structures on multiple scales, such as a pennant on top of a bull flag, and treat overlap as amplified breakout odds.",
+      "description_zh": "识别多时间尺度上的嵌套看涨延续结构，例如旗形之上再叠加三角整理，并把这种共振视为更强的突破概率。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2024-05-30] \"Bitcoin has formed a Bull Pennant on the top of a Bull Flag\"；图 1 也是 DOGE post-pole pennant measured move。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "$Doge to the MOON 🔥 Don't look at the number but this is the trend🚀",
+      "rule_paraphrased": "优先看大级别路径和结构斜率，不纠结当前价格绝对值是否显得夸张。",
+      "category": "mantra"
+    },
+    {
+      "quote": "No reason not to believe it. $DOGE to the moon 🚀",
+      "rule_paraphrased": "只要历史重复结构仍在，他倾向继续持有原先的强多叙事。",
+      "category": "framework"
+    },
+    {
+      "quote": "If you zoom out, there is nothing changed 🔥 #Bitcoin Bullish Pennant is still there 🚀",
+      "rule_paraphrased": "短期噪音不重要，回到更高时间框架验证原始结构是否失效。",
+      "category": "framework"
+    },
+    {
+      "quote": "How we can't be so bullish to #Bitcoin??",
+      "rule_paraphrased": "当多个看涨形态共振时，他会公开提升主观确信度，而不是保持中性措辞。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The long lower wick grabbed the liquidity of recent support too.",
+      "rule_paraphrased": "长下影扫流动性后收回，是他认可的底部确认细节。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他和一般形态派 TA 的区别在于，极度依赖“历史分形重演 + 几何投射 + 高时间框架路径类比”，尤其偏爱把 DOGE/BTC 放进跨周期模板里讲故事。其次，他常把单一 setup 升级成叙事型共振框架，例如 BTC 对 USDT.D、价格对 OBV、旗形对旗形嵌套。整体内容强烈偏多、目标值激进，兼具交易员和流量型图表内容创作者特征。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "to the MOON",
+      "Massive Rally",
+      "Massive Surge",
+      "very likely to BREAKOUT",
+      "is ready to go Parabolic",
+      "Super Bullish Run is coming",
+      "it won't be different this time",
+      "don’t miss it",
+      "HUGE pump",
+      "impressive target",
+      "the time has come"
+    ],
+    "low_conviction_phrases": [
+      "may trigger",
+      "might be forming",
+      "appears to",
+      "could see",
+      "potential surge incoming",
+      "there is a high possibility",
+      "let's see how it goes",
+      "if the breakout succeeds",
+      "may have found the bottom",
+      "something is cooking"
+    ]
+  }
+}

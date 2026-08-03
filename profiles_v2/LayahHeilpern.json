@@ -1,0 +1,184 @@
+{
+  "handle": "LayahHeilpern",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "cycle",
+    "macro",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "meme coins",
+    "AI coins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.89,
+      "evidence": "她反复用减半后时间窗口判断顶部/阶段。例：[2025-04-28] “The bull run is NOT OVER... 2012: 335 days 2016: 487 days 2020: 518 days This implies the 2024 top could be around August September...”；[2025-06-30] “Q3 is here... Except in post-halving years… 2013, 2017, 2021.”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.74,
+      "evidence": "她明显接受并传播四年周期框架，同时会做修正。例：[2025-05-30] “See you all in 4 years...”；[2025-11-29] “It’s not necessarily all about the 4 year cycle. But it’s certainly all about liquidity cycles.”"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.83,
+      "evidence": "她频繁把降息、流动性和加密上涨直接挂钩。例：[2025-05-29] “Interest rates will be coming down. Massive injection of liquidity.”；[2025-08-22] “Jerome Powell hints at cutting rates, crypto market pumps... Q4 is looking bullish!”"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.8,
+      "evidence": "她经常把 ETF/机构买盘当作上涨核心驱动。例：[2025-08-25] “BlackRock’s Bitcoin ETF is buying more BTC daily than miners produce... Math doesn’t lie” 以及多次提到 BlackRock、Wall Street、ETF 批准/流入。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.72,
+      "evidence": "她用 BTC.D 下行来定义山寨季启动。例：[2025-09-29] “Bitcoin dominance is dropping... The setup for Uptober is looking epic!”；[2025-08-24] “Alt szn incoming…”；[2025-08-24] “Bitcoin dominance at lowest level YTD... Alts about to run!”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.76,
+      "evidence": "她在下跌阶段强调等待更深折价和确认，不急着抄底。例：[2026-04-02] “Still not buying. Still waiting. Still right.”；[2026-03-29] “The DCA is almost here!”；[2026-03-30] “Now is not a bad buying opportunity but...” 后面列出战争、油价、霍尔木兹等逆风。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.61,
+      "evidence": "她强调牛市后段要逐步兑现，并警惕后期垂直加速后的剧烈回撤。例：[2025-07-30] “I’m slowly scaling out. Securing profits, securing my future.”；[2025-09-30] “We’re entering the most dangerous part of the Bull Run…”"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.48,
+      "evidence": "她会把美股风险偏好作为加密先行或同步信号。例：[2025-02-28] “Over $825 billion was added to the US stock market today. Next, crypto. The recovery will be historic.”"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.33,
+      "evidence": "她的宏观叙事常围绕美元流动性和政策宽松，但并未高频直接提 DXY；属于隐含使用而非显性框架，更多体现在“美元/流动性转松 -> crypto up”的表达上。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.57,
+      "evidence": "她会做明显的 regime 切换，不会永远无脑看多。例：[2026-04-09] “Most people see a 5% bounce and think the bear market is over. It's not.”；[2026-01-31] “crypto is likely to make lower lows throughout 2026.”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.78,
+      "evidence": "默认牛市思维很强，尤其在 2024-2025 多次把回撤视为趋势中的机会。例：[2025-02-27] “To be bearish right now is foolish” ；[2024-12-31] “2024 will be the last year to buy bitcoin under $100,000.”"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.29,
+      "evidence": "她会用“Bitcoin is digital gold”或地缘冲突与 BTC 关系做叙事，但并不系统。例：[2025-06-26] 引用白宫官员 “Bitcoin is digital gold”；[2026-04-09] 谈伊朗、霍尔木兹与 BTC 下跌。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_scale_out_take_profit_ladder",
+      "name": "Scale-Out Profit Ladder",
+      "name_zh": "分批止盈/阶梯减仓",
+      "type": "risk_rule",
+      "description": "Reduce exposure into strength instead of trying to sell the exact top. Keep a residual moon bag while systematically locking in gains through late bull-market acceleration.",
+      "description_zh": "在上涨过程中分批兑现，而不是试图卖在绝对顶部；牛市后段边涨边减仓，同时保留小仓位博取尾段加速。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "de-risk",
+        "horizon": "position",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "[2025-07-30] “Either way we're moving up and I'm slowly scaling out. Securing profits, securing my future.”；[2025-08-30] “Take profit on the way up. Leave a moon bag...”；[2025-07-31] “people would rather ride crypto down to zero than secure some profits.”"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_extreme_contrarian",
+      "name": "Sentiment Extreme Fade",
+      "name_zh": "情绪极端反向交易",
+      "type": "structural_bias",
+      "description": "Use crowd fear/FOMO as a primary trigger: buy when panic is widespread and avoid chasing when euphoria becomes consensus.",
+      "description_zh": "把市场群体情绪极端当作主要触发器：恐慌极致时偏买入，普遍狂热时偏谨慎，不追一致性预期。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "[2025-02-27] “Last time there was this much fear was 2022 when bitcoin hit $17,000.”；[2025-02-28] “We’re currently at extreme fear while Bitcoin is trading at $84,000... We’re going much higher.”；[2025-03-29] “There’s so much money to be made in crypto but most of you haven’t got a clue…”"
+    },
+    {
+      "proposed_id": "cap_new_liquidity_cycle_supersedes_halving",
+      "name": "Liquidity Cycle Override",
+      "name_zh": "流动性周期覆盖减半周期",
+      "type": "macro_correlation",
+      "description": "When liquidity conditions conflict with standard halving-cycle expectations, prioritize rates, policy, ETF demand, and macro liquidity over simple four-year analogs.",
+      "description_zh": "当流动性条件与传统减半/四年周期相冲突时，优先考虑利率、政策、ETF 需求和宏观流动性，而不是机械套用历史周期。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "macro",
+        "horizon": "macro",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "[2025-11-29] “It’s not necessarily all about the 4 year cycle. But it’s certainly all about liquidity cycles.”；[2025-05-29] “Interest rates will be coming down. Massive injection of liquidity.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Patience is the number 1 skill to making big money in crypto. Most people lose because they're emotional and wanna get rich quick.",
+      "rule_paraphrased": "把耐心视为核心 alpha，反对情绪化追涨杀跌和快速致富心态。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Take profit on the way up. Leave a moon bag in case the parabolic run gets violent. The game is survival + positioning. Not hopium.",
+      "rule_paraphrased": "上涨阶段必须分批止盈，先活下来，再博尾段行情。",
+      "category": "framework"
+    },
+    {
+      "quote": "Most people see a 5% bounce and think the bear market is over. It's not.",
+      "rule_paraphrased": "拒绝把短期反弹误判成趋势反转，先区分 regime 再交易。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "I’ve been saying for months crypto is likely to make lower lows throughout 2026. It’s why I was very public about slowly scaling out in Q3/Q4 of 2025.",
+      "rule_paraphrased": "牛市后段主动减仓，熊市预期来临前以保本和保利润为先。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "The wildest part of crypto is FOMO and then the FEAR. When crypto pumps people run to buy at the top. When it dumps the same people won't touch it.",
+      "rule_paraphrased": "大众情绪是反向指标；交易上要和 FOMO/恐慌保持距离。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "她和典型画线型 TA 交易员不同，核心不是形态学精细入场，而是把宏观流动性、减半/周期叙事、ETF 资金流和市场情绪包装成高传播性的方向性判断。她默认牛市偏多，但并非死多头，在周期后段会高频强调分批止盈和 capital preservation。给出的 8 张“图表”附件实际上几乎全是人物/社媒内容而非 K 线，这反而强化了她更像 narrative/macro content trader，而不是纯图表派。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Do you understand?",
+      "The bull run is NOT OVER",
+      "We’re going much higher",
+      "Massive injection of liquidity",
+      "Altcoin season confirmed",
+      "ETH about to become the play of the century",
+      "Only fools would be panic selling",
+      "Math doesn’t lie",
+      "Still not buying. Still waiting. Still right."
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "likely",
+      "could",
+      "about to",
+      "looking bullish",
+      "setup",
+      "almost here",
+      "I give it 12 hours",
+      "not gonna lie"
+    ]
+  }
+}

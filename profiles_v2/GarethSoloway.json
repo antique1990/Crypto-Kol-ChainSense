@@ -1,0 +1,261 @@
+{
+  "handle": "GarethSoloway",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "macro",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "SPX",
+    "gold",
+    "silver",
+    "10Y_yield",
+    "oil",
+    "NVDA"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.93,
+      "evidence": "他反复把加密和股市风险偏好联动来读：如 [2026-01-25] “Crypto slammed. May be an ominous sign for the stock market this week. Crypto has a habit of being a leading indicator of risk off.”；[2026-01-31] “Watch the stock market this week, potential is there for a major de-risking event”."
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.92,
+      "evidence": "对美债收益率极度敏感，并把其视为风险资产方向的前置变量：[2025-05-31] “10 year yield broke key support... likely signals a surprisingly weak jobs report”; [2026-03-20] “10 year yields continue to spike higher... Not a good recipe.”；[2024-10-23] “Stocks slammed as the 10 year yield hits 4.26%...”"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.18,
+      "evidence": "给出的推文里几乎不强调 BTC ETF 资金流，说明这不是其核心框架；相比之下他更常用收益率、股市、宏观事件与图表位判断。这里给低权重，更多是潜在次级参考而非主要手段。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.74,
+      "evidence": "持续围绕美联储决议、Jackson Hole、Powell 讲话做事件波动判断：[2025-01-26] “Biggest events of the week include Federal Reserve decision...”；[2025-09-17] “Fed Decision at 2pm ET today...”；[2025-08-18] “The big event of the week will be Jerome Powell's speech from Jackson Hole on Friday.”"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.78,
+      "evidence": "他直接多次点名 BTC bull flag：[2026-02-25] “Bull flag on BTC daily still intact” ；[2026-02-13] “Micro bull flag continues to try and play out. If it does, upside between $80,000-$85,000 is likely.”"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.36,
+      "evidence": "虽然很少直接说 bear flag，但他经常用延续性空头结构与弱势反弹后再跌的框架，如 [2025-11-13] “Tech correction continues” 与多次强调反弹只是熊市中的 bounce，说明其会识别空头延续结构，只是不是最显性的标签。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.61,
+      "evidence": "明确使用 RSI 背离：[2024-08-26] “Gold has a negative divergence on the RSI. Worth keeping an eye in. May signal a near-term pullback...”"
+    },
+    {
+      "id": "cap_054_engulfing_reversal",
+      "weight": 0.66,
+      "evidence": "直接以吞没反转确认顶部：[2024-05-31] “This follows the confirmation of a top yesterday with a close below the daily reversal engulfing candle.”"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.63,
+      "evidence": "他频繁警惕单日大涨后的反转与假动作：[2025-08-25] “Bitcoin major reversal of Friday's move could be a signal of de-risking...”；[2025-04-28] 用 2008、Dot-Com 反弹案例提醒大涨未必是新牛市。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.81,
+      "evidence": "他经常直接把市场定性为熊市/弱势结构：[2026-02-25] “This is bear market price action.”；[2026-03-18] “Charts still remain very bearish.”；[2025-02-27] “closes below a major trend line... This is major.”"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.87,
+      "evidence": "他极其强调波动环境与去杠杆风险：[2025-12-29] “Insane volatility. Be careful folks” ；[2026-01-30] “Silver heading for its biggest daily drop since 2011” ；[2024-12-31] “Be ready for massive volatility in 2025.”"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.72,
+      "evidence": "他多次把 FOMO、垂直拉升、不可持续叙事当成顶部衰竭信号：[2025-12-29] “never seen such retail FOMO in silver” ；[2026-01-30] “Too much leverage and hopium. This always happens.”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.76,
+      "evidence": "虽然他会抄超跌，但通常要求先到关键支撑或等确认，不主张无脑接刀：[2025-02-25] “If it breaks and confirms, a significant drop is likely...” ；[2025-03-30] “nearing major support. Buy fear, sell greed.”"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.42,
+      "evidence": "推文风格里不断强调若关键位失守就切换预期，体现严格无恋战：[2025-02-25] “If it breaks and confirms, a significant drop is likely” ；其表达更像条件触发而不是死扛观点。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.31,
+      "evidence": "他常在明确阻力/支撑区做反向判断，如 [2025-09-22] “Silver kissed my $44/ounce resistance level... Could see a decent pullback here” 与 [2024-09-24] “Gold into my major resistance level of $2,660... potential pullback now to $2,500. Nibbled on a short.”"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.58,
+      "evidence": "他把黄金视为法币/政府失信下的避险保险资产：[2026-01-29] “Gold surges over $5,600... The People have lost faith in fiat, in governments and are scrambling to buy 'insurance'”."
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.08,
+      "evidence": "给定推文几乎没有直接使用 DXY/BTC 负相关，因此若有使用也只是背景层，不是其显著公开框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.33,
+      "evidence": "他偶尔承认反弹/上行阶段，但通常更谨慎，例如 [2026-02-25] “Crypto surging... snap back to 80k, maybe 85k is possible... While it isn't the start of a new bull market imo” ，说明会识别上行但默认不轻易追认新牛市。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_macro_bond_market_leads",
+      "name": "Bond Market Leads Macro Risk",
+      "name_zh": "债市领先宏观风险",
+      "type": "macro_correlation",
+      "description": "Use the 10-year yield and bond-market price action as the smart-money lead indicator for upcoming economic weakness, policy shifts, and equity/crypto de-risking.",
+      "description_zh": "把 10 年期美债收益率与债市走势视为“聪明钱”领先指标，用来预判经济走弱、政策转向以及股市/加密去风险。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_off_or_macro_inflection",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2025-05-31] “10 year yield broke key support... Bond market 'smart money' always knows”."
+    },
+    {
+      "proposed_id": "cap_new_crypto_leads_equities",
+      "name": "Crypto Leads Equities Risk Sentiment",
+      "name_zh": "加密先行指示股市风险情绪",
+      "type": "macro_correlation",
+      "description": "Treat sharp weakness or reversal in Bitcoin/crypto as a leading indicator that broader equities may soon enter de-risking mode.",
+      "description_zh": "把比特币/加密的急跌或关键反转视为股市即将进入去风险状态的领先信号。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "risk_off",
+        "horizon": "1d_to_2w",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "[2026-01-25] “Crypto slammed. May be an ominous sign for the stock market this week. Crypto has a habit of being a leading indicator of risk off.”"
+    },
+    {
+      "proposed_id": "cap_new_level_break_confirm_project",
+      "name": "Break Confirm Projected Target",
+      "name_zh": "关键位破位确认后做目标投射",
+      "type": "pattern_setup",
+      "description": "Define a major support/resistance zone, wait for a daily close or confirmation break, then project the next downside/upside target zone rather than anticipating prematurely.",
+      "description_zh": "先定义重大支撑/阻力区，等待日线收盘或确认破位，再推演下一目标区，而不是抢跑预判。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "continuation_after_confirmation",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "[2025-02-25] “Bitcoin testing the major support of $92,000-$91,000. If it breaks and confirms, a significant drop is likely...potentially $75,000-$74,000.”"
+    },
+    {
+      "proposed_id": "cap_new_jobless_claims_thresholds",
+      "name": "Jobless Claims Threshold Regime Map",
+      "name_zh": "初请失业金阈值分层框架",
+      "type": "macro_correlation",
+      "description": "Map labor-market regime using hard thresholds in weekly jobless claims to classify neutral, warning, and recessionary conditions.",
+      "description_zh": "用周度初请失业金的明确阈值分层，划分中性、预警、衰退型劳动力市场状态。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "macro_regime_classification",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.84
+      },
+      "example_evidence": "[2026-03-26] “anything between 200K-250K is nothing to worry about, above 250K is a warning, above 300K is a likely recession.”"
+    },
+    {
+      "proposed_id": "cap_new_narrative_distribution",
+      "name": "Narrative Pump Distribution",
+      "name_zh": "叙事拉升后的派发识别",
+      "type": "structural_bias",
+      "description": "When headlines or policy narratives produce overnight gaps or intraday pops, suspect institutions may be using the story to distribute into retail demand unless price can hold the move.",
+      "description_zh": "当新闻或政策叙事制造隔夜跳涨/盘中拉升时，若价格无法维持，则怀疑机构借题材向散户派发。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_fade",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2024-09-27] “Institutions bidding things up overnight, dumping into retail (distribution).”；[2025-09-26] “Insiders once again got the info early.”"
+    },
+    {
+      "proposed_id": "cap_new_retail_fomo_exhaustion",
+      "name": "Retail FOMO Exhaustion",
+      "name_zh": "散户 FOMO 衰竭",
+      "type": "structural_bias",
+      "description": "Extreme retail enthusiasm, leverage, and one-sided narrative acceptance are treated as a late-stage exhaustion signal, especially in vertical commodity or crypto moves.",
+      "description_zh": "把散户极端狂热、杠杆堆积和单边叙事共识视为行情末端衰竭信号，尤其适用于垂直上涨的商品或加密资产。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "reversal_or_deleveraging",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "[2025-12-29] “never seen such retail FOMO in silver”；[2026-01-30] “Too much leverage and hopium. This always happens.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Charts are charting.",
+      "rule_paraphrased": "最终以价格与结构为准，不让叙事压过图表。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Bond market 'smart money' always knows",
+      "rule_paraphrased": "把债市当作领先于股票和加密的宏观情报源。",
+      "category": "framework"
+    },
+    {
+      "quote": "This is bear market price action.",
+      "rule_paraphrased": "业绩或利好发布后仍涨不动/冲高回落，本质上是熊市行为。",
+      "category": "framework"
+    },
+    {
+      "quote": "Too much leverage and hopium. This always happens.",
+      "rule_paraphrased": "一旦杠杆与乐观叙事过度堆积，就要警惕去杠杆瀑布。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Buy fear, sell greed",
+      "rule_paraphrased": "在恐慌接近关键支撑时逆向找买点，在贪婪与拥挤时兑现或反手。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯粹只看 BTC K 线的交易员，而是把 BTC、SPX、10Y 收益率、黄金/白银、油价放进一个统一的跨资产风险框架里做判断。与很多加密 TA 交易员不同，他高度依赖宏观事件和债市先行信号，同时又坚持用明确的关键位、确认破位和目标区投射来执行。其风格明显带有逆向色彩，尤其擅长识别零售 FOMO、叙事拉升和熊市反弹陷阱。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "This is major",
+      "This is bear market price action",
+      "Charts still remain very bearish",
+      "Bond market 'smart money' always knows",
+      "likely signals",
+      "significant drop is likely",
+      "writing was on the wall"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "may be",
+      "potential",
+      "could see",
+      "trying to",
+      "if it does",
+      "watching",
+      "interesting if"
+    ]
+  }
+}

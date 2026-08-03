@@ -1,0 +1,182 @@
+{
+  "handle": "Deltaking888",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "contrarian",
+    "cycle",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "short_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XAU",
+    "CRCL",
+    "Silver"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.95,
+      "evidence": "他反复把大级别环境定义为下跌趋势中的反弹。例：2026-02-26“这里上涨还没有结束...等到BTC到72上方，ETH到2200上方 找见顶迹象继续加仓猛空”；2026-04-06“即不管怎么样反弹，趋势都是跌”；2026-03-31“反弹之后可能有比10/11更恐怖的下跌行情”。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.88,
+      "evidence": "他非常强调假突破与诱多诱空。2026-04-10明确写“最近的盘面全是收针假破扫损 不排除会假突破76然后瞬间收针”；2025-12-31则说“赌三角突破的，止损就放在最后一个三角末尾的高低点”，说明他把假突破视为核心风险。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.86,
+      "evidence": "他频繁用‘扫损’、‘哪边流动性好就干哪边’描述市场行为。2026-04-10“76000是一个痛点价格 如果突破有很多人会被扫损”；同日“狗庄目前也在观望 哪边流动性好就干哪边 做多的人多就直接拐头向下”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.72,
+      "evidence": "他经常先把市场定义为区间震荡，再等区间边缘或突破失败。2026-04-09“目前依然保持在71000-72000之间震荡”；2025-09-29“未来几天可能会区间震荡 直到找到反弹终点”；2025-11-30“这里的调整比较强势 所以仍然有横向调整的预期”。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.67,
+      "evidence": "他不是单纯追涨杀跌，而是偏好在主趋势内部交易回撤/反弹。2026-02-25“62600附近获得有效支撑的可能性大，反弹仍未结束”；2025-08-31“阶段调整即将结束 万点涨幅即将到来”；2025-07-31“如果给机会下跌到117000-117500 如果给机会并且观察盘面止跌 干就完了”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.55,
+      "evidence": "他多次提醒不要在错误的时点逆势抄底。2025-09-29“逆趋势做单，不要贪心，多加小心 不要涨一点就牛来FOMO”；2026-01-31“ETH已经跌破11/21的低点了，多头马上就要投降了”，整体风格是等待确认而不是盲目接刀。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.58,
+      "evidence": "他明显有周期熊市框架。2026-02-27“真正意义上的熊市只经历过两轮 每一轮都是一年时间，下跌75-80% 这次会不一样吗？还是次次都一样？”；2026-01-29还直接说“今年确实是熊市”。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.42,
+      "evidence": "事件驱动被他纳入交易节奏。2026-01-28“今天凌晨三点将会迎来美联储议息会议”；2025-11-30“特朗普喊单+美联储议息会发生什么反应？”；2026-02-19“美国伊朗别打了 再打就打到我的止盈位了”。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.63,
+      "evidence": "他高度重视‘收针’、影线拒绝。2026-04-10两次提到“收针假破扫损”“假突破76然后瞬间收针”；这属于典型的用长针/影线判断关键位拒绝。"
+    },
+    {
+      "id": "cap_053_doji_reversal",
+      "weight": 0.4,
+      "evidence": "他会直接把十字星当作机会信号。2026-04-10“002797，昨天十字星，是多么好的机会啊，有上车的幸运儿吗？”说明他在关键位置会用K线形态作触发。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.31,
+      "evidence": "他多次讨论三角突破/末端止损。2025-12-31“赌三角突破的，止损就放在最后一个三角末尾的高低点，小止损搏大收益”；2025-08-27也写到“14号为阶段顶部 随后一路下跌近2万点...8月28号or9月2号 随时出现不回头暴涨”，说明他会把压缩结构后的方向选择当作重点。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.52,
+      "evidence": "虽然默认偏空，但他能识别反弹/上涨段未结束。2026-02-26“现在这里上涨还没有结束”；2025-09-30“暂未看到转势信号 继续持有...多单”；2026-03-31“周末到现在任何一天做多你是不是已经赚麻了？”"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_delta_time_pivot",
+      "name": "Delta Time Pivot Forecasting",
+      "name_zh": "Delta 时间窗拐点预测",
+      "type": "cycle_time",
+      "description": "Forecast directional pivots by pre-declared calendar dates or date windows, then use lower-timeframe price action only for confirmation.",
+      "description_zh": "先预设具体日期或时间窗作为拐点，再用小级别走势确认方向，而不是纯靠价格形态临场判断。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "conditional",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "他大量使用具体日期：2025-08-27“8月28号or9月2号 随时出现不回头暴涨”；2025-10-07“上涨目标6202...超级上涨结束时间2026/1/5”；2026-01-30“一直要下跌到2/15附近”。"
+    },
+    {
+      "proposed_id": "cap_new_support_friction_vs_v_reversal",
+      "name": "Support Friction vs V-Reversal Classifier",
+      "name_zh": "支撑位磨底 vs V 反分类器",
+      "type": "regime_classifier",
+      "description": "Distinguish whether a move is only a rebound or a genuine trend reversal based on how price behaves around support: repeated friction implies rebound, direct V-launch implies new trend.",
+      "description_zh": "通过支撑位附近的行为区分‘反弹’和‘新上涨’：反复摩擦震荡更像反弹，触及支撑后直接V反更像新趋势启动。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "conditional",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2026-03-31他明说：“在支撑位反复摩擦上下震荡则大概率是个反弹，遇到支撑位直接v反起飞则大概率是新的上涨。”"
+    },
+    {
+      "proposed_id": "cap_new_key_level_reaction_map",
+      "name": "Key Level Reaction Map",
+      "name_zh": "关键价位反应图谱",
+      "type": "structural_bias",
+      "description": "Anchor the whole trade plan to a few explicit price levels and update directional bias only when those levels are reclaimed, lost, or rejected.",
+      "description_zh": "围绕少数明确关键位建立交易计划，只有当价格站稳、跌破或假破这些位置时才切换方向判断。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "conditional",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "他反复给出硬价格位：70000、66000、69300、76000、2220、2010、90600、62600，并据此更新观点，如2026-04-09“关注69300这一关键位置”，2026-03-31“66000和70000”，2026-01-29“90600这个位置可以做空”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "在支撑位反复摩擦上下震荡则大概率是个反弹，遇到支撑位直接v反起飞则大概率是新的上涨",
+      "rule_paraphrased": "他用支撑位附近的走势速度和形态来区分‘反弹’与‘趋势反转’。",
+      "category": "framework"
+    },
+    {
+      "quote": "狗庄目前也在观望 哪边流动性好就干哪边 做多的人多就直接拐头向下",
+      "rule_paraphrased": "把市场理解为流动性收割游戏，默认价格先去扫最拥挤一侧。",
+      "category": "framework"
+    },
+    {
+      "quote": "逆趋势做单，不要贪心，多加小心 不要涨一点就牛来FOMO 大的还在后面",
+      "rule_paraphrased": "逆势交易只做短线，不把反弹误判为牛市回归。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "日内基本上天天有机会 不要涨了跌了影响自己情绪 彻底变成一个机器人",
+      "rule_paraphrased": "强调执行纪律和情绪钝化，像系统化交易员一样处理每一单。",
+      "category": "mantra"
+    },
+    {
+      "quote": "真正意义上的熊市只经历过两轮  每一轮都是一年时间，下跌75-80%  这次会不一样吗？还是次次都一样？",
+      "rule_paraphrased": "他会把当前行情放进历史熊市模板里做类比，而不是只看眼前K线。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他最突出的特点不是传统指标堆砌，而是把“时间窗拐点 + 关键价位 + 流动性扫损”三件事绑在一起使用。相比一般TA博主，他更像一个强主观、偏反身性的波段交易员：先给出日期和价格，再围绕假突破、收针、扫损去修正执行。另一个显著特征是内容风格极强，带有明显的社区营销和战绩叙事，但核心方法论仍然是偏空框架下交易反弹。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "必定",
+      "大概率",
+      "即将",
+      "保持...观点不变",
+      "如期而至",
+      "精准预测",
+      "绝佳的做空机会",
+      "无法做底",
+      "还未结束"
+    ],
+    "low_conviction_phrases": [
+      "不排除",
+      "可能",
+      "观察",
+      "重点关注",
+      "如果",
+      "或许",
+      "需要确认",
+      "大级别确认"
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "handle": "fundstrat",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "contrarian",
+    "structural",
+    "content_creator"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SPX",
+    "QQQ",
+    "XLE",
+    "GLD",
+    "SLV",
+    "BMNR",
+    "SMLR",
+    "TSLA",
+    "NVDA"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.9,
+      "evidence": "多条推文直接用美股风险偏好来判断加密与大盘方向，如 [2025-11-27] “Our base case remains a S&P 500 year-end rally to 7,000-7,350” ，[2026-04-08] “S&P 500 $SPY now above the 200-day moving avg”，并把 ETH/BTC 与 SPY 相对表现并列比较。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.95,
+      "evidence": "他反复讨论黄金/白银与加密的关系：[2025-11-27] “If one is wondering why gold went parabolic in 2025”；[2025-12-31] “Silver $SLV parabolic in past month Gold $GLD parabolic in past year Gold moves lead crypto”；[2026-01-30] “crypto hurt by metals rally but also follows metal surges.” 图4/图5更是用“伊朗战争以来相对 S&P 500 表现”直接比较 ETH、BTC、Gold、Silver。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.8,
+      "evidence": "明确引用关键均线收复作为 regime 切换：[2026-04-08] “S&P 500 $SPY now above the 200-day moving avg - 200 dma = 6,655”。附图2、图3都显示其典型框架是盯 20/50/200 均线位置。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.72,
+      "evidence": "图2 的 XAU 年内走势和图3 的 XAG 月内走势都叠加 SMA20/50/200，并用价格沿均线抬升来定义趋势延续；其叙事常不是抄底，而是确认强趋势后继续持有，如 [2025-05-31] “HODL #bitcoin”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.86,
+      "evidence": "他常把市场分成“bull market intact / bottom in / leaders”这类 regime 语言：[2026-01-31] “bull market intact”；[2026-04-10] “Growing signs the 'bottom is in' despite widespread skepticism”；图2 金价全年沿 20/50/200 均线之上上行，也是标准强势上升趋势框架。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.58,
+      "evidence": "其交易叙事经常围绕事件驱动和高波动环境，如 [2025-12-30] “holiday trading days... bots and robots... tax-loss related selling dominate”，[2026-04-08] 讨论油价从 87 到 116、伊朗战争升级下市场仍上涨，明显在做高波动 regime 识别。"
+    },
+    {
+      "id": "cap_017_rsi_oversold_bounce",
+      "weight": 0.67,
+      "evidence": "图2、图3都显式展示 RSI(14)；同时他多次用“deeply oversold”“washed out”“meaningful low”等措辞做反弹判断，如 [2025-03-31] “markets are deeply oversold” 和 [2025-04-29] “A ‘washed out’ stock”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.45,
+      "evidence": "虽然他偏多，但不是无条件接刀，常等‘坏消息被计价/底部迹象出现’再出手：[2026-02-24] “stocks and crypto bottom on ‘bad’ news - not good”；[2026-02-25] “another sign of a bottom”；说明他等待确认，而不是纯左侧硬接。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.42,
+      "evidence": "在 BTC 机构化主题上会把 ETF 作为 adoption 验证：[2024-05-28] “$SMLR states the approval of the #bitcoin #ETF played a role... validated the future institutional adoption likely”。虽然不是他最主要的数据面工具，但明显用作需求侧 proxy。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.36,
+      "evidence": "他并不只看币圈内部，而是持续从更大的流动性/资产轮动框架解释风险资产：如 [2026-01-30] 金银上涨“sucking risk appetite away from other asset classes”，随后又认为资金会“move onto crypto”。这属于宏观流动性迁移视角。"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.31,
+      "evidence": "其宏观判断经常落在‘经济可以承受’、‘经济当前很好’这类周期框架上：[2026-03-31] “US economy can handle $100, even $120 oil”；[2026-03-25] “The economy is good currently”。虽然未直接提 PMI，但思路是典型经济周期分段。"
+    },
+    {
+      "id": "cap_064_credit_spreads_widening",
+      "weight": 0.28,
+      "evidence": "[2025-10-31] “markets wary about private credit” 和 [2025-10-31] “Credit losses due to ‘fraud’ differ from credit losses to businesses suffering from an economic downturn - vastly different implications for risk assets” 显示他会把信用问题作为风险资产风险开关。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.34,
+      "evidence": "虽然样本里没有系统性国债收益率帖，但他大量使用‘risk appetite / liquidity / forward-looking equities’的利率敏感逻辑；并将油价、战争、通胀预期与股票/crypto 传导联系起来，符合收益率-流动性宏观映射框架。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.18,
+      "evidence": "证据较弱，但其宏观表达长期站在美元/流动性/风险偏好的大框架下讨论 BTC，属于会接受 DXY 风格确认的研究体系，只是在给定样本中不是高频显性主题。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.55,
+      "evidence": "他频繁使用“parabolic”作为状态识别词：[2025-11-27] “gold went parabolic in 2025”；[2025-12-31] “Silver $SLV parabolic in past month / Gold $GLD parabolic in past year”。他不一定总把抛物线视为做空信号，但明确把其当成重要 regime 标签。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_bad_news_bottoming",
+      "name": "Bad News Fully Priced Bottom",
+      "name_zh": "坏消息计价后的底部识别",
+      "type": "event_reaction",
+      "description": "When markets stop falling or even rise on objectively bad macro/geopolitical news, treat that as evidence the low is near or already in place.",
+      "description_zh": "当市场在客观利空的宏观或地缘新闻下不再下跌、甚至上涨时，将其视为低点临近或已经出现的证据。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "swing_to_macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2026-02-24] “stocks and crypto bottom on ‘bad’ news - not good”; [2026-04-08] “stocks higher on bad news”."
+    },
+    {
+      "proposed_id": "cap_new_relative_leadership_rotation",
+      "name": "Relative Leadership Rotation",
+      "name_zh": "相对强弱领涨轮动",
+      "type": "structural_bias",
+      "description": "Rank sectors/assets by performance versus S&P 500 during a macro shock and buy the leaders on skepticism, assuming leadership persists into the next leg.",
+      "description_zh": "在宏观冲击阶段按相对 S&P 500 的表现给资产和板块排序，并在市场仍怀疑时优先买入领涨者，假设强者恒强延续到下一阶段。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "momentum_long",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "图4/图5直接做“Relative Performance to S&P 500 since start of Iran Conflict”；[2026-04-10] “consider buying what has led since the Iran war started Ethereum ... top of list Bitcoin ...”."
+    },
+    {
+      "proposed_id": "cap_new_institutional_adoption_proxy",
+      "name": "Institutional Adoption as Price Catalyst",
+      "name_zh": "机构采用叙事作为价格催化剂",
+      "type": "event_reaction",
+      "description": "Treat visible institutional adoption, tokenization launches, ETF validation, treasury strategy announcements, or uplistings as catalysts that tighten narrative credibility and expand valuation multiples.",
+      "description_zh": "将机构采用、代币化产品上线、ETF 认可、企业金库配置、交易所升级上市等事件视为提升叙事可信度并扩张估值倍数的催化剂。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2026-01-28] “Major financial institutions are launching their financial tokenized products on ethereum”; [2024-05-28] SMLR 因 BTC ETF 获批而采用比特币金库策略；[2026-04-09] 对 BMNR uplist to NYSE 表示看多。"
+    },
+    {
+      "proposed_id": "cap_new_consensus_bear_trap",
+      "name": "Consensus Bear Crowding Reversal",
+      "name_zh": "一致看空拥挤反转",
+      "type": "contrarian_signal",
+      "description": "When bearishness becomes consensus and positioning is crowded, expect upside on even mediocre news because the bad thesis is already owned.",
+      "description_zh": "当看空成为一致预期且仓位拥挤时，即使只是一般消息也可能触发上涨，因为坏预期已经被充分持有和交易。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_long",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-02-24] “As bearish as it feels out there...” ; [2026-02-24] “When a stock becomes a ‘consensus’ short, it is also a crowded trade”."
+    },
+    {
+      "proposed_id": "cap_new_grannyshot_asymmetric_quality",
+      "name": "Grannyshot Asymmetric Quality",
+      "name_zh": "Grannyshot 非对称高胜率主题",
+      "type": "framework",
+      "description": "Identify themes or stocks where downside is overly debated but long-duration upside from structural change is underappreciated; frame them as easy high-percentage shots.",
+      "description_zh": "识别那些下行风险被过度讨论、但长期结构性上行被低估的主题或个股，将其定义为类似罚球“奶奶投篮”那样的高胜率非对称机会。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "high_conviction_long",
+        "horizon": "position",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "[2025-12-25] “Why $NVDA remains a granny shot”; [2025-05-28] “Tesla is a grannyshot $GRNY”."
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "stocks and crypto bottom on “bad” news - not good",
+      "rule_paraphrased": "真正的底部不是等利好确认，而是看市场对利空是否已经免疫。",
+      "category": "framework"
+    },
+    {
+      "quote": "Growing signs the 'bottom is in' despite widespread skepticism.",
+      "rule_paraphrased": "他偏好在市场普遍不信时做底部确认，怀疑本身就是交易燃料。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Truth  Own what works But don’t let FOMO make you abandon good ideas 💡",
+      "rule_paraphrased": "顺着有效主线持有，但避免因为追逐新热点而丢掉核心仓位。",
+      "category": "framework"
+    },
+    {
+      "quote": "The market tends to suffer from 'recency bias'",
+      "rule_paraphrased": "反对把最近的熊市/坏行情线性外推，强调均值回归和情绪修复。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Perseverance is key   - for investing - for your life",
+      "rule_paraphrased": "他的持仓风格带有明显 HODL/坚持到底色彩，不是频繁翻多翻空的日内派。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像纯 K 线交易员那样围绕单一形态做精细进出，而是把宏观叙事、相对强弱排名、均线/RSI 状态和机构采用故事揉成一个“证据加总”的框架。最鲜明的特点是强烈的反身性与逆向思维：越是坏消息密集、市场越怀疑，他越倾向寻找已经停止下跌并开始领涨的资产。其次，他对 ETH、BTC 与传统资产之间的桥接叙事很重，尤其强调华尔街采用、代币化和相对 SPX 的领导力。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "bull market intact",
+      "bottom is in",
+      "base case remains",
+      "meaningful low in place",
+      "top of list",
+      "future of finance",
+      "granny shot",
+      "HODL"
+    ],
+    "low_conviction_phrases": [
+      "we believe",
+      "likely",
+      "signs of improvement",
+      "growing signs",
+      "watching",
+      "worth watching",
+      "interesting",
+      "useful insight"
+    ]
+  }
+}

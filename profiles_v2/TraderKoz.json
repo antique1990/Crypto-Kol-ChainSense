@@ -1,0 +1,244 @@
+{
+  "handle": "TraderKoz",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "structural",
+    "contrarian",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "SOL",
+    "ETH",
+    "BONK",
+    "FWOG",
+    "DEAI",
+    "BNB",
+    "SPX"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.95,
+      "evidence": "整体表达长期偏多，反复把回调视作趋势中的买点。2024-09-27 说“Dips are for buying, don't flip bearish on the first pullback.”；2025-02-12 说“prices resolve higher from here”。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.9,
+      "evidence": "多次等待回踩后延续。2024-10-30 说“$SOL Looking for a continuation play on a sweep of Monday's low if the market offers it”；2025-01-31 说“Close this weekly strong and then I think we're ready for the next leg”。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.92,
+      "evidence": "这是他最显著的执行框架之一。2024-09-30 明确写“Sweep of last week's low and all those equal lows and then reclaim the quarterly open”；2025-01-31 说“another sweep of the local lows into monthly demand”。图3也在多个局部高低点画出弧线，强调先扫流动性再走真实方向。"
+    },
+    {
+      "id": "cap_049_ict_fair_value_gap",
+      "weight": 0.72,
+      "evidence": "2026-04-11 明确给出规则：“Wait for a sweep of London's high/low. Wait for a 5 min FVG to form opposite the sweep. Enter on that FVG”。说明他直接使用 ICT/FVG 作为低周期入场触发。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.62,
+      "evidence": "他常讲“flip this level”“reclaim 136 to get an entry trigger”“reclaim the yearly open”。这类前阻力转支撑/前支撑转阻力的 level flip，本质接近 breaker / S/R flip。图3突破水平线后回踩附近结构，也符合此思路。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.35,
+      "evidence": "虽然不常公开谈均线参数，但他的语言经常是“reclaim”型确认，而不是盲抄底。这里更广义体现在关键参考位收回确认。2024-08-30：“reclaim 136 to get an entry trigger”。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.82,
+      "evidence": "2024-05-30 直接描述区间交易思路：“In a ranging market I want to see stops taken out, then reversals.” 这就是典型区间边缘反手，不追中间。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.8,
+      "evidence": "他能明确区分趋势盘和震荡盘。2024-05-30 说“as the market chops, my attention shifts towards where I believe there is liquidity”；2025-02-12 也提到“regardless of how long this range lasts”。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.78,
+      "evidence": "图3核心就是多次突破/跌破后回到区间内部；2024-10-31 高赞文案先调侃“double top, bull market over...”随后反向看多，说明他经常把明显形态的共识解读为陷阱。"
+    },
+    {
+      "id": "cap_007_double_top",
+      "weight": 0.48,
+      "evidence": "图2在 BTC 周线前高处画出水平阻力，明显是双顶/前高测试语境；但他常把市场过度解读的“双顶见顶论”拿来反向操作，2024-10-31 用讽刺口吻否定“double top, bull market over”。"
+    },
+    {
+      "id": "cap_008_double_bottom",
+      "weight": 0.58,
+      "evidence": "2024-12-31 直接说“Nice double bottom forming on $M3M3 and up 50% off the lows”。说明双底是他会识别并交易的标准反转结构。"
+    },
+    {
+      "id": "cap_058_three_bottom_structure",
+      "weight": 0.4,
+      "evidence": "图3在若干次回踩低点处画出重复圆弧，强调多次底部测试后的结构性反转。虽然没直接用“三重底”字眼，但图像表达明显。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.66,
+      "evidence": "他明显偏好山寨轮动和 SOL 生态。2024-03-30：“SOL is here”；2024-05-29：“Solana is the future”；2024-09-30：“Memes are catching a bid and showing some strength during pullbacks”。说明他关注 BTC 后的 beta 扩散。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.71,
+      "evidence": "多次用“this cycle”“previous ATH's this cycle”来给 SOL、BTC 做上行预期，图4 ETH 月线和图5 SOL 周线也是典型周期视角，而不是只盯短线。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.63,
+      "evidence": "图2、图4、图5都用多年级别大结构；2024-04-30 的“jan 2021 fractal plays out?”与图1蓝色路径也说明他习惯把当前周期映射到前一轮周期阶段。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.55,
+      "evidence": "图4在 ETH 2021 抛物线启动附近特别圈出加速段，图5对 SOL 给出大级别上行空间时也是基于历史抛物扩张阶段判断；他会利用抛物线趋势，但也意识到后期会衰竭。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.36,
+      "evidence": "图3和图2都强调前高前低附近的 wick rejection；他公开表达中常围绕“sweep then reclaim”，本质上需要长针或假破后的收回。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.52,
+      "evidence": "虽不以风险管理内容出名，但 2026-04-10 明确做过复盘：“What happens when you don't TAKE PARTIALS? BLEW UP~~ Full transparency!” 说明他重视执行错误的纠偏。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_open_level_reclaim",
+      "name": "Yearly/Quarterly Open Reclaim",
+      "name_zh": "年开盘价/季开盘价收复",
+      "type": "structural_bias",
+      "description": "Uses yearly open, quarterly open, or monthly open as high-timeframe pivot levels. A reclaim after a sweep or pullback is treated as a confirmation trigger for continuation higher.",
+      "description_zh": "把年开盘价、季开盘价、月开盘价作为高时间框架枢轴位；价格在扫流动性或回调后重新收复这些开盘位，被视为趋势延续确认。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "2024-01-31：“reclaim the yearly open and I think we push higher”; 2024-09-30：“reclaim the quarterly open”。"
+    },
+    {
+      "proposed_id": "cap_new_fractal_analog_projection",
+      "name": "Historical Fractal Analog Projection",
+      "name_zh": "历史分形类比路径投射",
+      "type": "cycle_time",
+      "description": "Maps the current market structure onto a prior cycle segment and projects a likely path forward, usually visually with an overlaid blue path.",
+      "description_zh": "把当前市场结构映射到上一轮某个历史阶段，利用相似走势进行路径投射，通常会在图上直接叠加未来预期路线。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "scenario_bullish",
+        "horizon": "position",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "2024-04-30：“wyd if the jan 2021 fractal plays out?”；图1用蓝色路径把 2024 结构类比到 2021 年 1 月后的延续上冲。"
+    },
+    {
+      "proposed_id": "cap_new_sweep_reclaim_trigger",
+      "name": "Sweep Then Reclaim Trigger",
+      "name_zh": "扫流动性后收回触发",
+      "type": "pattern_setup",
+      "description": "Wait for price to run obvious equal highs/lows or prior session/week levels, then reclaim a key reference level before entering in the opposite direction.",
+      "description_zh": "先等价格扫掉明显等高/等低、上周高低点或会话高低点，再等待收回关键参考位后反向入场。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "reversal_or_continuation_after_trap",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2024-09-30：“Sweep of last week's low and all those equal lows and then reclaim the quarterly open”; 2025-01-31：“sweep of the local lows into monthly demand”。"
+    },
+    {
+      "proposed_id": "cap_new_monthly_level_projection",
+      "name": "Monthly SR Mapping",
+      "name_zh": "月级别支撑阻力映射",
+      "type": "structural_bias",
+      "description": "Derives trade bias from monthly support/resistance bands and maps likely summer or multi-month paths around those zones.",
+      "description_zh": "围绕月线级别支撑阻力带建立交易偏向，并据此推演未来数周到数月的震荡或突破路径。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contextual",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "图1在 61.3k 与 58.8k 一带明确标注“Monthly S/R”，并给出更深回调或夏季横盘的路径；2024-04-30 文字也说“Deeper pullback scenario would be 52k... chop for most of the summer”。"
+    },
+    {
+      "proposed_id": "cap_new_london_sweep_fvg",
+      "name": "London Sweep FVG Setup",
+      "name_zh": "伦敦高低点扫单 + 5分钟 FVG",
+      "type": "pattern_setup",
+      "description": "A session-based intraday setup: wait for London high/low to be swept, wait for an opposing 5-minute fair value gap, enter at the FVG, and target the other side of the session range.",
+      "description_zh": "会话制日内策略：等待伦敦时段高点或低点被扫，再等待相反方向的 5 分钟 FVG 形成，在 FVG 入场，目标看向另一侧伦敦高低点。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "intraday_reversal",
+        "horizon": "intraday",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2026-04-11 逐条写出完整流程：“1) Wait for a sweep of London's high/low. 2) Wait for a 5 min FVG... 3) Enter on that FVG...”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Dips are for buying, don't flip bearish on the first pullback.",
+      "rule_paraphrased": "大级别结构未破前，第一次像样回调默认是机会，不是反转确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "As the market chops, my attention shifts towards where I believe there is liquidity. In a ranging market I want to see stops taken out, then reversals.",
+      "rule_paraphrased": "震荡市不追方向，优先寻找流动性堆积区，等扫损后反手。",
+      "category": "framework"
+    },
+    {
+      "quote": "What happens when you don't TAKE PARTIALS? BLEW UP~~ Full transparency! BIG L for today's stream 🥹",
+      "rule_paraphrased": "不分批止盈会显著放大回撤，执行管理失误值得公开复盘。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "If you sell your bags because of CPI, you've completely lost the plot",
+      "rule_paraphrased": "不要被单次宏观事件噪音打断更大的周期/结构性交易逻辑。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Choosing not to take other people’s trades has helped me more than anything",
+      "rule_paraphrased": "坚持独立分析，不机械复制他人 setup。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯 ICT 也不是纯经典形态派，而是把高时间框架趋势叙事、前高前低流动性、关键开盘位收复和情绪反身性揉在一起用。与很多 TA 交易员不同，他极度偏好多头周期框架，常把市场最显眼的看空共识解释为陷阱。另一个明显特征是图表表达非常“路径化”，喜欢用分形、月线 S/R 和扫流动性后的回收来做未来路线图。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Dips are for buying",
+      "prices resolve higher from here",
+      "Higher",
+      "magnet straight up to $300",
+      "I think we're ready for the next leg",
+      "I don't think it pulls back that far",
+      "I'd hammer the bid"
+    ],
+    "low_conviction_phrases": [
+      "if the market offers it",
+      "watching for something like this",
+      "if I had to guess",
+      "would be",
+      "let's see if we can reclaim",
+      "looking for"
+    ]
+  }
+}

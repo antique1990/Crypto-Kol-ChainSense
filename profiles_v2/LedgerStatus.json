@@ -1,0 +1,208 @@
+{
+  "handle": "LedgerStatus",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "macro",
+    "cycle",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.89,
+      "evidence": "多张图都围绕价格与关键均线的关系做判断：图4 BTC 在价格重新站上两条均线附近后发图；图7 SOL 爆量上冲前沿着白色均线抬升；图8 ETH 也是沿短期均线拉升。推文 [2025-03-24]：“Pretty strong signal seeing the reflippening of 20/200 and price over both — historically a pretty great place to take risk.”"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.95,
+      "evidence": "这是他最明确、最高频的框架之一。推文 [2025-03-24] 直接把“20/200 reflippening + price over both”定义为“historically a pretty great place to take risk”；推文 [2026-01-31]：“Eth and Sol and below 200 week average. Historically good buy zones.” 图1、图4、图5、图8 都明显标出长短周期均线并围绕收复/失守展开。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.83,
+      "evidence": "他偏好在趋势确认后做风险暴露，而不是猜底。推文 [2024-07-28]：“Majors look like they want to melt up”；[2025-05-21]：“Things are looking Up”；图7、图8 都是突破后顺势跟进的表达，而非底部抄刀。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.62,
+      "evidence": "他会用均线失守与结构走弱来定义熊市/弱势，而不是只看单根K。图5 BTC 价格明显位于白色均线下方，白线下弯，呈现弱势趋势状态；[2026-01-31] 也把“跌到/跌破 200 week average”当成熊市极限买区的背景。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.78,
+      "evidence": "推文 [2024-09-25]：“Six months in a large range after markup. Going into election, annual seasonality. Interesting.” 图1 SOL 周线也用多条水平线框定长期箱体/大区间，明显在用区间结构理解行情。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.58,
+      "evidence": "图1 SOL 周线把 150.36、78.04 以及更低几个虚线位都画成区间层级，更像是在做箱体边界和中继区的反应交易，而不只是单点目标。其表达风格偏“到位反应”而非纯追突破。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.71,
+      "evidence": "推文 [2024-07-31]：“The ETFs are being underestimated.”；[2024-03-28]：“Bought IBIT in the degen Ira. First time doing one of the spot ETFs. Feels good.”；[2024-07-22]：“Amazed y’all are gonna run the exact playbook on eth as btc for the etf” 说明他把 ETF 叙事/资金流当作核心催化。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.73,
+      "evidence": "推文 [2026-01-30]：“Multi year DXY lows, new fed chair, metals record highs. Crypto got their guy in the White House. This is bitcoin.” 这是典型把 DXY 弱势作为 BTC 顺风背景。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.51,
+      "evidence": "同一条 [2026-01-30] 把“metals record highs”与比特币并列，说明他会观察黄金/白银等宏观避险或货币化资产的联动；[2026-01-26]：“Bitcoin has a lot of catching up to do. Silver and gold have been straight vertical.”"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.56,
+      "evidence": "他的表达经常带周期视角和季节性。推文 [2024-09-25] 把“大区间 + election + annual seasonality”放在一起讨论；[2026-01-31] 又用 200 周均线历史买区框架判断熊市低点区域，本质上是周期位置判断。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.42,
+      "evidence": "虽然没有直接说“四年周期”，但他频繁使用“historically good buy zones”“bear market lows”这种跨周期样本语言，尤其 [2026-01-31] 用 200 周均线和熊市低点历史对照，明显是四年大周期视角的交易员。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.64,
+      "evidence": "他的入场话术不是‘这里一定到底’，而是‘price over both’‘great place to take risk’，即先等确认再出手。图4、图8 都是等价格重新站回关键均线后再表达看多，不是下跌中盲接。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.34,
+      "evidence": "推文 [2025-08-25]：“People seem to forget about bloody Monday in bull markets.” 说明他意识到牛市中也有高波动洗盘，属于对波动 regime 的经验提醒。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.49,
+      "evidence": "他不仅看 BTC，也频繁观察 ETH、SOL、XRP 等 majors/alt rotation。推文 [2026-04-11]：“XRP = AN OUTPERFORMER IN A BITCOIN BEAR MARKET DUE TO ITS LACK OF PRICE CORRELATION WITH OTHER CRYPTOS”；[2024-07-28]：“Majors look like they want to melt up” 体现他会做主流币轮动比较。"
+    },
+    {
+      "id": "cap_018_ma_golden_cross",
+      "weight": 0.67,
+      "evidence": "虽然 seed 定义是 50/200 金叉，但他的常用版本显然是 20/200。推文 [2025-03-24] 明确提到“reflippening of 20/200”；图表也普遍只挂两条核心均线，用均线翻转做大级别风险开关。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_20w_200w_reflip",
+      "name": "20W/200W Reflip",
+      "name_zh": "20周/200周均线重夺",
+      "type": "indicator_rule",
+      "description": "Price reclaims both the fast 20-week moving average and the slow 200-week moving average, often after a corrective phase; trader treats the reclaim as a historically favorable point to add risk.",
+      "description_zh": "价格在回调后同时重新站上 20 周均线和 200 周均线，把这种“双均线重夺”视为历史上较优的风险暴露窗口。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "推文 [2025-03-24]：“Pretty strong signal seeing the reflippening of 20/200 and price over both — historically a pretty great place to take risk.”"
+    },
+    {
+      "proposed_id": "cap_new_200w_deep_value_zone",
+      "name": "200-Week Mean Reversion Buy Zone",
+      "name_zh": "200周均线深度价值买区",
+      "type": "indicator_rule",
+      "description": "When major crypto assets tag or fall slightly below the 200-week moving average, trader treats the zone as a statistically strong long-term accumulation area.",
+      "description_zh": "当主流币触及或略微跌破 200 周均线时，将其视为长期统计意义上的优质吸筹区。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "推文 [2026-01-31]：“Eth and Sol and below 200 week average. Historically good buy zones. Bitcoin would have to go sub $60k...”"
+    },
+    {
+      "proposed_id": "cap_new_post_markup_box",
+      "name": "Post-Markup Box Consolidation",
+      "name_zh": "上涨后大箱体整理",
+      "type": "structural_bias",
+      "description": "After an impulsive markup phase, price spends months in a broad horizontal box; trader reads it as digestion before the next directional move, especially when paired with seasonality or catalysts.",
+      "description_zh": "价格在一轮快速上涨后进入持续数月的大箱体整理，交易员将其视为下一波方向选择前的消化阶段，常结合季节性或事件催化判断。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral_to_bullish",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "推文 [2024-09-25]：“Six months in a large range after markup. Going into election, annual seasonality. Interesting.” 图1 也是明显的上涨后大箱体。"
+    },
+    {
+      "proposed_id": "cap_new_alt_relative_strength_in_btc_weakness",
+      "name": "Alt Relative Strength During BTC Weakness",
+      "name_zh": "比特币弱势期的山寨相对强度",
+      "type": "structural_bias",
+      "description": "Identify assets that decouple from BTC and outperform during BTC drawdowns or bear phases; used as rotation candidates when broad crypto beta is weak.",
+      "description_zh": "识别在 BTC 回撤或熊市阶段与 BTC 脱钩、保持相对强势的币种，作为弱市轮动标的。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_relative_value",
+        "horizon": "swing",
+        "confidence_base": 0.61
+      },
+      "example_evidence": "推文 [2026-04-11]：“XRP = AN OUTPERFORMER IN A BITCOIN BEAR MARKET DUE TO ITS LACK OF PRICE CORRELATION WITH OTHER CRYPTOS”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Pretty strong signal seeing the reflippening of 20/200 and price over both — historically a pretty great place to take risk.",
+      "rule_paraphrased": "先等价格重新站上双关键均线，再扩大风险敞口；他偏好确认后的趋势风险，而不是主观抄底。",
+      "category": "framework"
+    },
+    {
+      "quote": "Eth and Sol and below 200 week average. Historically good buy zones.",
+      "rule_paraphrased": "把 200 周均线视作主流币深度价值锚点，极端回撤到这里反而进入长期配置区。",
+      "category": "framework"
+    },
+    {
+      "quote": "Six months in a large range after markup. Going into election, annual seasonality. Interesting.",
+      "rule_paraphrased": "他会把箱体整理放进更大的宏观/季节性时钟里解读，而不是孤立看图。",
+      "category": "framework"
+    },
+    {
+      "quote": "People seem to forget about bloody Monday in bull markets.",
+      "rule_paraphrased": "即使是牛市也要预留对剧烈回撤和流动性踩踏的心理与仓位准备。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "Don’t forget you are always trading for more buying power. That is the only target.",
+      "rule_paraphrased": "交易目标不是喊单正确，而是提升净购买力；本质是资金曲线导向而不是观点导向。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，而是把大级别均线框架、箱体结构、季节性和宏观变量混合在一起做中周期判断。和很多只会画支撑阻力的 TA 账户不同，他尤其强调 20/200、200 周均线这种跨周期统计锚点，并且明显偏好在确认后的趋势中加风险。与此同时，他对 ETF、DXY、金属和主流币相对强弱都有持续关注，因此更像“会画图的宏观 swing trader”，而不是单纯的图表内容号。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "one of the nicest charts I’ve ever seen",
+      "pretty strong signal",
+      "historically a pretty great place to take risk",
+      "historically good buy zones",
+      "majors look like they want to melt up",
+      "The ETFs are being underestimated"
+    ],
+    "low_conviction_phrases": [
+      "interesting",
+      "look like",
+      "if we could send all our bags",
+      "now what?",
+      "what if it’s our time"
+    ]
+  }
+}

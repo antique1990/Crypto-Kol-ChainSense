@@ -1,0 +1,191 @@
+{
+  "handle": "dpuellARK",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "onchain",
+    "cycle",
+    "macro",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BTC-related equities",
+    "select altcoins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.92,
+      "evidence": "他多次直接使用 MVRV 周期框架，例如 [2024-04-11]“MVRV Z-Score... Currently, the three measures are 3.1, 4.9, and 6.6”以及 [2024-09-12]“bitcoin’s MVRV Z-score has defended its mean since inception... 1.6”。这是其核心估值/周期工具之一。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.86,
+      "evidence": "ETF 资金流是他反复引用的需求代理变量：[2025-02-07]“As price consolidated, US ETF balances made new highs.”；[2024-05-15]“ETF flows have remained relatively steady on a ITD, cumulative basis.”"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.84,
+      "evidence": "长期持币者供给是他常用 on-chain 支撑逻辑：[2024-08-09]“The supply of long-term holders... has accelerated to the upside... a strong holder base”；[2025-01-14]“62% of bitcoin's supply...”也在强调强手筹码结构。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.82,
+      "evidence": "他明显用减半后阶段来判断 BTC 行情节奏：[2024-05-15]“upward momentum becomes evident between the quarter and half-year periods after halving days”；[2025-01-14]“all years following a halving year have had positive returns YTD”。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.8,
+      "evidence": "四年窗口/完整周期是他长期研究主轴：[2025-06-25]“across every rolling 4-year window (a halving cycle)”；[2025-02-07]“So far, after 4 years, bitcoin has usually recovered.”"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.79,
+      "evidence": "他频繁用 200 日均线作为趋势切换或关键支撑/阻力：[2024-01-09]“Price closed above important support: its 200d MA...”；[2024-08-09]“bitcoin bounced off its 200d moving average”；[2024-09-12]“rejected by the 200-day moving average”。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.68,
+      "evidence": "他直接使用稳定币购买力/供应相关指标：[2024-10-19]“The stable coin supply ratio oscillator suggested bitcoin's oversold conditions relative to stablecoin's purchasing power”。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.66,
+      "evidence": "他会把全球流动性扩张映射到 BTC：[2024-10-19]“global M2 liquidity is hitting the market. We believe bitcoin could be benefited by this general liquidity.”"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.63,
+      "evidence": "有明确的反抄底风险意识：[2026-04-10]“Don’t buy a falling knife!! 🔪 $TAO is going lower by the hour”。这不是口号式提法，而是明确的执行规则。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.61,
+      "evidence": "他会公开记录平出/保本退出：[2026-04-11]“Closed breakeven”。说明其执行偏向先保护资本，再等待更好机会。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.55,
+      "evidence": "虽然不是纯 TA 交易员，但会用经典形态：[2026-04-10]“#DASH ... falling wedge جاب كل اهدافه”；说明他会识别下降楔形并按目标位兑现。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.54,
+      "evidence": "他会把回踩均线作为顺势买点：[2026-04-09]“A breakout and retest or a retest of the 50 DMA is a solid opportunity to buy”。这是标准趋势回踩延续思路。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.44,
+      "evidence": "[2026-04-10] 土耳其语推文写“Fincan yanına kulp”，即 cup and handle（杯柄形态），且前面明确说“kanalı kırılım + onay = %8 lik bir yükseliş”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.43,
+      "evidence": "他会先做大级别 regime 判断再谈交易：[2026-04-11]“从当前整体的日线走势来看，比特币和以太坊开始从小级别转向大周期的走强了”；[2024-09-12]“make-or-break environment”也是典型环境分类语言。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.31,
+      "evidence": "衍生品并非主框架，但他知道并会使用：[2026-04-11]“even if onchain is dead you have perps, option...”说明会把永续/期权作为补充观察层，不过推文证据不如 on-chain 与周期框架密集。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_sth_cost_basis_stack",
+      "name": "STH Cost Basis Support Stack",
+      "name_zh": "短期持有者成本带支撑堆栈",
+      "type": "onchain_signal",
+      "description": "Use a stacked support/resistance framework combining 200-day moving average, short-term-holder cost basis, and on-chain mean/cost basis. A reclaim above the cluster is treated as structural confirmation; rejection below it is treated as weakness.",
+      "description_zh": "把 200 日均线、短期持有者成本线、链上均值/成本基准叠加成一个支撑阻力带。价格重新站上该带视为结构确认，跌回其下视为弱势。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-01-09]“Price closed above important support: its 200d MA ($31.9k), its short-term-holder cost basis ($35.8k), and its on-chain mean ($32.2k)”"
+    },
+    {
+      "proposed_id": "cap_new_sopr_breakeven_reset",
+      "name": "SOPR Reset Bottoming",
+      "name_zh": "SOPR 回归盈亏平衡底部识别",
+      "type": "onchain_signal",
+      "description": "Treat aggregate realized profit/loss resetting to breakeven as evidence of local bottom formation inside a broader bull trend.",
+      "description_zh": "把全市场已实现盈亏指标回归到盈亏平衡附近视为牛市中的局部底部重置信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "[2024-05-15]“SOPR... has reset to breakeven, which historically correlates with local bottoms within primary bull markets.”"
+    },
+    {
+      "proposed_id": "cap_new_elliott_wave5_target",
+      "name": "Elliott Wave 5 Projection",
+      "name_zh": "艾略特浪 5 目标投射",
+      "type": "structural_bias",
+      "description": "After confirming impulsive structure and a breakout/retest, project a fifth-wave terminal target for upside continuation.",
+      "description_zh": "在确认推动浪结构和突破回踩后，给出第 5 浪终点目标，用于顺势上行的空间评估。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "[2026-04-09]“$CIFR what a breakout... A breakout and retest or a retest of the 50 DMA is a solid opportunity to buy  Wave 5 target: +122%”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Don’t buy a falling knife!! 🔪 $TAO is going lower by the hour",
+      "rule_paraphrased": "对瀑布下跌标的先回避，等结构修复后再参与。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Closed breakeven",
+      "rule_paraphrased": "行情不给延续就优先保本退出，不恋战。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "A breakout and retest or a retest of the 50 DMA is a solid opportunity to buy",
+      "rule_paraphrased": "最偏好的入场不是追高，而是突破后回踩确认或回踩关键均线。",
+      "category": "framework"
+    },
+    {
+      "quote": "Price closed above important support: its 200d MA ($31.9k), its short-term-holder cost basis ($35.8k), and its on-chain mean ($32.2k)",
+      "rule_paraphrased": "把价格、均线和链上成本带叠加成一个多层支撑框架来做趋势确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "As price consolidated, US ETF balances made new highs.",
+      "rule_paraphrased": "横盘期优先看资金吸纳而不是只看价格；需求代理变量能领先价格确认。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不像纯 K 线交易员，更像把 BTC 当成可研究的宏观-链上资产来做多维度证据加总：周期、ETF 流、LTH 供给、MVRV、200D 均线会被放在同一个决策框架里。即便偶尔做形态和波浪，他的核心 edge 仍来自中周期位置判断而不是高频博弈。当前 attach 的 8 张图片并非 K 线/标注图，而是人物与社媒图片，因此图像侧没有提供额外可验证的技术框架证据，结论主要来自推文文本。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "important support",
+      "solid opportunity to buy",
+      "make-or-break environment",
+      "strong holder base",
+      "we believe"
+    ],
+    "low_conviction_phrases": [
+      "seems to me",
+      "could be benefited",
+      "suggested",
+      "in our view",
+      "on track"
+    ]
+  }
+}

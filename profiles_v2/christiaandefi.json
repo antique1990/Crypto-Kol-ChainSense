@@ -1,0 +1,215 @@
+{
+  "handle": "christiaandefi",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "content_creator",
+    "pure_TA",
+    "structural",
+    "onchain",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "ALGO",
+    "NAI",
+    "TAO"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_026_smc_order_block",
+      "weight": 0.84,
+      "evidence": "2026-04-09 明确发文：\"Most of your “valid” order blocks are completely wrong. That’s why price keeps violating your entries.\" 说明他不仅使用订单块，而且把它当成核心入场过滤器。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.78,
+      "evidence": "2026-04-10 关于 TAO：\"Elimdeki poz stop oldu... 243 altı stoplarım\"，直接展示止损执行与重新评估，而不是死扛。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.82,
+      "evidence": "2025-08-29：\"$BTC dominance looks like it’s cooling off... we could see some real upside momentum in altcoins soon\"；2025-05-31 也发过 \"BTC Dominance || Dump it\"，明显把 BTC.D 当成山寨轮动触发器。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.73,
+      "evidence": "多次围绕 ETF/机构买盘发声：2025-01-31 \"21Shares files for a spot Polkadot ETF\"；2024-08-31 \"Holdings of US Bitcoin ETFs\"；2026-04-09 还讨论现货 ETF 净流出与 BTC 价格背离。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.75,
+      "evidence": "2025-01-31：\"U.S. dollar stablecoins reached $192bn in supply\"；2025-03-31：\"A massive $1 billion USDT mint has just occurred!\"；2025-02-28：\"USDT's deployment on TON... $1.4B issued in 10 months\"。他把稳定币扩张当作流动性燃料。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.48,
+      "evidence": "2025-07-31：\"Bitcoin long-term holders... still control 53% of the total supply\"，说明他会用长期持币者供给结构强化长线多头叙事。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.71,
+      "evidence": "2025-08-29：\"Volatility’s back. Leveraging is tricky and too risky as ever.\" 他会先识别高波动 regime，再调整杠杆和执行方式。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.57,
+      "evidence": "2026-04-11：\"$BTC and $ETH are sitting at macro trend resistance, while $USDT.D is at daily trend support\"，说明他会用更高周期趋势位来定义短线方向。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.42,
+      "evidence": "2025-05-31：\"$S || In demand zone✅ If $BTC holds here, we could see a 30–50% move.\" 这类表达显示他常在区间/需求区做预埋而非纯追突破。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.31,
+      "evidence": "2024-08-30 发过 \"Meanwhile, Gold Hits All-Time High Closing Price\"，2025-04-28 又转发 Tether 增持黄金支持 XAUT，说明他会观察黄金与加密的风险偏好切换。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.38,
+      "evidence": "2025-07-30：\"Federal Reserve leaves interest rates unchanged\"；2025-07-30：\"Must now lower the rate!\"。他会把利率环境当作风险资产流动性背景。"
+    },
+    {
+      "id": "cap_006_inverse_head_shoulders",
+      "weight": 0.29,
+      "evidence": "2024-04-29 专门发过 \"Common Chart Patterns\"，把 Inverse Head & Shoulders 列为 bullish 形态，说明其 TA 词典偏经典形态学。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.33,
+      "evidence": "同一条 2024-04-29 的图表教学推文中，将 Ascending Triangle 列为 bullish pattern，反映其基础模式识别框架。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.34,
+      "evidence": "2024-04-29 将 Falling Wedge 列为常见看涨形态；其附图中的 NAI 走势也体现出长期下行趋势线压制后等待上破的思路。"
+    },
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.22,
+      "evidence": "图片 7 中 NAI 日线长期低位横向压缩、成交量收缩后预期方向选择，虽然未直接标注布林，但其 setup 明显偏低波动压缩后突破。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_narrative_catalyst_rotation",
+      "name": "Narrative-Catalyst Rotation",
+      "name_zh": "叙事催化轮动",
+      "type": "structural_bias",
+      "description": "Ranks trades by upcoming catalysts, headline momentum, ETF filings, token launches, ecosystem announcements, and sector attention rather than price action alone.",
+      "description_zh": "按催化剂强弱做轮动，重点看 ETF 申请、生态发布、代币上线、合作新闻和赛道关注度，而不是只看 K 线。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_on_selected_theme",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "他高频转发并跟进 Polkadot ETF、Algorand 真实采用、RocketLab 合同、USDT mint、Top Trending Coins 等信息，并把这些直接转化为交易偏好。"
+    },
+    {
+      "proposed_id": "cap_new_microcap_asymmetric_shill",
+      "name": "Microcap Asymmetric Re-rate",
+      "name_zh": "小市值非对称重估",
+      "type": "pattern_setup",
+      "description": "Targets low-market-cap tokens with a simple chart base plus a strong narrative, then frames them with high-upside re-rating targets such as 2x, 5x, or new ATH.",
+      "description_zh": "专找低市值币种，在简单底部结构配合强叙事时下注，并用 2x、5x、创新高等重估目标表达交易逻辑。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "NAI、MIL、SPEC、METIS、LARRY 等推文里反复出现 \"easy 4-5x\", \"5x from here\", \"towards $100M MCAP\", \"Ready for new ATH\" 这类非对称收益表达。"
+    },
+    {
+      "proposed_id": "cap_new_demand_zone_if_btc_holds",
+      "name": "Altcoin Conditional Long on BTC Stability",
+      "name_zh": "BTC 稳住前提下的山寨条件做多",
+      "type": "regime_classifier",
+      "description": "Only takes altcoin longs when BTC is holding support or moving sideways constructively; avoids isolated alt trades against a weak BTC tape.",
+      "description_zh": "只有在 BTC 守住支撑或稳定横盘时才做山寨多单，避免逆着弱 BTC 环境单独做多山寨。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_conditional",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2025-05-31：\"If $BTC holds here, we could see a 30–50% move.\" 这几乎是他做山寨 setup 的条件句模板。"
+    },
+    {
+      "proposed_id": "cap_new_simple_target_projection",
+      "name": "Simple Horizontal Target Projection",
+      "name_zh": "简化水平位目标投射",
+      "type": "pattern_setup",
+      "description": "Uses long trendline compression, visible horizontal resistances, and a straightforward upside path sketch instead of indicator-heavy forecasting.",
+      "description_zh": "偏好用长期趋势线压缩、显眼水平阻力和手绘路径做目标投射，而不是堆叠大量指标。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "directional_breakout",
+        "horizon": "swing",
+        "confidence_base": 0.66
+      },
+      "example_evidence": "图片 7 的 NAI 日线直接用下降趋势线、横向支撑和手绘上行路径给出 611% 空间，风格非常鲜明。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "$BTC dominance looks like it’s cooling off 👀   If $BTC stays stable here, we could see some real upside momentum in altcoins soon.",
+      "rule_paraphrased": "先看 BTC 主导率和 BTC 本身是否稳定，再决定是否切到山寨进攻。",
+      "category": "framework"
+    },
+    {
+      "quote": "Volatility’s back. Leveraging is tricky and too risky as ever.  Not saying to sit this one out. Just make sure you’ve got the right setup.",
+      "rule_paraphrased": "高波动不等于不做，但必须降低鲁莽杠杆，只做高质量 setup。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Most of your “valid” order blocks are completely wrong.  That’s why price keeps violating your entries.",
+      "rule_paraphrased": "订单块不是随便画，结构定义错误会直接导致入场被反复扫损。",
+      "category": "framework"
+    },
+    {
+      "quote": "$TAO neden bu kadar düştü henüz elle tutulur bi haber göremedim. Elimdeki poz stop oldu şu an önemli bi bölgede olduğu içim bi tur daha denedim. 243 altı stoplarım",
+      "rule_paraphrased": "止损触发后可以在关键位再试，但新的尝试必须重新定义失效位。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "$SPEC || Bought a big bag here ✅  Sitting around $2.2, easy 4-5x from here.",
+      "rule_paraphrased": "他喜欢在叙事明确的小币种上做高赔率重估型押注，并用倍数目标表达强观点。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像纯技术派那样只围绕 K 线做判断，而是把新闻、ETF、稳定币供应、真实采用案例和山寨叙事热度一起纳入交易框架。图表上他偏好非常简化的结构表达：趋势线、水平位、需求区、目标投射，适合做中短周期 swing。与很多 TA 交易员不同，他明显兼具内容创作者属性，强烈偏好多头叙事和高赔率 altcoin 重估故事。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Adding more here✅",
+      "Bought a big bag here ✅",
+      "Targeting a minimum of 5x from here.",
+      "easy 4-5x from here",
+      "Ready for new ATH!",
+      "Send it to $0.1++",
+      "Targeting $250+✅",
+      "Last chance to enter before it takes off✅"
+    ],
+    "low_conviction_phrases": [
+      "If $BTC holds here",
+      "we could see",
+      "looks like it’s cooling off",
+      "starting to feel like",
+      "I suspect",
+      "important region",
+      "Question to all OG investors",
+      "What is going to happen tomorrow?"
+    ]
+  }
+}

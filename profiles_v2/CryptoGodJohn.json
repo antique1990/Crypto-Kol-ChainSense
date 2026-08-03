@@ -1,0 +1,210 @@
+{
+  "handle": "CryptoGodJohn",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "contrarian",
+    "structural",
+    "content_creator",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "TAO",
+    "0x0",
+    "DSYNC",
+    "HASHAI",
+    "ZIG",
+    "XPL",
+    "AI alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.9,
+      "evidence": "他反复用 BTC/ETH 强弱来判断山寨与 AI 板块轮动，例如 [2025-05-31] “BTC chilling at $100k and altcoins are getting obliterated”，[2025-01-31] “the entire market is down & ethereum is up… led to anything good”，[2024-11-30] “Meme coin money rotating into AI coins”，[2025-10-31] “$TAO going to start AI alt szn”."
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.82,
+      "evidence": "他经常把市场定义为 chop / 区间环境，例如 [2024-06-28] “probably have another month of chop”，[2025-10-30] “Wake me up when this chop ends”。图表也大量使用横向支撑阻力箱体，而不是复杂指标。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.74,
+      "evidence": "[2025-01-29] 连续发 “FOMC day pray that we get something positive for the markets” 与 “Holy fuck FOMC volatility bringing us back to prices we haven't seen in 1 hour”，说明他把 FOMC 当作明确事件驱动和风险控制节点。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.71,
+      "evidence": "典型图表几乎都是水平位交易：Image #2/#3/#4/#7 用多条横线标出关键支撑阻力，Image #5/#8 则给出价格在区间位之间来回测试后的运行路径，体现明显的箱体/区间高低点框架。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.68,
+      "evidence": "他的路径图经常先预期向下扫一层流动性再反转，例如 Image #5 白线先跌破当前位靠近红线 1.1175 后再向上收复多层阻力；Image #8 也先向下扫到 92.9k/91.5k 一带再上冲 95k+。文字上他也常说“Markets bottom on max fear”。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.66,
+      "evidence": "[2024-11-30] “Tops not in on $ETH until Fidelity or blackrock ETFs bid $1B in a day” 说明他用 ETF 资金流当作趋势是否见顶/继续的重要代理指标。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.63,
+      "evidence": "他会把美股风险偏好映射到加密，例如 [2024-06-28] “Stocks making new ATH’s  🤝  Crypto choppy as hell”，[2024-07-31] “Stocks absolutely sending   🤝  Crypto choppy as fuck”，[2025-08-29] “come back on Tuesday when the stock market opens back up”。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.61,
+      "evidence": "虽然整体风格激进，但会给出失效位，[2026-02-28] “I am scaling into longs here… Wrong below $60k”，这是典型的先定义 invalidation 再建仓。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.58,
+      "evidence": "他频繁强调极端波动与情绪切换，例如 [2025-03-30] “one of the wildest weeks in the market”，[2025-01-29] “It’s so over to we are so back in the matter of minutes”。这说明他识别并交易高波动 regime。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.56,
+      "evidence": "[2025-09-30] “We dump early October get everyone bearish then teleport to new ATH’s by end of month” 本质上是在预设先破坏情绪/假跌破，再反向拉升；这与他的多张路径图中先下杀再收复关键位的思路一致。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.45,
+      "evidence": "他会用“parabolic”描述最后一段加速行情，例如 [2024-11-30] “$ZIG looking ready to go parabolic”，[2025-09-29] “when $BTC does get a parabola how quickly it will double / triple”。虽然不是主框架，但会识别加速段。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.44,
+      "evidence": "他的表达更像等恐慌出清后接，而不是机械抄底；[2025-08-29] “big buying opportunity is coming soon”，[2026-02-28] “Markets bottom on fear & top on euphoria”，都暗示先等恐慌释放再切入。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.43,
+      "evidence": "图表中常见的是关键位收复后看趋势延续。Image #4 在 1.0293 与 1.4606 上方放量拉升到 1.93；Image #7 在长期底部后上破 0.0875，都是顺趋势看多表达。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.39,
+      "evidence": "虽然他不用 ICT 术语，但图上明显在交易“前阻力变支撑”的重测。Image #4 的 1.4606、Image #7 的 0.08751、Image #2/#3 的多层水平位都体现典型 breaker/reclaim 逻辑。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_horizontal_level_ladder",
+      "name": "Horizontal Level Ladder Pathing",
+      "name_zh": "水平位阶梯推演",
+      "type": "structural_bias",
+      "description": "Map price as a sequence of horizontal support/resistance levels and trade the most likely path from one level to the next, often with a brief sweep before continuation.",
+      "description_zh": "把价格拆解成一层层水平支撑/阻力位，交易从一个价位走向下一个价位的路径，常配合先扫流动性再延续。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "level_to_level_directional",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "Image #2/#3/#4/#7 全是纯水平位框架；Image #5/#8 甚至直接画出白色预期路径，展示从一个水平位过渡到下一个水平位的路线图。"
+    },
+    {
+      "proposed_id": "cap_new_sector_rotation_chasing",
+      "name": "Narrative Sector Rotation",
+      "name_zh": "叙事板块轮动",
+      "type": "structural_bias",
+      "description": "Rotate exposure aggressively between market narratives such as memes, AI, majors, and privacy based on relative strength, attention, and where fresh capital is likely to flow next.",
+      "description_zh": "根据相对强弱、市场注意力和新增资金流向，在 meme、AI、主流币、隐私等叙事之间积极轮动仓位。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "rotation_long",
+        "horizon": "days_to_months",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "[2024-11-30] “Meme coin money rotating into AI coins”，[2025-10-31] “$TAO going to start AI alt szn”，[2025-01-30] “AI round 2”。"
+    },
+    {
+      "proposed_id": "cap_new_calendar_sentiment_cycle",
+      "name": "Calendar Sentiment Seasonality",
+      "name_zh": "日历情绪季节性",
+      "type": "cycle_time",
+      "description": "Use month-end closes, Q4 seasonality, Uptober expectations, election windows, and holiday liquidity gaps as recurring timing edges for crypto positioning.",
+      "description_zh": "利用月末收线、Q4 季节性、Uptober 预期、大选窗口和节假日流动性真空，作为加密仓位时点优势。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "seasonal_directional",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2025-09-30] “October playbook… Uptober”，[2024-09-30] “Q4 going into the presidential election”，[2024-10-31] “Monthly close fuckery”。"
+    },
+    {
+      "proposed_id": "cap_new_fear_headline_bottom",
+      "name": "Fear Headline Bottoming",
+      "name_zh": "恐慌新闻底部法",
+      "type": "event_reaction",
+      "description": "Treat peak geopolitical or macro fear headlines as likely local bottoms if price refuses to make materially lower lows.",
+      "description_zh": "若地缘或宏观恐慌消息冲击下价格拒绝显著创新低，则把极端恐慌新闻视为局部底部信号。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian_long",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-02-28] “Bitcoin not making new lows and barely flinching on the attack of Iran… Good sign”，[2024-10-31] “Iran / Iraq fud again   This has marked every local low on this move up”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "October playbook  We dump early October get everyone bearish then teleport to new ATH’s by end of month   Uptober",
+      "rule_paraphrased": "偏好用月度/季节性脚本先设定市场情绪路径，再做反身性交易。",
+      "category": "framework"
+    },
+    {
+      "quote": "Markets bottom on max fear   Higher",
+      "rule_paraphrased": "最大恐慌时做反向看多，不在一致性悲观中追空。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Honestly alts holding pretty well",
+      "rule_paraphrased": "先观察相对强弱，能抗跌的板块/币种优先配置。",
+      "category": "framework"
+    },
+    {
+      "quote": "Wake me up when this chop ends",
+      "rule_paraphrased": "识别震荡期时降低预期，不把所有行情都硬做成趋势行情。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "I am scaling into longs here… Wrong below $60k",
+      "rule_paraphrased": "高 conviction 做多也必须给出明确失效位。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯粹的教科书 TA 交易员，而是把极简水平位技术分析、叙事轮动和市场情绪传播结合在一起。图上方法很朴素，几乎只画关键横线和预期路径，但推文里会用 AI、Uptober、选举、ETF、地缘恐慌等叙事放大交易框架。整体上更像一个高贝塔、长偏置、擅长讲“下一波钱会流去哪”的轮动型交易员。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "AI round 2",
+      "$TAO going to start AI alt szn",
+      "Bottoms in until next month",
+      "The most bullish scenario for the crypto market is playing out right now",
+      "$BTC looking like the hulk",
+      "Markets bottom on max fear",
+      "$ZIG looking ready to go parabolic",
+      "Where we are headed you won’t need charts"
+    ],
+    "low_conviction_phrases": [
+      "I wouldn’t be surprised if",
+      "probably",
+      "in my opinion",
+      "could take a bit of time",
+      "might have to change my plans",
+      "Honestly alts holding pretty well"
+    ]
+  }
+}

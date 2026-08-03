@@ -1,0 +1,216 @@
+{
+  "handle": "Tradermayne",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "contrarian",
+    "risk_first",
+    "cycle",
+    "content_creator",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "SPX",
+    "DXY"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.94,
+      "evidence": "他反复直接使用 sweep 语言和图示。[2025-01-30]“No way they put in a sweep and lower high here right?”；[2025-02-28]“we can lock in a daily SFP today”；[2026-04-03]“Big spot here for the bulls! Ideally we hold this sweep.” 图5更是手绘先跌破红线支撑再强力反弹，典型先扫流动性再起趋势。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.9,
+      "evidence": "SFP 是他公开使用的核心术语。[2025-02-28]“we can lock in a daily SFP today, could mean we see some relief”；[2025-01-30]“longs to range high with stops below the SFP are valid”。这不是泛泛 TA，而是明确把摆动失败当作入场/确认条件。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.88,
+      "evidence": "他经常围绕区间高低点制定计划。[2025-09-26]“My long at the range low got blown out.”；[2025-01-30]“higher low and longs to range high... or we are going down to range low and can try again there.” 图5也是典型区间内红线支撑+回踩再反弹框架。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.8,
+      "evidence": "图2、图3都用红色短横线标注“MSB”，强调结构破坏后的水平位回测；这是非常接近 breaker / 破位后支撑阻力互换的用法。图3在 2021 两段顶部结构后都标了 MSB，表示跌破后把原支撑当阻力。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.76,
+      "evidence": "他警惕无效突破。[2025-01-30]“a decisive close above the range high is what's needed IMO”；这意味着不认可仅仅刺破。seed 里的假突破陷阱与他的“等收盘确认、扫上去再回来”的框架高度一致。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.84,
+      "evidence": "他高度强调 invalidation 和止损。[2025-10-30]“My invalidation is clear, weekly closes below $98k.”；[2025-09-26]“My long at the range low got blown out.” 说明他接受被止损并按计划退出，而不是死扛。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.72,
+      "evidence": "[2025-02-28]“First signs of life from the bulls here.” 先等 bulls show life 再谈多；[2024-02-29]“Nothing wrong with being patient.” 说明他不喜欢在瀑布过程中盲目抄底，而要等结构信号。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.63,
+      "evidence": "[2024-01-30]“This looks distributive to me. $BTC” 先识别环境偏派发/偏弱，再决定不激进做多。图3两次顶部 MSB 也是把市场切换为下行结构来看。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.66,
+      "evidence": "[2024-11-29]“Biggest bull run ever. Greatest macro backdrop for crypto ever. The number is going up...” 说明他会先定义大级别牛市环境；[2025-10-30]“Price should be going up sooner than later IMO” 也是先有趋势偏置，再用具体级别找执行位。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.62,
+      "evidence": "他会把 SPX 当宏观风险开关。[2024-05-31]“$SPX They are absolutely sending SPX into the weekend.”；[2025-07-31]“$SPX Talk to meeeeee” 说明他并非只看币圈内部结构，会用股市风险情绪辅助判断。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.55,
+      "evidence": "[2025-07-30]单独发“$DXY”配图，说明他把美元指数作为 BTC 风险偏好的反向参考之一。虽然推文文字不多，但从其关注列表看 DXY 是常规确认项。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.48,
+      "evidence": "[2024-01-31]“FOMC, monthly candle closure... Should be an interesting day for price action.” 他明显重视 FOMC 与月线收盘这种事件窗口，作为波动和仓位管理节点。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.58,
+      "evidence": "[2024-10-31]“Now that we are near price discovery, a few things to consider... insane price targets... bullish hopium and euphoria” 这种讲话方式明显是在用牛市阶段/周期末期的框架约束预期。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.69,
+      "evidence": "图1直接把 2017、2021 顶部后的回撤幅度和持续时间并排比较，并将现行周期与历史高点后回撤做类比，这是非常典型的四年周期/历史分形视角。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.71,
+      "evidence": "图1对 2017 与 2021 的顶部都标注了从高点到低点的巨大百分比回撤，核心是在识别抛物线冲顶后的衰竭和随后的深度洗盘。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.52,
+      "evidence": "[2024-11-30]“What you want to be doing right now is going through Altcoins and checking them vs $BTC, $ETH and $SOL. If you want to spot outperformance, that is how you do it.” 这本质上是在做相对强弱/主导权切换筛选。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_msb_market_structure_break",
+      "name": "Market Structure Break Level",
+      "name_zh": "市场结构破坏位（MSB）",
+      "type": "structural_bias",
+      "description": "Mark the exact swing level whose break confirms a regime shift, then use that level as the key reclaim/rejection pivot for the next trade.",
+      "description_zh": "标出确认结构切换的关键摆动位；一旦跌破或升破，该位就成为之后回抽确认或拒绝的核心枢轴。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "regime_shift_confirmed",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "图2、图3多次直接用红线标注“MSB”，这是他图表语言里最鲜明的专属标签之一。"
+    },
+    {
+      "proposed_id": "cap_new_range_level_scenario_tree",
+      "name": "Level-Based Scenario Tree",
+      "name_zh": "关键位条件分叉剧本",
+      "type": "risk_rule",
+      "description": "Predefine multiple scenarios around one or two major levels: hold/reclaim means one path, lose/sweep means another, with entries and invalidations attached to each branch.",
+      "description_zh": "围绕一个或两个关键位预先写好多套分叉剧本：守住/收回走一种路径，跌破/扫流动性走另一种路径，并给每条路径配套入场与失效条件。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "conditional",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-01-30]“higher low and longs to range high... or we are going down to range low and can try again there.”；[2025-10-30]“My invalidation is clear...” 都是条件分叉而不是单点预测。"
+    },
+    {
+      "proposed_id": "cap_new_relative_strength_alt_scan",
+      "name": "Alt Relative Strength Scan",
+      "name_zh": "山寨相对强弱扫描",
+      "type": "structural_bias",
+      "description": "Rank altcoins by performance and structure versus BTC, ETH, and SOL to identify leadership before broad market recognition.",
+      "description_zh": "把山寨币分别对 BTC、ETH、SOL 做相对强弱与结构比较，用来提前发现领涨品种，而不是只看美元计价图。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "leaders_long",
+        "horizon": "swing",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2024-11-30]“go through Altcoins and checking them vs $BTC, $ETH and $SOL. If you want to spot outperformance, that is how you do it.”"
+    },
+    {
+      "proposed_id": "cap_new_cycle_euphoria_filter",
+      "name": "Cycle Euphoria Filter",
+      "name_zh": "周期末亢奋过滤器",
+      "type": "cycle_time",
+      "description": "When price enters discovery and social timelines explode with extreme targets, reduce trust in upside extrapolation and focus on protecting gains.",
+      "description_zh": "当价格进入发现区、社媒开始充斥极端目标价时，降低对继续线性外推上涨的信任度，把重心转向保护利润。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "distribution_watch",
+        "horizon": "position",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "[2024-10-31]“You are going to see some insane price targets... Most of this is just bullish hopium and euphoria—be careful.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Be fearful when others are fearful",
+      "rule_paraphrased": "情绪极端恐慌时优先寻找反身性做多而不是跟着崩溃叙事跑。",
+      "category": "mantra"
+    },
+    {
+      "quote": "My long at the range low got blown out.",
+      "rule_paraphrased": "区间边缘做交易必须接受止损被打；错了就离场，不把观点神圣化。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "My invalidation is clear, weekly closes below $98k.",
+      "rule_paraphrased": "观点必须绑定清晰失效位，最好是更高时间框架收盘确认。",
+      "category": "framework"
+    },
+    {
+      "quote": "Nothing wrong with being patient.",
+      "rule_paraphrased": "大波动后不急着猜下一步，等结构和价格给更好的赔率。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Who cares about magazine covers, innings, or anything of the sort. We are here to get the bag, not become bag holders.",
+      "rule_paraphrased": "反感宏大叙事式自我催眠，核心目标是赚钱和保住利润，不是拿着故事坐过山车。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯形态派，也不是纯宏观派，而是把高时间框架周期感、结构位、流动性扫单和事件窗口揉成一套“条件分叉剧本”式交易流程。图表语言里最有辨识度的是 MSB、sweep、range high/low、clear invalidation 这些执行词，而不是复杂指标。和很多只会喊目标位的 TA 不同，他持续强调失效位、被打止损也正常，以及在市场恐慌时逆向寻找机会。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "My invalidation is clear",
+      "Ideally we hold this sweep",
+      "First signs of life from the bulls here",
+      "a decisive close above the range high is what's needed",
+      "Price should be going up sooner than later IMO",
+      "Big spot here for the bulls"
+    ],
+    "low_conviction_phrases": [
+      "there is a world where this is the set up",
+      "perhaps that's not the case",
+      "who knows maybe that gets front run",
+      "looks constructive",
+      "appears to be",
+      "seems like"
+    ]
+  }
+}

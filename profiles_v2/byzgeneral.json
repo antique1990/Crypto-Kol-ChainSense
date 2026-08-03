@@ -1,0 +1,211 @@
+{
+  "handle": "byzgeneral",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "structural",
+    "macro",
+    "contrarian",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "BTC.D",
+    "altcoins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.98,
+      "evidence": "他反复盯着 OI 与价格背离。[2024-06-30]“$BTC's OI went up $1b while price didn't go anywhere at all”; [2024-11-29]“Open interest reset, support held up”; 图2/6/7 都把 Aggregated Open Interest 放在主图下方，用它判断是否积累了会触发突破或挤仓的仓位。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.91,
+      "evidence": "他经常把 funding 当成健康度/拥挤度过滤器。[2025-04-29]“Neutral basis, keeps grinding against resistance... kinda looks like $BTC wants to pop higher”; [2026-02-26]“no significant open interest increase or rise in funding. This is actually starting to look pretty nice.” 图2/6/7 都同时展示 funding 与价格。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.87,
+      "evidence": "他直接用 perps basis / premium 判断多空拥挤。[2024-04-30]“perps basis is closer to neutral now”; [2024-01-31]“We still got a nice spot premium, but Coinbase is trading at a discount again”; 图8右上角明确显示“Perps basis %”。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.84,
+      "evidence": "他明显在看清算分布与扫损路径。图4是 coinalyze 的全市场 liquidations；[2025-09-25]“quite likely that it does one more stop run, tapping 110k before some actual relief” 明确是先扫流动性再反转的叙事。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.82,
+      "evidence": "图7 直接圈出 BTC 冲上区间上沿后的局部扫高；[2026-03-31]“Significant amount of liquidity taken at that local low... now probably wants to offload”; [2025-09-25]“one more stop run” 也是典型 sweep 语言。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.8,
+      "evidence": "他很常先定义‘chop / range / no man's land’再决定不追单。[2025-03-29]“It's clear that we're just chopping, waiting for a catalyst”; [2025-07-31]“For me this is in no man's land”; [2024-11-30]“Volume is dead, just come back Monday.”"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.74,
+      "evidence": "他常把交易框架建立在箱体边界与局部高低点上。图7 画出明显水平区间并在上沿附近评估反应；[2025-07-31]“I would only take a trade if takes either the local low/high out and then you can scalp it into the other direction.”"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.73,
+      "evidence": "图7 是突破区间上沿后在高位犹豫的典型真假突破观察；[2025-09-29]“$ETH starting to look like this was just a bear trap”; [2025-09-25] 先冲 110k 再 relief 也暗含假突破/诱多后的反手。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.71,
+      "evidence": "他频繁把 ETF 流量作为 BTC/ETH 需求代理。[2024-02-29]“$IBIT alone did $670m of inflows”; [2024-09-28]“inflows are kinda nuts again”; [2024-05-31]“we got some very high ETF flows today”; [2026-02-26]“It was actually the ETFs who did the buying today.”"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "他会把宏观风险偏好作为上层过滤器。[2026-04-10]“Insane recovery... hard to imagine that this isn't just on its way to make a new ATH. $SPX”; 多条推文围绕 Trump/Fed/market open 对加密风险偏好的传导。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.49,
+      "evidence": "[2024-07-31]“today is a big day. FED fund rate decision + FOMC”; [2024-09-30]“FED's Bostic...” 说明他会围绕宏观事件窗口调低确定性，把事件当波动触发器。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.62,
+      "evidence": "[2025-05-28]“if the daily closes like this then personally I wouldn't think about longing anymore until a bunch of that OI gets scorched”; [2025-05-30]“about $2b in OI closed on that small move down” 说明他很在意高杠杆多头被清洗后的再上车窗口。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.56,
+      "evidence": "[2025-08-29]“Seems like a lot of shorts are coming in now”; [2024-11-29]“Open interest reset, support held up... we're gonna take out the local highs” 体现他会把拥挤空头视为上冲燃料。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.45,
+      "evidence": "[2025-09-29]“$BTC pumping on increasing BTC dominance is very healthy”; [2024-02-29]“$DOGE heating up has got to be good news for alts in general” 说明他也会用 BTC.D/风险偏好轮动理解山寨表现。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.31,
+      "evidence": "虽然他不是均线驱动型交易员，但图6 对 SOL 的中期结构突破后重回关键区间、图7 对上沿收复后的观察，体现了‘关键位收回’式趋势切换确认，只是不是用传统均线而是用水平结构。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_spot_perp_divergence",
+      "name": "Spot-Perp Orderflow Divergence",
+      "name_zh": "现货/永续订单流背离",
+      "type": "derivatives_signal",
+      "description": "Detect when spot exchange flow and perpetual futures positioning disagree, such as spot selling into rising perp premium or spot buying while perp leverage stays muted. Used to infer whether a move is real demand, passive distribution, or a squeeze setup.",
+      "description_zh": "识别现货交易所流向与永续合约仓位/基差不一致的情形，例如现货在卖而永续溢价上升，或现货在买而杠杆并未同步扩张。用于判断上涨是否真实需求、是否存在被动派发，或是否处于挤仓前夜。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2024-04-30]“spot dumping... perps basis is closer to neutral now”; [2024-10-31]“The perps basis is rising because spot has been selling off today. Especially Coinbase has been quite bearish.” 图8同时看现货 CVD、perps basis 与价格。"
+    },
+    {
+      "proposed_id": "cap_new_passive_flow_by_venue",
+      "name": "Venue-Specific Passive Buyer/Seller Detection",
+      "name_zh": "分交易所被动买卖盘识别",
+      "type": "orderflow_signal",
+      "description": "Track exchange-specific spot behavior such as Coinbase, Bitstamp, OKX, or Bitfinex to identify persistent passive sellers/buyers, TWAP execution, and venue-led directional pressure.",
+      "description_zh": "跟踪 Coinbase、Bitstamp、OKX、Bitfinex 等单一交易所的现货行为，识别持续性的被动卖家/买家、TWAP 执行，以及由特定场馆主导的方向压力。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "follow_or_fade_after_completion",
+        "horizon": "intraday",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-01-30]“Someone on OKX has been offloading a bunch of spot with limit orders all day”; [2024-07-30]“Coinbase $BTC spot CVD skyrocketed today, but it seems like it was mostly limit selling”; [2024-08-31]“Bitfinex started twapping $BTC.”"
+    },
+    {
+      "proposed_id": "cap_new_oi_reset_after_flush",
+      "name": "OI Reset After Flush",
+      "name_zh": "清洗后持仓重置",
+      "type": "derivatives_signal",
+      "description": "After a sharp but not structurally damaging move, open interest collapses while price holds key support/resistance. The reset is interpreted as leverage cleansing that improves trend continuation odds.",
+      "description_zh": "在一次剧烈但未破坏结构的价格波动后，未平仓合约显著回落，而价格仍守住关键支撑/阻力。该重置被视为杠杆洗净，提升原趋势延续概率。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "trend_continuation",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-11-29]“Open interest reset, support held up. Looks to me like we're gonna take out the local highs”; [2025-05-30]“about $2b in OI closed on that small move down. $BTC”"
+    },
+    {
+      "proposed_id": "cap_new_no_mans_land_filter",
+      "name": "No Man's Land Trade Filter",
+      "name_zh": "无人区过滤器",
+      "type": "risk_rule",
+      "description": "Avoid trading when price is trapped between meaningful local extremes without a catalyst, clean level interaction, or leverage asymmetry. Wait for either boundary sweep or catalyst expansion.",
+      "description_zh": "当价格位于关键局部高低点之间、缺乏催化剂、缺乏明确水平位反应且杠杆不对称不明显时，选择不交易。等待边界被扫或催化剂带来扩张后再出手。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2025-07-31]“For me this is in no man's land”; [2025-03-29]“we're just chopping, waiting for a catalyst”; [2024-11-30]“Volume is dead, just come back Monday.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Open interest reset, support held up. Looks to me like we're gonna take out the local highs and potentially take a stab at piercing 100k.",
+      "rule_paraphrased": "先看杠杆是否被洗掉，再看结构位是否仍然成立；若成立，则倾向顺原方向继续。",
+      "category": "framework"
+    },
+    {
+      "quote": "The market is stalling here. Even Coinbase's last bullish bidding session couldn't get us out of the range. Makes a lot of sense to be defensive here.",
+      "rule_paraphrased": "如果最强的买盘代理都推不出区间，就降低风险，不预设突破一定发生。",
+      "category": "framework"
+    },
+    {
+      "quote": "If the daily closes like this then personally I wouldn't think about longing anymore until a bunch of that OI gets scorched or we reach a nice technical level like 95k or sum.",
+      "rule_paraphrased": "拥挤仓位未清洗前不追多，宁可等 OI 出清或等更好的结构位。",
+      "category": "risk_first"
+    },
+    {
+      "quote": "These smol moves from the past two weeks are basically irrelevant because the books are so dead. It's clear that we're just chopping, waiting for a catalyst to push us in a direction.",
+      "rule_paraphrased": "订单簿太薄、缺催化时，微小波动没有信息含量，不值得赋予趋势意义。",
+      "category": "mantra"
+    },
+    {
+      "quote": "For me this is in no man's land. I would only take a trade if takes either the local low/high out and then you can scalp it into the other direction.",
+      "rule_paraphrased": "区间中部不交易，只在边界扫损后做反手或极短线反应。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和常规 TA 交易员的差别在于，核心不是形态学本身，而是把 OI、funding、basis、CVD、ETF flows 这些衍生品与订单流变量叠加到结构位上做判断。图表里几乎总有‘价格 + OI + funding/basis + volume/CVD’四件套，说明他更像是以仓位结构和流动性清洗为中心的交易员。整体上偏反身性与拥挤度分析，喜欢找‘杠杆被洗净后继续’或‘先扫流动性再走真实方向’的机会。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "100%",
+      "pretty clear",
+      "very healthy",
+      "one of the most free trades ever",
+      "hard to imagine that this isn't",
+      "we're gonna take out the local highs"
+    ],
+    "low_conviction_phrases": [
+      "kinda looks like",
+      "I think",
+      "personally",
+      "perhaps I'm wrong",
+      "mixed signals",
+      "I can't tell if this is bullish or bearish",
+      "for me this is in no man's land",
+      "interdasting"
+    ]
+  }
+}

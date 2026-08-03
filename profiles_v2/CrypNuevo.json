@@ -1,0 +1,201 @@
+{
+  "handle": "CrypNuevo",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "structural",
+    "contrarian",
+    "risk_first",
+    "pure_TA"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BTC.D"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.99,
+      "evidence": "他反复把清算区当作价格主导变量。2025-09-22 直说“Liquidations lead the way, always... it's the ultimate form of liquidity profitability”；2025-09-24 提到“$116.5k is gathering some short liquidations... time to hit short liquidations soon”；多张图都直接标注 LP、liquidity run、range highs/lows 的止损池。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.96,
+      "evidence": "他的核心框架就是先扫流动性再走真实方向。2025-03-29 说“usual market manipulation targetting stop losses”；2026-02-04 说“the first part of this new projection: the liquidity sweep of the previous low”；图1、图2都先画上破局部阻力做 liquidity run，再回落扫 local low。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.93,
+      "evidence": "他极度依赖 1W50EMA/1D50EMA 作为趋势延续锚点。2025-02-27 只愿意在“$77k-$78k: CME gap + 1W50EMA”做多；2025-05-18 说“we've simply retested the 1W50EMA, the main bull market support level”；图3、图4、图7都把 1W50EMA 画成 bull market support/buy zone。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.9,
+      "evidence": "他经常先定义区间，再只做区间边缘与假突破。2025-08-24 明说“Price is clearly ranging between $112k & $120k”；2026-04-05 说“I'm only looking to trade the extremes of this range”；图1、图2把 RANGE、mid-range、local support、local resistance 作为完整交易框架。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.88,
+      "evidence": "他的具体执行往往是区间上下沿反手。2025-09-22 说“Retraced done to range lows... added some swing longs again”；2025-02-25 说不在 range lows 直接接，而等更高胜率位置；图2在 range 中先扫上方流动性，再预期跌向 local support/local low。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.86,
+      "evidence": "他大量使用 R/S flip 与 reclaim 逻辑。2024-09-23 说“Bitcoin needs to find acceptance above the previous high ... a resistance/support flip”；2025-06-01 说“R/S flip failed”；2025-05-26 说“previous resistance - now turning into support. A promising R/S flip”；图3、图4顶部也写着“Main resistance: R/S flip and we're good”。"
+    },
+    {
+      "id": "cap_049_ict_fair_value_gap",
+      "weight": 0.81,
+      "evidence": "虽然他更常说 imbalance / wick / CME gap，但本质上是在交易不平衡回补。2025-10-27 说在“we filled the CME gap at $107k”后满仓；2024-12-26 说自己的指标“marks the imbalances for me, like wicks and LPs”；图8写着“Take upside imbalances from liquidation cascade”“CME gap filled!”。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.8,
+      "evidence": "均线收复是他确认趋势切换的重要条件。2024-08-24 说“$BTC broke through the daily 50EMA and pushed higher. My idea was invalidated”；2025-02-27 的做多条件 b) 是“Price reclaims $87...” 这类 reclaim 逻辑通常配合均线与关键位。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.67,
+      "evidence": "他明显会围绕 FOMC 降风险。2025-01-26 说“Important week ahead... first FOMC”；2024-04-28 说“FOMC and NFP next week - big week ahead”；图6直接在时间轴画出 FOMC 事件线，表达事件前后要重新评估结构。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.84,
+      "evidence": "他多次强调不要在瀑布里抢反弹。2025-02-24 说“without knife catching”；2024-09-30 说“Support sliced like butter so I'm not engaging in longs atm”；2026-02-04 说“Longing this is risky”；2025-02-25 在第一次做多失败后立刻认错并停止接刀。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.78,
+      "evidence": "他对失效 setup 会快速止损。2025-02-25 说“I tried longing the first zone but had to quickly close it at a small loss”；2025-01-27 公开承认“the idea was wrong”；图3直接写“stop-losses are below”，说明预先定义失效点。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.76,
+      "evidence": "长影线/拒绝是他最常见的确认信号之一。2025-07-20 说“Wicks to the upside but price not progressing any further”；2026-02-22 说“Price tends to fill the 100% of the wick after revisiting the 50% level”；图1标“Long wick”，图5圈出顶部连续上影。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.69,
+      "evidence": "他不是纯均值回归，也会在明确趋势中持有偏多结构。2025-07-20 开头就是“quiet week during this strong uptrend”；2025-05-21 说“More to come... at least $115k”；图5是在 1D50EMA 上方顺势观察顶部放缓而不是立即做空。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_wick_fill_strategy",
+      "name": "Multi-timeframe Wick Fill Strategy",
+      "name_zh": "多周期影线回补策略",
+      "type": "structural_bias",
+      "description": "When a large wick is left on 4H/1D/1W, price tends to revisit and partially or fully fill the wick, often first to 50% and later to 100%. The fill level becomes a directional magnet and timing tool.",
+      "description_zh": "当 4H/1D/1W 出现明显长影线时，价格倾向回补该影线，常先回到 50%，再看是否走向 100%。影线回补位被他当作方向磁铁与择时工具。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "mean_revert_to_wick_fill_then_reassess",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "2026-02-22 说“Price tends to fill the 100% of the wick after revisiting the 50% level”；2026-03-16 说“The wick fill strategy is my favorite trading strategy!”；图8写“>50% wick has already been filled”，图1/2/5/7都有影线回补思维。"
+    },
+    {
+      "proposed_id": "cap_new_weekly_50ema_bull_bear_pivot",
+      "name": "Weekly 50EMA Bull/Bear Pivot",
+      "name_zh": "周线50EMA牛熊分界支撑",
+      "type": "indicator_rule",
+      "description": "Use the 1W 50EMA as the primary bull-market support / bear-market resistance. Reactions at this level define whether to swing long, de-risk, or wait for reclaim.",
+      "description_zh": "将 1W50EMA 作为最核心的牛市支撑/熊市阻力。价格对该均线的反应决定是否做波段多、减仓，或等待收复确认。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "buy_reaction_if_holds_avoid_if_lost",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "2025-02-28 直接说“1W50EMA is historically the best $BTC bull/bear market support & resistance indicator level”；图3、图4、图7都把 1W50EMA 写成 Bull Market Support / buy zone。"
+    },
+    {
+      "proposed_id": "cap_new_liquidity_run_then_reversal_projection",
+      "name": "Liquidity Run Then Reversal Projection",
+      "name_zh": "先扫流动性再反转路径投影",
+      "type": "pattern_setup",
+      "description": "In a defined range or local structure, project price to first run one side's stop-loss/liquidation pool, reject, and then travel toward the opposite pool. This is used as a forward path map rather than a static setup.",
+      "description_zh": "在明确区间或局部结构中，先预判价格会去扫某一侧止损/清算池，随后被拒绝，再朝另一侧流动性池移动。这更像路径投影，而不是单点形态。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian_after_sweep",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2026-01-30 说“projection 100% completed... projecting this 1 month in advance”；图1、图2都画出先上扫 local resistance/liquidity run，再跌向 local support/local low 的完整白线路径。"
+    },
+    {
+      "proposed_id": "cap_new_market_manipulation_psychology",
+      "name": "Market Manipulation Psychology Framework",
+      "name_zh": "做市商操纵心理框架",
+      "type": "framework",
+      "description": "Interpret price action by asking where the majority are trapped, where stop losses sit, and how market makers can maximize forced liquidations before the real move.",
+      "description_zh": "用“多数人会被困在哪里、止损堆在哪里、做市商如何先最大化强平再走真实方向”的思维解释价格行为。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_contextual",
+        "horizon": "all",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2026-01-29 说“99% of traders use the same conventional trading systems”；2024-05-20 说“trying to think like the MM so we can jump on their trades”；2025-03-29 说“usual market manipulation targetting stop losses”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Liquidations lead the way, always... it's the ultimate form of liquidity profitability for the hands that control this market.",
+      "rule_paraphrased": "先找清算与止损堆，再推演价格路径；价格不是随机走，而是先去最赚钱的流动性口袋。",
+      "category": "framework"
+    },
+    {
+      "quote": "The wick fill strategy is my favorite trading strategy!",
+      "rule_paraphrased": "长影线不是噪音，而是后续高概率回补目标；影线本身就是 setup。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Longing this is risky, we all agree. It requires screen time, risk management and confidence.",
+      "rule_paraphrased": "逆势抄底必须附带更高门槛：盯盘、风控、仓位控制，不能机械执行。",
+      "category": "risk_first"
+    },
+    {
+      "quote": "Support sliced like butter so I'm not engaging in longs atm.",
+      "rule_paraphrased": "关键支撑若被无反应击穿，不做主观抄底，等下一层流动性或重新收复。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "I tried longing the first zone but had to quickly close it at a small loss.",
+      "rule_paraphrased": "setup 失效就快速小亏离场，错了立刻认，不让观点变成包袱。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和常规 TA 交易员最大的区别，是把“流动性/清算/止损分布”放在 K 线形态之前，用做市商会先扫哪里来组织整个分析。其次，他有很强的路径投影能力，不只是给方向，而是给出先扫哪边、再回补哪段影线、最后去哪个区间边界的动态剧本。最后，1W50EMA、CME gap、影线回补这些工具在他手里不是独立指标，而是围绕“市场操纵与流动性收割”整合成一套执行框架。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "very likely",
+      "clear",
+      "projection playing out perfectly",
+      "100% completed",
+      "there should be a very strong reaction",
+      "nailed",
+      "high-conviction setup",
+      "only game on once it can reclaim"
+    ],
+    "low_conviction_phrases": [
+      "could",
+      "perhaps",
+      "I think",
+      "imo",
+      "let's see",
+      "not sure if",
+      "likely",
+      "it might take a bit more time"
+    ]
+  }
+}

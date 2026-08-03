@@ -1,0 +1,243 @@
+{
+  "handle": "CryptoFaibik",
+  "school_primary": "pure_TA",
+  "school_secondary": [
+    "structural",
+    "content_creator",
+    "cycle"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "LINK",
+    "SOL",
+    "DOT",
+    "FET",
+    "PEPE",
+    "FTM",
+    "TOTAL2",
+    "BTC.D"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_002_rising_wedge_breakdown",
+      "weight": 0.9,
+      "evidence": "高频用于 BTC.D 作为山寨季触发器。2024-12-24: \"$BTC (Dominance) Rising Wedge Breakout + Retest confirmed! ✅ #Altseason has officially begun\"；配图 1/2 也都是 BTC.D 周线/日线上的上升楔形下破并指向 48% 附近。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.95,
+      "evidence": "这是他最核心的跨市场框架之一。2024-11-29: \"#Altseason 2024-25 has Officially kicked off!\"；2024-11-26: \"$BTC.D ... Lower trendline is weakening, Expecting a Wedge breakdown\"；多张图都直接用 BTC Dominance 下行来推导 Altseason。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.9,
+      "evidence": "几乎是他最常见的单币看多形态。2025-01-30: \"$ETH Falling Wedge formation on the Daily timeframe Chart..!! A successful breakout could push it to $4444\"；2025-02-20/24: 多次说 BTC 日线 Falling Wedge Breakout 将指向 105k/106k；2024-11-27: \"$DOT Ready to FLY.. Falling Wedge Breakout on the Weekly timeframe Chart\"。"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.82,
+      "evidence": "对 BTC 延续上涨经常用旗形。2024-06-25: \"$BTC is forming Bullish Flag Pattern on the Weekly TF Chart..!! 88k is Programmed\"；2024-04-26: \"A Successful Bullish Flag Breakout will Send $BTC #Bitcoin to 86k\"；2024-04-22: \"$BTC is forming Bullish flag pattern on the daily timeframe chart\"。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.84,
+      "evidence": "对 BTC/ETH 的突破确认很常用。2024-12-14: \"$BTC Expecting Ascending Triangle upside Breakout next week..!! Next Stop : 112k\"；2024-07-30: \"Ascending triangle Breakout/Retest on the Monthly timeframe has already been Confirmed\"；2025-05-28/30: \"$ETH Ascending Triangle formation on the 12h Chart\"。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.7,
+      "evidence": "会在顶部/回调阶段用 RSI 背离做短中期警示。2024-12-18: \"$BTC Massive Bearish Divergence on the Daily timeframe Chart..!! Expecting 8-10% Correction\"；2025-06-12 与 2025-06-18: 多次提示 BTC 周线 RSI bearish divergence，目标 96-92k / 92-94k。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.48,
+      "evidence": "较少直接说背离，但会把 RSI 结构当底部线索。2024-04-20: \"$BTC Daily RSI is forming Falling Wedge formation..!! Seems like It has bottomed out\"；2024-04-23: \"$BTC Daily RSI has broken out of a falling wedge Pattern, indicating Bitcoin is Ready for a 15-20% Bullish Rally\"。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.62,
+      "evidence": "会用 MA reclaim 做趋势切换确认，但频率低于图形。2025-06-11: \"$ETH #Ethereum Bulls finally Reclaimed the Daily MA200 (2660)..✅\"；2025-09-26: \"MA200 (104K) retest could spark a Rebound\"；2024-04-22: \"weekly candle closes above the EMA10, signaling that bulls remain firmly in control\"。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.8,
+      "evidence": "他默认把大部分观察建立在上涨主趋势未坏的前提上。2024-12-19: \"Bitcoin Bulls Are In Complete Control! Hold it tight\"；2024-09-28: \"$BTC bulls are Currently in full Control!\"；2024-12-15: \"$BTC Bulls are in control right now\"。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.58,
+      "evidence": "他不只讲上涨，还会把抛物式加速视为阶段尾声。图片 7 直接在 BTC 周线上标注 \"Parabolic step-like formation\"、Base 1-4、100k 与 \"Sell Point\"；这明显是抛物线末端衰竭/加速结构框架。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.42,
+      "evidence": "虽然整体偏多，但在局部回调里也会切换为空头结构。2025-08-18: \"$BTC Rising Wedge Breakdown is Confirmed on the Daily TF Chart..✅\"；2025-09-22: \"Rising Wedge has already broken and now a Bearish Flag pattern is forming\"。"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.35,
+      "evidence": "使用频次明显低于多头形态，但会在回调段拿来警示。2025-09-22 明确写到 \"Rising Wedge has already broken and now a Bearish Flag pattern is forming\"。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.32,
+      "evidence": "图里会关注关键位的长影线/拒绝。图片 2 在 BTC.D 楔形破位后出现长上影回踩失败，再配下行箭头；虽然推文不常显式命名 pin bar，但图形表达体现出关键位拒绝逻辑。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.54,
+      "evidence": "经常强调假跌破/诱空后上行。2025-05-30: \"Time to trap the $BTC #Bitcoin bears and Send it back above 110K!\"；2025-03-17: \"Bitcoin will hit 78k first to grab liquidity before an Upside Breakout\"，对应先扫流动性再起飞。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.57,
+      "evidence": "他不是系统性 SMC 交易员，但会反复讲先扫流动性再走主趋势。2025-03-17: \"hit 78k first to grab liquidity before an Upside Breakout\"；2025-03-29: \"Late shorts will get REKT soon\"。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.44,
+      "evidence": "虽然不是严格链上/周期派，但对 2024-25 bullrun/altseason 的节奏判断带明显周期叙事。2024-11-27: \"Bullrun 2024-25\"；2024-04-30: \"Next 5-6 months gonna be truly EPIC for Bitcoin\"；2024-06-23: \"Q3 & Q4 gonna be EPIC for the Altcoins\"。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_broadening_wedge_breakout",
+      "name": "Broadening Wedge Breakout",
+      "name_zh": "扩张楔形突破",
+      "type": "pattern_setup",
+      "description": "Price oscillates inside two diverging trendlines and eventually breaks out, with target projected from the widest part of the formation.",
+      "description_zh": "价格在两条发散趋势线之间震荡，最终向上或向下突破；目标通常取形态最宽处做投射。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "directional_breakout",
+        "horizon": "swing",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "这是他高频专用词。2024-10-29: \"$BTC is finally Breaking out of Broadening Wedge after 8-months of Consolidation\"；2024-11-29: \"#ETH Descending Broadening Wedge Upside Breakout is Finally Confirmed\"；2025-06-09: \"$BTC Descending Broadening Wedge Upside Breakout is Confirmed\"。"
+    },
+    {
+      "proposed_id": "cap_new_bullish_pennant",
+      "name": "Bullish Pennant Breakout",
+      "name_zh": "多头三角旗突破",
+      "type": "pattern_setup",
+      "description": "After a strong impulse, price compresses into a small converging pennant and breaks higher for trend continuation.",
+      "description_zh": "强势拉升后，价格缩进为小型收敛三角旗，向上突破后延续原趋势。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2024-12-23: \"$SOL Breaks Out and Retests the Bullish Pennant on the Weekly Chart!\"；2024-10-22: \"$SOL is Preparing for the Bullish Pennant upside Breakout\"；2024-07-27: \"$SOL Bullish Pennant Upside Breakout has Confirmed\"。"
+    },
+    {
+      "proposed_id": "cap_new_symmetrical_triangle_breakout",
+      "name": "Symmetrical Triangle Breakout",
+      "name_zh": "对称三角形突破",
+      "type": "pattern_setup",
+      "description": "Price compresses between converging higher lows and lower highs; breakout direction determines continuation or reversal bias.",
+      "description_zh": "价格在抬高低点与降低高点之间收敛，对称三角形突破方向决定后续偏向。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "breakout_directional",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2024-02-27: \"$MATIC ... Symmetrical Triangle Upside Breakout/Retest has confirmed\"；2024-07-31: \"$XRP Massive Symmetrical Triangle Upside Breakout is finally Confirmed\"；2024-09-27: \"$PEPE Symmetrical Triangle Upside Breakout is Confirmed\"。"
+    },
+    {
+      "proposed_id": "cap_new_bump_and_run_reversal",
+      "name": "Bump and Run Reversal",
+      "name_zh": "Bump & Run 反转",
+      "type": "pattern_setup",
+      "description": "A steep speculative run-up above a prior trendline followed by breakdown and reversal, often used to call a new bullish phase after reset.",
+      "description_zh": "价格先脱离原趋势线陡峭加速，随后完成回撤和反转，常用于识别一轮新趋势启动前的重置结构。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "position",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "2024-01-28: \"$FIL #Filecoin Bump & Run Reversal Pattern 📈\"。"
+    },
+    {
+      "proposed_id": "cap_new_parabolic_step_formation",
+      "name": "Parabolic Step-Like Formation",
+      "name_zh": "抛物线台阶式上涨结构",
+      "type": "structural_bias",
+      "description": "Trend advances through successive bases with accelerating slope; late-stage acceleration implies both upside extension and eventual exhaustion risk.",
+      "description_zh": "趋势通过多个台阶式底部逐步抬升并加速，后期斜率明显变陡，既意味着上冲空间，也意味着后续衰竭风险上升。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_until_exhaustion",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "图片 7 直接标注 \"PARABOLIC CURVE STEP-LIKE FORMATION\"、Base 1-4、Sell Point，这是他的专门视觉模板。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "When in doubt, zoom out!",
+      "rule_paraphrased": "优先服从高时间框架结构，不被短线噪音干扰。",
+      "category": "framework"
+    },
+    {
+      "quote": "Trust the Process. ✍️",
+      "rule_paraphrased": "一旦形态框架建立，回调和等待都视作过程的一部分，不轻易改判。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Hold it tight, Stay Patient & trust the Process..",
+      "rule_paraphrased": "对已建立的中期多头仓位，核心动作是持有和耐心，而不是频繁交易。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Late shorts will get REKT soon..",
+      "rule_paraphrased": "他喜欢把末端追空视为反向信号，倾向预判逼空和反身性上涨。",
+      "category": "framework"
+    },
+    {
+      "quote": "Buy now or Regret later ✍️",
+      "rule_paraphrased": "在他识别出的关键压缩/突破前区域，宁愿提前布局也不愿等完全确认后追高。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他和一般 TA 号最大的区别，是把 BTC.D 下行几乎当作 Altseason 的总开关来交易与传播，而不是只盯单币图形。其次，他极度依赖形态学叙事，尤其偏爱楔形、旗形、三角形、扩张楔形，并且总是直接给出非常明确的中期目标位。最后，他的内容表达带强烈布道风格：高 conviction、长线持有、强调耐心，明显兼具交易员和流量型内容创作者属性。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Officially kicked off",
+      "is Confirmed..✅",
+      "Bullish Rally incoming",
+      "Last Buying Opportunity",
+      "Get Ready",
+      "Trust the Process",
+      "Sky is Clear",
+      "Bulls are in control",
+      "Massive Bullish Rally",
+      "Send it to"
+    ],
+    "low_conviction_phrases": [
+      "Seems like",
+      "Expecting",
+      "could send it",
+      "on the verge of",
+      "if breakout confirms",
+      "looks promising",
+      "I think",
+      "may Retest",
+      "in case of",
+      "appears to be"
+    ]
+  }
+}

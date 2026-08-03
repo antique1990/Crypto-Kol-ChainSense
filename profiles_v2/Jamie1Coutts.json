@@ -1,0 +1,270 @@
+{
+  "handle": "Jamie1Coutts",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "onchain",
+    "structural",
+    "cycle",
+    "contrarian"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "Crypto Top 200",
+    "L1s/L2s",
+    "DeFi apps",
+    "DXY",
+    "Global Liquidity/M2",
+    "ETF flows"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.98,
+      "evidence": "高频核心框架。2024-11-28: “Global M2 bottomed at $94T in Q4 2022 and has since climbed to $105T.”；2025-04-23: “With central banks clearly behind the curve, we could see global liquidity rise by approx. 10% or $13T over the next 12 months.” 图片1、7、8都直接把 BTC 与 Global Money Supply / Global Liquidity 做主轴联动。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.92,
+      "evidence": "2025-01-26: “DXY is the key variable... likely bounce here, but a breakdown = BTC ATHs.”；2025-11-19: “Bitcoin and crypto remain tightly correlated with the dollar because it acts as a real-time barometer of liquidity conditions.” 图片4标题即“Dollar Index (Inverse) & Bitcoin”。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.82,
+      "evidence": "2025-09-24: “The weight of this market now sits more with the ETF flows.”；2025-11-18: “ETF (green) & BTC Co's (orange) starting to inflect. The former is far more consequential for the price.” 说明他把 ETF 流量当成价格驱动的核心事件变量。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.76,
+      "evidence": "2025-01-26: “US Treasury volatility (MOVE Index) is near 3-year lows. Lower volatility in the global collateral asset = easing liquidity pressures.”；2026-03-22多条反复提到 MOVE、collateral multiplier、liquidity stress。"
+    },
+    {
+      "id": "cap_064_credit_spreads_widening",
+      "weight": 0.7,
+      "evidence": "2025-01-26: “Investment-grade corporate Spreads are tightening pointing to improving risk appetite.”；2026-03-22: “Credit conditions are tightening in PE and AI-exposed sectors.” 他持续把信用利差当作风险偏好/流动性提前指标。"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.67,
+      "evidence": "2025-04-23: “Bitcoin's potential trajectory given where we are in the business and liquidity cycles.”；他多次把 business cycle / liquidity cycle 并列，说明并非只看币圈内部，而是按宏观周期定位风险资产。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.66,
+      "evidence": "2025-05-28: “LTH-SOPR captures when that potential is realized—when long-term holders actually move coins to lock in gains or cut losses.” 说明他明确跟踪长期持币者行为来判断抛压兑现。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.62,
+      "evidence": "2025-05-28: “While MVRV and NUPL measure the potential for profit-taking...” 直接使用 MVRV 这类链上周期估值指标，不是泛泛而谈。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.58,
+      "evidence": "2025-03-24: “every cycle/regime is different.” 虽然他不机械套周期，但长期把 crypto 放在 liquidity + cycle 框架中，且多次用历史周期作外推。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.48,
+      "evidence": "2025-05-28: “Below are extrapolations from past cycles, not my base case...” 说明他会参考历史周期均值与路径，但不会把 4 年周期当唯一锚。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.55,
+      "evidence": "2024-07-30: “Open interest at new ATHs, but funding is positive/neutral... aggregate positioning is more balanced.” 这是典型把价格、OI、funding 放一起看拥挤度与健康度，而非只看单一 funding 极值。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.57,
+      "evidence": "2024-02-29: “Bitcoin funding rate has gone super silly (again). Leveraged longs are over their skis.” 这是明确用过热资金费识别潜在长挤压/回撤。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.46,
+      "evidence": "2024-07-30: “Open interest at new ATHs...” 说明他会读持仓量与价格关系来判断仓位结构和突破质量。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.41,
+      "evidence": "2026-02-06: “Capitulation Watch...” 与 2025-03-25 “Crypto Sentiment is so bombed out right now.” 虽未总是直接写 funding negative，但其洗盘/恐慌框架包含拥挤反向交易。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.61,
+      "evidence": "图片3中用哈希带均线交叉确认网络健康后维持多头偏置；2025-04-28提出 “Bullish Macro Regime”；他常先定义 regime 再谈交易。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.64,
+      "evidence": "2026-02-06: “Bitcoin implied volatility (BVIV) at 88.55, closing in on the FTX-collapse peak...” 图片5直接把 BVIV、成交额、RSI并列观察，说明高波动状态是其独立 regime 变量。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.52,
+      "evidence": "2026-02-06回顾“the last 4 months from the peak”并强调“Price action was clear from the $90K breakdown in January.” 他会在峰值后做衰竭复盘，不是盲目持多。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.54,
+      "evidence": "2024-07-30: “#Bitcoin hash rate recovery is one of the best signals for network health. A simple 30 & 90 day moving avg cross produces...” 图片3也是用 30/60 均线平滑哈希率并判定状态切换。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.49,
+      "evidence": "2026-03-25: “In April 2025 that reading coincided with an 18% SPX drawdown.”；2025-04-28 “Equities Breadth Thrust” 被列入 Bullish Trinity，说明股市风险偏好是他的确认项。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.44,
+      "evidence": "2025-04-24: “divergence shows downside momentum was exhausted.”；图片5底部有 RSI 面板，他会把动量背离当成反转/止跌确认。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.43,
+      "evidence": "2026-02-10: “stablecoins +50%...” 他把稳定币供给扩张视为 utility grew / 潜在流动性燃料的一部分。"
+    },
+    {
+      "id": "cap_067_nvt_valuation_extreme",
+      "weight": 0.32,
+      "evidence": "虽未高频直引 NVT，但其估值方法论广泛覆盖链上估值与网络活动比值，属于辅助而非主框架。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.58,
+      "evidence": "2024-09-26: “Total Mkt Cap ex-BTC & ETH aka 'Alts' are breaking out... Q4 could get wild.”；2025-03-25与2024-06-26反复用 Top200 equal weight vs market-cap weight 研究市场宽度与轮动，本质上是在抓 BTC 主导权向广谱山寨扩散。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_global_liquidity_index",
+      "name": "Global Liquidity Index Composite",
+      "name_zh": "全球流动性综合指数",
+      "type": "macro_correlation",
+      "description": "Build and trade off a composite liquidity index that aggregates central bank balance sheets, FX effects, monetary aggregates, and collateral conditions, then map crypto beta to changes and inflections in that composite rather than any single macro series.",
+      "description_zh": "构建全球流动性综合指数，汇总央行资产负债表、汇率效应、货币总量与抵押品条件，用其变化率和拐点来映射加密资产 beta，而不是只盯单一宏观序列。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "2025-04-23: “Global Liquidity hits new ATHs...”；图片7下方面板直接标注“Total Global Liquidity (EMA)”。"
+    },
+    {
+      "proposed_id": "cap_new_liquidity_lag_model",
+      "name": "Liquidity-to-BTC Lag Model",
+      "name_zh": "流动性到 BTC 的滞后传导模型",
+      "type": "macro_correlation",
+      "description": "Use a fixed or adaptive lag between liquidity expansion/contraction and BTC response, typically framing Bitcoin as a delayed high-beta expression of global money growth.",
+      "description_zh": "用固定或自适应滞后来建模流动性扩张/收缩对 BTC 的传导，通常把比特币视为全球货币扩张的延迟高 beta 表达。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "seed 里只有 M2 增长代理，但 Jamie 的图表更进一步，图片1与图片8都在做未来 6-12 个月路径外推，而非静态相关。"
+    },
+    {
+      "proposed_id": "cap_new_breadth_thrust_crypto",
+      "name": "Crypto Breadth Thrust",
+      "name_zh": "加密市场广度推进",
+      "type": "structural_bias",
+      "description": "Track internal market breadth using equal-weight vs cap-weight indices, new lows, and cross-sector participation to detect capitulation, washout, or expansion into broad alt participation.",
+      "description_zh": "用等权/市值加权比、365日新低、跨板块参与度来跟踪加密市场内部广度，识别投降、出清和向广谱山寨扩散的阶段。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "2025-04-28: “Bullish Trinity: 1. Max Fear 2. Equities Breadth Thrust 3. Bullish Macro Regime”；2024-06-26、2024-09-26、2025-04-24 多次用 Top200 equal-weight、365-day new lows 做广度判断。"
+    },
+    {
+      "proposed_id": "cap_new_hashrate_recovery_signal",
+      "name": "Hashrate Recovery Cross",
+      "name_zh": "算力恢复均线交叉",
+      "type": "indicator_rule",
+      "description": "Use hashrate recovery and short/long moving-average crosses on network compute power as a trend-health signal for Bitcoin.",
+      "description_zh": "用比特币算力恢复及短长均线交叉作为网络健康和趋势恢复信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.73
+      },
+      "example_evidence": "2024-07-30: “A simple 30 & 90 day moving avg cross produces; 67% win record...”；图片3展示哈希率与 30/60 均线。"
+    },
+    {
+      "proposed_id": "cap_new_volatility_capitulation_watch",
+      "name": "Volatility Capitulation Watch",
+      "name_zh": "波动率投降监测",
+      "type": "derivatives_signal",
+      "description": "Treat spikes in implied volatility, panic exchange flows, and capitulation-style volume as a combined washout detector rather than a single sentiment metric.",
+      "description_zh": "把隐含波动率飙升、恐慌性交易所流动和投降式成交量结合起来，作为综合洗盘检测器，而不是只看单一情绪指标。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2026-02-06: “Capitulation Watch: Three Signs the Washout Is Getting Real” + 图片5 BVIV、成交量、RSI 三联观察。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "“The spice must flow. Aka—monetary expansion is inevitable. It’s just a matter of time.”",
+      "rule_paraphrased": "默认法币体系会继续扩张，长期方向先看流动性，再看币价。",
+      "category": "mantra"
+    },
+    {
+      "quote": "“DXY is the key variable.”",
+      "rule_paraphrased": "交易前先看美元，不先看 K 线本身。美元是风险资产最关键的门槛变量。",
+      "category": "framework"
+    },
+    {
+      "quote": "“Predictions are like the proverbial, everyone's got one 😁”",
+      "rule_paraphrased": "少做空泛预测，更重视条件、路径和概率。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "“Below are extrapolations from past cycles, not my base case...”",
+      "rule_paraphrased": "会做历史外推，但明确区分情景推演与基准判断。",
+      "category": "framework"
+    },
+    {
+      "quote": "“The BTC crash will prompt deep self-reflection. Here's mine as I review the last 4 months from the peak. Price action was clear from the $90K breakdown in January.”",
+      "rule_paraphrased": "出大错后做复盘，把后验价格破位和前验宏观框架一起检讨，不死扛叙事。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他不是纯价格形态派，而是把 BTC 当成全球流动性、美元、信用条件和机构资金流的高 beta 表达，再用链上/衍生品做二级确认。和一般 TA 交易员不同，他大量使用自建宏观-链上复合指标、广度指标和外推场景图，而不是只讨论支撑阻力。虽然长期偏多，但会在美元走强、流动性恶化和波动率失控时快速切换到防守或反身性复盘模式。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "“DXY is the key variable.”",
+      "“It has been patently clear to me”",
+      "“The spice must flow”",
+      "“the structural bid”",
+      "“the weight of this market now sits more with the ETF flows”",
+      "“Global Liquidity hits new ATHs”",
+      "“Price action was clear”"
+    ],
+    "low_conviction_phrases": [
+      "“potential trajectory”",
+      "“Fair to expect”",
+      "“likely”",
+      "“could see”",
+      "“my base case”",
+      "“not my base case”",
+      "“it’s pretty straightforward”"
+    ]
+  }
+}

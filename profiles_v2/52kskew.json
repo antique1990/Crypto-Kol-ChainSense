@@ -1,0 +1,254 @@
+{
+  "handle": "52kskew",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "structural",
+    "macro",
+    "risk_first",
+    "mixed"
+  ],
+  "time_preference": "intraday",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XMR",
+    "alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.92,
+      "evidence": "多次直接用 OI 解释突破前压力累积与仓位堆积，如 [2024-06-28]“OI continues to climb with declining price $62K -> $60K”、[2024-07-29]“Overall BTC perp market is pretty net long”、[2025-07-25]“running short position which continues to twap into price”。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.88,
+      "evidence": "他反复把市场理解为先扫脆弱仓位/流动性再走真实方向，如 [2025-06-30]“Casual $12M Short liquidated by this algo”、[2025-08-02]“large short closed out into $112K with quite a lot of longs also being de-leveraged”、[2024-07-30]“12K BTC or $802M in OI cleared”。图 4/6/8 也明显配有 liquidation、heatmap、orderbook depth 面板。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.83,
+      "evidence": "[2024-01-29]“two failed swings (no expansion) which ended up being liquidity grabs”；[2025-08-14]“retested $112K & onto ATH since”；[2024-10-21]“ask liquidity was swept leading to a pullback”。他常把前高前低、VAH、open 一类显眼价位当成扫流动性位置。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.77,
+      "evidence": "[2024-01-29]“two failed swings”、[2025-09-16]“trying to get filled on shorts & offloaded what they bought at the low earlier”、[2025-10-16]“shorts opening into price weakness below $110K ... reclaim would be bullish - rejection not so bullish”。他的表达经常围绕诱空/诱多、突破失败、回到区间。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.71,
+      "evidence": "虽然不用 ICT 术语系统化命名，但大量使用“失守后收回/收回后转支撑阻力”的 pivot 逻辑，如 [2026-01-13]“$94K was key resistance & supply to crack ... Now we need to see the market price $93K - $94K as support”。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.7,
+      "evidence": "[2025-10-17]“first day im seeing a sustained loss of coinbase premium, often signals wider de-risking so Spot ETF Flows are actually important here”；[2024-01-30]“Seeing more direct correlation between Spot ETFs and index prices (Spot exchanges)”。ETF/coinbase premium 是他判断现货主导与否的重要外生流。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.66,
+      "evidence": "[2025-09-17]“FOMC tomorrow, going to be interesting”、[2025-09-17]“Typical FOMC price action”、[2025-12-10]“FOMC later today”。他显著关注 FOMC 前后流动性、仓位和波动切换。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.64,
+      "evidence": "他经常明确用“trend is friend”“acceptance above/below”来界定下行环境，如 [2026-02-16]“Trend is friend for now”；图 4/6 中价格急跌同时 OI/CVD/成交结构同步恶化，体现趋势环境优先而非逆势抄底。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.63,
+      "evidence": "[2024-10-29]“Ideally this 1D candle closes...”、[2025-10-17]“flip 15min trend & we likely see better price momentum from algos flipping to buyers”、[2024-11-27]“$ETH 4H Clean HH & strong recovery”。他会以 HH/HL、trend flip、acceptance 来确认上涨结构。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.79,
+      "evidence": "[2026-02-16]“Current price action is pretty typical of developing 'value'  Clear respected market supply around $70K & Clear tested market demand around $65K”；[2025-06-25]“Market consolidating here just under HTF supply & resistance”；他大量使用 value area、POC、VAH、developing value、auction。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.76,
+      "evidence": "[2025-08-22]“candle so violent my tools & providers are actually lagging”、[2025-08-22]“huge unwind still underway”、[2025-05-23]“Nice aggregate flush of long leverage”。他会在高波动时转向去杠杆、清算、极端 orderflow 解读。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.74,
+      "evidence": "[2026-02-16]“Trend is friend for now”、[2025-07-25]“cautionary more than panic”、[2025-10-16]“reclaim would be bullish - rejection not so bullish”。整体风格是等结构/流确认，不在瀑布里盲接。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.55,
+      "evidence": "虽然很少像传统教育博主那样显式讲止损，但他常强调 market pivot、line in the sand、invalidations，例如 [2025-10-16]“$110K is the line in the sand for the market”。这是典型的条件式失效管理。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.5,
+      "evidence": "[2025-08-14]“retested POC of current value area / range ... very clean retest of 4H/1D systematic trend”、[2024-06-30]“RSI above 50 - 4H 50EMA”。他偶尔会把系统趋势线、EMA 回踩与 auction 结构结合。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.42,
+      "evidence": "[2024-04-30]“Nice reaction so far off the 100D MA”、[2024-06-30]“RSI above 50 - 4H 50EMA”、[2024-01-31]“4H EMAs, lots of trend confluence there”。均线不是核心，但作为结构确认工具反复出现。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "[2025-04-30]“BTC correlates to equities during US hours”、[2024-11-29]“Equities up Crypto down Max pain”、[2025-04-30]“same with equities”。他会把美股 session 作为 BTC 当日流的主导变量。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.4,
+      "evidence": "[2025-04-30]“Post US hours BTC correlates to GOLD”。这不是长期主框架，但他明确观察到了 BTC 与黄金在特定时段的避险联动切换。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.52,
+      "evidence": "[2026-01-13]“funding is still negative so the way to tell if built up short positioning has been swept...” 资金费被他用来确认 squeeze 是否结束。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.48,
+      "evidence": "[2024-11-27]“market favours shorts with majority positioning...”、[2025-05-21]“short positioning scaling up here”；虽然多数是仓位流角度，但资金费/偏拥挤的一侧常被他视作易被反杀对象。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.45,
+      "evidence": "[2026-01-13]“funding is still negative”配合价格上冲判断空头是否被真正清洗；图 6/8 也展示 funding、OI、CVD 与价格联读，说明他不单看价格。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_orderbook_supply_demand_zones",
+      "name": "Orderbook Supply Demand Mapping",
+      "name_zh": "订单簿供需区映射",
+      "type": "derivatives_signal",
+      "description": "Continuously map nearby passive ask depth, bid depth, pull/stack behavior, and identify the current market supply zone, demand zone, and pivotal auction price.",
+      "description_zh": "持续跟踪近端被动卖墙、买墙及其撤单/加单行为，识别当前市场供给区、需求区与关键拍卖中枢价。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "[2025-08-03]“Market Demand = $112K - $110K Market Supply = $115K - $116K Current pivotal price = $114K”；[2026-02-16]“Clear respected market supply around $70K & Clear tested market demand around $65K”。"
+    },
+    {
+      "proposed_id": "cap_new_twap_flow_detection",
+      "name": "TWAP Flow Detection",
+      "name_zh": "TWAP 算法流识别",
+      "type": "derivatives_signal",
+      "description": "Detect persistent algorithmic execution such as TWAP buying or selling via repeated passive/offer behavior, steady footprint pressure, and price pinning despite changing liquidity.",
+      "description_zh": "通过持续的被动挂单/出货、稳定足迹压力以及价格被钉住的表现，识别算法执行盘，尤其是 TWAP 买卖流。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "[2025-09-18]“Asia twap seems to be back 👀”；[2025-07-25]“running short position which continues to twap into price”；[2025-10-16]“Constant twap selling since pre-market & open”。"
+    },
+    {
+      "proposed_id": "cap_new_spot_vs_perp_leadership",
+      "name": "Spot vs Perp Leadership",
+      "name_zh": "现货/合约主导权切换",
+      "type": "structural_bias",
+      "description": "Classify whether spot takers, passive spot buyers, or perpetual futures positioning is leading price, and use the leader to determine move quality and sustainability.",
+      "description_zh": "判断当前是现货吃单、现货被动承接还是永续仓位在主导价格，并据此评估行情质量与可持续性。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.84
+      },
+      "example_evidence": "[2024-04-30]“spot buyer has been absorbing sell pressure all day on coinbase”；[2025-05-23]“de-risk selling from spot”；[2025-10-17]“loss of coinbase premium”；[2024-01-30]“for today keep an eye on coinbase spot flows ... for binance spot taker bid”。"
+    },
+    {
+      "proposed_id": "cap_new_auction_acceptance_rejection",
+      "name": "Auction Acceptance Rejection",
+      "name_zh": "拍卖接受/拒绝判定",
+      "type": "structural_bias",
+      "description": "Use value area, POC, weekly/yearly opens, and repeated testing to determine whether the market is accepting above/below a level or rejecting it back into prior value.",
+      "description_zh": "结合价值区、POC、周开年开及反复测试，判断市场是在某价位上方/下方完成接受，还是拒绝后回归原价值区。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-06-25]“market to auction & accept higher”；[2026-02-16]“actual acceptance above $70K and VAH would be required for real relief”；[2025-05-23]“important level from here for the market to auction above”。"
+    },
+    {
+      "proposed_id": "cap_new_absorption_iceberg_detection",
+      "name": "Absorption and Iceberg Detection",
+      "name_zh": "吸收单与冰山单识别",
+      "type": "derivatives_signal",
+      "description": "Identify large passive participants absorbing aggressive flow or hidden iceberg orders that cap or support price without immediate displacement.",
+      "description_zh": "识别大型被动参与者对主动流的吸收，或不立即推动价格但持续承接/压制的隐藏冰山单。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2024-04-30]“large passive spot buyer has been absorbing sell pressure all day on coinbase”；[2025-07-25]“Potential absorption around $115K”；[2026-03-25]“Looks like we got ourselves an iceberg buyer 👀 $60M+”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "One's entry is another's exit",
+      "rule_paraphrased": "把市场理解为仓位互换与流动性交接，不把单根 K 线当作独立事件。",
+      "category": "framework"
+    },
+    {
+      "quote": "Trend is friend for now",
+      "rule_paraphrased": "在未出现接受/翻转确认前，默认顺着当前主趋势，不抢反转。",
+      "category": "mantra"
+    },
+    {
+      "quote": "$110K is the line in the sand for the market",
+      "rule_paraphrased": "每个阶段都要定义一个失效价/分水岭，交易围绕 pivot 展开而不是模糊主观判断。",
+      "category": "framework"
+    },
+    {
+      "quote": "Price still being chased higher   big red flag if bid disappears & buying stops",
+      "rule_paraphrased": "被动追价若失去真实买盘跟随，行情质量很差，容易反向踩踏。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "Typical FOMC price action tbh",
+      "rule_paraphrased": "事件日前后优先理解流动性和仓位博弈，不把噪音波动误判成结构性趋势。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和常规 TA 交易员最大的区别，是把价格看成订单簿、现货/合约主导权、TWAP 执行盘和清算脆弱性的结果，而不是单纯画形态。图表里反复出现 heatmap、OI、CVD、funding、orderbook depth，说明他的核心框架是微观结构 + 拍卖市场理论。宏观与 ETF/FOMC 对他更像流动性状态切换器，而不是独立预测体系。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "key price",
+      "pivotal price",
+      "line in the sand",
+      "very important level",
+      "clear respected market supply",
+      "current pivotal price",
+      "trend is friend",
+      "played out to the T"
+    ],
+    "low_conviction_phrases": [
+      "imo",
+      "I think",
+      "probably",
+      "looks like",
+      "appears",
+      "wouldn't be surprised",
+      "keeping an eye on",
+      "interesting"
+    ]
+  }
+}

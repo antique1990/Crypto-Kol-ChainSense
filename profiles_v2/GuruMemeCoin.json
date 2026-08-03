@@ -1,0 +1,179 @@
+{
+  "handle": "GuruMemeCoin",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "content_creator",
+    "onchain",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "SOL",
+    "TAO",
+    "HYPE",
+    "GENZ",
+    "BABY",
+    "BDOG"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_021_bollinger_squeeze_breakout",
+      "weight": 0.82,
+      "evidence": "2026-04-11 推文：\"$BTC structure is tightening. Price holding above 70K while volatility compresses usually signals expansion building.\" 这是典型的波动压缩后等扩张的框架。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.78,
+      "evidence": "同一条 BTC 推文继续写：\"VWAP and moving averages are now supporting from below, turning prior resistance\"，说明他会把均线/VWAP 回踩转支撑当作顺势延续信号。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.72,
+      "evidence": "BTC 推文里强调均线和 VWAP 从下方托住价格、前阻力转支撑，本质是关键动态均线收回后的趋势确认。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.76,
+      "evidence": "图片 #2 的 SOL 4h 画了一个明显的圆弧底/杯形底，并配上向上路径；2026-04-11 推文写：\"SOL has formed a solid base and is on the verge of going parabolic.\""
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.74,
+      "evidence": "他对 SOL、BTC 的表述明显偏向识别强势上行环境再顺势做多，例如 \"holding above 70K\"、\"solid base\"、\"going parabolic\"。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.67,
+      "evidence": "图片 #6 直接使用了 \"[BTC] - Binance Whale to Exchange Flow\" 图，把鲸鱼流入交易所当作潜在抛压/风险观测指标。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.63,
+      "evidence": "2026-04-11 推文：\"I have this subtle feeling that we are going to get another huge solana memecoin season very soon\"。虽然没直接提 BTC.D，但他的框架明显在捕捉 BTC 之外向 SOL/meme 的轮动。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.61,
+      "evidence": "2026-04-10 推文：\"TAO is nuking. Any news?!\"，配图 #1 是垂直下杀测幅；另有阿语推文提醒 memecoin \"but at the same speed it can disappear completely\"，说明他知道瀑布行情不能盲接。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.58,
+      "evidence": "2026-04-10 推文：\"guys will see stocks collapsing, crypto nuking & world war 3 pending and decide to fullport neet\"。他经常显式识别高波动、情绪极端环境。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.51,
+      "evidence": "图片 #1 的 TAO 结构是标准的强势下跌阶段：高位横住后直接瀑布，随后低位弱反弹；他会把这种环境单独识别出来。"
+    },
+    {
+      "id": "cap_058_three_bottom_structure",
+      "weight": 0.42,
+      "evidence": "图片 #7 的 BABY 周线在长期下跌后于低位多次企稳，2026-04-11 推文写：\"It’s planning to start reversal in between 0.01-0.015$\"，说明他会从底部重复测试中找中期反转。"
+    },
+    {
+      "id": "cap_024_wyckoff_accumulation",
+      "weight": 0.39,
+      "evidence": "他反复使用 \"solid base\"、底部圆弧、底部反转区间这类语言和画法。图片 #2、#7 都更像吸筹完成后的启动，而不是单纯追高。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_base_shelf_reversal",
+      "name": "Base Shelf Reversal",
+      "name_zh": "底部平台反转",
+      "type": "pattern_setup",
+      "description": "After a prolonged downtrend, price stops making meaningful new lows, flattens into a narrow shelf/base, then launches when the shelf breaks upward.",
+      "description_zh": "长期下跌后不再有效创新低，在低位横向筑一个窄平台/货架，平台上破后视为高赔率反转启动。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "图片 #7 的 BABY 从 0.00784 一带长期横住后，他直接给出 0.01-0.015 反转区和更高目标；图片 #2 的 SOL 也是先筑底再预判加速。"
+    },
+    {
+      "proposed_id": "cap_new_memecoin_holder_quality_filter",
+      "name": "Memecoin Holder Quality Filter",
+      "name_zh": "土狗筹码质量筛选",
+      "type": "onchain_signal",
+      "description": "Screen memecoins by sniper ratio, bundled supply, creator share, insider concentration, holder clusters, and early platform-user metrics before taking the trade.",
+      "description_zh": "在做 memecoin 之前，先看狙击比例、捆绑持仓、创建者占比、内幕/集群集中度、持有人结构和平台用户等筹码质量指标。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "selective_long",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "图片 #3 里他直接展示 Bundled 25.3%、Snipers 72.2%、Creator 11.8%、Fresh 7.4%；2026-04-11 的 WLFI 推文还写了 \"doesn't have snipers... top holders... bubblemap cluster\"。"
+    },
+    {
+      "proposed_id": "cap_new_narrative_leader_rotation",
+      "name": "Narrative Leader Rotation",
+      "name_zh": "叙事龙头轮动",
+      "type": "structural_bias",
+      "description": "Identify the coin or subnet most likely to become the leader of a fresh narrative after a catalyst, then front-run the rotation before broad market recognition.",
+      "description_zh": "在新催化出现后，优先寻找最可能成为该叙事龙头的标的，并在市场广泛认知前提前埋伏轮动。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_thematic",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "2026-04-10 推文：\"there's clear opportunity post-templar to be the king subnet on $tao... is @ridges_ai the next $100M subnet\"，这是典型的催化后叙事龙头押注。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "SOL has formed a solid base and is on the verge of going parabolic. And guys are still waiting for $40 🤣",
+      "rule_paraphrased": "看到扎实底部后，他倾向于提前站在加速前，而不是等极端回撤价位。",
+      "category": "framework"
+    },
+    {
+      "quote": "$BTC structure is tightening. Price holding above 70K while volatility compresses usually signals expansion building.",
+      "rule_paraphrased": "他把高位缩波 + 关键位不破视为下一段趋势扩张前的蓄势。",
+      "category": "framework"
+    },
+    {
+      "quote": "guys will see stocks collapsing, crypto nuking & world war 3 pending and decide to fullport neet",
+      "rule_paraphrased": "他把宏观恐慌期满仓梭哈看成典型反模式，至少口头上警惕情绪化 all-in。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "It’s planning to start reversal in between 0.01-0.015$ and then it could reach 0.08-0.1$ in long term hold",
+      "rule_paraphrased": "他喜欢先框定反转带，再给出远得多的弹性目标，交易表达偏赔率导向。",
+      "category": "framework"
+    },
+    {
+      "quote": "I have this subtle feeling that we are going to get another huge solana memecoin season very soon",
+      "rule_paraphrased": "除了图表，他会用叙事/情绪周期去提前押注下一轮 Solana meme 轮动。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯粹的教科书 TA 交易员，而是把简化图形识别、叙事轮动和土狗筹码筛选混在一起用。图表表达非常直给，常用“solid base”“parabolic”“season”这类高 beta 词汇，把 setup 讲成可传播的内容。与很多只做 BTC/ETH 的 TA 号不同，他明显偏爱 Solana 生态、低市值 meme 和叙事龙头抢跑。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "solid base",
+      "on the verge of going parabolic",
+      "usually signals expansion building",
+      "the ultimate bot just doesn’t miss",
+      "the only crypto a serious investor can allocate towards is $btc and $hype",
+      "I WILL MAKE A CALL TOMORROW!"
+    ],
+    "low_conviction_phrases": [
+      "I have this subtle feeling",
+      "could reach",
+      "planning to start reversal",
+      "Any news?!",
+      "very soon"
+    ]
+  }
+}

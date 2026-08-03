@@ -1,0 +1,233 @@
+{
+  "handle": "TimmerFidelity",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "cycle",
+    "onchain",
+    "risk_first"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "Gold",
+    "SPX",
+    "ACWI",
+    "US10Y",
+    "DXY"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.95,
+      "evidence": "他反复把收益率/流动性当成风险资产驱动器。例：[2025-05-23] “we remain in the post-COVID regime where yields are driving the bus”；[2024-08-23] 讨论“emerging Fed easing cycle”；图4《Gold, Money, & Real Rates》直接把黄金与2y TIPS、monetary base并列。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.9,
+      "evidence": "他频繁用全球货币供应解释BTC/黄金。例：[2024-10-31] “the global money supply is back at an all-time high”；[2025-05-30] “global M2 makes a new high at $111.9 trillion. And Bitcoin...”"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.88,
+      "evidence": "他把BTC放在“hard money team”里，但明确由黄金领衔。例：[2026-02-27] “Bitcoin is an aspirational junior player on the hard money team (led by gold)”；图1/2都用 gold/BTC ratio 的52周z-score做下方面板。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.82,
+      "evidence": "他经常把BTC与全球股市风险偏好绑定。例：[2025-07-24] “When the mojo hits and liquidity is on the rise, bitcoin tends to participate”；图5下方面板直接画出 BTC/SPX 52w correlation。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.8,
+      "evidence": "他明确承认并跟踪BTC四年周期。例：[2025-07-23] “Bitcoin reached yet another new all-time high, and has continued to follow its 4-year cycle very closely.”"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.45,
+      "evidence": "虽然他更偏长期周期而非交易式减半模板，但会用时间分段看BTC所处阶段。其多篇推文用周期位置判断而非纯价格点位，和四年周期框架相连。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.7,
+      "evidence": "他会把ETF/ETP流量作为需求代理。例：[2024-11-27] “Flows into BTC ETPs continue to be strong, and appear to be one of the main forces behind this ramp.”"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.55,
+      "evidence": "他会观察期货未平仓合约与价格共振。例：[2024-11-27] 同帖指出 “open interest in the futures market is soaring”；这不是他主框架，但会作为情绪/拥挤确认。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.5,
+      "evidence": "图5与图6都强调地址数/非零地址/余额≥$1地址数，核心意思是网络使用与持有基础，而非短线换手。图6《Bitcoin's Adoption Curve》尤其接近长期持有与网络基础的框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.92,
+      "evidence": "他极常做“牛市仍在/趋势未坏”的regime判定。例：[2025-09-30] “We remain unquestionably in both a cyclical and secular bull market”；[2025-09-24] “the tape is strong, and there is positive momentum.”"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.72,
+      "evidence": "他会明确识别震荡筑底阶段。例：[2026-04-03] “Bitcoin continues to hold on to the $65-$70k range as it is trying to form a base”；图1/3都写出 support zone 与 bullish divergence?，明显是区间/底部构建视角。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.52,
+      "evidence": "他常讨论泡沫、blow-off 与估值透支。例：[2024-12-20] “At what point do we have a legit bubble on our hands”；[2025-09-30] “the only question is...”围绕估值抬升后的终局。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.48,
+      "evidence": "他频繁使用市场宽度中的“% above 50d/200d MA”作为趋势确认。图8《MSCI ACWI》下方面板直接是“% stocks above 50d MA / 200d MA”；多条股市推文也以此判断breadth。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.6,
+      "evidence": "他更喜欢把回撤解释为牛市中的正常修正。例：[2026-02-26] “gold has hung in there and done exactly what one would expect in a bull market (produce sharp but short-lived drawdowns...)”；[2026-03-27] 认为黄金打到支撑像“a good entry point”。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.35,
+      "evidence": "他未必用RSI，但明确使用‘price vs breadth/momentum divergence’。例：[2025-06-24] “rising wedge... amid a negative divergence between price and breadth.” 这与背离思维一致，只是指标更偏breadth。"
+    },
+    {
+      "id": "cap_067_nvt_valuation_extreme",
+      "weight": 0.25,
+      "evidence": "seed里没有Metcalfe/网络估值，但他做法与链上/网络估值相邻。例：[2025-03-26] “Bitcoin is a network asset, and like all networks its market value has grown exponentially to the size of its network (per Metcalfe’s law).”"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_power_law_support",
+      "name": "BTC Power Law Support Framework",
+      "name_zh": "BTC 幂律支撑框架",
+      "type": "structural_bias",
+      "description": "Uses a long-term power-law trendline and support band to judge whether Bitcoin is basing, extended, or resetting within a secular uptrend.",
+      "description_zh": "使用比特币长期幂律趋势线与支撑带，判断价格是在长期牛市中的筑底、过热还是均值回归重置。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long",
+        "horizon": "position",
+        "confidence_base": 0.77
+      },
+      "example_evidence": "图1/2/3都直接画出 “BTC price power law support line / trendline”，并标注 $60k 附近 support line、support zone；[2026-04-03] 也说 BTC 在 $65-$70k forming a base。"
+    },
+    {
+      "proposed_id": "cap_new_metcalfe_adoption_curve",
+      "name": "Metcalfe Adoption Curve Valuation",
+      "name_zh": "梅特卡夫采用曲线估值",
+      "type": "onchain_signal",
+      "description": "Values Bitcoin as a network asset by comparing price to adoption proxies such as non-zero addresses, wallet counts, and S-curve growth paths.",
+      "description_zh": "把比特币视作网络资产，通过非零地址数、钱包数和S曲线增长路径，将价格与采用率代理变量进行比较估值。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "macro",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-03-26] 明说 “Bitcoin is a network asset... per Metcalfe’s law”；图6《Bitcoin's Adoption Curve》与图5余额≥$1地址数都在重复这个框架。"
+    },
+    {
+      "proposed_id": "cap_new_breadth_divergence_macro",
+      "name": "Breadth Divergence Regime Check",
+      "name_zh": "市场宽度背离状态检查",
+      "type": "regime_classifier",
+      "description": "Uses breadth measures such as percent above 50d/200d MA, equal-weight vs cap-weight, and breadth thrust failure to confirm or question the durability of an uptrend.",
+      "description_zh": "使用市场宽度指标，如站上50/200日均线的股票比例、等权/市值加权相对表现、宽度冲刺是否跟随，来确认或质疑上涨趋势的持续性。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.71
+      },
+      "example_evidence": "图8是典型宽度仪表板；[2025-06-24] “negative divergence between price and breadth”；[2026-02-24] 等权SPX跑赢Mag7 12%。"
+    },
+    {
+      "proposed_id": "cap_new_fiscal_dominance_regime",
+      "name": "Fiscal Dominance Macro Regime",
+      "name_zh": "财政主导宏观状态",
+      "type": "macro_correlation",
+      "description": "Frames asset performance around deficits, debt-service burdens, term premia, and the interaction between fiscal expansion and monetary policy.",
+      "description_zh": "围绕赤字、债务利息负担、期限溢价以及财政扩张与货币政策的互动，来框定资产表现的宏观状态。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-06-27] “We are now in an era of fiscal dominance”；图7《US Government Debt Service》是他常用背景板之一。"
+    },
+    {
+      "proposed_id": "cap_new_hard_money_relative_rotation",
+      "name": "Hard Money Relative Rotation",
+      "name_zh": "硬通货相对轮动",
+      "type": "macro_correlation",
+      "description": "Compares Bitcoin and gold as members of the hard-money complex, often preferring gold leadership and treating Bitcoin as a higher-beta junior participant.",
+      "description_zh": "将比特币和黄金放在同一个硬通货资产组里比较，通常把黄金视为领导者，把比特币视为更高beta的次级参与者。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "[2026-02-27] “Bitcoin is an aspirational junior player on the hard money team (led by gold)”；图1/2用 gold/BTC ratio 的z-score。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Bitcoin is an aspirational junior player on the hard money team (led by gold), and not the end-all-be-all store of value",
+      "rule_paraphrased": "把BTC放在硬通货篮子里看，但默认黄金是主导资产，BTC只是高beta追随者。",
+      "category": "framework"
+    },
+    {
+      "quote": "We remain unquestionably in both a cyclical and secular bull market.",
+      "rule_paraphrased": "先判断周期牛和长期牛是否仍成立，再决定是否忽略中途回撤噪音。",
+      "category": "framework"
+    },
+    {
+      "quote": "nothing good happens above 4.5% when the risk-free rate is competitive with risky assets",
+      "rule_paraphrased": "把10年美债收益率关键阈值当成风险资产估值压缩警报线。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Bitcoin is a network asset, and like all networks its market value has grown exponentially to the size of its network (per Metcalfe’s law).",
+      "rule_paraphrased": "估值BTC不能只看K线，必须看网络采用率和地址增长这种底层需求。",
+      "category": "framework"
+    },
+    {
+      "quote": "trend in motion tends to stay in motion",
+      "rule_paraphrased": "默认顺势而为，不轻易在强趋势中抢顶抄底。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯K线派，而是把BTC放进“宏观流动性 + 硬通货相对价值 + 网络采用率”三层框架里看。与多数加密TA不同，他大量借用股票宽度、估值、期限利差、真实利率和全球M2来解释BTC，而不是只靠链上或衍生品情绪。图表上他偏好长期幂律/采用曲线/支撑区，而非高频形态交易。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "unquestionably",
+      "remains highly relevant",
+      "there is no question",
+      "nothing good happens above 4.5%",
+      "it has been my view all along",
+      "tends to stay in motion"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "my guess is",
+      "it’s possible, I guess",
+      "could",
+      "seems",
+      "anyone’s guess",
+      "I could see a scenario unfold"
+    ]
+  }
+}

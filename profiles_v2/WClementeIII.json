@@ -1,0 +1,205 @@
+{
+  "handle": "WClementeIII",
+  "school_primary": "macro",
+  "school_secondary": [
+    "structural",
+    "derivatives",
+    "onchain",
+    "contrarian"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "IBIT",
+    "MSTR",
+    "COIN",
+    "ETH",
+    "GLD"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.95,
+      "evidence": "他反复把 ETF 净流入当作核心需求变量：如 [2024-02-29] “$676 million of inflows into BTC ETFs yesterday”、[2024-10-31] “Largest single day Bitcoin ETF inflows since launch”、[2025-04-23] “Biggest Bitcoin ETF inflow day in a while yesterday at $912mm”。这不是新闻转述，而是直接用资金流判断趋势持续性。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.88,
+      "evidence": "典型宏观流动性框架非常强：[2024-08-23] “Fed is cutting interest rates with CPI inflation at 2.9% and the deficit at $1.5 trillion Hope you own some Bitcoin”；[2025-05-21] “Long Bitcoin, short long duration bonds is the generational trade of our lifetime”。说明他把降息/收益率下行视为 BTC 上涨的主驱动。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.84,
+      "evidence": "[2024-09-27] 明确写出 “$BTC just closed above its 200dma and broke a 6-month downtrend with its first higher low and now higher high”。附图 4 也是日线收复关键均线/关键线位后的结构确认，属于标准均线收回 + 趋势切换用法。"
+    },
+    {
+      "id": "cap_012_sfp_swing_failure",
+      "weight": 0.8,
+      "evidence": "附图 2 直接标注 “SFP of 2025 lows”，把刺破低点后收回当成看多触发；[2025-03-20] 还说 “failed breakouts/breakdowns in price action are stronger signals than actual breakouts/breakdowns themselves”。这与 Swing Failure Pattern 完全一致。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.78,
+      "evidence": "[2024-10-29] 直接发 “Bitcoin / M2 money supply” 图；他的框架明显会把全球流动性扩张作为 BTC 的中期顺风项，而不是只看币圈内部因子。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.74,
+      "evidence": "他非常重视 BTC 与黄金的相对关系：[2024-10-29] “Bitcoin / Gold”、[2025-10-21] “People lining up in the streets actually marked the week of the gold top”、[2025-10-25] “I am expecting Bitcoin to run to new highs against Gold from here”、[2026-01-29] “Nice to finally see BTC behaving like digital gold today”。这说明他在用 BTC/Gold 作为宏观叙事与相对强弱框架。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.72,
+      "evidence": "[2024-03-21] “Stablecoin supplies up $20 billion since this tweet. Up. Only.”；[2025-01-29] “USDC + USDT supplies alone up $75 billion from here. $1 trillion by the end of this decade”。他明确把稳定币供给扩张视为加密风险资产的燃料。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.68,
+      "evidence": "[2024-08-22] “BTC futures basis has completely bled out from 30% earlier this year to ~5% now Total sentiment/positioning reset”；[2024-07-28] “Hefty spot premium over perps, especially relative to the hefty perp premium we saw when BTC traded at the same levels earlier this year.” 他会用基差/永续溢价判断拥挤度与行情健康度。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.67,
+      "evidence": "[2024-09-27] 亲自用 “first higher low and now higher high” 定义趋势扭转；[2024-04-30] 也说 “making HTF higher lows is what matters”。说明他很看重高时间框架 HH/HL 结构，而非只看单点事件。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.58,
+      "evidence": "[2024-08-23] “The dollar nearing sub 100 for the first time in over a year”。他把美元走弱当作 BTC 宏观顺风项，虽然不如 ETF/利率框架高频，但确实在用。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.55,
+      "evidence": "附图 2 中价格在均线附近企稳，标注 2025 lows 的 SFP 后箭头继续上行，属于典型回踩趋势均线后的延续思路；他的很多话术也是先等结构确认，再顺势持有。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.5,
+      "evidence": "除了附图 2 的低点假破回收外，[2025-03-20] 强调 failed breakouts/breakdowns 比真正突破更强，这实际上就是把扫流动性后的反向走势当成更高质量信号。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.48,
+      "evidence": "[2024-02-29] “The holder base of Bitcoin is becoming far too entrenched”；这类表述体现他会把持币者结构稳定、筹码更牢固作为长期看多依据。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.95,
+      "evidence": "他不仅关注当日流入，还关注持久性和机构行为链条：[2024-10-30] “$600mm IBIT inflow print today”、[2024-10-31] “We’re getting $900 million single day IBIT inflows now”、[2025-12-07] “Blackrock is seeing several sovereign wealth funds starting to accumulate BTC into the drawdown”。这说明 ETF 流不是噪音，而是其核心需求代理。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_etf_reflexive_demand",
+      "name": "Spot ETF Reflexive Demand Loop",
+      "name_zh": "现货 ETF 反身性需求循环",
+      "type": "event_reaction",
+      "description": "Sustained spot ETF inflows are treated as both direct demand and a narrative amplifier that brings in the next wave of institutional allocators.",
+      "description_zh": "把持续的现货 ETF 净流入同时视为真实买盘和叙事放大器；一旦流入创纪录，会吸引下一波机构配置，形成反身性正反馈。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "[2024-10-31] “Largest single day Bitcoin ETF inflows since launch” + [2024-10-30] “All of the suits who aped the ETF are now in profit and can start shilling IBIT to their other suit friends”"
+    },
+    {
+      "proposed_id": "cap_new_oi_flush_reset",
+      "name": "Open Interest Flush Reset",
+      "name_zh": "持仓冲洗后重置",
+      "type": "derivatives_signal",
+      "description": "A sharp open-interest wipeout without structural price damage is interpreted as a cleansing event that improves forward upside odds.",
+      "description_zh": "如果未破坏高时间框架结构，但未平仓量被快速大幅冲洗，他会把它视为仓位出清、后续更利于上涨的重置事件。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-07-30] “open interest is down ~$1.3 billion in 12 hours Looking better now” 和 [2025-10-23] “buying BTC after 30%+ open interest rinses is 75% over 90 days”"
+    },
+    {
+      "proposed_id": "cap_new_btc_gold_ratio_rotation",
+      "name": "BTC vs Gold Relative Strength Rotation",
+      "name_zh": "BTC 对黄金相对强弱轮动",
+      "type": "macro_correlation",
+      "description": "Track the BTC/Gold ratio as a regime signal: gold overextension or crowding often precedes a Bitcoin catch-up or leadership reversal.",
+      "description_zh": "把 BTC/Gold 比率当作宏观轮动信号；当黄金过度拥挤或过度延伸时，往往对应比特币的补涨或领导权切换。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2025-10-21] “People lining up in the streets actually marked the week of the gold top” + [2025-10-25] “I am expecting Bitcoin to run to new highs against Gold from here”"
+    },
+    {
+      "proposed_id": "cap_new_policy_regime_btc_bid",
+      "name": "Policy Regime Shift to BTC Bid",
+      "name_zh": "政策体制转向带来的 BTC 买盘",
+      "type": "macro_correlation",
+      "description": "A pro-crypto policy pivot, banking access expansion, or sovereign reserve framing is treated as a structural repricing catalyst, not just a headline.",
+      "description_zh": "把亲加密政策转向、银行托管开放、主权储备叙事升级等视为结构性重估催化，而非一次性新闻。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2025-01-27] “Banks can now custody Bitcoin” 以及 [2024-07-27] 关于 Trump strategic Bitcoin reserve 的总结推文"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Hope you own some Bitcoin",
+      "rule_paraphrased": "当宏观流动性或政策方向开始偏向资产通胀时，他会直接把 BTC 当默认受益资产，而不是中性观察。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I feel like failed breakouts/breakdowns in price action are stronger signals than actual breakouts/breakdowns themselves",
+      "rule_paraphrased": "相比追真正突破，他更偏好做失败突破/失败跌破后的反向交易，因为那代表更清晰的仓位陷阱与流动性回收。",
+      "category": "framework"
+    },
+    {
+      "quote": "Rule #1 is don’t let yourself blow up or be forced out of the game. GCR’s cleanse your mind of your peak net worth is sage advice, stay liquid, don’t revenge trade. There will always be more opportunities",
+      "rule_paraphrased": "首要目标是活下来，不因仓位、情绪或回撤被迫出局；流动性和生存权优先于短期收益最大化。",
+      "category": "mantra"
+    },
+    {
+      "quote": "It takes courage to be a pig",
+      "rule_paraphrased": "在高置信度顺风环境里，他接受集中表达多头观点，而不是机械地过度分散或过度保守。",
+      "category": "mantra"
+    },
+    {
+      "quote": "There’s still 7 days left in the month, but there's no denying that the market has seen sub $60k BTC as value for 6 months now",
+      "rule_paraphrased": "他会把长期横盘中多次被承接的价格区间视为价值确认，而不只是震荡噪音。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯图形派 TA，而是把高时间框架结构、ETF 资金流、利率/美元/M2 这些宏观变量揉成一个统一的 BTC 多头框架。与很多只讲形态的交易员不同，他尤其擅长用“机构化需求正在形成”这条主线解释价格，并把失败突破、OI 冲洗、基差回落这类仓位重置视为更好的顺势切入点。整体上，他更像一个带结构确认的宏观比特币多头，而不是双向高频交易员。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Hope you own some Bitcoin",
+      "$100k+ within the next year",
+      "We’re still just getting warmed up",
+      "Huge",
+      "The time has come",
+      "Pretty sure Bitcoin’s time is coming soon"
+    ],
+    "low_conviction_phrases": [
+      "I feel like",
+      "My guess is",
+      "I hope I'm not speaking too soon",
+      "It’s a bit concerning",
+      "Looks like it may be",
+      "Too early to call it a trend"
+    ]
+  }
+}

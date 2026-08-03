@@ -1,0 +1,1000 @@
+{
+  "symbol": "ETHUSDT",
+  "date": "2026-08-03",
+  "price": 1861.66,
+  "features": {
+    "rsi14": 50.41337605749987,
+    "adx14": 19.62424350761155,
+    "price_above_ma200": false,
+    "ma50_above_ma200": false,
+    "pct_from_ath": -0.44738513782273914,
+    "ret_30d": 0.04550049420433111
+  },
+  "firing_factors": [
+    {
+      "id": "cap_038_4year_cycle",
+      "score": -0.4
+    },
+    {
+      "id": "cap_037_halving_cycle",
+      "score": -0.3
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "score": 0.3421628598686782
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "score": 0.4
+    },
+    {
+      "id": "cap_hh_defense",
+      "score": 0.55
+    },
+    {
+      "id": "cap_056_double_needle_bottom",
+      "score": 0.55
+    }
+  ],
+  "consensus": {
+    "equal_weight": {
+      "long": 13,
+      "short": 25,
+      "neutral": 61,
+      "mean_signal": -0.009724521422750172
+    },
+    "ic_positive_weighted": -0.04791951733514175,
+    "trust_adjusted": -0.02684219716517058
+  },
+  "by_school": {
+    "content_creator": {
+      "count": 11,
+      "mean_signal": -0.039843275234947,
+      "long_count": 0,
+      "short_count": 7,
+      "neutral_count": 4
+    },
+    "cycle": {
+      "count": 8,
+      "mean_signal": -0.0584136810583528,
+      "long_count": 0,
+      "short_count": 6,
+      "neutral_count": 2
+    },
+    "derivatives": {
+      "count": 6,
+      "mean_signal": 0.025145003865580166,
+      "long_count": 2,
+      "short_count": 0,
+      "neutral_count": 4
+    },
+    "macro": {
+      "count": 3,
+      "mean_signal": 0.018472632794883436,
+      "long_count": 1,
+      "short_count": 0,
+      "neutral_count": 2
+    },
+    "mixed": {
+      "count": 54,
+      "mean_signal": -0.005828107066910364,
+      "long_count": 9,
+      "short_count": 11,
+      "neutral_count": 34
+    },
+    "onchain": {
+      "count": 6,
+      "mean_signal": -0.007922924024179368,
+      "long_count": 0,
+      "short_count": 1,
+      "neutral_count": 5
+    },
+    "pure_TA": {
+      "count": 7,
+      "mean_signal": 0.008392612872798565,
+      "long_count": 0,
+      "short_count": 0,
+      "neutral_count": 7
+    },
+    "structural": {
+      "count": 4,
+      "mean_signal": 0.010019242317371748,
+      "long_count": 1,
+      "short_count": 0,
+      "neutral_count": 3
+    }
+  },
+  "traders": [
+    {
+      "handle": "52kskew",
+      "school": "derivatives",
+      "bias_default": "neutral",
+      "ic_30d": -0.0884348577668636,
+      "signal_now": 0.02090554209561143,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02090554209561143
+    },
+    {
+      "handle": "AltcoinSherpa",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1064364917219371,
+      "signal_now": 0.023114712702831736,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.023114712702831736
+    },
+    {
+      "handle": "AnalysisElliott",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0642643468907566,
+      "signal_now": -0.02949260042283298,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02949260042283298
+    },
+    {
+      "handle": "Anbessa100",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.079175776937359,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "BigCheds",
+      "school": "pure_TA",
+      "bias_default": "neutral",
+      "ic_30d": -0.080452262100334,
+      "signal_now": 0.028591038102339997,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.028591038102339997
+    },
+    {
+      "handle": "BullTheoryio",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.034758929923719,
+      "signal_now": -0.06680911680911682,
+      "stance": "short",
+      "trust_adjusted_vote": -0.06680911680911682
+    },
+    {
+      "handle": "CastilloTrading",
+      "school": "structural",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0810622924923687,
+      "signal_now": 0.03371253545704984,
+      "stance": "long",
+      "trust_adjusted_vote": -0.03371253545704984
+    },
+    {
+      "handle": "ChartsBTC",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0843950987332846,
+      "signal_now": -0.08026845637583892,
+      "stance": "short",
+      "trust_adjusted_vote": -0.08026845637583892
+    },
+    {
+      "handle": "CoinHuSays",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0595732770252805,
+      "signal_now": 0.025700573555158573,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.025700573555158573
+    },
+    {
+      "handle": "ColdBloodShill",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1089369301048816,
+      "signal_now": 0.02024632306915256,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02024632306915256
+    },
+    {
+      "handle": "CrashiusClay69",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0757681688551494,
+      "signal_now": -0.05168986389711041,
+      "stance": "short",
+      "trust_adjusted_vote": -0.05168986389711041
+    },
+    {
+      "handle": "CrypNuevo",
+      "school": "derivatives",
+      "bias_default": "contrarian",
+      "ic_30d": -0.05121321387474,
+      "signal_now": 0.02832995159906259,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02832995159906259
+    },
+    {
+      "handle": "CryptoCred",
+      "school": "mixed",
+      "bias_default": "neutral",
+      "ic_30d": -0.1395950023166219,
+      "signal_now": 0.024802140271073327,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.024802140271073327
+    },
+    {
+      "handle": "CryptoFaibik",
+      "school": "pure_TA",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0111025004207409,
+      "signal_now": -0.012903225806451611,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.012903225806451611
+    },
+    {
+      "handle": "CryptoGodJohn",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1000387167260949,
+      "signal_now": 0.03262483082468792,
+      "stance": "long",
+      "trust_adjusted_vote": -0.03262483082468792
+    },
+    {
+      "handle": "CryptoKaleo",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.018394382171021,
+      "signal_now": -0.02894190871369295,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.02894190871369295
+    },
+    {
+      "handle": "CryptoMichNL",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0501277068640031,
+      "signal_now": -0.015979381443298964,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.015979381443298964
+    },
+    {
+      "handle": "CryptoNTez",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0310963864695947,
+      "signal_now": 0.013491712415366173,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.013491712415366173
+    },
+    {
+      "handle": "CryptoRover",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0482671001863619,
+      "signal_now": -0.06074498567335243,
+      "stance": "short",
+      "trust_adjusted_vote": -0.06074498567335243
+    },
+    {
+      "handle": "CryptoTony__",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0129230147276149,
+      "signal_now": 0.006747311938812389,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.006747311938812389
+    },
+    {
+      "handle": "Crypto_Birb",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0780258719400611,
+      "signal_now": 0.0325471988655572,
+      "stance": "long",
+      "trust_adjusted_vote": -0.0325471988655572
+    },
+    {
+      "handle": "Deltaking888",
+      "school": "pure_TA",
+      "bias_default": "short_tilted",
+      "ic_30d": -0.0125118245735597,
+      "signal_now": 0.0019168570234243353,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0019168570234243353
+    },
+    {
+      "handle": "DrProfitCrypto",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.0268453851824226,
+      "signal_now": -0.014472541751548265,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.014472541751548265
+    },
+    {
+      "handle": "EWaveMonitor",
+      "school": "pure_TA",
+      "bias_default": "neutral",
+      "ic_30d": -0.0852524397307156,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "EmberCN",
+      "school": "mixed",
+      "bias_default": "neutral",
+      "ic_30d": -0.0563110679442506,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "EmperorBTC",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0230045507430988,
+      "signal_now": -0.019916326928327423,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.019916326928327423
+    },
+    {
+      "handle": "Engineercryptoo",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1478463248634514,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "GarethSoloway",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.1118693003337932,
+      "signal_now": 0.0029934518241347056,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0029934518241347056
+    },
+    {
+      "handle": "GugaOnChain",
+      "school": "onchain",
+      "bias_default": "neutral",
+      "ic_30d": -0.1670099245835385,
+      "signal_now": 0.01931018120050956,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.01931018120050956
+    },
+    {
+      "handle": "GuruMemeCoin",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0474827241993373,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "HsakaTrades",
+      "school": "derivatives",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0691325601719156,
+      "signal_now": 0.044014824240381265,
+      "stance": "long",
+      "trust_adjusted_vote": -0.044014824240381265
+    },
+    {
+      "handle": "IamCryptoWolf",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0481417221505789,
+      "signal_now": -0.020255458503053762,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.020255458503053762
+    },
+    {
+      "handle": "IncomeSharks",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1089710678257531,
+      "signal_now": 0.05127184938055713,
+      "stance": "long",
+      "trust_adjusted_vote": -0.05127184938055713
+    },
+    {
+      "handle": "IvanOnTech",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.030621280250525,
+      "signal_now": -0.06370106761565837,
+      "stance": "short",
+      "trust_adjusted_vote": -0.06370106761565837
+    },
+    {
+      "handle": "Jackyi_ld",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0230929395102048,
+      "signal_now": -0.0467159277504105,
+      "stance": "short",
+      "trust_adjusted_vote": -0.0467159277504105
+    },
+    {
+      "handle": "JakeGagain",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0833085328216483,
+      "signal_now": -0.07345417395199279,
+      "stance": "short",
+      "trust_adjusted_vote": -0.07345417395199279
+    },
+    {
+      "handle": "Jamie1Coutts",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0255498062495432,
+      "signal_now": 0.0001454545454545482,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.0001454545454545482
+    },
+    {
+      "handle": "JamieSaettele",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0689829247656532,
+      "signal_now": 0.03331184246760377,
+      "stance": "long",
+      "trust_adjusted_vote": -0.03331184246760377
+    },
+    {
+      "handle": "Jiangzhuoer2",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0542054961782669,
+      "signal_now": -0.09773071104387293,
+      "stance": "short",
+      "trust_adjusted_vote": -0.09773071104387293
+    },
+    {
+      "handle": "KillaXBT",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0072255149886099,
+      "signal_now": -0.0026641430311671035,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.0026641430311671035
+    },
+    {
+      "handle": "Kingpincrypto12",
+      "school": "structural",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0063928023673156,
+      "signal_now": -0.004246610644730292,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.004246610644730292
+    },
+    {
+      "handle": "LayahHeilpern",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0208031071139252,
+      "signal_now": -0.05525641025641025,
+      "stance": "short",
+      "trust_adjusted_vote": -0.05525641025641025
+    },
+    {
+      "handle": "LedgerStatus",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0089387742184052,
+      "signal_now": 0.02293076447505854,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02293076447505854
+    },
+    {
+      "handle": "LookOnChain",
+      "school": "onchain",
+      "bias_default": "neutral",
+      "ic_30d": 0.0253827138654718,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.0
+    },
+    {
+      "handle": "MMCrypto",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0743646074142114,
+      "signal_now": -0.04413812661240869,
+      "stance": "short",
+      "trust_adjusted_vote": -0.04413812661240869
+    },
+    {
+      "handle": "MacroCRG",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.101557330730513,
+      "signal_now": 0.036066525897353145,
+      "stance": "long",
+      "trust_adjusted_vote": -0.036066525897353145
+    },
+    {
+      "handle": "Michael_Liu93",
+      "school": "structural",
+      "bias_default": "short_tilted",
+      "ic_30d": -0.0346808353226028,
+      "signal_now": -0.0122568093385214,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.0122568093385214
+    },
+    {
+      "handle": "Negentropic_",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0245239361007109,
+      "signal_now": -0.007358636715724248,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.007358636715724248
+    },
+    {
+      "handle": "NickTimiraos",
+      "school": "macro",
+      "bias_default": "neutral",
+      "ic_30d": -0.0884581261452864,
+      "signal_now": 0.032492997198879554,
+      "stance": "long",
+      "trust_adjusted_vote": -0.032492997198879554
+    },
+    {
+      "handle": "Ninjascalp",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0650367451044166,
+      "signal_now": 0.04561472626631394,
+      "stance": "long",
+      "trust_adjusted_vote": -0.04561472626631394
+    },
+    {
+      "handle": "OnchainDataNerd",
+      "school": "onchain",
+      "bias_default": "neutral",
+      "ic_30d": -0.057261011329106,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "Pentosh1",
+      "school": "content_creator",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0186614643770125,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "PeterLBrandt",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0657099634638649,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "Sheldon_Sniper",
+      "school": "pure_TA",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0990396396232037,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "StackerSatoshi",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0082030937000186,
+      "signal_now": -0.03795837462834489,
+      "stance": "short",
+      "trust_adjusted_vote": -0.03795837462834489
+    },
+    {
+      "handle": "Steph_iscrypto",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0929854264803532,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "TATrader_Alan",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0644776661197865,
+      "signal_now": -0.018341531974701335,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.018341531974701335
+    },
+    {
+      "handle": "TechDev_52",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0153422919765558,
+      "signal_now": -0.009230769230769232,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.009230769230769232
+    },
+    {
+      "handle": "TimmerFidelity",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.016252523356047,
+      "signal_now": -0.020081110769446745,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.020081110769446745
+    },
+    {
+      "handle": "ToneVays",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.0492665504670747,
+      "signal_now": -0.04180645161290322,
+      "stance": "short",
+      "trust_adjusted_vote": -0.04180645161290322
+    },
+    {
+      "handle": "TraderKoz",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0371232891444331,
+      "signal_now": -0.016278273370643186,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.016278273370643186
+    },
+    {
+      "handle": "TraderMercury",
+      "school": "pure_TA",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0591252053806773,
+      "signal_now": 0.028369418108424284,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.028369418108424284
+    },
+    {
+      "handle": "Tradermayne",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.0017508561565444,
+      "signal_now": -0.02039007092198581,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02039007092198581
+    },
+    {
+      "handle": "Tree_of_Alpha",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0364448665260243,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "TylerSCrypto",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0566889840913507,
+      "signal_now": -0.052173872820136864,
+      "stance": "short",
+      "trust_adjusted_vote": -0.052173872820136864
+    },
+    {
+      "handle": "VentureCoinist",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0542374448422396,
+      "signal_now": -0.0386710105809266,
+      "stance": "short",
+      "trust_adjusted_vote": -0.0386710105809266
+    },
+    {
+      "handle": "VetleLunde",
+      "school": "derivatives",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0726666172990907,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "WClementeIII",
+      "school": "macro",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1613861613002256,
+      "signal_now": 0.022924901185770747,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.022924901185770747
+    },
+    {
+      "handle": "WhalePanda",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.0274227214852321,
+      "signal_now": -0.028986998581912247,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.028986998581912247
+    },
+    {
+      "handle": "WillyWoo",
+      "school": "onchain",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.014182183163499,
+      "signal_now": -0.028535031847133758,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.028535031847133758
+    },
+    {
+      "handle": "Yodaskk",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": 0.0349198559690325,
+      "signal_now": -0.011828651665486587,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.011828651665486587
+    },
+    {
+      "handle": "ai_9684xtpa",
+      "school": "onchain",
+      "bias_default": "neutral",
+      "ic_30d": -0.0026675950143012,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "algerstmehn",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0393523349647265,
+      "signal_now": -0.0726872246696035,
+      "stance": "short",
+      "trust_adjusted_vote": -0.0726872246696035
+    },
+    {
+      "handle": "blockchainedbb",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0393465838908931,
+      "signal_now": -0.023108108108108105,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.023108108108108105
+    },
+    {
+      "handle": "byzgeneral",
+      "school": "derivatives",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0824574838938712,
+      "signal_now": 0.026294936397208705,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.026294936397208705
+    },
+    {
+      "handle": "christiaandefi",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.183877352921739,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "defi_mochi",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0810812207010937,
+      "signal_now": 0.03955277095729674,
+      "stance": "long",
+      "trust_adjusted_vote": -0.03955277095729674
+    },
+    {
+      "handle": "devchart",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.075426884053249,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "dpuellARK",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0922032745943436,
+      "signal_now": -0.05728744939271256,
+      "stance": "short",
+      "trust_adjusted_vote": -0.05728744939271256
+    },
+    {
+      "handle": "ecoinometrics",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0487474756002252,
+      "signal_now": -0.0879284649776453,
+      "stance": "short",
+      "trust_adjusted_vote": -0.0879284649776453
+    },
+    {
+      "handle": "ewforecast",
+      "school": "structural",
+      "bias_default": "neutral",
+      "ic_30d": -0.0527801885125342,
+      "signal_now": 0.02286785379568885,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.02286785379568885
+    },
+    {
+      "handle": "fundstrat",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1284053939090578,
+      "signal_now": 0.008602150537634409,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.008602150537634409
+    },
+    {
+      "handle": "gurgavin",
+      "school": "content_creator",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0813441444482417,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "hyblockcapital",
+      "school": "derivatives",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0771987714543674,
+      "signal_now": 0.031324768861217024,
+      "stance": "long",
+      "trust_adjusted_vote": -0.031324768861217024
+    },
+    {
+      "handle": "iamjosephyoung",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0509094202595284,
+      "signal_now": -0.06507177033492824,
+      "stance": "short",
+      "trust_adjusted_vote": -0.06507177033492824
+    },
+    {
+      "handle": "inmortalcrypto",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0614313656337067,
+      "signal_now": -0.03459351491975854,
+      "stance": "short",
+      "trust_adjusted_vote": -0.03459351491975854
+    },
+    {
+      "handle": "intocryptoverse",
+      "school": "cycle",
+      "bias_default": "contrarian",
+      "ic_30d": 0.02765071000702,
+      "signal_now": -0.06488038277511962,
+      "stance": "short",
+      "trust_adjusted_vote": -0.06488038277511962
+    },
+    {
+      "handle": "ki_young_ju",
+      "school": "onchain",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0264741366349598,
+      "signal_now": -0.03831269349845201,
+      "stance": "short",
+      "trust_adjusted_vote": -0.03831269349845201
+    },
+    {
+      "handle": "krugermacro",
+      "school": "macro",
+      "bias_default": "contrarian",
+      "ic_30d": -0.0904477520867479,
+      "signal_now": 0.0,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.0
+    },
+    {
+      "handle": "laojiucai123",
+      "school": "mixed",
+      "bias_default": "short_tilted",
+      "ic_30d": -0.0821968216605117,
+      "signal_now": 0.030414476432771394,
+      "stance": "long",
+      "trust_adjusted_vote": -0.030414476432771394
+    },
+    {
+      "handle": "matthughes13",
+      "school": "mixed",
+      "bias_default": "contrarian",
+      "ic_30d": -0.026036676927783,
+      "signal_now": -0.02559241706161138,
+      "stance": "neutral",
+      "trust_adjusted_vote": 0.02559241706161138
+    },
+    {
+      "handle": "milesdeutscher",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0551424443940055,
+      "signal_now": -0.043235447566720285,
+      "stance": "short",
+      "trust_adjusted_vote": -0.043235447566720285
+    },
+    {
+      "handle": "paulbarron",
+      "school": "content_creator",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.0260689343617688,
+      "signal_now": 0.004813477737665462,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.004813477737665462
+    },
+    {
+      "handle": "pierre_crypt0",
+      "school": "pure_TA",
+      "bias_default": "neutral",
+      "ic_30d": -0.0214943485349772,
+      "signal_now": 0.012774202681852951,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.012774202681852951
+    },
+    {
+      "handle": "qinbafrank",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1049135036544305,
+      "signal_now": 0.04620645065301337,
+      "stance": "long",
+      "trust_adjusted_vote": -0.04620645065301337
+    },
+    {
+      "handle": "rektcapital",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0737029240713966,
+      "signal_now": -0.05796232876712329,
+      "stance": "short",
+      "trust_adjusted_vote": -0.05796232876712329
+    },
+    {
+      "handle": "scottmelker",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0538395448854739,
+      "signal_now": -0.050232018561484924,
+      "stance": "short",
+      "trust_adjusted_vote": -0.050232018561484924
+    },
+    {
+      "handle": "shufen46250836",
+      "school": "mixed",
+      "bias_default": "long_tilted",
+      "ic_30d": -0.1678420931839406,
+      "signal_now": 0.029564763237501,
+      "stance": "neutral",
+      "trust_adjusted_vote": -0.029564763237501
+    },
+    {
+      "handle": "therationalroot",
+      "school": "cycle",
+      "bias_default": "long_tilted",
+      "ic_30d": 0.0684598383932248,
+      "signal_now": -0.09315068493150686,
+      "stance": "short",
+      "trust_adjusted_vote": -0.09315068493150686
+    }
+  ]
+}

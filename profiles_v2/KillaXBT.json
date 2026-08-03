@@ -1,0 +1,229 @@
+{
+  "handle": "KillaXBT",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "cycle",
+    "derivatives",
+    "contrarian"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "USDT.D",
+    "Gold"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.97,
+      "evidence": "[2026-03-31] 直接写 \"boxed in between 2 heavy liquidation pools: 69-70K shorts and 64-65K longs\"；[2025-11-29] 明确比较 \"Long liq levels: 321 Short liq levels: 152\"；图2整张图就是按不同价位的流动性/挂单密度推演 62K-40K 的磁吸区。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.95,
+      "evidence": "他反复用 \"sweep\" 语言组织交易：[2026-04-08] \"We’ve swept the high into the 10th\"；[2025-06-29] \"Swept the highs ✅\"；[2025-06-28] \"If we sweep the lows, I will long, If we sweep the highs & accept back into range, I will short\"。图7也把多个 pivot 前后的 \"Aggressive hunt before inverse narrative\" 画成扫流动性后反转。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.9,
+      "evidence": "[2026-03-31] \"we are in a ranging market\"；[2026-03-30] \"Chop. Chop. Chop...\"；[2025-12-31] \"16 straight days of chop\"。他的处理方式不是追突破，而是等待区间上下沿和流动性池被扫。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.88,
+      "evidence": "[2026-01-30] \"The trend is bearish and liquidity sits below\"；[2026-01-30] \"The $BTC bear market started 3 months ago\"；[2025-12-31] \"The $BTC bull run has officially ended.\" 他会先定义大级别 regime，再决定只做顺势空或等极限位置做反身性多。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.86,
+      "evidence": "[2026-01-29] \"rejecting the mid-range and sweeping 83.9K... If we hold 83.9K, 87.4K-88K can be tested. Unable to hold 83.9K = sub 80K next.\"；[2026-03-31] 在 64-65K longs 与 69-70K shorts 两端之间做区间思维。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.84,
+      "evidence": [
+        "2025-12-30"
+      ]
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.84,
+      "evidence": "[2026-03-31] \"The rhythm and duration of $BTC cycles are evolving. The 4 year cycle is intact until it isn't.\" 图6专门比较各轮上涨时长 1216D→1096D→882D→574D，属于明确的周期压缩模型。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.8,
+      "evidence": "[2026-01-30] \"The trend is bearish\"、\"those who think they’re safe below range lows will get liquidated\"；[2026-04-07] 又说 \"RR no longer justifies staying short\"，说明不是无脑抄底，而是等到赔率和结构变了才转多。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.73,
+      "evidence": "他大量使用前高/前低/季度高低/周开盘翻转成支撑阻力的框体逻辑：[2025-09-30] \"BTC ended up flipping the Q1 candle high. In order to validate further upside, we need to hold this zone.\" 图1、图7里的灰框/白框都像是 breaker/flip 区。"
+    },
+    {
+      "id": "cap_022_fib_618_retracement_support",
+      "weight": 0.69,
+      "evidence": "图5直接在 Gold 1972 vs BTC 2027 对照中标出 0.382/0.5 回撤框；图4也用比例衰减与上界/下界的回撤结构推演路径，说明他会把 fib 回撤作为 swing 定位的一部分。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.66,
+      "evidence": "[2025-11-29] \"This means that 10-14TH ... rally into FOMC\"；[2025-12-30] \"January the 13th is CPI... BTC has dropped on average 5-8% after this period\"；[2025-11-29] \"the 14th of December happens right after FOMC\"。他会把宏观事件窗口当成波动触发器。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.58,
+      "evidence": "[2025-05-30] \"The drop in M2 is clearly mirrored in Bitcoin’s price action.\" 宏观不是他的主框架，但他会在大级别方向判断里拿 M2 做背景确认。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.42,
+      "evidence": [
+        "2026-03-31"
+      ]
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.41,
+      "evidence": [
+        "2025-04-30"
+      ]
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_cme_gap_fill_bias",
+      "name": "CME Gap Fill Bias",
+      "name_zh": "CME 缺口回补偏置",
+      "type": "event_reaction",
+      "description": "Uses weekend CME gaps as a high-probability directional magnet, often with a Monday timing filter and structure confirmation before targeting the fill.",
+      "description_zh": "把周末 CME 缺口当成高概率价格磁吸目标，并常叠加周一时间过滤和结构确认后再去做回补。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "mean_reversion_to_gap",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "[2025-06-29] \"100% confidence this will get filled next week\"；[2025-08-30] \"98% of Weekend Gaps get filled\"；[2026-01-31] \"CME Closed at 84.2K. You already know 98% of these get filled within 2 weeks.\""
+    },
+    {
+      "proposed_id": "cap_new_calendar_pivot_inversion",
+      "name": "Calendar Pivot Narrative Inversion",
+      "name_zh": "日历枢轴反叙事",
+      "type": "cycle_time",
+      "description": "Maps specific dates or recurring day-count pivots as likely narrative reversal windows; if the market is strongly bullish into the pivot, expect a sweep then inversion, and vice versa.",
+      "description_zh": "把特定日期或固定天数枢轴视为叙事反转窗口；若价格在枢轴前强烈偏多，常预期先扫流动性再反向，反之亦然。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "reversal_around_date",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2026-03-30] \"10th April. Pay attention. The narrative into this pivot will likely reverse within 1–2 weeks.\"；图7用一系列垂直日期线标注 \"Aggressive hunt before inverse narrative\"。"
+    },
+    {
+      "proposed_id": "cap_new_open_anchor_levels",
+      "name": "Open/Close Anchor Levels",
+      "name_zh": "开收盘锚点位框架",
+      "type": "structural_bias",
+      "description": "Treats daily, weekly, monthly, quarterly, and yearly opens/closes plus wick highs/lows as premium structural anchors for validation, rejection, and reversal.",
+      "description_zh": "把日/周/月/季/年开收盘与影线高低点当作核心结构锚点，用于验证、拒绝和反转判断。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "level_reaction",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-11-29] \"I pay particular attention to weekly opens/weekly wick highs and lows\"；[2025-08-29] \"BTC is testing its previously monthly open right now. This is a crucial level.\"；[2025-09-30] \"daily close strategy\"。"
+    },
+    {
+      "proposed_id": "cap_new_cross_asset_historical_analog",
+      "name": "Cross-Asset Historical Analog Mapping",
+      "name_zh": "跨资产历史类比映射",
+      "type": "macro_correlation",
+      "description": "Projects current BTC structure by overlaying it with historical paths from other assets or prior cycles, using geometry, retracements, and timing analogs rather than only same-asset TA.",
+      "description_zh": "通过与其他资产或过去周期的历史路径做几何、回撤和时间类比，来推演 BTC 当前结构，而不只依赖同资产 TA。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "path_projection",
+        "horizon": "months_to_years",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "图5直接把 \"Gold 1972\" 与 \"BTC 2027\" 并列；[2026-03-31] 长文标题就是 \"1972 Gold vs $BTC\"。"
+    },
+    {
+      "proposed_id": "cap_new_social_sentiment_contra",
+      "name": "Narrative Figure Contrarian Signal",
+      "name_zh": "意见领袖叙事反向信号",
+      "type": "event_reaction",
+      "description": "Uses viral public narratives, influencer posts, and market-wide FUD/hopium as contrarian markers when they cluster near a structural level.",
+      "description_zh": "当市场级 FUD/鸡血叙事与关键结构位重合时，把意见领袖和社媒情绪当作反向信号使用。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "图3把 CZ 的几条 \"buy the dip\" 类推文贴在 BTC 图上；[2026-03-31] 还写 \"Looks like the FUD this cycle is quantum computing fears... always convenient how this 'news' shows up right when $BTC is...\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Trading the invalidation.",
+      "rule_paraphrased": "先定义失效位，再围绕失效位建立高赔率交易，而不是先有方向后找理由。",
+      "category": "framework"
+    },
+    {
+      "quote": "70% waiting, 20% planning, and 10% execution. Whether you like it or not, trading will test your patience. It’s not supposed to be fun, it’s supposed to be boring. If it feels fun, you’re not trading.",
+      "rule_paraphrased": "等待和计划远重于出手；交易应当流程化、无聊、可重复，而不是追求刺激。",
+      "category": "mantra"
+    },
+    {
+      "quote": "You can either go with the 90% statistic or attempt to trade against it.",
+      "rule_paraphrased": "当历史统计显著偏向一侧时，优先服从概率而不是主观预测。",
+      "category": "framework"
+    },
+    {
+      "quote": "Whether you like it or not, we are going sub 60K an there is absolutely nothing you can do about it.",
+      "rule_paraphrased": "一旦他认为结构已经确认，会用极强确定性表达，不给模糊中间地带。",
+      "category": "mantra"
+    },
+    {
+      "quote": "This isn’t luck, it’s experience.",
+      "rule_paraphrased": "把自己的 edge 归因于长期重复识别结构与时机，而非偶然命中。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和普通 TA 交易员的区别，不只是画支撑阻力，而是把流动性分布、扫单路径、日期枢轴和长周期类比同时压到一张图上。另一特点是极强的公开交易员人格：高置信度、先给失效位与路径、再用事后验证强化自己的框架。相比纯价格行为派，他更像“结构+流动性+时间窗口”的混合型叙事交易员。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "100% without a question",
+      "this will be the bottom",
+      "absolutely nothing you can do about it",
+      "I can say with 100% confidence",
+      "inevitable",
+      "without question",
+      "classic textbook structure",
+      "Just cracked the $BTC bottom"
+    ],
+    "low_conviction_phrases": [
+      "likely",
+      "probably",
+      "could",
+      "if we hold",
+      "if price continues to hold",
+      "I’m fairly confident",
+      "we could still drift lower",
+      "my next swing will likely be"
+    ]
+  }
+}

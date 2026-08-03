@@ -1,0 +1,222 @@
+{
+  "handle": "ChartsBTC",
+  "school_primary": "cycle",
+  "school_secondary": [
+    "structural",
+    "macro",
+    "onchain",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.98,
+      "evidence": "核心内容几乎围绕减半节奏展开：如 [2024-04-29] “The first half is all about bouncing back, but the second? That's where the frenzy hits.”；[2024-09-30] “#bitcoin halving prices $12➡️$648➡️$8,572➡️$63,977➡️ Next Halving Estimate: March 28, 2028”。附图 3 直接用四次减半价格与 2028 第五次减半做框架。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.96,
+      "evidence": "他反复使用 4 年周期比较： [2024-05-25] “4 years ago 1 #BTC = $8,904 Today 1 #BTC = $69,032 That's a 675% increase or 67% CAGR”；[2025-03-28] “Bitcoin’s 4-year cycle won’t look the same... But measured halving to halving, one thing stays the same”。附图 7 直接比较 2012-2020 vs 2016-2024。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.9,
+      "evidence": "[2024-05-30] “Higher Highs Higher Lows #bitcoin”；[2024-04-28] “#bitcoin higher lows”。附图 8 用黑线分隔 epoch，并标注 $2→$152→$3k→$16k 的抬高低点、$32→$1,242→$20k→$69k 的抬高高点，是典型长期上升趋势框架。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.72,
+      "evidence": "虽然整体偏多，但他非常强调周期内后段的‘frenzy/mania’阶段：[2024-04-29] “the second? That's where the frenzy hits.”；[2025-01-30] “I thought $100K Bitcoin would mark the start of the mania phase.” 这是典型把后半程视为抛物线加速区的周期框架。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.58,
+      "evidence": "[2024-02-29] 线程里写到 “With surging ETF demand...”；[2024-12-23] “Only $561M this week” 明显把 ETF 资金流当作需求代理变量。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.56,
+      "evidence": "[2024-03-30] 明确发过 “#bitcoin/M2”；说明他会把 BTC 与全球流动性代理做对照，不只看价格本身。"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.46,
+      "evidence": "[2026-04-11] “This year 850,000 $BTC, 60,000–70,000 dolar aralığında toplandı... toplam arzın %9’undan fazlası” 这类供应在某价格带集中、被吸收的表述，本质是在看强手持有/供应锁定。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.24,
+      "evidence": "未见他高频直接发稳定币供给图，但其宏观-流动性叙事与 ETF/资金进入框架一致，属于次要但兼容的资金面代理。证据强度较弱，因此给低权重。"
+    },
+    {
+      "id": "cap_067_nvt_valuation_extreme",
+      "weight": 0.18,
+      "evidence": "没有直接 NVT 用法证据，更多是以 realized price / mayer multiple 这类估值带来框定高低估，因此只给很低权重作为近似估值框架。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.42,
+      "evidence": "[2024-06-25] “#bitcoin mayer multiple a cool 1.07”；[2024-06-18] “Despite Realized Mayer Multiple momentum turning sour in April, the price has remained surprisingly stable.” 他明显使用 Mayer/Realized Mayer Multiple，这本质与价格相对长期均线/实现价格的收复状态相关。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.2,
+      "evidence": "未见高频 DXY 图，但其宏观叙事偏流动性而非纯图形，具备宏观确认思路；不过公开证据不足，因此权重低。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.22,
+      "evidence": "[2024-01-28] “#bitcoin vs. S&P” 说明他会用风险资产对照框架来解释 BTC 所处的大类资产 regime，但不是主轴。"
+    },
+    {
+      "id": "cap_068_mvrv_zscore_cycle",
+      "weight": 0.41,
+      "evidence": "虽然 seed 里是 MVRV Z-score，但他更常发 realized price / realized price index / realized mayer multiple。 [2024-02-29] “Realized Price Index”; [2024-11-30] “The Bitcoin price has always revisited the realized price during bear markets.” 说明他会用链上估值周期带来定位顶部/底部。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.33,
+      "evidence": "[2024-12-30] 关于波动与货币属性的长帖；[2024-01-28] “#bitcoin drawdowns”；[2024-06-25] “#bitcoin drawdowns this cycle”。他持续量化回撤和波动，但更多用于教育和周期定位，而非短线风控执行。"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.29,
+      "evidence": "[2024-10-28] “4 years ago... boosted by a wave of extreme leverage that took it past $60k. This time, we have ETFs with options.” 说明他会用杠杆结构差异解释不同周期斜率和可持续性。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_log_scale_framing",
+      "name": "Log Scale Regime Framing",
+      "name_zh": "对数坐标长期框架",
+      "type": "structural_bias",
+      "description": "Use logarithmic scale as the default lens for Bitcoin history to normalize percentage moves, avoid anchoring to nominal price, and compare cycles across orders of magnitude.",
+      "description_zh": "默认用对数坐标观察比特币历史，把不同数量级的涨跌放到统一百分比尺度上，避免被名义价格锚定，并用于跨周期比较。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "macro",
+        "confidence_base": 0.86
+      },
+      "example_evidence": "[2024-05-26] “Is it even possible to make sense of the #bitcoin price history without grasping log scale?”；[2024-09-25] “Linear scale is for amateurs. Step up your game by using log scale.”；附图 1 同时对比 log 与 linear。"
+    },
+    {
+      "proposed_id": "cap_new_on_this_date_analog",
+      "name": "On-This-Date Cross-Cycle Analog",
+      "name_zh": "同日跨周期对照",
+      "type": "cycle_time",
+      "description": "Compare Bitcoin's price, CAGR, or position in the cycle against the exact same calendar date 4/8/12 years ago to infer cycle progress and expected path.",
+      "description_zh": "把当前日期与 4/8/12 年前同一天对照，比较价格、CAGR 和周期位置，用于估算当前所处阶段和潜在路径。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2024-01-23]/[2024-01-28]/[2024-05-11]/[2024-06-17]/[2024-06-25] 多次发 “#bitcoin on this date”；[2024-10-31] “Current Bitcoin price $69,922 4 years ago $13,816 ... 8 years ago $697 ... 12 years ago $11”。"
+    },
+    {
+      "proposed_id": "cap_new_realized_price_gravity",
+      "name": "Realized Price Gravity",
+      "name_zh": "实现价格引力框架",
+      "type": "onchain_signal",
+      "description": "Treat realized price and its derived ratios as a long-cycle valuation anchor; price tends to gravitate back toward it in bears, while extended premiums define bull-cycle heat.",
+      "description_zh": "把实现价格及其衍生比率视为长期估值锚；熊市价格有回归实现价格的倾向，牛市中对实现价格的高溢价则定义市场过热程度。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2024-02-29] “Realized Price Index”; [2024-11-30] “The Bitcoin price has always revisited the realized price during bear markets.”；[2024-06-18] “Realized Mayer Multiple momentum turning sour...”"
+    },
+    {
+      "proposed_id": "cap_new_price_range_residency",
+      "name": "Price Range Residency",
+      "name_zh": "价格区间停留时长",
+      "type": "cycle_time",
+      "description": "Measure how many days Bitcoin spends in each price band to infer maturity, acceptance, and the probability of eventual migration into the next magnitude band.",
+      "description_zh": "统计比特币在各价格区间停留的天数，用于判断成熟度、价值接受度，以及向下一数量级价格区间迁移的概率。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "macro",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2026-01-26] “Days Bitcoin has spent in price ranges...”；[2025-03-29]/[2025-05-23]/[2025-08-30] 多次重复这个统计框架。"
+    },
+    {
+      "proposed_id": "cap_new_sats_per_dollar_compression",
+      "name": "Sats Per Dollar Compression",
+      "name_zh": "每美元可买聪压缩",
+      "type": "cycle_time",
+      "description": "Track how many satoshis one dollar buys over successive halvings or years as an adoption/compression narrative for long-term upside framing.",
+      "description_zh": "跟踪每 1 美元能买到多少 satoshis，观察其在减半和跨年尺度上的压缩，用作采用率提升和长期上涨叙事工具。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "macro",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2024-04-26] “At #bitcoin's first halving, a dollar snagged you 8M sats... Now, we're down to just 1,600 sats per dollar.”；[2024-03-30] “1427 sats/$”；[2024-01-28] “2364 sats/$”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Linear scale is for amateurs. Step up your game by using  log scale.",
+      "rule_paraphrased": "分析 BTC 长周期必须优先使用对数坐标，否则会被名义价格变化误导。",
+      "category": "framework"
+    },
+    {
+      "quote": "Remind the family to zoom out this Christmas",
+      "rule_paraphrased": "遇到短期噪音或情绪波动时，先拉长时间尺度，再做判断。",
+      "category": "mantra"
+    },
+    {
+      "quote": "History doesn't repeat itself, but it often rhymes",
+      "rule_paraphrased": "不机械复制旧周期，但会用历史相似结构做情景推演。",
+      "category": "framework"
+    },
+    {
+      "quote": "The first half is all about bouncing back, but the second? That's where the frenzy hits.",
+      "rule_paraphrased": "减半后前半段偏修复，后半段才是主升和情绪狂热区。",
+      "category": "framework"
+    },
+    {
+      "quote": "It’s a marathon, not a sprint. Those who wait, win. #Bitcoin",
+      "rule_paraphrased": "持有周期胜过频繁交易，耐心比短线节奏更重要。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是典型做短线图形交易的 TA，更像“比特币周期可视化研究员”：用减半、4 年周期、同日对照、CAGR、对数坐标把复杂行情压缩成可传播的长期框架。和一般 TA 不同，他极少讨论具体入场止损，而是不断用数据图像强化一个核心偏见：BTC 的长期结构性上升仍在延续。其风格兼具内容创作属性，图表高度标准化、叙事性强、非常适合建立长期 bullish positioning。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "I'm calling it: next #bitcoin halving, six figures!",
+      "Bitcoin is much closer to $1M than most people realize.",
+      "Number go Up.",
+      "Heading much higher",
+      "Perspective is key",
+      "Higher Highs Higher Lows"
+    ],
+    "low_conviction_phrases": [
+      "if it happens again",
+      "may be",
+      "might just",
+      "How long will the pattern hold?",
+      "What do you see?",
+      "Notice anything?",
+      "Can you find the current cycle?"
+    ]
+  }
+}

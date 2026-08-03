@@ -1,0 +1,197 @@
+{
+  "handle": "CryptoRover",
+  "school_primary": "content_creator",
+  "school_secondary": [
+    "macro",
+    "cycle",
+    "mixed",
+    "pure_TA"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ALTCOINS",
+    "SOL",
+    "TAO"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.92,
+      "evidence": "反复用周期叙事定方向，如 [2024-12-31] “Tomorrow marks the start of the most exponential year in the #Bitcoin 4-year cycle.”、[2025-03-31] “BITCOIN IS PERFECTLY ON TRACK WITH THE 2017 CYCLE!”、[2024-12-31] “Phase 2 starts in 2025. #Altcoins will go parabolic!”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.9,
+      "evidence": "直接以 4 年周期框架组织观点，[2024-01-31] “The 4th #Bitcoin bull run is about to start...” 和 [2024-12-31] “Tomorrow marks the start of the most exponential year in the #Bitcoin 4-year cycle.”"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.88,
+      "evidence": "非常频繁做 BTC→ETH→Alt rotation 叙事，[2025-01-31] “Bitcoin dominance is about to drop drastically. Q1 is always bullish for Altcoins.”、[2024-12-31] “This #Ethereum breakout will trigger #Altcoin season!”、[2024-11-30] “#Altcoin season starts now...”"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.87,
+      "evidence": "宏观上高度依赖降息/放水逻辑，[2025-06-30] “The FED is about to fire up the money printers.”、[2025-10-31] “FED OFFICIAL SAYS ALL THE DATA ARE SAYING WE SHOULD CUT RATES IN DECEMBER. BULLISH FOR MARKETS!”、[2025-08-31] “Powell will cut rates. Liquidity is about to flood the markets.”"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.83,
+      "evidence": "把货币供给扩张直接映射为 crypto beta，[2025-07-31] “U.S. MONEY SUPPLY IS EXPLODING. BULLISH FOR BITCOIN & CRYPTO!”、[2025-12-31] “The FED is printing billions of FRESH dollars again.” 图中也多次出现印钞机/Fed/美元视觉素材。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.7,
+      "evidence": "持续用 ETF/机构准入做方向催化，[2024-05-31] “The Spot #Ethereum ETF is expected to launch at the end of June.”、[2025-05-31] “$ETH AND $SOL STAKING ETFs COULD BE APPROVED IN JUNE”"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.72,
+      "evidence": "把稳定币增发视为场外资金进入信号，[2025-02-28] “$1 BILLION USDT JUST MINTED AT THE TETHER TREASURY. SOMETHING BIG IS COMING” 和 [2024-08-31] “#Bitcoin is dumping while $USDT is printing. Soon the price will catch up.”"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.61,
+      "evidence": "经常使用 squeeze/liquidation 语言，[2024-03-31] “A $1.2 billion #Bitcoin Short squeeze is coming.”、[2025-11-30] “BITCOIN SHORT SQUEEZE IS LOOMING...”"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.66,
+      "evidence": "反复拿清算位作为价格磁吸叙事，[2024-06-30] “If #Bitcoin hits $72k, more than $10b worth of short liquidations will take place!”、[2025-08-31] “$2B in shorts will be liquidated at $115K.”、[2025-05-31] “40X BITCOIN WHALE IS FULLY LIQUIDATED”"
+    },
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.62,
+      "evidence": "明确使用 bull flag 目标投射，[2024-05-31] “The price target of this #Bitcoin bull flag breakout is $110,000” 和 [2024-08-31] “When this #Bitcoin bull flag breaks out, we are flying to $100k.”"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.48,
+      "evidence": "虽不系统讲指标，但会使用收复关键位/重测来确认趋势，[2024-05-31] “This monthly retest on #Bitcoin makes me extremely bullish!”、[2024-02-29] “#Bitcoin is breaking back into the bull market territorial!”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.79,
+      "evidence": "默认把市场归类为牛市趋势延续，[2024-11-30] “This #Bitcoin bull market is far from over!”、[2024-10-31] “#Bitcoin is about to go parabolic!”、[2024-11-30] “#Bitcoin just entered the most parabolic phase of this bull market.”"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.35,
+      "evidence": "他经常提到 parabolic phase，但更多是顺势做多而非反身做空；例如 [2024-11-30] “#Bitcoin just entered the most parabolic phase of this bull market.” 说明他识别抛物阶段，但主要当成牛市加速而非顶部风险。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.56,
+      "evidence": "把重大宏观事件视为波动触发器，[2025-03-31] “TRUMP IS SCHEDULED TO SPEAK AT 5:30 PM TODAY. EXPECT BITCOIN VOLATILITY!”、[2024-01-31] “The FED leaves the intrest rates unchanged!”"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "把股票/宏观风险偏好直接映射到 crypto，[2026-03-31] “$2,000,000,000,000 has been added to the U.S stocks today. Markets are violently reacting...” 图中也有纽交所、美股、美债/Fed/白宫素材，说明其框架是 risk-on/off 驱动。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_uptober_seasonality",
+      "name": "Uptober / Q4 Seasonality Trade",
+      "name_zh": "Uptober / Q4 季节性交易",
+      "type": "cycle_time",
+      "description": "Uses calendar seasonality, especially October and Q4, as a directional bias input for crypto bull runs.",
+      "description_zh": "把 10 月与 Q4 的历史季节性当作加密多头偏置的核心输入。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-09-30] “Uptober starts tomorrow.”、[2025-09-30] “UPTOBER STARTS TOMORROW!!! 🚀”、[2024-09-30] “Q4 starts tomorrow. Historically it's the best performing quarter in a bull market year.”"
+    },
+    {
+      "proposed_id": "cap_new_pro_crypto_policy_catalyst",
+      "name": "Pro-Crypto Political Catalyst Trade",
+      "name_zh": "亲加密政策催化交易",
+      "type": "event_reaction",
+      "description": "Trades crypto directionally off political headlines involving Trump, Congress, taxes, regulation, or state adoption.",
+      "description_zh": "围绕特朗普、国会、税收、监管松绑、国家采纳等政治新闻做方向性 crypto 交易。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "hours_to_weeks",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-06-30] “REMOVE BITCOIN CAPITAL GAINS TAX ON PAYMENTS. THIS IS MASSIVE!”、[2025-11-30] “A NEW STRATEGIC $BTC RESERVE BILL GOT INTRODUCED IN CONGRESS” 、[2025-07-31] “SEC CHAIR SAYS MOST CRYPTO ASSETS ARE NOT SECURITIES. HERE WE GO!”"
+    },
+    {
+      "proposed_id": "cap_new_altseason_countdown",
+      "name": "Altseason Countdown Narrative",
+      "name_zh": "山寨季倒计时叙事",
+      "type": "cycle_time",
+      "description": "Frames market rotation as an imminent altcoin season with countdown-style messaging before price confirmation is complete.",
+      "description_zh": "在价格完全确认前，就用“山寨季即将开启”的倒计时框架进行轮动预判。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2025-01-31] “FEBRUARY WILL BE THE MONTH OF ALTCOIN SEASON.”、[2024-12-31] “350 days of #Altcoin season start tomorrow.”、[2025-07-31] “ALTSEASON IS COMING!”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Bitcoin will pump.    Altcoins will explode.",
+      "rule_paraphrased": "默认交易剧本是 BTC 先涨、随后山寨高 beta 扩散。",
+      "category": "mantra"
+    },
+    {
+      "quote": "UPTOBER STARTS TOMORROW!!! 🚀",
+      "rule_paraphrased": "强依赖季节性窗口，尤其把 10 月和 Q4 当作做多触发器。",
+      "category": "framework"
+    },
+    {
+      "quote": "The FED is about to fire up the money printers.  Trillions will enter the crypto market.   All you need now is patience.",
+      "rule_paraphrased": "核心宏观假设是流动性扩张最终会溢出到 crypto，持仓者需要耐心等待。",
+      "category": "framework"
+    },
+    {
+      "quote": "DON'T FALL FOR THIS #BiTCOIN BEAR TRAP!",
+      "rule_paraphrased": "面对回撤时默认先解释为牛市中的假摔/熊陷阱，而不是趋势反转。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "This is the hardest bull market ever.   Congratulations if you're still here.   We will get rich!",
+      "rule_paraphrased": "把持仓熬波动视为 edge，本质上鼓励高信念穿越回撤。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不像传统 TA 交易员那样以精细入场和风控为核心，而是把宏观流动性、政治 headline、周期叙事和少量高辨识度图形（尤其 bull flag）融合成高传播性的多头框架。图像素材也说明他大量使用特朗普、Fed、印钞、华尔街、BTC/ETH logo 等宏观符号，而非纯 K 线细节。其优势是 narrative timing 和 audience conviction building，弱点是风险管理与反向情景覆盖明显不足。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "about to explode",
+      "about to go parabolic",
+      "BULLISH",
+      "THIS IS MASSIVE",
+      "HERE WE GO",
+      "FASTEN YOUR SEATBELTS",
+      "you can't be bearish on Bitcoin",
+      "starts tomorrow",
+      "history is repeating",
+      "inevitable"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "could be approved",
+      "may be approved",
+      "I believe",
+      "expect volatility",
+      "something big is coming"
+    ]
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "handle": "Negentropic_",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "structural",
+    "macro",
+    "contrarian",
+    "cycle",
+    "pure_TA"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "TOTAL3",
+    "BTC.D",
+    "DXY",
+    "SPX",
+    "SOL"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_003_bull_flag",
+      "weight": 0.84,
+      "evidence": "2024-01-22: \"#BTC has moved to the 6.618 Fib Extension after a Bull Flag Correction.\" 图片 #5 直接标注多次 \"Bull Flag\"，并用旗形后的 6.618 Fib extension 推演顶部。"
+    },
+    {
+      "id": "cap_016_rsi_bearish_divergence",
+      "weight": 0.7,
+      "evidence": "图片 #7 在 BTC Dominance 顶部区域明确画出 RSI 下倾背离；2024-06-06: \"Today, we have a MEGA BEARISH STRUCTURE on RSI.\" 说明他反复用 RSI 顶背离判断风险。"
+    },
+    {
+      "id": "cap_015_rsi_bullish_divergence",
+      "weight": 0.74,
+      "evidence": "2024-07-09: \"we observed a higher RSI bottom. This is POSITIVE DIVERGENCE.\" 2024-01-22: \"Bullish divergence into Descending Wedge!\" 图片 #3/#6 也都把 RSI 作为结构确认。"
+    },
+    {
+      "id": "cap_020_macd_histogram_cross",
+      "weight": 0.58,
+      "evidence": "2024-04-24: \"MACD Crossover sets #Bitcoin up for next strong move higher.\" 图片 #3 标注 \"Bullish MACD\"，图片 #7 用 MACD 回落确认 BTC.D 见顶。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.93,
+      "evidence": "2024-01-15: \"Welcome to the Altcoin Season! BTC Dominance has topped. Clear roll-over of RSI and MACD.\" 图片 #7 直接写着 \"BTC Dominance has ended\"，这是他最常见的轮动框架之一。"
+    },
+    {
+      "id": "cap_023_elliott_wave_3",
+      "weight": 0.67,
+      "evidence": "图片 #3 把 alt market cap 分为 \"1. Bottoming / 2. BreakOut / 3. Consolidation / 4. Acceleration / 5. Euphoria\"，并在历史推进段标记波段；2024-04-22: \"We believe that was a wave 4. We now have a similar...\" 明显带有 Elliott wave 主升浪视角。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.61,
+      "evidence": "2024-03-19: \"#BTC Halving is closing in. Normal BTC cycle gives us, that BTC price should rally strongly after Halving.\" 他经常把减半后的阶段与后续抛物段联系起来。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.55,
+      "evidence": "他多次把 2017、2021、当前周期进行类比。2024-01-22 把当前 BTC 与 \"late 2017\" 类比；图片 #5 以 2017、2021 与当前 bull flag + parabolic 路径做周期映射。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.79,
+      "evidence": "2024-06-06: \"Better ask - 'Where will Market Yields go'. Where ever they go ... FED follows!\" 2024-05-15 把低 CPI / 零售疲弱视为风险资产上行触发，明显以收益率/流动性而非单纯价格驱动。"
+    },
+    {
+      "id": "cap_027_dxy_inverse_btc",
+      "weight": 0.77,
+      "evidence": "2024-04-18: \"Did DXY top... the downside will bring a lot of tailwind to #Crypto and #BTC\"；2024-05-16 继续把 DXY 头肩顶与加密反弹联系。DXY 是他最常引用的宏观确认器。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.64,
+      "evidence": "2024-05-10: \"#SP500 and #Nasdaq look like they are on the move higher as well. So - what about #ALTS?\" 2026-01-28: \"Taken together, this is one of the clearest broad risk-on regimes\"，说明他用股市风险偏好来确认 crypto beta 扩散。"
+    },
+    {
+      "id": "cap_063_ism_pmi_cycle",
+      "weight": 0.48,
+      "evidence": "2026-02-06: \"Russel 2k is showing the way, Market is not pricing in 60+ ISM numbers\"，把宏观景气指标和小盘/加密风险偏好连接。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.63,
+      "evidence": "2024-04-23: \"BTC's 50-day EMA near $62k provides potential support\"；2024-05-08: \"breaking trendline of Pennant and the 50 Daily SMA\"。回踩均线再延续是他常用的中继框架。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.57,
+      "evidence": "2024-05-08 把收复 50 日 SMA 视为上行触发；2024-01-19 也强调 Nasdaq \"above its 3-month SMA and its 12-...\"。他会把关键均线收回当作 regime 切换证据。"
+    },
+    {
+      "id": "cap_055_pin_bar_rejection",
+      "weight": 0.44,
+      "evidence": "2024-05-09: \"last week's candle was a Reversal Candle - a Hammer with a long Wick.\" 他会明确用长下影/hammer 作为反转确认。"
+    },
+    {
+      "id": "cap_001_falling_wedge_breakout",
+      "weight": 0.66,
+      "evidence": "2024-01-24: \"Did #BTC just bottom in Descending Wedge with a classical Throw-over?\" 2024-04-24 也提到 \"Descenging Wedge and Positive Divergence\"，说明下降楔形是高频 setup。"
+    },
+    {
+      "id": "cap_010_ascending_triangle",
+      "weight": 0.38,
+      "evidence": "2024-04-05: \"#BTC Triangle Thesis gaining strength!\" 2024-03-07: \"Consolidation zone breakout & push to ATH, followed by a dip to retest\"，虽然不总是精确命名，但三角/压缩突破框架频繁出现。"
+    },
+    {
+      "id": "cap_009_cup_and_handle",
+      "weight": 0.35,
+      "evidence": "2024-05-20: \"#SOLETH ratio... Clear 'Cup & Handle'\"。该形态不是核心，但在跨资产轮动图里会用。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.72,
+      "evidence": "他大量使用趋势延续语言，如 2024-01-19: \"Trend following is a strong investment strategy!\" 2024-10-22: \"higher low and a higher high\"，明显偏向先判别趋势 regime 再配置信号。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.52,
+      "evidence": "图片 #5 用抛物线式箭头直指 120k；图片 #8 明确写 \"Market Top? August or September?\" 并把降息后的末端行情视作接近顶部；他会把最终加速段视作衰竭前兆。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.34,
+      "evidence": "虽然不是短线 event trader，但 2024-06-13 和多条关于 FED cuts / CPI / NFP 的帖子表明他会围绕宏观事件调整阶段判断。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_001_fib_extension_top_mapping",
+      "name": "Fib Extension Top Mapping",
+      "name_zh": "斐波扩展顶部映射",
+      "type": "indicator_rule",
+      "description": "Projects cycle tops and intermediate targets using aggressive Fibonacci extensions such as 1.272, 1.618, 4.618, 5.618, and especially 6.618 from prior bull flags or impulse legs.",
+      "description_zh": "使用 1.272、1.618、4.618、5.618，尤其是 6.618 等激进斐波扩展位，对牛旗后的中继目标和周期顶部进行映射。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish_until_target_then_cautious",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2024-01-22: \"#BTC has moved to the 6.618 Fib Extension after a Bull Flag Correction.\" 图片 #5 也写着 \"TOP = 6.618 Fib Extension from BULL Flag?\""
+    },
+    {
+      "proposed_id": "cap_new_002_altseason_phase_model",
+      "name": "Altseason Phase Model",
+      "name_zh": "山寨季阶段模型",
+      "type": "cycle_time",
+      "description": "Classifies alt market evolution into sequential phases such as bottoming, breakout, consolidation, acceleration, and euphoria, often anchored to TOTAL3 and BTC dominance rollover.",
+      "description_zh": "将山寨市场划分为筑底、突破、整理、加速、狂热等连续阶段，通常结合 TOTAL3 与 BTC Dominance 见顶来判定。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_alts",
+        "horizon": "swing_to_position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "图片 #3 直接分为 \"1. Bottoming / 2. BreakOut / 3. Consolidation / 4. Acceleration / 5. Euphoria\"；2024-01-16: \"The next phase is ACCELERATION!\""
+    },
+    {
+      "proposed_id": "cap_new_003_rhythm_analogy_cycle",
+      "name": "Historical Rhyme Analog",
+      "name_zh": "历史押韵类比",
+      "type": "cycle_time",
+      "description": "Uses prior cycle path analogs rather than exact repetition, matching structure, sentiment, and timing between current market and earlier periods.",
+      "description_zh": "不是机械复制历史，而是用历史周期在结构、情绪和节奏上的“押韵”来映射当前路径。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "position",
+        "confidence_base": 0.61
+      },
+      "example_evidence": "2024-01-22: \"History does not repeat itself - but it often rhymes\"；其多张图把 2017、2021、当前周期并列比较。"
+    },
+    {
+      "proposed_id": "cap_new_004_fed_cut_endgame",
+      "name": "Fed Cut Endgame Signal",
+      "name_zh": "降息末段牛市信号",
+      "type": "macro_correlation",
+      "description": "Treats the beginning of Fed cuts not as the start of a bull market, but as a late-cycle warning that risk assets may peak shortly before recession bites.",
+      "description_zh": "将首次降息视为周期尾声而非牛市起点，认为风险资产往往在降息后不久见顶，随后衰退压力兑现。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "late_bull_then_bearish",
+        "horizon": "macro",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2024-06-13: \"When the FED cuts - then the Bull Market is almost at its End and Recession closing in.\" 图片 #8 也把降息与市场顶部时间窗并列。"
+    },
+    {
+      "proposed_id": "cap_new_005_sentiment_extreme_overlay",
+      "name": "Sentiment Extreme Overlay",
+      "name_zh": "情绪极值叠加框架",
+      "type": "regime_classifier",
+      "description": "Adds sentiment extremes such as 'sentiment 88/89' on top of chart structure to fade consensus when technicals are stretched.",
+      "description_zh": "在结构分析上叠加情绪极值，如 sentiment 88/89，作为共识过热后的反向过滤器。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.64
+      },
+      "example_evidence": "图片 #6 标注 \"Sentiment 89\"；2024-04-12: \"Everybody is BULLISH #DXY... sentiment is at 88.\""
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "\"History does not repeat itself - but it often rhymes\" (Mark Twain)",
+      "rule_paraphrased": "经常通过历史结构类比来推演当前周期，不要求完全复制，但要求节奏相似。",
+      "category": "framework"
+    },
+    {
+      "quote": "\"Liquidity is KEY.\"",
+      "rule_paraphrased": "优先解释流动性驱动，而不是把价格变动简单归因为叙事或新闻。",
+      "category": "mantra"
+    },
+    {
+      "quote": "\"Nothing rallies in a straight line. Not even #BTC\"",
+      "rule_paraphrased": "强趋势中必须预期中途修正，回撤不是否定主趋势，而是结构内的一部分。",
+      "category": "framework"
+    },
+    {
+      "quote": "\"When the FED cuts - then the Bull Market is almost at its End and Recession closing in.\"",
+      "rule_paraphrased": "把降息视为尾部风险信号，而不是无条件利多；宏观拐点常晚于市场顶部。",
+      "category": "framework"
+    },
+    {
+      "quote": "\"Trend following is a strong investment strategy!\"",
+      "rule_paraphrased": "默认顺着主趋势做，而不是频繁逆势抄底摸顶。",
+      "category": "mantra"
+    }
+  ],
+  "unique_traits": "他不是纯价格形态派，而是把 Elliott/斐波扩展、BTC.D 轮动、DXY/收益率/降息周期放进同一个叙事框架里。与很多只看 BTC 的 TA 账号不同，他特别强调“Altseason 阶段迁移”和历史押韵类比，并用宏观衰退框架去定义牛市尾声。整体上属于偏多、但在极端情绪和宏观末段时会明显转为反身性和逆向思考。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Welcome to the Altcoin Season!",
+      "The Crypto Bull Market Continues.",
+      "BTC Dominance has topped.",
+      "Much more upside may well fuel the Rally",
+      "The next phase is ACCELERATION!",
+      "we are on the verge of an Altcoin Season",
+      "Top is in",
+      "the Bull Market is almost at its End"
+    ],
+    "low_conviction_phrases": [
+      "it seems like",
+      "could",
+      "if this is the case",
+      "chances are that",
+      "let's see if",
+      "may well",
+      "it now seems like",
+      "possible breakout"
+    ]
+  }
+}

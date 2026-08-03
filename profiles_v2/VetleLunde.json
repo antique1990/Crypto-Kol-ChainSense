@@ -1,0 +1,185 @@
+{
+  "handle": "VetleLunde",
+  "school_primary": "derivatives",
+  "school_secondary": [
+    "macro",
+    "onchain",
+    "structural",
+    "mixed"
+  ],
+  "time_preference": "position",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "BTC perps",
+    "CME futures",
+    "BTC ETFs",
+    "MSTR"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.98,
+      "evidence": "这是他最核心的框架之一。2024-06-10 直接写“2024 continues to see a clear positive correlation between 30d ETF inflows and 30d BTC returns. An R^2 of 0.8368 confirms a strong relationship”；2024-09-24 写“Q4 looks so solid ... Spot ETF options, a new inflow wave”；2024-10-31、2024-11-17、2024-12-17、2025-02-17 等大量推文都围绕 ETF 持仓、净流入、AUM 里程碑来判断 BTC 方向。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.93,
+      "evidence": "他反复用 OI 累积来判断压力堆积和即将发生的方向性 move。2024-08-22：“BTC perps notional open interest has jumped by 30k BTC since August 13, with consistent negative funding rates. Market conditions are looking ripe for a short squeeze.” 2025-04-22：“OI up 22,250 BTC in the past 36 hours”。图片 3、5 也都把 OI 变化当成核心监控变量。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.92,
+      "evidence": "负 funding + OI 累积是他最常见的多头触发器之一。2024-08-20：“Notional perp open interest has climbed by more than 20,000 BTC ... 7d average funding rates sit at 17-month lows of -2.53%”; 2024-09-10：“Monthly average funding rates are negative for the fifth time since January 2020”；2025-04-29 和 2025-05-13 继续跟踪持续负 funding regime。"
+    },
+    {
+      "id": "cap_060_basis_blowout",
+      "weight": 0.84,
+      "evidence": "他非常重视 CME basis / futures premium 作为机构杠杆温度计。2025-01-28：“Bitcoin futures basis fell to negative terrain for the first time since August 2023”；2024-10-15：“CME basis at 13.9%, highest since May 27”；2024-10-29：“At bitcoin peaks, when annualized funding rates trade at hefty premiums over CME’s basis, selling may be wise.”"
+    },
+    {
+      "id": "cap_059_funding_divergence",
+      "weight": 0.77,
+      "evidence": "他不只看 funding 绝对值，也看 funding 与 price/basis 的相对关系。2024-10-29 明确说“when rates aligned, the setup looks ripe for a continued bitcoin rise”；2025-07-03 说“Perps trade at a lasting discount to spot, no risk appetite... BTC has never traded this close to neutral for this long”，本质是用 funding/price 背离衡量行情健康度。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.63,
+      "evidence": "他也会把过热正 funding 视为风险信号。2024-10-29 的表述本质上就是“funding premiums over CME basis”时应考虑卖出；2024-11-28 对 2x leveraged ETH ETF 的狂热需求也在捕捉多头拥挤。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.58,
+      "evidence": "他承认 BTC 在风险偏好框架下与传统风险资产联动。2025-04-05：“Yesterday was the fourth-worst daily return in ES1 futures ... BTC usually mirrors ES with greater downside beta”；2025-01-28 也把 Nvidia crash 通过 CME 去风险传导到 crypto。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.56,
+      "evidence": "宏观流动性是他的次级框架。2024-09-24 直接把“Global easing”列为 Q4 看多理由之一；其整体表述经常把 easing / liquidity improvement 与 BTC 走强联系起来。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.55,
+      "evidence": "他频繁做波动 regime 识别。2025-02-14：“Bitcoin vol is at rare lows”；2025-04-30：“BTC 7-day volatility hits 563 day low”；2024-08-06 则记录极端成交量、清算和 OI 急降，说明他把高波动/低波动环境当成独立框架。"
+    },
+    {
+      "id": "cap_061_options_skew_bullish",
+      "weight": 0.34,
+      "evidence": "虽然不是主框架，但他会把期权市场事件纳入方向判断。2024-09-24 提到“Spot ETF options, a new inflow wave”；2024-11-19 写“IBIT options launch creates a solid setup for a $100k attempt shortly”，说明会用 options launch / options demand 作辅助确认。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_etp_absorption_model",
+      "name": "ETP Absorption Elasticity",
+      "name_zh": "ETP 吸筹弹性模型",
+      "type": "event_reaction",
+      "description": "Model BTC direction by tracking spot ETF/ETP net flows, AUM milestones, and the rolling relationship between vehicle absorption and spot returns. Trigger when persistent net inflows/outflows materially change floating supply.",
+      "description_zh": "通过跟踪现货 ETF/ETP 的净流入、AUM 里程碑和滚动窗口内“吸筹量 vs 现货收益”的关系来判断 BTC 方向；当持续净流入/净流出显著改变流通供给时触发。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "2024-06-10：“30d ETF inflows and 30d BTC returns ... R^2 of 0.8368”；2024-10-31：“U.S. Spot BTC ETF exposure surpassed 1 million BTC under management.”"
+    },
+    {
+      "proposed_id": "cap_new_cme_participant_decomposition",
+      "name": "CME Participant Position Decomposition",
+      "name_zh": "CME 持仓分层拆解",
+      "type": "derivatives_signal",
+      "description": "Separate CME OI into active market participants, leveraged ETFs, and passive holders, then combine with basis and OI change to infer who is driving risk and whether the move is healthy.",
+      "description_zh": "把 CME OI 拆成主动市场参与者、杠杆 ETF、被动持有者等分层，再结合 basis 和 OI 变化，判断是谁在推动风险暴露，以及上涨/下跌是否健康。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2024-03-08、2024-05-01、2024-10-16、2024-10-17、2024-11-20 多次直接拆解 CME OI 由哪类参与者驱动。"
+    },
+    {
+      "proposed_id": "cap_new_adjusted_liquidation_estimate",
+      "name": "Adjusted Liquidation Estimation",
+      "name_zh": "修正后清算估算法",
+      "type": "derivatives_signal",
+      "description": "Estimate true liquidation intensity using open-interest change, exchange methodology changes, and reconstructed market-wide perp exposure instead of trusting exchange-reported liquidation feeds.",
+      "description_zh": "不直接相信交易所上报的清算数据，而是结合 OI 变化、交易所 API 口径变更和全市场永续合约暴露重建，估算真实清算强度。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.8
+      },
+      "example_evidence": "2024-08-29 说“Liquidation data from exchanges are bogus”；图片 2、3、4、5 全都围绕 liquidation 数据失真、API 变更、估算方法展开。"
+    },
+    {
+      "proposed_id": "cap_new_supply_sink_tracking",
+      "name": "Institutional Supply Sink Tracking",
+      "name_zh": "机构供给吸收池跟踪",
+      "type": "onchain_signal",
+      "description": "Track entities that structurally absorb BTC supply over time, such as ETFs, public companies, sovereign funds, and leveraged products, and treat acceleration in these sinks as a medium-term bullish force.",
+      "description_zh": "跟踪会持续吸收 BTC 流通供给的实体，例如 ETF、上市公司、主权基金、杠杆产品；当这些吸收池的增速提升时，将其视为中期看多力量。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2024-11-18：“MicroStrategy added 51,780 BTC last week”；2024-08-14、2025-01-29 跟踪 NBIM 间接 BTC 持仓；2024-12-19 统计“859,454 BTC has been bought by ETFs and public companies alone in 2024.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "“Liquidation data from exchanges are bogus and a vast underrepresentation of actual liquidation volumes in the market.”",
+      "rule_paraphrased": "先质疑数据口径，再做交易判断；尤其不直接相信交易所自报清算数据。",
+      "category": "framework"
+    },
+    {
+      "quote": "“Don't trust all the data you see; avoid exchanges fluffing their data.”",
+      "rule_paraphrased": "对交易所数据保持审计式怀疑，优先做交叉验证和重建。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "“Q4 looks so solid - Global easing (good for bitcoin) - Spot ETF options, a new inflow wave (good for bitcoin) - Seasonality...”",
+      "rule_paraphrased": "当宏观流动性、资金流和季节性同时共振时，允许提高方向性 conviction。",
+      "category": "framework"
+    },
+    {
+      "quote": "“Fwiw, I am a buyer at these levels, but it's definitely not motivated by the Fear and Greed index.”",
+      "rule_paraphrased": "做多要基于结构和仓位数据，不基于情绪指标段子化解读。",
+      "category": "mantra"
+    },
+    {
+      "quote": "“The 4-year cycle is dead, Long Live the King”",
+      "rule_paraphrased": "不要机械套用旧周期模板；市场结构升级后，历史分形可能失效。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "他和典型画线型 TA 交易员差异很大，核心不是形态，而是“衍生品仓位结构 + ETF/机构吸筹 + 宏观流动性”三位一体。最鲜明的特点是对数据口径极度敏感，尤其会主动拆穿交易所清算、OI、成交量等表面数据的失真。相比纯情绪派，他更像做市场微观结构审计，再把审计结果转成方向判断。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "ripe for a short squeeze",
+      "Q4 looks so solid",
+      "clear catalyst",
+      "solid setup",
+      "strong oomph behind this push higher",
+      "I am a buyer at these levels"
+    ],
+    "low_conviction_phrases": [
+      "likely",
+      "looks",
+      "fwiw",
+      "IMO v. likely",
+      "makes me wonder",
+      "if the assumptions are correct"
+    ]
+  }
+}

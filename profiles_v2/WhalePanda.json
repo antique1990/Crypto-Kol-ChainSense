@@ -1,0 +1,193 @@
+{
+  "handle": "WhalePanda",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "contrarian",
+    "macro",
+    "derivatives",
+    "cycle",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "USDT",
+    "BTC ETF proxies",
+    "Nasdaq",
+    "S&P 500"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.98,
+      "evidence": "这是他最高频框架。多次逐日播报 ETF 净流入并据此判断需求/失真，例如 [2024-10-30] “Yesterday's Bitcoin ETF flows were positive for $870.1 million...”, [2024-10-31] “Billions of inflows, price doesn't move up and instead dumps as soon as US market opens.”, [2025-01-25] “weekly total of inflows was $1,757.7 million.”"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.78,
+      "evidence": "经常把 BTC 和美股风险偏好并列比较，作为相对强弱判断。[2025-06-26] “Nasdaq ATH S&P Almost ATH Bitcoin: not even close”, [2026-02-05] “Stocks stopped dumping 12 hours ago as Bitcoin keeps puking”, [2025-04-30] “Nasdaq: +3% S&P: +3.6% Bitcoin: +0.7%”."
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.71,
+      "evidence": "明显关注衍生品大户仓位累积，尤其是 Bitfinex whale。核心例子是 [2024-12-30] “2 days ago the Bitfinex whale has started building his long position again. He is sometimes early, but he's never wrong.” 附图（图7）也是 Bitfinex longs 随时间抬升的仓位类图表。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.62,
+      "evidence": "他明确把减半周期作为中期框架使用。[2024-02-29] “We're above $60k, 53 days before the halving... This is going to be a crazy ride.” [2024-03-29] “Some of you all selling your Bitcoin 3 weeks before halving...”"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.54,
+      "evidence": "他反复拿 4 年周期当参照系，有时是引用，有时是反讽修正。[2025-11-20] “4 year chart is horrific.” [2026-02-05] 直接吐槽 “this is just 4 year cycle bro” 说明他持续以该框架对照现实走势。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.43,
+      "evidence": "他会把利率/流动性背景作为牛市前提之一。[2024-02-29] “We haven't had rate cuts yet.” 这类表述说明其宏观底层假设仍是降息/流动性宽松利多 BTC。图7 左轴还是 USD daily interest rate，进一步说明他会把利率变量与仓位联动看。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.41,
+      "evidence": "虽然更多是用来反驳市场谣言，但他确实在跟踪链上转账与入所叙事。[2025-04-28] “don't trust, verify. Where's the tx?”，[2024-06-24] “Gox isn't dumping anything.”，[2024-06-24] “they haven't transferred any coins in the last 4 days.”"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.57,
+      "evidence": "他很擅长识别 BTC 处于长时间横盘/失真状态，而不是永远套牛市叙事。[2025-08-29] “prices literally going sideways since December last year.” [2025-05-31] “feels like a long sideways summer until September/October.”"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.64,
+      "evidence": "当结构转弱时，他会迅速切到偏空/防守解释，而不是死多。[2025-11-20] “objectively an absolute horrible performance”, [2025-11-21] “Bitcoin keeps making new lows. Something broke.” [2026-02-24] “Below $55k soon.”"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.48,
+      "evidence": "早周期强势阶段他也能给出明确牛市偏向。[2024-02-27] “There are still people waiting for the low $30ks...” [2024-02-29] “This is going to be a crazy ride.” [2024-12-31] 2025 预测里给出 “Bitcoin hits $250k”."
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.98,
+      "evidence": "他不仅用 ETF 流，还把 ETF 流与价格响应之间的背离当成核心信息。[2025-05-29] “yesterday Blackrock did another $480 million on inflows with 0 impact on the price.” [2025-06-30] “$2 billion in ETFS and the price still isnt moving.” 这已经超出单纯跟踪，接近其主框架。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_etf_flow_price_divergence",
+      "name": "ETF Flow / Price Divergence",
+      "name_zh": "ETF 资金流与价格背离",
+      "type": "event_reaction",
+      "description": "When spot ETF inflows remain strongly positive for multiple sessions but BTC fails to advance or sells off, treat it as evidence of synthetic supply, off-exchange absorption, or structural price suppression.",
+      "description_zh": "当现货 ETF 连续多日净流入很强，但 BTC 不涨反跌时，将其视为合成供给、场外对冲吸收或结构性压价的证据。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bearish_or_skeptical",
+        "horizon": "swing",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "[2025-06-26] “Bitcoin: not even close and that despite all those treasury companies and ETFs buying up $1.5 billion...” [2025-06-30] “$2 billion in ETFS and the price still isnt moving.”"
+    },
+    {
+      "proposed_id": "cap_new_us_open_dump_seasonality",
+      "name": "US Session Dump Seasonality",
+      "name_zh": "美盘开盘砸盘季节性",
+      "type": "event_reaction",
+      "description": "Repeatedly fade BTC strength around US cash market open when prior gains are not being confirmed; assumes systematic selling pressure tied to Wall Street hours.",
+      "description_zh": "当 BTC 在亚洲或欧盘走强但未获延续确认时，于美股现金市场开盘前后倾向反手，假设华尔街时段存在系统性卖压。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "short_tilted",
+        "horizon": "intraday_to_swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "[2025-07-31] “Why does Bitcoin always look great until US wakes up?” [2025-02-28] “2 hours until US market open, so dumping should start soon.” [2025-11-26] “Guess US is waking up again and immediately starts dumping Bitcoin as always.”"
+    },
+    {
+      "proposed_id": "cap_new_bitfinex_whale_tracking",
+      "name": "Bitfinex Whale Smart-Money Tracker",
+      "name_zh": "Bitfinex 巨鲸聪明钱追踪",
+      "type": "derivatives_signal",
+      "description": "Track a specific large Bitfinex participant's long exposure changes as a leading directional signal; accumulation into weakness is treated as high-information positioning.",
+      "description_zh": "追踪特定 Bitfinex 大户的多头仓位变化，作为领先方向信号；在价格走弱或横盘时增仓被视为高信息量行为。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2024-12-30] “the Bitfinex whale has started building his long position again... he's never wrong.” 图7 直接展示 longs 与利率的监控图。"
+    },
+    {
+      "proposed_id": "cap_new_paper_btc_suppression",
+      "name": "Paper BTC Suppression Thesis",
+      "name_zh": "纸 BTC 压价叙事",
+      "type": "structural_bias",
+      "description": "Infer that spot demand is being neutralized by synthetic paper supply when repeated bullish catalysts fail to move price, leading to a structurally skeptical stance despite nominal inflows.",
+      "description_zh": "当连续利多催化都无法推动价格时，推断现货需求被合成纸面供给中和，因此即使名义资金流入强，也维持结构性怀疑态度。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bearish_or_neutral",
+        "horizon": "position",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-01-20] “Paper Bitcoin, unlimited supply.” [2026-01-06] “Too much paper Bitcoin in the space, there's an unlimited supply of Bitcoin.” [2025-12-31] “Wallstreet and the ETFs destroyed Bitcoin.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "He is sometimes early, but he's never wrong.",
+      "rule_paraphrased": "把少数被他认可的大户当作高质量先行指标，允许 timing 误差但相信方向正确。",
+      "category": "framework"
+    },
+    {
+      "quote": "Don't trust, verify. Where's the tx?",
+      "rule_paraphrased": "凡是涉及抛压、储备、国家买卖币的叙事，都要求链上或可验证证据，不接受空口故事。",
+      "category": "mantra"
+    },
+    {
+      "quote": "The US hates Bitcoin.",
+      "rule_paraphrased": "把美盘时段视为系统性逆风窗口，默认对美盘价格表现保持怀疑。",
+      "category": "framework"
+    },
+    {
+      "quote": "Wallstreet and the ETFs destroyed Bitcoin.",
+      "rule_paraphrased": "即使长期看多 BTC，也认为传统金融化带来了价格发现失真和纸面供给扩张。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "If you are still more than 80% in stables/fiat at this point you're doing it wrong. Yeah we might go lower but you're not going to buy the bottom bro.",
+      "rule_paraphrased": "在他判断的大级别机会区，不鼓励极端等待完美底部，宁可提前配置而非踏空。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不像典型画线型 TA 交易员，核心不是复杂形态，而是把 ETF 流、Bitfinex 大户仓位、链上转账验证、美股相对强弱拼成一个“结构失真监控框架”。他长期偏 BTC 多头，但表达方式高度反共识，常用价格对利好无反应来反推市场内部有压制或纸面供给。图表上也更偏截图式证据链，而不是教科书式标注形态。",
+  "risk_style": "undefined",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "he's never wrong",
+      "The US hates Bitcoin",
+      "objectively an absolute horrible performance",
+      "Something broke",
+      "Paper Bitcoin, unlimited supply",
+      "Wallstreet and the ETFs destroyed Bitcoin",
+      "not suspicious at all"
+    ],
+    "low_conviction_phrases": [
+      "my guess",
+      "feels like",
+      "might",
+      "I wonder",
+      "I want to be wrong",
+      "probably",
+      "I think we all thought"
+    ]
+  }
+}

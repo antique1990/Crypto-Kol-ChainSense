@@ -1,0 +1,196 @@
+{
+  "handle": "shufen46250836",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "macro",
+    "structural",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "macro",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "gold",
+    "silver",
+    "copper",
+    "US equities",
+    "A-shares"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.86,
+      "evidence": "她反复把降息/收益率下行当作核心驱动。例：[2025-10-02]“10 年期美债收益率到了4.1%，这是近5个月以来的低位”；[2026-02-12]“降息是一定要降的，而且幅度不低”。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.82,
+      "evidence": "她明确把 FOMC 当作仓位与波动管理节点。例：[2026-01-26]“本周市场迎来超级周，1月27日-28日FOMC利率决议”；[2026-03-17]“变盘信号取决于地缘局势和周三FOMC会议”。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.78,
+      "evidence": "她直接用美股大盘趋势判断风险开关。例：[2025-03-31]“盯紧SPX50日周线趋势 向上就追多，向下就追空”；[2026-03-30]“标普500指数已经连续一周收盘在MA200之下”。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.77,
+      "evidence": "她持续把黄金/白银与地缘风险绑定，并做跨资产映射。例：[2026-02-28]“周一金银高开就T出一部分仓位”；[2026-03-18]“要怪就怪以色列”；[2026-03-24]“伊朗冲突一旦缓和，哪些资产反弹空间最大？金银、光模、互联等”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.75,
+      "evidence": "她经常把市场先分型为区间震荡，再决定不追涨。例：[2026-02-05]“A股在春节前大概率将在4000-4100点区间延续窄幅震荡”；[2025-11-27]“这个成交量只能保证A股在区间震荡”。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.8,
+      "evidence": "她对高波动环境非常敏感，并在战争/政策周强调缩手和做T。例：[2026-03-26]“局势一会打一会谈的，应对方法就是什么也不要做，反复高抛低吸”；[2026-04-03]“油价涨，股市也涨，有点市场无视利空FOMO的感觉”。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.72,
+      "evidence": "她频繁用20/30/50/200日均线做趋势确认。例：[2026-02-05]“守住了30日均线和4000点”；[2026-03-12]“继续在20日均线上方”；[2026-03-16]“还是跌破了50日均线”；[2026-03-30]“道指、纳指、标普同时跌破年线”。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.74,
+      "evidence": "她典型做法不是摸顶摸底，而是在主叙事未破时买回调。例：[2025-10-03]“金银每一次回调都是入场的时机”；[2026-03-18]“这些景气板块，有较大回调就是倒车接人”。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.71,
+      "evidence": "她公开反对无确认抄底。例：[2025-03-31]“收手吧！别抄底了…本周一定要谨慎加谨慎 最好只用2成仓位做波段”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.67,
+      "evidence": "她会先给出阶段性多头框架，再在框架内滚动交易。例：[2025-09-29]“9月震荡，10月新高，11月离场”；[2025-09-30]“10月指数看好3900～4000区间”；[2026-02-25]“4300点越来越近”。"
+    },
+    {
+      "id": "cap_030_gold_flight_to_safety",
+      "weight": 0.64,
+      "evidence": "图像侧也支持她的框架：图8是 Morgan Stanley/Bloomberg 的铜供需缺口图，说明她不仅看价格，还看宏观供需失衡；她在推文里多次把金银铜作为同一大类商品叙事来交易。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.42,
+      "evidence": "她虽不常系统讲止损，但会在事件驱动行情里主动减仓、T出。例：[2026-02-28]“周一金银高开就T出一部分仓位”；[2026-03-20]“趁着光伏反弹，趁机T了一部分”。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_volume_threshold_regime",
+      "name": "Turnover Threshold Regime Filter",
+      "name_zh": "成交量阈值市场状态过滤",
+      "type": "regime_classifier",
+      "description": "Classify market regime by absolute turnover/liquidity thresholds rather than price alone. If turnover stays below a trader-defined threshold, treat rebounds as weak and avoid extrapolating trend.",
+      "description_zh": "用绝对成交额阈值而非仅靠价格来定义市场状态。若成交量低于自定义门槛，则把反弹视为弱反弹，不轻易外推趋势。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2025-11-25]“想要维持A股大级别的反弹行情，必要条件是日成交量要维持在2万亿以上”；[2026-04-10]“没有持续2.5万亿的量能维持，A股短期是很难站稳4000点的”。"
+    },
+    {
+      "proposed_id": "cap_new_geopolitical_headline_rotation",
+      "name": "Geopolitical Headline Rotation",
+      "name_zh": "地缘头条轮动交易",
+      "type": "event_reaction",
+      "description": "Trade cross-asset rotations off war, ceasefire, tariff, and political headlines, especially gold/oil/equities leadership reversals around escalation and de-escalation.",
+      "description_zh": "围绕战争、停火、关税、政治头条做跨资产轮动交易，重点捕捉金银、原油、股市在升级与缓和时的领导权切换。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "intraday",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2026-03-24]“伊朗冲突一旦缓和，哪些资产反弹空间最大？金银、光模、互联等”；[2026-04-08]“我不认为市场就反转了”；图3是 Kalshi 的政治概率图，说明她会把政治事件概率当作交易输入。"
+    },
+    {
+      "proposed_id": "cap_new_second_order_earnings_supply_chain",
+      "name": "Second-Order Earnings Spillover",
+      "name_zh": "财报二阶传导与供应链外溢",
+      "type": "structural_bias",
+      "description": "Instead of trading the reporting company directly, infer the next beneficiary layer in the supply chain or adjacent theme from earnings, capex, and management commentary.",
+      "description_zh": "不是只交易公布财报的公司本身，而是根据财报、资本开支和管理层表述，向外推演下一层受益的供应链或邻近主题。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "图6文字写得很直白：“交易1.0是科技巨头基本面判断股价，2.0是通过巨头们的财报去找到铲子股，3.0是直接发现下一个巨头。” 她的多条A股复盘也围绕“服务器电源”“AIDC链”“光模”“存储”等二阶受益方向展开。"
+    },
+    {
+      "proposed_id": "cap_new_cross_asset_analogy_map",
+      "name": "Cross-Asset Analogy Mapping",
+      "name_zh": "跨资产类比映射",
+      "type": "macro_correlation",
+      "description": "Map one asset's behavior to another analogous asset class to infer timing, sentiment, or regime shift, even when correlation is loose or narrative-based.",
+      "description_zh": "把一个资产的行为映射到另一个相似资产上，以推断时点、情绪或风格切换，即使相关性并非严格统计意义上的稳定相关。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "mixed",
+        "horizon": "swing",
+        "confidence_base": 0.62
+      },
+      "example_evidence": "[2025-09-25]“白银和以太坊背离了…一般来说黄金下跌，比特币上涨，同理白银和以太坊也是这样的”；图7也直接写“你们的ETH，我的黄金，都会有光明的未来”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "交易永远不要和趋势作对，永远不要认为市场错了！",
+      "rule_paraphrased": "默认先服从价格与主趋势，不用主观价值判断去和市场硬拗。",
+      "category": "mantra"
+    },
+    {
+      "quote": "牛市多暴跌，跌了不要慌，熊市多长阳，涨了记得卖",
+      "rule_paraphrased": "先判断牛熊环境，再解释单日波动；同样的K线在不同环境下意义不同。",
+      "category": "framework"
+    },
+    {
+      "quote": "悲观者正确，乐观者赚钱，风险恰恰又是机遇。",
+      "rule_paraphrased": "她接受宏观风险真实存在，但交易上倾向在风险中寻找赔率，而不是只做正确叙事。",
+      "category": "framework"
+    },
+    {
+      "quote": "收手吧！别抄底了",
+      "rule_paraphrased": "瀑布和高不确定周先降仓位，等待确认，不做无锚点左侧。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "局势一会打一会谈的，应对方法就是什么也不要做，反复高抛低吸",
+      "rule_paraphrased": "在消息驱动且无持续趋势的环境中，优先区间交易和减频，而不是重仓押方向。",
+      "category": "post_mortem"
+    }
+  ],
+  "unique_traits": "她不像纯K线派，更像“宏观叙事 + 事件交易 + 供应链映射”的混合型交易员：把降息、战争、关税、政治概率、财报传导都揉进同一套交易框架。她也不是纯加密原生，交易语境横跨黄金白银、A股、美股与加密，因此经常用跨资产类比来做判断。另一个明显特征是强内容属性，图3、图6、图8这类截图都说明她常拿非价格图表先立叙事，再回到交易执行。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "板上钉钉",
+      "大概率",
+      "一定要",
+      "基本可以肯定",
+      "不会结束",
+      "重点还是"
+    ],
+    "low_conviction_phrases": [
+      "我认为",
+      "可能",
+      "或许",
+      "不好说",
+      "仅作为娱乐",
+      "仅作为复盘和参考"
+    ]
+  }
+}

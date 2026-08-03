@@ -1,0 +1,209 @@
+{
+  "handle": "CastilloTrading",
+  "school_primary": "structural",
+  "school_secondary": [
+    "pure_TA",
+    "contrarian",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "ETHBTC"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.88,
+      "evidence": "多次直接讲 deviation / spring / sweep。2024-10-29: \"Beautiful breakout, re-test and spring. $80k imminent.\"；2024-01-29: \"possible deviation into our $38,000 nPOC levels along with getting acceptance back into range.\" 图表也常画先扫低点再反转的路径。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.9,
+      "evidence": "他的框架核心就是 current range 上下沿交易。2025-09-30: \"both of these setups play out on $BTC and $ETH going higher based on Current Ranges\"；2025-06-26: \"$ETH hasn't even started to dig into our nPOC levels within range above current price.\" 图片 5、8 都是在箱体/区间边界给出 buy zone 或 upper limit。"
+    },
+    {
+      "id": "cap_026_smc_order_block",
+      "weight": 0.42,
+      "evidence": "并非典型 SMC 全套，但有明显的供需区/盒子回测意识。图 5 在 ETH 4h 上画出蓝色 supply/resistance box，等价格进入区间做反应；图 8 也是上方明显供给区。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.58,
+      "evidence": "经常讲 acceptance back into range、支撑阻力角色切换。2026-01-31: \"Either we run up and rejection recent support and it turns into resistance, or we get acceptance back into range\"，这是典型破位后角色转换/接受-拒绝交易框架。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.82,
+      "evidence": "整体长期偏多。2025-01-29: \"Bitcoin structure looks flawless... it really looks like it wants higher. I refuse to get bearish\"；2024-08-20: \"Weekly $BTC still looks pretty bullish to me. No reason to overthink it\"；2026-04-05: \"optimistic for a green week incoming.\""
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.87,
+      "evidence": "他对 chop / range 的识别非常频繁。2024-07-31: \"We've been ranging for 5 months\"；2025-07-31: \"Market chop continues sadly…\"；2025-09-30: \"Choppy conditions still among us right now.\""
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.63,
+      "evidence": "不是无脑抄底，而是等 discounted levels 和结构确认。2025-01-23: \"Would love a re-test of $91,794 nPOC level. I look to buy at discounted prices, not premiums.\" 说明他不追高、等回撤到计划位。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.77,
+      "evidence": "非常强调 exposure 与分层进场。2025-08-29: \"You are only hurting right now if you are overexposed on position sizing.\"；2025-06-26: \"DCA into levels of discounted price, and scaling out to the upside... It's not about going 'all in' or 'all out'\"。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.61,
+      "evidence": "会明确承认错误并把风险放前面。2024-06-30: \"Took a loss on an altcoin that was nuked -50%\"；2024-04-30: \"Added. Clenched. Risk in place. Walking away now.\""
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.68,
+      "evidence": "他反复讨论 BTC.D 与山寨轮动。2025-09-29: \"Bitcoin dominance going up doesnt mean your altcoins are getting crushed, just means Bitcoin is out performing them\"；2025-02-26: \"If $ETH and #Altcoins are going to gain any ground on $BTC it’s going to be during these times of downside.\""
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.36,
+      "evidence": "不是他的主框架，但会用均线作为确认。2026-04-09: \"$QQQ - Closed above the 200 day MA... Today it closed above the 100 DMA too.\" 说明他会把均线收复当作环境确认。"
+    },
+    {
+      "id": "cap_024_wyckoff_accumulation",
+      "weight": 0.52,
+      "evidence": "虽然不总是直接说 Wyckoff，但 spring、range low reclaim、假跌破回区间非常像吸筹语境。2024-10-29 的 \"breakout, re-test and spring\" 与多张图里的先扫低点再拉升路径都吻合。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.28,
+      "evidence": "对现货买盘/卖盘很敏感，虽不只限 ETF。2025-11-28: \"Binance Spot $BTC selling has definitely slowed\"；2026-02-26: \"Binance and Coinbase spot $BTC bidding is holding up\"。更像现货流代理变量。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.2,
+      "evidence": "衍生品不是主轴，但会观察仓位挤压与横盘后的突破条件。2025-09-29: \"Bitfinex spot longs surged right before the $BTC 5% move up. What did they know?\""
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.31,
+      "evidence": "会回避在高位追多。2025-01-23: \"It will always be hard for me to long at or around ATHs\"；这是一种对高位抛物段末端风险的主观过滤。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_nPOC_retest_framework",
+      "name": "nPOC Retest Framework",
+      "name_zh": "nPOC 回测框架",
+      "type": "structural_bias",
+      "description": "Identify naked Point of Control prints from prior volume profiles and use them as discounted re-entry or magnet targets. Bias strengthens when price revisits nPOC inside a broader range and shows acceptance/rejection.",
+      "description_zh": "识别历史成交量分布留下的裸 POC（nPOC）价位，把它们当作回踩买点、反弹目标或价格磁吸位；若与当前区间上下沿重合，则优先级更高。",
+      "granularity": "specific",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "mean_reversion_or_trend_continuation_from_level",
+        "horizon": "swing",
+        "confidence_base": 0.82
+      },
+      "example_evidence": "几乎是他最鲜明的方法：2025-07-30 \"$115,655 nPOC print hit. Now run it back up to $122,560\"；2025-01-23 \"Would love a re-test of $91,794 nPOC level\"；2025-03-26 \"Do we get the $80,347 nPOC re-test?\""
+    },
+    {
+      "proposed_id": "cap_new_range_acceptance_rejection",
+      "name": "Range Acceptance / Rejection",
+      "name_zh": "区间接受-拒绝框架",
+      "type": "structural_bias",
+      "description": "Trade around whether price gains acceptance back into a prior range, rejects from the edge, or deviates beyond the boundary and snaps back. Focus is less on candle pattern and more on auction acceptance.",
+      "description_zh": "围绕价格是否重新被区间接纳、在边界被拒绝、或发生偏离后回归来交易，本质是拍卖市场里的接受/拒绝判断。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "2026-01-31 \"Either we run up and rejection recent support and it turns into resistance, or we get acceptance back into range\"；2024-01-29 也直接提到 \"getting acceptance back into range\"。"
+    },
+    {
+      "proposed_id": "cap_new_discount_premium_bidding",
+      "name": "Discount vs Premium Bidding",
+      "name_zh": "折价区挂单、溢价区回避",
+      "type": "risk_rule",
+      "description": "Prefer building size only at discounted zones inside a valid bullish structure; avoid initiating large longs at local highs or ATH unless forced by strong trend continuation evidence.",
+      "description_zh": "只在看涨结构中的折价区逐步建仓，尽量不在局部高位或 ATH 附近重仓追多，除非有很强的趋势延续证据。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_on_pullback",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "2025-01-23 \"I look to buy at discounted prices, not premiums.\"；2025-06-26 \"DCA into levels of discounted price, and scaling out to the upside\"。"
+    },
+    {
+      "proposed_id": "cap_new_higher_lows_defense",
+      "name": "Higher-Lows Defense",
+      "name_zh": "抬高低点防守",
+      "type": "structural_bias",
+      "description": "Maintain bullish bias as long as successive higher lows remain intact, even if sentiment is bearish or price has not yet broken major resistance.",
+      "description_zh": "只要抬高低点结构还在，即使市场情绪偏空、价格尚未突破关键阻力，也维持偏多判断。",
+      "granularity": "general",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2026-03-31: \"Do we just ignore the higher lows on $ETH or what??\"；图片 8 在 ETH 2h 上也明确标了连续抬高低点。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Plan the trade, trade the plan.",
+      "rule_paraphrased": "先定义价位和路径，再按预案执行，不随情绪和噪音改来改去。",
+      "category": "mantra"
+    },
+    {
+      "quote": "I look to buy at discounted prices, not premiums.",
+      "rule_paraphrased": "只在折价区找多，不在高位追价。",
+      "category": "framework"
+    },
+    {
+      "quote": "Perfect example of how I like to be trading  DCA into levels of discounted price, and scaling out to the upside  It's not about going \"all in\" or \"all out\" at one spot.",
+      "rule_paraphrased": "偏好分批建仓、分批止盈，而不是单点梭哈。",
+      "category": "framework"
+    },
+    {
+      "quote": "You are only hurting right now if you are overexposed on position sizing. I feel nothing.",
+      "rule_paraphrased": "把仓位做到能承受波动，情绪稳定来自合适风险暴露。",
+      "category": "risk_first"
+    },
+    {
+      "quote": "Never mistaken slow price action for market weakness.",
+      "rule_paraphrased": "横盘和清淡并不自动等于转空，尤其节假日和区间环境里不要过度解读。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他最有辨识度的不是传统形态学，而是把 nPOC、Current Range、acceptance/rejection 结合成一套非常可执行的区间拍卖框架。相比很多只讲宏观叙事的交易员，他更像是用“折价买入 + 裸 POC 磁吸 + 流动性扫单回归”来做中短周期 swing。另一个特点是长期偏多但不追高，嘴上很 bullish，执行上却强调分层挂单、等回踩、控制仓位。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "Long and strong",
+      "structure looks flawless",
+      "really looks like it wants higher",
+      "higher",
+      "primed",
+      "not an area I am willing to get bearish at",
+      "buy the dip area for me"
+    ],
+    "low_conviction_phrases": [
+      "Would love a re-test",
+      "Not sure if we get it",
+      "I think",
+      "Maybe we get",
+      "Still thinking",
+      "Looking for",
+      "Patience will be key"
+    ]
+  }
+}

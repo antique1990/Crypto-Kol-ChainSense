@@ -1,0 +1,196 @@
+{
+  "handle": "krugermacro",
+  "school_primary": "macro",
+  "school_secondary": [
+    "contrarian",
+    "structural",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "SPX",
+    "NASDAQ",
+    "Silver",
+    "Gold",
+    "Memecoins"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.9,
+      "evidence": "他反复把加密放进更大的 risk-on/risk-off 框架里看。例: 2026-02-28 说 'Reminder that historically the S&P 500 displays a consistent buy the news pattern during military conflicts, with an initial gap down when war begins, bottoming within 0-5 trading days'；2025-05-25 说 'Risk sending.'"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.82,
+      "evidence": "他对 FOMC 的预判是其框架核心之一。例: 2025-12-10 'My base case for today's FOMC 1) 25bp cut... 2) Powell raises the bar for additional cuts... => priced-in Hawkish'; 2024-07-31 'No cuts coupled with a slight dovish twist on this FOMC, as expected.'"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.74,
+      "evidence": "他经常把 Fed、降息、资产购买、流动性条件映射到风险资产。例: 2025-12-11 长文区分 RMP 与 QE；2026-04-08 预期 'a non-hawkish Fed'；2025-01-30 专门讨论 'Goldilocks' 宏观环境。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.73,
+      "evidence": "他非常重视 crash 后的波动率 regime。例: 2025-10-31 'A sharp increase in volatility after a major market crash is 100% normal'; 2025-05-28 'When unlevered long a high vol asset, you make volatility work for you. The moment you lever up, vol may force you to sell at an unfavorable price or time.'"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.68,
+      "evidence": "他会明确给出区间交易框架，而不是只讲方向。例: 2025-02-28 'BTC did lose its prior range by a wide margin. If that was indeed a bottom would expect it to trade up to 89-92 and then fall back to the 80s again to fill a new range.'"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.66,
+      "evidence": "他经常用 bear trap / failed move 思维。最直接例子仍是 2025-02-28: 'Above 92 you have a bear trap.' 这说明他不追第一段反弹，而是等确认真假突破。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.58,
+      "evidence": "他的图表偏简洁，但会用关键均线/回收作为趋势切换确认。附图 6 明确叠加了 SMA；附图 7 也是纯价格结构配合少量均线工具。对应推文 2026-02-28 'Bitcoin is now up on bad news, having fully reversed the initial crash' 本质上是在看关键位/均线/结构的收复。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.63,
+      "evidence": "他在强趋势阶段会显著偏多，并不羞于表达仓位。例: 2024-11-30 'Everything is pumping... I'm max long. Not concerned at all. Quite the contrary.'；2025-04-30 'BTC $100k next week'."
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.5,
+      "evidence": "虽然整体偏多，但他识别下行 regime 也很直接。附图 6 是典型上市后冲高回落、持续 lower highs、压在均线下方的弱势结构；2026-01-30 说 'Silver is going from 120 to 80 in 2 days.' 说明他会先承认趋势破坏。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.54,
+      "evidence": "他不是无脑抄底派。2025-06-22 明说 'still think bottom soon, just not within minutes (of the sunday futs open) which is what I was going for before. btc 98-95 be an ideal inflexion area'，说明他会等更优拐点而不是第一时间接刀。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.57,
+      "evidence": "他对 leverage 的态度很鲜明，虽未给出机械 1-2%，但仓位/杠杆约束意识很强。例: 2025-05-28 'When unlevered long a high vol asset, you make volatility work for you. The moment you lever up, vol may force you to sell...'; 2025-05-25 也吐槽高杠杆文化。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.47,
+      "evidence": "他会观察 beta 扩散和垃圾币补涨。例: 2024-02-29 'The old trash catch up trade has finally started today. People who quit crypto are coming back and buying old coins.' 这是典型 BTC 领先后资金往低质量山寨扩散的读法。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_geopolitical_buy_the_news",
+      "name": "Geopolitical Shock Buy-the-News",
+      "name_zh": "地缘冲突利空落地反买",
+      "type": "event_reaction",
+      "description": "When war or military headlines trigger an initial panic gap lower, fade the first shock if the event is telegraphed, casualties are limited, and broader risk assets stabilize within a few sessions.",
+      "description_zh": "当地缘军事事件引发第一波恐慌下跌时，如果袭击高度预告化、实际伤亡有限、风险资产很快止跌，则把首波下杀视为可反手买入的事件冲击，而不是新趋势起点。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "bullish_reversal",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.75
+      },
+      "example_evidence": "2026-02-28 'Bitcoin is now up on bad news, having fully reversed the initial crash'; 同日又说 S&P 在军事冲突中常见 'buy the news pattern'。附图 1 和附图 8 都体现他在盯事件时间线。"
+    },
+    {
+      "proposed_id": "cap_new_bad_news_up_character_change",
+      "name": "Bad-News-Up Character Change",
+      "name_zh": "利空不跌即性格切换",
+      "type": "structural_bias",
+      "description": "A market that stops going down on objectively bad news signals an important regime shift; the price response matters more than the headline.",
+      "description_zh": "市场面对明确利空却不再继续下跌，说明交易性格发生切换；比起新闻本身，价格对新闻的反应更重要。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "days_to_months",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "2026-02-28 'Bitcoin is now up on bad news, having fully reversed the initial crash. First time this happens since March 2023.'"
+    },
+    {
+      "proposed_id": "cap_new_policy_comms_regime",
+      "name": "Policy Communication Regime Mapping",
+      "name_zh": "政策沟通主导市场 regime",
+      "type": "macro_correlation",
+      "description": "Map price action primarily to policy messaging quality, tariff communication, and signaling path rather than to simplistic single-cause narratives.",
+      "description_zh": "将市场波动映射到政策沟通质量、关税表述路径和预期管理，而不是简单归因于单一变量。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "days_to_weeks",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-03-28 'Stocks have been plummeting because Trump's tariffs are bad for growth and earnings, and his comms increase uncertainty'; 2025-03-31 'What a difference one week makes - messaging went from Narrower tariffs to Broader tariffs'."
+    },
+    {
+      "proposed_id": "cap_new_creditor_flow_reflexivity",
+      "name": "Creditor Distribution vs Reinvestment Flow",
+      "name_zh": "债权人赔付现金流再配置",
+      "type": "event_reaction",
+      "description": "Distinguish between in-kind creditor distributions that create sell pressure and cash distributions that may recycle into crypto buying, producing opposite market effects.",
+      "description_zh": "区分实物赔付造成的直接抛压，与现金赔付可能回流加密市场形成买盘，两者对市场的作用方向相反。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bullish_or_bearish",
+        "horizon": "weeks_to_months",
+        "confidence_base": 0.69
+      },
+      "example_evidence": "2024-06-30 'Mt Gox selling. Germany selling. US selling. But FTX creditors will be buyers. Soon.'；附图 3 也明确区分 Gemini/Mt.Gox 的 in-kind 与 FTX 的 cash payments。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Everything is pumping. And people asking me if I'm concerned. I'm max long. Not concerned at all. Quite the contrary. It's way too soon to be concerned.",
+      "rule_paraphrased": "强趋势初中段不急着找顶，趋势和仓位要允许自己偏激进。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Memecoins are for trading not holding.",
+      "rule_paraphrased": "高 beta 垃圾资产只当交易工具，不赋予长期价值叙事。",
+      "category": "framework"
+    },
+    {
+      "quote": "Unrealistic targets leads to misery.",
+      "rule_paraphrased": "目标管理要现实，过度锚定夸张目标会伤害执行。",
+      "category": "risk_rule"
+    },
+    {
+      "quote": "People keep asking me what I think about a recession, or bringing it up in every conversation on X. Stop. It’s unpredictable, over-discussed, and useless for decision-making.",
+      "rule_paraphrased": "少讨论无法交易和无法验证的宏大叙事，多看能驱动仓位决策的变量。",
+      "category": "anti_pattern"
+    },
+    {
+      "quote": "BTC did lose its prior range by a wide margin. If that was indeed a bottom would expect it to trade up to 89-92 and then fall back to the 80s again to fill a new range. Above 92 you have a bear trap.",
+      "rule_paraphrased": "先定义区间与失败条件，再交易反弹；强反弹若无确认也可能只是陷阱。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯图形派，而是把宏观、政策沟通、战争事件和价格行为揉成一个统一框架来交易。与很多 CT 交易员不同，他特别重视“市场对坏消息的反应”以及事件是否被提前预告，这使他经常在恐慌 headline 后做反身性的逆向判断。图表上他很克制，偏爱干净的结构、区间、均线和 regime 判断，而不是堆砌指标。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "I'm max long",
+      "BTC $100k next week",
+      "Bitcoin turning an important corner today",
+      "Increasingly looking like the worst is behind",
+      "Risk sending",
+      "Happy BTFD day"
+    ],
+    "low_conviction_phrases": [
+      "Looks like",
+      "My base case",
+      "would expect",
+      "still think",
+      "ideal inflexion area",
+      "Noticing some confusion"
+    ]
+  }
+}

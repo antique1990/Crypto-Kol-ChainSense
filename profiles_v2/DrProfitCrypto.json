@@ -1,0 +1,226 @@
+{
+  "handle": "DrProfitCrypto",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "contrarian",
+    "structural",
+    "cycle",
+    "macro",
+    "content_creator"
+  ],
+  "time_preference": "position",
+  "bias_default": "contrarian",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "XRP",
+    "ONDO",
+    "GOLD",
+    "SILVER"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.95,
+      "evidence": "图2把大箱体直接标成“Interested to sell here / Only interested to buy here”；图3写“2025 BOX”“Buy orders in white box 57-60k region”；多条推文反复给出箱体低位买入、高位卖出/做空。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.92,
+      "evidence": "他反复用“box”“sideway”描述市场结构，如 [2025-06-28] “Bitcoin always shows same behaviour Long sideway range for 8-9 months Out of sudden 30-50% increase”；[2025-11-23] “Sideway move starts in box till 2026”。"
+    },
+    {
+      "id": "cap_018_ma_golden_cross",
+      "weight": 0.84,
+      "evidence": "图5直接标注两次“$ Golden Cross $”；说明他把 50/200 均线金叉当作核心中期看多确认。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.83,
+      "evidence": "图6把均线称为“Golden Line”，多次用箭头标出价格回踩均线后的继续上行；[2025-04-28] “The golden line, the mother of bulls”。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.8,
+      "evidence": "[2025-07-16] “#ETH: One week ago pointed out the breakout of ETH above the MA50 on the weekly chart. Since then ETH is up 28%”；明显把收复关键均线作为趋势切换/加仓依据。"
+    },
+    {
+      "id": "cap_004_bear_flag",
+      "weight": 0.76,
+      "evidence": "图7左侧直接贴了“Bear Flag”示意，并把当下结构映射为同类下跌延续；说明其会用空头旗形做中继下跌判断。"
+    },
+    {
+      "id": "cap_002_rising_wedge_breakdown",
+      "weight": 0.74,
+      "evidence": "[2025-03-27] “#Bitcoin forming a massive rising wedge on the daily chart... The breakdown is coming close”；这是非常明确的上升楔形看空用法。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.72,
+      "evidence": "[2024-11-22] “I can see many short orders in the region of $100,000, market makers will tease this area”；[2025-02-25] 指控 ByBit/Binance/Wintermute 通过波动“cause mass liquidations on long/buyer side”。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.71,
+      "evidence": "他的“market makers tease levels / trap the retails first”叙事，本质是先扫流动性再走真实方向；[2026-04-09] “TRAP THE RETAILS FIRST, CRASH AFTER!”。"
+    },
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.7,
+      "evidence": "[2024-03-29] “Halving starts in two weeks, super cycle loading”；[2024-03-27] “we are going to enter halving cycle”；明显把减半作为周期框架核心。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.69,
+      "evidence": "[2024-07-28] Sunday report写“Today, we look into each Bitcoin cycle”；[2026-02-22] 图8与推文使用“Six Stages of the Bear Market”“Stage 4 out of 6”，说明他长期按周期分段而不是只看局部K线。"
+    },
+    {
+      "id": "cap_062_m2_growth_proxy",
+      "weight": 0.61,
+      "evidence": "[2024-09-18] “Now all eyes on M2 money supply The FED is forced to print more Next months printers go crazy”；宏观流动性是其牛市论证的一部分。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.58,
+      "evidence": "[2024-10-31] “BlackRock just bought more than $875M worth of Bitcoin”；[2024-01-29] 提到资本流入未充分到来；他会把 ETF/机构流量当成需求代理变量。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.56,
+      "evidence": "他反复强调在极度亢奋区间顶部做空，如 [2025-10-22] “Predicted the exact top of $125,000”；图4把上方区域直接标成“Short and Selling Zone”，属于末端衰竭/分配思路。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.55,
+      "evidence": "图4、图8都在构建完整熊市阶段与下行通道叙事；[2026-03-27] “The bear leads with full strength”；他会明确把环境切换为熊市并采取持续偏空策略。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.54,
+      "evidence": "图6在均线上方连番支撑并给出“$116,000 - $120,000”目标；[2025-04-24] “The new leg up is loading”；强势趋势判定后会持续抱多。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.33,
+      "evidence": "虽然他公开内容更强调大方向，但在 [2026-04-09] 同时写“LONGING $BTC AT $71,750 ... TAKE PROFIT BETWEEN 79-84K SHORT ORDERS BETWEEN 79-84K”，说明会做分段执行与预设退出。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_box_projection_framework",
+      "name": "Forward Box Projection",
+      "name_zh": "前瞻箱体投影框架",
+      "type": "structural_bias",
+      "description": "Draw a forward-looking horizontal box before price reaches it, then use the box low/high as the main buy-sell map. The box itself is treated as the core market structure, not just a support/resistance line.",
+      "description_zh": "先把未来一段时间的横向箱体提前画出来，再用箱体下沿/上沿作为主要买卖地图。箱体本身被当作核心市场结构，而不是普通支撑阻力线。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "range_or_reversal",
+        "horizon": "position",
+        "confidence_base": 0.81
+      },
+      "example_evidence": "图3的“2025 BOX”与图4对 2026 年后续箱体的前瞻绘制；[2026-02-05] “At the same time the box is created, it is designed and drawn forward-looking by the chart itself.”"
+    },
+    {
+      "proposed_id": "cap_new_btc_production_cost_floor",
+      "name": "Bitcoin Production Cost Floor",
+      "name_zh": "比特币生产成本底部框架",
+      "type": "onchain_signal",
+      "description": "Use Bitcoin production cost as a valuation floor. When spot trades below production cost, treat it as a historically asymmetric long opportunity.",
+      "description_zh": "把比特币生产成本当作估值底部。现货跌破生产成本时，视为历史上不对称的做多机会。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "bullish",
+        "horizon": "position",
+        "confidence_base": 0.78
+      },
+      "example_evidence": "[2025-02-25] “#Bitcoin production cost is now at $95,000 Current price is lower than production cost level Historically one of the best buying opportunities”；图1也在展示该指标。"
+    },
+    {
+      "proposed_id": "cap_new_market_maker_trap_map",
+      "name": "Market Maker Trap Mapping",
+      "name_zh": "做市商陷阱地图",
+      "type": "derivatives_signal",
+      "description": "Map likely zones where exchanges/market makers will first force liquidations on one side, then reverse or continue after weak hands are flushed out. This is broader than a single liquidation cluster and includes narrative psychology.",
+      "description_zh": "标记交易所/做市商可能先清算一侧仓位、再反转或延续的区域。这比单一清算热区更宽，包含对市场心理和操纵节奏的判断。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.74
+      },
+      "example_evidence": "[2025-02-25] “The mafia of ByBit and Binance... mainly to cause mass liquidations”；[2025-05-31] “Market makers know exactly how to shake out the weak hands”；[2026-04-09] “TRAP THE RETAILS FIRST, CRASH AFTER!”"
+    },
+    {
+      "proposed_id": "cap_new_bear_market_stage_model",
+      "name": "Six-Stage Bear Market Model",
+      "name_zh": "六阶段熊市模型",
+      "type": "cycle_time",
+      "description": "Classify the bear market into sequential stages with different tactics: initial top/distribution, first leg down, trap rally/sideways box, capitulation, bottom formation, and recovery.",
+      "description_zh": "把熊市划分为连续阶段并对应不同策略：顶部/派发、第一波下跌、诱多反弹/横盘箱体、恐慌出清、筑底、复苏。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "bearish_or_bottoming",
+        "horizon": "macro",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "图8标题“The Six Stages of the Bear Market”；[2026-02-22] “Bitcoin is currently in Stage 4 out of 6 in the current bear market”。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Trust the box!",
+      "rule_paraphrased": "把箱体当作最高优先级结构，交易决策围绕箱体边界执行。",
+      "category": "framework"
+    },
+    {
+      "quote": "The golden line, the mother of bulls",
+      "rule_paraphrased": "关键均线是趋势是否继续的核心分界线，回踩不破偏向继续看多。",
+      "category": "framework"
+    },
+    {
+      "quote": "People will call you lucky in a few weeks if you show off your profits. They will never understand the balls you need to long right into a falling knife at absolute fear.",
+      "rule_paraphrased": "在极端恐慌时反共识进场，但前提是他认为结构性底部/箱体低点已到。",
+      "category": "mantra"
+    },
+    {
+      "quote": "TRAP THE RETAILS FIRST, CRASH AFTER!",
+      "rule_paraphrased": "市场经常先通过反向波动诱骗散户，再走主方向；要预判陷阱而非追逐第一段动作。",
+      "category": "framework"
+    },
+    {
+      "quote": "Never marry your bags and be able to take profits!",
+      "rule_paraphrased": "即使长期看多，也必须接受周期切换并在他定义的顶部区域兑现利润或反手。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他和一般 TA 交易员的区别，是把“箱体结构 + 市场操纵/清算叙事 + 宏观流动性”揉成一个统一框架，而不是只画形态线。他非常强调前瞻性地先画未来箱体，再在箱体边界做高赔率反向交易。内容表达上高度戏剧化、强叙事、强自我验证，但底层方法其实相当固定：箱体、均线、周期、流动性陷阱。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "BUYING MASSIVE",
+      "HARD BUY",
+      "Exactly as predicted",
+      "The breakdown is coming",
+      "Only interested to buy here",
+      "Short and Selling Zone",
+      "The bottom is not in",
+      "TRAP THE RETAILS FIRST, CRASH AFTER!",
+      "There is no reason to be scared at all",
+      "The golden line, the mother of bulls"
+    ],
+    "low_conviction_phrases": [
+      "likely",
+      "expecting",
+      "my bet",
+      "can be expected",
+      "potential of an upside move in the short term",
+      "this or next week",
+      "soon"
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "handle": "milesdeutscher",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "cycle",
+    "macro",
+    "structural",
+    "contrarian",
+    "risk_first",
+    "content_creator"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "memecoins",
+    "AI alts",
+    "large-cap alts"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.96,
+      "evidence": "他反复把 BTC 放进减半后的时间框架里看；高赞帖直接说“$BTC is de-correlating from prior cycles.”；图1是典型“Bitcoin Price After Halvings”路径叠加，图3也用减半后的时间切片（红线）来定位当前所处阶段。"
+    },
+    {
+      "id": "cap_038_4year_cycle",
+      "weight": 0.88,
+      "evidence": "他经常讨论本轮是否提前/延后见顶，例如 2024-06-26 写道“Now, after recent price action, I'm thinking Q1/Q2 2025 is more realistic.”，明显是在做跨周期顶点位置比较，而不是只看单一 setup。"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.86,
+      "evidence": "2024-09-30 他写“$BTC is actually dumping HARDER than alts... Good sign that on the next leg up, they'll...”并附 BTC.D 图；图8 直接分析 BTC Dominance 周线通道与顶部失速，说明他把 BTC.D 当作山寨季切换核心框架。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.79,
+      "evidence": "他多次把 crypto 当风险资产 proxy 来看，2025-03-28 明说“Crypto is the most correlated it has ever been to tech stocks. Until proven otherwise, it's a leveraged-bet on risk assets”；2024-08-30 也说“Stocks up. Crypto down.”，图2 用 meme 币 SPX6900 也体现他会观察 beta 极高的风险偏好资产。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.78,
+      "evidence": "2024-03-30 他在报告拆解里专门强调“Stablecoin inflows”；2025-01-31 又写“The total stablecoin market cap hit $204B, up $37B since Trump’s win. Healthy for the market”；2025-05-28 还把“FTX is distributing $5b of stablecoins to creditors”解读为潜在山寨催化。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.76,
+      "evidence": "2024-03-30 他明确写“Spot Bitcoin ETF inflows... have been steadily higher than BTC issuance”，把 ETF 净流作为本轮上涨最关键的外生需求变量之一。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.72,
+      "evidence": "图3 的周线 BTC 明显围绕一条中期均线反复回踩后延续上行；他的表达也常是“final dip before the next leg up”“one more big leg up”，更偏趋势中的回撤参与，而不是纯顶部摸空。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.71,
+      "evidence": "2024-10-31 他说“How could you possibly be bearish on this chart? $BTC”；图7 也是典型高位箱体上沿收复后的强势趋势解读，说明他会先做大级别 regime 判定，再决定偏多还是等回调。"
+    },
+    {
+      "id": "cap_069_moving_average_reclaim",
+      "weight": 0.66,
+      "evidence": "图3 周线与图7 月线都带有明显均线参考，尤其图3 中价格长期沿均线抬升、回踩不破后继续上冲，说明‘收回/站稳关键均线’是他确认趋势健康的重要依据。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.61,
+      "evidence": "2025-02-27 他写“Rate cut expectations for 2025 have spiked... this could offer some counterbalance to support risk assets”，明显把降息预期和流动性改善作为 crypto 风险资产支撑。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.6,
+      "evidence": "2025-01-31 直接给出规则“Let your winners ride, cut your losers fast.”；这不是泛泛鸡汤，而是标准组合管理/交易风控原则。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.57,
+      "evidence": "2025-02-28 他给出明确的风险分层买入框架：“Start with $BTC... Then majors... Then riskier alts last”，核心是按资产风险分层配置，而不是一把梭；2025-08-31 也说“higher risk plays... (<20% of crypto portfolio)”。"
+    },
+    {
+      "id": "cap_046_regime_ranging",
+      "weight": 0.55,
+      "evidence": "图7 是典型大级别区间/平台观察；2025-12-29 他说“they've pegged $BTC to $87,500. Every time we see a move either side we re-peg almost instantly”，说明他会识别横盘再定策略，而不是永远趋势思维。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.53,
+      "evidence": "2025-05-30 他说“Market stopped reacting to good news, sign of exhaustion”；2025-05-30 另一条又说“$BTC always dumps after the Bitcoin Conference”，都体现他会在行情后期观察情绪过热与利好钝化的衰竭特征。"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.47,
+      "evidence": "图8 圈出的 BTC.D 上轨附近冲高回落，本质就是对‘假突破/失速’的观察；他也反复强调市场不会线性进入 altseason，而是会先制造分歧和错误预期。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_social_sentiment_extremes",
+      "name": "Social Sentiment Extreme Reversal",
+      "name_zh": "社交情绪极值反转",
+      "type": "event_reaction",
+      "description": "Use social mention spikes, fear/greed extremes, and timeline sentiment washouts as contrarian timing inputs for local bottoms or overheated tops.",
+      "description_zh": "用社交媒体提及量、恐惧贪婪极值和时间线情绪崩溃/狂热作为反向时机信号，捕捉局部底部或过热顶部。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "contrarian",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "2025-02-27: “The Crypto Fear and Greed Index just hit its lowest level since the 2022 bear market... often lead to a local bottom.”；2025-01-31: “Buy fear, sell greed.”；2025-02-27: “Social mentions for 'altseason' have plummeted...”"
+    },
+    {
+      "proposed_id": "cap_new_retail_attention_proxy",
+      "name": "Retail Attention Proxy",
+      "name_zh": "散户注意力代理指标",
+      "type": "macro_correlation",
+      "description": "Track retail participation through YouTube views, social mention growth, viral narratives, and timeline behavior to estimate how crowded or early a move is.",
+      "description_zh": "通过 YouTube 播放量、社交提及增长、叙事传播度和时间线行为来估计散户参与度，从而判断行情拥挤度或所处早晚期。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "position",
+        "confidence_base": 0.68
+      },
+      "example_evidence": "2024-07-30: “YouTube is the best retail indicator in crypto.”；2024-11-30: “Retail don't come back for no reason. Retail come back because they see others making money.”；2025-01-31: “Social mentions across all platforms for 'tokenization' has 5xd...”"
+    },
+    {
+      "proposed_id": "cap_new_narrative_rotation_selectivity",
+      "name": "Narrative Rotation Selectivity",
+      "name_zh": "叙事轮动与选择性山寨框架",
+      "type": "structural_bias",
+      "description": "Instead of assuming broad altseason, identify the few narratives with actual flows, product-market fit, or social momentum and rotate selectively into them.",
+      "description_zh": "不假设全面山寨季，而是识别真正有资金流、产品市场契合或社交动量的少数叙事，并进行选择性轮动配置。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "2024-08-30: “Memes/AI/RWA/L1s. That's the tweet.”；2024-12-31: “I don't think we're very close to a full blown alt season... certain”；2025-06-26: “increasing unlocks + dispersion, and decreasing demand... you h...”"
+    },
+    {
+      "proposed_id": "cap_new_event_seasonality_conference",
+      "name": "Conference / Calendar Seasonality Fade",
+      "name_zh": "大会/日历事件季节性反手",
+      "type": "event_reaction",
+      "description": "Use recurring crypto calendar events as sentiment/exhaustion markers when price stops responding to good news and positioning is crowded.",
+      "description_zh": "当价格对利好钝化且仓位拥挤时，把重复出现的加密日历事件当作情绪顶点或衰竭标记。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "short_tilted",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "2025-05-30: “$BTC always dumps after the Bitcoin Conference (5/5 track record)..” 以及同日“Market stopped reacting to good news, sign of exhaustion.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "Let your winners ride, cut your losers fast.  Simplest advice I could give anyone to instantly improve their portfolio management.",
+      "rule_paraphrased": "盈利仓让利润奔跑，亏损仓快速处理，组合管理优先于预测正确率。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Buy fear, sell greed. It really is that simple.",
+      "rule_paraphrased": "把情绪极值当作反向信号，尤其在加密这种高情绪波动市场里。",
+      "category": "framework"
+    },
+    {
+      "quote": "Most of time, you do nothing.  Then, when the stars align, you strike.",
+      "rule_paraphrased": "机会稀缺，平时耐心等待，只有多因素共振时才集中出手。",
+      "category": "framework"
+    },
+    {
+      "quote": "You should never think of the market in absolutes.  You can never be 100% certain of any outcome.  Your positioning should be dictated by probabilities (+EV or -EV).",
+      "rule_paraphrased": "交易是概率博弈，不做绝对判断，仓位要和赔率匹配。",
+      "category": "framework"
+    },
+    {
+      "quote": "If you're buying   DCA down the risk curve   Start with $BTC (don't need to nail your entries)  Then majors (need to be pickier with your entries)  Then riskier alts last (need to be pickiest with you",
+      "rule_paraphrased": "按风险曲线逐级下沉配置，先 BTC，再主流币，最后才是高 beta 山寨。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他不是纯形态派，而是把周期、宏观流动性、BTC.D、ETF/stablecoin 资金流和社交情绪放进同一个叙事框架里做中周期判断。和很多只画线的 TA 交易员不同，他非常依赖“叙事轮动 + 受众/散户注意力 + 情绪极值”来筛选山寨机会。整体更像一个会做资产配置和主题轮动的 swing 宏观交易员，同时又保留内容创作者对市场心理和传播结构的敏感度。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "How could you possibly be bearish on this chart?",
+      "The stars are aligning",
+      "The next move is painfully obvious",
+      "one more big leg up",
+      "This is the trigger behind the biggest altcoin moves"
+    ],
+    "low_conviction_phrases": [
+      "I think",
+      "probably",
+      "looks like",
+      "could",
+      "until proven otherwise",
+      "for all we know",
+      "I'm ok with that"
+    ]
+  }
+}

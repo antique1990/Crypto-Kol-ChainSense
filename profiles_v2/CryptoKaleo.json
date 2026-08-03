@@ -1,0 +1,213 @@
+{
+  "handle": "CryptoKaleo",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "pure_TA",
+    "cycle",
+    "contrarian",
+    "content_creator",
+    "macro"
+  ],
+  "time_preference": "swing",
+  "bias_default": "long_tilted",
+  "instruments_main": [
+    "BTC",
+    "ETH",
+    "DOGE",
+    "SOL",
+    "PENGU",
+    "AVAX",
+    "SUI"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_037_halving_cycle_phase",
+      "weight": 0.93,
+      "evidence": "多次直接按减半后的时间窗做判断，例如 [2024-04-29] “If this cycle is anything like the last two, a few months of sideways price action after the halving is completely normal.”；[2025-01-28] “it took Bitcoin more than 300 days after last cycle's halving before Bitcoin Dominance saw a major break lower and alt season really kicked off.”"
+    },
+    {
+      "id": "cap_065_btc_dominance_shift",
+      "weight": 0.91,
+      "evidence": "[2025-01-28] 明确用 BTC.D 作为山寨季触发器；[2025-10-31] “Bitcoin Dominance looks ready to start making the next leg lower... which means alts should start outpacing Bitcoin again.” 这是他框架里的核心轮动变量。"
+    },
+    {
+      "id": "cap_013_range_fade_high_low",
+      "weight": 0.84,
+      "evidence": "图表 4-6 都是典型区间/箱体思维：价格在大区间里反复测试底部或支撑线后看回到区间高点。推文也反复写 “base of the range”, “range highs”, “support to hold”。[2026-03-27] “Just want to see support to hold and run straight back to all time highs.”"
+    },
+    {
+      "id": "cap_057_fake_breakout_trap",
+      "weight": 0.82,
+      "evidence": "[2025-05-31] “Would be hilarious if this was really just one big stop hunt and the market resumes up only.”；[2026-02-26] “one of the greatest bear traps of all time.” 他明显经常把大回撤解释成 bear trap / 假跌破。"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.8,
+      "evidence": "他频繁使用 stop hunt / sweep 叙事。[2025-05-31] 直接说 “one big stop hunt”；图表 6 中还画出被跌破后迅速收回的支撑线，属于先扫流动性再反转的典型表达。"
+    },
+    {
+      "id": "cap_048_ict_breaker_block",
+      "weight": 0.73,
+      "evidence": "图表 4 和图表 6 都强调“突破后回踩原阻力/趋势线，再继续上行”。[2026-01-30] “completed retest of the base of the range and the retest of the trendline breakout we've been looking for.” 这是非常标准的 breaker / flip S/R 回测思路。"
+    },
+    {
+      "id": "cap_014_trend_pullback_continuation",
+      "weight": 0.71,
+      "evidence": "他不是喜欢追最陡的第一根，而是反复等 pullback 后继续。[2026-01-30] BTC 推文明确写“retest ... trendline breakout”；[2026-01-30] ETH 推文写“Solid bounce for ETH off the base of the range and HTF support... The green box is for bidding.”"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.62,
+      "evidence": "虽然不总是精确引用流量数据，但 ETF/政策通过作为上涨催化被他频繁使用。[2025-06-30] “SOLANA will be the last ETF approved for major alts” 明显把 ETF 叙事纳入中期框架；[2024-07-31] “Why is XRP starting to trade like it’s about to be announced for an ETF”。"
+    },
+    {
+      "id": "cap_039_fomc_risk_off",
+      "weight": 0.58,
+      "evidence": "[2025-07-30] “Everything feels like it's already trading at a discount expecting the worst today with FOMC. Might just be a ‘sell the rumor, buy the news’ situation.” 说明他把 FOMC 当成波动和反身性事件来交易。"
+    },
+    {
+      "id": "cap_029_yields_liquidity",
+      "weight": 0.57,
+      "evidence": "[2025-07-30] “What the world would be like if Powell surprises everyone and cuts rates today”；[2026-03-26] “We're in a commodity supercycle, and Bitcoin is oversold and overdue for its turn to run.” 他会把利率/流动性和商品周期嵌入加密方向判断。"
+    },
+    {
+      "id": "cap_028_spx_risk_on_off",
+      "weight": 0.56,
+      "evidence": "[2025-06-30] “The tech index just hit a new all time high today... More notably, it broke out above a multi-decade resistance...”；[2026-03-30] “After nearly 9 months of tech stocks consistently outperforming Bitcoin, BTC is on the verge of flipping the trend.” 他明显看美股风险偏好来确认 BTC。"
+    },
+    {
+      "id": "cap_070_parabolic_exhaustion",
+      "weight": 0.42,
+      "evidence": "虽然整体偏多，但他对极端垂直走势有“不可持续/需要洗盘”的意识。图表 4 末端已接近抛物线加速段，他后续推文常预期先出现剧烈 bear trap / flush 再继续，而不是无脑线性上升。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.39,
+      "evidence": "他并非严格风险派，但会强调等待确认而不是接飞刀。[2026-02-28] “No clean breakouts allowed.”；[2026-01-30] 等“retest ... we've been looking for”后再看多，说明会等结构确认。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.76,
+      "evidence": "大量语言都是趋势延续框架而不是均值回归，例如 “NEW ALL TIME HIGHS THIS WEEK”, “resume up only”, “send it back to all time highs with haste”。图表 4 展示的是典型 higher high / higher low 后的再加速。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_monthly_seasonality_trade",
+      "name": "Monthly Seasonality Playbook",
+      "name_zh": "月度季节性交易剧本",
+      "type": "cycle_time",
+      "description": "Uses recurring calendar months and crypto-native memes like Uptober/Sendtember to frame directional bias and timing.",
+      "description_zh": "用固定月份季节性和加密圈月度叙事（如 Uptober、Sendtember）来设定方向偏置与时点。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "directional_bias_from_calendar",
+        "horizon": "swing",
+        "confidence_base": 0.67
+      },
+      "example_evidence": "[2024-09-30] “It’s officially Uptober in Japan.”；[2024-09-30] 还专门发“Bitcoin's seasonality over the past 13 years”；[2025-08-31] “Sendtember is coming.”"
+    },
+    {
+      "proposed_id": "cap_new_prior_ath_retest_analogy",
+      "name": "Prior ATH Retest Analogy",
+      "name_zh": "前高/前周期 ATH 回踩类比",
+      "type": "structural_bias",
+      "description": "Anchors current market structure to prior-cycle ATH breakout and retest behavior; treats old all-time highs as major pivot zones rather than instant breakout levels.",
+      "description_zh": "把当前结构类比到上一轮周期的前高突破与回踩，把旧 ATH 视为需要消化和回测的关键中枢，而不是一破就单边拉升。",
+      "granularity": "specific",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "post_breakout_consolidation_then_continuation",
+        "horizon": "position",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "[2024-10-31] “When Bitcoin retested its previous ATH near $20K in late 2020, it didn't immediately rip past it. It initially pulled back on a quick wick nearly 20%...”"
+    },
+    {
+      "proposed_id": "cap_new_magnet_targeting",
+      "name": "Magnet Level Narrative",
+      "name_zh": "磁吸目标位叙事",
+      "type": "framework",
+      "description": "Frames large round numbers or major market-cap milestones as magnets that price is naturally pulled toward, often used to maintain conviction through consolidation.",
+      "description_zh": "把整数关口或大市值里程碑视为价格天然会被吸引去测试的“磁铁位”，用于在震荡和洗盘中维持方向信念。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "trend_continuation_to_target",
+        "horizon": "swing",
+        "confidence_base": 0.63
+      },
+      "example_evidence": "[2025-02-28] “$200K $BTC IS A MAGNET”；[2025-09-29] “$500K+ BTC is a magnet.”；[2025-07-31] 对 PENGU 直接给出 “$10B mcap, followed by DOGE mcap ATH...”"
+    },
+    {
+      "proposed_id": "cap_new_sentiment_washout_bullish",
+      "name": "Sentiment Washout as Bullish Setup",
+      "name_zh": "情绪崩塌即看多 setup",
+      "type": "contrarian",
+      "description": "Treats timeline despair, underwhelming news, or public bearish consensus as fuel for a squeeze higher when structure has not broken.",
+      "description_zh": "把时间线的绝望情绪、利空落地后的失望、或普遍看空共识视为潜在轧空燃料，只要结构未破就偏向反向看多。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "contrarian_long",
+        "horizon": "swing",
+        "confidence_base": 0.7
+      },
+      "example_evidence": "[2025-03-07] “Summit is over and we're not at zero yet... soooo, send it?”；[2025-04-30] “At the first sign of a red candle everyone on here is ready to pack it up and call for new lows. Simply ignore the noise and be more bullish.”"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "ARE YOU A BULLIEVER YET?",
+      "rule_paraphrased": "把看多信仰本身当作框架核心，在回撤和怀疑期持续强化多头叙事。",
+      "category": "mantra"
+    },
+    {
+      "quote": "Simply ignore the noise and be more bullish.",
+      "rule_paraphrased": "情绪噪音和短线回撤不改变中期方向；优先维持主趋势信念。",
+      "category": "framework"
+    },
+    {
+      "quote": "Would be hilarious if this was really just one big stop hunt and the market resumes up only.",
+      "rule_paraphrased": "大幅下杀优先解释为流动性扫荡/假跌破，而非趋势反转。",
+      "category": "framework"
+    },
+    {
+      "quote": "Not asking for much. Just want to see Bitcoin squeeze straight back to ATHs and look back on this as one of the greatest bear traps of all time.",
+      "rule_paraphrased": "下跌后的首选剧本不是慢修复，而是直接 bear trap 后强力回补。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "The green box is for bidding.",
+      "rule_paraphrased": "预设高时间框架支撑买区，等待价格回踩到计划区间执行，而不是情绪化追单。",
+      "category": "framework"
+    }
+  ],
+  "unique_traits": "他和一般 TA 交易员的区别在于，图表框架非常简洁，核心不是复杂指标，而是“区间支撑/趋势线回踩/旧高回测/假跌破后继续”的叙事化趋势交易。与此同时，他又强烈把周期、季节性、BTC.D 轮动和宏观事件包装成极具传播性的口号，所以既是 swing trader，也是高水平 narrative amplifier。整体上他明显长期偏多，擅长在情绪极差时把市场解读成 bear trap 并持续灌输高目标磁吸位。",
+  "risk_style": "aggressive",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "send it",
+      "with haste",
+      "run it back turbo",
+      "be more bullish",
+      "up only",
+      "bulliever",
+      "is a magnet",
+      "gift",
+      "pico-bottom signal",
+      "the green box is for bidding"
+    ],
+    "low_conviction_phrases": [
+      "looks like it wants",
+      "might just be",
+      "good chance",
+      "I think",
+      "I still bullieve",
+      "not asking for much",
+      "should be expected",
+      "on the verge of"
+    ]
+  }
+}

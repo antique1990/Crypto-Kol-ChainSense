@@ -1,0 +1,252 @@
+{
+  "handle": "EmberCN",
+  "school_primary": "mixed",
+  "school_secondary": [
+    "onchain",
+    "derivatives",
+    "structural",
+    "content_creator",
+    "risk_first"
+  ],
+  "time_preference": "swing",
+  "bias_default": "neutral",
+  "instruments_main": [
+    "ETH",
+    "BTC",
+    "USDC",
+    "WBTC",
+    "SOL",
+    "XPL",
+    "TRUMP",
+    "ASTER"
+  ],
+  "capabilities_used": [
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.94,
+      "evidence": "他反复把“转进 Binance/Kraken/Coinbase”作为潜在卖压或兑现信号来解读，如 [2025-11-24] “pump. fun 项目方把 4.05 亿 USDC 转进了 Kraken…这很可能是进行了出金”、[2025-10-30] “一个鲸鱼在 15 分钟前把 1 万枚 ETH 转进币安”。"
+    },
+    {
+      "id": "cap_034_liquidation_cluster_magnet",
+      "weight": 0.86,
+      "evidence": "他大量跟踪濒临清算仓位与清算价附近的价格行为，如 [2025-03-29] “离这位哥的清算价格只差 35 刀了。”、[2025-03-31] 连续追踪 6.48 万枚 ETH 仓位是否会被清算。"
+    },
+    {
+      "id": "cap_043_cut_losses_early",
+      "weight": 0.74,
+      "evidence": "他在复盘中非常强调止损/减仓与不及时止损的结果，如 [2025-08-29] “为避免清算，他在过去半小时里已经止损平掉了 28,959 ETH”、[2025-05-30] 多条 James Wynn 连环爆仓贴都在强调不止损的代价。"
+    },
+    {
+      "id": "cap_041_dont_catch_falling_knives",
+      "weight": 0.67,
+      "evidence": "他对瀑布中的逆势加杠杆明显持警惕态度，如 [2026-02-26] “前段时间 ETH 的下跌才让多个上杠杆的巨鲸/机构被清算…这几天 ETH 涨了一点，就又有鲸鱼来杠杆做多 ETH 了。”"
+    },
+    {
+      "id": "cap_052_liquidity_grab_sweep",
+      "weight": 0.58,
+      "evidence": "虽然不是经典画图派，但他会用“插针打损/差一点清算/扫掉再拉回”的流动性视角解释价格，如 [2025-05-30] “BTC 多仓被清算减仓”、[2025-03-31] “跌下去又迅速拉回没有实际跌破”。"
+    },
+    {
+      "id": "cap_066_stablecoin_supply_growth",
+      "weight": 0.55,
+      "evidence": "他频繁跟踪 USDC/USDT 大额流动与稳定币产品透明度，把其视作市场资金面线索，如 [2026-02-28] “USD1…成为行业首个实时发布储备金证明数据的稳定币”、[2025-12-30] 链上赚币产品实时年化与额度分析。"
+    },
+    {
+      "id": "cap_035_exchange_inflow_bearish",
+      "weight": 0.52,
+      "evidence": "在图 3 与图 4 中，他专门澄清所谓 CZ 卖 ASTER 的“证据”其实只是 Binance 热钱包互转，说明他不仅看入所，还区分真实抛压和交易所内部调拨。"
+    },
+    {
+      "id": "cap_040_etf_flows_proxy",
+      "weight": 0.49,
+      "evidence": "早期内容里他持续把 BTC ETF 资金流作为方向代理，如 [2024-03-27] “贝莱德和富达…流入资金 4.4 亿美元”、[2024-03-28] 精确拆解十支 BTC 现货 ETF 净流入对应的托管地址 BTC 变动。"
+    },
+    {
+      "id": "cap_033_oi_climb_price_flat",
+      "weight": 0.45,
+      "evidence": "他经常监控 Hyperliquid 等平台的大额未平仓仓位，并观察仓位扩大、价格未走出的张力，如 [2025-10-28] “做多仓位已经价值 $4.47 亿，同时还在现价下方一点点的位置挂了价值 $1 亿的多单继续接”。"
+    },
+    {
+      "id": "cap_032_funding_extreme_positive",
+      "weight": 0.39,
+      "evidence": "他虽然不常直接报 funding 数值，但会用“40x 杠杆”“多军头子”“拥挤多头”方式识别过热风险，如 [2025-10-31] “40x 杠杆做多价值 $1.07 亿 BTC…最终价值 $1.43 亿的多仓被全部清算掉”。"
+    },
+    {
+      "id": "cap_031_funding_extreme_negative",
+      "weight": 0.32,
+      "evidence": "与上面相对，他也会抓极端拥挤空头后的幸存/反转叙事，如 [2025-11-26] “[在 CZ 晒 $ASTER 持仓后进行做空的鲸鱼] …只差一点点就清算他的仓位后，价格反弹了。他扛过来了。”"
+    },
+    {
+      "id": "cap_036_lth_holding",
+      "weight": 0.41,
+      "evidence": "他长期跟踪 OG/早期鲸鱼、基金会、机构地址的持有与减仓，如 [2025-11-30] “2015 年参与以太坊 ICO 获得 4 万枚 ETH…十年时间的休眠”、[2025-07-31] “2010 年…250 枚 BTC…被归集到 2 个新钱包”。"
+    },
+    {
+      "id": "cap_044_regime_trending_up",
+      "weight": 0.37,
+      "evidence": "他会把强趋势环境下的大仓位连续加仓视为趋势确认而非纯噪音，如 [2025-12-26] “持有着 $7 亿价值多仓一周时间都没动作后…继续加仓开多了 21 万枚 SOL”。"
+    },
+    {
+      "id": "cap_045_regime_trending_down",
+      "weight": 0.43,
+      "evidence": "他同样识别下行环境中的去杠杆与踩踏，如 [2026-04-01] “SIREN 今天下跌了 86%”、[2025-05-30] 系列帖记录 James Wynn 在下跌中被连续减仓、归零。"
+    },
+    {
+      "id": "cap_047_regime_volatile",
+      "weight": 0.64,
+      "evidence": "他覆盖大量高波动、高杠杆场景，分析框架天然包含“波动放大 + 杠杆脆弱性”，例如多篇帖子专盯清算价、保证金剩余、40x 杠杆距离现价多少刀。"
+    },
+    {
+      "id": "cap_042_position_sizing_cap",
+      "weight": 0.28,
+      "evidence": "他本人不直接给仓位管理建议，但在大量案例里隐含传达仓位/杠杆控制的重要性，常把过高杠杆与过度集中仓位当成反例素材。"
+    }
+  ],
+  "new_capabilities_proposed": [
+    {
+      "proposed_id": "cap_new_whale_wallet_tracking",
+      "name": "Whale Wallet Tracking",
+      "name_zh": "鲸鱼地址追踪",
+      "type": "onchain_signal",
+      "description": "Track identified whales, funds, foundations, protocol treasuries, and repeat actors across wallets to infer positioning, intent, and likely market impact from sequential transfers and fills.",
+      "description_zh": "持续追踪已识别的鲸鱼、机构、基金会、项目方和重复出现的交易地址，通过多次转账、提币、归集、成交路径来推断其仓位变化、真实意图与潜在市场影响。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.79
+      },
+      "example_evidence": "大量推文都以特定角色为主线持续更新，如 James Fickel、James Wynn、BitMNR、Trend Research、Vitalik、Tether、pump.fun。"
+    },
+    {
+      "proposed_id": "cap_new_cex_internal_transfer_filter",
+      "name": "CEX Internal Transfer Filter",
+      "name_zh": "交易所内部转账甄别",
+      "type": "onchain_signal",
+      "description": "Distinguish true exchange inflows/outflows from internal exchange wallet rebalancing, hot-cold wallet shuffles, and cross-chain operations to avoid false bearish/bullish signals.",
+      "description_zh": "区分真实的入所/出所与交易所内部热冷钱包调拨、钱包重平衡、跨链中转，避免把内部转账误判成真实买卖信号。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "intraday",
+        "confidence_base": 0.84
+      },
+      "example_evidence": "图 3、图 4 对 ASTER 谣言的拆解，以及 [2024-08-30] “这实际上并不是哈，这是币安在进行 Arbitrum→Ethereum 跨链”。"
+    },
+    {
+      "proposed_id": "cap_new_oracle_liquidation_timing",
+      "name": "Oracle-Lag Liquidation Timing",
+      "name_zh": "预言机延迟清算窗口",
+      "type": "derivatives_signal",
+      "description": "For onchain lending venues, liquidation depends on oracle update timing rather than spot wick alone; monitor oracle cadence and borrower repayment windows to trade/interpret liquidation events.",
+      "description_zh": "在链上借贷系统中，清算取决于预言机更新时间而非单纯现货插针；通过监控预言机节奏与还款窗口来判断清算是否真的会发生。",
+      "granularity": "specific",
+      "detection_type": "rule",
+      "output_when_triggered": {
+        "bias": "event_driven",
+        "horizon": "intraday",
+        "confidence_base": 0.88
+      },
+      "example_evidence": "[2025-03-31] “他的仓位是开在 Maker 上，Maker 的预言机价格更新是以小时为单位，只有预言机当前价格低于清算价格时，才会开始清算。”"
+    },
+    {
+      "proposed_id": "cap_new_loop_leverage_unwind",
+      "name": "Loop Leverage Build/Unwind",
+      "name_zh": "循环贷加杠杆与去杠杆",
+      "type": "structural_bias",
+      "description": "Detect recursive borrow-buy-supply leverage loops on lending protocols and map how partial repayments, collateral sales, and debt rotation alter liquidation risk and directional exposure.",
+      "description_zh": "识别借贷协议上的循环贷加杠杆结构，并跟踪还款、卖币、补抵押、债务轮转如何改变清算风险和方向性敞口。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "context_dependent",
+        "horizon": "swing",
+        "confidence_base": 0.83
+      },
+      "example_evidence": "图 7、图 8 展示 Aave 上 stETH/WBTC 仓位变化；[2025-12-29]、[2025-12-28]、[2026-02-26] 多次分析“通过循环贷做多 ETH”的巨鲸。"
+    },
+    {
+      "proposed_id": "cap_new_treasury_company_accumulation",
+      "name": "Treasury Company Accumulation",
+      "name_zh": "财库公司持续囤币",
+      "type": "onchain_signal",
+      "description": "Treat public-company crypto treasury accumulation, staking deployment, and treasury policy changes as medium-horizon structural demand or supply signals.",
+      "description_zh": "把上市公司/财库公司的持续囤币、质押部署和财库政策变化，视作中期结构性需求或供给信号。",
+      "granularity": "general",
+      "detection_type": "hybrid",
+      "output_when_triggered": {
+        "bias": "long_tilted",
+        "horizon": "position",
+        "confidence_base": 0.76
+      },
+      "example_evidence": "[2025-12-27]、[2025-12-28]、[2025-12-31]、[2026-04-06] 多次连续追踪 BitMNR 的 ETH 增持与 PoS 质押。"
+    },
+    {
+      "proposed_id": "cap_new_posted_pnl_journaling",
+      "name": "Public PnL Story Tracking",
+      "name_zh": "公开盈亏叙事跟踪",
+      "type": "content_creator",
+      "description": "Build trade lessons by serially documenting a trader's changing PnL, margin, liquidation level, and behavioral decisions through time rather than from a single isolated trade.",
+      "description_zh": "不是孤立分析一笔交易，而是连续记录某位交易者的浮盈、保证金、清算价与行为变化，从动态过程里提炼交易经验与反面教材。",
+      "granularity": "general",
+      "detection_type": "llm",
+      "output_when_triggered": {
+        "bias": "neutral",
+        "horizon": "swing",
+        "confidence_base": 0.72
+      },
+      "example_evidence": "James Wynn、Hyperliquid 全胜鲸鱼、麻吉、Techno_Revenant 等案例都被他连续多帖追踪直至平仓/爆仓/回本。"
+    }
+  ],
+  "personal_quirks": [
+    {
+      "quote": "老哥每次都非得得等到马上要清算了才进行还款操作，上次 3 月 11 号是，这次也是😂",
+      "rule_paraphrased": "习惯把交易者行为模式化归纳，尤其关注“拖到最后一刻补保证金”这类高风险习惯。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "人类从历史中学到的唯一教训，就是人类无法从历史中学到任何教训",
+      "rule_paraphrased": "把市场参与者重复犯错视为稳定 alpha 来源，尤其是杠杆玩家的行为循环。",
+      "category": "mantra"
+    },
+    {
+      "quote": "哪有赌狗天天输 ~ 连跪了一个半月的麻吉，本周终于是站起来了：",
+      "rule_paraphrased": "他喜欢用连续战绩和资金曲线讲故事，把交易行为人格化，强化对仓位管理与运气成分的理解。",
+      "category": "framework"
+    },
+    {
+      "quote": "有人哭，有人笑。James Wynn 老哥跌倒，HLP 吃饱。",
+      "rule_paraphrased": "强调整个衍生品市场是零和/负和博弈，一方爆仓常对应另一方或系统金库获利。",
+      "category": "post_mortem"
+    },
+    {
+      "quote": "平仓先平有盈利的，亏钱的则死拿😂",
+      "rule_paraphrased": "他会主动点出典型散户反人性错误，把它当作反面教材来做行为金融分析。",
+      "category": "anti_pattern"
+    }
+  ],
+  "unique_traits": "他不是典型的画线型 TA 交易员，而是把链上数据、交易所资金流、借贷清算结构和鲸鱼行为叙事拼成一个“可连续更新的仓位地图”。相比纯技术派，他更擅长从地址、平台机制和资金路径里判断真实买卖意图；相比纯新闻流，他又会持续追踪同一批角色，把单条快讯变成完整的交易过程复盘。",
+  "risk_style": "moderate",
+  "conviction_vocabulary": {
+    "high_conviction_phrases": [
+      "应该是",
+      "这很可能",
+      "也就是说",
+      "说明",
+      "意味着",
+      "终于",
+      "基本上"
+    ],
+    "low_conviction_phrases": [
+      "可能",
+      "不太清楚",
+      "给我一种…感觉",
+      "看起来",
+      "大概",
+      "如果",
+      "尚不清楚"
+    ]
+  }
+}
