@@ -225,7 +225,7 @@ class ConsensusGUI(tk.Tk):
         for button in self.symbol_buttons:
             button.configure(state='disabled')
         if isinstance(runner, list):
-            args = runner + [symbol, '--no-open', '--output-dir', self.output_dir]
+            args = runner + [symbol, '--refresh-ohlc', '--no-open', '--output-dir', self.output_dir]
             target, target_args = self._run_process, (args,)
         else:
             target, target_args = self._run_embedded, (runner, symbol)
@@ -254,7 +254,7 @@ class ConsensusGUI(tk.Tk):
                 if self.buffer: self.output_queue.put(('line', self.buffer)); self.buffer = ''
         writer, old_args, old_cwd = QueueWriter(self.output_queue), sys.argv, os.getcwd()
         try:
-            sys.argv = [script, symbol, '--no-open', '--output-dir', self.output_dir]
+            sys.argv = [script, symbol, '--refresh-ohlc', '--no-open', '--output-dir', self.output_dir]
             os.chdir(BASE)
             with contextlib.redirect_stdout(writer), contextlib.redirect_stderr(writer):
                 runpy.run_path(script, run_name='__main__')
