@@ -24,3 +24,8 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# 忽略所有构建输出目录
+build/
+dist/
+*.spec
